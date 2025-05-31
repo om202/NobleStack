@@ -1,9 +1,16 @@
-import * as NavigationMenu from '@radix-ui/react-navigation-menu'
-import * as Dialog from '@radix-ui/react-dialog'
-import * as Separator from '@radix-ui/react-separator'
-import * as Tabs from '@radix-ui/react-tabs'
-import * as Accordion from '@radix-ui/react-accordion'
-import { ArrowRight, Zap, Shield, Users, Star, CheckCircle } from "lucide-react"
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
+import * as Dialog from "@radix-ui/react-dialog";
+import * as Separator from "@radix-ui/react-separator";
+import * as Tabs from "@radix-ui/react-tabs";
+import * as Accordion from "@radix-ui/react-accordion";
+import {
+  ArrowRight,
+  Zap,
+  Shield,
+  Users,
+  Star,
+  CheckCircle,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,32 +27,41 @@ export default function Home() {
                 <span className="text-xl font-bold">StartupFlow</span>
               </div>
             </NavigationMenu.Item>
-            
+
             <div className="flex items-center gap-8">
               <NavigationMenu.Item>
-                <NavigationMenu.Link href="#features" className="px-4 py-2 rounded hover:bg-gray-100 transition-colors">
+                <NavigationMenu.Link
+                  href="#features"
+                  className="px-4 py-2 rounded hover:bg-gray-100 transition-colors"
+                >
                   Features
                 </NavigationMenu.Link>
               </NavigationMenu.Item>
-              
+
               <NavigationMenu.Item>
-                <NavigationMenu.Link href="#pricing" className="px-4 py-2 rounded hover:bg-gray-100 transition-colors">
+                <NavigationMenu.Link
+                  href="#pricing"
+                  className="px-4 py-2 rounded hover:bg-gray-100 transition-colors"
+                >
                   Pricing
                 </NavigationMenu.Link>
               </NavigationMenu.Item>
-              
+
               <NavigationMenu.Item>
-                <NavigationMenu.Link href="#about" className="px-4 py-2 rounded hover:bg-gray-100 transition-colors">
+                <NavigationMenu.Link
+                  href="#about"
+                  className="px-4 py-2 rounded hover:bg-gray-100 transition-colors"
+                >
                   About
                 </NavigationMenu.Link>
               </NavigationMenu.Item>
-              
+
               <NavigationMenu.Item>
                 <button className="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">
                   Sign In
                 </button>
               </NavigationMenu.Item>
-              
+
               <NavigationMenu.Item>
                 <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
                   Get Started
@@ -63,18 +79,22 @@ export default function Home() {
             <Star className="w-4 h-4 mr-2" />
             Now in Public Beta
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Build Your Next
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Startup </span>
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              {" "}
+              Startup{" "}
+            </span>
             Faster
           </h1>
-          
+
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            The all-in-one platform that helps entrepreneurs validate ideas, build products, 
-            and scale businesses with powerful AI-driven insights and automation.
+            The all-in-one platform that helps entrepreneurs validate ideas,
+            build products, and scale businesses with powerful AI-driven
+            insights and automation.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <button className="flex items-center justify-center gap-2 text-lg px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
               Start Building Today
@@ -84,7 +104,7 @@ export default function Home() {
               Watch Demo
             </button>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-500">
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
@@ -109,66 +129,75 @@ export default function Home() {
             Everything You Need to Succeed
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            From idea validation to product launch, we provide the tools and insights 
-            you need to build a successful startup.
+            From idea validation to product launch, we provide the tools and
+            insights you need to build a successful startup.
           </p>
         </div>
-        
+
         <div className="max-w-4xl mx-auto">
           <Tabs.Root defaultValue="insights">
             <Tabs.List className="flex justify-center border-b border-gray-200 mb-8">
-              <Tabs.Trigger 
-                value="insights" 
+              <Tabs.Trigger
+                value="insights"
                 className="px-6 py-3 font-medium border-b-2 border-transparent data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 hover:bg-gray-50 transition-colors"
               >
                 AI-Powered Insights
               </Tabs.Trigger>
-              <Tabs.Trigger 
-                value="security" 
+              <Tabs.Trigger
+                value="security"
                 className="px-6 py-3 font-medium border-b-2 border-transparent data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 hover:bg-gray-50 transition-colors"
               >
                 Secure & Reliable
               </Tabs.Trigger>
-              <Tabs.Trigger 
-                value="collaboration" 
+              <Tabs.Trigger
+                value="collaboration"
                 className="px-6 py-3 font-medium border-b-2 border-transparent data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 hover:bg-gray-50 transition-colors"
               >
                 Team Collaboration
               </Tabs.Trigger>
             </Tabs.List>
-            
+
             <Tabs.Content value="insights" className="focus:outline-none">
               <div className="p-8 border border-gray-200 rounded-lg bg-white">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <Zap className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">AI-Powered Insights</h3>
+                <h3 className="text-2xl font-semibold mb-4">
+                  AI-Powered Insights
+                </h3>
                 <p className="text-gray-600">
-                  Get data-driven recommendations for your startup journey with our advanced AI algorithms.
+                  Get data-driven recommendations for your startup journey with
+                  our advanced AI algorithms.
                 </p>
               </div>
             </Tabs.Content>
-            
+
             <Tabs.Content value="security" className="focus:outline-none">
               <div className="p-8 border border-gray-200 rounded-lg bg-white">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <Shield className="w-6 h-6 text-green-600" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">Secure & Reliable</h3>
+                <h3 className="text-2xl font-semibold mb-4">
+                  Secure & Reliable
+                </h3>
                 <p className="text-gray-600">
-                  Enterprise-grade security with 99.9% uptime guarantee. Your data is always protected.
+                  Enterprise-grade security with 99.9% uptime guarantee. Your
+                  data is always protected.
                 </p>
               </div>
             </Tabs.Content>
-            
+
             <Tabs.Content value="collaboration" className="focus:outline-none">
               <div className="p-8 border border-gray-200 rounded-lg bg-white">
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Users className="w-6 h-6 text-purple-600" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">Team Collaboration</h3>
+                <h3 className="text-2xl font-semibold mb-4">
+                  Team Collaboration
+                </h3>
                 <p className="text-gray-600">
-                  Work seamlessly with your team using real-time collaboration tools and shared workspaces.
+                  Work seamlessly with your team using real-time collaboration
+                  tools and shared workspaces.
                 </p>
               </div>
             </Tabs.Content>
@@ -186,38 +215,54 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8 text-center">
             Frequently Asked Questions
           </h2>
-          
-          <Accordion.Root type="single" collapsible className="border border-gray-200 rounded-lg overflow-hidden">
-            <Accordion.Item value="item-1" className="border-b border-gray-200 last:border-b-0">
+
+          <Accordion.Root
+            type="single"
+            collapsible
+            className="border border-gray-200 rounded-lg overflow-hidden"
+          >
+            <Accordion.Item
+              value="item-1"
+              className="border-b border-gray-200 last:border-b-0"
+            >
               <Accordion.Header>
                 <Accordion.Trigger className="w-full text-left px-6 py-4 font-medium hover:bg-gray-50 data-[state=open]:bg-gray-50 transition-colors">
                   How does the AI-powered insights feature work?
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content className="px-6 pb-4 text-gray-600">
-                Our AI analyzes market trends, competitor data, and user feedback to provide actionable recommendations for your startup.
+                Our AI analyzes market trends, competitor data, and user
+                feedback to provide actionable recommendations for your startup.
               </Accordion.Content>
             </Accordion.Item>
-            
-            <Accordion.Item value="item-2" className="border-b border-gray-200 last:border-b-0">
+
+            <Accordion.Item
+              value="item-2"
+              className="border-b border-gray-200 last:border-b-0"
+            >
               <Accordion.Header>
                 <Accordion.Trigger className="w-full text-left px-6 py-4 font-medium hover:bg-gray-50 data-[state=open]:bg-gray-50 transition-colors">
                   Is there a free trial available?
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content className="px-6 pb-4 text-gray-600">
-                Yes! We offer a 14-day free trial with no credit card required. You can cancel anytime.
+                Yes! We offer a 14-day free trial with no credit card required.
+                You can cancel anytime.
               </Accordion.Content>
             </Accordion.Item>
-            
-            <Accordion.Item value="item-3" className="border-b border-gray-200 last:border-b-0">
+
+            <Accordion.Item
+              value="item-3"
+              className="border-b border-gray-200 last:border-b-0"
+            >
               <Accordion.Header>
                 <Accordion.Trigger className="w-full text-left px-6 py-4 font-medium hover:bg-gray-50 data-[state=open]:bg-gray-50 transition-colors">
                   How secure is my data?
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content className="px-6 pb-4 text-gray-600">
-                We use enterprise-grade security with end-to-end encryption and maintain SOC 2 compliance.
+                We use enterprise-grade security with end-to-end encryption and
+                maintain SOC 2 compliance.
               </Accordion.Content>
             </Accordion.Item>
           </Accordion.Root>
@@ -231,9 +276,10 @@ export default function Home() {
             Ready to Launch Your Startup?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join thousands of entrepreneurs who are building successful businesses with StartupFlow.
+            Join thousands of entrepreneurs who are building successful
+            businesses with StartupFlow.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Dialog.Root>
               <Dialog.Trigger asChild>
@@ -252,13 +298,13 @@ export default function Home() {
                     Enter your email to get started with StartupFlow today.
                   </Dialog.Description>
                   <form className="space-y-4">
-                    <input 
-                      type="email" 
+                    <input
+                      type="email"
                       placeholder="Enter your email"
                       className="w-full px-3 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
-                    <button 
-                      type="submit" 
+                    <button
+                      type="submit"
                       className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
                     >
                       Start Free Trial
@@ -272,7 +318,7 @@ export default function Home() {
                 </Dialog.Content>
               </Dialog.Portal>
             </Dialog.Root>
-            
+
             <button className="text-lg px-8 py-4 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors">
               Contact Sales
             </button>
@@ -290,9 +336,15 @@ export default function Home() {
             <span className="text-lg font-bold">StartupFlow</span>
           </div>
           <div className="flex gap-6 text-sm text-gray-500">
-            <a href="#" className="hover:text-gray-900 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-gray-900 transition-colors">Terms</a>
-            <a href="#" className="hover:text-gray-900 transition-colors">Support</a>
+            <a href="#" className="hover:text-gray-900 transition-colors">
+              Privacy
+            </a>
+            <a href="#" className="hover:text-gray-900 transition-colors">
+              Terms
+            </a>
+            <a href="#" className="hover:text-gray-900 transition-colors">
+              Support
+            </a>
           </div>
         </div>
         <Separator.Root className="bg-gray-200 h-px w-full mb-8" />
@@ -301,5 +353,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
