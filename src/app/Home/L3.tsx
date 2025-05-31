@@ -31,17 +31,17 @@ export default function FAQSection() {
     <section id="faq" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full glass text-white text-sm font-medium mb-4">
-            <MessageCircle className="w-4 h-4 mr-2 text-blue-400" />
+          <div className="inline-flex items-center px-4 py-2 rounded-full glass text-gray-800 text-sm font-medium mb-4">
+            <MessageCircle className="w-4 h-4 mr-2 text-blue-500" />
             Frequently Asked Questions
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
             Got Questions?
             <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
               {" "}We've Got Answers
             </span>
           </h2>
-          <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Everything you need to know about StartupFlow and how it can help your business grow.
           </p>
         </div>
@@ -59,17 +59,17 @@ export default function FAQSection() {
                 className="glass rounded-2xl overflow-hidden card-hover"
               >
                 <Accordion.Header>
-                  <Accordion.Trigger className="w-full text-left px-6 py-6 font-medium text-white hover:bg-white/10 data-[state=open]:bg-white/10 transition-all duration-300 flex items-center justify-between group">
+                  <Accordion.Trigger className="w-full text-left px-6 py-6 font-medium text-gray-900 hover:bg-gray-100 data-[state=open]:bg-gray-100 transition-all duration-300 flex items-center justify-between group">
                     <div className="flex items-center gap-4">
                       <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
                         <faq.icon className="w-5 h-5 text-white" />
                       </div>
                       <span className="text-lg">{faq.question}</span>
                     </div>
-                    <ChevronDown className="w-5 h-5 text-gray-300 group-data-[state=open]:rotate-180 transition-transform duration-300" />
+                    <ChevronDown className="w-5 h-5 text-gray-600 group-data-[state=open]:rotate-180 transition-transform duration-300" />
                   </Accordion.Trigger>
                 </Accordion.Header>
-                <Accordion.Content className="px-6 pb-6 text-gray-300 leading-relaxed data-[state=open]:animate-slide-up">
+                <Accordion.Content className="px-6 pb-6 text-gray-600 leading-relaxed data-[state=open]:animate-slide-up">
                   <div className="pl-14">
                     {faq.answer}
                   </div>
@@ -81,8 +81,8 @@ export default function FAQSection() {
           {/* Additional Support Section */}
           <div className="mt-12 text-center">
             <div className="glass rounded-2xl p-8 card-hover">
-              <h3 className="text-2xl font-bold text-white mb-4">Still have questions?</h3>
-              <p className="text-gray-300 mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Still have questions?</h3>
+              <p className="text-gray-600 mb-6">
                 Our support team is here to help you get the most out of StartupFlow.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -90,7 +90,7 @@ export default function FAQSection() {
                   <MessageCircle className="w-5 h-5" />
                   Contact Support
                 </button>
-                <button className="flex items-center justify-center gap-2 px-6 py-3 glass text-white rounded-xl hover:bg-white/20 transition-all duration-300">
+                <button className="flex items-center justify-center gap-2 px-6 py-3 glass text-gray-800 rounded-xl hover:bg-gray-100 transition-all duration-300">
                   <Users className="w-5 h-5" />
                   Join Community
                 </button>

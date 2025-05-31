@@ -19,8 +19,8 @@ export default function Navigation() {
                     <Zap className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <span className="text-xl font-bold text-white">StartupFlow</span>
-                    <div className="text-xs text-gray-300">AI Platform</div>
+                    <span className="text-xl font-bold text-gray-900">StartupFlow</span>
+                    <div className="text-xs text-gray-600">AI Platform</div>
                   </div>
                 </div>
               </NavigationMenu.Item>
@@ -30,7 +30,7 @@ export default function Navigation() {
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
                     href="#dashboard"
-                    className="px-4 py-2 rounded-xl text-white hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
+                    className="px-4 py-2 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
                   >
                     Dashboard
                   </NavigationMenu.Link>
@@ -39,7 +39,7 @@ export default function Navigation() {
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
                     href="#features"
-                    className="px-4 py-2 rounded-xl text-white hover:bg-white/20 transition-all duration-300"
+                    className="px-4 py-2 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300"
                   >
                     Features
                   </NavigationMenu.Link>
@@ -48,7 +48,7 @@ export default function Navigation() {
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
                     href="#analytics"
-                    className="px-4 py-2 rounded-xl text-white hover:bg-white/20 transition-all duration-300"
+                    className="px-4 py-2 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300"
                   >
                     Analytics
                   </NavigationMenu.Link>
@@ -57,7 +57,7 @@ export default function Navigation() {
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
                     href="#tools"
-                    className="px-4 py-2 rounded-xl text-white hover:bg-white/20 transition-all duration-300"
+                    className="px-4 py-2 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300"
                   >
                     Tools
                   </NavigationMenu.Link>
@@ -66,17 +66,17 @@ export default function Navigation() {
 
               {/* App-like Action Buttons */}
               <div className="flex items-center gap-3">
-                <button className="hidden sm:flex w-10 h-10 items-center justify-center rounded-xl text-white hover:bg-white/20 transition-all duration-300">
+                <button className="hidden sm:flex w-10 h-10 items-center justify-center rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
                   <Bell className="w-5 h-5" />
                 </button>
                 
-                <button className="hidden sm:flex w-10 h-10 items-center justify-center rounded-xl text-white hover:bg-white/20 transition-all duration-300">
+                <button className="hidden sm:flex w-10 h-10 items-center justify-center rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
                   <Settings className="w-5 h-5" />
                 </button>
 
-                <div className="hidden sm:block w-px h-6 bg-white/20"></div>
+                <div className="hidden sm:block w-px h-6 bg-gray-200"></div>
 
-                <button className="hidden sm:flex items-center gap-2 px-4 py-2 border border-white/30 rounded-xl text-white hover:bg-white/10 transition-all duration-300">
+                <button className="hidden sm:flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
                   <User className="w-4 h-4" />
                   Sign In
                 </button>
@@ -88,7 +88,7 @@ export default function Navigation() {
 
                 {/* Mobile Menu Button */}
                 <button 
-                  className="lg:hidden w-10 h-10 flex items-center justify-center rounded-xl text-white hover:bg-white/20 transition-all duration-300"
+                  className="lg:hidden w-10 h-10 flex items-center justify-center rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                   <Menu className="w-5 h-5" />
@@ -99,18 +99,18 @@ export default function Navigation() {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="lg:hidden mt-4 pt-4 border-t border-white/20 animate-slide-up">
+            <div className="lg:hidden mt-4 pt-4 border-t border-gray-200 animate-slide-up">
               <div className="flex flex-col gap-2">
-                <a href="#dashboard" className="px-4 py-3 rounded-xl text-white hover:bg-white/20 transition-all duration-300">
+                <a href="#dashboard" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
                   Dashboard
                 </a>
-                <a href="#features" className="px-4 py-3 rounded-xl text-white hover:bg-white/20 transition-all duration-300">
+                <a href="#features" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
                   Features
                 </a>
-                <a href="#analytics" className="px-4 py-3 rounded-xl text-white hover:bg-white/20 transition-all duration-300">
+                <a href="#analytics" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
                   Analytics
                 </a>
-                <a href="#tools" className="px-4 py-3 rounded-xl text-white hover:bg-white/20 transition-all duration-300">
+                <a href="#tools" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
                   Tools
                 </a>
               </div>

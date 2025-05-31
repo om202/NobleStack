@@ -69,17 +69,17 @@ export default function FeaturesSection() {
       <div className="max-w-7xl mx-auto">
         {/* App-like Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full glass text-white text-sm font-medium mb-4">
-            <Zap className="w-4 h-4 mr-2 text-yellow-400" />
+          <div className="inline-flex items-center px-4 py-2 rounded-full glass text-gray-800 text-sm font-medium mb-4">
+            <Zap className="w-4 h-4 mr-2 text-yellow-500" />
             Premium Features Available
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
             Your Complete
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               {" "}Business Toolkit
             </span>
           </h2>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Everything you need to monitor, analyze, and scale your startup - all in one powerful platform.
           </p>
         </div>
@@ -92,12 +92,12 @@ export default function FeaturesSection() {
                 <div className={`w-12 h-12 bg-gradient-to-r ${features[index % features.length].color} rounded-xl flex items-center justify-center shadow-lg`}>
                   <tool.icon className="w-6 h-6 text-white" />
                 </div>
-                <span className="text-xs px-2 py-1 bg-green-500/20 text-green-400 rounded-full">
+                <span className="text-xs px-2 py-1 bg-green-500/20 text-green-500 rounded-full">
                   {tool.usage}
                 </span>
               </div>
-              <h3 className="text-white font-semibold mb-2">{tool.name}</h3>
-              <button className="flex items-center text-gray-300 text-sm group-hover:text-white transition-colors">
+              <h3 className="text-gray-900 font-semibold mb-2">{tool.name}</h3>
+              <button className="flex items-center text-gray-600 text-sm group-hover:text-gray-900 transition-colors">
                 Open Tool
                 <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -113,7 +113,7 @@ export default function FeaturesSection() {
               <div
                 key={feature.id}
                 className={`glass rounded-2xl p-6 card-hover cursor-pointer transition-all duration-300 ${
-                  activeFeature === index ? 'ring-2 ring-white/30 bg-white/20' : ''
+                  activeFeature === index ? 'ring-2 ring-gray-300 bg-gray-50' : ''
                 }`}
                 onClick={() => setActiveFeature(index)}
               >
@@ -122,11 +122,11 @@ export default function FeaturesSection() {
                     <feature.icon className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
-                    <p className="text-gray-300 mb-4">{feature.description}</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                    <p className="text-gray-600 mb-4">{feature.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {feature.stats.map((stat, statIndex) => (
-                        <span key={statIndex} className="text-xs px-3 py-1 glass-dark text-gray-300 rounded-full">
+                        <span key={statIndex} className="text-xs px-3 py-1 glass-dark text-gray-600 rounded-full">
                           {stat}
                         </span>
                       ))}
@@ -140,7 +140,7 @@ export default function FeaturesSection() {
           {/* Interactive Demo Panel */}
           <div className="glass rounded-2xl p-8 card-hover">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-2xl font-bold text-white">Live Demo</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Live Demo</h3>
               <div className="flex gap-2">
                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
@@ -153,25 +153,25 @@ export default function FeaturesSection() {
                 <div className={`w-8 h-8 bg-gradient-to-r ${features[activeFeature].color} rounded-lg flex items-center justify-center`}>
                   {React.createElement(features[activeFeature].icon, { className: "w-4 h-4 text-white" })}
                 </div>
-                <span className="text-white font-medium">{features[activeFeature].title}</span>
+                <span className="text-gray-900 font-medium">{features[activeFeature].title}</span>
               </div>
 
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Performance</span>
-                  <div className="w-24 h-2 bg-gray-700 rounded-full overflow-hidden">
+                  <span className="text-gray-600">Performance</span>
+                  <div className="w-24 h-2 bg-gray-200 rounded-full overflow-hidden">
                     <div className={`h-full bg-gradient-to-r ${features[activeFeature].color} w-4/5`}></div>
                   </div>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Efficiency</span>
-                  <div className="w-24 h-2 bg-gray-700 rounded-full overflow-hidden">
+                  <span className="text-gray-600">Efficiency</span>
+                  <div className="w-24 h-2 bg-gray-200 rounded-full overflow-hidden">
                     <div className={`h-full bg-gradient-to-r ${features[activeFeature].color} w-5/6`}></div>
                   </div>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Integration</span>
-                  <div className="w-24 h-2 bg-gray-700 rounded-full overflow-hidden">
+                  <span className="text-gray-600">Integration</span>
+                  <div className="w-24 h-2 bg-gray-200 rounded-full overflow-hidden">
                     <div className={`h-full bg-gradient-to-r ${features[activeFeature].color} w-full`}></div>
                   </div>
                 </div>

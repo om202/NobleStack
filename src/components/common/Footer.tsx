@@ -42,11 +42,11 @@ export default function Footer() {
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <span className="text-xl font-bold text-white">StartupFlow</span>
-                  <div className="text-xs text-gray-300">AI Platform</div>
+                  <span className="text-xl font-bold text-gray-900">StartupFlow</span>
+                  <div className="text-xs text-gray-600">AI Platform</div>
                 </div>
               </div>
-              <p className="text-gray-300 mb-6 max-w-md">
+              <p className="text-gray-600 mb-6 max-w-md">
                 Empowering entrepreneurs with AI-driven insights and automation tools to build successful startups.
               </p>
               <div className="flex gap-3">
@@ -54,7 +54,7 @@ export default function Footer() {
                   <a
                     key={index}
                     href={social.href}
-                    className="w-10 h-10 glass-dark rounded-xl flex items-center justify-center text-gray-300 hover:text-white hover:scale-110 transition-all duration-300"
+                    className="w-10 h-10 glass-dark rounded-xl flex items-center justify-center text-gray-600 hover:text-gray-900 hover:scale-110 transition-all duration-300"
                   >
                     <social.icon className="w-5 h-5" />
                   </a>
@@ -64,11 +64,11 @@ export default function Footer() {
 
             {/* Product Links */}
             <div>
-              <h3 className="font-semibold text-white mb-4">Product</h3>
+              <h3 className="font-semibold text-gray-900 mb-4">Product</h3>
               <ul className="space-y-3">
                 {footerLinks.product.map((link, index) => (
                   <li key={index}>
-                    <a href={link.href} className="text-gray-300 hover:text-white transition-colors">
+                    <a href={link.href} className="text-gray-600 hover:text-gray-900 transition-colors">
                       {link.name}
                     </a>
                   </li>
@@ -78,11 +78,11 @@ export default function Footer() {
 
             {/* Company Links */}
             <div>
-              <h3 className="font-semibold text-white mb-4">Company</h3>
+              <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
               <ul className="space-y-3">
                 {footerLinks.company.map((link, index) => (
                   <li key={index}>
-                    <a href={link.href} className="text-gray-300 hover:text-white transition-colors">
+                    <a href={link.href} className="text-gray-600 hover:text-gray-900 transition-colors">
                       {link.name}
                     </a>
                   </li>
@@ -92,11 +92,11 @@ export default function Footer() {
 
             {/* Support Links */}
             <div>
-              <h3 className="font-semibold text-white mb-4">Support</h3>
+              <h3 className="font-semibold text-gray-900 mb-4">Support</h3>
               <ul className="space-y-3">
                 {footerLinks.support.map((link, index) => (
                   <li key={index}>
-                    <a href={link.href} className="text-gray-300 hover:text-white transition-colors">
+                    <a href={link.href} className="text-gray-600 hover:text-gray-900 transition-colors">
                       {link.name}
                     </a>
                   </li>
@@ -106,31 +106,31 @@ export default function Footer() {
           </div>
 
           {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-8"></div>
+          <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-8"></div>
 
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-4 text-sm text-gray-300">
-              <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <div className="flex items-center gap-4 text-sm text-gray-600">
+              <a href="#privacy" className="hover:text-gray-900 transition-colors">Privacy Policy</a>
               <span>•</span>
-              <a href="#terms" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href="#terms" className="hover:text-gray-900 transition-colors">Terms of Service</a>
               <span>•</span>
-              <a href="#cookies" className="hover:text-white transition-colors">Cookie Policy</a>
+              <a href="#cookies" className="hover:text-gray-900 transition-colors">Cookie Policy</a>
             </div>
 
-            <div className="flex items-center gap-2 text-sm text-gray-300">
+            <div className="flex items-center gap-2 text-sm text-gray-600">
               <span>© 2024 StartupFlow. Made with</span>
-              <Heart className="w-4 h-4 text-red-400" />
+              <Heart className="w-4 h-4 text-red-500" />
               <span>for entrepreneurs</span>
             </div>
           </div>
 
           {/* App-like Status Bar */}
-          <div className="mt-8 pt-6 border-t border-white/10">
-            <div className="flex items-center justify-between text-xs text-gray-400">
+          <div className="mt-8 pt-6 border-t border-gray-200">
+            <div className="flex items-center justify-between text-xs text-gray-500">
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                   <span>All systems operational</span>
                 </div>
                 <span>•</span>
