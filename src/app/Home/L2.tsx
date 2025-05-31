@@ -21,6 +21,7 @@ import {
 } from "react-icons/si";
 import React from "react";
 import { useState, useEffect } from "react";
+import TechStackCarousel from "../../components/TechStackCarousel";
 
 export default function FeaturesSection() {
   const [activeFeature, setActiveFeature] = useState(0);
@@ -120,29 +121,11 @@ export default function FeaturesSection() {
 
 
         {/* Modern Tech Stack */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
-            Modern Web Technologies We Master
-          </h3>
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 min-h-[180px] flex flex-col justify-center">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-              {webTechStack.map((tech, index) => (
-                <div key={index} className="text-center group cursor-pointer">
-                  <div className="bg-gray-50 rounded-2xl p-6 group-hover:bg-gray-100 transition-colors duration-300">
-                    <div className="flex justify-center mb-3">
-                      <tech.icon 
-                        size={40} 
-                        style={{ color: tech.color }}
-                        className="group-hover:scale-110 transition-transform duration-300"
-                      />
-                    </div>
-                    <h4 className="text-gray-900 font-medium text-sm">{tech.name}</h4>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <TechStackCarousel 
+          technologies={webTechStack}
+          title="Modern Web Technologies We Master"
+          autoScrollInterval={2500}
+        />
 
         {/* Web Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">

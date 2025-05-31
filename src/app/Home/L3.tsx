@@ -12,14 +12,14 @@ import {
 } from "lucide-react";
 import { 
   SiOpenai, 
-  SiPython, 
   SiStreamlit,
   SiHuggingface,
-  SiDocker,
-  SiAmazon
+  SiAmazon,
+  SiGoogle
 } from "react-icons/si";
 import React from "react";
 import { useState, useEffect } from "react";
+import TechStackCarousel from "../../components/TechStackCarousel";
 
 export default function AIServicesSection() {
   const [activeFeature, setActiveFeature] = useState(0);
@@ -80,12 +80,30 @@ export default function AIServicesSection() {
   ];
 
   const aiTechStack = [
-    { name: "OpenAI GPT", icon: SiOpenai, color: "#00A67E" },
-    { name: "Python", icon: SiPython, color: "#3776AB" },
+    { name: "OpenAI", icon: SiOpenai, color: "#00A67E" },
+    { name: "Claude", icon: Bot, color: "#FF6B35" },
+    { name: "Hugging Face Transformers", icon: SiHuggingface, color: "#FFD21E" },
+    { name: "LangChain", icon: Brain, color: "#339933" },
+    { name: "LLamaIndex", icon: Brain, color: "#FF4500" },
+    { name: "Pinecone", icon: Bot, color: "#FF69B4" },
+    { name: "Weaviate", icon: Brain, color: "#00CED1" },
+    { name: "Qdrant", icon: Bot, color: "#8A2BE2" },
+    { name: "Milvus", icon: Brain, color: "#FF1493" },
+    { name: "FAISS", icon: Bot, color: "#4169E1" },
+    { name: "AWS Bedrock", icon: SiAmazon, color: "#FF9900" },
+    { name: "Azure OpenAI Service", icon: Bot, color: "#0078D4" },
+    { name: "Google Vertex AI", icon: SiGoogle, color: "#4285F4" },
+    { name: "LangGraph", icon: Brain, color: "#32CD32" },
+    { name: "MS AutoGen", icon: Bot, color: "#00BCF2" },
+    { name: "CrewAI", icon: Bot, color: "#FF6347" },
+    { name: "Semantic Kernel", icon: Brain, color: "#9370DB" },
+    { name: "SuperAGI", icon: Bot, color: "#FF4500" },
+    { name: "AgentLite", icon: Brain, color: "#20B2AA" },
     { name: "Streamlit", icon: SiStreamlit, color: "#FF4B4B" },
-    { name: "Hugging Face", icon: SiHuggingface, color: "#FFD21E" },
-    { name: "Docker", icon: SiDocker, color: "#2496ED" },
-    { name: "Amazon AWS", icon: SiAmazon, color: "#FF9900" }
+    { name: "Gradio", icon: Bot, color: "#FFA500" },
+    { name: "FastAPI", icon: Zap, color: "#009688" },
+    { name: "n8n", icon: Settings, color: "#EA4B71" },
+    { name: "Zapier", icon: Zap, color: "#FF4A00" }
   ];
 
   return (
@@ -114,30 +132,12 @@ export default function AIServicesSection() {
           </button>
         </div>
 
-        {/* AI Tech Stack */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
-            Cutting-Edge AI Technologies We Master
-          </h3>
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 min-h-[180px] flex flex-col justify-center">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-              {aiTechStack.map((tech, index) => (
-                <div key={index} className="text-center group cursor-pointer">
-                  <div className="bg-gray-50 rounded-2xl p-6 group-hover:bg-gray-100 transition-colors duration-300">
-                    <div className="flex justify-center mb-3">
-                      <tech.icon 
-                        size={40} 
-                        style={{ color: tech.color }}
-                        className="group-hover:scale-110 transition-transform duration-300"
-                      />
-                    </div>
-                    <h4 className="text-gray-900 font-medium text-sm">{tech.name}</h4>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        {/* AI Tech Stack - Auto Scrolling */}
+        <TechStackCarousel 
+          technologies={aiTechStack}
+          title="Cutting-Edge AI Technologies We Master"
+          autoScrollInterval={2000}
+        />
 
         {/* AI Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
