@@ -45,10 +45,10 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900">
-            Building Tomorrow with
+            Where AI Meets
             <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               {" "}
-              AI & Modern Web
+              the Modern Web
             </span>
           </h1>
 
