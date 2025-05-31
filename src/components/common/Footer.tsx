@@ -12,9 +12,9 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-full">
-        <div className="mx-24 mb-24">
+                 <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 mb-12 sm:mb-16 md:mb-24">
           {/* Main Content */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-8 mb-6 sm:mb-8">
             {/* Brand */}
             <div className="flex items-center gap-3">
               <Image
@@ -31,12 +31,12 @@ export default function Footer() {
             </div>
 
             {/* Quick Links */}
-            <div className="flex items-center gap-6">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
               {quickLinks.map((link, index) => (
                 <a
                   key={index}
                   href={link.href}
-                  className="text-gray-600 hover:text-gray-900 transition-colors font-medium"
+                  className="text-gray-600 hover:text-gray-900 transition-colors font-medium text-sm sm:text-base"
                 >
                   {link.name}
                 </a>
@@ -44,7 +44,7 @@ export default function Footer() {
             </div>
 
             {/* Contact */}
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
               <a
                 href="mailto:contact@noblestack.com"
                 className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
@@ -60,13 +60,13 @@ export default function Footer() {
           </div>
 
           {/* Bottom */}
-          <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-gray-200 gap-4">
-            <p className="text-sm text-gray-600">
+          <div className="flex flex-col sm:flex-row justify-between items-center pt-4 sm:pt-6 border-t border-gray-200 gap-3 sm:gap-4">
+            <p className="text-xs sm:text-sm text-gray-600 text-center sm:text-left">
               From your idea to deployed software
             </p>
-            <div className="flex items-center gap-2 text-sm text-gray-600">
+            <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
               <span>© 2024 Noble Stack. Made with</span>
-              <Heart className="w-4 h-4 text-red-500" />
+              <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-red-500" />
               <span>for innovators</span>
             </div>
           </div>
