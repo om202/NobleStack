@@ -9,10 +9,12 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <HeroSection />
-      <FeaturesSection />
-      <FAQSection />
-      <CTASection />
+      <main className="pt-20">
+        <HeroSection />
+        <FeaturesSection />
+        <FAQSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );
