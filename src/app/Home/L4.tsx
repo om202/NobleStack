@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   ChevronDown,
   MessageCircle,
@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 
 export default function FAQSection() {
-  const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activeCategory, setActiveCategory] = useState("technical");
   const [animationKey, setAnimationKey] = useState(0);
 
@@ -28,13 +28,7 @@ export default function FAQSection() {
     setAnimationKey(prev => prev + 1);
   };
 
-  // Auto-cycle through first FAQ when nothing is selected
-  useEffect(() => {
-    if (openFaq === null) {
-      const timer = setTimeout(() => setOpenFaq(0), 3000);
-      return () => clearTimeout(timer);
-    }
-  }, [openFaq]);
+
 
   const categories = [
     {
@@ -48,14 +42,14 @@ export default function FAQSection() {
       id: "business",
       name: "Business",
       icon: TrendingUp,
-      count: "3 FAQs", 
+      count: "5 FAQs", 
       color: "from-green-500 to-emerald-500"
     },
     {
       id: "support",
       name: "Support",
       icon: Shield,
-      count: "2 FAQs",
+      count: "5 FAQs",
       color: "from-purple-500 to-pink-500"
     }
   ];
@@ -119,6 +113,22 @@ export default function FAQSection() {
         metrics: ["Enterprise Security", "Multi-tenant", "Global Scale", "Compliance Ready"],
         complexity: "Enterprise",
         deliveryTime: "4-12 weeks"
+      },
+      {
+        question: "What's your pricing structure and how do you handle project costs?",
+        answer: "We offer flexible pricing models including fixed-price projects, retainer agreements, and equity partnerships for startups. Our transparent pricing includes detailed proposals with milestone-based payments, no hidden costs, and optional maintenance packages post-launch.",
+        icon: TrendingUp,
+        metrics: ["Transparent Pricing", "Milestone Payments", "No Hidden Costs", "Flexible Models"],
+        complexity: "Transparent",
+        deliveryTime: "Custom"
+      },
+      {
+        question: "How do you handle communication and project collaboration?",
+        answer: "We maintain constant communication through dedicated Slack channels, weekly video calls, real-time project dashboards, and collaborative tools like Figma and Linear. You'll have direct access to our development team and regular progress updates with actionable feedback loops.",
+        icon: MessageCircle,
+        metrics: ["Slack Integration", "Weekly Calls", "Live Dashboards", "Direct Access"],
+        complexity: "Collaborative",
+        deliveryTime: "Ongoing"
       }
     ],
     support: [
@@ -137,12 +147,35 @@ export default function FAQSection() {
         metrics: ["Modular Design", "Cloud-Native", "Roadmap Planning", "Seamless Scaling"],
         complexity: "Future-Proof",
         deliveryTime: "Ongoing"
+      },
+      {
+        question: "Do you provide training and onboarding for our team?",
+        answer: "Yes! We provide comprehensive training including technical documentation, video tutorials, hands-on workshops, and knowledge transfer sessions. Our training covers system administration, content management, and best practices for ongoing maintenance.",
+        icon: Users,
+        metrics: ["Video Tutorials", "Hands-on Training", "Documentation", "Knowledge Transfer"],
+        complexity: "Educational",
+        deliveryTime: "1-2 weeks"
+      },
+      {
+        question: "How do you handle migration from existing systems?",
+        answer: "We specialize in seamless migrations with zero downtime strategies, data integrity verification, gradual rollouts, and comprehensive backup systems. Our migration process includes risk assessment, testing environments, and rollback procedures to ensure business continuity.",
+        icon: Database,
+        metrics: ["Zero Downtime", "Data Integrity", "Gradual Rollout", "Backup Systems"],
+        complexity: "Migration Expert",
+        deliveryTime: "2-6 weeks"
+      },
+      {
+        question: "What security measures and compliance standards do you follow?",
+        answer: "We implement enterprise-grade security including HTTPS/TLS encryption, OAuth authentication, role-based access control, and regular security audits. We ensure compliance with GDPR, SOC2, HIPAA where required, and follow OWASP security guidelines.",
+        icon: Shield,
+        metrics: ["Enterprise Security", "GDPR Compliant", "OWASP Guidelines", "Regular Audits"],
+        complexity: "Security-First",
+        deliveryTime: "Built-in"
       }
     ]
   };
 
   const currentFaqs = faqCategories[activeCategory as keyof typeof faqCategories];
-  const totalFaqs = Object.values(faqCategories).flat().length;
 
   return (
     <section id="faq" className="py-20 px-4 bg-gray-50">
@@ -160,28 +193,10 @@ export default function FAQSection() {
               Questions & Answers
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive technical documentation and answers to help you understand our capabilities, 
             methodologies, and how we can solve your specific challenges.
           </p>
-          
-          {/* Stats Bar */}
-          <div className="flex justify-center items-center gap-8 mb-8">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900">{totalFaqs}+</div>
-              <div className="text-sm text-gray-600">Expert Answers</div>
-            </div>
-            <div className="w-px h-8 bg-gray-300"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900">95%</div>
-              <div className="text-sm text-gray-600">Success Rate</div>
-            </div>
-            <div className="w-px h-8 bg-gray-300"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900">24/7</div>
-              <div className="text-sm text-gray-600">Support Available</div>
-            </div>
-          </div>
         </div>
 
         {/* Category Selection */}
@@ -190,11 +205,11 @@ export default function FAQSection() {
             {categories.map((category) => (
               <button
                 key={category.id}
-                onClick={() => {
-                  setActiveCategory(category.id);
-                  setOpenFaq(null);
-                  setAnimationKey(prev => prev + 1);
-                }}
+                                 onClick={() => {
+                   setActiveCategory(category.id);
+                   setOpenFaq(null);
+                   setAnimationKey(prev => prev + 1);
+                 }}
                                  className={`flex items-center gap-3 px-6 py-3 rounded-xl transition-all duration-200 ${
                    activeCategory === category.id
                      ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
@@ -278,10 +293,10 @@ export default function FAQSection() {
         {/* Bottom CTA */}
         <div className="text-center bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Have a specific technical question?
+            Have a specific question?
           </h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Our technical team is ready to discuss your unique requirements and provide 
+            Our team is ready to discuss your unique requirements and provide 
             detailed solutions tailored to your project needs.
           </p>
                      <button className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all duration-200 shadow-lg hover:shadow-xl font-semibold">

@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-full">
-                 <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 mb-12 sm:mb-16 md:mb-24">
+                 <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 mb-32">
           {/* Main Content */}
           <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-8 mb-6 sm:mb-8">
             {/* Brand */}
@@ -66,7 +66,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
               <span>© 2024 Noble Stack. Made with</span>
-              <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-red-500" />
+              <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-red-500 animate-heartbeat fill-current" />
               <span>for innovators</span>
             </div>
           </div>
