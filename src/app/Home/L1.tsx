@@ -1,16 +1,37 @@
 "use client";
 
-import { ArrowRight, Star, CheckCircle, TrendingUp, Users, Zap, Target } from "lucide-react";
+import { ArrowRight, Star, CheckCircle, Code, Bot, Smartphone, Zap } from "lucide-react";
 import { useState } from "react";
 
 export default function HeroSection() {
-  const [activeTab, setActiveTab] = useState("overview");
+  const [activeTab, setActiveTab] = useState("expertise");
 
-  const stats = [
-    { label: "Active Users", value: "12.5k", icon: Users, trend: "+23%" },
-    { label: "Revenue Growth", value: "$45.2k", icon: TrendingUp, trend: "+18%" },
-    { label: "Success Rate", value: "94.8%", icon: Target, trend: "+5%" },
-    { label: "AI Insights", value: "2.1k", icon: Zap, trend: "+31%" }
+  const techStack = [
+    { name: "React.js", icon: "⚛️", category: "Frontend" },
+    { name: "Next.js", icon: "▲", category: "Framework" },
+    { name: "OpenAI", icon: "🤖", category: "AI" },
+    { name: "Langchain", icon: "🦜", category: "AI Tools" }
+  ];
+
+  const services = [
+    { 
+      title: "AI & Automation",
+      description: "Custom AI agents, chatbots, and automation systems",
+      icon: Bot,
+      projects: "25+ Projects"
+    },
+    { 
+      title: "Modern Web Apps", 
+      description: "Lightning-fast, SEO-optimized websites and SaaS platforms",
+      icon: Code,
+      projects: "50+ Websites"
+    },
+    { 
+      title: "Custom Software",
+      description: "Tailored solutions from your idea to deployed software",
+      icon: Smartphone,
+      projects: "30+ Solutions"
+    }
   ];
 
   return (
@@ -20,26 +41,26 @@ export default function HeroSection() {
         <div className="text-center mb-12 animate-fade-in">
           <div className="inline-flex items-center px-4 py-2 rounded-full glass text-gray-800 text-sm font-medium mb-6">
             <Star className="w-4 h-4 mr-2 text-yellow-500" />
-            Now in Public Beta • 10k+ Users
+            Now Accepting New Projects • 100+ Clients Served
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900">
-            Your AI-Powered
+            Building Tomorrow with
             <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               {" "}
-              Startup Dashboard
+              AI & Modern Web
             </span>
           </h1>
 
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Monitor, analyze, and scale your business with real-time insights and automated workflows.
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            At Sigma Forge, we craft intelligent solutions using the latest in AI, LLMs, and cutting-edge web technology like React. We don't just follow trends—we forge them.
           </p>
         </div>
 
-        {/* App-like Navigation Tabs */}
+        {/* Service Navigation Tabs */}
         <div className="flex justify-center mb-8 animate-slide-up">
           <div className="glass rounded-2xl p-2 inline-flex">
-            {["overview", "analytics", "tools"].map((tab) => (
+            {["expertise", "portfolio", "stack"].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
@@ -55,13 +76,13 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Dashboard Content */}
+        {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12 animate-slide-up">
-          {/* Main Dashboard Card */}
+          {/* Main Showcase Card */}
           <div className="lg:col-span-2">
             <div className="glass rounded-2xl p-8 card-hover">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-gray-900">Business Overview</h2>
+                <h2 className="text-2xl font-bold text-gray-900">Our Expertise</h2>
                 <div className="flex gap-2">
                   <button className="w-3 h-3 bg-red-500 rounded-full"></button>
                   <button className="w-3 h-3 bg-yellow-500 rounded-full"></button>
@@ -69,26 +90,26 @@ export default function HeroSection() {
                 </div>
               </div>
               
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                {stats.map((stat, index) => (
+              <div className="grid grid-cols-1 gap-4 mb-6">
+                {services.map((service, index) => (
                   <div key={index} className="glass-dark rounded-xl p-4">
                     <div className="flex items-center justify-between mb-2">
-                      <stat.icon className="w-5 h-5 text-blue-400" />
-                      <span className="text-green-400 text-sm font-medium">{stat.trend}</span>
+                      <service.icon className="w-6 h-6 text-blue-400" />
+                      <span className="text-green-400 text-sm font-medium">{service.projects}</span>
                     </div>
-                    <div className="text-2xl font-bold text-gray-900 mb-1">{stat.value}</div>
-                    <div className="text-gray-600 text-sm">{stat.label}</div>
+                    <div className="text-xl font-bold text-gray-900 mb-1">{service.title}</div>
+                    <div className="text-gray-600 text-sm">{service.description}</div>
                   </div>
                 ))}
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="flex items-center justify-center gap-2 flex-1 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300">
-                  Open Dashboard
+                  Schedule A Call
                   <ArrowRight className="w-5 h-5" />
                 </button>
                 <button className="flex items-center justify-center gap-2 flex-1 py-4 glass text-gray-800 rounded-xl hover:bg-gray-100 transition-all duration-300">
-                  View Demo
+                  View Portfolio
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M8 5v10l7-5z"/>
                   </svg>
@@ -99,60 +120,61 @@ export default function HeroSection() {
 
           {/* Side Panel */}
           <div className="space-y-6">
-            {/* Quick Actions */}
+            {/* Tech Stack */}
             <div className="glass rounded-2xl p-6 card-hover">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Core Tech Stack</h3>
               <div className="space-y-3">
-                <button className="w-full flex items-center gap-3 p-3 glass-dark rounded-xl text-gray-800 hover:bg-gray-100 transition-all duration-300">
-                  <Zap className="w-5 h-5 text-yellow-500" />
-                  Generate Report
-                </button>
-                <button className="w-full flex items-center gap-3 p-3 glass-dark rounded-xl text-gray-800 hover:bg-gray-100 transition-all duration-300">
-                  <TrendingUp className="w-5 h-5 text-green-500" />
-                  Analyze Trends
-                </button>
-                <button className="w-full flex items-center gap-3 p-3 glass-dark rounded-xl text-gray-800 hover:bg-gray-100 transition-all duration-300">
-                  <Target className="w-5 h-5 text-blue-500" />
-                  Set Goals
-                </button>
+                {techStack.map((tech, index) => (
+                  <div key={index} className="flex items-center gap-3 p-3 glass-dark rounded-xl">
+                    <span className="text-2xl">{tech.icon}</span>
+                    <div>
+                      <div className="text-gray-900 font-medium">{tech.name}</div>
+                      <div className="text-gray-600 text-sm">{tech.category}</div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
-            {/* Activity Feed */}
+            {/* Services Overview */}
             <div className="glass rounded-2xl p-6 card-hover">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Recent Activity</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">What We Build</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-sm">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-600">New user signup</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
                   <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-600">Revenue milestone reached</span>
+                  <span className="text-gray-600">AI Chatbots & Automation</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                  <span className="text-gray-600">AI insight generated</span>
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-600">Modern Web Applications</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                  <span className="text-gray-600">Custom Software Solutions</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                  <span className="text-gray-600">SaaS Platforms</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Trust Indicators */}
+        {/* Value Propositions */}
         <div className="text-center animate-fade-in">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-600">
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
-              Free 14-day trial
+              From Your Idea to Deployed Software
             </div>
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
-              No credit card required
+              AI-Powered Solutions
             </div>
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
-              Enterprise security
+              Modern Tech Stack
             </div>
           </div>
         </div>

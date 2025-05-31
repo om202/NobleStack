@@ -1,29 +1,29 @@
 "use client";
 
 import * as Accordion from "@radix-ui/react-accordion";
-import { ChevronDown, MessageCircle, Shield, Zap, Users } from "lucide-react";
+import { ChevronDown, MessageCircle, Shield, Code, Clock } from "lucide-react";
 
 export default function FAQSection() {
   const faqs = [
     {
-      question: "How does the AI-powered insights feature work?",
-      answer: "Our AI analyzes market trends, competitor data, and user feedback in real-time to provide actionable recommendations for your startup. It uses machine learning models trained on thousands of successful business patterns.",
-      icon: Zap
+      question: "What types of AI solutions do you build?",
+      answer: "We specialize in building AI chatbots, automation systems, custom AI agents, and LLM-powered applications. Our solutions use cutting-edge technologies like GPT-4, Claude, Langchain, and CrewAI to create intelligent systems that handle tasks, interact naturally with users, and integrate seamlessly with your existing workflows.",
+      icon: Code
     },
     {
-      question: "Is there a free trial available?",
-      answer: "Yes! We offer a 14-day free trial with full access to all features. No credit card required to start, and you can cancel anytime with no questions asked.",
-      icon: MessageCircle
+      question: "How long does it take to build a custom website?",
+      answer: "Typically, a modern web application takes 2-4 weeks from design to deployment. Simple websites can be delivered in 1-2 weeks, while complex SaaS platforms may take 4-8 weeks. We provide regular updates and involve you throughout the process to ensure we're building exactly what you need.",
+      icon: Clock
     },
     {
-      question: "How secure is my data?",
-      answer: "We use enterprise-grade security with end-to-end encryption, maintain SOC 2 compliance, and store data in secure cloud infrastructure with 99.9% uptime guarantee.",
+      question: "Do you provide ongoing support and maintenance?",
+      answer: "Absolutely! We offer comprehensive post-launch support including bug fixes, feature updates, security patches, and performance monitoring. Our support packages range from basic maintenance to full-scale development partnerships for growing businesses.",
       icon: Shield
     },
     {
-      question: "Can my team collaborate on the platform?",
-      answer: "Absolutely! Our platform supports unlimited team members with real-time collaboration tools, shared workspaces, role-based permissions, and activity tracking.",
-      icon: Users
+      question: "Can you integrate AI into my existing website?",
+      answer: "Yes! We excel at integrating AI features into existing websites and applications. Whether you want to add a chatbot, automate workflows, or implement AI-powered analytics, we can seamlessly integrate these capabilities without disrupting your current operations.",
+      icon: MessageCircle
     }
   ];
 
@@ -42,7 +42,7 @@ export default function FAQSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Everything you need to know about StartupFlow and how it can help your business grow.
+            Everything you need to know about Sigma Forge and how we can help bring your vision to life.
           </p>
         </div>
 
@@ -81,18 +81,18 @@ export default function FAQSection() {
           {/* Additional Support Section */}
           <div className="mt-12 text-center">
             <div className="glass rounded-2xl p-8 card-hover">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Still have questions?</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to start your project?</h3>
               <p className="text-gray-600 mb-6">
-                Our support team is here to help you get the most out of StartupFlow.
+                Let's discuss your vision and see how we can bring it to life with modern tech and AI.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300">
                   <MessageCircle className="w-5 h-5" />
-                  Contact Support
+                  Schedule a Call
                 </button>
                 <button className="flex items-center justify-center gap-2 px-6 py-3 glass text-gray-800 rounded-xl hover:bg-gray-100 transition-all duration-300">
-                  <Users className="w-5 h-5" />
-                  Join Community
+                  <Code className="w-5 h-5" />
+                  View Portfolio
                 </button>
               </div>
             </div>

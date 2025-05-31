@@ -19,8 +19,8 @@ export default function Navigation() {
                     <Zap className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <span className="text-xl font-bold text-gray-900">StartupFlow</span>
-                    <div className="text-xs text-gray-600">AI Platform</div>
+                    <span className="text-xl font-bold text-gray-900">Sigma Forge</span>
+                    <div className="text-xs text-gray-600">AI & Web Development</div>
                   </div>
                 </div>
               </NavigationMenu.Item>
@@ -29,37 +29,37 @@ export default function Navigation() {
               <div className="hidden lg:flex items-center gap-2">
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    href="#dashboard"
+                    href="#services"
                     className="px-4 py-2 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
                   >
-                    Dashboard
+                    Services
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
 
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    href="#features"
+                    href="#portfolio"
                     className="px-4 py-2 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300"
                   >
-                    Features
+                    Portfolio
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
 
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    href="#analytics"
+                    href="#stack"
                     className="px-4 py-2 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300"
                   >
-                    Analytics
+                    Tech Stack
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
 
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    href="#tools"
+                    href="#contact"
                     className="px-4 py-2 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300"
                   >
-                    Tools
+                    Contact
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
               </div>
@@ -78,11 +78,11 @@ export default function Navigation() {
 
                 <button className="hidden sm:flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
                   <User className="w-4 h-4" />
-                  Sign In
+                  Get Quote
                 </button>
 
                 <button className="flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300">
-                  <span>Get Started</span>
+                  <span>Schedule Call</span>
                   <Zap className="w-4 h-4" />
                 </button>
 
@@ -101,17 +101,17 @@ export default function Navigation() {
           {isMenuOpen && (
             <div className="lg:hidden mt-4 pt-4 border-t border-gray-200 animate-slide-up">
               <div className="flex flex-col gap-2">
-                <a href="#dashboard" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
-                  Dashboard
+                <a href="#services" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
+                  Services
                 </a>
-                <a href="#features" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
-                  Features
+                <a href="#portfolio" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
+                  Portfolio
                 </a>
-                <a href="#analytics" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
-                  Analytics
+                <a href="#stack" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
+                  Tech Stack
                 </a>
-                <a href="#tools" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
-                  Tools
+                <a href="#contact" className="px-4 py-3 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300">
+                  Contact
                 </a>
               </div>
             </div>

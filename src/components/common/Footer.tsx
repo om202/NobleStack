@@ -2,23 +2,23 @@ import { Zap, Github, Twitter, Linkedin, Mail, Heart } from "lucide-react";
 
 export default function Footer() {
   const footerLinks = {
-    product: [
-      { name: "Dashboard", href: "#dashboard" },
-      { name: "Analytics", href: "#analytics" },
-      { name: "Tools", href: "#tools" },
-      { name: "API", href: "#api" }
+    services: [
+      { name: "AI Development", href: "#ai" },
+      { name: "Web Development", href: "#web" },
+      { name: "Chatbots", href: "#chatbots" },
+      { name: "Automation", href: "#automation" }
     ],
     company: [
       { name: "About", href: "#about" },
-      { name: "Blog", href: "#blog" },
-      { name: "Careers", href: "#careers" },
-      { name: "Press", href: "#press" }
+      { name: "Portfolio", href: "#portfolio" },
+      { name: "Process", href: "#process" },
+      { name: "Contact", href: "#contact" }
     ],
     support: [
-      { name: "Help Center", href: "#help" },
       { name: "Documentation", href: "#docs" },
-      { name: "Status", href: "#status" },
-      { name: "Contact", href: "#contact" }
+      { name: "Support", href: "#support" },
+      { name: "Consultation", href: "#consultation" },
+      { name: "Maintenance", href: "#maintenance" }
     ]
   };
 
@@ -42,12 +42,12 @@ export default function Footer() {
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <span className="text-xl font-bold text-gray-900">StartupFlow</span>
-                  <div className="text-xs text-gray-600">AI Platform</div>
+                  <span className="text-xl font-bold text-gray-900">Sigma Forge</span>
+                  <div className="text-xs text-gray-600">AI & Web Development</div>
                 </div>
               </div>
               <p className="text-gray-600 mb-6 max-w-md">
-                Empowering entrepreneurs with AI-driven insights and automation tools to build successful startups.
+                Crafting intelligent solutions using the latest in AI, LLMs, and cutting-edge web technology. From your idea to deployed software.
               </p>
               <div className="flex gap-3">
                 {socialLinks.map((social, index) => (
@@ -62,11 +62,11 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Product Links */}
+            {/* Services Links */}
             <div>
-              <h3 className="font-semibold text-gray-900 mb-4">Product</h3>
+              <h3 className="font-semibold text-gray-900 mb-4">Services</h3>
               <ul className="space-y-3">
-                {footerLinks.product.map((link, index) => (
+                {footerLinks.services.map((link, index) => (
                   <li key={index}>
                     <a href={link.href} className="text-gray-600 hover:text-gray-900 transition-colors">
                       {link.name}
@@ -119,9 +119,9 @@ export default function Footer() {
             </div>
 
             <div className="flex items-center gap-2 text-sm text-gray-600">
-              <span>© 2024 StartupFlow. Made with</span>
+              <span>© 2024 Sigma Forge. Made with</span>
               <Heart className="w-4 h-4 text-red-500" />
-              <span>for entrepreneurs</span>
+              <span>for innovators</span>
             </div>
           </div>
 
@@ -131,15 +131,15 @@ export default function Footer() {
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span>All systems operational</span>
+                  <span>Available for new projects</span>
                 </div>
                 <span>•</span>
-                <span>99.9% uptime</span>
+                <span>Fast response time</span>
                 <span>•</span>
-                <span>Last updated: Now</span>
+                <span>Updated: Now</span>
               </div>
               <div className="flex items-center gap-2">
-                <span>v2.1.0</span>
+                <span>Ready to build</span>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import * as Dialog from "@radix-ui/react-dialog";
-import { ArrowRight, Rocket, Star, CheckCircle, X } from "lucide-react";
+import { ArrowRight, Code, Star, CheckCircle, X } from "lucide-react";
 
 export default function CTASection() {
   return (
@@ -11,35 +11,35 @@ export default function CTASection() {
           {/* Header */}
           <div className="mb-8">
             <div className="inline-flex items-center px-4 py-2 rounded-full glass-dark text-gray-800 text-sm font-medium mb-6">
-              <Rocket className="w-4 h-4 mr-2 text-orange-500" />
-              Ready to Launch?
+              <Code className="w-4 h-4 mr-2 text-orange-500" />
+              Ready to Build?
             </div>
             
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 leading-tight">
-              Start Building Your
+              Transform Your Idea Into
               <span className="bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent">
-                {" "}Dream Startup
+                {" "}Digital Reality
               </span>
             </h2>
             
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Join 10,000+ entrepreneurs who are already building successful businesses with our AI-powered platform.
+              Join 100+ businesses who have transformed their operations with our AI-powered solutions and modern web development.
             </p>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="glass-dark rounded-2xl p-6">
-              <div className="text-3xl font-bold text-gray-900 mb-2">10k+</div>
-              <div className="text-gray-600">Active Users</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">100+</div>
+              <div className="text-gray-600">Projects Delivered</div>
             </div>
             <div className="glass-dark rounded-2xl p-6">
-              <div className="text-3xl font-bold text-gray-900 mb-2">$2.5M+</div>
-              <div className="text-gray-600">Revenue Generated</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">50+</div>
+              <div className="text-gray-600">AI Solutions Built</div>
             </div>
             <div className="glass-dark rounded-2xl p-6">
-              <div className="text-3xl font-bold text-gray-900 mb-2">95%</div>
-              <div className="text-gray-600">Success Rate</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">98%</div>
+              <div className="text-gray-600">Client Satisfaction</div>
             </div>
           </div>
 
@@ -48,8 +48,8 @@ export default function CTASection() {
             <Dialog.Root>
               <Dialog.Trigger asChild>
                 <button className="inline-flex items-center justify-center gap-2 text-lg px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300">
-                  <Rocket className="w-5 h-5" />
-                  Start Free Trial
+                  <Code className="w-5 h-5" />
+                  Schedule a Call
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </Dialog.Trigger>
@@ -57,22 +57,32 @@ export default function CTASection() {
                 <Dialog.Overlay className="fixed inset-0 bg-black/50 backdrop-blur-sm" />
                 <Dialog.Content className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 glass rounded-2xl p-8 max-w-md w-[90vw] shadow-xl animate-slide-up">
                   <Dialog.Title className="text-2xl font-bold mb-4 text-gray-900">
-                    Start Your Free Trial
+                    Let's Discuss Your Project
                   </Dialog.Title>
                   <Dialog.Description className="mb-6 text-gray-600">
-                    Get full access to StartupFlow for 14 days. No credit card required.
+                    Tell us about your vision and we'll show you how we can bring it to life.
                   </Dialog.Description>
                   <form className="space-y-4">
+                    <input
+                      type="text"
+                      placeholder="Your name"
+                      className="w-full px-4 py-3 glass-dark border border-gray-300 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
                     <input
                       type="email"
                       placeholder="Enter your email"
                       className="w-full px-4 py-3 glass-dark border border-gray-300 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
+                    <textarea
+                      placeholder="Tell us about your project..."
+                      rows={3}
+                      className="w-full px-4 py-3 glass-dark border border-gray-300 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                    />
                     <button
                       type="submit"
                       className="w-full py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl hover:shadow-lg transition-all duration-300"
                     >
-                      Start Free Trial
+                      Send Message
                     </button>
                   </form>
                   <Dialog.Close asChild>
@@ -86,7 +96,7 @@ export default function CTASection() {
 
             <button className="inline-flex items-center justify-center gap-2 text-lg px-8 py-4 glass text-gray-800 rounded-xl hover:bg-gray-100 transition-all duration-300">
               <Star className="w-5 h-5" />
-              Watch Demo
+              View Portfolio
             </button>
           </div>
 
@@ -94,15 +104,15 @@ export default function CTASection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-600">
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
-              14-day free trial
+              Free consultation
             </div>
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
-              No setup fees
+              Custom solutions
             </div>
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
-              Cancel anytime
+              Ongoing support
             </div>
           </div>
         </div>

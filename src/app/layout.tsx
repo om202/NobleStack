@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "StartupFlow - AI-Powered Startup Platform",
-  description: "The all-in-one platform that helps entrepreneurs validate ideas, build products, and scale businesses with powerful AI-driven insights.",
-  keywords: ["startup", "entrepreneur", "AI", "business", "platform"],
-  authors: [{ name: "StartupFlow Team" }],
+  title: "Sigma Forge - AI & Modern Web Development",
+  description: "Building Tomorrow with AI & Modern Web. We craft intelligent solutions using the latest in AI, LLMs, and cutting-edge web technology like React.",
+  keywords: ["AI development", "web development", "React", "Next.js", "LLMs", "automation", "chatbots", "custom software"],
+  authors: [{ name: "Sigma Forge Team" }],
   viewport: "width=device-width, initial-scale=1",
 };
 
