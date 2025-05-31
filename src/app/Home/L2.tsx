@@ -240,7 +240,7 @@ export default function FeaturesSection() {
 
           {/* Animated Feature Display */}
           <div className="relative overflow-hidden">
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 min-h-[180px] flex flex-col justify-center">
+            <div className="bg-white rounded-2xl p-8 border border-gray-200 min-h-[180px] flex flex-col justify-center">
               <div
                 key={activeFeature}
                 className="flex items-start gap-6 animate-fade-in"

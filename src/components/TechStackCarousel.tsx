@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 interface TechItem {
   name: string;
-  icon: React.ComponentType<any>;
+  icon: React.ComponentType<{ className?: string; style?: React.CSSProperties }>;
   color: string;
 }
 
@@ -14,10 +14,10 @@ interface TechStackCarouselProps {
   autoScrollInterval?: number;
 }
 
-export default function TechStackCarousel({ 
-  technologies, 
-  title, 
-  autoScrollInterval = 2000 
+export default function TechStackCarousel({
+  technologies,
+  title,
+  autoScrollInterval = 2000,
 }: TechStackCarouselProps) {
   const [currentTechIndex, setCurrentTechIndex] = useState(0);
 
@@ -35,21 +35,20 @@ export default function TechStackCarousel({
       <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
         {title}
       </h3>
-      <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-gray-200 min-h-[200px] flex flex-col justify-center overflow-hidden">
+      <div className="relative bg-white rounded-2xl p-6 border border-gray-200 min-h-[140px] flex flex-col justify-center overflow-hidden">
         {/* Currently Featured Technology */}
-        <div className="text-center mb-8">
-          <div 
+        <div className="text-center mb-6">
+          <div
             key={currentTechIndex}
             className="animate-fade-in flex flex-col items-center"
           >
-            <div className="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mb-4 shadow-lg">
+            <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-3 border border-gray-200">
               {React.createElement(technologies[currentTechIndex].icon, { 
-                size: 50, 
                 style: { color: technologies[currentTechIndex].color },
-                className: "transition-transform duration-300 hover:scale-110"
+                className: "w-10 h-10 transition-transform duration-300 hover:scale-110"
               })}
             </div>
-            <h4 className="text-2xl font-bold text-gray-900">
+            <h4 className="text-xl font-bold text-gray-900">
               {technologies[currentTechIndex].name}
             </h4>
           </div>
@@ -60,44 +59,57 @@ export default function TechStackCarousel({
           {(() => {
             // Create a sliding window of 8 technologies around the current one
             const windowSize = Math.min(8, technologies.length);
-            const startIndex = Math.max(0, currentTechIndex - Math.floor(windowSize / 2));
-            const endIndex = Math.min(technologies.length, startIndex + windowSize);
+            const startIndex = Math.max(
+              0,
+              currentTechIndex - Math.floor(windowSize / 2)
+            );
+            const endIndex = Math.min(
+              technologies.length,
+              startIndex + windowSize
+            );
             const adjustedStartIndex = Math.max(0, endIndex - windowSize);
-            
-            return technologies.slice(adjustedStartIndex, endIndex).map((tech, index) => {
-              const actualIndex = adjustedStartIndex + index;
-              return (
-                <div 
-                  key={actualIndex} 
-                  className={`text-center group cursor-pointer transition-all duration-300 ${
-                    actualIndex === currentTechIndex ? 'scale-110 opacity-100' : 'opacity-60 hover:opacity-80'
-                  }`}
-                  onClick={() => setCurrentTechIndex(actualIndex)}
-                >
-                  <div className="bg-gray-50 rounded-xl p-3 group-hover:bg-gray-100 transition-colors duration-300">
-                    <div className="flex justify-center mb-2">
-                      <tech.icon 
-                        size={24} 
-                        style={{ color: tech.color }}
-                        className="group-hover:scale-110 transition-transform duration-300"
-                      />
+
+            return technologies
+              .slice(adjustedStartIndex, endIndex)
+              .map((tech, index) => {
+                const actualIndex = adjustedStartIndex + index;
+                return (
+                  <div
+                    key={actualIndex}
+                    className={`text-center group cursor-pointer transition-all duration-300 ${
+                      actualIndex === currentTechIndex
+                        ? "scale-110 opacity-100"
+                        : "opacity-60 hover:opacity-80"
+                    }`}
+                    onClick={() => setCurrentTechIndex(actualIndex)}
+                  >
+                    <div className="bg-gray-50 rounded-xl p-2 border border-gray-200 group-hover:bg-gray-100 transition-colors duration-300">
+                      <div className="flex justify-center mb-1">
+                        <tech.icon 
+                          style={{ color: tech.color }}
+                          className="w-5 h-5 group-hover:scale-110 transition-transform duration-300"
+                        />
+                      </div>
+                      <h5 className="text-gray-900 font-medium text-xs truncate">
+                        {tech.name}
+                      </h5>
                     </div>
-                    <h5 className="text-gray-900 font-medium text-xs truncate">{tech.name}</h5>
                   </div>
-                </div>
-              );
-            });
+                );
+              });
           })()}
         </div>
 
         {/* Full Width Progress Bar at Bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-200 rounded-b-2xl overflow-hidden">
-          <div 
+          <div
             className="bg-gradient-to-r from-purple-500 to-pink-500 h-full transition-all duration-300 ease-out"
-            style={{ width: `${((currentTechIndex + 1) / technologies.length) * 100}%` }}
+            style={{
+              width: `${((currentTechIndex + 1) / technologies.length) * 100}%`,
+            }}
           />
         </div>
       </div>
     </div>
   );
-} 
+}
