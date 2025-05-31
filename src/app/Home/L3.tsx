@@ -42,7 +42,7 @@ export default function FAQSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Everything you need to know about Sigma Forge and how we can help bring your vision to life.
+            Everything you need to know about Noble Stack and how we can help bring your vision to life.
           </p>
         </div>
 

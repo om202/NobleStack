@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sigma Forge - Where AI Meets the Modern Web",
+  title: "Noble Stack - Where AI Meets the Modern Web",
   description: "Where AI Meets the Modern Web. We craft intelligent solutions using the latest in AI, LLMs, and cutting-edge web technology like React.",
   keywords: ["AI development", "web development", "React", "Next.js", "LLMs", "automation", "chatbots", "custom software"],
-  authors: [{ name: "Sigma Forge Team" }],
+  authors: [{ name: "Noble Stack Team" }],
   viewport: "width=device-width, initial-scale=1",
 };
 

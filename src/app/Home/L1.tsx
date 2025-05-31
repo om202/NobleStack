@@ -2,6 +2,7 @@
 
 import { ArrowRight, Star, CheckCircle, Code, Bot, Smartphone, Zap } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function HeroSection() {
   const [activeTab, setActiveTab] = useState("expertise");
@@ -41,7 +42,18 @@ export default function HeroSection() {
         <div className="text-center mb-12 animate-fade-in">
           <div className="inline-flex items-center px-4 py-2 rounded-full glass text-gray-800 text-sm font-medium mb-6">
             <Star className="w-4 h-4 mr-2 text-yellow-500" />
-            Now Accepting New Projects • 100+ Clients Served
+            Let’s Build Something Brilliant
+          </div>
+
+          {/* Noble Stack Brand */}
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <Image 
+              src="/nbl.png" 
+              alt="Noble Stack Logo" 
+              width={64} 
+              height={64}
+            />
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Noble Stack</h2>
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900">
@@ -53,8 +65,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            At Sigma Forge, we craft intelligent solutions using the latest in AI, LLMs, and cutting-edge web technology like React. We don't just follow trends—we forge them.
-          </p>
+          At Noble Stack, we build intelligent digital products using advanced AI, LLMs, and modern web stacks. Innovation isn’t a goal — it’s our process.          </p>
         </div>
 
         {/* Service Navigation Tabs */}

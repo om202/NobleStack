@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="pt-20">
+      <main className="pb-24">
         <HeroSection />
         <FeaturesSection />
         <FAQSection />
