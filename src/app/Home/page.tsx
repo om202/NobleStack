@@ -2,7 +2,8 @@ import Navigation from "../../components/common/Navigation";
 import Footer from "../../components/common/Footer";
 import HeroSection from "./L1";
 import FeaturesSection from "./L2";
-import FAQSection from "./L3";
+import ServicesSection from "./L3";
+import FAQSection from "./L4";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <main className="pb-24">
         <HeroSection />
         <FeaturesSection />
+        <ServicesSection />
         <FAQSection />
       </main>
       <Footer />
