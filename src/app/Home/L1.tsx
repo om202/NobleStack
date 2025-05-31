@@ -58,11 +58,15 @@ export default function HeroSection() {
             </h2>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-900">
-            Where AI Meets
-            <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-              {" "}
-              the Modern Web
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
+            Where{" "}
+            <span className="ai-meets-text">
+              AI
+            </span>
+            {" "}Meets
+            {" "}the{" "}
+            <span className="modern-web-text">
+              Modern Web
             </span>
           </h1>
 
@@ -136,6 +140,71 @@ export default function HeroSection() {
         </div>
 
       </div>
+      
+      <style jsx>{`
+        @keyframes aiPulse {
+          0% {
+            background-position: 0% 50%;
+          }
+          25% {
+            background-position: 50% 0%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          75% {
+            background-position: 50% 100%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        @keyframes webGlow {
+          0% {
+            background-position: 0% 50%;
+          }
+          25% {
+            background-position: 50% 0%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          75% {
+            background-position: 50% 100%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        .ai-meets-text {
+          background: linear-gradient(135deg, 
+            #1e40af, #3b82f6, #8b5cf6, #a855f7, 
+            #06b6d4, #0891b2, #10b981, #059669, 
+            #1e40af);
+          background-size: 400% 400%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: aiPulse 2s ease-in-out infinite;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+
+        .modern-web-text {
+          background: linear-gradient(45deg, 
+            #d97706, #f59e0b, #f97316, #ea580c, 
+            #dc2626, #b91c1c, #f59e0b, #d97706);
+          background-size: 400% 400%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: webGlow 1.8s ease-in-out infinite;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+      `}</style>
     </section>
   );
 }
