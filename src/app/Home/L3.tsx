@@ -24,15 +24,6 @@ import TechStackCarousel from "../../components/TechStackCarousel";
 export default function AIServicesSection() {
   const [activeFeature, setActiveFeature] = useState(0);
 
-  // Auto-cycle through features every 4 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveFeature((prev) => (prev + 1) % aiFeatures.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const aiFeatures = [
     {
       id: "ai-chatbots",
@@ -71,6 +62,15 @@ export default function AIServicesSection() {
       demo: "Speed Test"
     }
   ];
+
+  // Auto-cycle through features every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveFeature((prev) => (prev + 1) % aiFeatures.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [aiFeatures.length]);
 
   const aiServices = [
     { name: "AI Chatbots & Virtual Assistants", icon: MessageCircle, status: "AI Expert", description: "GPT-4, Claude, Custom Models" },
