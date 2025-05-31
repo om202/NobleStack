@@ -71,6 +71,20 @@ export default function HeroSection() {
             AI, LLMs, and modern web stacks. Innovation isn&apos;t a goal —
             it&apos;s our process.
           </p>
+
+          {/* Call to Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold">
+              Schedule A Call
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </button>
+            <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-white text-gray-800 rounded-xl border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-semibold">
+              View Portfolio
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Value Propositions */}
@@ -121,23 +135,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button className="flex items-center justify-center gap-2 px-8 py-4 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-colors">
-              Schedule A Call
-              <ArrowRight className="w-5 h-5" />
-            </button>
-            <button className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-800 rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors">
-              View Portfolio
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M8 5v10l7-5z" />
-              </svg>
-            </button>
-          </div>
-
-
-        </div>
       </div>
     </section>
   );
