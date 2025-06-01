@@ -13,7 +13,7 @@ import {
   House,
   LucideIcon,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Navigation items configuration
 interface NavItem {
@@ -64,10 +64,40 @@ const navigationItems: NavItem[] = [
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const pathname = usePathname();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Show navbar if at top of page
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      }
+      // Hide when scrolling down, show when scrolling up
+      else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false);
+        setIsMenuOpen(false); // Close mobile menu when hiding
+      } else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Cleanup
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 p-1">
+    <nav className={`fixed bottom-0 left-0 right-0 z-50 p-1 transition-transform duration-300 ease-in-out ${
+      isVisible ? 'translate-y-0' : 'translate-y-full'
+    }`}>
       <div className="flex justify-center p-1">
         <div className="bg-gray-600/10 backdrop-blur-xl rounded-lg p-3 w-fit max-w-[95vw]">
           <NavigationMenu.Root>
