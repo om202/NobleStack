@@ -4,7 +4,8 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  ChevronUp,
+  Menu,
+  X,
   Phone,
   Laptop,
   User,
@@ -13,15 +14,13 @@ import {
   House,
   LucideIcon,
 } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // Navigation items configuration
 interface NavItem {
   href: string;
   label: string;
   icon: LucideIcon;
-  activeColors: string;
-  inactiveColors: string;
 }
 
 const navigationItems: NavItem[] = [
@@ -29,81 +28,41 @@ const navigationItems: NavItem[] = [
     href: "/",
     label: "Home",
     icon: House,
-    activeColors: "bg-gradient-to-br from-blue-600 to-purple-800",
-    inactiveColors: "bg-gradient-to-br from-blue-400 to-purple-600",
   },
   {
     href: "/About",
     label: "About",
     icon: User,
-    activeColors: "bg-gradient-to-br from-teal-600 to-cyan-800",
-    inactiveColors: "bg-gradient-to-br from-teal-400 to-cyan-600",
   },
   {
     href: "/Services",
     label: "Services",
     icon: Laptop,
-    activeColors: "bg-gradient-to-br from-emerald-600 to-green-800",
-    inactiveColors: "bg-gradient-to-br from-emerald-400 to-green-600",
   },
   {
     href: "/Career",
     label: "Career",
     icon: Users,
-    activeColors: "bg-gradient-to-br from-orange-600 to-red-800",
-    inactiveColors: "bg-gradient-to-br from-orange-400 to-red-600",
   },
   {
     href: "/Contact",
     label: "Contact",
     icon: Mail,
-    activeColors: "bg-gradient-to-br from-purple-600 to-pink-800",
-    inactiveColors: "bg-gradient-to-br from-purple-400 to-pink-600",
   },
 ];
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const pathname = usePathname();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      
-      // Show navbar if at top of page
-      if (currentScrollY < 10) {
-        setIsVisible(true);
-      }
-      // Hide when scrolling down, show when scrolling up
-      else if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setIsVisible(false);
-        setIsMenuOpen(false); // Close mobile menu when hiding
-      } else if (currentScrollY < lastScrollY) {
-        setIsVisible(true);
-      }
-      
-      setLastScrollY(currentScrollY);
-    };
-
-    // Add scroll listener
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    
-    // Cleanup
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
-
   return (
-    <nav className={`fixed bottom-0 left-0 right-0 z-50 p-1 transition-transform duration-300 ease-in-out ${
-      isVisible ? 'translate-y-0' : 'translate-y-full'
-    }`}>
-      <div className="flex justify-center p-1">
-        <div className="bg-gray-600/10 backdrop-blur-xl rounded-lg p-3 w-fit max-w-[95vw]">
-          <NavigationMenu.Root>
-            <NavigationMenu.List className="flex items-center justify-center">
-              {/* Main Navigation Items */}
-              <div className={`items-center gap-4 sm:gap-5 ${isMenuOpen ? 'hidden' : 'flex lg:flex'}`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-2xl border-b border-gray-300/50 backdrop-saturate-150">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Desktop Navigation - Left Side */}
+          <div className="hidden md:block">
+            <NavigationMenu.Root>
+              <NavigationMenu.List className="flex items-center space-x-8">
                 {navigationItems.map((item) => {
                   const Icon = item.icon;
                   const isActive = pathname === item.href;
@@ -111,95 +70,81 @@ export default function Navigation() {
                   return (
                     <NavigationMenu.Item key={item.href}>
                       <NavigationMenu.Link asChild>
-                        <Link href={item.href} className="flex flex-col items-center gap-1 group cursor-pointer relative">
-                          <div className={`w-11 h-11 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
+                        <Link 
+                          href={item.href} 
+                          className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                             isActive 
-                              ? `${item.activeColors} shadow-md` 
-                              : item.inactiveColors
-                          }`}>
-                            <Icon className="w-6 h-6 text-white drop-shadow-sm" />
-                          </div>
-                          <span className={`text-sm transition-colors duration-300 font-medium ${
-                            isActive ? 'text-gray-600' : 'text-gray-700'
-                          }`}>
-                            {item.label}
-                          </span>
-                          {isActive && (
-                            <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-gray-400 rounded-full" />
-                          )}
+                              ? 'bg-blue-100/80 text-blue-700' 
+                              : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100/50'
+                          }`}
+                        >
+                          <Icon className="w-4 h-4" />
+                          {item.label}
                         </Link>
                       </NavigationMenu.Link>
                     </NavigationMenu.Item>
                   );
                 })}
-              </div>
+              </NavigationMenu.List>
+            </NavigationMenu.Root>
+          </div>
 
-              {/* Call Now Button */}
-              <div className="hidden lg:flex ml-4 pl-4 border-l border-gray-500/25">
-                <button className="flex flex-col items-center gap-1 group cursor-pointer">
-                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center transition-all duration-300 bg-blue-500">
-                    <Phone className="w-6 h-6 text-white drop-shadow-sm" />
-                  </div>
-                  <span className="text-sm transition-colors duration-300 font-medium text-gray-700">
-                    Call now
-                  </span>
-                </button>
-              </div>
+          {/* Call Now Button - Right Side */}
+          <div className="hidden md:flex">
+            <button className="flex items-center gap-2 px-6 py-3 bg-blue-100/80 text-blue-700 rounded-lg hover:bg-blue-200/80 transition-colors duration-200 text-base font-semibold">
+              <Phone className="w-5 h-5" />
+              Call Now
+            </button>
+          </div>
 
-              {/* Mobile Menu Button */}
-              <div
-                className="lg:hidden ml-4 sm:ml-5 flex items-center justify-center group cursor-pointer"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-              >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center group-hover:scale-110 transition-all duration-300">
-                  <ChevronUp className={`w-5 h-5 sm:w-6 sm:h-6 text-gray-600 group-hover:text-black transition-all duration-300 ${isMenuOpen ? 'rotate-180' : ''}`} />
-                </div>
-              </div>
-            </NavigationMenu.List>
-          </NavigationMenu.Root>
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100/50 transition-colors duration-200"
+            >
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
+          </div>
+        </div>
 
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <div className="lg:hidden mt-3 pt-3 border-t border-gray-500/25">
-              <div className="grid grid-cols-3 gap-3 mb-3">
-                {navigationItems.map((item) => {
-                  const Icon = item.icon;
-                  const isActive = pathname === item.href;
-                  
-                  return (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="flex flex-col items-center gap-1 p-1 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group relative"
-                    >
-                      <div className={`w-15 h-15 rounded-lg flex items-center justify-center transition-all duration-300 ${
-                        isActive 
-                          ? `${item.activeColors} shadow-md` 
-                          : item.inactiveColors
-                      }`}>
-                        <Icon className="w-7 h-7 text-white drop-shadow-sm" />
-                      </div>
-                      <span className={`text-base transition-colors duration-300 font-medium ${
-                        isActive ? 'text-gray-600' : 'text-gray-700'
-                      }`}>
-                        {item.label}
-                      </span>
-                      {isActive && (
-                        <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-gray-400 rounded-full" />
-                      )}
-                    </Link>
-                  );
-                })}
-              </div>
-
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/90 backdrop-blur-xl border-t border-white/20">
+              {navigationItems.map((item) => {
+                const Icon = item.icon;
+                const isActive = pathname === item.href;
+                
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`flex items-center gap-3 px-3 py-2 rounded-lg text-base font-medium transition-colors duration-200 ${
+                      isActive 
+                        ? 'bg-blue-100/80 text-blue-700' 
+                        : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100/50'
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <Icon className="w-5 h-5" />
+                    {item.label}
+                  </Link>
+                );
+              })}
+              
               {/* Mobile Call Button */}
-              <button className="w-full flex items-center justify-center gap-3 px-3 py-3 bg-blue-500 text-white rounded-lg hover:scale-105 transition-all duration-300 font-medium text-base">
+              <button className="w-full flex items-center justify-center gap-2 mt-4 px-6 py-3 bg-blue-100/80 text-blue-700 rounded-lg hover:bg-blue-200/80 transition-colors duration-200 text-base font-semibold">
                 <Phone className="w-5 h-5" />
-                Call now!
+                Call Now
               </button>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </nav>
   );
