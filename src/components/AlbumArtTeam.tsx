@@ -43,24 +43,19 @@ export default function AlbumArtTeam({
             
             let transform = '';
             let zIndex = 0;
-            let opacity = 0.4;
             
             if (isCenter) {
-              transform = 'translateX(0) rotateY(0deg) scale(1)';
+              transform = 'translateX(0) scale(1)';
               zIndex = 3;
-              opacity = 1;
             } else if (isLeft) {
-              transform = 'translateX(-100px) rotateY(15deg) scale(0.85)';
+              transform = 'translateX(-120px) scale(0.9)';
               zIndex = 2;
-              opacity = 0.8;
             } else if (isRight) {
-              transform = 'translateX(100px) rotateY(-15deg) scale(0.85)';
+              transform = 'translateX(120px) scale(0.9)';
               zIndex = 2;
-              opacity = 0.8;
             } else {
-              transform = `translateX(${offset > teamMembers.length / 2 ? -150 : 150}px) rotateY(${offset > teamMembers.length / 2 ? 25 : -25}deg) scale(0.7)`;
+              transform = `translateX(${offset > teamMembers.length / 2 ? -200 : 200}px) scale(0.8)`;
               zIndex = 1;
-              opacity = 0.4;
             }
 
             return (
@@ -70,11 +65,10 @@ export default function AlbumArtTeam({
               style={{
                 transform,
                 zIndex,
-                opacity,
               }}
             >
               {/* Main Card */}
-              <div className="relative w-64 h-83 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+              <div className="relative w-50 h-83 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
                 {/* Image Section */}
                 <div className="h-48 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center p-6">
                   <div className="w-32 h-32 rounded-2xl overflow-hidden shadow-lg">
