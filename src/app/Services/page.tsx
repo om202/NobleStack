@@ -14,6 +14,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import AlbumArtServices from "../../components/AlbumArtServices";
+import TechTicker from "../../components/TechTicker";
 
 export default function Services() {
   const services = [
@@ -84,6 +85,62 @@ export default function Services() {
     }
   ];
 
+  // All technologies for the ticker
+  const allTechnologies = [
+    // Frontend
+    { name: "React.js", color: "from-blue-400 to-blue-600" },
+    { name: "Next.js", color: "from-gray-700 to-gray-900" },
+    { name: "TypeScript", color: "from-blue-500 to-blue-700" },
+    { name: "Tailwind CSS", color: "from-cyan-400 to-cyan-600" },
+    { name: "Framer Motion", color: "from-purple-500 to-purple-700" },
+    { name: "Radix UI", color: "from-indigo-500 to-indigo-700" },
+    { name: "ShadCN UI", color: "from-gray-600 to-gray-800" },
+    { name: "Redux", color: "from-purple-600 to-purple-800" },
+    { name: "Zustand", color: "from-orange-500 to-orange-700" },
+    { name: "SWR", color: "from-blue-600 to-blue-800" },
+    { name: "Zod", color: "from-blue-700 to-blue-900" },
+    { name: "Figma", color: "from-pink-500 to-pink-700" },
+    // Backend
+    { name: "Node.js", color: "from-green-500 to-green-700" },
+    { name: "Express.js", color: "from-gray-600 to-gray-800" },
+    { name: "NestJS", color: "from-red-500 to-red-700" },
+    { name: "GraphQL", color: "from-pink-500 to-pink-700" },
+    { name: "Prisma", color: "from-gray-700 to-gray-900" },
+    { name: "PostgreSQL", color: "from-blue-600 to-blue-800" },
+    { name: "MongoDB", color: "from-green-600 to-green-800" },
+    { name: "Docker", color: "from-blue-500 to-blue-700" },
+    { name: "AWS", color: "from-orange-500 to-orange-700" },
+    { name: "Vercel", color: "from-gray-800 to-black" },
+    { name: "Firebase", color: "from-yellow-500 to-orange-600" },
+    { name: "Clerk", color: "from-purple-600 to-purple-800" },
+    // AI & ML
+    { name: "OpenAI", color: "from-emerald-500 to-emerald-700" },
+    { name: "Claude", color: "from-orange-500 to-orange-700" },
+    { name: "LangChain", color: "from-green-600 to-green-800" },
+    { name: "Hugging Face", color: "from-yellow-500 to-yellow-700" },
+    { name: "Pinecone", color: "from-pink-500 to-pink-700" },
+    { name: "Weaviate", color: "from-cyan-500 to-cyan-700" },
+    { name: "AWS Bedrock", color: "from-orange-600 to-orange-800" },
+    { name: "Vertex AI", color: "from-blue-600 to-blue-800" },
+    { name: "LangGraph", color: "from-green-500 to-green-700" },
+    { name: "CrewAI", color: "from-red-500 to-red-700" },
+    { name: "Streamlit", color: "from-red-400 to-red-600" },
+    { name: "FastAPI", color: "from-teal-500 to-teal-700" },
+    // Automation
+    { name: "Zapier", color: "from-orange-500 to-red-600" },
+    { name: "n8n", color: "from-red-500 to-pink-600" },
+    { name: "Make", color: "from-purple-500 to-purple-700" },
+    { name: "GitHub Actions", color: "from-gray-700 to-gray-900" },
+    { name: "GitLab CI", color: "from-orange-600 to-orange-800" },
+    { name: "Jest", color: "from-red-600 to-red-800" },
+    { name: "Prettier", color: "from-yellow-500 to-yellow-700" },
+    { name: "ESLint", color: "from-purple-600 to-purple-800" },
+    { name: "Datadog", color: "from-purple-700 to-purple-900" },
+    { name: "Stripe", color: "from-blue-600 to-purple-700" },
+    { name: "Slack API", color: "from-green-500 to-green-700" },
+    { name: "Gmail API", color: "from-red-500 to-red-700" }
+  ];
+
   return (
     <>
       {/* Hero Section */}
@@ -131,54 +188,93 @@ export default function Services() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Mobile Layout - Vertical Flow */}
+            <div className="block lg:hidden space-y-8">
               {process.map((step, index) => (
-                <div key={index} className="text-center group">
+                <div key={index} className="flex flex-col items-center">
                   <div className="relative mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <div className="w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center shadow-md">
                       <span className="text-2xl font-bold text-white">{step.step}</span>
                     </div>
-                    {index < process.length - 1 && (
-                      <div className="hidden lg:block absolute top-8 left-full w-full">
-                        <ArrowRight className="w-6 h-6 text-gray-300 mx-auto" />
-                      </div>
-                    )}
                   </div>
                   
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 text-center">
                     {step.title}
                   </h3>
                   
-                  <p className="text-base text-gray-600">
+                  <p className="text-base text-gray-600 text-center max-w-xs">
                     {step.description}
                   </p>
+
+                  {/* Vertical Arrow for Mobile */}
+                  {index < process.length - 1 && (
+                    <div className="mt-8 mb-4">
+                      <div className="bg-blue-600 rounded-full p-2">
+                        <ArrowRight className="w-5 h-5 text-white transform rotate-90" />
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
+            </div>
+
+            {/* Desktop Layout - Horizontal Flow */}
+            <div className="hidden lg:block">
+              <div className="grid grid-cols-4 gap-12">
+                {process.map((step, index) => (
+                  <div key={index} className="text-center relative">
+                    <div className="relative mb-6">
+                      <div className="w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                        <span className="text-2xl font-bold text-white">{step.step}</span>
+                      </div>
+                      
+                      {/* Connecting Arrow */}
+                      {index < process.length - 1 && (
+                        <div className="absolute top-1/2 left-full transform -translate-y-1/2 w-12 flex items-center justify-center">
+                          <div className="bg-blue-600 rounded-full p-2">
+                            <ArrowRight className="w-5 h-5 text-white" />
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                    
+                    <h3 className="text-lg font-bold text-gray-900 mb-3">
+                      {step.title}
+                    </h3>
+                    
+                    <p className="text-base text-gray-600">
+                      {step.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Technology Stack */}
-          <div className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 text-white mb-16">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
                 Technology Stack
               </h2>
-              <p className="text-base text-gray-300 max-w-2xl mx-auto">
-                We work with the latest and most reliable technologies to build robust solutions.
+              <p className="text-base text-gray-600 max-w-2xl mx-auto mb-8">
+                We work with the latest and most reliable technologies to build robust, scalable solutions.
+                Watch our expertise in action — technologies refresh dynamically to showcase our full stack.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-              {["React", "Next.js", "TypeScript", "Node.js", "Python", "AWS", "Docker", "MongoDB", "PostgreSQL", "TensorFlow", "PyTorch", "Figma"].map((tech, index) => (
-                <div
-                  key={index}
-                  className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center hover:bg-white/20 transition-all duration-300 group"
-                >
-                  <span className="text-sm font-semibold group-hover:text-blue-300 transition-colors duration-300">
-                    {tech}
-                  </span>
-                </div>
-              ))}
+            {/* Animated Technology Ticker */}
+            <TechTicker 
+              technologies={allTechnologies} 
+              visibleCount={12} 
+              interval={1200}
+              className="py-8"
+            />
+            
+            <div className="text-center mt-8">
+              <p className="text-sm text-gray-500">
+                {allTechnologies.length}+ Technologies in our arsenal • Always evolving
+              </p>
             </div>
           </div>
 
