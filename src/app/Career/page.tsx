@@ -3,13 +3,7 @@
 import Navigation from "../../components/common/Navigation";
 import Footer from "../../components/common/Footer";
 import {
-  ArrowRight,
   Send,
-  Briefcase,
-  Users,
-  MapPin,
-  Clock,
-  DollarSign,
   Mail,
   Phone,
   Upload,
@@ -72,10 +66,10 @@ export default function Career() {
                 Join Our Team
               </h1>
 
-              <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                Join our team of passionate developers and AI specialists. 
-                We&apos;re building the next generation of intelligent digital products.
-              </p>
+                              <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                  Join our team of passionate developers and AI specialists. 
+                  We&apos;re building the next generation of intelligent digital products.
+                </p>
             </div>
 
             {/* Application Form */}
@@ -216,7 +210,7 @@ export default function Career() {
                     <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </button>
                   <p className="text-sm text-gray-500 mt-3">
-                    We'll review your application and get back to you within 48 hours
+                    We&apos;ll review your application and get back to you within 48 hours
                   </p>
                 </div>
               </form>
