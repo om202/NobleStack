@@ -8,10 +8,10 @@ import {
   Database,
   Shield,
   Zap,
-  Users,
   CheckCircle,
   ArrowRight,
   Star,
+  Rocket,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -122,11 +122,11 @@ export default function Services() {
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-gray-900">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
               Our Services
             </h1>
 
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
               We deliver cutting-edge digital solutions that transform ideas into reality. 
               From AI-powered applications to robust web platforms, we&apos;ve got you covered.
             </p>
@@ -153,7 +153,7 @@ export default function Services() {
                     {service.title}
                   </h3>
                   
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-base text-gray-600 mb-6">
                     {service.description}
                   </p>
                   
@@ -173,10 +173,10 @@ export default function Services() {
           {/* Process Section */}
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-16">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Our Process
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <p className="text-base text-gray-600 max-w-2xl mx-auto">
                 We follow a proven methodology to ensure your project is delivered on time, 
                 within budget, and exceeds your expectations.
               </p>
@@ -200,7 +200,7 @@ export default function Services() {
                     {step.title}
                   </h3>
                   
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-base text-gray-600">
                     {step.description}
                   </p>
                 </div>
@@ -211,10 +211,10 @@ export default function Services() {
           {/* Technology Stack */}
           <div className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 text-white mb-16">
             <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Technology Stack
               </h2>
-              <p className="text-gray-300 max-w-2xl mx-auto">
+              <p className="text-base text-gray-300 max-w-2xl mx-auto">
                 We work with the latest and most reliable technologies to build robust solutions.
               </p>
             </div>
@@ -234,7 +234,7 @@ export default function Services() {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 text-center">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
@@ -243,10 +243,10 @@ export default function Services() {
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
             </div>
             
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
               Ready to Start Your Project?
             </h3>
-            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
               Let&apos;s discuss your requirements and create a solution that drives your business forward. 
               Our team is ready to bring your vision to life.
             </p>
@@ -256,7 +256,7 @@ export default function Services() {
                 href="/Contact"
                 className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
               >
-                <Users className="w-5 h-5" />
+                <Rocket className="w-5 h-5" />
                 Get Started Today
               </Link>
               
