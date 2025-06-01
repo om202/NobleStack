@@ -1,19 +1,21 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Noble Stack - Get in Touch for AI & Web Development Projects",
-  description: "Contact Noble Stack for your AI development, web development, and automation projects. Get a free consultation and transform your business with intelligent digital solutions. Quick response guaranteed.",
+  title: "Contact Noble Stack - AI & Web Development Company in Kathmandu, Nepal",
+  description: "Contact Noble Stack in Kathmandu for your AI development, web development, and automation projects in Nepal. Get a free consultation and transform your business with intelligent digital solutions. Serving South Asia.",
   keywords: [
-    "contact Noble Stack",
-    "AI development consultation",
-    "web development quote",
-    "software development contact",
-    "Noble Stack phone",
-    "Noble Stack email",
-    "get quote AI development",
-    "free consultation web development",
-    "contact form",
-    "business inquiry"
+    "contact Noble Stack Nepal",
+    "AI development consultation Nepal",
+    "web development quote Kathmandu",
+    "software development contact Nepal",
+    "Noble Stack phone Nepal",
+    "Noble Stack email Kathmandu",
+    "get quote AI development Nepal",
+    "free consultation web development Nepal",
+    "contact form Nepal",
+    "business inquiry Nepal",
+    "tech company contact Kathmandu",
+    "South Asia development consultation"
   ],
   authors: [{ name: "Noble Stack Team" }],
   robots: {
@@ -28,8 +30,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact Noble Stack - Get in Touch for AI & Web Development",
-    description: "Ready to transform your business with AI and web development? Contact Noble Stack for a free consultation. Expert team ready to bring your ideas to life.",
+    title: "Contact Noble Stack - AI & Web Development Company in Kathmandu, Nepal",
+    description: "Ready to transform your business with AI and web development? Contact Noble Stack in Kathmandu for a free consultation. Expert team serving Nepal and South Asia.",
     url: "https://noblestack.io/Contact",
     siteName: "Noble Stack",
     images: [
@@ -37,7 +39,7 @@ export const metadata: Metadata = {
         url: "https://noblestack.io/nbl.png",
         width: 1200,
         height: 630,
-        alt: "Contact Noble Stack - AI & Web Development",
+        alt: "Contact Noble Stack - AI & Web Development in Nepal",
       },
     ],
     locale: "en_US",
@@ -45,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Noble Stack - Get in Touch for AI & Web Development",
-    description: "Ready to transform your business with AI and web development? Contact Noble Stack for a free consultation. Expert team ready to bring your ideas to life.",
+    title: "Contact Noble Stack - AI & Web Development Company in Kathmandu, Nepal",
+    description: "Ready to transform your business with AI and web development? Contact Noble Stack in Kathmandu for a free consultation serving Nepal and South Asia.",
     images: ["https://noblestack.io/nbl.png"],
   },
   alternates: {
@@ -74,11 +76,11 @@ export default function ContactLayout({
             contactPoint: [
               {
                 "@type": "ContactPoint",
-                telephone: "+1-555-123-4567",
+                telephone: "+977-1-XXXXXXX",
                 email: "hello@noblestack.io",
                 contactType: "Customer Service",
-                areaServed: "Worldwide",
-                availableLanguage: ["English"],
+                areaServed: ["Nepal", "South Asia"],
+                availableLanguage: ["English", "Nepali"],
                 hoursAvailable: {
                   "@type": "OpeningHoursSpecification",
                   dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -92,20 +94,29 @@ export default function ContactLayout({
                 "@type": "ContactPoint", 
                 contactType: "Technical Support",
                 email: "support@noblestack.io",
-                areaServed: "Worldwide",
-                availableLanguage: ["English"]
+                areaServed: ["Nepal", "South Asia"],
+                availableLanguage: ["English", "Nepali"]
               },
               {
                 "@type": "ContactPoint",
                 contactType: "Sales",
                 email: "sales@noblestack.io", 
-                areaServed: "Worldwide",
-                availableLanguage: ["English"]
+                areaServed: ["Nepal", "South Asia"],
+                availableLanguage: ["English", "Nepali"]
               }
             ],
             address: {
               "@type": "PostalAddress",
-              addressCountry: "US"
+              streetAddress: "Kathmandu",
+              addressLocality: "Kathmandu",
+              addressRegion: "Bagmati Province",
+              postalCode: "44600",
+              addressCountry: "NP"
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: "27.7172",
+              longitude: "85.3240"
             },
             sameAs: [
               "https://www.linkedin.com/company/noble-stack",
@@ -121,16 +132,25 @@ export default function ContactLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+            "@type": "LocalBusiness",
             name: "Noble Stack",
             image: "https://noblestack.io/nbl.png",
             "@id": "https://noblestack.io/Contact",
             url: "https://noblestack.io",
-            telephone: "+1-555-123-4567",
+            telephone: "+977-1-XXXXXXX",
             email: "hello@noblestack.io",
             address: {
               "@type": "PostalAddress",
-              addressCountry: "US"
+              streetAddress: "Kathmandu",
+              addressLocality: "Kathmandu",
+              addressRegion: "Bagmati Province",
+              postalCode: "44600",
+              addressCountry: "NP"
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: "27.7172",
+              longitude: "85.3240"
             },
             openingHoursSpecification: {
               "@type": "OpeningHoursSpecification",
@@ -138,14 +158,30 @@ export default function ContactLayout({
               opens: "09:00",
               closes: "17:00"
             },
+            areaServed: [
+              {
+                "@type": "Country",
+                name: "Nepal"
+              },
+              {
+                "@type": "Place",
+                name: "South Asia"
+              }
+            ],
             sameAs: [
               "https://www.linkedin.com/company/noble-stack",
               "https://github.com/noble-stack"
             ],
-            priceRange: "$$$$",
+            priceRange: "$$",
+            currenciesAccepted: ["NPR", "USD", "INR"],
             serviceArea: {
-              "@type": "Place",
-              name: "Worldwide"
+              "@type": "GeoCircle",
+              geoMidpoint: {
+                "@type": "GeoCoordinates",
+                latitude: "27.7172",
+                longitude: "85.3240"
+              },
+              geoRadius: "1000000"
             }
           })
         }}

@@ -1,19 +1,23 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Noble Stack - AI & Web Development Company | Our Story & Team",
-  description: "Learn about Noble Stack's journey from a small development team to a leading AI and web development company. Meet our expert team and discover our mission to transform businesses with intelligent digital solutions.",
+  title: "About Noble Stack - Leading AI & Web Development Company in Kathmandu, Nepal",
+  description: "Founded in 2019 in Kathmandu, Nepal, Noble Stack is South Asia's premier AI and web development company. Meet our expert team delivering cutting-edge solutions across Nepal and neighboring countries.",
   keywords: [
-    "Noble Stack company",
-    "AI development team",
-    "web development company",
-    "software development agency",
-    "AI experts",
-    "React developers",
-    "machine learning company",
-    "technology consultants",
-    "digital transformation",
-    "startup development"
+    "Noble Stack Nepal",
+    "AI development team Nepal",
+    "web development company Kathmandu",
+    "software development agency Nepal",
+    "AI experts Nepal",
+    "React developers Kathmandu",
+    "machine learning company Nepal",
+    "technology consultants Nepal",
+    "digital transformation Nepal",
+    "startup development Nepal",
+    "tech company Kathmandu",
+    "South Asia AI development",
+    "Nepal software solutions",
+    "Kathmandu tech startup"
   ],
   authors: [{ name: "Noble Stack Team" }],
   robots: {
@@ -28,8 +32,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "About Noble Stack - AI & Web Development Company",
-    description: "Founded in 2019, Noble Stack is a passionate team of developers, designers, and innovators dedicated to transforming ideas into intelligent digital solutions.",
+    title: "About Noble Stack - AI & Web Development Company in Kathmandu, Nepal",
+    description: "Founded in 2019 in Kathmandu, Noble Stack is a passionate team of developers, designers, and innovators serving Nepal and South Asia with intelligent digital solutions.",
     url: "https://noblestack.io/About",
     siteName: "Noble Stack",
     images: [
@@ -37,7 +41,7 @@ export const metadata: Metadata = {
         url: "https://noblestack.io/nbl.png",
         width: 1200,
         height: 630,
-        alt: "Noble Stack - AI & Web Development Company",
+        alt: "Noble Stack - AI & Web Development Company in Kathmandu, Nepal",
       },
     ],
     locale: "en_US",
@@ -45,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Noble Stack - AI & Web Development Company",
-    description: "Founded in 2019, Noble Stack is a passionate team of developers, designers, and innovators dedicated to transforming ideas into intelligent digital solutions.",
+    title: "About Noble Stack - AI & Web Development Company in Kathmandu, Nepal",
+    description: "Founded in 2019 in Kathmandu, Noble Stack serves Nepal and South Asia with cutting-edge AI development and intelligent digital solutions.",
     images: ["https://noblestack.io/nbl.png"],
   },
   alternates: {
@@ -72,14 +76,47 @@ export default function AboutLayout({
             alternateName: "Noble Stack LLC",
             url: "https://noblestack.io",
             logo: "https://noblestack.io/nbl.png",
-            description: "Noble Stack is a technology company specializing in AI development, modern web applications, and intelligent automation solutions.",
+            description: "Noble Stack is a leading technology company based in Kathmandu, Nepal, specializing in AI development, modern web applications, and intelligent automation solutions for clients across Nepal and South Asia.",
             foundingDate: "2019",
             email: "hello@noblestack.io",
-            telephone: "+1-555-123-4567",
+            telephone: "+977-1-XXXXXXX",
             address: {
               "@type": "PostalAddress",
-              addressCountry: "US"
+              streetAddress: "Kathmandu",
+              addressLocality: "Kathmandu",
+              addressRegion: "Bagmati Province",
+              postalCode: "44600",
+              addressCountry: "NP"
             },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: "27.7172",
+              longitude: "85.3240"
+            },
+            areaServed: [
+              {
+                "@type": "Country",
+                name: "Nepal"
+              },
+              {
+                "@type": "Place",
+                name: "South Asia"
+              },
+              {
+                "@type": "City",
+                name: "Kathmandu"
+              },
+              {
+                "@type": "Country",
+                name: "India"
+              },
+              {
+                "@type": "Country",
+                name: "Bangladesh"
+              }
+            ],
+            priceRange: "$$",
+            currenciesAccepted: ["NPR", "USD", "INR"],
             sameAs: [
               "https://www.linkedin.com/company/noble-stack",
               "https://github.com/noble-stack"

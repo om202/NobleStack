@@ -11,4 +11,7 @@ Disallow: /node_modules/
 Sitemap: https://www.noblestack.io/sitemap.xml
 
 # Crawl delay (optional - 1 second)
-Crawl-delay: 1 
+Crawl-delay: 1
+
+# Geo-targeting for Nepal and South Asia
+# This helps search engines understand our primary market 

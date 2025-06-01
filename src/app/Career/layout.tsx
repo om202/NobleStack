@@ -1,21 +1,23 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Careers at Noble Stack - Join Our AI & Web Development Team",
-  description: "Join Noble Stack's innovative team of AI and web developers. Exciting career opportunities in artificial intelligence, React development, machine learning, and cutting-edge technology. Apply now!",
+  title: "Careers at Noble Stack - Join Our AI & Web Development Team in Kathmandu, Nepal",
+  description: "Join Noble Stack's innovative team in Kathmandu, Nepal. Exciting career opportunities in AI development, React programming, machine learning, and cutting-edge technology. Remote and on-site positions available for Nepal and South Asia.",
   keywords: [
-    "Noble Stack careers",
-    "AI developer jobs",
-    "React developer jobs", 
-    "machine learning jobs",
-    "software engineer careers",
-    "web developer positions",
-    "AI engineer jobs",
-    "technology jobs",
-    "startup careers",
-    "remote developer jobs",
-    "full stack developer jobs",
-    "frontend developer careers"
+    "Noble Stack careers Nepal",
+    "AI developer jobs Nepal",
+    "React developer jobs Kathmandu", 
+    "machine learning jobs Nepal",
+    "software engineer careers Nepal",
+    "web developer positions Kathmandu",
+    "AI engineer jobs Nepal",
+    "technology jobs Nepal",
+    "startup careers Kathmandu",
+    "remote developer jobs Nepal",
+    "full stack developer jobs Nepal",
+    "frontend developer careers Nepal",
+    "tech jobs Kathmandu",
+    "South Asia developer jobs"
   ],
   authors: [{ name: "Noble Stack Team" }],
   robots: {
@@ -30,8 +32,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Careers at Noble Stack - Join Our AI & Web Development Team",
-    description: "Join Noble Stack's innovative team of AI and web developers. Exciting career opportunities in artificial intelligence, React development, and cutting-edge technology.",
+    title: "Careers at Noble Stack - Join Our AI & Web Development Team in Kathmandu, Nepal",
+    description: "Join Noble Stack's innovative team in Kathmandu. Exciting career opportunities in AI development, React programming, and cutting-edge technology for Nepal and South Asian talent.",
     url: "https://noblestack.io/Career",
     siteName: "Noble Stack",
     images: [
@@ -39,7 +41,7 @@ export const metadata: Metadata = {
         url: "https://noblestack.io/nbl.png",
         width: 1200,
         height: 630,
-        alt: "Careers at Noble Stack - AI & Web Development Jobs",
+        alt: "Careers at Noble Stack - AI & Web Development Jobs in Nepal",
       },
     ],
     locale: "en_US",
@@ -47,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Careers at Noble Stack - Join Our AI & Web Development Team",
-    description: "Join Noble Stack's innovative team of AI and web developers. Exciting career opportunities in artificial intelligence, React development, and cutting-edge technology.",
+    title: "Careers at Noble Stack - Join Our AI & Web Development Team in Kathmandu, Nepal",
+    description: "Join Noble Stack's innovative team in Kathmandu. Exciting career opportunities in AI development and web programming for Nepal and South Asian developers.",
     images: ["https://noblestack.io/nbl.png"],
   },
   alternates: {
@@ -70,8 +72,8 @@ export default function CareerLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "JobPosting",
-            title: "Software Developer - AI & Web Development",
-            description: "Join Noble Stack as a Software Developer specializing in AI and web development. Work with cutting-edge technologies including React, Next.js, machine learning, and AI automation.",
+            title: "Software Developer - AI & Web Development (Nepal)",
+            description: "Join Noble Stack in Kathmandu as a Software Developer specializing in AI and web development. Work with cutting-edge technologies including React, Next.js, machine learning, and AI automation. Serving clients across Nepal and South Asia.",
             datePosted: "2024-01-01",
             validThrough: "2024-12-31",
             employmentType: ["FULL_TIME", "PART_TIME", "CONTRACTOR"],
@@ -79,22 +81,37 @@ export default function CareerLayout({
               "@type": "Organization",
               name: "Noble Stack",
               sameAs: "https://noblestack.io",
-              logo: "https://noblestack.io/nbl.png"
+              logo: "https://noblestack.io/nbl.png",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Kathmandu",
+                addressRegion: "Bagmati Province",
+                addressCountry: "NP"
+              }
             },
             jobLocation: {
               "@type": "Place",
               address: {
                 "@type": "PostalAddress",
-                addressCountry: "US"
+                streetAddress: "Kathmandu",
+                addressLocality: "Kathmandu",
+                addressRegion: "Bagmati Province",
+                postalCode: "44600",
+                addressCountry: "NP"
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "27.7172",
+                longitude: "85.3240"
               }
             },
             baseSalary: {
               "@type": "MonetaryAmount",
-              currency: "USD",
+              currency: "NPR",
               value: {
                 "@type": "QuantitativeValue",
-                minValue: 80000,
-                maxValue: 150000,
+                minValue: 600000,
+                maxValue: 1500000,
                 unitText: "YEAR"
               }
             },
@@ -102,20 +119,26 @@ export default function CareerLayout({
               "Experience with React, Next.js, and modern web technologies",
               "Knowledge of AI/ML technologies and frameworks",
               "Strong problem-solving and communication skills",
-              "Bachelor's degree in Computer Science or related field (preferred)"
+              "Bachelor's degree in Computer Science or related field (preferred)",
+              "English proficiency required, Nepali language skills a plus"
             ],
             responsibilities: [
-              "Develop AI-powered web applications",
+              "Develop AI-powered web applications for Nepal and South Asian markets",
               "Build responsive and scalable frontend interfaces", 
               "Integrate machine learning models into web applications",
-              "Collaborate with cross-functional teams",
-              "Write clean, maintainable code"
+              "Collaborate with international and local teams",
+              "Write clean, maintainable code following industry standards"
             ],
             workFromHome: true,
+            applicantLocationRequirements: {
+              "@type": "Country",
+              name: "Nepal"
+            },
             applicationContact: {
               "@type": "ContactPoint",
               email: "careers@noblestack.io",
-              contactType: "HR"
+              contactType: "HR",
+              telephone: "+977-1-XXXXXXX"
             }
           })
         }}
@@ -131,21 +154,51 @@ export default function CareerLayout({
             name: "Noble Stack",
             url: "https://noblestack.io",
             logo: "https://noblestack.io/nbl.png",
-            description: "Join our team of passionate developers, designers, and innovators working on cutting-edge AI and web development projects.",
+            description: "Join our team of passionate developers, designers, and innovators working on cutting-edge AI and web development projects from our Kathmandu office, serving clients across Nepal and South Asia.",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Kathmandu",
+              addressLocality: "Kathmandu",
+              addressRegion: "Bagmati Province",
+              postalCode: "44600",
+              addressCountry: "NP"
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: "27.7172",
+              longitude: "85.3240"
+            },
             numberOfEmployees: {
               "@type": "QuantitativeValue",
               value: 15
             },
             foundingDate: "2019",
             industry: "Technology",
+            areaServed: [
+              {
+                "@type": "Country",
+                name: "Nepal"
+              },
+              {
+                "@type": "Place",
+                name: "South Asia"
+              }
+            ],
             jobPosting: {
               "@type": "JobPosting",
-              title: "Multiple Positions Available",
-              description: "We're always looking for talented developers, designers, and AI specialists to join our growing team.",
+              title: "Multiple Positions Available in Nepal",
+              description: "We're always looking for talented developers, designers, and AI specialists to join our growing team in Kathmandu and work remotely across Nepal.",
               employmentType: ["FULL_TIME", "PART_TIME", "CONTRACTOR", "INTERN"],
               hiringOrganization: {
                 "@type": "Organization",
                 name: "Noble Stack"
+              },
+              jobLocation: {
+                "@type": "Place",
+                address: {
+                  "@type": "PostalAddress",
+                  addressCountry: "NP"
+                }
               }
             },
             employee: [

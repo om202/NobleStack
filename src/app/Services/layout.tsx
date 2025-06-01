@@ -1,22 +1,23 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services - AI Development & Web Development | Noble Stack",
-  description: "Comprehensive AI development, web development, mobile apps, backend systems, and cybersecurity services. Expert solutions using React, Next.js, machine learning, and cutting-edge technologies.",
+  title: "AI & Web Development Services in Kathmandu, Nepal | Noble Stack",
+  description: "Professional AI development, web applications, and automation services in Kathmandu, Nepal. Serving businesses across Nepal and South Asia with React, Next.js, machine learning, and custom software solutions.",
   keywords: [
-    "AI development services",
-    "web development services",
-    "mobile app development",
-    "backend development",
-    "cybersecurity services",
-    "React development",
-    "Next.js development",
-    "machine learning services",
-    "custom software development",
-    "API development",
-    "cloud integration",
-    "data analytics",
-    "automation services"
+    "AI services Nepal",
+    "web development services Kathmandu",
+    "React development Nepal",
+    "Next.js services Nepal",
+    "automation services Nepal",
+    "custom software Nepal",
+    "machine learning services Nepal",
+    "chatbot development Nepal",
+    "mobile app development Nepal",
+    "e-commerce development Nepal",
+    "digital transformation Nepal",
+    "software consulting Nepal",
+    "tech solutions Kathmandu",
+    "South Asia development services"
   ],
   authors: [{ name: "Noble Stack Team" }],
   robots: {
@@ -31,8 +32,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "AI Development & Web Development Services | Noble Stack",
-    description: "Expert AI development, web development, mobile apps, backend systems, and cybersecurity services. Transform your business with intelligent digital solutions.",
+    title: "AI & Web Development Services in Kathmandu, Nepal | Noble Stack",
+    description: "Professional AI and web development services in Nepal. Transform your business with our expert React, Next.js, and AI solutions tailored for South Asian markets.",
     url: "https://noblestack.io/Services",
     siteName: "Noble Stack",
     images: [
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
         url: "https://noblestack.io/nbl.png",
         width: 1200,
         height: 630,
-        alt: "Noble Stack Services - AI & Web Development",
+        alt: "Noble Stack Services - AI & Web Development in Nepal",
       },
     ],
     locale: "en_US",
@@ -48,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Development & Web Development Services | Noble Stack",
-    description: "Expert AI development, web development, mobile apps, backend systems, and cybersecurity services. Transform your business with intelligent digital solutions.",
+    title: "AI & Web Development Services in Kathmandu, Nepal",
+    description: "Professional AI and web development services in Nepal. Expert solutions for businesses across South Asia.",
     images: ["https://noblestack.io/nbl.png"],
   },
   alternates: {
@@ -64,123 +65,64 @@ export default function ServicesLayout({
 }) {
   return (
     <>
-      {/* Service Schema */}
+      {/* Service Schema for Nepal market */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            serviceType: "Technology Services",
             provider: {
-              "@type": "Organization",
+              "@type": "LocalBusiness",
               name: "Noble Stack",
-              url: "https://noblestack.io",
-              logo: "https://noblestack.io/nbl.png",
-              email: "hello@noblestack.io",
-              telephone: "+1-555-123-4567"
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Kathmandu",
+                addressRegion: "Bagmati Province",
+                addressCountry: "NP"
+              },
+              telephone: "+977-1-XXXXXXX"
             },
+            serviceType: "Software Development",
+            areaServed: [
+              {
+                "@type": "Country",
+                name: "Nepal"
+              },
+              {
+                "@type": "Place",
+                name: "South Asia"
+              }
+            ],
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Noble Stack Services",
+              name: "Noble Stack Development Services",
               itemListElement: [
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Web Development",
-                    description: "Custom web applications built with modern technologies like React, Next.js, and Node.js",
-                    category: "Software Development",
-                    additionalProperty: [
-                      {
-                        "@type": "PropertyValue",
-                        name: "Technology",
-                        value: "React, Next.js, TypeScript, Node.js"
-                      },
-                      {
-                        "@type": "PropertyValue", 
-                        name: "Features",
-                        value: "Responsive Design, SEO Optimized, Performance Focused, Scalable Architecture"
-                      }
-                    ]
+                    name: "AI Development Nepal",
+                    description: "Custom AI solutions and machine learning implementations for Nepali businesses"
                   }
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "AI & Machine Learning",
-                    description: "Intelligent solutions powered by cutting-edge AI technologies and machine learning algorithms",
-                    category: "Artificial Intelligence",
-                    additionalProperty: [
-                      {
-                        "@type": "PropertyValue",
-                        name: "Services",
-                        value: "Custom AI Models, Data Analytics, Natural Language Processing, Computer Vision"
-                      }
-                    ]
+                    name: "Web Development Kathmandu",
+                    description: "Modern web applications with React and Next.js for Nepal market"
                   }
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Mobile Applications",
-                    description: "Native and cross-platform mobile apps for iOS and Android with seamless user experiences",
-                    category: "Mobile Development",
-                    additionalProperty: [
-                      {
-                        "@type": "PropertyValue",
-                        name: "Platforms",
-                        value: "iOS, Android, Cross-Platform"
-                      },
-                      {
-                        "@type": "PropertyValue",
-                        name: "Features", 
-                        value: "Native Performance, Push Notifications, App Store Optimization"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Backend Development",
-                    description: "Robust and scalable backend systems with secure APIs and efficient data management",
-                    category: "Backend Development",
-                    additionalProperty: [
-                      {
-                        "@type": "PropertyValue",
-                        name: "Services",
-                        value: "RESTful APIs, Database Design, Cloud Integration, Security Best Practices"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Cybersecurity",
-                    description: "Comprehensive security solutions to protect your digital assets and user data",
-                    category: "Cybersecurity",
-                    additionalProperty: [
-                      {
-                        "@type": "PropertyValue",
-                        name: "Services",
-                        value: "Security Audits, Penetration Testing, Data Encryption, Compliance"
-                      }
-                    ]
+                    name: "Automation Services Nepal",
+                    description: "Business process automation and AI-powered workflows for South Asian companies"
                   }
                 }
               ]
-            },
-            areaServed: "Worldwide",
-            availableChannel: {
-              "@type": "ServiceChannel",
-              serviceUrl: "https://noblestack.io/Contact",
-              serviceSupportedCountry: "US"
             }
           })
         }}
