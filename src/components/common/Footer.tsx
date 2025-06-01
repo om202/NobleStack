@@ -22,6 +22,8 @@ export default function Footer() {
               width={40}
               height={40}
               className="rounded-xl"
+              quality={100}
+              priority
             />
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900">Noble Stack</h3>

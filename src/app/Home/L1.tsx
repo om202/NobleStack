@@ -50,9 +50,11 @@ export default function HeroSection() {
             <Image
               src="/nbl.png"
               alt="Noble Stack Logo"
-              width={60}
-              height={60}
-              className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]"
+              width={70}
+              height={70}
+              className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px]"
+              quality={100}
+              priority
             />
             <div className="flex flex-col justify-center h-16 sm:h-24">
                               <span className="text-lg sm:text-2xl mb-1 md:text-2xl font-medium text-gray-700 leading-none">
