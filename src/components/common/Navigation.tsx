@@ -25,7 +25,7 @@ export default function Navigation() {
               <div className={`items-center gap-4 sm:gap-6 ${isMenuOpen ? 'hidden' : 'flex lg:flex'}`}>
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    href="#home"
+                    href="/"
                     className="flex flex-col items-center gap-1 group cursor-pointer"
                   >
                     <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
@@ -67,7 +67,7 @@ export default function Navigation() {
 
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    href="#career"
+                    href="/Career"
                     className="flex flex-col items-center gap-1 group cursor-pointer"
                   >
                     <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-orange-400 to-red-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
@@ -119,7 +119,7 @@ export default function Navigation() {
             <div className="lg:hidden mt-4 pt-4 border-t border-gray-500/25 animate-in slide-in-from-bottom-4 fade-in duration-500 ease-out">
                               <div className="grid grid-cols-3 gap-4 mb-4 animate-in fade-in slide-in-from-bottom-2 duration-700 ease-out delay-150">
                 <a
-                  href="#home"
+                  href="/"
                   className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
@@ -152,7 +152,7 @@ export default function Navigation() {
                   </span>
                 </a>
                 <a
-                  href="#career"
+                  href="/Career"
                   className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">

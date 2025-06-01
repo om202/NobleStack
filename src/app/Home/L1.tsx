@@ -40,22 +40,27 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-6">
-            <Zap className="w-4 h-4 mr-2" />
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-base font-medium mb-6">
+            <Zap className="w-5 h-5 mr-2" />
             Let&apos;s Build Something Brilliant
           </div>
 
           {/* Noble Stack Brand */}
-          <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6">
             <Image
               src="/nbl.png"
               alt="Noble Stack Logo"
-              width={64}
-              height={64}
+              width={80}
+              height={80}
             />
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Noble Stack
-            </h2>
+            <div className="flex flex-col justify-center h-24">
+              <h2 className="text-3xl md:text-3xl font-medium text-gray-700 leading-none">
+                Noble
+              </h2>
+              <h2 className="text-3xl md:text-3xl font-medium text-gray-700 leading-none">
+                Stack
+              </h2>
+            </div>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
