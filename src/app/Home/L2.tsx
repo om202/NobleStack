@@ -158,7 +158,7 @@ export default function FeaturesSection() {
     <section id="features" className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-10 sm:mb-16 animate-fade-in">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-base font-medium mb-4">
             <Globe className="w-4 h-4 mr-2" />
             Modern Web Development Experts
@@ -170,7 +170,7 @@ export default function FeaturesSection() {
               Websites That Convert
             </span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8">
             Specializing in lightning-fast, SEO-optimized websites that look
             stunning on every device. From landing pages to complex web
             applications, we create digital experiences that drive results.
@@ -190,7 +190,7 @@ export default function FeaturesSection() {
         />
 
         {/* Web Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 sm:mb-16">
           {webServices.map((service, index) => (
             <div
               key={index}

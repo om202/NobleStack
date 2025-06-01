@@ -128,9 +128,9 @@ export default function Contact() {
       <section className="pt-24 sm:pt-28 py-12 px-4 min-h-screen bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-16">
             {/* Noble Stack Brand */}
-            <div className="flex items-center justify-center gap-2 mb-6">
+            <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6">
               <Image
                 src="/nbl.png"
                 alt="Noble Stack Logo"
@@ -151,26 +151,26 @@ export default function Contact() {
               Get In Touch
             </h1>
 
-            <blockquote className="text-lg text-gray-500 mb-8 max-w-3xl mx-auto">
+            <blockquote className="text-base sm:text-lg text-gray-500 mb-6 sm:mb-8 max-w-3xl mx-auto">
               &ldquo;Ready to transform your ideas into intelligent digital solutions? 
               Let&apos;s discuss your project and explore how we can help you succeed.&rdquo;
             </blockquote>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl md:text-2xl font-bold text-gray-900 mb-6">
-                Send us a Message
-              </h3>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
+                          <div className="text-center mb-6 sm:mb-8">
+                <h3 className="text-xl sm:text-2xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
+                  Send us a Message
+                </h3>
+                <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
                 Have a project in mind? We&apos;d love to hear from you. 
                 Fill out the form below and let&apos;s start the conversation.
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6 max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Full Name *
@@ -284,8 +284,8 @@ export default function Contact() {
           </div>
 
           {/* Contact Information Cards */}
-          <div className="mt-16">
-            <div className="text-center mb-10">
+          <div className="mt-10 sm:mt-16">
+            <div className="text-center mb-6 sm:mb-10">
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 Ready to Start Your Project?
               </h3>
@@ -294,7 +294,7 @@ export default function Contact() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <ContactCard
                 icon={<Mail className="w-8 h-8 text-blue-600" />}
                 title="Drop us an Email"
@@ -315,7 +315,7 @@ export default function Contact() {
             </div>
 
             {/* Secondary Info Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-4 sm:mt-6">
               <ContactCard
                 icon={<MapPin className="w-8 h-8 text-purple-600" />}
                 title="Our Location"

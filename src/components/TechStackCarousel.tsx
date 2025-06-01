@@ -31,13 +31,13 @@ export default function TechStackCarousel({
   }, [technologies.length, autoScrollInterval]);
 
   return (
-    <div className="mb-16">
-      <h3 className="text-xl font-bold text-center text-gray-900 mb-8">
+    <div className="mb-10 sm:mb-16">
+      <h3 className="text-lg sm:text-xl font-bold text-center text-gray-900 mb-6 sm:mb-8">
         {title}
       </h3>
-      <div className="relative bg-white rounded-2xl p-6 border border-gray-200 min-h-[140px] flex flex-col justify-center overflow-hidden">
+              <div className="relative bg-white rounded-2xl p-4 sm:p-6 border border-gray-200 min-h-[120px] sm:min-h-[140px] flex flex-col justify-center overflow-hidden">
         {/* Currently Featured Technology */}
-        <div className="text-center mb-6">
+                  <div className="text-center mb-4 sm:mb-6">
           <div
             key={currentTechIndex}
             className="animate-fade-in flex flex-col items-center"
@@ -48,7 +48,7 @@ export default function TechStackCarousel({
                 className: "w-10 h-10 transition-transform duration-300 hover:scale-110"
               })}
             </div>
-            <h4 className="text-lg font-bold text-gray-900">
+            <h4 className="text-base sm:text-lg font-bold text-gray-900">
               {technologies[currentTechIndex].name}
             </h4>
           </div>
@@ -90,7 +90,7 @@ export default function TechStackCarousel({
                           className="w-5 h-5 group-hover:scale-110 transition-transform duration-300"
                         />
                       </div>
-                      <h5 className="text-gray-900 font-medium text-base truncate">
+                      <h5 className="text-gray-900 font-medium text-xs sm:text-base truncate">
                         {tech.name}
                       </h5>
                     </div>

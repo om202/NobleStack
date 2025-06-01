@@ -103,30 +103,30 @@ export default function AlbumArtServices({
                 className="absolute transition-all duration-700 ease-in-out transform-gpu will-change-transform"
                 style={getCardStyle(index)}
               >
-                <div className="w-72 md:w-96 lg:w-[420px] h-[550px] md:h-[600px] lg:h-[650px] bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transform-gpu">
+                <div className="w-64 sm:w-72 md:w-96 lg:w-[420px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transform-gpu">
                   {/* Header Section */}
-                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 md:p-8 text-center">
-                    <div className={`w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br ${gradientColors} rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg`}>
-                      <Icon className="w-10 h-10 md:w-12 md:h-12 text-white" />
+                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-4 sm:p-6 md:p-8 text-center">
+                    <div className={`w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br ${gradientColors} rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-lg`}>
+                      <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" />
                     </div>
-                    <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-3 leading-tight">
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight">
                       {service.title}
                     </h3>
-                    <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                    <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed">
                       {service.description}
                     </p>
                   </div>
 
                   {/* Features Section */}
-                  <div className="p-6 md:p-8 flex-1">
-                    <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 md:mb-6">
+                  <div className="p-4 sm:p-6 md:p-8 flex-1">
+                    <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-3 sm:mb-4 md:mb-6">
                       Key Technologies
                     </h4>
-                    <ul className="space-y-3 md:space-y-4">
+                    <ul className="space-y-2 sm:space-y-3 md:space-y-4">
                       {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-start gap-3">
-                          <CheckCircle className={`w-5 h-5 md:w-6 md:h-6 ${textColor} flex-shrink-0 mt-0.5`} />
-                          <span className="text-xs md:text-sm lg:text-base text-gray-700 leading-relaxed font-medium">
+                        <li key={featureIndex} className="flex items-start gap-2 sm:gap-3">
+                          <CheckCircle className={`w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ${textColor} flex-shrink-0 mt-0.5`} />
+                          <span className="text-xs sm:text-xs md:text-sm lg:text-base text-gray-700 leading-relaxed font-medium">
                             {feature}
                           </span>
                         </li>

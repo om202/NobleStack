@@ -36,17 +36,17 @@ export default function AnimatedFeatureCarousel({
   }, [features.length, autoScrollInterval]);
 
   return (
-    <div className={`mb-16 ${className}`}>
-      <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">
+    <div className={`mb-10 sm:mb-16 ${className}`}>
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">
         {title}
       </h3>
 
       {/* Animated Feature Display */}
       <div className="relative overflow-hidden">
-        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm h-[280px] sm:h-[240px] flex flex-col justify-center">
+        <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 border border-gray-200 shadow-sm h-[260px] sm:h-[240px] flex flex-col justify-center">
           <div
             key={activeFeature}
-            className="flex items-start gap-6 animate-fade-in"
+                          className="flex items-start gap-4 sm:gap-6 animate-fade-in"
           >
             <div
               className={`w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r ${features[activeFeature].color} rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0`}

@@ -11,9 +11,9 @@ export default function Footer() {
 
   return (
     <footer className="bg-white/60 backdrop-blur-2xl border-t border-gray-300/50 backdrop-saturate-150">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-8 mb-8">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Brand */}
           <div className="flex items-center gap-3">
             <Image
@@ -24,13 +24,13 @@ export default function Footer() {
               className="rounded-xl"
             />
             <div>
-              <h3 className="text-2xl font-bold text-gray-900">Noble Stack</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900">Noble Stack</h3>
               <p className="text-sm text-gray-600">AI & Web Development</p>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div className="flex flex-wrap items-center justify-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             {quickLinks.map((link, index) => (
               <a
                 key={index}
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="flex flex-col sm:flex-row items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
             <a
               href="mailto:hello@noblestack.io"
               className="flex items-center gap-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100/50 px-3 py-2 rounded-lg transition-colors duration-200"
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="flex flex-col sm:flex-row justify-between items-center pt-6 border-t border-gray-300/50 gap-4">
+        <div className="flex flex-col sm:flex-row justify-between items-center pt-4 sm:pt-6 border-t border-gray-300/50 gap-3 sm:gap-4">
           <p className="text-sm text-gray-600 text-center sm:text-left">
             From your idea to deployed software
           </p>

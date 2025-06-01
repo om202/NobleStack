@@ -181,7 +181,7 @@ export default function FAQSection() {
     <section id="faq" className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-base font-medium mb-4">
             <MessageCircle className="w-4 h-4 mr-2" />
             Technical FAQ & Solutions Guide
@@ -193,14 +193,14 @@ export default function FAQSection() {
               Questions & Answers
             </span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
             Comprehensive technical documentation and answers to help you understand our capabilities, 
             methodologies, and how we can solve your specific challenges.
           </p>
         </div>
 
                 {/* Category Selection */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-8 sm:mb-12">
           <div className="bg-white rounded-2xl p-2 shadow-sm border border-gray-200 flex flex-col sm:flex-row gap-2 sm:gap-0 w-full max-w-md sm:max-w-none sm:inline-flex">
             {categories.map((category) => (
               <button
@@ -229,7 +229,7 @@ export default function FAQSection() {
         </div>
 
                  {/* FAQ Items with enhanced styling */}
-         <div className="space-y-4 mb-16" key={animationKey}>
+         <div className="space-y-4 mb-10 sm:mb-16" key={animationKey}>
            {currentFaqs.map((faq, index) => (
              <div
                key={`${activeCategory}-${index}`}

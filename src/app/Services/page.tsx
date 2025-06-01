@@ -150,9 +150,9 @@ export default function Services() {
       <section className="pt-24 sm:pt-28 py-12 px-4 min-h-screen bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-16">
             {/* Noble Stack Brand */}
-            <div className="flex items-center justify-center gap-2 mb-6">
+            <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6">
               <Image
                 src="/nbl.png"
                 alt="Noble Stack Logo"
@@ -175,37 +175,37 @@ export default function Services() {
           </div>
 
           {/* Services Carousel */}
-          <div className="mb-16">
+          <div className="mb-10 sm:mb-16">
             <AlbumArtServices services={services} />
           </div>
 
           {/* Process Section */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-10 sm:mb-16">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Our Process
               </h2>
-              <p className="text-base text-gray-600 max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
                 We follow a proven methodology to ensure your project is delivered on time, 
                 within budget, and exceeds your expectations.
               </p>
             </div>
 
             {/* Mobile Layout - Vertical Flow */}
-            <div className="block lg:hidden space-y-8">
+            <div className="block lg:hidden space-y-6 sm:space-y-8">
               {process.map((step, index) => (
                 <div key={index} className="flex flex-col items-center">
-                  <div className="relative mb-6">
+                  <div className="relative mb-4 sm:mb-6">
                     <div className="w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center shadow-md">
                       <span className="text-2xl font-bold text-white">{step.step}</span>
                     </div>
                   </div>
                   
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 text-center">
+                  <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 text-center">
                     {step.title}
                   </h3>
                   
-                  <p className="text-base text-gray-600 text-center max-w-xs">
+                  <p className="text-sm sm:text-base text-gray-600 text-center max-w-xs">
                     {step.description}
                   </p>
 
@@ -255,12 +255,12 @@ export default function Services() {
           </div>
 
           {/* Technology Stack */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-10 sm:mb-16">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900">
                 Technology Stack
               </h2>
-              <p className="text-base text-gray-600 max-w-2xl mx-auto mb-8">
+              <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto mb-6 sm:mb-8">
                 We work with the latest and most reliable technologies to build robust, scalable solutions.
                 Watch our expertise in action — technologies refresh dynamically to showcase our full stack.
               </p>

@@ -100,7 +100,7 @@ export default function AIServicesSection() {
     <section id="ai-services" className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-10 sm:mb-16 animate-fade-in">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-base font-medium mb-4">
             <Bot className="w-4 h-4 mr-2" />
             AI Automation & Chatbot Specialists
@@ -111,7 +111,7 @@ export default function AIServicesSection() {
               {" "}Actually Works
             </span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8">
             While others promise AI magic, we deliver proven solutions. Our AI chatbots and automation systems 
             are already transforming businesses, handling millions of interactions, and saving countless hours of manual work.
           </p>
@@ -130,7 +130,7 @@ export default function AIServicesSection() {
         />
 
         {/* AI Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 sm:mb-16">
           {aiServices.map((service, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group cursor-pointer min-h-[180px] flex flex-col justify-between">
               <div>

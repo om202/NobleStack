@@ -39,27 +39,28 @@ export default function HeroSection() {
     <section className="pt-24 sm:pt-28 pb-6 sm:pb-8 md:pb-10 lg:pb-12 px-4 min-h-screen bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-base font-medium mb-6">
-            <Zap className="w-5 h-5 mr-2" />
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-blue-100 text-blue-700 text-sm sm:text-base font-medium mb-4 sm:mb-6">
+            <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2" />
             Let&apos;s Build Something Intelligent
           </div>
 
           {/* Noble Stack Brand */}
-          <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
             <Image
               src="/nbl.png"
               alt="Noble Stack Logo"
-              width={80}
-              height={80}
+              width={60}
+              height={60}
+              className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]"
             />
-            <div className="flex flex-col justify-center h-24">
-              <span className="text-2xl mb-1 md:text-2xl font-medium text-gray-700 leading-none">
-                Noble
-              </span>
-              <span className="text-2xl md:text-2xl font-medium text-gray-700 leading-none">
-                Stack
-              </span>
+            <div className="flex flex-col justify-center h-16 sm:h-24">
+                              <span className="text-lg sm:text-2xl mb-1 md:text-2xl font-medium text-gray-700 leading-none">
+                  Noble
+                </span>
+                <span className="text-lg sm:text-2xl md:text-2xl font-medium text-gray-700 leading-none">
+                  Stack
+                </span>
             </div>
           </div>
 
@@ -75,14 +76,14 @@ export default function HeroSection() {
             </span>
           </h1>
 
-          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto">
             At Noble Stack, we build intelligent digital products using advanced
             AI, LLMs, and modern web stacks. Innovation isn&apos;t a goal —
             it&apos;s our process.
           </p>
 
           {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 sm:mb-16">
             <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold">
               Schedule A Call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -97,7 +98,7 @@ export default function HeroSection() {
         </div>
 
         {/* Value Propositions */}
-        <div className="mb-16">
+        <div className="mb-10 sm:mb-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow duration-300">
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4">
@@ -126,8 +127,8 @@ export default function HeroSection() {
         </div>
 
         {/* Expertise Section */}
-        <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-8 text-center">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-6 sm:mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">
             Our Expertise
           </h2>
           
