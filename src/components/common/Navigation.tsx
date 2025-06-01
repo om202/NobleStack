@@ -49,30 +49,46 @@ export default function Navigation() {
                 </NavigationMenu.Item>
 
                 <NavigationMenu.Item>
-                  <NavigationMenu.Link
-                    href="#about"
-                    className="flex flex-col items-center gap-1 group cursor-pointer"
-                  >
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-teal-400 to-cyan-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <User className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                    </div>
-                    <span className="text-xs text-black group-hover:text-gray-700 transition-colors duration-300 font-semibold">
-                      About
-                    </span>
+                  <NavigationMenu.Link asChild>
+                    <Link href="/About" className="flex flex-col items-center gap-1 group cursor-pointer relative">
+                      <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg ${
+                        pathname === '/About' 
+                          ? 'bg-gradient-to-br from-teal-500 to-cyan-700 scale-110 shadow-xl ring-2 ring-teal-300' 
+                          : 'bg-gradient-to-br from-teal-400 to-cyan-600'
+                      }`}>
+                        <User className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                      </div>
+                      <span className={`text-xs group-hover:text-gray-700 transition-colors duration-300 font-semibold ${
+                        pathname === '/About' ? 'text-teal-600' : 'text-black'
+                      }`}>
+                        About
+                      </span>
+                      {pathname === '/About' && (
+                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-teal-500 rounded-full animate-in fade-in duration-300" />
+                      )}
+                    </Link>
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
 
                 <NavigationMenu.Item>
-                  <NavigationMenu.Link
-                    href="#services"
-                    className="flex flex-col items-center gap-1 group cursor-pointer"
-                  >
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-emerald-400 to-green-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <Laptop className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                    </div>
-                    <span className="text-xs text-black group-hover:text-gray-700 transition-colors duration-300 font-semibold">
-                      Services
-                    </span>
+                  <NavigationMenu.Link asChild>
+                    <Link href="/Services" className="flex flex-col items-center gap-1 group cursor-pointer relative">
+                      <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg ${
+                        pathname === '/Services' 
+                          ? 'bg-gradient-to-br from-emerald-500 to-green-700 scale-110 shadow-xl ring-2 ring-emerald-300' 
+                          : 'bg-gradient-to-br from-emerald-400 to-green-600'
+                      }`}>
+                        <Laptop className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                      </div>
+                      <span className={`text-xs group-hover:text-gray-700 transition-colors duration-300 font-semibold ${
+                        pathname === '/Services' ? 'text-emerald-600' : 'text-black'
+                      }`}>
+                        Services
+                      </span>
+                      {pathname === '/Services' && (
+                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-emerald-500 rounded-full animate-in fade-in duration-300" />
+                      )}
+                    </Link>
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
 
@@ -99,16 +115,24 @@ export default function Navigation() {
                 </NavigationMenu.Item>
 
                 <NavigationMenu.Item>
-                  <NavigationMenu.Link
-                    href="#contact"
-                    className="flex flex-col items-center gap-1 group cursor-pointer"
-                  >
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-purple-400 to-pink-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                    </div>
-                    <span className="text-xs text-black group-hover:text-gray-700 transition-colors duration-300 font-semibold">
-                      Contact
-                    </span>
+                  <NavigationMenu.Link asChild>
+                    <Link href="/Contact" className="flex flex-col items-center gap-1 group cursor-pointer relative">
+                      <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg ${
+                        pathname === '/Contact' 
+                          ? 'bg-gradient-to-br from-purple-500 to-pink-700 scale-110 shadow-xl ring-2 ring-purple-300' 
+                          : 'bg-gradient-to-br from-purple-400 to-pink-600'
+                      }`}>
+                        <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                      </div>
+                      <span className={`text-xs group-hover:text-gray-700 transition-colors duration-300 font-semibold ${
+                        pathname === '/Contact' ? 'text-purple-600' : 'text-black'
+                      }`}>
+                        Contact
+                      </span>
+                      {pathname === '/Contact' && (
+                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-purple-500 rounded-full animate-in fade-in duration-300" />
+                      )}
+                    </Link>
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
               </div>
@@ -157,28 +181,46 @@ export default function Navigation() {
                     <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-500 rounded-full animate-in fade-in duration-300" />
                   )}
                 </Link>
-                <a
-                  href="#about"
-                  className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group"
+                <Link
+                  href="/About"
+                  className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group relative"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-cyan-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className={`w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg ${
+                    pathname === '/About' 
+                      ? 'bg-gradient-to-br from-teal-500 to-cyan-700 scale-110 shadow-xl ring-2 ring-teal-300' 
+                      : 'bg-gradient-to-br from-teal-400 to-cyan-600'
+                  }`}>
                     <User className="w-6 h-6 text-white" />
                   </div>
-                  <span className="text-sm text-black group-hover:text-gray-700 transition-colors duration-300 font-semibold">
+                  <span className={`text-sm group-hover:text-gray-700 transition-colors duration-300 font-semibold ${
+                    pathname === '/About' ? 'text-teal-600' : 'text-black'
+                  }`}>
                     About
                   </span>
-                </a>
-                <a
-                  href="#services"
-                  className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group"
+                  {pathname === '/About' && (
+                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-teal-500 rounded-full animate-in fade-in duration-300" />
+                  )}
+                </Link>
+                <Link
+                  href="/Services"
+                  className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group relative"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-green-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className={`w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg ${
+                    pathname === '/Services' 
+                      ? 'bg-gradient-to-br from-emerald-500 to-green-700 scale-110 shadow-xl ring-2 ring-emerald-300' 
+                      : 'bg-gradient-to-br from-emerald-400 to-green-600'
+                  }`}>
                     <Laptop className="w-6 h-6 text-white" />
                   </div>
-                  <span className="text-sm text-black group-hover:text-gray-700 transition-colors duration-300 font-semibold">
+                  <span className={`text-sm group-hover:text-gray-700 transition-colors duration-300 font-semibold ${
+                    pathname === '/Services' ? 'text-emerald-600' : 'text-black'
+                  }`}>
                     Services
                   </span>
-                </a>
+                  {pathname === '/Services' && (
+                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-emerald-500 rounded-full animate-in fade-in duration-300" />
+                  )}
+                </Link>
                 <Link
                   href="/Career"
                   className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group relative"
@@ -199,17 +241,26 @@ export default function Navigation() {
                     <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-orange-500 rounded-full animate-in fade-in duration-300" />
                   )}
                 </Link>
-                <a
-                  href="#contact"
-                  className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group"
+                <Link
+                  href="/Contact"
+                  className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group relative"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className={`w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg ${
+                    pathname === '/Contact' 
+                      ? 'bg-gradient-to-br from-purple-500 to-pink-700 scale-110 shadow-xl ring-2 ring-purple-300' 
+                      : 'bg-gradient-to-br from-purple-400 to-pink-600'
+                  }`}>
                     <Mail className="w-6 h-6 text-white" />
                   </div>
-                  <span className="text-sm text-black group-hover:text-gray-700 transition-colors duration-300 font-semibold">
+                  <span className={`text-sm group-hover:text-gray-700 transition-colors duration-300 font-semibold ${
+                    pathname === '/Contact' ? 'text-purple-600' : 'text-black'
+                  }`}>
                     Contact
                   </span>
-                </a>
+                  {pathname === '/Contact' && (
+                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-purple-500 rounded-full animate-in fade-in duration-300" />
+                  )}
+                </Link>
               </div>
 
                               {/* Mobile Call Button */}

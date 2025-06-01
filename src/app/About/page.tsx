@@ -1,0 +1,417 @@
+"use client";
+
+import {
+  Target,
+  Users,
+  Lightbulb,
+  Heart,
+  Award,
+  Globe,
+  Code,
+  Brain,
+  Rocket,
+  Shield,
+  CheckCircle,
+  Star,
+  ArrowRight,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function About() {
+  const values = [
+    {
+      icon: Target,
+      title: "Innovation First",
+      description: "We constantly push boundaries and embrace cutting-edge technologies to deliver exceptional solutions.",
+      color: "blue"
+    },
+    {
+      icon: Users,
+      title: "Client-Centric",
+      description: "Your success is our success. We prioritize understanding your needs and delivering value.",
+      color: "green"
+    },
+    {
+      icon: Lightbulb,
+      title: "Creative Excellence",
+      description: "We combine technical expertise with creative thinking to solve complex challenges.",
+      color: "yellow"
+    },
+    {
+      icon: Heart,
+      title: "Passionate Team",
+      description: "Our team is driven by passion for technology and commitment to delivering quality work.",
+      color: "red"
+    },
+    {
+      icon: Shield,
+      title: "Trust & Reliability",
+      description: "We build lasting relationships through transparency, reliability, and consistent delivery.",
+      color: "purple"
+    },
+    {
+      icon: Rocket,
+      title: "Growth Mindset",
+      description: "We continuously learn, adapt, and evolve to stay ahead in the fast-paced tech landscape.",
+      color: "orange"
+    }
+  ];
+
+  const teamMembers = [
+    {
+      name: "Alex Chen",
+      role: "CEO & Founder",
+      expertise: "Full-Stack Development, AI Strategy",
+      image: "/team/alex.jpg", // Placeholder
+      bio: "10+ years of experience in building scalable web applications and AI solutions."
+    },
+    {
+      name: "Sarah Rodriguez",
+      role: "CTO",
+      expertise: "Cloud Architecture, DevOps",
+      image: "/team/sarah.jpg", // Placeholder
+      bio: "Expert in designing robust cloud infrastructure and implementing CI/CD pipelines."
+    },
+    {
+      name: "Michael Park",
+      role: "Lead AI Engineer",
+      expertise: "Machine Learning, Data Science",
+      image: "/team/michael.jpg", // Placeholder
+      bio: "PhD in Computer Science with focus on deep learning and natural language processing."
+    },
+    {
+      name: "Emily Watson",
+      role: "Design Director",
+      expertise: "UX/UI Design, Product Strategy",
+      image: "/team/emily.jpg", // Placeholder
+      bio: "Creates intuitive and beautiful user experiences that drive engagement and conversion."
+    }
+  ];
+
+  const stats = [
+    { number: "50+", label: "Projects Completed" },
+    { number: "25+", label: "Happy Clients" },
+    { number: "5+", label: "Years Experience" },
+    { number: "15+", label: "Team Members" }
+  ];
+
+  const getColorClasses = (color: string) => {
+    const colorMap = {
+      blue: "from-blue-400 to-blue-600 bg-blue-50 text-blue-600",
+      green: "from-green-400 to-green-600 bg-green-50 text-green-600",
+      yellow: "from-yellow-400 to-yellow-600 bg-yellow-50 text-yellow-600",
+      red: "from-red-400 to-red-600 bg-red-50 text-red-600",
+      purple: "from-purple-400 to-purple-600 bg-purple-50 text-purple-600",
+      orange: "from-orange-400 to-orange-600 bg-orange-50 text-orange-600"
+    };
+    return colorMap[color as keyof typeof colorMap] || colorMap.blue;
+  };
+
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="py-12 px-4 min-h-screen bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            {/* Noble Stack Brand */}
+            <div className="flex items-center justify-center gap-2 mb-6">
+              <Image
+                src="/nbl.png"
+                alt="Noble Stack Logo"
+                width={50}
+                height={50}
+              />
+              <div className="flex flex-col justify-center h-16">
+                <h2 className="text-xl font-medium text-gray-700 leading-none">
+                  Noble
+                </h2>
+                <h2 className="text-xl font-medium text-gray-700 leading-none">
+                  Stack
+                </h2>
+              </div>
+            </div>
+
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-gray-900">
+              About Noble Stack
+            </h1>
+
+            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              We&apos;re a passionate team of developers, designers, and innovators dedicated to 
+              transforming ideas into intelligent digital solutions that make a difference.
+            </p>
+          </div>
+
+          {/* Stats Section */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+            {stats.map((stat, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center group hover:shadow-lg transition-all duration-300"
+              >
+                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2 group-hover:scale-110 transition-transform duration-300">
+                  {stat.number}
+                </div>
+                <div className="text-gray-600 font-medium">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Our Story Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                  Our Story
+                </h2>
+                <div className="space-y-4 text-gray-600">
+                  <p>
+                    Founded in 2019, Noble Stack emerged from a simple yet powerful vision: 
+                    to bridge the gap between cutting-edge technology and real-world business solutions.
+                  </p>
+                  <p>
+                    What started as a small team of passionate developers has grown into a 
+                    full-service digital agency specializing in AI-powered applications, 
+                    modern web development, and innovative mobile solutions.
+                  </p>
+                  <p>
+                    Today, we&apos;re proud to have helped dozens of businesses transform their 
+                    digital presence and achieve their goals through technology that truly makes an impact.
+                  </p>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                  <Link
+                    href="/Services"
+                    className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
+                  >
+                    <Globe className="w-5 h-5" />
+                    Our Services
+                  </Link>
+                  
+                  <Link
+                    href="/Contact"
+                    className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-gray-700 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 font-semibold"
+                  >
+                    <ArrowRight className="w-5 h-5" />
+                    Get In Touch
+                  </Link>
+                </div>
+              </div>
+              
+              <div className="relative">
+                <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8 text-center">
+                  <div className="grid grid-cols-2 gap-6">
+                    <div className="flex flex-col items-center">
+                      <Code className="w-12 h-12 text-blue-600 mb-3" />
+                      <span className="text-sm font-semibold text-gray-800">Clean Code</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <Brain className="w-12 h-12 text-purple-600 mb-3" />
+                      <span className="text-sm font-semibold text-gray-800">AI-Powered</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <Rocket className="w-12 h-12 text-green-600 mb-3" />
+                      <span className="text-sm font-semibold text-gray-800">Fast Delivery</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <Award className="w-12 h-12 text-orange-600 mb-3" />
+                      <span className="text-sm font-semibold text-gray-800">Quality First</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Values Section */}
+          <div className="mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Our Values
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                These core values guide everything we do and shape how we work with our clients and each other.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {values.map((value, index) => {
+                const Icon = value.icon;
+                const colors = getColorClasses(value.color);
+                const gradientColors = colors.split(' ')[0] + ' ' + colors.split(' ')[1];
+                const textColor = colors.split(' ')[3];
+                
+                return (
+                  <div
+                    key={index}
+                    className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 group"
+                  >
+                    <div className={`w-14 h-14 bg-gradient-to-br ${gradientColors} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className="w-7 h-7 text-white" />
+                    </div>
+                    
+                    <h3 className="text-lg font-bold text-gray-900 mb-3">
+                      {value.title}
+                    </h3>
+                    
+                    <p className="text-gray-600 text-sm">
+                      {value.description}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Team Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Meet Our Team
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Our diverse team of experts brings together years of experience in technology, 
+                design, and business strategy.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {teamMembers.map((member, index) => (
+                <div
+                  key={index}
+                  className="text-center group"
+                >
+                  <div className="relative mb-6">
+                    <div className="w-24 h-24 bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl mx-auto mb-4 group-hover:scale-105 transition-transform duration-300 flex items-center justify-center">
+                      <Users className="w-10 h-10 text-gray-500" />
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">
+                    {member.name}
+                  </h3>
+                  
+                  <p className="text-blue-600 font-semibold text-sm mb-2">
+                    {member.role}
+                  </p>
+                  
+                  <p className="text-gray-500 text-xs mb-3">
+                    {member.expertise}
+                  </p>
+                  
+                  <p className="text-gray-600 text-sm">
+                    {member.bio}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mission & Vision Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+                  <Target className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Our Mission</h3>
+              </div>
+              <p className="text-gray-700">
+                To empower businesses with intelligent, scalable, and innovative digital solutions 
+                that drive growth and create lasting value in an ever-evolving technological landscape.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center">
+                  <Lightbulb className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Our Vision</h3>
+              </div>
+              <p className="text-gray-700">
+                To be the leading catalyst for digital transformation, where cutting-edge technology 
+                meets human creativity to solve tomorrow&apos;s challenges today.
+              </p>
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 text-white text-center">
+            <div className="flex items-center justify-center gap-2 mb-6">
+              <Star className="w-6 h-6 text-yellow-400 fill-current" />
+              <Star className="w-6 h-6 text-yellow-400 fill-current" />
+              <Star className="w-6 h-6 text-yellow-400 fill-current" />
+              <Star className="w-6 h-6 text-yellow-400 fill-current" />
+              <Star className="w-6 h-6 text-yellow-400 fill-current" />
+            </div>
+            
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Ready to Work With Us?
+            </h3>
+            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+              Let&apos;s collaborate to bring your vision to life. Our team is excited to discuss your project 
+              and explore how we can help you achieve your goals.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/Contact"
+                className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 rounded-xl hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
+              >
+                <Users className="w-5 h-5" />
+                Start a Project
+              </Link>
+              
+              <Link
+                href="/Career"
+                className="flex items-center justify-center gap-2 px-8 py-4 bg-transparent text-white rounded-xl border border-white/30 hover:border-white/50 hover:bg-white/10 transition-all duration-300 font-semibold"
+              >
+                <Heart className="w-5 h-5" />
+                Join Our Team
+              </Link>
+            </div>
+          </div>
+        </div>
+        
+        <style jsx>{`
+          @keyframes futureGlow {
+            0% {
+              background-position: 0% 50%;
+            }
+            25% {
+              background-position: 50% 0%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            75% {
+              background-position: 50% 100%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+
+          .future-text {
+            background: linear-gradient(135deg, 
+              #10b981, #059669, #0d9488, #0f766e, 
+              #0891b2, #0e7490, #0284c7, #0369a1, 
+              #10b981);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: futureGlow 2.5s ease-in-out infinite;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+          }
+        `}</style>
+      </section>
+    </>
+  );
+} 
