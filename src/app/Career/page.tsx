@@ -1,7 +1,6 @@
 "use client";
 
-import Navigation from "../../components/common/Navigation";
-import Footer from "../../components/common/Footer";
+import PageLayout from "../../components/PageLayout";
 import {
   Send,
   Mail,
@@ -36,9 +35,7 @@ export default function Career() {
   };
 
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      <main className="pb-24">
+    <PageLayout>
         {/* Hero Section */}
         <section className="py-12 px-4 min-h-screen bg-gray-50">
           <div className="max-w-4xl mx-auto">
@@ -272,8 +269,6 @@ export default function Career() {
             }
           `}</style>
         </section>
-      </main>
-      <Footer />
-    </div>
+    </PageLayout>
   );
 } 

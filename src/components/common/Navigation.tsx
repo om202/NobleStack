@@ -2,6 +2,7 @@
 
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   ChevronUp,
   Phone,
@@ -15,24 +16,34 @@ import { useState } from "react";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 p-3 sm:p-4">
       <div className="flex justify-center px-4">
-        <div className="bg-gray-600/10 backdrop-blur-xl rounded-3xl px-4 sm:px-6 py-3 animate-fade-in w-fit max-w-[95vw]">
+        <div className="bg-gray-600/10 backdrop-blur-xl rounded-3xl px-4 sm:px-6 py-3 w-fit max-w-[95vw]">
           <NavigationMenu.Root>
             <NavigationMenu.List className="flex items-center justify-center">
               {/* Main Navigation Items */}
               <div className={`items-center gap-4 sm:gap-6 ${isMenuOpen ? 'hidden' : 'flex lg:flex'}`}>
-                <NavigationMenu.Item>
+                                  <NavigationMenu.Item>
                   <NavigationMenu.Link asChild>
-                    <Link href="/" className="flex flex-col items-center gap-1 group cursor-pointer">
-                      <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <Link href="/" className="flex flex-col items-center gap-1 group cursor-pointer relative">
+                      <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg ${
+                        pathname === '/' 
+                          ? 'bg-gradient-to-br from-blue-500 to-purple-700 scale-110 shadow-xl ring-2 ring-blue-300' 
+                          : 'bg-gradient-to-br from-blue-400 to-purple-600'
+                      }`}>
                         <House className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                       </div>
-                      <span className="text-xs text-black group-hover:text-gray-700 transition-colors duration-300 font-semibold">
+                      <span className={`text-xs group-hover:text-gray-700 transition-colors duration-300 font-semibold ${
+                        pathname === '/' ? 'text-blue-600' : 'text-black'
+                      }`}>
                         Home
                       </span>
+                      {pathname === '/' && (
+                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-blue-500 rounded-full animate-in fade-in duration-300" />
+                      )}
                     </Link>
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
@@ -67,13 +78,22 @@ export default function Navigation() {
 
                 <NavigationMenu.Item>
                   <NavigationMenu.Link asChild>
-                    <Link href="/Career" className="flex flex-col items-center gap-1 group cursor-pointer">
-                      <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-orange-400 to-red-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <Link href="/Career" className="flex flex-col items-center gap-1 group cursor-pointer relative">
+                      <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg ${
+                        pathname === '/Career' 
+                          ? 'bg-gradient-to-br from-orange-500 to-red-700 scale-110 shadow-xl ring-2 ring-orange-300' 
+                          : 'bg-gradient-to-br from-orange-400 to-red-600'
+                      }`}>
                         <Users className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                       </div>
-                      <span className="text-xs text-black group-hover:text-gray-700 transition-colors duration-300 font-semibold">
+                      <span className={`text-xs group-hover:text-gray-700 transition-colors duration-300 font-semibold ${
+                        pathname === '/Career' ? 'text-orange-600' : 'text-black'
+                      }`}>
                         Career
                       </span>
+                      {pathname === '/Career' && (
+                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-orange-500 rounded-full animate-in fade-in duration-300" />
+                      )}
                     </Link>
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
@@ -119,14 +139,23 @@ export default function Navigation() {
                               <div className="grid grid-cols-3 gap-4 mb-4 animate-in fade-in slide-in-from-bottom-2 duration-700 ease-out delay-150">
                 <Link
                   href="/"
-                  className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group"
+                  className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group relative"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className={`w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg ${
+                    pathname === '/' 
+                      ? 'bg-gradient-to-br from-blue-500 to-purple-700 scale-110 shadow-xl ring-2 ring-blue-300' 
+                      : 'bg-gradient-to-br from-blue-400 to-purple-600'
+                  }`}>
                     <House className="w-6 h-6 text-white" />
                   </div>
-                  <span className="text-sm text-black group-hover:text-gray-700 transition-colors duration-300 font-semibold">
+                  <span className={`text-sm group-hover:text-gray-700 transition-colors duration-300 font-semibold ${
+                    pathname === '/' ? 'text-blue-600' : 'text-black'
+                  }`}>
                     Home
                   </span>
+                  {pathname === '/' && (
+                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-500 rounded-full animate-in fade-in duration-300" />
+                  )}
                 </Link>
                 <a
                   href="#about"
@@ -152,14 +181,23 @@ export default function Navigation() {
                 </a>
                 <Link
                   href="/Career"
-                  className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group"
+                  className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group relative"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className={`w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg ${
+                    pathname === '/Career' 
+                      ? 'bg-gradient-to-br from-orange-500 to-red-700 scale-110 shadow-xl ring-2 ring-orange-300' 
+                      : 'bg-gradient-to-br from-orange-400 to-red-600'
+                  }`}>
                     <Users className="w-6 h-6 text-white" />
                   </div>
-                  <span className="text-sm text-black group-hover:text-gray-700 transition-colors duration-300 font-semibold">
+                  <span className={`text-sm group-hover:text-gray-700 transition-colors duration-300 font-semibold ${
+                    pathname === '/Career' ? 'text-orange-600' : 'text-black'
+                  }`}>
                     Career
                   </span>
+                  {pathname === '/Career' && (
+                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-orange-500 rounded-full animate-in fade-in duration-300" />
+                  )}
                 </Link>
                 <a
                   href="#contact"
