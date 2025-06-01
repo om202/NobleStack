@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, CheckCircle } from "lucide-react";
 
 interface Service {
@@ -13,10 +13,23 @@ interface Service {
 
 interface AlbumArtServicesProps {
   services: Service[];
+  autoRotateInterval?: number; // in milliseconds, default 5000
 }
 
-export default function AlbumArtServices({ services }: AlbumArtServicesProps) {
+export default function AlbumArtServices({ 
+  services, 
+  autoRotateInterval = 5000 
+}: AlbumArtServicesProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-rotate services
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % services.length);
+    }, autoRotateInterval);
+
+    return () => clearInterval(interval);
+  }, [services.length, autoRotateInterval]);
 
   const nextService = () => {
     setCurrentIndex((prev) => (prev + 1) % services.length);
@@ -39,14 +52,14 @@ export default function AlbumArtServices({ services }: AlbumArtServicesProps) {
     } else if (position === 1) {
       // Right card
       return {
-        transform: "translateX(200px) scale(0.85)",
+        transform: "translateX(280px) scale(0.85)",
         zIndex: 2,
         opacity: 0.7,
       };
     } else if (position === services.length - 1) {
       // Left card
       return {
-        transform: "translateX(-200px) scale(0.85)",
+        transform: "translateX(-280px) scale(0.85)",
         zIndex: 2,
         opacity: 0.7,
       };
@@ -54,7 +67,7 @@ export default function AlbumArtServices({ services }: AlbumArtServicesProps) {
       // Hidden cards
       return {
         transform: `translateX(${
-          position > services.length / 2 ? -400 : 400
+          position > services.length / 2 ? -500 : 500
         }px) scale(0.7)`,
         zIndex: 1,
         opacity: 0.3,
@@ -75,8 +88,8 @@ export default function AlbumArtServices({ services }: AlbumArtServicesProps) {
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white rounded-2xl p-8 shadow-sm border border-gray-200 overflow-hidden">
-      <div className="relative h-[500px]">
+    <div className="bg-gradient-to-b from-gray-50 to-white rounded-2xl p-4 md:p-8 shadow-sm border border-gray-200 overflow-hidden">
+      <div className="relative h-[600px] md:h-[650px] lg:h-[700px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {services.map((service, index) => {
             const Icon = service.icon;
@@ -90,30 +103,32 @@ export default function AlbumArtServices({ services }: AlbumArtServicesProps) {
                 className="absolute transition-all duration-700 ease-in-out transform-gpu will-change-transform"
                 style={getCardStyle(index)}
               >
-                <div className="w-80 h-[450px] bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transform-gpu">
+                <div className="w-72 md:w-96 lg:w-[420px] h-[550px] md:h-[600px] lg:h-[650px] bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transform-gpu">
                   {/* Header Section */}
-                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 text-center">
-                    <div className={`w-20 h-20 bg-gradient-to-br ${gradientColors} rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg`}>
-                      <Icon className="w-10 h-10 text-white" />
+                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 md:p-8 text-center">
+                    <div className={`w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br ${gradientColors} rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg`}>
+                      <Icon className="w-10 h-10 md:w-12 md:h-12 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-3 leading-tight">
                       {service.title}
                     </h3>
-                    <p className="text-base text-gray-600 leading-relaxed">
+                    <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                       {service.description}
                     </p>
                   </div>
 
                   {/* Features Section */}
-                  <div className="p-8">
-                    <h4 className="text-lg font-semibold text-gray-900 mb-4">
-                      Key Features
+                  <div className="p-6 md:p-8 flex-1">
+                    <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 md:mb-6">
+                      Key Technologies
                     </h4>
-                    <ul className="space-y-3">
+                    <ul className="space-y-3 md:space-y-4">
                       {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center gap-3">
-                          <CheckCircle className={`w-5 h-5 ${textColor} flex-shrink-0`} />
-                          <span className="text-gray-700 text-sm">{feature}</span>
+                        <li key={featureIndex} className="flex items-start gap-3">
+                          <CheckCircle className={`w-5 h-5 md:w-6 md:h-6 ${textColor} flex-shrink-0 mt-0.5`} />
+                          <span className="text-xs md:text-sm lg:text-base text-gray-700 leading-relaxed font-medium">
+                            {feature}
+                          </span>
                         </li>
                       ))}
                     </ul>
@@ -127,38 +142,38 @@ export default function AlbumArtServices({ services }: AlbumArtServicesProps) {
         {/* Navigation Buttons */}
         <button
           onClick={prevService}
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:shadow-xl transition-all duration-300 z-10 group"
+          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:shadow-xl transition-all duration-300 z-10 group"
           aria-label="Previous service"
         >
-          <ChevronLeft className="w-6 h-6 text-gray-600 group-hover:text-gray-800" />
+          <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-gray-600 group-hover:text-gray-800" />
         </button>
 
         <button
           onClick={nextService}
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:shadow-xl transition-all duration-300 z-10 group"
+          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:shadow-xl transition-all duration-300 z-10 group"
           aria-label="Next service"
         >
-          <ChevronRight className="w-6 h-6 text-gray-600 group-hover:text-gray-800" />
+          <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-gray-600 group-hover:text-gray-800" />
         </button>
       </div>
 
       {/* Bottom Section */}
-      <div className="text-center mt-8">
-        <h3 className="text-lg font-medium text-gray-500 mb-2">
+      <div className="text-center mt-6 md:mt-8">
+        <h3 className="text-lg md:text-xl font-medium text-gray-500 mb-2">
           Our Services Portfolio
         </h3>
-        <p className="text-base text-gray-400 max-w-2xl mx-auto">
+        <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto px-4">
           We offer comprehensive digital solutions tailored to transform your business 
           and drive innovation in today&apos;s competitive landscape.
         </p>
         
         {/* Dots Indicator */}
-        <div className="flex justify-center gap-2 mt-6">
+        <div className="flex justify-center gap-2 mt-4 md:mt-6">
           {services.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                 index === currentIndex
                   ? "bg-blue-500 scale-110"
                   : "bg-gray-300 hover:bg-gray-400"

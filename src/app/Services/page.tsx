@@ -3,14 +3,13 @@
 import {
   Code,
   Brain,
-  Smartphone,
   Globe,
-  Database,
   Shield,
-  Zap,
   ArrowRight,
   Star,
   Rocket,
+  Settings,
+  Server,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,44 +19,44 @@ export default function Services() {
   const services = [
     {
       icon: Globe,
-      title: "Web Development",
-      description: "Custom web applications built with modern technologies like React, Next.js, and Node.js.",
-      features: ["Responsive Design", "SEO Optimized", "Performance Focused", "Scalable Architecture"],
+      title: "Full-Stack Product Engineering",
+      description: "We engineer robust, full-stack systems — from frontend to backend to infrastructure — with code quality and scalability at the core.",
+      features: ["React, Next.js & Tailwind CSS", "Node.js, NestJS & GraphQL", "PostgreSQL, MongoDB & Real-time Sync", "Docker, AWS & CI/CD Pipelines"],
       color: "blue"
     },
     {
       icon: Brain,
-      title: "AI & Machine Learning",
-      description: "Intelligent solutions powered by cutting-edge AI technologies and machine learning algorithms.",
-      features: ["Custom AI Models", "Data Analytics", "Natural Language Processing", "Computer Vision"],
+      title: "LLM-Powered AI Systems",
+      description: "We design systems that leverage cutting-edge language models to reason, retrieve, and respond — integrated seamlessly into your product or process.",
+      features: ["OpenAI, Anthropic & Mistral APIs", "LangChain, RAG & CrewAI", "Notion, PDF & Web Data Sources", "RunPod, Modal & GPU Inference"],
       color: "purple"
     },
     {
-      icon: Smartphone,
-      title: "Mobile Applications",
-      description: "Native and cross-platform mobile apps for iOS and Android with seamless user experiences.",
-      features: ["Cross-Platform", "Native Performance", "Push Notifications", "App Store Optimization"],
+      icon: Settings,
+      title: "End-to-End Automation Systems",
+      description: "From business logic to background jobs, we build automation pipelines that save time, reduce human error, and scale with your growth.",
+      features: ["Zapier, n8n & Make Workflows", "Python, Node.js & Cloud Functions", "Gmail, Slack & Stripe Integrations", "React Admin & Real-time Dashboards"],
       color: "green"
     },
     {
-      icon: Database,
-      title: "Backend Development",
-      description: "Robust and scalable backend systems with secure APIs and efficient data management.",
-      features: ["RESTful APIs", "Database Design", "Cloud Integration", "Security Best Practices"],
+      icon: Server,
+      title: "Deployment & DevOps",
+      description: "We ensure your product runs smoothly in production with modern DevOps practices — from zero-downtime deploys to intelligent monitoring.",
+      features: ["GitHub Actions & GitLab CI", "Docker & Container Registry", "GCP, AWS & Firebase Hosting", "Datadog & Real-time Monitoring"],
       color: "orange"
     },
     {
       icon: Shield,
-      title: "Cybersecurity",
-      description: "Comprehensive security solutions to protect your digital assets and user data.",
-      features: ["Security Audits", "Penetration Testing", "Data Encryption", "Compliance"],
+      title: "Security, Privacy & Reliability",
+      description: "From identity to data to systems — we build with trust and resilience in mind, ensuring your application is safe, compliant, and production-ready.",
+      features: ["OAuth2, JWT & Multi-provider Auth", "HTTPS, AES & Encryption at Rest", "GDPR, CCPA & Audit Trails", "2FA, Rate Limiting & Session Management"],
       color: "red"
     },
     {
-      icon: Zap,
-      title: "DevOps & Cloud",
-      description: "Streamlined deployment processes and cloud infrastructure for optimal performance.",
-      features: ["CI/CD Pipelines", "Cloud Migration", "Infrastructure as Code", "Monitoring"],
+      icon: Code,
+      title: "Agile, But Engineered",
+      description: "We move fast — but not recklessly. Our process merges the flexibility of agile with the discipline of software engineering.",
+      features: ["Scrum, Kanban & Weekly Demos", "Code Reviews & Pair Programming", "Unit, Integration & E2E Testing", "Tech Specs, API Docs & Changelogs"],
       color: "indigo"
     }
   ];
@@ -113,11 +112,6 @@ export default function Services() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
               Our Services
             </h1>
-
-            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              We deliver cutting-edge digital solutions that transform ideas into reality. 
-              From AI-powered applications to robust web platforms, we&apos;ve got you covered.
-            </p>
           </div>
 
           {/* Services Carousel */}
