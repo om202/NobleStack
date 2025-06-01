@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { User } from "lucide-react";
 
 interface TeamMember {
   name: string;
@@ -10,6 +11,12 @@ interface TeamMember {
   image: string;
   bio: string;
 }
+
+const PlaceholderAvatar = ({ className }: { className?: string }) => (
+  <div className={`w-full h-full bg-gray-50 flex items-center justify-center ${className}`}>
+    <User className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-gray-400" />
+  </div>
+);
 
 interface AlbumArtTeamProps {
   teamMembers: TeamMember[];
@@ -21,6 +28,18 @@ export default function AlbumArtTeam({
   autoRotateInterval = 3000,
 }: AlbumArtTeamProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [imageErrors, setImageErrors] = useState<{ [key: number]: boolean }>({});
+
+  const shouldShowPlaceholder = (image: string, index: number) => {
+    return !image || 
+           image === '' || 
+           image.includes('placeholder') || 
+           imageErrors[index];
+  };
+
+  const handleImageError = (index: number) => {
+    setImageErrors(prev => ({ ...prev, [index]: true }));
+  };
 
   // Auto-rotate team members
   useEffect(() => {
@@ -78,13 +97,18 @@ export default function AlbumArtTeam({
                 {/* Image Section */}
                 <div className="h-48 md:h-56 lg:h-64 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center p-6">
                   <div className="w-32 h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 rounded-2xl overflow-hidden shadow-lg">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      width={176}
-                      height={176}
-                      className="w-full h-full object-cover"
-                    />
+                    {shouldShowPlaceholder(member.image, index) ? (
+                      <PlaceholderAvatar />
+                    ) : (
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={176}
+                        height={176}
+                        className="w-full h-full object-cover"
+                        onError={() => handleImageError(index)}
+                      />
+                    )}
                   </div>
                 </div>
 
