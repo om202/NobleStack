@@ -138,7 +138,6 @@ export default function Services() {
               const Icon = service.icon;
               const colors = getColorClasses(service.color);
               const gradientColors = colors.split(' ')[0] + ' ' + colors.split(' ')[1];
-              const bgColor = colors.split(' ')[2];
               const textColor = colors.split(' ')[3];
               
               return (

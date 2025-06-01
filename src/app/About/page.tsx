@@ -11,7 +11,6 @@ import {
   Brain,
   Rocket,
   Shield,
-  CheckCircle,
   Star,
   ArrowRight,
 } from "lucide-react";
@@ -243,7 +242,6 @@ export default function About() {
                 const Icon = value.icon;
                 const colors = getColorClasses(value.color);
                 const gradientColors = colors.split(' ')[0] + ' ' + colors.split(' ')[1];
-                const textColor = colors.split(' ')[3];
                 
                 return (
                   <div
