@@ -82,12 +82,12 @@ export default function Navigation() {
                     <NavigationMenu.Item key={item.href}>
                       <NavigationMenu.Link asChild>
                         <Link href={item.href} className="flex flex-col items-center gap-1 group cursor-pointer relative">
-                          <div className={`w-11 h-11 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center transition-all duration-300 shadow-lg ${
+                          <div className={`w-11 h-11 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center transition-all duration-300 shadow-sm ${
                             isActive 
-                              ? `${item.activeColors} shadow-xl` 
+                              ? `${item.activeColors} shadow-md` 
                               : item.inactiveColors
                           }`}>
-                            <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white drop-shadow-[0_3px_6px_rgba(0,0,0,0.6)]" />
+                            <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]" />
                           </div>
                           <span className={`text-xs transition-colors duration-300 font-semibold ${
                             isActive ? 'text-gray-600' : 'text-gray-700'
@@ -107,8 +107,8 @@ export default function Navigation() {
               {/* Call Now Button */}
               <div className="hidden lg:flex ml-6 pl-6 border-l border-gray-500/25">
                 <button className="flex flex-col items-center gap-1 group cursor-pointer">
-                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center transition-all duration-300 shadow-lg bg-blue-500">
-                    <Phone className="w-6 h-6 sm:w-7 sm:h-7 text-white drop-shadow-[0_3px_6px_rgba(0,0,0,0.6)]" />
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center transition-all duration-300 shadow-sm bg-blue-500">
+                    <Phone className="w-6 h-6 sm:w-7 sm:h-7 text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]" />
                   </div>
                   <span className="text-xs transition-colors duration-300 font-semibold text-gray-700">
                     Call now
@@ -142,12 +142,12 @@ export default function Navigation() {
                       href={item.href}
                       className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group relative"
                     >
-                      <div className={`w-15 h-15 rounded-lg flex items-center justify-center transition-all duration-300 shadow-lg ${
+                      <div className={`w-15 h-15 rounded-lg flex items-center justify-center transition-all duration-300 shadow-sm ${
                         isActive 
-                          ? `${item.activeColors} shadow-xl` 
+                          ? `${item.activeColors} shadow-md` 
                           : item.inactiveColors
                       }`}>
-                        <Icon className="w-8 h-8 text-white drop-shadow-[0_3px_6px_rgba(0,0,0,0.6)]" />
+                        <Icon className="w-8 h-8 text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]" />
                       </div>
                       <span className={`text-sm transition-colors duration-300 font-semibold ${
                         isActive ? 'text-gray-600' : 'text-gray-700'
@@ -163,7 +163,7 @@ export default function Navigation() {
               </div>
 
               {/* Mobile Call Button */}
-              <button className="w-full flex items-center justify-center gap-2 px-4 py-4 bg-blue-500 text-white rounded-lg hover:scale-110 hover:shadow-xl transition-all duration-300 font-semibold text-sm shadow-lg animate-in fade-in slide-in-from-bottom-1 duration-700 ease-out delay-300">
+              <button className="w-full flex items-center justify-center gap-2 px-4 py-4 bg-blue-500 text-white rounded-lg hover:scale-110 hover:shadow-md transition-all duration-300 font-semibold text-sm shadow-sm animate-in fade-in slide-in-from-bottom-1 duration-700 ease-out delay-300">
                 <Phone className="w-5 h-5" />
                 Call now!
               </button>
