@@ -2,15 +2,24 @@
 
 import React, { useState, useEffect } from 'react';
 import {
-  SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiOpenai, 
-  SiAmazon, SiDocker, SiGraphql, SiMongodb, SiPostgresql,
-  SiTailwindcss, SiPrisma, SiLangchain, SiVercel, SiFirebase,
-  SiZapier, SiStripe, SiAnthropic, SiFigma, SiJest,
-  SiFramer, SiRedux, SiExpress, SiNestjs,
-  SiClerk, SiHuggingface, SiStreamlit, SiFastapi, SiN8N,
-  SiMake, SiGithubactions, SiGitlab, SiPrettier, SiEslint,
-  SiDatadog, SiSlack, SiGmail
+  SiReact, SiOpenai, SiAmazon, SiTailwindcss, SiPrisma, SiLangchain, 
+  SiVercel, SiFirebase, SiZapier, SiStripe, SiAnthropic, SiFigma,
+  SiFramer, SiRedux, SiClerk, SiHuggingface, SiStreamlit, SiFastapi, 
+  SiN8N, SiMake, SiGithubactions, SiGitlab, SiPrettier, SiEslint,
+  SiDatadog, SiSlack, SiGmail, SiGoogle
 } from 'react-icons/si';
+
+// Import specific Devicons for better icon coverage
+import ReactOriginal from 'devicons-react/icons/ReactOriginal';
+import NodejsOriginal from 'devicons-react/icons/NodejsOriginal';
+import TypescriptOriginal from 'devicons-react/icons/TypescriptOriginal';
+import NextjsOriginal from 'devicons-react/icons/NextjsOriginal';
+import DockerOriginal from 'devicons-react/icons/DockerOriginal';
+import MongodbOriginal from 'devicons-react/icons/MongodbOriginal';
+import PostgresqlOriginal from 'devicons-react/icons/PostgresqlOriginal';
+import GraphqlPlain from 'devicons-react/icons/GraphqlPlain';
+import JestPlain from 'devicons-react/icons/JestPlain';
+import ExpressOriginal from 'devicons-react/icons/ExpressOriginal';
 
 interface Technology {
   name: string;
@@ -74,17 +83,17 @@ const TECH_DESCRIPTIONS: { [key: string]: string } = {
   "Gmail API": "Email Service Integration"
 };
 
-const TECH_ICONS: { [key: string]: React.ComponentType<React.SVGProps<SVGSVGElement>> } = {
-  "React.js": SiReact,
-  "Next.js": SiNextdotjs,
-  "TypeScript": SiTypescript,
-  "Node.js": SiNodedotjs,
+const TECH_ICONS: { [key: string]: React.ComponentType<{ className?: string; style?: React.CSSProperties }> } = {
+  "React.js": ReactOriginal,
+  "Next.js": NextjsOriginal,
+  "TypeScript": TypescriptOriginal,
+  "Node.js": NodejsOriginal,
   "OpenAI": SiOpenai,
   "AWS": SiAmazon,
-  "Docker": SiDocker,
-  "GraphQL": SiGraphql,
-  "MongoDB": SiMongodb,
-  "PostgreSQL": SiPostgresql,
+  "Docker": DockerOriginal,
+  "GraphQL": GraphqlPlain,
+  "MongoDB": MongodbOriginal,
+  "PostgreSQL": PostgresqlOriginal,
   "Tailwind CSS": SiTailwindcss,
   "Prisma": SiPrisma,
   "LangChain": SiLangchain,
@@ -94,13 +103,16 @@ const TECH_ICONS: { [key: string]: React.ComponentType<React.SVGProps<SVGSVGElem
   "Stripe": SiStripe,
   "Claude": SiAnthropic,
   "Figma": SiFigma,
-  "Jest": SiJest,
+  "Jest": JestPlain,
   "Framer Motion": SiFramer,
   "Redux": SiRedux,
-  "Express.js": SiExpress,
-  "NestJS": SiNestjs,
+  "Express.js": ExpressOriginal,
   "Clerk": SiClerk,
   "Hugging Face": SiHuggingface,
+  "AWS Bedrock": SiAmazon,
+  "Vertex AI": SiGoogle,
+  "LangGraph": SiLangchain, // LangGraph is part of LangChain
+  "CrewAI": SiReact, // Use React as fallback
   "Streamlit": SiStreamlit,
   "FastAPI": SiFastapi,
   "n8n": SiN8N,
