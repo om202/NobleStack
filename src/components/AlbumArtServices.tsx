@@ -50,16 +50,16 @@ export default function AlbumArtServices({
         opacity: 1,
       };
     } else if (position === 1) {
-      // Right card
+      // Right card - responsive spacing
       return {
-        transform: "translateX(280px) scale(0.85)",
+        transform: "translateX(min(280px, 70vw)) scale(0.85)",
         zIndex: 2,
         opacity: 0.7,
       };
     } else if (position === services.length - 1) {
-      // Left card
+      // Left card - responsive spacing
       return {
-        transform: "translateX(-280px) scale(0.85)",
+        transform: "translateX(max(-280px, -70vw)) scale(0.85)",
         zIndex: 2,
         opacity: 0.7,
       };
@@ -88,7 +88,7 @@ export default function AlbumArtServices({
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white rounded-2xl p-4 md:p-8 shadow-sm border border-gray-200 overflow-hidden">
+    <div className="bg-gradient-to-b from-gray-50 to-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-200 overflow-hidden">
       <div className="relative h-[600px] md:h-[650px] lg:h-[700px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {services.map((service, index) => {
@@ -103,9 +103,9 @@ export default function AlbumArtServices({
                 className="absolute transition-all duration-700 ease-in-out transform-gpu will-change-transform"
                 style={getCardStyle(index)}
               >
-                <div className="w-64 sm:w-72 md:w-96 lg:w-[420px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transform-gpu">
+                <div className="w-80 sm:w-72 md:w-96 lg:w-[420px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transform-gpu">
                   {/* Header Section */}
-                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-4 sm:p-6 md:p-8 text-center">
+                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 sm:p-6 md:p-8 text-center">
                     <div className={`w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br ${gradientColors} rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-lg`}>
                       <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" />
                     </div>
@@ -118,7 +118,7 @@ export default function AlbumArtServices({
                   </div>
 
                   {/* Features Section */}
-                  <div className="p-4 sm:p-6 md:p-8 flex-1">
+                  <div className="p-6 sm:p-6 md:p-8 flex-1">
                     <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-3 sm:mb-4 md:mb-6">
                       Key Technologies
                     </h4>
@@ -162,7 +162,7 @@ export default function AlbumArtServices({
         <h3 className="text-lg md:text-xl font-medium text-gray-500 mb-2">
           Our Services Portfolio
         </h3>
-        <p className="text-md-sm md:text-base text-gray-400 max-w-2xl mx-auto px-4">
+        <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto px-2">
           We offer comprehensive digital solutions tailored to transform your business 
           and drive innovation in today&apos;s competitive landscape.
         </p>
