@@ -16,8 +16,33 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import AlbumArtTeam from "../../components/AlbumArtTeam";
 
 export default function About() {
+  const teamMembers = [
+    {
+      name: "Ved Prakash",
+      role: "CEO",
+      expertise: "Strategic Leadership\nBusiness Development",
+      image: "/ved.png",
+      bio: ""
+    },
+    {
+      name: "Omprakash",
+      role: "CTO",
+      expertise: "Technology Strategy\nSystem Architecture",
+      image: "/om.png",
+      bio: ""
+    },
+    {
+      name: "Ranjit",
+      role: "Full Stack Intern",
+      expertise: "Web Development\nModern Frameworks",
+      image: "/ranjit.png",
+      bio: ""
+    }
+  ];
+
   const values = [
     {
       icon: Target,
@@ -57,42 +82,11 @@ export default function About() {
     }
   ];
 
-  const teamMembers = [
-    {
-      name: "Alex Chen",
-      role: "CEO & Founder",
-      expertise: "Full-Stack Development, AI Strategy",
-      image: "/team/alex.jpg", // Placeholder
-      bio: "10+ years of experience in building scalable web applications and AI solutions."
-    },
-    {
-      name: "Sarah Rodriguez",
-      role: "CTO",
-      expertise: "Cloud Architecture, DevOps",
-      image: "/team/sarah.jpg", // Placeholder
-      bio: "Expert in designing robust cloud infrastructure and implementing CI/CD pipelines."
-    },
-    {
-      name: "Michael Park",
-      role: "Lead AI Engineer",
-      expertise: "Machine Learning, Data Science",
-      image: "/team/michael.jpg", // Placeholder
-      bio: "PhD in Computer Science with focus on deep learning and natural language processing."
-    },
-    {
-      name: "Emily Watson",
-      role: "Design Director",
-      expertise: "UX/UI Design, Product Strategy",
-      image: "/team/emily.jpg", // Placeholder
-      bio: "Creates intuitive and beautiful user experiences that drive engagement and conversion."
-    }
-  ];
-
   const stats = [
-    { number: "50+", label: "Projects Completed" },
-    { number: "25+", label: "Happy Clients" },
-    { number: "5+", label: "Years Experience" },
-    { number: "15+", label: "Team Members" }
+    { number: "10+", label: "Projects Completed" },
+    { number: "5+", label: "Happy Clients" },
+    { number: "1+", label: "Years Experience" },
+    { number: "3+", label: "Team Members" }
   ];
 
   const getColorClasses = (color: string) => {
@@ -137,9 +131,14 @@ export default function About() {
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              We&apos;re a passionate team of developers, designers, and innovators dedicated to 
-              transforming ideas into intelligent digital solutions that make a difference.
+              We&apos;re a group of hardworking smart people working diligently to bring the latest technology, 
+              which is changing rapidly like never before, accessible to people of Nepal.
             </p>
+          </div>
+
+                    {/* Team Section - iTunes Style */}
+          <div className="mb-16">
+            <AlbumArtTeam teamMembers={teamMembers} />
           </div>
 
           {/* Stats Section */}
@@ -168,17 +167,17 @@ export default function About() {
                 </h2>
                 <div className="space-y-4 text-gray-600">
                   <p>
-                    Founded in 2019, Noble Stack emerged from a simple yet powerful vision: 
-                    to bridge the gap between cutting-edge technology and real-world business solutions.
+                    Founded in 2025, Noble Stack emerged from a simple yet powerful vision: 
+                    to bridge the gap between cutting-edge technology and the people of Nepal.
                   </p>
                   <p>
-                    What started as a small team of passionate developers has grown into a 
-                    full-service digital agency specializing in AI-powered applications, 
-                    modern web development, and innovative mobile solutions.
+                    We are a group of hardworking smart people working diligently to bring the latest 
+                    technology, which is changing rapidly like never before, accessible to everyone in Nepal.
                   </p>
                   <p>
-                    Today, we&apos;re proud to have helped dozens of businesses transform their 
-                    digital presence and achieve their goals through technology that truly makes an impact.
+                    Our mission is to democratize technology and ensure that Nepal doesn&apos;t get left behind 
+                    in this rapidly evolving digital landscape, empowering local businesses and individuals 
+                    with modern digital solutions.
                   </p>
                 </div>
                 
@@ -265,50 +264,6 @@ export default function About() {
             </div>
           </div>
 
-          {/* Team Section */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Meet Our Team
-              </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Our diverse team of experts brings together years of experience in technology, 
-                design, and business strategy.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {teamMembers.map((member, index) => (
-                <div
-                  key={index}
-                  className="text-center group"
-                >
-                  <div className="relative mb-6">
-                    <div className="w-24 h-24 bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl mx-auto mb-4 group-hover:scale-105 transition-transform duration-300 flex items-center justify-center">
-                      <Users className="w-10 h-10 text-gray-500" />
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">
-                    {member.name}
-                  </h3>
-                  
-                  <p className="text-blue-600 font-semibold text-sm mb-2">
-                    {member.role}
-                  </p>
-                  
-                  <p className="text-gray-500 text-xs mb-3">
-                    {member.expertise}
-                  </p>
-                  
-                  <p className="text-gray-600 text-sm">
-                    {member.bio}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* Mission & Vision Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
@@ -319,8 +274,8 @@ export default function About() {
                 <h3 className="text-xl font-bold text-gray-900">Our Mission</h3>
               </div>
               <p className="text-gray-700">
-                To empower businesses with intelligent, scalable, and innovative digital solutions 
-                that drive growth and create lasting value in an ever-evolving technological landscape.
+                To empower people of Nepal with intelligent, scalable, and innovative digital solutions 
+                that make the latest technology accessible and drive digital transformation in our rapidly evolving world.
               </p>
             </div>
 
@@ -332,8 +287,8 @@ export default function About() {
                 <h3 className="text-xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="text-gray-700">
-                To be the leading catalyst for digital transformation, where cutting-edge technology 
-                meets human creativity to solve tomorrow&apos;s challenges today.
+                To be the leading catalyst for digital transformation in Nepal, where cutting-edge technology 
+                meets local innovation to solve tomorrow&apos;s challenges today and ensure Nepal thrives in the digital age.
               </p>
             </div>
           </div>

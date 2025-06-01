@@ -54,12 +54,12 @@ export default function HeroSection() {
               height={80}
             />
             <div className="flex flex-col justify-center h-24">
-              <h2 className="text-3xl md:text-3xl font-medium text-gray-700 leading-none">
+              <span className="text-3xl mb-1 md:text-3xl font-medium text-gray-700 leading-none">
                 Noble
-              </h2>
-              <h2 className="text-3xl md:text-3xl font-medium text-gray-700 leading-none">
+              </span>
+              <span className="text-3xl md:text-3xl font-medium text-gray-700 leading-none">
                 Stack
-              </h2>
+              </span>
             </div>
           </div>
 
