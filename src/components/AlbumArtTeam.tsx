@@ -32,18 +32,8 @@ export default function AlbumArtTeam({
   }, [teamMembers.length, autoRotateInterval]);
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white rounded-2xl p-8 shadow-sm border border-gray-200 overflow-hidden">
-      <div className="text-center mb-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-          Meet Our Team
-        </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Our diverse team of experts brings together years of experience in technology, 
-          design, and business strategy.
-        </p>
-      </div>
-
-      <div className="relative h-[500px] perspective-1000">
+    <div className="bg-gradient-to-b from-gray-50 to-white rounded-2xl p-4 shadow-sm border border-gray-200 overflow-hidden">
+      <div className="relative h-[350px] perspective-1000">
         <div className="team-carousel absolute inset-0 flex items-center justify-center">
           {teamMembers.map((member, index) => {
             const offset = (index - currentIndex + teamMembers.length) % teamMembers.length;
@@ -60,17 +50,17 @@ export default function AlbumArtTeam({
               zIndex = 3;
               opacity = 1;
             } else if (isLeft) {
-              transform = 'translateX(-120px) rotateY(35deg) scale(0.8)';
+              transform = 'translateX(-100px) rotateY(15deg) scale(0.85)';
               zIndex = 2;
-              opacity = 0.7;
+              opacity = 0.8;
             } else if (isRight) {
-              transform = 'translateX(120px) rotateY(-35deg) scale(0.8)';
+              transform = 'translateX(100px) rotateY(-15deg) scale(0.85)';
               zIndex = 2;
-              opacity = 0.7;
+              opacity = 0.8;
             } else {
-              transform = `translateX(${offset > teamMembers.length / 2 ? -200 : 200}px) rotateY(${offset > teamMembers.length / 2 ? 60 : -60}deg) scale(0.6)`;
+              transform = `translateX(${offset > teamMembers.length / 2 ? -150 : 150}px) rotateY(${offset > teamMembers.length / 2 ? 25 : -25}deg) scale(0.7)`;
               zIndex = 1;
-              opacity = 0.3;
+              opacity = 0.4;
             }
 
             return (
@@ -84,7 +74,7 @@ export default function AlbumArtTeam({
               }}
             >
               {/* Main Card */}
-              <div className="relative w-64 h-80 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+              <div className="relative w-64 h-83 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
                 {/* Image Section */}
                 <div className="h-48 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center p-6">
                   <div className="w-32 h-32 rounded-2xl overflow-hidden shadow-lg">
@@ -106,40 +96,25 @@ export default function AlbumArtTeam({
                   <p className="text-blue-600 font-semibold text-sm mb-3">
                     {member.role}
                   </p>
-                  <p className="text-gray-500 text-xs whitespace-pre-line leading-relaxed">
+                  <p className="text-gray-500 text-xs whitespace-pre-line leading-relaxed mb-4">
                     {member.expertise}
                   </p>
                 </div>
-              </div>
-
-              {/* Reflection */}
-              <div className="absolute left-0 w-64 h-40 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-200 overflow-hidden opacity-15 transform scale-y-[-1] origin-top" style={{ top: 'calc(100% + 8px)' }}>
-                <div className="h-24 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center p-3">
-                  <div className="w-16 h-16 rounded-xl overflow-hidden shadow-sm">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      width={64}
-                      height={64}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="p-3 text-center">
-                  <h3 className="text-sm font-bold text-gray-900 mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-blue-600 font-semibold text-xs mb-2">
-                    {member.role}
-                  </p>
-                </div>
-                {/* Strong fade out gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
               </div>
             </div>
             );
            })}
         </div>
+      </div>
+
+      <div className="text-center mt-8">
+        <h3 className="text-lg font-medium text-gray-500 mb-2">
+          Meet Our Team
+        </h3>
+        <p className="text-sm text-gray-400 max-w-xl mx-auto">
+          Our diverse team of experts brings together years of experience in technology, 
+          design, and business strategy.
+        </p>
       </div>
 
       <style jsx>{`
