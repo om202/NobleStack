@@ -126,7 +126,7 @@ export default function About() {
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-gray-900">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
               About Noble Stack
             </h1>
 
@@ -148,10 +148,10 @@ export default function About() {
                 key={index}
                 className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center group hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2 group-hover:scale-110 transition-transform duration-300">
                   {stat.number}
                 </div>
-                <div className="text-gray-600 font-medium">
+                <div className="text-base text-gray-600 font-medium">
                   {stat.label}
                 </div>
               </div>
@@ -162,10 +162,10 @@ export default function About() {
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                   Our Story
                 </h2>
-                <div className="space-y-4 text-gray-600">
+                <div className="space-y-4 text-base text-gray-600">
                   <p>
                     Founded in 2025, Noble Stack emerged from a simple yet powerful vision: 
                     to bridge the gap between cutting-edge technology and the people of Nepal.
@@ -205,19 +205,19 @@ export default function About() {
                   <div className="grid grid-cols-2 gap-6">
                     <div className="flex flex-col items-center">
                       <Code className="w-12 h-12 text-blue-600 mb-3" />
-                      <span className="text-sm font-semibold text-gray-800">Clean Code</span>
+                      <span className="text-base font-semibold text-gray-800">Clean Code</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <Brain className="w-12 h-12 text-purple-600 mb-3" />
-                      <span className="text-sm font-semibold text-gray-800">AI-Powered</span>
+                      <span className="text-base font-semibold text-gray-800">AI-Powered</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <Rocket className="w-12 h-12 text-green-600 mb-3" />
-                      <span className="text-sm font-semibold text-gray-800">Fast Delivery</span>
+                      <span className="text-base font-semibold text-gray-800">Fast Delivery</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <Award className="w-12 h-12 text-orange-600 mb-3" />
-                      <span className="text-sm font-semibold text-gray-800">Quality First</span>
+                      <span className="text-base font-semibold text-gray-800">Quality First</span>
                     </div>
                   </div>
                 </div>
@@ -228,10 +228,10 @@ export default function About() {
           {/* Values Section */}
           <div className="mb-16">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Our Values
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <p className="text-base text-gray-600 max-w-2xl mx-auto">
                 These core values guide everything we do and shape how we work with our clients and each other.
               </p>
             </div>
@@ -255,7 +255,7 @@ export default function About() {
                       {value.title}
                     </h3>
                     
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-base text-gray-600">
                       {value.description}
                     </p>
                   </div>
@@ -273,7 +273,7 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Our Mission</h3>
               </div>
-              <p className="text-gray-700">
+              <p className="text-base text-gray-700">
                 To empower people of Nepal with intelligent, scalable, and innovative digital solutions 
                 that make the latest technology accessible and drive digital transformation in our rapidly evolving world.
               </p>
@@ -286,7 +286,7 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Our Vision</h3>
               </div>
-              <p className="text-gray-700">
+              <p className="text-base text-gray-700">
                 To be the leading catalyst for digital transformation in Nepal, where cutting-edge technology 
                 meets local innovation to solve tomorrow&apos;s challenges today and ensure Nepal thrives in the digital age.
               </p>
@@ -303,10 +303,10 @@ export default function About() {
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
             </div>
             
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Work With Us?
             </h3>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
               Let&apos;s collaborate to bring your vision to life. Our team is excited to discuss your project 
               and explore how we can help you achieve your goals.
             </p>

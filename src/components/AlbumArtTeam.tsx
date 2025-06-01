@@ -74,7 +74,7 @@ export default function AlbumArtTeam({
               className="absolute transition-all duration-1000 ease-in-out transform-gpu will-change-transform"
               style={getCardStyle(index)}
             >
-              <div className="w-50 h-83 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transform-gpu">
+              <div className="w-60 h-90 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transform-gpu">
                 {/* Image Section */}
                 <div className="h-48 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center p-6">
                   <div className="w-32 h-32 rounded-2xl overflow-hidden shadow-lg">
@@ -93,10 +93,10 @@ export default function AlbumArtTeam({
                   <h3 className="text-lg font-bold text-gray-900 mb-1 transform-gpu">
                     {member.name}
                   </h3>
-                  <p className="text-blue-600 font-semibold text-sm mb-3 transform-gpu">
+                  <p className="text-blue-600 font-semibold text-base mb-3 transform-gpu">
                     {member.role}
                   </p>
-                  <p className="text-gray-500 text-xs whitespace-pre-line leading-relaxed mb-4 transform-gpu">
+                  <p className="text-gray-500 text-base whitespace-pre-line leading-relaxed mb-4 transform-gpu">
                     {member.expertise}
                   </p>
                 </div>
@@ -110,7 +110,7 @@ export default function AlbumArtTeam({
         <h3 className="text-lg font-medium text-gray-500 mb-2">
           Meet Our Team
         </h3>
-        <p className="text-sm text-gray-400 max-w-xl mx-auto">
+        <p className="text-base text-gray-400 max-w-xl mx-auto">
           Our diverse team of experts brings together years of experience in
           technology, design, and business strategy.
         </p>
