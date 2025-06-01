@@ -8,13 +8,13 @@ import {
   Database,
   Shield,
   Zap,
-  CheckCircle,
   ArrowRight,
   Star,
   Rocket,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import AlbumArtServices from "../../components/AlbumArtServices";
 
 export default function Services() {
   const services = [
@@ -85,18 +85,6 @@ export default function Services() {
     }
   ];
 
-  const getColorClasses = (color: string) => {
-    const colorMap = {
-      blue: "from-blue-400 to-blue-600 bg-blue-50 text-blue-600",
-      purple: "from-purple-400 to-purple-600 bg-purple-50 text-purple-600",
-      green: "from-green-400 to-green-600 bg-green-50 text-green-600",
-      orange: "from-orange-400 to-orange-600 bg-orange-50 text-orange-600",
-      red: "from-red-400 to-red-600 bg-red-50 text-red-600",
-      indigo: "from-indigo-400 to-indigo-600 bg-indigo-50 text-indigo-600"
-    };
-    return colorMap[color as keyof typeof colorMap] || colorMap.blue;
-  };
-
   return (
     <>
       {/* Hero Section */}
@@ -132,42 +120,9 @@ export default function Services() {
             </p>
           </div>
 
-          {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              const colors = getColorClasses(service.color);
-              const gradientColors = colors.split(' ')[0] + ' ' + colors.split(' ')[1];
-              const textColor = colors.split(' ')[3];
-              
-              return (
-                <div
-                  key={index}
-                  className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 group"
-                >
-                  <div className={`w-16 h-16 bg-gradient-to-br ${gradientColors} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    {service.title}
-                  </h3>
-                  
-                  <p className="text-base text-gray-600 mb-6">
-                    {service.description}
-                  </p>
-                  
-                  <ul className="space-y-3">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center gap-3">
-                        <CheckCircle className={`w-5 h-5 ${textColor}`} />
-                        <span className="text-gray-700 text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              );
-            })}
+          {/* Services Carousel */}
+          <div className="mb-16">
+            <AlbumArtServices services={services} />
           </div>
 
           {/* Process Section */}
