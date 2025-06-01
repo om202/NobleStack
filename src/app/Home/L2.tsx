@@ -169,18 +169,18 @@ export default function FeaturesSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-base font-medium mb-4">
             <Globe className="w-4 h-4 mr-2" />
             Modern Web Development Experts
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             We Build Modern
             <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
               {" "}
               Websites That Convert
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
             Specializing in lightning-fast, SEO-optimized websites that look
             stunning on every device. From landing pages to complex web
             applications, we create digital experiences that drive results.
@@ -213,18 +213,18 @@ export default function FeaturesSection() {
                   >
                     <service.icon className="w-6 h-6 text-white" />
                   </div>
-                  <span className="text-xs px-2 py-1 bg-blue-500/20 text-blue-500 rounded-full">
+                  <span className="text-base px-2 py-1 bg-blue-500/20 text-blue-500 rounded-full">
                     {service.status}
                   </span>
                 </div>
                 <h3 className="text-gray-900 font-semibold mb-2">
                   {service.name}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">
+                <p className="text-base text-gray-600 mb-4">
                   {service.description}
                 </p>
               </div>
-              <button className="flex items-center text-blue-600 text-sm group-hover:text-blue-700 transition-colors">
+              <button className="flex items-center text-blue-600 text-base group-hover:text-blue-700 transition-colors">
                 Learn More
                 <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -234,7 +234,7 @@ export default function FeaturesSection() {
 
         {/* What Makes Our Websites Convert - Animated Carousel */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+          <h3 className="text-xl font-bold text-center text-gray-900 mb-8">
             What Makes Our Websites Convert
           </h3>
 
@@ -253,17 +253,17 @@ export default function FeaturesSection() {
                   })}
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h4 className="text-lg font-bold text-gray-900 mb-3">
                     {webFeatures[activeFeature].title}
                   </h4>
-                  <p className="text-lg text-gray-600 mb-6">
+                  <p className="text-base text-gray-600 mb-6">
                     {webFeatures[activeFeature].description}
                   </p>
                   <div className="flex flex-wrap gap-3">
                     {webFeatures[activeFeature].stats.map((stat, statIndex) => (
                       <span
                         key={statIndex}
-                        className="text-sm px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium"
+                        className="text-base px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium"
                       >
                         {stat}
                       </span>

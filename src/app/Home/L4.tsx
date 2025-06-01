@@ -182,18 +182,18 @@ export default function FAQSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-base font-medium mb-4">
             <MessageCircle className="w-4 h-4 mr-2" />
             Technical FAQ & Solutions Guide
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             Technical Deep Dive
             <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
               {" "}
               Questions & Answers
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Comprehensive technical documentation and answers to help you understand our capabilities, 
             methodologies, and how we can solve your specific challenges.
           </p>
@@ -248,11 +248,11 @@ export default function FAQSection() {
                       <span className="text-lg font-semibold text-gray-900">
                         {faq.question}
                       </span>
-                      <span className="text-xs px-2 py-1 bg-blue-100 text-blue-700 rounded-full font-medium">
+                      <span className="text-base px-2 py-1 bg-blue-100 text-blue-700 rounded-full font-medium">
                         {faq.complexity}
                       </span>
                     </div>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-base text-gray-500">
                       Delivery: {faq.deliveryTime}
                     </div>
                   </div>
@@ -267,7 +267,7 @@ export default function FAQSection() {
                              {openFaq === index && (
                  <div className="px-6 pb-6 border-t border-gray-100">
                    <div className="pl-16 pt-6">
-                    <p className="text-gray-600 leading-relaxed mb-6 text-lg">
+                    <p className="text-base text-gray-600 leading-relaxed mb-6">
                       {faq.answer}
                     </p>
                     
@@ -279,7 +279,7 @@ export default function FAQSection() {
                            className="flex items-center gap-2 px-3 py-2 bg-gray-50 rounded-lg border"
                          >
                            <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                           <span className="text-sm font-medium text-gray-700">{metric}</span>
+                           <span className="text-base font-medium text-gray-700">{metric}</span>
                          </div>
                        ))}
                      </div>
@@ -292,10 +292,10 @@ export default function FAQSection() {
 
         {/* Bottom CTA */}
         <div className="text-center bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <h3 className="text-xl font-bold text-gray-900 mb-4">
             Have a specific question?
           </h3>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+          <p className="text-base text-gray-600 mb-6 max-w-2xl mx-auto">
             Our team is ready to discuss your unique requirements and provide 
             detailed solutions tailored to your project needs.
           </p>

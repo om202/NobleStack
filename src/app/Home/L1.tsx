@@ -54,16 +54,16 @@ export default function HeroSection() {
               height={80}
             />
             <div className="flex flex-col justify-center h-24">
-              <span className="text-3xl mb-1 md:text-3xl font-medium text-gray-700 leading-none">
+              <span className="text-2xl mb-1 md:text-2xl font-medium text-gray-700 leading-none">
                 Noble
               </span>
-              <span className="text-3xl md:text-3xl font-medium text-gray-700 leading-none">
+              <span className="text-2xl md:text-2xl font-medium text-gray-700 leading-none">
                 Stack
               </span>
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
             Where{" "}
             <span className="ai-meets-text">
               AI
@@ -75,7 +75,7 @@ export default function HeroSection() {
             </span>
           </h1>
 
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
             At Noble Stack, we build intelligent digital products using advanced
             AI, LLMs, and modern web stacks. Innovation isn&apos;t a goal —
             it&apos;s our process.
@@ -104,7 +104,7 @@ export default function HeroSection() {
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">From Your Idea to Deployed Software</h3>
-              <p className="text-gray-600 text-sm">Complete end-to-end development from concept to production</p>
+              <p className="text-base text-gray-600">Complete end-to-end development from concept to production</p>
             </div>
             
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow duration-300">
@@ -112,7 +112,7 @@ export default function HeroSection() {
                 <Bot className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">AI-Powered Solutions</h3>
-              <p className="text-gray-600 text-sm">Intelligent automation and AI integration in every project</p>
+              <p className="text-base text-gray-600">Intelligent automation and AI integration in every project</p>
             </div>
             
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow duration-300">
@@ -120,14 +120,14 @@ export default function HeroSection() {
                 <Zap className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Modern Tech Stack</h3>
-              <p className="text-gray-600 text-sm">Latest technologies and best practices for optimal performance</p>
+              <p className="text-base text-gray-600">Latest technologies and best practices for optimal performance</p>
             </div>
           </div>
         </div>
 
         {/* Expertise Section */}
         <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+          <h2 className="text-xl font-bold text-gray-900 mb-8 text-center">
             Our Expertise
           </h2>
           
@@ -136,9 +136,9 @@ export default function HeroSection() {
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <div className="flex items-center mb-4">
                   <area.icon className="w-8 h-8 text-blue-500 mr-3" />
-                  <h3 className="text-xl font-semibold text-gray-900">{area.title}</h3>
+                  <h3 className="text-lg font-semibold text-gray-900">{area.title}</h3>
                 </div>
-                <p className="text-gray-600">{area.description}</p>
+                <p className="text-base text-gray-600">{area.description}</p>
               </div>
             ))}
           </div>

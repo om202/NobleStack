@@ -111,17 +111,17 @@ export default function AIServicesSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-base font-medium mb-4">
             <Bot className="w-4 h-4 mr-2" />
             AI Automation & Chatbot Specialists
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             We Build AI That
             <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
               {" "}Actually Works
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
             While others promise AI magic, we deliver proven solutions. Our AI chatbots and automation systems 
             are already transforming businesses, handling millions of interactions, and saving countless hours of manual work.
           </p>
@@ -153,9 +153,9 @@ export default function AIServicesSection() {
                   </span>
                 </div>
                 <h3 className="text-gray-900 font-semibold mb-2">{service.name}</h3>
-                <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+                <p className="text-base text-gray-600 mb-4">{service.description}</p>
               </div>
-              <button className="flex items-center text-purple-600 text-sm group-hover:text-purple-700 transition-colors">
+              <button className="flex items-center text-purple-600 text-base group-hover:text-purple-700 transition-colors">
                 Learn More
                 <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -165,7 +165,7 @@ export default function AIServicesSection() {
 
         {/* Why Our AI Solutions Dominate - Animated Carousel */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+          <h3 className="text-xl font-bold text-center text-gray-900 mb-8">
             Why Our AI Solutions Dominate the Competition
           </h3>
           
@@ -180,11 +180,11 @@ export default function AIServicesSection() {
                   {React.createElement(aiFeatures[activeFeature].icon, { className: "w-8 h-8 text-white" })}
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-2xl font-bold text-gray-900 mb-3">{aiFeatures[activeFeature].title}</h4>
-                  <p className="text-lg text-gray-600 mb-6">{aiFeatures[activeFeature].description}</p>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3">{aiFeatures[activeFeature].title}</h4>
+                  <p className="text-base text-gray-600 mb-6">{aiFeatures[activeFeature].description}</p>
                   <div className="flex flex-wrap gap-3">
                     {aiFeatures[activeFeature].stats.map((stat, statIndex) => (
-                      <span key={statIndex} className="text-sm px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium">
+                      <span key={statIndex} className="text-base px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium">
                         {stat}
                       </span>
                     ))}
