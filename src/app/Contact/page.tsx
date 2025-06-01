@@ -172,7 +172,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 max-w-4xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -187,7 +187,7 @@ export default function Contact() {
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -204,7 +204,7 @@ export default function Contact() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Phone Number
                   </label>
                   <input
@@ -218,7 +218,7 @@ export default function Contact() {
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Company/Organization
                   </label>
                   <input
@@ -233,7 +233,7 @@ export default function Contact() {
               </div>
               
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                   Subject *
                 </label>
                 <select
@@ -254,7 +254,7 @@ export default function Contact() {
               </div>
               
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                   Message *
                 </label>
                 <textarea
@@ -276,7 +276,7 @@ export default function Contact() {
                   Send Message
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
-                <p className="text-sm text-gray-500 mt-4">
+                <p className="text-md-sm text-gray-500 mt-4">
                   We&apos;ll get back to you within 24 hours
                 </p>
               </div>

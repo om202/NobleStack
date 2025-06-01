@@ -218,8 +218,8 @@ export default function FAQSection() {
               >
                 <category.icon className="w-5 h-5" />
                 <div className="text-left sm:text-left text-center">
-                  <div className="font-semibold text-sm sm:text-base">{category.name}</div>
-                  <div className={`text-xs ${activeCategory === category.id ? 'text-white/80' : 'text-gray-500'}`}>
+                  <div className="font-semibold text-md-sm sm:text-base">{category.name}</div>
+                  <div className={`text-md-sm ${activeCategory === category.id ? 'text-white/80' : 'text-gray-500'}`}>
                     {category.count}
                   </div>
                 </div>
@@ -245,14 +245,14 @@ export default function FAQSection() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1">
-                      <span className="text-lg font-semibold text-gray-900">
+                      <span className="text-md-sm sm:text-lg font-semibold text-gray-900">
                         {faq.question}
                       </span>
-                      <span className="text-base px-2 py-1 bg-blue-100 text-blue-700 rounded-full font-medium">
+                      <span className="text-md-sm sm:text-base px-2 py-1 bg-blue-100 text-blue-700 rounded-full font-medium">
                         {faq.complexity}
                       </span>
                     </div>
-                    <div className="text-base text-gray-500">
+                    <div className="text-md-sm sm:text-base text-gray-500">
                       Delivery: {faq.deliveryTime}
                     </div>
                   </div>
@@ -266,20 +266,20 @@ export default function FAQSection() {
 
                              {openFaq === index && (
                  <div className="px-6 pb-6 border-t border-gray-100">
-                   <div className="pl-16 pt-6">
-                    <p className="text-base text-gray-600 leading-relaxed mb-6">
+                   <div className="pl-0 sm:pl-16 pt-6">
+                    <p className="text-md-sm sm:text-base text-gray-600 leading-relaxed mb-6">
                       {faq.answer}
                     </p>
                     
                                          {/* Metrics Grid */}
-                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
                        {faq.metrics.map((metric, metricIndex) => (
                          <div
                            key={metricIndex}
                            className="flex items-center gap-2 px-3 py-2 bg-gray-50 rounded-lg border"
                          >
                            <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                           <span className="text-base font-medium text-gray-700">{metric}</span>
+                           <span className="text-md-sm sm:text-base font-medium text-gray-700">{metric}</span>
                          </div>
                        ))}
                      </div>

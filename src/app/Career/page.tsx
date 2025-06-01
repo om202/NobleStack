@@ -86,7 +86,7 @@ export default function Career() {
                           >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                   <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -101,7 +101,7 @@ export default function Career() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -118,7 +118,7 @@ export default function Career() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Phone Number
                   </label>
                   <input
@@ -132,7 +132,7 @@ export default function Career() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Position of Interest *
                   </label>
                   <select
@@ -159,7 +159,7 @@ export default function Career() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                   Years of Experience
                 </label>
                 <select
@@ -179,7 +179,7 @@ export default function Career() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                   Resume/CV *
                 </label>
                 <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-blue-400 transition-colors duration-300">
@@ -187,7 +187,7 @@ export default function Career() {
                   <p className="text-base text-gray-600 mb-2 font-medium">
                     Click to upload or drag and drop
                   </p>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-md-sm text-gray-500">
                     PDF, DOC, DOCX (max 5MB)
                   </p>
                   <input
@@ -201,7 +201,7 @@ export default function Career() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                   Cover Letter / Message
                 </label>
                 <textarea
@@ -222,7 +222,7 @@ export default function Career() {
                   Submit Application
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
-                <p className="text-sm text-gray-500 mt-4">
+                <p className="text-md-sm text-gray-500 mt-4">
                   We&apos;ll review your application and get back to you within
                   48 hours
                 </p>

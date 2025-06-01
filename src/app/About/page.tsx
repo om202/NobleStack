@@ -143,7 +143,7 @@ export default function About() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
                   Our Story
                 </h2>
-                <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-600">
+                <div className="space-y-3 sm:space-y-4 text-md-sm sm:text-base text-gray-600">
                   <p>
                     Founded in 2025, Noble Stack is more than a tech company —
                     we&apos;re a movement to bring global innovation home. While

@@ -112,7 +112,7 @@ export default function AlbumArtServices({
                     <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight">
                       {service.title}
                     </h3>
-                    <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed">
+                    <p className="text-md-sm sm:text-md-sm md:text-base text-gray-600 leading-relaxed">
                       {service.description}
                     </p>
                   </div>
@@ -126,7 +126,7 @@ export default function AlbumArtServices({
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-2 sm:gap-3">
                           <CheckCircle className={`w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ${textColor} flex-shrink-0 mt-0.5`} />
-                          <span className="text-xs sm:text-xs md:text-sm lg:text-base text-gray-700 leading-relaxed font-medium">
+                          <span className="text-md-sm sm:text-md-sm md:text-md-sm lg:text-base text-gray-700 leading-relaxed font-medium">
                             {feature}
                           </span>
                         </li>
@@ -162,7 +162,7 @@ export default function AlbumArtServices({
         <h3 className="text-lg md:text-xl font-medium text-gray-500 mb-2">
           Our Services Portfolio
         </h3>
-        <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto px-4">
+        <p className="text-md-sm md:text-base text-gray-400 max-w-2xl mx-auto px-4">
           We offer comprehensive digital solutions tailored to transform your business 
           and drive innovation in today&apos;s competitive landscape.
         </p>

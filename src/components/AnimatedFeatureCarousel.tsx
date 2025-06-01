@@ -59,14 +59,14 @@ export default function AnimatedFeatureCarousel({
               <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 line-clamp-2">
                 {features[activeFeature].title}
               </h4>
-              <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 line-clamp-3">
+              <p className="text-md-sm sm:text-base text-gray-600 mb-4 sm:mb-6 line-clamp-3">
                 {features[activeFeature].description}
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-3">
                 {features[activeFeature].stats.map((stat, statIndex) => (
                   <span
                     key={statIndex}
-                    className="text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2 bg-gray-100 text-gray-700 rounded-full font-medium"
+                    className="text-md-sm sm:text-md-sm px-3 sm:px-4 py-1 sm:py-2 bg-gray-100 text-gray-700 rounded-full font-medium"
                   >
                     {stat}
                   </span>

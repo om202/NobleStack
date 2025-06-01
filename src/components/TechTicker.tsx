@@ -197,7 +197,7 @@ export default function TechTicker({
                 <h3 className="text-lg font-bold text-gray-900 mb-1 transform-gpu">
                   {tech.name}
                 </h3>
-                <p className="text-gray-600 font-medium text-sm transform-gpu">
+                <p className="text-gray-600 font-medium text-md-sm transform-gpu">
                   {TECH_DESCRIPTIONS[tech.name] || "Technology Solution"}
                 </p>
               </div>

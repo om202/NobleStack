@@ -185,7 +185,7 @@ export default function Services() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Our Process
               </h2>
-              <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
+              <p className="text-md-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
                 We follow a proven methodology to ensure your project is delivered on time, 
                 within budget, and exceeds your expectations.
               </p>
@@ -205,7 +205,7 @@ export default function Services() {
                     {step.title}
                   </h3>
                   
-                  <p className="text-sm sm:text-base text-gray-600 text-center max-w-xs">
+                  <p className="text-md-sm sm:text-base text-gray-600 text-center max-w-xs">
                     {step.description}
                   </p>
 
@@ -260,7 +260,7 @@ export default function Services() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900">
                 Technology Stack
               </h2>
-              <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto mb-6 sm:mb-8">
+              <p className="text-md-sm sm:text-base text-gray-600 max-w-2xl mx-auto mb-6 sm:mb-8">
                 We work with the latest and most reliable technologies to build robust, scalable solutions.
                 Watch our expertise in action — technologies refresh dynamically to showcase our full stack.
               </p>
@@ -274,7 +274,7 @@ export default function Services() {
             />
             
             <div className="text-center mt-8">
-              <p className="text-sm text-gray-500">
+              <p className="text-md-sm text-gray-500">
                 {allTechnologies.length}+ Technologies in our arsenal • Always evolving
               </p>
             </div>

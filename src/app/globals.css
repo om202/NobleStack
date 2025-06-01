@@ -127,3 +127,9 @@ button, a {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
+
+/* Custom font size utilities */
+.text-md-sm {
+  font-size: 0.9375rem; /* 15px - between text-md-sm (14px) and text-base (16px) */
+  line-height: 1.6;
+}

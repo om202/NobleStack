@@ -138,7 +138,7 @@ export default function AIServicesSection() {
                   <div className={`w-12 h-12 bg-gradient-to-r ${aiFeatures[index].color} rounded-xl flex items-center justify-center shadow-lg`}>
                     <service.icon className="w-6 h-6 text-white" />
                   </div>
-                  <span className="text-xs px-2 py-1 bg-purple-500/20 text-purple-500 rounded-full">
+                  <span className="text-md-sm px-2 py-1 bg-purple-500/20 text-purple-500 rounded-full">
                     {service.status}
                   </span>
                 </div>

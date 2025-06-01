@@ -90,7 +90,7 @@ export default function TechStackCarousel({
                           className="w-5 h-5 group-hover:scale-110 transition-transform duration-300"
                         />
                       </div>
-                      <h5 className="text-gray-900 font-medium text-xs sm:text-base truncate">
+                      <h5 className="text-gray-900 font-medium text-md-sm sm:text-base truncate">
                         {tech.name}
                       </h5>
                     </div>
