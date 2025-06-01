@@ -15,7 +15,12 @@ import {
   SiStreamlit,
   SiHuggingface,
   SiAmazon,
-  SiGoogle
+  SiGoogle,
+  SiAnthropic,
+  SiLangchain,
+  SiFastapi,
+  SiN8N,
+  SiZapier
 } from "react-icons/si";
 import React from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
@@ -66,29 +71,29 @@ export default function AIServicesSection() {
 
   const aiTechStack = [
     { name: "OpenAI", icon: SiOpenai, color: "#00A67E" },
-    { name: "Claude", icon: Bot, color: "#FF6B35" },
+    { name: "Claude", icon: SiAnthropic, color: "#FF6B35" },
     { name: "Hugging Face Transformers", icon: SiHuggingface, color: "#FFD21E" },
-    { name: "LangChain", icon: Brain, color: "#339933" },
+    { name: "LangChain", icon: SiLangchain, color: "#339933" },
     { name: "LLamaIndex", icon: Brain, color: "#FF4500" },
-    { name: "Pinecone", icon: Bot, color: "#FF69B4" },
+    { name: "Pinecone", icon: Brain, color: "#FF69B4" },
     { name: "Weaviate", icon: Brain, color: "#00CED1" },
-    { name: "Qdrant", icon: Bot, color: "#8A2BE2" },
+    { name: "Qdrant", icon: Brain, color: "#8A2BE2" },
     { name: "Milvus", icon: Brain, color: "#FF1493" },
-    { name: "FAISS", icon: Bot, color: "#4169E1" },
+    { name: "FAISS", icon: Brain, color: "#4169E1" },
     { name: "AWS Bedrock", icon: SiAmazon, color: "#FF9900" },
     { name: "Azure OpenAI Service", icon: Bot, color: "#0078D4" },
     { name: "Google Vertex AI", icon: SiGoogle, color: "#4285F4" },
-    { name: "LangGraph", icon: Brain, color: "#32CD32" },
+    { name: "LangGraph", icon: SiLangchain, color: "#32CD32" },
     { name: "MS AutoGen", icon: Bot, color: "#00BCF2" },
-    { name: "CrewAI", icon: Bot, color: "#FF6347" },
+    { name: "CrewAI", icon: Brain, color: "#FF6347" },
     { name: "Semantic Kernel", icon: Brain, color: "#9370DB" },
-    { name: "SuperAGI", icon: Bot, color: "#FF4500" },
+    { name: "SuperAGI", icon: Brain, color: "#FF4500" },
     { name: "AgentLite", icon: Brain, color: "#20B2AA" },
     { name: "Streamlit", icon: SiStreamlit, color: "#FF4B4B" },
     { name: "Gradio", icon: Bot, color: "#FFA500" },
-    { name: "FastAPI", icon: Zap, color: "#009688" },
-    { name: "n8n", icon: Settings, color: "#EA4B71" },
-    { name: "Zapier", icon: Zap, color: "#FF4A00" }
+    { name: "FastAPI", icon: SiFastapi, color: "#009688" },
+    { name: "n8n", icon: SiN8N, color: "#EA4B71" },
+    { name: "Zapier", icon: SiZapier, color: "#FF4A00" }
   ];
 
   return (
