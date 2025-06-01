@@ -46,7 +46,7 @@ export default function Footer() {
             {/* Contact */}
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
               <a
-                href="mailto:contact@noblestack.com"
+                href="mailto:contact@noblestack.io"
                 className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
                 <Mail className="w-4 h-4" />

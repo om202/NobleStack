@@ -217,11 +217,11 @@ export default function Career() {
               <p className="text-gray-600 mb-4">Have questions? Get in touch with us directly:</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="mailto:careers@noblestack.com"
+                  href="mailto:careers@noblestack.io"
                   className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-gray-700 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 font-medium"
                 >
                   <Mail className="w-4 h-4" />
-                  careers@noblestack.com
+                  careers@noblestack.io
                 </a>
                 <a 
                   href="tel:+15551234567"

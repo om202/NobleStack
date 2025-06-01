@@ -208,10 +208,10 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
                       <a 
-                        href="mailto:hello@noblestack.com" 
+                        href="mailto:hello@noblestack.io" 
                         className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
                       >
-                        hello@noblestack.com
+                        hello@noblestack.io
                       </a>
                     </div>
                   </div>
@@ -301,7 +301,7 @@ export default function Contact() {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="mailto:hello@noblestack.com"
+                  href="mailto:hello@noblestack.io"
                   className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-gray-700 rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-300 font-medium group"
                 >
                   <Mail className="w-4 h-4 group-hover:text-blue-600" />
