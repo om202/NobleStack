@@ -36,7 +36,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="pt-28 pb-6 sm:pb-8 md:pb-10 lg:pb-12 px-4 min-h-screen bg-gray-50">
+    <section className="pt-24 sm:pt-28 pb-6 sm:pb-8 md:pb-10 lg:pb-12 px-4 min-h-screen bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
