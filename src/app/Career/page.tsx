@@ -1,6 +1,5 @@
 "use client";
 
-import PageLayout from "../../components/PageLayout";
 import {
   Send,
   Mail,
@@ -35,7 +34,7 @@ export default function Career() {
   };
 
   return (
-    <PageLayout>
+    <>
         {/* Hero Section */}
         <section className="py-12 px-4 min-h-screen bg-gray-50">
           <div className="max-w-4xl mx-auto">
@@ -269,6 +268,6 @@ export default function Career() {
             }
           `}</style>
         </section>
-    </PageLayout>
+    </>
   );
 } 
