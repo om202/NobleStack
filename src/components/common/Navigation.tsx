@@ -69,11 +69,11 @@ export default function Navigation() {
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 p-1">
       <div className="flex justify-center p-1">
-        <div className="bg-gray-600/10 backdrop-blur-xl rounded-lg p-2 w-fit max-w-[95vw]">
+        <div className="bg-gray-600/10 backdrop-blur-xl rounded-lg p-3 w-fit max-w-[95vw]">
           <NavigationMenu.Root>
             <NavigationMenu.List className="flex items-center justify-center">
               {/* Main Navigation Items */}
-              <div className={`items-center gap-3 sm:gap-4 ${isMenuOpen ? 'hidden' : 'flex lg:flex'}`}>
+              <div className={`items-center gap-4 sm:gap-5 ${isMenuOpen ? 'hidden' : 'flex lg:flex'}`}>
                 {navigationItems.map((item) => {
                   const Icon = item.icon;
                   const isActive = pathname === item.href;
@@ -82,14 +82,14 @@ export default function Navigation() {
                     <NavigationMenu.Item key={item.href}>
                       <NavigationMenu.Link asChild>
                         <Link href={item.href} className="flex flex-col items-center gap-1 group cursor-pointer relative">
-                          <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center transition-all duration-300 ${
+                          <div className={`w-11 h-11 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
                             isActive 
                               ? `${item.activeColors} shadow-md` 
                               : item.inactiveColors
                           }`}>
-                            <Icon className="w-5 h-5 text-white drop-shadow-sm" />
+                            <Icon className="w-6 h-6 text-white drop-shadow-sm" />
                           </div>
-                          <span className={`text-xs transition-colors duration-300 font-medium ${
+                          <span className={`text-sm transition-colors duration-300 font-medium ${
                             isActive ? 'text-gray-600' : 'text-gray-700'
                           }`}>
                             {item.label}
@@ -105,12 +105,12 @@ export default function Navigation() {
               </div>
 
               {/* Call Now Button */}
-              <div className="hidden lg:flex ml-3 pl-3 border-l border-gray-500/25">
+              <div className="hidden lg:flex ml-4 pl-4 border-l border-gray-500/25">
                 <button className="flex flex-col items-center gap-1 group cursor-pointer">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center transition-all duration-300 bg-blue-500">
-                    <Phone className="w-5 h-5 text-white drop-shadow-sm" />
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center transition-all duration-300 bg-blue-500">
+                    <Phone className="w-6 h-6 text-white drop-shadow-sm" />
                   </div>
-                  <span className="text-xs transition-colors duration-300 font-medium text-gray-700">
+                  <span className="text-sm transition-colors duration-300 font-medium text-gray-700">
                     Call now
                   </span>
                 </button>
@@ -118,11 +118,11 @@ export default function Navigation() {
 
               {/* Mobile Menu Button */}
               <div
-                className="lg:hidden ml-3 sm:ml-4 flex items-center justify-center group cursor-pointer"
+                className="lg:hidden ml-4 sm:ml-5 flex items-center justify-center group cursor-pointer"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
-                <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center group-hover:scale-110 transition-all duration-300">
-                  <ChevronUp className={`w-4 h-4 sm:w-5 sm:h-5 text-gray-600 group-hover:text-black transition-all duration-300 ${isMenuOpen ? 'rotate-180' : ''}`} />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center group-hover:scale-110 transition-all duration-300">
+                  <ChevronUp className={`w-5 h-5 sm:w-6 sm:h-6 text-gray-600 group-hover:text-black transition-all duration-300 ${isMenuOpen ? 'rotate-180' : ''}`} />
                 </div>
               </div>
             </NavigationMenu.List>
@@ -130,8 +130,8 @@ export default function Navigation() {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="lg:hidden mt-2 pt-2 border-t border-gray-500/25">
-              <div className="grid grid-cols-3 gap-2 mb-2">
+            <div className="lg:hidden mt-3 pt-3 border-t border-gray-500/25">
+              <div className="grid grid-cols-3 gap-3 mb-3">
                 {navigationItems.map((item) => {
                   const Icon = item.icon;
                   const isActive = pathname === item.href;
@@ -142,14 +142,14 @@ export default function Navigation() {
                       href={item.href}
                       className="flex flex-col items-center gap-1 p-1 rounded-xl hover:bg-gray-500/15 transition-all duration-300 group relative"
                     >
-                      <div className={`w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
+                      <div className={`w-15 h-15 rounded-lg flex items-center justify-center transition-all duration-300 ${
                         isActive 
                           ? `${item.activeColors} shadow-md` 
                           : item.inactiveColors
                       }`}>
-                        <Icon className="w-6 h-6 text-white drop-shadow-sm" />
+                        <Icon className="w-7 h-7 text-white drop-shadow-sm" />
                       </div>
-                      <span className={`text-sm transition-colors duration-300 font-medium ${
+                      <span className={`text-base transition-colors duration-300 font-medium ${
                         isActive ? 'text-gray-600' : 'text-gray-700'
                       }`}>
                         {item.label}
@@ -163,8 +163,8 @@ export default function Navigation() {
               </div>
 
               {/* Mobile Call Button */}
-              <button className="w-full flex items-center justify-center gap-2 px-2 py-2 bg-blue-500 text-white rounded-lg hover:scale-105 transition-all duration-300 font-medium text-sm">
-                <Phone className="w-4 h-4" />
+              <button className="w-full flex items-center justify-center gap-3 px-3 py-3 bg-blue-500 text-white rounded-lg hover:scale-105 transition-all duration-300 font-medium text-base">
+                <Phone className="w-5 h-5" />
                 Call now!
               </button>
             </div>
