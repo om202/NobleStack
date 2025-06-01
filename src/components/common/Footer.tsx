@@ -25,7 +25,7 @@ export default function Footer() {
                 className="rounded-xl"
               />
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Noble Stack</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Noble Stack</h3>
                 <p className="text-sm text-gray-600">AI & Web Development</p>
             </div>
             </div>
@@ -36,7 +36,7 @@ export default function Footer() {
                 <a
                   key={index}
                   href={link.href}
-                  className="text-gray-600 hover:text-gray-900 transition-colors font-medium text-sm sm:text-base"
+                  className="text-gray-600 hover:text-gray-900 transition-colors font-semibold text-sm"
                 >
                   {link.name}
                 </a>
@@ -46,13 +46,13 @@ export default function Footer() {
             {/* Contact */}
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
               <a
-                href="mailto:contact@noblestack.io"
+                href="mailto:hello@noblestack.io"
                 className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">Get in touch</span>
+                <span className="text-sm font-semibold">Get in touch</span>
               </a>
-              <button className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl hover:shadow-md transition-all duration-300 text-sm font-medium">
+              <button className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl hover:shadow-md transition-all duration-300 text-sm font-semibold">
                 <Phone className="w-4 h-4" />
                 Call Now
               </button>
