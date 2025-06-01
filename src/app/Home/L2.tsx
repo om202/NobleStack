@@ -37,8 +37,8 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 import React from "react";
-import { useState, useEffect } from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
+import AnimatedFeatureCarousel from "../../components/AnimatedFeatureCarousel";
 
 const webFeatures = [
   {
@@ -99,16 +99,6 @@ const webFeatures = [
 ];
 
 export default function FeaturesSection() {
-  const [activeFeature, setActiveFeature] = useState(0);
-
-  // Auto-cycle through features every 4 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveFeature((prev) => (prev + 1) % webFeatures.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   const webServices = [
     {
@@ -233,62 +223,11 @@ export default function FeaturesSection() {
         </div>
 
         {/* What Makes Our Websites Convert - Animated Carousel */}
-        <div className="mb-16">
-          <h3 className="text-xl font-bold text-center text-gray-900 mb-8">
-            What Makes Our Websites Convert
-          </h3>
-
-          {/* Animated Feature Display */}
-          <div className="relative overflow-hidden">
-            <div className="bg-white rounded-2xl p-8 border border-gray-200 min-h-[180px] flex flex-col justify-center">
-              <div
-                key={activeFeature}
-                className="flex items-start gap-6 animate-fade-in"
-              >
-                <div
-                  className={`w-16 h-16 bg-gradient-to-r ${webFeatures[activeFeature].color} rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0`}
-                >
-                  {React.createElement(webFeatures[activeFeature].icon, {
-                    className: "w-8 h-8 text-white",
-                  })}
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-lg font-bold text-gray-900 mb-3">
-                    {webFeatures[activeFeature].title}
-                  </h4>
-                  <p className="text-base text-gray-600 mb-6">
-                    {webFeatures[activeFeature].description}
-                  </p>
-                  <div className="flex flex-wrap gap-3">
-                    {webFeatures[activeFeature].stats.map((stat, statIndex) => (
-                      <span
-                        key={statIndex}
-                        className="text-base px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium"
-                      >
-                        {stat}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Progress Indicators */}
-            <div className="flex justify-center mt-6 gap-3">
-              {webFeatures.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveFeature(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === activeFeature
-                      ? `bg-gradient-to-r ${webFeatures[activeFeature].color}`
-                      : "bg-gray-300 hover:bg-gray-400"
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
+        <AnimatedFeatureCarousel
+          features={webFeatures}
+          title="What Makes Our Websites Convert"
+          autoScrollInterval={4000}
+        />
       </div>
     </section>
   );

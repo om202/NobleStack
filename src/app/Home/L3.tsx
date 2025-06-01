@@ -18,12 +18,10 @@ import {
   SiGoogle
 } from "react-icons/si";
 import React from "react";
-import { useState, useEffect } from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
+import AnimatedFeatureCarousel from "../../components/AnimatedFeatureCarousel";
 
 export default function AIServicesSection() {
-  const [activeFeature, setActiveFeature] = useState(0);
-
   const aiFeatures = [
     {
       id: "ai-chatbots",
@@ -32,7 +30,6 @@ export default function AIServicesSection() {
       icon: MessageCircle,
       color: "from-blue-500 to-cyan-500",
       stats: ["99% Uptime", "Human-like Responses", "Multi-Platform", "Custom Trained"],
-      demo: "See Live Demo"
     },
     {
       id: "automation",
@@ -41,7 +38,6 @@ export default function AIServicesSection() {
       icon: Zap,
       color: "from-purple-500 to-pink-500",
       stats: ["Smart Workflows", "Tool Integration", "24/7 Operation", "ROI Tracking"],
-      demo: "View Results"
     },
     {
       id: "custom-ai",
@@ -50,7 +46,6 @@ export default function AIServicesSection() {
       icon: Brain,
       color: "from-green-500 to-emerald-500",
       stats: ["Tailored Models", "Enterprise Ready", "Scalable", "Production-Tested"],
-      demo: "Explore Solutions"
     },
     {
       id: "rapid-deployment",
@@ -59,18 +54,8 @@ export default function AIServicesSection() {
       icon: Cpu,
       color: "from-orange-500 to-red-500",
       stats: ["Fast Deployment", "Proven Framework", "Quick ROI", "Minimal Downtime"],
-      demo: "Speed Test"
     }
   ];
-
-  // Auto-cycle through features every 4 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveFeature((prev) => (prev + 1) % aiFeatures.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, [aiFeatures.length]);
 
   const aiServices = [
     { name: "AI Chatbots & Virtual Assistants", icon: MessageCircle, status: "AI Expert", description: "GPT-4, Claude, Custom Models" },
@@ -164,51 +149,11 @@ export default function AIServicesSection() {
         </div>
 
         {/* Why Our AI Solutions Dominate - Animated Carousel */}
-        <div className="mb-16">
-          <h3 className="text-xl font-bold text-center text-gray-900 mb-8">
-            Why Our AI Solutions Dominate the Competition
-          </h3>
-          
-          {/* Animated Feature Display */}
-          <div className="relative overflow-hidden">
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 min-h-[180px] flex flex-col justify-center">
-              <div 
-                key={activeFeature} 
-                className="flex items-start gap-6 animate-fade-in"
-              >
-                <div className={`w-16 h-16 bg-gradient-to-r ${aiFeatures[activeFeature].color} rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0`}>
-                  {React.createElement(aiFeatures[activeFeature].icon, { className: "w-8 h-8 text-white" })}
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-lg font-bold text-gray-900 mb-3">{aiFeatures[activeFeature].title}</h4>
-                  <p className="text-base text-gray-600 mb-6">{aiFeatures[activeFeature].description}</p>
-                  <div className="flex flex-wrap gap-3">
-                    {aiFeatures[activeFeature].stats.map((stat, statIndex) => (
-                      <span key={statIndex} className="text-base px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium">
-                        {stat}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Progress Indicators */}
-            <div className="flex justify-center mt-6 gap-3">
-              {aiFeatures.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveFeature(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === activeFeature 
-                      ? `bg-gradient-to-r ${aiFeatures[activeFeature].color}` 
-                      : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
+        <AnimatedFeatureCarousel
+          features={aiFeatures}
+          title="Why Our AI Solutions Dominate the Competition"
+          autoScrollInterval={4500}
+        />
       </div>
     </section>
   );
