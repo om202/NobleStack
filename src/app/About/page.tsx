@@ -130,10 +130,10 @@ export default function About() {
               About Noble Stack
             </h1>
 
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              We&apos;re a group of hardworking smart people working diligently to bring the latest technology, 
-              which is changing rapidly like never before, accessible to people of Nepal.
-            </p>
+            <blockquote className="text-lg text-gray-500 mb-8 max-w-3xl mx-auto">
+              &ldquo;We&apos;re a group of hardworking smart people working diligently to bring the latest technology, 
+              which is changing rapidly like never before, accessible to people of Nepal.&rdquo;
+            </blockquote>
           </div>
 
                     {/* Team Section - iTunes Style */}
