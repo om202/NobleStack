@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import {
   SiReact, SiOpenai, SiAmazon, SiTailwindcss, SiPrisma, SiLangchain, 
   SiVercel, SiFirebase, SiZapier, SiStripe, SiAnthropic, SiFigma,
@@ -30,6 +31,7 @@ interface TechTickerProps {
   technologies: Technology[];
   interval?: number;
   className?: string;
+  auto?: boolean;
 }
 
 const TECH_DESCRIPTIONS: { [key: string]: string } = {
@@ -135,16 +137,31 @@ const CARD_POSITIONS = [
 export default function TechTicker({ 
   technologies, 
   interval = 2000,
-  className = ""
+  className = "",
+  auto = false
 }: TechTickerProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Auto-scroll through technologies only if auto is true
   useEffect(() => {
+    if (!auto) return;
+    
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % technologies.length);
     }, interval);
     return () => clearInterval(timer);
-  }, [technologies.length, interval]);
+  }, [technologies.length, interval, auto]);
+
+  // Manual navigation functions
+  const goToPrevious = () => {
+    setCurrentIndex((prev) => 
+      prev === 0 ? technologies.length - 1 : prev - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % technologies.length);
+  };
 
   const getCardStyle = (index: number) => {
     const position = (index - currentIndex + technologies.length) % technologies.length;
@@ -183,7 +200,27 @@ export default function TechTicker({
   };
 
   return (
-    <div className={`overflow-hidden ${className}`}>
+    <div className={`overflow-hidden ${className} relative`}>
+      {/* Manual Navigation Buttons - only show when auto is false */}
+      {!auto && (
+        <>
+          <button
+            onClick={goToPrevious}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full p-2 hover:bg-gray-50 hover:border-gray-300 transition-all duration-200 shadow-sm"
+            aria-label="Previous technology"
+          >
+            <ChevronLeft className="w-5 h-5 text-gray-600" />
+          </button>
+          <button
+            onClick={goToNext}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full p-2 hover:bg-gray-50 hover:border-gray-300 transition-all duration-200 shadow-sm"
+            aria-label="Next technology"
+          >
+            <ChevronRight className="w-5 h-5 text-gray-600" />
+          </button>
+        </>
+      )}
+
       <div className="relative h-32 flex items-center justify-center">
         {technologies.map((tech, index) => (
           <div
@@ -206,6 +243,24 @@ export default function TechTicker({
           </div>
         ))}
       </div>
+
+      {/* Manual Progress Dots - only show when auto is false */}
+      {!auto && (
+        <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2">
+          {technologies.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                index === currentIndex
+                  ? "bg-blue-500 scale-125"
+                  : "bg-gray-300 hover:bg-gray-400"
+              }`}
+              aria-label={`Go to technology ${index + 1}`}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 } 
