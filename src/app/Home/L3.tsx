@@ -97,7 +97,7 @@ export default function AIServicesSection() {
   ];
 
   return (
-    <section id="ai-services" className="py-20 px-4 bg-gray-50">
+    <section id="ai-services" className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">

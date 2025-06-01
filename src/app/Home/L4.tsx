@@ -178,7 +178,7 @@ export default function FAQSection() {
   const currentFaqs = faqCategories[activeCategory as keyof typeof faqCategories];
 
   return (
-    <section id="faq" className="py-20 px-4 bg-gray-50">
+    <section id="faq" className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -199,26 +199,26 @@ export default function FAQSection() {
           </p>
         </div>
 
-        {/* Category Selection */}
+                {/* Category Selection */}
         <div className="flex justify-center mb-12">
-          <div className="bg-white rounded-2xl p-2 shadow-sm border border-gray-200 inline-flex">
+          <div className="bg-white rounded-2xl p-2 shadow-sm border border-gray-200 flex flex-col sm:flex-row gap-2 sm:gap-0 w-full max-w-md sm:max-w-none sm:inline-flex">
             {categories.map((category) => (
               <button
                 key={category.id}
-                                 onClick={() => {
-                   setActiveCategory(category.id);
-                   setOpenFaq(null);
-                   setAnimationKey(prev => prev + 1);
-                 }}
-                                 className={`flex items-center gap-3 px-6 py-3 rounded-xl transition-all duration-200 ${
-                   activeCategory === category.id
-                     ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
-                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-                 }`}
+                onClick={() => {
+                  setActiveCategory(category.id);
+                  setOpenFaq(null);
+                  setAnimationKey(prev => prev + 1);
+                }}
+                className={`flex items-center gap-3 px-4 sm:px-6 py-3 rounded-xl transition-all duration-200 justify-center sm:justify-start ${
+                  activeCategory === category.id
+                    ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                }`}
               >
                 <category.icon className="w-5 h-5" />
-                <div className="text-left">
-                  <div className="font-semibold">{category.name}</div>
+                <div className="text-left sm:text-left text-center">
+                  <div className="font-semibold text-sm sm:text-base">{category.name}</div>
                   <div className={`text-xs ${activeCategory === category.id ? 'text-white/80' : 'text-gray-500'}`}>
                     {category.count}
                   </div>

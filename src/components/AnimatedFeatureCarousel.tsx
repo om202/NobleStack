@@ -43,30 +43,30 @@ export default function AnimatedFeatureCarousel({
 
       {/* Animated Feature Display */}
       <div className="relative overflow-hidden">
-        <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm min-h-[200px] flex flex-col justify-center">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm h-[280px] sm:h-[240px] flex flex-col justify-center">
           <div
             key={activeFeature}
             className="flex items-start gap-6 animate-fade-in"
           >
             <div
-              className={`w-16 h-16 bg-gradient-to-r ${features[activeFeature].color} rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0`}
+              className={`w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r ${features[activeFeature].color} rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0`}
             >
               {React.createElement(features[activeFeature].icon, {
-                className: "w-8 h-8 text-white",
+                className: "w-6 h-6 sm:w-8 sm:h-8 text-white",
               })}
             </div>
-            <div className="flex-1">
-              <h4 className="text-xl font-bold text-gray-900 mb-3">
+            <div className="flex-1 min-w-0">
+              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 line-clamp-2">
                 {features[activeFeature].title}
               </h4>
-              <p className="text-base text-gray-600 mb-6">
+              <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 line-clamp-3">
                 {features[activeFeature].description}
               </p>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
                 {features[activeFeature].stats.map((stat, statIndex) => (
                   <span
                     key={statIndex}
-                    className="text-sm px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium"
+                    className="text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2 bg-gray-100 text-gray-700 rounded-full font-medium"
                   >
                     {stat}
                   </span>
