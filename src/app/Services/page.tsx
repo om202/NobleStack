@@ -2,15 +2,18 @@
 
 import {
   Code,
-  Brain,
-  Globe,
-  Shield,
   ArrowRight,
   Star,
   Rocket,
-  Settings,
-  Server,
 } from "lucide-react";
+import { 
+  SiReact, 
+  SiOpenai, 
+  SiZapier, 
+  SiDocker, 
+  SiGithubactions,
+  SiAuth0
+} from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
 import AlbumArtServices from "../../components/AlbumArtServices";
@@ -19,42 +22,42 @@ import TechTicker from "../../components/TechTicker";
 export default function Services() {
   const services = [
     {
-      icon: Globe,
+      icon: SiReact,
       title: "Full-Stack Product Engineering",
       description: "We engineer robust, full-stack systems — from frontend to backend to infrastructure — with code quality and scalability at the core.",
       features: ["React, Next.js & Tailwind CSS", "Node.js, NestJS & GraphQL", "PostgreSQL, MongoDB & Real-time Sync", "Docker, AWS & CI/CD Pipelines"],
       color: "blue"
     },
     {
-      icon: Brain,
+      icon: SiOpenai,
       title: "LLM-Powered AI Systems",
       description: "We design systems that leverage cutting-edge language models to reason, retrieve, and respond — integrated seamlessly into your product or process.",
       features: ["OpenAI, Anthropic & Mistral APIs", "LangChain, RAG & CrewAI", "Notion, PDF & Web Data Sources", "RunPod, Modal & GPU Inference"],
       color: "purple"
     },
     {
-      icon: Settings,
+      icon: SiZapier,
       title: "End-to-End Automation Systems",
       description: "From business logic to background jobs, we build automation pipelines that save time, reduce human error, and scale with your growth.",
       features: ["Zapier, n8n & Make Workflows", "Python, Node.js & Cloud Functions", "Gmail, Slack & Stripe Integrations", "React Admin & Real-time Dashboards"],
       color: "green"
     },
     {
-      icon: Server,
+      icon: SiDocker,
       title: "Deployment & DevOps",
       description: "We ensure your product runs smoothly in production with modern DevOps practices — from zero-downtime deploys to intelligent monitoring.",
       features: ["GitHub Actions & GitLab CI", "Docker & Container Registry", "GCP, AWS & Firebase Hosting", "Datadog & Real-time Monitoring"],
       color: "orange"
     },
     {
-      icon: Shield,
+      icon: SiAuth0,
       title: "Security, Privacy & Reliability",
       description: "From identity to data to systems — we build with trust and resilience in mind, ensuring your application is safe, compliant, and production-ready.",
       features: ["OAuth2, JWT & Multi-provider Auth", "HTTPS, AES & Encryption at Rest", "GDPR, CCPA & Audit Trails", "2FA, Rate Limiting & Session Management"],
       color: "red"
     },
     {
-      icon: Code,
+      icon: SiGithubactions,
       title: "Agile, But Engineered",
       description: "We move fast — but not recklessly. Our process merges the flexibility of agile with the discipline of software engineering.",
       features: ["Scrum, Kanban & Weekly Demos", "Code Reviews & Pair Programming", "Unit, Integration & E2E Testing", "Tech Specs, API Docs & Changelogs"],
@@ -266,7 +269,6 @@ export default function Services() {
             {/* Animated Technology Ticker */}
             <TechTicker 
               technologies={allTechnologies} 
-              visibleCount={12} 
               interval={1200}
               className="py-8"
             />
