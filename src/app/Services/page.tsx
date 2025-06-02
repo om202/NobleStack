@@ -147,28 +147,10 @@ export default function Services() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-24 sm:pt-28 py-12 px-4 min-h-screen bg-gray-50">
+      <section className="py-12 px-4 min-h-screen bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-10 sm:mb-16">
-            {/* Noble Stack Brand */}
-            <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6">
-              <Image
-                src="/nbl.png"
-                alt="Noble Stack Logo"
-                width={50}
-                height={50}
-              />
-              <div className="flex flex-col justify-center h-16">
-                <h2 className="text-xl font-medium text-gray-700 leading-none">
-                  Noble
-                </h2>
-                <h2 className="text-xl font-medium text-gray-700 leading-none">
-                  Stack
-                </h2>
-              </div>
-            </div>
-
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
               Our Services
             </h1>

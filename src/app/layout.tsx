@@ -185,10 +185,12 @@ export default function RootLayout({
       >
         <div className="min-h-screen">
           <Navigation />
-          <main>
-            {children}
-          </main>
-          <Footer />
+          <div className="pt-12 md:pt-0" id="main-content">
+            <main>
+              {children}
+            </main>
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

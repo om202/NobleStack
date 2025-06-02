@@ -15,7 +15,7 @@ import Image from "next/image";
 export default function ProductsPage() {
 
   return (
-    <section className="pt-24 sm:pt-28 py-12 px-4 min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-12 px-4 min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-16">
