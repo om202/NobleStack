@@ -14,6 +14,7 @@ import {
   Sparkles,
   Target
 } from "lucide-react";
+import Image from 'next/image';
 
 export default function ProductsPage() {
   const features = [
@@ -80,42 +81,69 @@ export default function ProductsPage() {
   ];
 
   return (
-    <div className="pt-24 pb-16 bg-gray-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="pt-24 sm:pt-28 py-12 px-4 min-h-screen bg-gray-50">
+      <div className="max-w-6xl mx-auto">
         
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 text-sm font-medium mb-6">
+        <div className="text-center mb-10 sm:mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium mb-4 sm:mb-6">
             <Sparkles className="w-4 h-4 mr-2" />
             Introducing Our First Product
           </div>
-          
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-            <span className="text-emerald-600">Nepali Grammarly</span>
-          </h1>
-          
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            The world's first AI-powered grammar and spell checker designed specifically for the Nepali language. 
-            Write with confidence, express with clarity, communicate with precision.
-          </p>
 
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 mb-12 max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Nepali Grammarly?</h2>
-            <div className="text-lg text-gray-700 space-y-3">
+          {/* Vyakaranly Logo */}
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <Image
+              src="/vyakaranly_logo.png"
+              alt="Vyakaranly Logo"
+              width={60}
+              height={60}
+              className="w-12 h-12 sm:w-15 sm:h-15"
+            />
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+              <span className="text-indigo-600">Vyakaranly</span>
+            </h1>
+          </div>
+          
+          <blockquote className="text-base sm:text-lg text-gray-500 mb-6 sm:mb-8 max-w-3xl mx-auto">
+            The world&apos;s first Nepali language grammar and spell checker.
+            Write with confidence, express with clarity, communicate with precision.
+          </blockquote>
+
+          {/* Product Screenshot */}
+          <div className="mb-10 sm:mb-16 max-w-5xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden border border-gray-200">
+              <Image
+                src="/Vyakaranly.png"
+                alt="Vyakaranly - AI-powered Nepali grammar checker interface"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+            <p className="text-sm text-gray-500 mt-4">
+              Live preview of Vyakaranly&apos;s intelligent Nepali writing assistant
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">Why Vyakaranly?</h2>
+            <div className="space-y-3 sm:space-y-4 text-base text-gray-600">
               <p><strong>🌟 The Problem:</strong> 10+ million Nepali speakers worldwide lack AI-powered writing tools</p>
               <p><strong>💡 Our Solution:</strong> Advanced AI trained on Nepali language patterns, grammar, and cultural context</p>
               <p><strong>🚀 The Impact:</strong> Empowering perfect Nepali communication for students, professionals, and creators</p>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-emerald-500 text-white rounded-xl hover:bg-emerald-600 transition-all duration-300 transform hover:-translate-y-0.5 font-semibold text-lg">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-10 sm:mb-16">
+            <button className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-xl hover:from-indigo-600 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold">
               Start Writing Better Nepali
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight className="w-5 h-5" />
             </button>
-            <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-white text-emerald-600 rounded-xl border-2 border-emerald-200 hover:border-emerald-300 hover:bg-emerald-50 transition-all duration-300 transform hover:-translate-y-0.5 font-semibold text-lg">
+            <button className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-gray-700 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 font-semibold">
               Watch Demo
-              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M8 5v10l8-5-8-5z"/>
               </svg>
             </button>
@@ -123,70 +151,70 @@ export default function ProductsPage() {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-10 sm:mb-16">
           {stats.map((stat, index) => (
-            <div key={index} className="bg-white rounded-xl p-6 text-center shadow-sm border border-gray-200">
-              <stat.icon className="w-8 h-8 text-emerald-500 mx-auto mb-3" />
-              <div className="text-2xl font-bold text-gray-900 mb-1">{stat.number}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
+            <div key={index} className="bg-white rounded-xl p-4 sm:p-6 text-center shadow-sm border border-gray-200">
+              <stat.icon className="w-6 sm:w-8 h-6 sm:h-8 text-indigo-500 mx-auto mb-2 sm:mb-3" />
+              <div className="text-lg sm:text-2xl font-bold text-gray-900 mb-1">{stat.number}</div>
+              <div className="text-xs sm:text-sm text-gray-600">{stat.label}</div>
             </div>
           ))}
         </div>
 
         {/* Features Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-10 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 sm:mb-12">
             Powerful Features for Perfect Nepali Writing
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
-                <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-emerald-600" />
+              <div key={index} className="text-center">
+                <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                  <feature.icon className="w-6 h-6 text-indigo-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Use Cases Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-10 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 sm:mb-12">
             Perfect for Every Nepali Writer
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {useCases.map((useCase, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
-                <div className="text-4xl mb-4">{useCase.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{useCase.title}</h3>
-                <p className="text-gray-600">{useCase.description}</p>
+              <div key={index} className="text-center p-4 sm:p-6">
+                <div className="text-3xl sm:text-4xl mb-4">{useCase.icon}</div>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">{useCase.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{useCase.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-emerald-500 to-blue-500 rounded-2xl p-12 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Nepali Writing?</h2>
-          <p className="text-xl mb-8 opacity-90">
-            Join thousands of writers already using Nepali Grammarly to perfect their communication
+        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 text-center">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">Ready to Transform Your Nepali Writing?</h3>
+          <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
+            Join thousands of writers already using Vyakaranly to perfect their communication
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-white text-emerald-600 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-0.5 font-semibold text-lg">
+            <button className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-xl hover:from-indigo-600 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold">
               Get Early Access
             </button>
-            <button className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-xl hover:bg-white hover:text-emerald-600 transition-all duration-300 transform hover:-translate-y-0.5 font-semibold text-lg">
+            <button className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-700 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 font-semibold">
               Request Demo
             </button>
           </div>
         </div>
 
       </div>
-    </div>
+    </section>
   );
 } 
