@@ -69,7 +69,7 @@ export default function Navigation() {
             {/* Desktop Navigation - Left Side */}
             <div className="hidden md:block">
               <NavigationMenu.Root>
-                <NavigationMenu.List className="flex items-center space-x-8">
+                <NavigationMenu.List className="flex items-center space-x-6">
                   {navigationItems.map((item) => {
                     const Icon = item.icon;
                     const isActive = pathname === item.href;
