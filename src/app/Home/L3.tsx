@@ -148,7 +148,7 @@ export default function AIServicesSection() {
       id="ai-services"
       className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 bg-gray-50"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-16 animate-fade-in">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-base font-medium mb-4">
