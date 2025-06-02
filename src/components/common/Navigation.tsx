@@ -7,8 +7,8 @@ import {
   X,
   Phone,
   Laptop,
-  User,
-  Users,
+  Building,
+  Briefcase,
   Mail,
   House,
   Package,
@@ -40,7 +40,7 @@ const navigationItems: NavItem[] = [
   {
     href: "/About",
     label: "About",
-    icon: User,
+    icon: Building,
   },
   {
     href: "/Services",
@@ -50,7 +50,7 @@ const navigationItems: NavItem[] = [
   {
     href: "/Career",
     label: "Career",
-    icon: Users,
+    icon: Briefcase,
   },
   {
     href: "/Contact",
