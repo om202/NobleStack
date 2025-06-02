@@ -1,20 +1,14 @@
 "use client";
 
+import { Code, ArrowRight, Star, Rocket } from "lucide-react";
 import {
-  Code,
-  ArrowRight,
-  Star,
-  Rocket,
-} from "lucide-react";
-import { 
-  SiReact, 
-  SiOpenai, 
-  SiZapier, 
-  SiDocker, 
+  SiReact,
+  SiOpenai,
+  SiZapier,
+  SiDocker,
   SiGithubactions,
-  SiAuth0
+  SiAuth0,
 } from "react-icons/si";
-import Image from "next/image";
 import Link from "next/link";
 import AlbumArtServices from "../../components/AlbumArtServices";
 import TechTicker from "../../components/TechTicker";
@@ -24,68 +18,108 @@ export default function Services() {
     {
       icon: SiReact,
       title: "Full-Stack Product Engineering",
-      description: "We engineer robust, full-stack systems — from frontend to backend to infrastructure — with code quality and scalability at the core.",
-      features: ["React, Next.js & Tailwind CSS", "Node.js, NestJS & GraphQL", "PostgreSQL, MongoDB & Real-time Sync", "Docker, AWS & CI/CD Pipelines"],
-      color: "blue"
+      description:
+        "We engineer robust, full-stack systems — from frontend to backend to infrastructure — with code quality and scalability at the core.",
+      features: [
+        "React, Next.js & Tailwind CSS",
+        "Node.js, NestJS & GraphQL",
+        "PostgreSQL, MongoDB & Real-time Sync",
+        "Docker, AWS & CI/CD Pipelines",
+      ],
+      color: "blue",
     },
     {
       icon: SiOpenai,
       title: "LLM-Powered AI Systems",
-      description: "We design systems that leverage cutting-edge language models to reason, retrieve, and respond — integrated seamlessly into your product or process.",
-      features: ["OpenAI, Anthropic & Mistral APIs", "LangChain, RAG & CrewAI", "Notion, PDF & Web Data Sources", "RunPod, Modal & GPU Inference"],
-      color: "purple"
+      description:
+        "We design systems that leverage cutting-edge language models to reason, retrieve, and respond — integrated seamlessly into your product or process.",
+      features: [
+        "OpenAI, Anthropic & Mistral APIs",
+        "LangChain, RAG & CrewAI",
+        "Notion, PDF & Web Data Sources",
+        "RunPod, Modal & GPU Inference",
+      ],
+      color: "purple",
     },
     {
       icon: SiZapier,
       title: "End-to-End Automation Systems",
-      description: "From business logic to background jobs, we build automation pipelines that save time, reduce human error, and scale with your growth.",
-      features: ["Zapier, n8n & Make Workflows", "Python, Node.js & Cloud Functions", "Gmail, Slack & Stripe Integrations", "React Admin & Real-time Dashboards"],
-      color: "green"
+      description:
+        "From business logic to background jobs, we build automation pipelines that save time, reduce human error, and scale with your growth.",
+      features: [
+        "Zapier, n8n & Make Workflows",
+        "Python, Node.js & Cloud Functions",
+        "Gmail, Slack & Stripe Integrations",
+        "React Admin & Real-time Dashboards",
+      ],
+      color: "green",
     },
     {
       icon: SiDocker,
       title: "Deployment & DevOps",
-      description: "We ensure your product runs smoothly in production with modern DevOps practices — from zero-downtime deploys to intelligent monitoring.",
-      features: ["GitHub Actions & GitLab CI", "Docker & Container Registry", "GCP, AWS & Firebase Hosting", "Datadog & Real-time Monitoring"],
-      color: "orange"
+      description:
+        "We ensure your product runs smoothly in production with modern DevOps practices — from zero-downtime deploys to intelligent monitoring.",
+      features: [
+        "GitHub Actions & GitLab CI",
+        "Docker & Container Registry",
+        "GCP, AWS & Firebase Hosting",
+        "Datadog & Real-time Monitoring",
+      ],
+      color: "orange",
     },
     {
       icon: SiAuth0,
       title: "Security, Privacy & Reliability",
-      description: "From identity to data to systems — we build with trust and resilience in mind, ensuring your application is safe, compliant, and production-ready.",
-      features: ["OAuth2, JWT & Multi-provider Auth", "HTTPS, AES & Encryption at Rest", "GDPR, CCPA & Audit Trails", "2FA, Rate Limiting & Session Management"],
-      color: "red"
+      description:
+        "From identity to data to systems — we build with trust and resilience in mind, ensuring your application is safe, compliant, and production-ready.",
+      features: [
+        "OAuth2, JWT & Multi-provider Auth",
+        "HTTPS, AES & Encryption at Rest",
+        "GDPR, CCPA & Audit Trails",
+        "2FA, Rate Limiting & Session Management",
+      ],
+      color: "red",
     },
     {
       icon: SiGithubactions,
       title: "Agile, But Engineered",
-      description: "We move fast — but not recklessly. Our process merges the flexibility of agile with the discipline of software engineering.",
-      features: ["Scrum, Kanban & Weekly Demos", "Code Reviews & Pair Programming", "Unit, Integration & E2E Testing", "Tech Specs, API Docs & Changelogs"],
-      color: "indigo"
-    }
+      description:
+        "We move fast — but not recklessly. Our process merges the flexibility of agile with the discipline of software engineering.",
+      features: [
+        "Scrum, Kanban & Weekly Demos",
+        "Code Reviews & Pair Programming",
+        "Unit, Integration & E2E Testing",
+        "Tech Specs, API Docs & Changelogs",
+      ],
+      color: "indigo",
+    },
   ];
 
   const process = [
     {
       step: "01",
       title: "Discovery & Planning",
-      description: "We understand your requirements and create a comprehensive project roadmap."
+      description:
+        "We understand your requirements and create a comprehensive project roadmap.",
     },
     {
       step: "02",
       title: "Design & Prototyping",
-      description: "Our team creates wireframes and prototypes to visualize your solution."
+      description:
+        "Our team creates wireframes and prototypes to visualize your solution.",
     },
     {
       step: "03",
       title: "Development & Testing",
-      description: "We build your solution using best practices and rigorous testing procedures."
+      description:
+        "We build your solution using best practices and rigorous testing procedures.",
     },
     {
       step: "04",
       title: "Deployment & Support",
-      description: "We deploy your solution and provide ongoing support and maintenance."
-    }
+      description:
+        "We deploy your solution and provide ongoing support and maintenance.",
+    },
   ];
 
   // All technologies for the ticker
@@ -141,7 +175,7 @@ export default function Services() {
     { name: "Datadog", color: "from-purple-700 to-purple-900" },
     { name: "Stripe", color: "from-blue-600 to-purple-700" },
     { name: "Slack API", color: "from-green-500 to-green-700" },
-    { name: "Gmail API", color: "from-red-500 to-red-700" }
+    { name: "Gmail API", color: "from-red-500 to-red-700" },
   ];
 
   return (
@@ -168,8 +202,8 @@ export default function Services() {
                 Our Process
               </h2>
               <p className="text-md-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-                We follow a proven methodology to ensure your project is delivered on time, 
-                within budget, and exceeds your expectations.
+                We follow a proven methodology to ensure your project is
+                delivered on time, within budget, and exceeds your expectations.
               </p>
             </div>
 
@@ -179,14 +213,16 @@ export default function Services() {
                 <div key={index} className="flex flex-col items-center">
                   <div className="relative mb-4 sm:mb-6">
                     <div className="w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center shadow-md">
-                      <span className="text-2xl font-bold text-white">{step.step}</span>
+                      <span className="text-2xl font-bold text-white">
+                        {step.step}
+                      </span>
                     </div>
                   </div>
-                  
+
                   <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 text-center">
                     {step.title}
                   </h3>
-                  
+
                   <p className="text-md-sm sm:text-base text-gray-600 text-center max-w-xs">
                     {step.description}
                   </p>
@@ -210,9 +246,11 @@ export default function Services() {
                   <div key={index} className="text-center relative">
                     <div className="relative mb-6">
                       <div className="w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center mx-auto shadow-md">
-                        <span className="text-2xl font-bold text-white">{step.step}</span>
+                        <span className="text-2xl font-bold text-white">
+                          {step.step}
+                        </span>
                       </div>
-                      
+
                       {/* Connecting Arrow */}
                       {index < process.length - 1 && (
                         <div className="absolute top-1/2 left-full transform -translate-y-1/2 w-12 flex items-center justify-center">
@@ -222,11 +260,11 @@ export default function Services() {
                         </div>
                       )}
                     </div>
-                    
+
                     <h3 className="text-lg font-bold text-gray-900 mb-3">
                       {step.title}
                     </h3>
-                    
+
                     <p className="text-base text-gray-600">
                       {step.description}
                     </p>
@@ -243,21 +281,23 @@ export default function Services() {
                 Technology Stack
               </h2>
               <p className="text-md-sm sm:text-base text-gray-600 max-w-2xl mx-auto mb-6 sm:mb-8">
-                We work with the latest and most reliable technologies to build robust, scalable solutions.
-                Watch our expertise in action — technologies refresh dynamically to showcase our full stack.
+                We work with the latest and most reliable technologies to build
+                robust, scalable solutions. Watch our expertise in action —
+                technologies refresh dynamically to showcase our full stack.
               </p>
             </div>
 
             {/* Animated Technology Ticker */}
-            <TechTicker 
-              technologies={allTechnologies} 
+            <TechTicker
+              technologies={allTechnologies}
               interval={1200}
               className="py-8"
             />
-            
+
             <div className="text-center mt-8">
               <p className="text-md-sm text-gray-500">
-                {allTechnologies.length}+ Technologies in our arsenal • Always evolving
+                {allTechnologies.length}+ Technologies in our arsenal • Always
+                evolving
               </p>
             </div>
           </div>
@@ -271,15 +311,16 @@ export default function Services() {
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
             </div>
-            
+
             <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
               Ready to Start Your Project?
             </h3>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Let&apos;s discuss your requirements and create a solution that drives your business forward. 
-              Our team is ready to bring your vision to life.
+              Let&apos;s discuss your requirements and create a solution that
+              drives your business forward. Our team is ready to bring your
+              vision to life.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/Contact"
@@ -288,7 +329,7 @@ export default function Services() {
                 <Rocket className="w-5 h-5" />
                 Get Started Today
               </Link>
-              
+
               <Link
                 href="/Career"
                 className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-700 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 font-semibold"
@@ -299,7 +340,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-        
+
         <style jsx>{`
           @keyframes futureGlow {
             0% {
@@ -320,10 +361,18 @@ export default function Services() {
           }
 
           .future-text {
-            background: linear-gradient(135deg, 
-              #10b981, #059669, #0d9488, #0f766e, 
-              #0891b2, #0e7490, #0284c7, #0369a1, 
-              #10b981);
+            background: linear-gradient(
+              135deg,
+              #10b981,
+              #059669,
+              #0d9488,
+              #0f766e,
+              #0891b2,
+              #0e7490,
+              #0284c7,
+              #0369a1,
+              #10b981
+            );
             background-size: 400% 400%;
             -webkit-background-clip: text;
             background-clip: text;
@@ -336,4 +385,4 @@ export default function Services() {
       </section>
     </>
   );
-} 
+}
