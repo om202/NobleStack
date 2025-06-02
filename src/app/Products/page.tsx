@@ -64,8 +64,8 @@ export default function ProductsPage() {
             </div>
           </div>
 
-          <div className="mb-12 max-w-5xl mx-auto">
-            <div>
+          <div className="mb-12">
+            <div className="rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
               <Image
                 src="/Vyakaranly.png"
                 alt="Vyakaranly interface"
@@ -75,7 +75,7 @@ export default function ProductsPage() {
                 priority
               />
             </div>
-            <p className="text-sm sm:text-md-sm text-gray-500 mt-6 font-medium">
+            <p className="text-sm sm:text-md-sm text-gray-500 mt-6 font-medium text-center">
               ↑ See how Vyakaranly works
             </p>
           </div>
