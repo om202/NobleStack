@@ -46,6 +46,12 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
+          {/* Beta Notice - Simple yellow text */}
+          <p className="text-yellow-600 text-sm font-medium mb-5 flex items-center justify-center gap-2">
+            <Wrench className="w-4 h-4" />
+            Site under construction
+          </p>
+          
           <div className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-blue-100 text-blue-700 text-md-sm sm:text-base font-medium mb-4 sm:mb-6">
             <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2" />
             Let&apos;s Build Something Intelligent
