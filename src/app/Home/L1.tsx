@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -10,13 +9,10 @@ import {
   Zap,
   Brain,
   Wrench,
-  Sparkles,
-  X,
 } from "lucide-react";
 import Image from "next/image";
 
 export default function HeroSection() {
-  const [showProductBanner, setShowProductBanner] = useState(true);
 
   const expertiseAreas = [
     {
@@ -116,52 +112,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Product Announcement - Ad Banner */}
-        {showProductBanner && (
-          <div className="relative bg-green-50 rounded-md p-3 pr-8 border border-green-200 mb-4">
-            {/* Close Button */}
-            <button
-              onClick={() => setShowProductBanner(false)}
-              className="absolute top-2 right-2 p-1 text-gray-400 hover:text-gray-600 transition-colors z-10"
-            >
-              <X className="w-3 h-3" />
-            </button>
 
-            <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between gap-2 pr-2 sm:pr-0">
-              {/* Left side - Content */}
-              <div className="flex flex-col items-center sm:flex-row sm:items-center gap-2 sm:gap-4">
-                <span className="inline-flex items-center px-2 py-1 rounded-md bg-emerald-100 text-emerald-700 text-sm font-medium w-fit">
-                  <Sparkles className="w-3 h-3 mr-1" />
-                  New Product
-                </span>
-
-                <div className="flex flex-col items-center sm:flex-row sm:items-center gap-1 sm:gap-2 text-center sm:text-left">
-                  <h3 className="text-sm font-bold text-gray-900">
-                    Introducing{" "}
-                    <span className="text-emerald-600">Vyakaranly</span>
-                  </h3>
-                  <span className="text-sm text-gray-600 hidden sm:inline">
-                    •
-                  </span>
-                  <p className="text-sm text-gray-600">
-                  First Nepali language AI grammar checker — no more manual edits!
-                  </p>
-                </div>
-              </div>
-
-              {/* Right side - Buttons */}
-              <div className="flex gap-2 sm:gap-3 sm:shrink-0 justify-center sm:justify-start">
-                <button className="group flex items-center justify-center gap-1 px-3 py-1.5 h-8 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white rounded-md hover:bg-emerald-600 transition-all duration-300 font-medium text-sm">
-                  Try Now
-                  <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform duration-300" />
-                </button>
-                <button className="group flex items-center justify-center gap-1 px-3 py-1.5 h-8 bg-white text-emerald-600 rounded-md border border-emerald-300 hover:bg-emerald-50 transition-all duration-300 font-medium text-sm">
-                  Learn More
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* Value Propositions */}
         <div className="mb-10 sm:mb-16">
