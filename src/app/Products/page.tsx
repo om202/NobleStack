@@ -7,6 +7,8 @@ import {
   Keyboard,
   User,
   Copy,
+  CheckCircle,
+  Download,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -17,12 +19,12 @@ export default function ProductsPage() {
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 text-sm font-medium mb-6">
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 text-md-sm font-medium mb-6">
             <Sparkles className="w-4 h-4 mr-2" />
             Revolutionizing Nepali Language with AI
           </div>
 
-          <div className="flex items-center justify-center gap-4 mb-8">
+          <div className="flex items-center justify-center gap-4 mb-6">
             <Image
               src="/vyakaranly_logo.png"
               alt="Vyakaranly Logo"
@@ -36,15 +38,35 @@ export default function ProductsPage() {
             </h1>
           </div>
 
+          {/* Tagline */}
+          <p className="text-base text-indigo-600 font-medium mb-6">
+            AI-Powered. Nepali-Focused. Writer-Approved.
+          </p>
+
           <div className="space-y-4 mb-8 max-w-4xl mx-auto">
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">
-              The World&apos;s First AI-Powered Nepali Writing Assistant
+              Transform Your Nepali Writing with AI Precision
             </h2>
             <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-              Transform your Nepali writing from good to extraordinary. Our
-              breakthrough AI technology understands not just grammar, but the
-              soul of Nepali language.
+              Vyakaranly corrects grammar, improves style, and saves you time — instantly and for free.
+              Write correct Nepali without stress, powered by advanced AI technology.
             </p>
+          </div>
+
+          {/* Key Benefits */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8 max-w-3xl mx-auto">
+            <div className="flex items-center text-md-sm text-gray-700 bg-green-50 px-4 py-2 rounded-full">
+              <CheckCircle className="w-4 h-4 text-green-600 mr-2" />
+              Corrects grammar & spelling mistakes
+            </div>
+            <div className="flex items-center text-md-sm text-gray-700 bg-green-50 px-4 py-2 rounded-full">
+              <CheckCircle className="w-4 h-4 text-green-600 mr-2" />
+              Improves sentence clarity in Nepali
+            </div>
+            <div className="flex items-center text-md-sm text-gray-700 bg-green-50 px-4 py-2 rounded-full">
+              <CheckCircle className="w-4 h-4 text-green-600 mr-2" />
+              Real-time suggestions while you type
+            </div>
           </div>
 
           <div className="mb-12 max-w-5xl mx-auto">
@@ -58,17 +80,64 @@ export default function ProductsPage() {
                 priority
               />
             </div>
-            <p className="text-xs sm:text-sm text-gray-500 mt-6 font-medium">
+            <p className="text-sm sm:text-md-sm text-gray-500 mt-6 font-medium">
               ↑ Live preview: Watch Vyakaranly transform your writing in
               real-time
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-semibold text-base">
-              Try Vyakaranly Now!
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <button className="flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-semibold text-lg">
+              Start Writing Smarter – It&apos;s Free
               <ArrowRight className="w-5 h-5" />
             </button>
+          </div>
+
+
+        </div>
+
+        {/* How It Works Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-4">
+            How Vyakaranly Works
+          </h3>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Get started in seconds and see immediate improvements to your Nepali writing
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Keyboard className="w-8 h-8 text-white" />
+              </div>
+              <div className="w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center text-md-sm font-bold mx-auto mb-4">1</div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Paste or Type Nepali Text</h4>
+              <p className="text-gray-600 text-md-sm">
+                                 Start typing or paste your Nepali content into our smart editor. Works with both Devanagari and romanized text.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Brain className="w-8 h-8 text-white" />
+              </div>
+              <div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-md-sm font-bold mx-auto mb-4">2</div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">AI Analyzes & Suggests Fixes</h4>
+              <p className="text-gray-600 text-md-sm">
+                Our advanced AI instantly identifies grammar errors, spelling mistakes, and suggests style improvements.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Download className="w-8 h-8 text-white" />
+              </div>
+              <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-md-sm font-bold mx-auto mb-4">3</div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Accept Changes & Save</h4>
+              <p className="text-gray-600 text-md-sm">
+                Review suggestions, accept changes with one click, and copy the improved text for use anywhere.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -79,51 +148,53 @@ export default function ProductsPage() {
           </h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* AI Grammar Analysis */}
+            {/* Write Without Errors */}
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center mb-4">
                 <Brain className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">AI Grammar Analysis</h4>
-              <p className="text-gray-600 text-sm">
-                Advanced AI analyzes your Nepali text for grammar corrections, style improvements, and better word choices in Devanagari script.
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Write Without Errors</h4>
+              <p className="text-gray-600 text-md-sm">
+                Get real-time grammar corrections as you type. Advanced AI analyzes your Nepali text for perfect accuracy.
               </p>
             </div>
 
-            {/* Romanized Input */}
+            {/* Type 'Namaste' – Get 'नमस्ते' */}
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-600 rounded-xl flex items-center justify-center mb-4">
                 <Keyboard className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">Romanized Input</h4>
-              <p className="text-gray-600 text-sm">
-                Type in English characters that automatically convert to Nepali Devanagari. Type &apos;namaste&apos; and get &apos;नमस्ते&apos; instantly.
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Type &apos;Namaste&apos; – Get &apos;नमस्ते&apos;</h4>
+              <p className="text-gray-600 text-md-sm">
+                Smart romanized input that instantly converts English characters to beautiful Nepali Devanagari script.
               </p>
             </div>
 
-            {/* Free Account Features */}
+            {/* Free Forever */}
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl flex items-center justify-center mb-4">
                 <User className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">Free Account</h4>
-              <p className="text-gray-600 text-sm">
-                Create a free account for personalized suggestions, writing history, and access to advanced grammar analysis features.
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Free Forever</h4>
+              <p className="text-gray-600 text-md-sm">
+                Create a free account for personalized suggestions, writing history, and advanced grammar analysis features.
               </p>
             </div>
 
-            {/* Copy & Save */}
+            {/* Save & Reuse Instantly */}
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center mb-4">
                 <Copy className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">Copy & Save</h4>
-              <p className="text-gray-600 text-sm">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Save & Reuse Instantly</h4>
+              <p className="text-gray-600 text-md-sm">
                 Easily copy improved text and use anywhere. Your writing history is automatically saved for future reference.
               </p>
             </div>
           </div>
         </div>
+
+
       </div>
     </section>
   );
