@@ -1,6 +1,6 @@
 "use client";
 
-import { Send, Upload } from "lucide-react";
+import { Send, Upload, FileText } from "lucide-react";
 import { useState } from "react";
 
 export default function Career() {
@@ -51,14 +51,13 @@ export default function Career() {
 
           {/* Application Form */}
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
-                          <div className="text-center mb-6 sm:mb-8">
-                <h3 className="text-xl sm:text-2xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
-                  Submit Your Application
-                </h3>
-                <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-                Ready to join our team? Fill out the form below and let&apos;s
-                start the conversation.
-              </p>
+                          <div className="text-center mb-10 sm:mb-12">
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <FileText className="w-6 h-6 text-gray-500" />
+                  <h3 className="text-xl font-semibold text-gray-700">
+                    Application Form
+                  </h3>
+                </div>
             </div>
 
             <form

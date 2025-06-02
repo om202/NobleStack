@@ -212,7 +212,7 @@ export default function Services() {
               {process.map((step, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="relative mb-4 sm:mb-6">
-                    <div className="w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center shadow-md">
+                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-md">
                       <span className="text-2xl font-bold text-white">
                         {step.step}
                       </span>
@@ -230,7 +230,7 @@ export default function Services() {
                   {/* Vertical Arrow for Mobile */}
                   {index < process.length - 1 && (
                     <div className="mt-8 mb-4">
-                      <div className="bg-blue-600 rounded-full p-2">
+                      <div className="bg-gradient-to-br from-gray-500 to-gray-600 rounded-full p-2">
                         <ArrowRight className="w-5 h-5 text-white transform rotate-90" />
                       </div>
                     </div>
@@ -245,7 +245,7 @@ export default function Services() {
                 {process.map((step, index) => (
                   <div key={index} className="text-center relative">
                     <div className="relative mb-6">
-                      <div className="w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                      <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mx-auto shadow-md">
                         <span className="text-2xl font-bold text-white">
                           {step.step}
                         </span>
@@ -254,7 +254,7 @@ export default function Services() {
                       {/* Connecting Arrow */}
                       {index < process.length - 1 && (
                         <div className="absolute top-1/2 left-full transform -translate-y-1/2 w-12 flex items-center justify-center">
-                          <div className="bg-blue-600 rounded-full p-2">
+                          <div className="bg-gradient-to-br from-gray-500 to-gray-600 rounded-full p-2">
                             <ArrowRight className="w-5 h-5 text-white" />
                           </div>
                         </div>
