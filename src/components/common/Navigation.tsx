@@ -13,8 +13,8 @@ import {
   House,
   Package,
   LucideIcon,
-  ChevronsLeft,
-  ChevronsRight,
+  PanelLeftClose,
+  PanelLeftOpen,
 } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
@@ -94,30 +94,11 @@ export default function Navigation() {
           isSidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         }`}
       >
-        {/* Collapse Toggle at Top */}
-        <div className="hidden md:block px-2 pt-1 pb-0">
-          <button
-            onClick={() => setIsCollapsed(!isCollapsed)}
-            className={`w-full flex items-center justify-center gap-2 px-3 py-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100/50 rounded-lg transition-colors duration-150 text-sm ${
-              isCollapsed ? "md:px-2 md:gap-0" : ""
-            }`}
-          >
-            {isCollapsed ? (
-              <>
-                <ChevronsRight className="w-5 h-5" />
-                <span className="md:hidden">Expand</span>
-              </>
-            ) : (
-              <>
-                <ChevronsLeft className="w-5 h-5" />
-              </>
-            )}
-          </button>
-        </div>
+
 
         {/* Logo Section */}
         <div
-          className={`flex items-center gap-3 border-b border-gray-200/50 ml-4 md:ml-0 ${
+          className={`flex items-center gap-3 border-b border-gray-200/50 ml-4 md:ml-0 relative ${
             isCollapsed ? "md:justify-center md:p-3" : "p-6"
           }`}
         >
@@ -142,6 +123,18 @@ export default function Navigation() {
               Stack
             </span>
           </div>
+          
+          {/* Collapse Toggle on Border */}
+          <button
+            onClick={() => setIsCollapsed(!isCollapsed)}
+            className="hidden md:flex absolute -right-4 -bottom-4 w-8 h-8 bg-white/80 border border-gray-200/60 rounded-full items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-white/90 transition-all duration-200 z-50"
+          >
+            {isCollapsed ? (
+              <PanelLeftOpen className="w-4 h-4" />
+            ) : (
+              <PanelLeftClose className="w-4 h-4" />
+            )}
+          </button>
         </div>
 
         {/* Navigation Items */}
@@ -154,16 +147,16 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`group flex items-center gap-3 text-sm font-medium transition-colors duration-150 ${
-                  isCollapsed
+                                className={`group flex items-center gap-3 text-sm font-medium transition-colors duration-150 ${
+                  isCollapsed 
                     ? `md:justify-center md:px-3 md:py-3 md:mx-1 md:rounded-lg ${
-                        isActive
-                          ? "md:bg-blue-100/90 md:text-blue-700 md:shadow-sm px-4 py-3 rounded-xl bg-blue-100/80 text-blue-700 border border-blue-200"
-                          : "md:text-gray-600 md:hover:text-blue-600 md:hover:bg-blue-50/80 md:hover:shadow-sm px-4 py-3 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-gray-100/50"
+                        isActive 
+                          ? "md:bg-blue-100/70 md:text-blue-700 px-4 py-3 rounded-xl bg-blue-100/70 text-blue-700"
+                          : "md:text-gray-600 md:hover:text-blue-600 md:hover:bg-blue-50/80 px-4 py-3 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-gray-100/50"
                       }`
                     : `px-4 py-3 rounded-xl ${
-                        isActive
-                          ? "bg-blue-100/80 text-blue-700 border border-blue-200"
+                        isActive 
+                          ? "bg-blue-100/70 text-blue-700"
                           : "text-gray-700 hover:text-blue-600 hover:bg-gray-100/50"
                       }`
                 }`}
@@ -171,9 +164,7 @@ export default function Navigation() {
                 title={isCollapsed ? item.label : undefined}
               >
                 <Icon
-                  className={`flex-shrink-0 ${
-                    isCollapsed ? "md:w-6 md:h-6 w-5 h-5" : "w-5 h-5"
-                  }`}
+                  className="flex-shrink-0 w-5 h-5"
                 />
                 <span className={`${isCollapsed ? "md:hidden" : ""}`}>
                   {item.label}
