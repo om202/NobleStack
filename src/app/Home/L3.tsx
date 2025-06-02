@@ -8,7 +8,8 @@ import {
   ChevronRight,
   ArrowRight,
   Cpu,
-  Settings
+  Settings,
+  Languages
 } from "lucide-react";
 import { 
   SiOpenai, 
@@ -28,6 +29,14 @@ import AnimatedFeatureCarousel from "../../components/AnimatedFeatureCarousel";
 
 export default function AIServicesSection() {
   const aiFeatures = [
+    {
+      id: "language-tools",
+      title: "Nepali Grammarly - Revolutionary Language AI",
+      description: "Our flagship product: the world's first AI-powered grammar and spell checker for Nepali language. Serving 10+ million native speakers with advanced AI language processing.",
+      icon: Languages,
+      color: "from-emerald-500 to-green-500",
+      stats: ["First of Its Kind", "10M+ Speakers", "95% Accuracy", "Real-time Corrections"],
+    },
     {
       id: "ai-chatbots",
       title: "Intelligent AI Chatbots That Actually Work",
@@ -51,22 +60,14 @@ export default function AIServicesSection() {
       icon: Brain,
       color: "from-green-500 to-emerald-500",
       stats: ["Tailored Models", "Enterprise Ready", "Scalable", "Production-Tested"],
-    },
-    {
-      id: "rapid-deployment",
-      title: "Deploy AI in Days, Not Months",
-      description: "While others take months to deploy AI, we deliver working solutions in days. Our proven frameworks and pre-built components accelerate your AI transformation.",
-      icon: Cpu,
-      color: "from-orange-500 to-red-500",
-      stats: ["Fast Deployment", "Proven Framework", "Quick ROI", "Minimal Downtime"],
     }
   ];
 
   const aiServices = [
+    { name: "AI Language Tools", icon: Languages, status: "🚀 NEW", description: "Nepali Grammarly - First AI Grammar Checker" },
     { name: "AI Chatbots & Virtual Assistants", icon: MessageCircle, status: "AI Expert", description: "GPT-4, Claude, Custom Models" },
     { name: "Business Process Automation", icon: Zap, status: "Automation Pro", description: "Smart Workflows & Integration" },
-    { name: "Custom AI Development", icon: Brain, status: "ML Specialist", description: "Tailored AI Solutions" },
-    { name: "AI Strategy & Consulting", icon: Settings, status: "Strategic Partner", description: "AI Transformation Guide" }
+    { name: "Custom AI Development", icon: Brain, status: "ML Specialist", description: "Tailored AI Solutions" }
   ];
 
   const aiTechStack = [

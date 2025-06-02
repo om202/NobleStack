@@ -12,6 +12,7 @@ import {
   Users,
   Mail,
   House,
+  Package,
   LucideIcon,
 } from "lucide-react";
 import { useState } from "react";
@@ -28,6 +29,11 @@ const navigationItems: NavItem[] = [
     href: "/",
     label: "Home",
     icon: House,
+  },
+  {
+    href: "/Products",
+    label: "Products",
+    icon: Package,
   },
   {
     href: "/About",
