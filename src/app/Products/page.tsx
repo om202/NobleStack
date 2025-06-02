@@ -65,7 +65,7 @@ export default function ProductsPage() {
           </div>
 
           <div className="mb-12 max-w-5xl mx-auto">
-            <div className="relative rounded-3xl overflow-hidden border-2 border-gray-200 shadow-2xl">
+            <div>
               <Image
                 src="/Vyakaranly.png"
                 alt="Vyakaranly interface"
@@ -101,10 +101,9 @@ export default function ProductsPage() {
           
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Keyboard className="w-8 h-8 text-white" />
               </div>
-              <div className="w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center text-md-sm font-bold mx-auto mb-4">1</div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Type or Paste Text</h4>
               <p className="text-gray-600 text-md-sm">
                 Enter your Nepali text in Devanagari or romanized format.
@@ -112,10 +111,9 @@ export default function ProductsPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Brain className="w-8 h-8 text-white" />
               </div>
-              <div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-md-sm font-bold mx-auto mb-4">2</div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Get AI Suggestions</h4>
               <p className="text-gray-600 text-md-sm">
                 AI finds errors and suggests improvements instantly.
@@ -123,10 +121,9 @@ export default function ProductsPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Download className="w-8 h-8 text-white" />
               </div>
-              <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-md-sm font-bold mx-auto mb-4">3</div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Copy & Use</h4>
               <p className="text-gray-600 text-md-sm">
                 Accept changes and copy the improved text.
