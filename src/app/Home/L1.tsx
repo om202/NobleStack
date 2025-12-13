@@ -146,6 +146,8 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
 
@@ -165,6 +167,136 @@ export default function HeroSection() {
                 icon={area.icon}
               />
             ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <CTAButton variant="secondary" href="/Services" icon={ArrowRight}>
+              View All Services
+            </CTAButton>
+          </div>
+        </div>
+      </div>
+
+      {/* Products Section */}
+      <div className="max-w-6xl mx-auto px-4 pb-12">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
+          <h2 className="text-xl font-bold text-gray-900 mb-8 text-center">
+            Our Products
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Vibe AI */}
+            <a
+              href="https://apps.apple.com/us/app/ai-photo-editor-vibe/id6752835683"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full"
+            >
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group cursor-pointer h-full flex flex-col">
+                <div className="flex items-center mb-4">
+                  <Image
+                    src="/vibe.png"
+                    alt="Vibe AI"
+                    width={48}
+                    height={48}
+                    className="rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-gray-900 font-semibold mb-2">Vibe AI Photo Editor</h3>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                  Professional photo editing made simple. Remove backgrounds and enhance images with AI.
+                </p>
+                <div className="mt-auto flex items-center text-sm font-medium text-nobleblue-600 group-hover:text-nobleblue-700">
+                  Check it out
+                  <ArrowRight className="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" />
+                </div>
+              </div>
+            </a>
+
+            {/* Create Profile Pic */}
+            <a
+              href="https://createprofilepic.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full"
+            >
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group cursor-pointer h-full flex flex-col">
+                <div className="flex items-center mb-4">
+                  <Image
+                    src="/create_profile_pic_icon.png"
+                    alt="Create Profile Pic"
+                    width={48}
+                    height={48}
+                    className="rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-gray-900 font-semibold mb-2">Create Profile Pic</h3>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                  Create stunning profile pictures for any platform. Powered by Google's Nano Banana AI.
+                </p>
+                <div className="mt-auto flex items-center text-sm font-medium text-nobleblue-600 group-hover:text-nobleblue-700">
+                  Check it out
+                  <ArrowRight className="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" />
+                </div>
+              </div>
+            </a>
+
+            {/* Loopn */}
+            <a
+              href="https://www.loopn.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full"
+            >
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group cursor-pointer h-full flex flex-col">
+                <div className="flex items-center mb-4">
+                  <Image
+                    src="/loopn_logo.png"
+                    alt="Loopn"
+                    width={48}
+                    height={48}
+                    className="shadow-sm group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-gray-900 font-semibold mb-2">Loopn</h3>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                  Professional Networking & Career Matching using AI. Resume matching for career growth.
+                </p>
+                <div className="mt-auto flex items-center text-sm font-medium text-nobleblue-600 group-hover:text-nobleblue-700">
+                  Check it out
+                  <ArrowRight className="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" />
+                </div>
+              </div>
+            </a>
+
+            {/* Auto Captions */}
+            <Link href="/Products" className="block h-full">
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group cursor-pointer h-full flex flex-col">
+                <div className="flex items-center mb-4">
+                  <Image
+                    src="/autosubai_icon.png"
+                    alt="Auto Captions"
+                    width={48}
+                    height={48}
+                    className="rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-gray-900 font-semibold mb-2">Auto Captions</h3>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                  Automated subtitle generator in any language. Translate or generate for native voice.
+                </p>
+                <div className="mt-auto flex items-center text-sm font-medium text-gray-500">
+                  Coming Soon
+                  <ArrowRight className="w-4 h-4 ml-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="mt-12 text-center">
+            <CTAButton variant="secondary" href="/Products" icon={ArrowRight}>
+              View All Products
+            </CTAButton>
           </div>
         </div>
       </div>

@@ -262,6 +262,82 @@ export default function ProductsPage() {
             />
           </div>
         </div>
+
+        <div className="w-full h-px bg-gray-200 my-20" />
+
+        {/* Auto Captions Section */}
+        <div className="text-center mb-16">
+          <div className="flex flex-col items-center justify-center gap-4 mb-6">
+            <Image
+              src="/autosubai_icon.png"
+              alt="Auto Captions Logo"
+              width={112}
+              height={112}
+              className="rounded-2xl shadow-lg"
+            />
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-gray-900">
+              Auto Captions
+            </h1>
+          </div>
+
+          <div className="space-y-4 mb-12 max-w-4xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+              Automated subtitle generator for any language. Instantly translate or generate captions for native voice with high accuracy.
+            </p>
+          </div>
+
+          {/* Screenshot */}
+          <div className="mb-12 flex justify-center">
+            <div className="rounded-[2rem] border border-gray-100 shadow-lg overflow-hidden max-w-[300px]">
+              <Image
+                src="/autosubai_screen.png"
+                alt="Auto Captions Interface"
+                width={300}
+                height={650}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          {/* Coming Soon Button */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <div className="inline-block">
+              <CTAButton variant="secondary" className="w-full sm:w-auto text-lg px-10 py-5 cursor-not-allowed opacity-80">
+                Coming Soon
+              </CTAButton>
+            </div>
+          </div>
+        </div>
+
+        {/* Auto Captions Features Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">
+            Coming Features
+          </h3>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <ServiceCard
+              name="Multi-Language Support"
+              description="Generate subtitles in any language automatically with AI precision."
+              icon={Globe}
+            />
+            <ServiceCard
+              name="Native Voice"
+              description="Translate and generate captions that perfectly match native speech patterns."
+              icon={MessageSquare}
+            />
+            <ServiceCard
+              name="Auto Sync"
+              description="Perfectly synchronized captions that match your video's timing."
+              icon={Zap}
+            />
+            <ServiceCard
+              name="Easy Export"
+              description="Export to all popular subtitle formats compatible with major video editors."
+              icon={Download}
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
