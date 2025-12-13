@@ -1,10 +1,21 @@
 import { MetadataRoute } from 'next'
- 
+import { getAllPosts } from '@/lib/blog'
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NODE_ENV === 'production' 
-    ? 'https://www.noblestack.io' 
+  const baseUrl = process.env.NODE_ENV === 'production'
+    ? 'https://www.noblestack.io'
     : 'http://localhost:3000'
-  
+
+  // Get all posts for dynamic sitemap generation
+  const posts = getAllPosts(['slug', 'date'])
+
+  const blogUrls = posts.map((post) => ({
+    url: `${baseUrl}/blogs/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: 'weekly' as const,
+    priority: 0.6,
+  }))
+
   return [
     {
       url: baseUrl,
@@ -36,5 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/blogs`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.8,
+    },
+    ...blogUrls,
   ]
-} 
+}

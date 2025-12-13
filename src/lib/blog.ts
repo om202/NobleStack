@@ -17,6 +17,7 @@ export interface BlogPost {
     tags?: string[];
     publisher?: string;
     content: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [key: string]: any;
 }
 
@@ -24,7 +25,8 @@ export function getPostSlugs() {
     return fs.readdirSync(postsDirectory);
 }
 
-export function getPostBySlug(slug: string, fields: string[] = []) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function getPostBySlug(slug: string, _fields: string[] = []) {
     const realSlug = slug.replace(/\.md$/, '');
     const fullPath = path.join(postsDirectory, `${realSlug}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
@@ -44,10 +46,10 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     return items;
 }
 
-export function getAllPosts(fields: string[] = []) {
+export function getAllPosts(_fields: string[] = []) {
     const slugs = getPostSlugs();
     const posts = slugs
-        .map((slug) => getPostBySlug(slug, fields))
+        .map((slug) => getPostBySlug(slug, _fields))
         // sort posts by date in descending order
         .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
     return posts;

@@ -174,7 +174,9 @@ export default function RootLayout({
               },
               sameAs: [
                 "https://www.linkedin.com/company/noble-stack",
-                "https://github.com/noble-stack"
+                "https://github.com/noble-stack",
+                "https://www.facebook.com/noblestack.io",
+                "https://www.instagram.com/noblestack.io"
               ]
             })
           }}

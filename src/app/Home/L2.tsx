@@ -5,7 +5,6 @@ import {
   Rocket,
   Zap,
   Globe,
-  ChevronRight,
   ArrowRight,
   Monitor,
   Palette,

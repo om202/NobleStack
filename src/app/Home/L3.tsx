@@ -5,7 +5,6 @@ import {
   Zap,
   MessageCircle,
   Brain,
-  ChevronRight,
   ArrowRight,
   Languages,
 } from "lucide-react";

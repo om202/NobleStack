@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
                 type: "article",
             },
         };
-    } catch (e) {
+    } catch {
         return {
             title: "Blog Not Found",
         };
@@ -53,12 +53,43 @@ export default async function BlogPostPage({ params }: Params) {
             "coverImage",
             "tags",
         ]);
-    } catch (e) {
+    } catch {
         notFound();
     }
 
     return (
         <article className="min-h-screen bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BlogPosting",
+                        headline: post.title,
+                        image: post.coverImage ? [`https://www.noblestack.io${post.coverImage}`] : [],
+                        datePublished: new Date(post.date).toISOString(),
+                        dateModified: new Date(post.date).toISOString(),
+                        author: {
+                            "@type": "Person",
+                            name: post.author?.name || "Noble Stack Team",
+                            image: post.author?.picture ? `https://www.noblestack.io${post.author.picture}` : undefined
+                        },
+                        publisher: {
+                            "@type": "Organization",
+                            name: "Noble Stack",
+                            logo: {
+                                "@type": "ImageObject",
+                                url: "https://www.noblestack.io/nbl.png"
+                            }
+                        },
+                        description: post.excerpt,
+                        mainEntityOfPage: {
+                            "@type": "WebPage",
+                            "@id": `https://www.noblestack.io/blogs/${post.slug}`
+                        }
+                    })
+                }}
+            />
             {/* Hero / Header */}
             <div className="relative h-[60vh] min-h-[400px] w-full bg-gray-900">
                 {post.coverImage && (

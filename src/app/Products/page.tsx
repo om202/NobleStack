@@ -120,9 +120,7 @@ export default function ProductsPage() {
           </div>
 
           <div className="space-y-4 mb-12 max-w-4xl mx-auto">
-            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-              The web-based solution for professional profile pictures. Powered by Google's Nano Banana AI, just describe the changes you want in plain English. No subscription required.
-            </p>
+            The web-based solution for professional profile pictures. Powered by Google&apos;s Nano Banana AI, just describe the changes you want in plain English. No subscription required.
           </div>
 
           {/* Screenshot */}

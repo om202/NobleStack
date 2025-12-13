@@ -232,7 +232,7 @@ export default function HeroSection() {
                 </div>
                 <h3 className="text-gray-900 font-semibold mb-2">Create Profile Pic</h3>
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                  Create stunning profile pictures for any platform. Powered by Google's Nano Banana AI.
+                  Create stunning profile pictures for any platform. Powered by Google&apos;s Nano Banana AI.
                 </p>
                 <div className="mt-auto flex items-center text-sm font-medium text-nobleblue-600 group-hover:text-nobleblue-700">
                   Check it out

@@ -9,7 +9,6 @@ import {
   SiGithubactions,
   SiAuth0,
 } from "react-icons/si";
-import Link from "next/link";
 import AlbumArtServices from "../../components/AlbumArtServices";
 import TechTicker from "../../components/TechTicker";
 import CTAButton from "../../components/CTAButton";
