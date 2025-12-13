@@ -46,7 +46,7 @@ export default function AnimatedFeatureCarousel({
         <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 border border-gray-200 shadow-sm h-[260px] sm:h-[240px] flex flex-col justify-center">
           <div
             key={activeFeature}
-            className="flex items-start gap-4 sm:gap-6 animate-fade-in"
+            className="flex items-start gap-4 sm:gap-6 transition-opacity duration-500"
           >
             <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-100 rounded-2xl flex items-center justify-center flex-shrink-0">
               {React.createElement(features[activeFeature].icon, {

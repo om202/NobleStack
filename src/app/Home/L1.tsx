@@ -116,20 +116,12 @@ export default function HeroSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {expertiseAreas.map((area, index) => (
-              <div
+              <ServiceCard
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
-              >
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mr-3">
-                    <area.icon className="w-6 h-6 text-nobleblue-600" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    {area.title}
-                  </h3>
-                </div>
-                <p className="text-base text-gray-600">{area.description}</p>
-              </div>
+                name={area.title}
+                description={area.description}
+                icon={area.icon}
+              />
             ))}
           </div>
         </div>
