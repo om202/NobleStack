@@ -24,6 +24,7 @@ import {
 import React from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
 import AnimatedFeatureCarousel from "../../components/AnimatedFeatureCarousel";
+import ServiceCard from "../../components/ServiceCard";
 
 export default function AIServicesSection() {
   const aiFeatures = [
@@ -181,33 +182,12 @@ export default function AIServicesSection() {
         {/* AI Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 sm:mb-16">
           {aiServices.map((service, index) => (
-            <div
+            <ServiceCard
               key={index}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group cursor-pointer min-h-[180px] flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div
-                    className={`w-12 h-12 bg-gradient-to-r ${aiFeatures[index].color} rounded-xl flex items-center justify-center shadow-lg`}
-                  >
-                    <service.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <span className="text-md-sm px-2 py-1 bg-nobleblue-500/20 text-nobleblue-500 rounded-full">
-                    {service.status}
-                  </span>
-                </div>
-                <h3 className="text-gray-900 font-semibold mb-2">
-                  {service.name}
-                </h3>
-                <p className="text-base text-gray-600 mb-4">
-                  {service.description}
-                </p>
-              </div>
-              <button className="flex items-center text-nobleblue-600 text-base group-hover:text-nobleblue-700 transition-colors">
-                Learn More
-                <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
+              name={service.name}
+              description={service.description}
+              icon={service.icon}
+            />
           ))}
         </div>
 

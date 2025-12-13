@@ -11,6 +11,7 @@ import {
   Wrench,
 } from "lucide-react";
 import Image from "next/image";
+import ServiceCard from "../../components/ServiceCard";
 
 export default function HeroSection() {
 
@@ -103,41 +104,21 @@ export default function HeroSection() {
         {/* Value Propositions */}
         <div className="mb-10 sm:mb-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow duration-300">
-              <div className="w-12 h-12 gradient-nobleblue-up rounded-xl flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Idea to Deployed Software
-              </h3>
-              <p className="text-base text-gray-600">
-                Complete end-to-end development from concept to production
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow duration-300">
-              <div className="w-12 h-12 gradient-nobleblue-up rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Bot className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                AI Powered Solutions
-              </h3>
-              <p className="text-base text-gray-600">
-                Intelligent automation and AI integration in every project
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow duration-300">
-              <div className="w-12 h-12 gradient-nobleblue-up rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Modern Tech Stack
-              </h3>
-              <p className="text-base text-gray-600">
-                Latest technologies and best practices for optimal performance
-              </p>
-            </div>
+            <ServiceCard
+              name="Idea to Deployed Software"
+              description="Complete end-to-end development from concept to production"
+              icon={CheckCircle}
+            />
+            <ServiceCard
+              name="AI Powered Solutions"
+              description="Intelligent automation and AI integration in every project"
+              icon={Bot}
+            />
+            <ServiceCard
+              name="Modern Tech Stack"
+              description="Latest technologies and best practices for optimal performance"
+              icon={Zap}
+            />
           </div>
         </div>
 
@@ -154,7 +135,9 @@ export default function HeroSection() {
                 className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
               >
                 <div className="flex items-center mb-4">
-                  <area.icon className="w-8 h-8 text-nobleblue-600 mr-3" />
+                  <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mr-3">
+                    <area.icon className="w-6 h-6 text-nobleblue-600" />
+                  </div>
                   <h3 className="text-lg font-semibold text-gray-900">
                     {area.title}
                   </h3>

@@ -182,14 +182,8 @@ export default function FAQSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-nobleblue-100 text-nobleblue-700 text-base font-medium mb-4">
-            <MessageCircle className="w-4 h-4 mr-2" />
-            Technical FAQ & Solutions Guide
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            Technical Deep Dive
             <span className="text-gradient-nobleblue">
-              {" "}
               Questions & Answers
             </span>
           </h2>
@@ -201,7 +195,7 @@ export default function FAQSection() {
 
         {/* Category Selection */}
         <div className="flex justify-center mb-8 sm:mb-12">
-          <div className="bg-white rounded-2xl p-2 shadow-sm border border-gray-200 flex flex-col sm:flex-row gap-2 sm:gap-0 w-full max-w-md sm:max-w-none sm:inline-flex">
+          <div className="bg-white rounded-xl p-1.5 shadow-sm border border-gray-200 inline-flex gap-1">
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -210,15 +204,15 @@ export default function FAQSection() {
                   setOpenFaq(null);
                   setAnimationKey(prev => prev + 1);
                 }}
-                className={`flex items-center gap-3 px-4 sm:px-6 py-3 rounded-xl transition-all duration-200 justify-center sm:justify-start ${activeCategory === category.id
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 ${activeCategory === category.id
                   ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
                   : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                   }`}
               >
-                <category.icon className="w-5 h-5" />
-                <div className="text-left sm:text-left text-center">
-                  <div className="font-semibold text-md-sm sm:text-base">{category.name}</div>
-                  <div className={`text-md-sm ${activeCategory === category.id ? 'text-white/80' : 'text-gray-500'}`}>
+                <category.icon className="w-4 h-4" />
+                <div className="text-left">
+                  <div className="font-semibold text-sm">{category.name}</div>
+                  <div className={`text-xs ${activeCategory === category.id ? 'text-white/80' : 'text-gray-500'}`}>
                     {category.count}
                   </div>
                 </div>
@@ -239,8 +233,8 @@ export default function FAQSection() {
                 className="w-full text-left px-6 py-6 hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between group"
               >
                 <div className="flex items-center gap-4 flex-1">
-                  <div className={`w-12 h-12 bg-gradient-to-r ${categories.find(c => c.id === activeCategory)?.color} rounded-xl flex items-center justify-center shadow-sm`}>
-                    <faq.icon className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <faq.icon className="w-6 h-6 text-nobleblue-600" />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1">

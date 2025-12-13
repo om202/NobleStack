@@ -32,23 +32,25 @@ export default function TechStackCarousel({
 
   return (
     <div className="mb-10 sm:mb-16">
-      <h3 className="text-lg sm:text-xl font-bold text-center text-gray-900 mb-6 sm:mb-8">
-        {title}
-      </h3>
-              <div className="relative bg-white rounded-2xl p-4 sm:p-6 border border-gray-200 min-h-[120px] sm:min-h-[140px] flex flex-col justify-center overflow-hidden">
+      <div className="relative bg-white rounded-2xl p-4 sm:p-6 border border-gray-200 min-h-[120px] sm:min-h-[140px] flex flex-col justify-center overflow-hidden">
+        {/* Title */}
+        <h3 className="text-base sm:text-lg md:text-xl font-bold text-center text-gray-900 mb-4 sm:mb-6">
+          {title}
+        </h3>
+
         {/* Currently Featured Technology */}
-                  <div className="text-center mb-4 sm:mb-6">
+        <div className="text-center mb-4 sm:mb-6">
           <div
             key={currentTechIndex}
-            className="animate-fade-in flex flex-col items-center"
+            className="flex flex-col items-center transition-opacity duration-500 ease-in-out"
           >
-            <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-3 border border-gray-200">
-              {React.createElement(technologies[currentTechIndex].icon, { 
+            <div className="w-24 h-24 sm:w-28 sm:h-28 bg-gray-50 rounded-2xl flex items-center justify-center mb-4 border border-gray-200">
+              {React.createElement(technologies[currentTechIndex].icon, {
                 style: { color: technologies[currentTechIndex].color },
-                className: "w-10 h-10 transition-transform duration-300 hover:scale-110"
+                className: "w-16 h-16 sm:w-20 sm:h-20"
               })}
             </div>
-            <h4 className="text-base sm:text-lg font-bold text-gray-900">
+            <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">
               {technologies[currentTechIndex].name}
             </h4>
           </div>
@@ -76,18 +78,17 @@ export default function TechStackCarousel({
                 return (
                   <div
                     key={actualIndex}
-                    className={`text-center group cursor-pointer transition-all duration-300 ${
-                      actualIndex === currentTechIndex
-                        ? "scale-110 opacity-100"
-                        : "opacity-60 hover:opacity-80"
-                    }`}
+                    className={`text-center cursor-pointer transition-opacity duration-300 ease-in-out ${actualIndex === currentTechIndex
+                      ? "opacity-100"
+                      : "opacity-50 hover:opacity-75"
+                      }`}
                     onClick={() => setCurrentTechIndex(actualIndex)}
                   >
-                    <div className="bg-gray-50 rounded-xl p-2 border border-gray-200 group-hover:bg-gray-100 transition-colors duration-300">
+                    <div className="bg-gray-50 rounded-xl p-2 border border-gray-200">
                       <div className="flex justify-center mb-1">
-                        <tech.icon 
+                        <tech.icon
                           style={{ color: tech.color }}
-                          className="w-5 h-5 group-hover:scale-110 transition-transform duration-300"
+                          className="w-5 h-5"
                         />
                       </div>
                       <h5 className="text-gray-900 font-medium text-md-sm sm:text-base truncate">
@@ -103,7 +104,7 @@ export default function TechStackCarousel({
         {/* Full Width Progress Bar at Bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-200 rounded-b-2xl overflow-hidden">
           <div
-            className="bg-gradient-to-r from-purple-500 to-pink-500 h-full transition-all duration-300 ease-out"
+            className="bg-gradient-to-r from-nobleblue-500 to-nobleblue-600 h-full transition-all duration-500 ease-in-out"
             style={{
               width: `${((currentTechIndex + 1) / technologies.length) * 100}%`,
             }}
