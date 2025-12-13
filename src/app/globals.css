@@ -34,6 +34,101 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Hero Gradient Background - Multi-color with grain texture */
+.hero-gradient-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-gradient-bg::before,
+.hero-gradient-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Base gradient layers */
+.hero-gradient-bg::before {
+  background:
+    /* Base Background - Darker Light Gray Foundation */
+    linear-gradient(to bottom, rgb(243 244 246) 0%, rgb(243 244 246) 100%),
+    /* Light Blue/Cyan Layer - Much More Vibrant and Visible */
+    linear-gradient(to bottom, rgb(191 219 254 / 0.9) 0%, rgb(147 197 253 / 0.8) 40%, transparent 100%),
+    /* Top Right Blue Glow - Strong and Visible */
+    linear-gradient(135deg, rgb(147 197 253 / 0.85) 0%, rgb(191 219 254 / 0.6) 50%, transparent 100%),
+    /* Green/Teal Accent - Left Side */
+    linear-gradient(to bottom right, rgb(167 243 208 / 0.75) 0%, rgb(153 246 228 / 0.5) 50%, transparent 100%),
+    /* Bottom Glow - Vibrant Peach/Orange */
+    linear-gradient(to top, rgb(254 215 170 / 0.75) 0%, rgb(253 230 138 / 0.5) 50%, transparent 100%);
+  background-position:
+    0 0,
+    0 0,
+    100% 0,
+    0 0,
+    0 100%;
+  background-size:
+    100% 100%,
+    100% 70%,
+    60% 80%,
+    50% 70%,
+    100% 50%;
+  background-repeat: no-repeat;
+}
+
+/* Grainy texture overlay */
+.hero-gradient-bg::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  mix-blend-mode: overlay;
+  opacity: 0.2;
+}
+
+/* Decorative blur elements - use with child divs */
+.hero-gradient-blur-blue {
+  position: absolute;
+  top: 5rem;
+  right: 10%;
+  width: 500px;
+  height: 500px;
+  background: rgb(201 221 255 / 0.35);
+  border-radius: 9999px;
+  filter: blur(96px);
+}
+
+.hero-gradient-blur-green {
+  position: absolute;
+  top: 8rem;
+  left: 8%;
+  width: 450px;
+  height: 450px;
+  background: rgb(167 243 208 / 0.4);
+  border-radius: 9999px;
+  filter: blur(96px);
+}
+
+.hero-gradient-blur-orange {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 600px;
+  height: 400px;
+  background: rgb(254 215 170 / 0.4);
+  border-radius: 9999px;
+  filter: blur(96px);
+}
+
+.hero-gradient-blur-amber {
+  position: absolute;
+  bottom: 5rem;
+  right: 15%;
+  width: 400px;
+  height: 400px;
+  background: rgb(254 215 170 / 0.35);
+  border-radius: 9999px;
+  filter: blur(96px);
+}
+
 
 html {
   scroll-behavior: smooth;
