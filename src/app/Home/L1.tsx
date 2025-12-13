@@ -39,12 +39,12 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 min-h-screen bg-gray-50">
+    <section className="py-12 px-4 min-h-screen bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12">
+        <div className="text-center mb-12">
           {/* Noble Stack Brand */}
-          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6">
             <Image
               src="/nbl.png"
               alt="Noble Stack Logo"
@@ -69,12 +69,12 @@ export default function HeroSection() {
             <span className="text-nobleblue-600">Modern Web</span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             At Noble Stack, we build intelligent digital products using AI, LLMs, and modern web technologies to turn ideas into scalable, high-impact solutions.
           </p>
 
           {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 sm:mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <button className="group flex items-center justify-center gap-3 px-8 py-4 w-full sm:w-64 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 font-semibold">
               Schedule A Call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -102,7 +102,7 @@ export default function HeroSection() {
 
 
         {/* Value Propositions */}
-        <div className="mb-10 sm:mb-16">
+        <div className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <ServiceCard
               name="Idea to Deployed Software"
@@ -123,8 +123,8 @@ export default function HeroSection() {
         </div>
 
         {/* Expertise Section */}
-        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-6 sm:mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-8 text-center">
             Our Expertise
           </h2>
 

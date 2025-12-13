@@ -67,7 +67,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-2 text-md-sm text-gray-600">
             <span>© 2024 Noble Stack. Made with</span>
-            <Heart className="w-4 h-4 text-red-500 animate-heartbeat fill-current" />
+            <Heart className="w-4 h-4 text-red-500 fill-current" />
             <span>for innovators</span>
           </div>
         </div>

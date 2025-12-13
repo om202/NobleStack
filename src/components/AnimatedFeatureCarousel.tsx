@@ -36,8 +36,8 @@ export default function AnimatedFeatureCarousel({
   }, [features.length, autoScrollInterval]);
 
   return (
-    <div className={`mb-10 sm:mb-16 ${className}`}>
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">
+    <div className={`mb-16 ${className}`}>
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">
         {title}
       </h3>
 
@@ -81,8 +81,8 @@ export default function AnimatedFeatureCarousel({
               key={index}
               onClick={() => setActiveFeature(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${index === activeFeature
-                  ? "bg-nobleblue-600"
-                  : "bg-gray-300 hover:bg-gray-400"
+                ? "bg-nobleblue-600"
+                : "bg-gray-300 hover:bg-gray-400"
                 }`}
             />
           ))}

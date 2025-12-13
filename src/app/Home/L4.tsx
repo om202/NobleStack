@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {
-  ChevronDown,
   MessageCircle,
   Shield,
   Code,
@@ -10,13 +9,13 @@ import {
   Zap,
   TrendingUp,
   Users,
-  CheckCircle,
   ArrowRight,
   Cpu,
   Database,
   Globe,
   Rocket,
 } from "lucide-react";
+import FAQItem from "../../components/FAQItem";
 
 export default function FAQSection() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -178,10 +177,10 @@ export default function FAQSection() {
   const currentFaqs = faqCategories[activeCategory as keyof typeof faqCategories];
 
   return (
-    <section id="faq" className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 bg-gray-50">
+    <section id="faq" className="py-12 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             <span className="text-gradient-nobleblue">
               Questions & Answers
@@ -194,7 +193,7 @@ export default function FAQSection() {
         </div>
 
         {/* Category Selection */}
-        <div className="flex justify-center mb-8 sm:mb-12">
+        <div className="flex justify-center mb-12">
           <div className="bg-white rounded-xl p-1.5 shadow-sm border border-gray-200 inline-flex gap-1">
             {categories.map((category) => (
               <button
@@ -222,63 +221,16 @@ export default function FAQSection() {
         </div>
 
         {/* FAQ Items with enhanced styling */}
-        <div className="space-y-4 mb-10 sm:mb-16" key={animationKey}>
+        <div className="space-y-4 mb-16" key={animationKey}>
           {currentFaqs.map((faq, index) => (
-            <div
+            <FAQItem
               key={`${activeCategory}-${index}`}
-              className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-all duration-200"
-            >
-              <button
-                onClick={() => toggleFaq(index)}
-                className="w-full text-left px-6 py-6 hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between group"
-              >
-                <div className="flex items-center gap-4 flex-1">
-                  <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center">
-                    <faq.icon className="w-6 h-6 text-nobleblue-600" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-1">
-                      <span className="text-md-sm sm:text-lg font-semibold text-gray-900">
-                        {faq.question}
-                      </span>
-                      <span className="text-md-sm sm:text-base px-2 py-1 bg-nobleblue-100 text-nobleblue-700 rounded-full font-medium">
-                        {faq.complexity}
-                      </span>
-                    </div>
-                    <div className="text-md-sm sm:text-base text-gray-500">
-                      Delivery: {faq.deliveryTime}
-                    </div>
-                  </div>
-                </div>
-                <ChevronDown
-                  className={`w-5 h-5 text-gray-600 transition-transform duration-200 ${openFaq === index ? "rotate-180" : ""
-                    }`}
-                />
-              </button>
-
-              {openFaq === index && (
-                <div className="px-6 pb-6 border-t border-gray-100">
-                  <div className="pl-0 sm:pl-16 pt-6">
-                    <p className="text-md-sm sm:text-base text-gray-600 leading-relaxed mb-6">
-                      {faq.answer}
-                    </p>
-
-                    {/* Metrics Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
-                      {faq.metrics.map((metric, metricIndex) => (
-                        <div
-                          key={metricIndex}
-                          className="flex items-center gap-2 px-3 py-2 bg-gray-50 rounded-lg border"
-                        >
-                          <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                          <span className="text-md-sm sm:text-base font-medium text-gray-700">{metric}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
+              question={faq.question}
+              answer={faq.answer}
+              metrics={faq.metrics}
+              isOpen={openFaq === index}
+              onToggle={() => toggleFaq(index)}
+            />
           ))}
         </div>
 

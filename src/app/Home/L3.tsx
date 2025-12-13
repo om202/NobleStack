@@ -147,11 +147,11 @@ export default function AIServicesSection() {
   return (
     <section
       id="ai-services"
-      className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 bg-gray-50"
+      className="py-12 px-4 bg-gray-50"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-16 animate-fade-in">
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             We Build AI That
             <span className="text-gradient-nobleblue">
@@ -159,7 +159,7 @@ export default function AIServicesSection() {
               Actually Works
             </span>
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8">
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mb-8">
             While others promise AI magic, we deliver proven solutions. Our AI
             chatbots and automation systems are already transforming businesses,
             handling millions of interactions, and saving countless hours of
@@ -180,7 +180,7 @@ export default function AIServicesSection() {
         />
 
         {/* AI Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 sm:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {aiServices.map((service, index) => (
             <ServiceCard
               key={index}

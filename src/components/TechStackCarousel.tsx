@@ -31,7 +31,7 @@ export default function TechStackCarousel({
   }, [technologies.length, autoScrollInterval]);
 
   return (
-    <div className="mb-10 sm:mb-16">
+    <div className="mb-16">
       <div className="relative bg-white rounded-2xl p-4 sm:p-6 border border-gray-200 min-h-[120px] sm:min-h-[140px] flex flex-col justify-center overflow-hidden">
         {/* Title */}
         <h3 className="text-base sm:text-lg md:text-xl font-bold text-center text-gray-900 mb-4 sm:mb-6">
