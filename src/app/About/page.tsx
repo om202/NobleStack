@@ -13,7 +13,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import AlbumArtTeam from "../../components/AlbumArtTeam";
-import AnimatedFeatureCarousel from "../../components/AnimatedFeatureCarousel";
+import ServiceCard from "../../components/ServiceCard";
 import CTAButton from "../../components/CTAButton";
 
 export default function About() {
@@ -52,7 +52,7 @@ export default function About() {
     {
       id: "innovation",
       title: "Innovation-Driven",
-      description: "We embrace change. We're constantly experimenting with the latest frameworks, APIs, and AI models — not just to stay relevant, but to build what's next.",
+      description: "We embrace change. We're constantly experimenting with the latest frameworks, APIs, and AI models - not just to stay relevant, but to build what's next.",
       icon: Brain,
       color: "from-nobleblue-500 to-nobleblue-600",
       stats: ["Latest Tech", "AI Integration", "Future-Ready", "Cutting-Edge"],
@@ -60,7 +60,7 @@ export default function About() {
     {
       id: "client-first",
       title: "Client-First Engineering",
-      description: "We don't chase trends — we solve real problems. Every line of code, every design choice, is built to serve the client's goals and improve outcomes.",
+      description: "We don't chase trends - we solve real problems. Every line of code, every design choice, is built to serve the client's goals and improve outcomes.",
       icon: Users,
       color: "from-nobleblue-400 to-nobleblue-500",
       stats: ["Problem Solving", "Goal-Oriented", "Results-Driven", "Client Focus"],
@@ -68,7 +68,7 @@ export default function About() {
     {
       id: "fast-thoughtful",
       title: "Fast, But Thoughtful",
-      description: "We move quickly — like a startup should — but never at the cost of quality. We believe speed and stability can (and must) co-exist.",
+      description: "We move quickly - like a startup should - but never at the cost of quality. We believe speed and stability can (and must) co-exist.",
       icon: Zap,
       color: "from-nobleblue-500 to-nobleblue-400",
       stats: ["Quick Delivery", "High Quality", "Stable Code", "Startup Speed"],
@@ -76,7 +76,7 @@ export default function About() {
     {
       id: "clear-communication",
       title: "Clear Communication",
-      description: "We explain complex things simply. Whether you're technical or not, we'll keep you in the loop and speak your language — Nepali or English.",
+      description: "We explain complex things simply. Whether you're technical or not, we'll keep you in the loop and speak your language - Nepali or English.",
       icon: MessageCircle,
       color: "from-nobleblue-600 to-nobleblue-500",
       stats: ["Simple Explanations", "Multilingual", "Regular Updates", "Transparent"],
@@ -84,7 +84,7 @@ export default function About() {
     {
       id: "build-with-craft",
       title: "Build with Craft",
-      description: "Clean code. Reusable components. Scalable infrastructure. We treat every project like it's our own — because your success is our portfolio.",
+      description: "Clean code. Reusable components. Scalable infrastructure. We treat every project like it's our own - because your success is our portfolio.",
       icon: Wrench,
       color: "from-nobleblue-500 to-nobleblue-600",
       stats: ["Clean Code", "Scalable", "Reusable", "Professional"],
@@ -92,7 +92,7 @@ export default function About() {
     {
       id: "made-for-nepal",
       title: "Made for Nepal, Built to Scale",
-      description: "We're proud to be based in Nepal — and we build software that empowers local businesses while meeting global standards.",
+      description: "We're proud to be based in Nepal - and we build software that empowers local businesses while meeting global standards.",
       icon: Heart,
       color: "from-nobleblue-600 to-nobleblue-700",
       stats: ["Local Pride", "Global Standards", "Nepal-Focused", "World-Class"],
@@ -163,7 +163,7 @@ export default function About() {
 
               <p>At Noble Stack, AI isn’t an integration or an enhancement: it’s the foundation. Every product is architected with an AI-first approach, where intelligence drives the core workflows, decisions, and scale from the start.</p>
 
-              <p>We build systems where automation, learning, and decision-making are primary goals—not secondary features.</p>
+              <p>We build systems where automation, learning, and decision-making are primary goals - not secondary features.</p>
               <h3 className="text-xl font-bold text-gray-900 mt-6">Modern Web Infrastructure</h3>
 
               <p>The frontend is not just a UI layer. It is core infrastructure.</p>
@@ -237,12 +237,18 @@ export default function About() {
             </div>
           </div>
 
-          {/* Values Section */}
-          <AnimatedFeatureCarousel
-            features={companyValues}
-            title="Our Values"
-            autoScrollInterval={5000}
-          />
+          {/* Values Section */
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Values</h2>}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {companyValues.map((val) => (
+              <ServiceCard
+                key={val.id}
+                name={val.title}
+                description={val.description}
+                icon={val.icon}
+              />
+            ))}
+          </div>
 
           {/* CTA Section */}
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 text-center">
