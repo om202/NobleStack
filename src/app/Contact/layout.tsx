@@ -86,8 +86,8 @@ export default function ContactLayout({
                   dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                   opens: "09:00",
                   closes: "17:00",
-                  validFrom: "2024-01-01",
-                  validThrough: "2024-12-31"
+                  validFrom: "2025-01-01",
+                  validThrough: "2025-12-31"
                 }
               },
               {

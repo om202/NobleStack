@@ -74,8 +74,8 @@ export default function CareerLayout({
             "@type": "JobPosting",
             title: "Software Developer - AI & Web Development (Nepal)",
             description: "Join Noble Stack in Kathmandu as a Software Developer specializing in AI and web development. Work with cutting-edge technologies including React, Next.js, machine learning, and AI automation. Serving clients across Nepal and South Asia.",
-            datePosted: "2024-01-01",
-            validThrough: "2024-12-31",
+            datePosted: "2025-01-01",
+            validThrough: "2025-12-31",
             employmentType: ["FULL_TIME", "PART_TIME", "CONTRACTOR"],
             hiringOrganization: {
               "@type": "Organization",
