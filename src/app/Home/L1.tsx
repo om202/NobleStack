@@ -76,7 +76,7 @@ export default function HeroSection() {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 sm:mb-16">
-            <button className="group flex items-center justify-center gap-3 px-8 py-4 w-full sm:w-64 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-0.5 font-semibold">
+            <button className="group flex items-center justify-center gap-3 px-8 py-4 w-full sm:w-64 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:-translate-y-0.5 font-semibold">
               Schedule A Call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </button>
@@ -106,7 +106,7 @@ export default function HeroSection() {
         <div className="mb-10 sm:mb-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -118,7 +118,7 @@ export default function HeroSection() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Bot className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -130,7 +130,7 @@ export default function HeroSection() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -156,7 +156,7 @@ export default function HeroSection() {
                 className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
               >
                 <div className="flex items-center mb-4">
-                  <area.icon className="w-8 h-8 text-blue-500 mr-3" />
+                  <area.icon className="w-8 h-8 text-blue-600 mr-3" />
                   <h3 className="text-lg font-semibold text-gray-900">
                     {area.title}
                   </h3>
@@ -208,15 +208,13 @@ export default function HeroSection() {
         .ai-meets-text {
           background: linear-gradient(
             135deg,
+            #1e3a8a,
             #1e40af,
             #3b82f6,
-            #8b5cf6,
-            #a855f7,
-            #06b6d4,
-            #0891b2,
-            #10b981,
-            #059669,
-            #1e40af
+            #60a5fa,
+            #3b82f6,
+            #1e40af,
+            #1e3a8a
           );
           background-size: 400% 400%;
           -webkit-background-clip: text;
@@ -230,14 +228,14 @@ export default function HeroSection() {
         .modern-web-text {
           background: linear-gradient(
             45deg,
-            #d97706,
-            #f59e0b,
-            #f97316,
-            #ea580c,
-            #dc2626,
-            #b91c1c,
-            #f59e0b,
-            #d97706
+            #3b82f6,
+            #60a5fa,
+            #93c5fd,
+            #60a5fa,
+            #3b82f6,
+            #2563eb,
+            #60a5fa,
+            #3b82f6
           );
           background-size: 400% 400%;
           -webkit-background-clip: text;

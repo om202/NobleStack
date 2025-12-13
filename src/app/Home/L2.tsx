@@ -47,7 +47,7 @@ const webFeatures = [
     description:
       "Beautiful designs that work perfectly on every device, from mobile to desktop. Designed for mobile, enhanced for desktop experience.",
     icon: Smartphone,
-    color: "from-blue-500 to-cyan-500",
+    color: "from-blue-500 to-blue-600",
     stats: [
       "Mobile Optimized",
       "Cross-Platform",
@@ -62,7 +62,7 @@ const webFeatures = [
     description:
       "Optimized websites that load in milliseconds and rank high on Google. Built for search engines from day one with optimal performance.",
     icon: Zap,
-    color: "from-green-500 to-emerald-500",
+    color: "from-blue-600 to-blue-700",
     stats: ["Core Web Vitals", "SEO Optimized", "Fast Loading", "Search Ready"],
     demo: "Speed Test",
   },
@@ -72,7 +72,7 @@ const webFeatures = [
     description:
       "Contemporary designs that capture attention and guide users to conversion. Every element designed to drive real business results.",
     icon: Palette,
-    color: "from-purple-500 to-pink-500",
+    color: "from-blue-500 to-blue-600",
     stats: [
       "User-Centered",
       "Conversion Focused",
@@ -87,7 +87,7 @@ const webFeatures = [
     description:
       "Built-in analytics and optimization tools to track performance and improve conversions with comprehensive user experience insights.",
     icon: BarChart3,
-    color: "from-orange-500 to-red-500",
+    color: "from-blue-600 to-blue-700",
     stats: [
       "Analytics Ready",
       "A/B Testing",
@@ -165,7 +165,7 @@ export default function FeaturesSection() {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             We Build Modern
-            <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
               {" "}
               Websites That Convert
             </span>

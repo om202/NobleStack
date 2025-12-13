@@ -36,21 +36,21 @@ export default function FAQSection() {
       name: "Technical",
       icon: Code,
       count: "4 FAQs",
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-500 to-blue-600"
     },
     {
       id: "business",
       name: "Business",
       icon: TrendingUp,
-      count: "5 FAQs", 
-      color: "from-green-500 to-emerald-500"
+      count: "5 FAQs",
+      color: "from-blue-600 to-blue-700"
     },
     {
       id: "support",
       name: "Support",
       icon: Shield,
       count: "5 FAQs",
-      color: "from-purple-500 to-pink-500"
+      color: "from-blue-500 to-blue-600"
     }
   ];
 
@@ -188,18 +188,18 @@ export default function FAQSection() {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             Technical Deep Dive
-            <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
               {" "}
               Questions & Answers
             </span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-            Comprehensive technical documentation and answers to help you understand our capabilities, 
+            Comprehensive technical documentation and answers to help you understand our capabilities,
             methodologies, and how we can solve your specific challenges.
           </p>
         </div>
 
-                {/* Category Selection */}
+        {/* Category Selection */}
         <div className="flex justify-center mb-8 sm:mb-12">
           <div className="bg-white rounded-2xl p-2 shadow-sm border border-gray-200 flex flex-col sm:flex-row gap-2 sm:gap-0 w-full max-w-md sm:max-w-none sm:inline-flex">
             {categories.map((category) => (
@@ -210,11 +210,10 @@ export default function FAQSection() {
                   setOpenFaq(null);
                   setAnimationKey(prev => prev + 1);
                 }}
-                className={`flex items-center gap-3 px-4 sm:px-6 py-3 rounded-xl transition-all duration-200 justify-center sm:justify-start ${
-                  activeCategory === category.id
-                    ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-                }`}
+                className={`flex items-center gap-3 px-4 sm:px-6 py-3 rounded-xl transition-all duration-200 justify-center sm:justify-start ${activeCategory === category.id
+                  ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
+                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                  }`}
               >
                 <category.icon className="w-5 h-5" />
                 <div className="text-left sm:text-left text-center">
@@ -228,16 +227,16 @@ export default function FAQSection() {
           </div>
         </div>
 
-                 {/* FAQ Items with enhanced styling */}
-         <div className="space-y-4 mb-10 sm:mb-16" key={animationKey}>
-           {currentFaqs.map((faq, index) => (
-             <div
-               key={`${activeCategory}-${index}`}
-               className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-all duration-200"
-             >
+        {/* FAQ Items with enhanced styling */}
+        <div className="space-y-4 mb-10 sm:mb-16" key={animationKey}>
+          {currentFaqs.map((faq, index) => (
+            <div
+              key={`${activeCategory}-${index}`}
+              className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-all duration-200"
+            >
               <button
-                                 onClick={() => toggleFaq(index)}
-                 className="w-full text-left px-6 py-6 hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between group"
+                onClick={() => toggleFaq(index)}
+                className="w-full text-left px-6 py-6 hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between group"
               >
                 <div className="flex items-center gap-4 flex-1">
                   <div className={`w-12 h-12 bg-gradient-to-r ${categories.find(c => c.id === activeCategory)?.color} rounded-xl flex items-center justify-center shadow-sm`}>
@@ -257,32 +256,31 @@ export default function FAQSection() {
                     </div>
                   </div>
                 </div>
-                                 <ChevronDown
-                   className={`w-5 h-5 text-gray-600 transition-transform duration-200 ${
-                     openFaq === index ? "rotate-180" : ""
-                   }`}
-                 />
+                <ChevronDown
+                  className={`w-5 h-5 text-gray-600 transition-transform duration-200 ${openFaq === index ? "rotate-180" : ""
+                    }`}
+                />
               </button>
 
-                             {openFaq === index && (
-                 <div className="px-6 pb-6 border-t border-gray-100">
-                   <div className="pl-0 sm:pl-16 pt-6">
+              {openFaq === index && (
+                <div className="px-6 pb-6 border-t border-gray-100">
+                  <div className="pl-0 sm:pl-16 pt-6">
                     <p className="text-md-sm sm:text-base text-gray-600 leading-relaxed mb-6">
                       {faq.answer}
                     </p>
-                    
-                                         {/* Metrics Grid */}
-                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
-                       {faq.metrics.map((metric, metricIndex) => (
-                         <div
-                           key={metricIndex}
-                           className="flex items-center gap-2 px-3 py-2 bg-gray-50 rounded-lg border"
-                         >
-                           <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                           <span className="text-md-sm sm:text-base font-medium text-gray-700">{metric}</span>
-                         </div>
-                       ))}
-                     </div>
+
+                    {/* Metrics Grid */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+                      {faq.metrics.map((metric, metricIndex) => (
+                        <div
+                          key={metricIndex}
+                          className="flex items-center gap-2 px-3 py-2 bg-gray-50 rounded-lg border"
+                        >
+                          <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span className="text-md-sm sm:text-base font-medium text-gray-700">{metric}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               )}
@@ -296,13 +294,13 @@ export default function FAQSection() {
             Have a specific question?
           </h3>
           <p className="text-base text-gray-600 mb-6 max-w-2xl mx-auto">
-            Our team is ready to discuss your unique requirements and provide 
+            Our team is ready to discuss your unique requirements and provide
             detailed solutions tailored to your project needs.
           </p>
-                     <button className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all duration-200 shadow-lg hover:shadow-xl font-semibold">
-             Schedule Technical Consultation
-             <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform duration-200" />
-           </button>
+          <button className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-lg hover:shadow-xl font-semibold">
+            Schedule Technical Consultation
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform duration-200" />
+          </button>
         </div>
       </div>
     </section>
