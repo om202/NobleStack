@@ -29,18 +29,19 @@ export default function BlogCard({ post }: BlogCardProps) {
                     )}
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                    <div className="flex items-center gap-2 mb-3">
-                        {post.tags?.[0] && (
-                            <span className="bg-nobleblue-50 text-nobleblue-600 text-xs font-medium px-2.5 py-1 rounded-full">
-                                {post.tags[0]}
-                            </span>
-                        )}
-                        <span className="text-gray-400 text-xs">{post.date}</span>
+                    <div className="flex flex-col gap-2 mb-3">
+                        <div className="flex items-center justify-between w-full">
+                            {post.tags?.[0] && (
+                                <span className="bg-nobleblue-50 text-nobleblue-600 text-xs font-medium px-2.5 py-1 rounded-full">
+                                    {post.tags[0]}
+                                </span>
+                            )}
+                            <span className="text-gray-400 text-xs">{post.date}</span>
+                        </div>
                         {post.publisher && (
-                            <>
-                                <span className="text-gray-300 text-xs mx-1">•</span>
-                                <span className="text-gray-500 text-xs font-medium">{post.publisher}</span>
-                            </>
+                            <span className="text-gray-500 text-xs font-medium block">
+                                Published by {post.publisher}
+                            </span>
                         )}
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-nobleblue-600 transition-colors line-clamp-2">

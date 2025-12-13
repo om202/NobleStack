@@ -1,9 +1,7 @@
 "use client";
 
 import {
-  Globe,
   Star,
-  ArrowRight,
   Rocket,
   Brain,
   Users,
@@ -127,57 +125,115 @@ export default function About() {
           </div>
 
           {/* Our Story Section */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-              <div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                  Our Story
-                </h2>
-                <div className="space-y-3 sm:space-y-4 text-base text-gray-600">
-                  <p>
-                    Founded in 2025, Noble Stack is more than a tech company —
-                    we&apos;re a movement to bring global innovation home. While
-                    the world races ahead with AI, automation, and smart
-                    software, Nepal has too often been left waiting. We&apos;re
-                    here to change that.
-                  </p>
-                  <p>
-                    We&apos;re a team of engineers, designers, and dreamers
-                    working relentlessly to make cutting-edge technology
-                    accessible, practical, and affordable for Nepali businesses
-                    and people. Whether you&apos;re running a shop, launching a
-                    startup, or modernizing your workflow — we build the tools
-                    that help you leap forward, not catch up.
-                  </p>
-                  <p>
-                    At Noble Stack, our mission is simple: empower Nepal with
-                    the same digital firepower the world&apos;s leading
-                    companies use. No jargon, no hype — just real solutions,
-                    made locally, with global standards.
-                  </p>
-                </div>
+          <div className="max-w-3xl mx-auto mb-16 space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-4xl font-bold text-gray-900 leading-tight">
+                Built in Nepal. Connected Through the USA.
+              </h2>
+              <h3 className="text-xl text-gray-700 font-medium">
+                Noble Stack’s global model for modern software execution.
+              </h3>
+            </div>
 
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8">
-                  <CTAButton variant="primary" icon={Globe} href="/Services" className="w-full sm:w-auto">
-                    Our Services
-                  </CTAButton>
-                  <CTAButton variant="secondary" icon={ArrowRight} href="/Contact" className="w-full sm:w-auto">
-                    Get In Touch
-                  </CTAButton>
-                </div>
-              </div>
+            <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-sm">
+              <Image
+                src="/nepal.jpg"
+                alt="Beautiful landscape of Nepal"
+                fill
+                className="object-cover"
+              />
+            </div>
 
-              <div className="relative h-full">
-                <div className="rounded-2xl overflow-hidden shadow-lg h-full">
-                  <Image
-                    src="/nepal.jpg"
-                    alt="Beautiful landscape of Nepal"
-                    width={600}
-                    height={800}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+            <div className="space-y-6 text-lg text-gray-800 leading-relaxed">
+              <p>We combine Nepal’s elite engineering talent with US market access to deliver AI first, end‑to‑end product development.</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Two‑Hub Model: Engineering in Nepal, market access in the USA.</li>
+                <li>AI First: GPT-5, GPT-4o, Claude 4.5, Langchain v1.1</li>
+                <li>Modern Stack: Next.js, React, TypeScript, Tailwind CSS, Vercel.</li>
+                <li>Full‑cycle delivery from concept to deployment.</li>
+              </ul>
+
+              <hr className="border-gray-200 my-8" />
+
+              <h2 className="text-2xl font-bold text-gray-900">AI First by Default</h2>
+
+              <p>
+                We don’t add AI later. We design for it from day one.
+              </p>
+
+              <p>At Noble Stack, AI isn’t an integration or an enhancement: it’s the foundation. Every product is architected with an AI-first approach, where intelligence drives the core workflows, decisions, and scale from the start.</p>
+
+              <p>We build systems where automation, learning, and decision-making are primary goals—not secondary features.</p>
+              <h3 className="text-xl font-bold text-gray-900 mt-6">Modern Web Infrastructure</h3>
+
+              <p>The frontend is not just a UI layer. It is core infrastructure.</p>
+
+              <p>At Noble Stack, we treat the web stack as a performance-critical system. Every application is built using modern frameworks and deliberate optimizations to ensure speed, reliability, and long-term maintainability from day one.</p>
+
+              <p>We design and engineer interfaces that scale, perform under real-world conditions, and evolve without costly rewrites.</p>
+
+              <h3 className="text-xl font-bold text-gray-900 mt-6">AI Agents & Automation</h3>
+
+              <p>We build autonomous AI agents that take action, not just respond.</p>
+
+              <p>At Noble Stack, automation is designed to continuously operate across systems, handle repetitive and complex workflows, and improve over time through learning and feedback.</p>
+
+              <p>These agents increase efficiency by removing manual work, reduce operational costs by minimizing errors, and enable smarter decisions by analyzing large volumes of data in real time.</p>
+
+              <p>By automating execution across functions like customer support, operations, finance, and internal tooling, teams are freed to focus on strategic and creative work instead of routine tasks.</p>
+
+              <p>Our AI systems are built to scale effortlessly, adapt to changing conditions, and deliver consistent accuracy as organizations grow.</p>
+
+              <p>These systems do not just respond. They execute.</p>
+
+              <hr className="border-gray-200 my-8" />
+
+              <h2 className="text-2xl font-bold text-gray-900">We Build Before We Sell</h2>
+
+              <p><strong>Our credibility comes from shipping.</strong></p>
+
+              <p>Noble Stack builds and launches its own products using the same architecture, constraints, and quality standards we apply to client work.</p>
+
+              <p>Our systems are validated in real markets, under real user load, and real operational pressure.</p>
+
+              <ul>
+                <li><strong>Vibe AI Photo Editor</strong> – AI-powered background removal and image enhancement at production scale</li>
+                <li><strong>Loopn</strong> – AI-driven professional networking through resume intelligence and smart matching</li>
+                <li><strong>Create Profile Pic</strong> – Profile asset generation using Google’s Nano Banana AI</li>
+              </ul>
+
+              <p>We do not experiment on client projects. We bring systems that are already built, tested, and shipped.</p>
+
+
+              <hr className="border-gray-200 my-8" />
+
+              <h2 className="text-2xl font-bold text-gray-900">From Concept to Deployed Software</h2>
+
+              <p>Our role is simple. We turn ideas into reliable, scalable software without unnecessary friction.</p>
+
+              <p>We provide:</p>
+
+              <ol>
+                <li>End-to-end product development from concept to production</li>
+                <li>Custom AI and modern web platforms built for real-world use</li>
+                <li>Automation systems that reduce operational load and manual effort</li>
+                <li>Long-term technical partnership focused on outcomes, not short-term delivery</li>
+              </ol>
+
+
+              <hr className="border-gray-200 my-8" />
+
+              <h2 className="text-2xl font-bold text-gray-900">Let&apos;s Build</h2>
+
+              <p>If you&apos;re looking for a team that combines:</p>
+
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Nepal&apos;s elite engineering talent</li>
+                <li>US access to global technology, partners, and markets</li>
+                <li>Clear ownership and execution</li>
+              </ul>
+
+              <p>Then Noble Stack is built for you. One team. One standard. Global execution.</p>
             </div>
           </div>
 
