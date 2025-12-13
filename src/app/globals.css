@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 /* Happy Sky Blue — warm, clean, slightly red-tinted */
 @theme {

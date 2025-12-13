@@ -15,6 +15,7 @@ import {
   LucideIcon,
   PanelLeftClose,
   PanelLeftOpen,
+  BookOpen,
 } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
@@ -53,6 +54,11 @@ const navigationItems: NavItem[] = [
     icon: Briefcase,
   },
   {
+    href: "/blogs",
+    label: "Blogs",
+    icon: BookOpen,
+  },
+  {
     href: "/Contact",
     label: "Contact",
     icon: Mail,
@@ -70,9 +76,8 @@ export default function Navigation() {
     <>
       {/* Mobile Toggle Button - Fixed top bar for mobile */}
       <div
-        className={`md:hidden fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-2xl border-b border-gray-300/50 backdrop-saturate-150 transition-transform duration-300 ${
-          isSidebarOpen ? "-translate-y-full" : "translate-y-0"
-        }`}
+        className={`md:hidden fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-2xl border-b border-gray-300/50 backdrop-saturate-150 transition-transform duration-300 ${isSidebarOpen ? "-translate-y-full" : "translate-y-0"
+          }`}
       >
         <div className="flex items-center h-12 px-4">
           <button
@@ -90,17 +95,15 @@ export default function Navigation() {
 
       {/* Sidebar Navigation */}
       <div
-        className={`fixed left-0 top-0 h-full z-40 bg-white/95 backdrop-blur-xl border-r border-gray-300/50 backdrop-saturate-150 transition-transform duration-200 ease-in-out ${sidebarWidth} ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
-        }`}
+        className={`fixed left-0 top-0 h-full z-40 bg-white/95 backdrop-blur-xl border-r border-gray-300/50 backdrop-saturate-150 transition-transform duration-200 ease-in-out ${sidebarWidth} ${isSidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+          }`}
       >
 
 
         {/* Logo Section */}
         <div
-          className={`flex items-center gap-3 border-b border-gray-200/50 ml-4 md:ml-0 relative ${
-            isCollapsed ? "md:justify-center md:p-3" : "p-6"
-          }`}
+          className={`flex items-center gap-3 border-b border-gray-200/50 ml-4 md:ml-0 relative ${isCollapsed ? "md:justify-center md:p-3" : "p-6"
+            }`}
         >
           <Image
             src="/nbl.png"
@@ -112,9 +115,8 @@ export default function Navigation() {
             priority
           />
           <div
-            className={`flex flex-col justify-center ${
-              isCollapsed ? "md:hidden" : ""
-            }`}
+            className={`flex flex-col justify-center ${isCollapsed ? "md:hidden" : ""
+              }`}
           >
             <span className="text-lg font-medium text-gray-700 leading-none">
               Noble
@@ -123,7 +125,7 @@ export default function Navigation() {
               Stack
             </span>
           </div>
-          
+
           {/* Collapse Toggle on Border */}
           <button
             onClick={() => setIsCollapsed(!isCollapsed)}
@@ -147,19 +149,16 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                                className={`group flex items-center gap-3 text-sm font-medium transition-colors duration-150 ${
-                  isCollapsed 
-                    ? `md:justify-center md:px-3 md:py-3 md:mx-1 md:rounded-lg ${
-                        isActive 
-                          ? "md:bg-blue-100/70 md:text-blue-700 px-4 py-3 rounded-xl bg-blue-100/70 text-blue-700"
-                          : "md:text-gray-600 md:hover:text-blue-600 md:hover:bg-blue-50/80 px-4 py-3 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-gray-100/50"
-                      }`
-                    : `px-4 py-3 rounded-xl ${
-                        isActive 
-                          ? "bg-blue-100/70 text-blue-700"
-                          : "text-gray-700 hover:text-blue-600 hover:bg-gray-100/50"
-                      }`
-                }`}
+                className={`group flex items-center gap-3 text-sm font-medium transition-colors duration-150 ${isCollapsed
+                  ? `md:justify-center md:px-3 md:py-3 md:mx-1 md:rounded-lg ${isActive
+                    ? "md:bg-blue-100/70 md:text-blue-700 px-4 py-3 rounded-xl bg-blue-100/70 text-blue-700"
+                    : "md:text-gray-600 md:hover:text-blue-600 md:hover:bg-blue-50/80 px-4 py-3 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-gray-100/50"
+                  }`
+                  : `px-4 py-3 rounded-xl ${isActive
+                    ? "bg-blue-100/70 text-blue-700"
+                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-100/50"
+                  }`
+                  }`}
                 onClick={() => setIsSidebarOpen(false)}
                 title={isCollapsed ? item.label : undefined}
               >
@@ -176,9 +175,8 @@ export default function Navigation() {
 
         {/* Call Button at Bottom */}
         <div
-          className={`absolute bottom-6 left-4 right-4 ${
-            isCollapsed ? "md:left-2 md:right-2" : ""
-          }`}
+          className={`absolute bottom-6 left-4 right-4 ${isCollapsed ? "md:left-2 md:right-2" : ""
+            }`}
         >
           <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-blue-100/80 text-blue-700 rounded-xl hover:bg-blue-200/80 transition-colors duration-200 font-semibold text-sm border border-blue-200">
             <Phone className="w-4 h-4" />
