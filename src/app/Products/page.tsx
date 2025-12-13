@@ -1,120 +1,78 @@
 "use client";
 
 import {
-  ArrowRight,
-  Brain,
-  Keyboard,
-  User,
-  Copy,
-  CheckCircle,
+  Sparkles,
+  Wand2,
+  Image as ImageIcon,
+  Zap,
   Download,
+  Globe,
+  MessageSquare,
+  Coins,
+  Shield,
+  Users,
+  FileText,
+  TrendingUp,
 } from "lucide-react";
 import Image from "next/image";
 import CTAButton from "../../components/CTAButton";
 import ServiceCard from "../../components/ServiceCard";
 
 export default function ProductsPage() {
-
   return (
     <section className="py-12 px-4 min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-16">
-
-          <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="flex flex-col items-center justify-center gap-4 mb-6">
             <Image
-              src="/vyakaranly_logo.png"
-              alt="Vyakaranly Logo"
-              width={60}
-              height={60}
+              src="/vibe.png"
+              alt="Vibe AI Photo Editor Logo"
+              width={112}
+              height={112}
+              className="rounded-2xl shadow-lg"
             />
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-gray-900">
-              <span className="text-gradient-nobleblue">
-                Vyakaranly
-              </span>
+              Vibe AI Photo Editor
             </h1>
           </div>
 
-          {/* Tagline */}
-          <p className="text-base text-nobleblue-600 font-medium mb-6">
-            AI-Powered Nepali Grammar Checker
-          </p>
-
           <div className="space-y-4 mb-12 max-w-4xl mx-auto">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">
-              Perfect Your Nepali Writing with AI
-            </h2>
             <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-              Instantly correct grammar, improve style, and write better Nepali. Free and easy to use.
+              Create stunning profile pictures and edit photos with AI-powered tools. Remove backgrounds instantly, enhance images, and transform your photos with professional filters and AI magic.
             </p>
           </div>
 
-          {/* Key Benefits */}
-          <div className="flex flex-wrap justify-center gap-4 mb-8 max-w-3xl mx-auto">
-            <div className="flex items-center text-md-sm text-gray-700 bg-gray-50 px-4 py-2 rounded-lg border border-gray-200">
-              <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-              Grammar & spelling fixes
-            </div>
-            <div className="flex items-center text-md-sm text-gray-700 bg-gray-50 px-4 py-2 rounded-lg border border-gray-200">
-              <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-              Real-time suggestions
-            </div>
-          </div>
-
-          <div className="mb-12">
-            <div className="rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+          {/* Screenshot */}
+          <div className="mb-12 flex justify-center">
+            <div className="rounded-[2rem] border border-gray-100 shadow-lg overflow-hidden max-w-[300px]">
               <Image
-                src="/Vyakaranly.png"
-                alt="Vyakaranly interface"
-                width={1200}
-                height={800}
+                src="/vibe_screen.png"
+                alt="Vibe AI Photo Editor interface"
+                width={300}
+                height={650}
                 className="w-full h-auto"
                 priority
               />
             </div>
-            <p className="text-sm sm:text-md-sm text-gray-500 mt-6 font-medium text-center">
-              ↑ See how Vyakaranly works
-            </p>
           </div>
 
+          {/* App Store Button */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <CTAButton variant="primary" icon={ArrowRight} className="w-full sm:w-auto text-lg px-10 py-5">
-              Try It Free
-            </CTAButton>
-          </div>
-
-
-        </div>
-
-        {/* How It Works Section */}
-        <div className="mb-16">
-          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-6">
-            How It Works
-          </h3>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Simple steps to better Nepali writing
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <ServiceCard
-              name="Type or Paste Text"
-              description="Enter your Nepali text in Devanagari or romanized format."
-              icon={Keyboard}
-            />
-            <ServiceCard
-              name="Get AI Suggestions"
-              description="AI finds errors and suggests improvements instantly."
-              icon={Brain}
-            />
-            <ServiceCard
-              name="Copy & Use"
-              description="Accept changes and copy the improved text."
-              icon={Download}
-            />
+            <a
+              href="https://apps.apple.com/us/app/ai-photo-editor-vibe/id6752835683"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <CTAButton variant="primary" icon={Download} className="w-full sm:w-auto text-lg px-10 py-5">
+                Download on App Store
+              </CTAButton>
+            </a>
           </div>
         </div>
 
-        {/* Features Section */}
+        {/* Key Features Section */}
         <div className="mb-16">
           <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">
             Key Features
@@ -122,29 +80,188 @@ export default function ProductsPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <ServiceCard
-              name="Grammar Correction"
-              description="Real-time grammar and spelling fixes for accurate Nepali text."
-              icon={Brain}
+              name="AI Background Removal"
+              description="Remove backgrounds instantly with precision AI technology for perfect profile pictures."
+              icon={Wand2}
             />
             <ServiceCard
-              name="Smart Input"
-              description="Type in English and get Devanagari script automatically."
-              icon={Keyboard}
+              name="Profile Picture Creator"
+              description="Create stunning profile pictures with AI-powered editing and professional filters."
+              icon={ImageIcon}
             />
             <ServiceCard
-              name="Free to Use"
-              description="Create a free account for personalized features and history."
-              icon={User}
+              name="Smart Enhancement"
+              description="Automatically enhance colors, lighting, and details with advanced AI."
+              icon={Sparkles}
             />
             <ServiceCard
-              name="Save & Copy"
-              description="Easily copy improved text and save your writing history."
-              icon={Copy}
+              name="Secure & Private"
+              description="Sign in with Google or Apple. Your images are encrypted and securely stored."
+              icon={Zap}
             />
           </div>
         </div>
 
+        <div className="w-full h-px bg-gray-200 my-20" />
 
+        {/* Create Profile Pic Web Section */}
+        <div className="text-center mb-16">
+          <div className="flex flex-col items-center justify-center gap-4 mb-6">
+            <Image
+              src="/create_profile_pic_icon.png"
+              alt="Create Profile Pic Logo"
+              width={112}
+              height={112}
+              className="rounded-2xl shadow-lg"
+            />
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-gray-900">
+              Create Profile Pic
+            </h1>
+          </div>
+
+          <div className="space-y-4 mb-12 max-w-4xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+              The web-based solution for professional profile pictures. Powered by Google's Nano Banana AI, just describe the changes you want in plain English. No subscription required.
+            </p>
+          </div>
+
+          {/* Screenshot */}
+          <div className="mb-12 flex justify-center">
+            <div className="rounded-xl border border-gray-100 shadow-lg overflow-hidden max-w-4xl w-full">
+              <Image
+                src="/cpp_screenshot.png"
+                alt="Create Profile Pic Interface"
+                width={1200}
+                height={675}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          {/* Web Link Button */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <a
+              href="https://createprofilepic.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <CTAButton variant="primary" icon={Globe} className="w-full sm:w-auto text-lg px-10 py-5">
+                Try on Web
+              </CTAButton>
+            </a>
+          </div>
+        </div>
+
+        {/* Web Features Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">
+            Web Features
+          </h3>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <ServiceCard
+              name="Text-to-Edit"
+              description="Describe changes in plain English. AI understands your commands instantly."
+              icon={MessageSquare}
+            />
+            <ServiceCard
+              name="No Subscriptions"
+              description="Pay only for what you use. Start with free tokens and top up as needed."
+              icon={Coins}
+            />
+            <ServiceCard
+              name="Studio Quality"
+              description="Professional lighting and effects automatically applied to your photos."
+              icon={Zap}
+            />
+            <ServiceCard
+              name="Secure Storage"
+              description="Enterprise-grade security ensures your photos and projects are always safe."
+              icon={Shield}
+            />
+          </div>
+        </div>
+
+        <div className="w-full h-px bg-gray-200 my-20" />
+
+        {/* Loopn Section */}
+        <div className="text-center mb-16">
+          <div className="flex flex-col items-center justify-center gap-4 mb-6">
+            <Image
+              src="/loopn_logo.png"
+              alt="Loopn Logo"
+              width={112}
+              height={112}
+            />
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-gray-900">
+              Loopn
+            </h1>
+          </div>
+
+          <div className="space-y-4 mb-12 max-w-4xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+              Professional Networking & Career Matching using AI. Upload your resume and get matched instantly with compatible professionals for meaningful connections.
+            </p>
+          </div>
+
+          {/* Screenshot */}
+          <div className="mb-12 flex justify-center">
+            <div className="rounded-xl border border-gray-100 shadow-lg overflow-hidden max-w-4xl w-full">
+              <Image
+                src="/loopn_screenshot.png"
+                alt="Loopn Interface"
+                width={1200}
+                height={675}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          {/* Loopn Link Button */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <a
+              href="https://www.loopn.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <CTAButton variant="primary" icon={Globe} className="w-full sm:w-auto text-lg px-10 py-5">
+                Visit Loopn
+              </CTAButton>
+            </a>
+          </div>
+        </div>
+
+        {/* Loopn Features Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">
+            Why Loopn?
+          </h3>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <ServiceCard
+              name="Resume Matching"
+              description="Upload your resume to find professionals with compatible skills and goals."
+              icon={FileText}
+            />
+            <ServiceCard
+              name="AI Connections"
+              description="Smart algorithms connect you with the right people for your career path."
+              icon={Users}
+            />
+            <ServiceCard
+              name="Career Growth"
+              description="Build meaningful professional relationships that help you advance."
+              icon={TrendingUp}
+            />
+            <ServiceCard
+              name="Instant Match"
+              description="Skip the search. Get instantly matched with professionals who match your profile."
+              icon={Zap}
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
