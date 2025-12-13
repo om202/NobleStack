@@ -47,14 +47,14 @@ export default function HeroSection() {
             <Image
               src="/nbl.png"
               alt="Noble Stack Logo"
-              width={95}
-              height={95}
-              className="w-[68px] h-[68px] sm:w-[95px] sm:h-[95px]"
+              width={75}
+              height={75}
+              className="w-[54px] h-[54px] sm:w-[75px] sm:h-[75px]"
               quality={100}
               priority
             />
-            <div className="flex flex-col justify-center h-[86px] sm:h-[130px]">
-              <span className="text-[24px] sm:text-[32px] mb-1 md:text-[32px] font-medium text-gray-700 leading-none">
+            <div className="flex flex-col justify-center">
+              <span className="text-[24px] sm:text-[32px] md:text-[32px] font-medium text-gray-700 leading-none mb-1">
                 Noble
               </span>
               <span className="text-[24px] sm:text-[32px] md:text-[32px] font-medium text-gray-700 leading-none">
@@ -63,15 +63,13 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
+          <h1 className="text-[32.4px] md:text-[43.2px] lg:text-[54px] font-bold mb-6 leading-tight text-gray-900">
             Where <span className="text-nobleblue-600">AI</span> Meets the{" "}
             <span className="text-nobleblue-600">Modern Web</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto">
-            At Noble Stack, we build intelligent digital products using advanced
-            AI, LLMs, and modern web technologies. We specialize in transforming
-            innovative ideas into powerful, scalable solutions that drive real business value.
+            At Noble Stack, we build intelligent digital products using AI, LLMs, and modern web technologies to turn ideas into scalable, high-impact solutions.
           </p>
 
           {/* Call to Action Buttons */}
@@ -110,7 +108,7 @@ export default function HeroSection() {
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                From Your Idea to Deployed Software
+                Idea to Deployed Software
               </h3>
               <p className="text-base text-gray-600">
                 Complete end-to-end development from concept to production
@@ -122,7 +120,7 @@ export default function HeroSection() {
                 <Bot className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                AI-Powered Solutions
+                AI Powered Solutions
               </h3>
               <p className="text-base text-gray-600">
                 Intelligent automation and AI integration in every project

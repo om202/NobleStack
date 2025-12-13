@@ -159,10 +159,6 @@ export default function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-nobleblue-100 text-nobleblue-700 text-base font-medium mb-4">
-            <Globe className="w-4 h-4 mr-2" />
-            Modern Web Development Experts
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             We Build Modern
             <span className="text-gradient-nobleblue">
