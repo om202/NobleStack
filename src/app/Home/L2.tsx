@@ -47,7 +47,7 @@ const webFeatures = [
     description:
       "Beautiful designs that work perfectly on every device, from mobile to desktop. Designed for mobile, enhanced for desktop experience.",
     icon: Smartphone,
-    color: "from-blue-500 to-blue-600",
+    color: "from-nobleblue-500 to-nobleblue-600",
     stats: [
       "Mobile Optimized",
       "Cross-Platform",
@@ -62,7 +62,7 @@ const webFeatures = [
     description:
       "Optimized websites that load in milliseconds and rank high on Google. Built for search engines from day one with optimal performance.",
     icon: Zap,
-    color: "from-blue-600 to-blue-700",
+    color: "from-nobleblue-600 to-nobleblue-700",
     stats: ["Core Web Vitals", "SEO Optimized", "Fast Loading", "Search Ready"],
     demo: "Speed Test",
   },
@@ -72,7 +72,7 @@ const webFeatures = [
     description:
       "Contemporary designs that capture attention and guide users to conversion. Every element designed to drive real business results.",
     icon: Palette,
-    color: "from-blue-500 to-blue-600",
+    color: "from-nobleblue-500 to-nobleblue-600",
     stats: [
       "User-Centered",
       "Conversion Focused",
@@ -87,7 +87,7 @@ const webFeatures = [
     description:
       "Built-in analytics and optimization tools to track performance and improve conversions with comprehensive user experience insights.",
     icon: BarChart3,
-    color: "from-blue-600 to-blue-700",
+    color: "from-nobleblue-600 to-nobleblue-700",
     stats: [
       "Analytics Ready",
       "A/B Testing",
@@ -159,13 +159,13 @@ export default function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-base font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-nobleblue-100 text-nobleblue-700 text-base font-medium mb-4">
             <Globe className="w-4 h-4 mr-2" />
             Modern Web Development Experts
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             We Build Modern
-            <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
+            <span className="text-gradient-nobleblue">
               {" "}
               Websites That Convert
             </span>
@@ -203,7 +203,7 @@ export default function FeaturesSection() {
                   >
                     <service.icon className="w-6 h-6 text-white" />
                   </div>
-                  <span className="text-base px-2 py-1 bg-blue-500/20 text-blue-500 rounded-full">
+                  <span className="text-base px-2 py-1 bg-nobleblue-500/20 text-nobleblue-500 rounded-full">
                     {service.status}
                   </span>
                 </div>
@@ -214,7 +214,7 @@ export default function FeaturesSection() {
                   {service.description}
                 </p>
               </div>
-              <button className="flex items-center text-blue-600 text-base group-hover:text-blue-700 transition-colors">
+              <button className="flex items-center text-nobleblue-600 text-base group-hover:text-nobleblue-700 transition-colors">
                 Learn More
                 <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </button>

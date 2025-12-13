@@ -33,7 +33,7 @@ export default function AIServicesSection() {
       description:
         "Our flagship product: the world's first AI-powered grammar and spell checker for Nepali language. Serving 10+ million native speakers with advanced AI language processing.",
       icon: Languages,
-      color: "from-blue-500 to-blue-600",
+      color: "from-nobleblue-500 to-nobleblue-600",
       stats: [
         "First of Its Kind",
         "10M+ Speakers",
@@ -47,7 +47,7 @@ export default function AIServicesSection() {
       description:
         "We build chatbots powered by GPT-4, Claude, and custom-trained models that understand context, maintain conversations, and deliver real business value—not just scripted responses.",
       icon: MessageCircle,
-      color: "from-blue-600 to-blue-700",
+      color: "from-nobleblue-600 to-nobleblue-700",
       stats: [
         "99% Uptime",
         "Human-like Responses",
@@ -61,7 +61,7 @@ export default function AIServicesSection() {
       description:
         "Our automation systems handle repetitive tasks, process data intelligently, and integrate seamlessly with your existing tools—saving hours of manual work every day.",
       icon: Zap,
-      color: "from-blue-500 to-blue-600",
+      color: "from-nobleblue-500 to-nobleblue-600",
       stats: [
         "Smart Workflows",
         "Tool Integration",
@@ -75,7 +75,7 @@ export default function AIServicesSection() {
       description:
         "From document processing to predictive analytics, we create bespoke AI systems that solve your unique challenges with cutting-edge machine learning and LLMs.",
       icon: Brain,
-      color: "from-blue-600 to-blue-700",
+      color: "from-nobleblue-600 to-nobleblue-700",
       stats: [
         "Tailored Models",
         "Enterprise Ready",
@@ -151,13 +151,13 @@ export default function AIServicesSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-base font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-nobleblue-100 text-nobleblue-700 text-base font-medium mb-4">
             <Bot className="w-4 h-4 mr-2" />
             AI Automation & Chatbot Specialists
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             We Build AI That
-            <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
+            <span className="text-gradient-nobleblue">
               {" "}
               Actually Works
             </span>
@@ -196,7 +196,7 @@ export default function AIServicesSection() {
                   >
                     <service.icon className="w-6 h-6 text-white" />
                   </div>
-                  <span className="text-md-sm px-2 py-1 bg-blue-500/20 text-blue-500 rounded-full">
+                  <span className="text-md-sm px-2 py-1 bg-nobleblue-500/20 text-nobleblue-500 rounded-full">
                     {service.status}
                   </span>
                 </div>
@@ -207,7 +207,7 @@ export default function AIServicesSection() {
                   {service.description}
                 </p>
               </div>
-              <button className="flex items-center text-blue-600 text-base group-hover:text-blue-700 transition-colors">
+              <button className="flex items-center text-nobleblue-600 text-base group-hover:text-nobleblue-700 transition-colors">
                 Learn More
                 <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </button>

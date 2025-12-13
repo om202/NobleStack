@@ -1,5 +1,40 @@
 @import "tailwindcss";
 
+/* Happy Sky Blue — warm, clean, slightly red-tinted */
+@theme {
+  --color-nobleblue-50: #f2f7ff;
+  --color-nobleblue-100: #e4efff;
+  --color-nobleblue-200: #c9ddff;
+  --color-nobleblue-300: #9fc0ff;
+  --color-nobleblue-400: #6fa0f7;
+  --color-nobleblue-500: #4f87ea;
+  --color-nobleblue-600: #3f6fd1;
+  --color-nobleblue-700: #3258aa;
+  --color-nobleblue-800: #26417d;
+  --color-nobleblue-900: #1a2a52;
+
+  /* Gradient utilities */
+  --gradient-nobleblue-up: linear-gradient(to right, var(--color-nobleblue-500), var(--color-nobleblue-600));
+  --gradient-nobleblue-down: linear-gradient(to right, var(--color-nobleblue-500), var(--color-nobleblue-400));
+}
+
+/* Utility classes */
+.gradient-nobleblue-up {
+  background: var(--gradient-nobleblue-up);
+}
+
+.gradient-nobleblue-down {
+  background: var(--gradient-nobleblue-down);
+}
+
+.text-gradient-nobleblue {
+  background: var(--gradient-nobleblue-up);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,21 +42,34 @@ html {
 body {
   background: #ffffff;
   min-height: 100vh;
-  line-height: 1.7; /* Increased from default 1.5 for better readability */
+  line-height: 1.7;
+  /* Increased from default 1.5 for better readability */
 }
 
 /* Improved typography line heights for better readability */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.3; /* Slightly tighter for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  /* Slightly tighter for headings */
 }
 
-p, li, td, th {
-  line-height: 1.75; /* More generous for body text */
+p,
+li,
+td,
+th {
+  line-height: 1.75;
+  /* More generous for body text */
 }
 
 /* Button and interactive elements */
-button, a {
-  line-height: 1.6; /* Balanced for interactive elements */
+button,
+a {
+  line-height: 1.6;
+  /* Balanced for interactive elements */
 }
 
 /* Custom scrollbar */
@@ -72,7 +120,7 @@ button, a {
   background: linear-gradient(145deg, #ef4444, #dc2626, #b91c1c);
   background-clip: text;
   -webkit-background-clip: text;
-  text-shadow: 
+  text-shadow:
     0 1px 2px rgba(239, 68, 68, 0.5),
     0 2px 4px rgba(220, 38, 38, 0.3),
     0 4px 8px rgba(185, 28, 28, 0.2);
@@ -80,40 +128,50 @@ button, a {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
-  from { 
-    opacity: 0; 
-    transform: translateY(30px); 
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes heartbeat {
-  0% { 
-    transform: scale(1) rotateY(0deg); 
+  0% {
+    transform: scale(1) rotateY(0deg);
     filter: drop-shadow(0 2px 4px rgba(239, 68, 68, 0.3));
   }
-  14% { 
-    transform: scale(1.3) rotateY(-5deg); 
+
+  14% {
+    transform: scale(1.3) rotateY(-5deg);
     filter: drop-shadow(0 4px 8px rgba(239, 68, 68, 0.5));
   }
-  28% { 
-    transform: scale(1) rotateY(0deg); 
+
+  28% {
+    transform: scale(1) rotateY(0deg);
     filter: drop-shadow(0 2px 4px rgba(239, 68, 68, 0.3));
   }
-  42% { 
-    transform: scale(1.3) rotateY(5deg); 
+
+  42% {
+    transform: scale(1.3) rotateY(5deg);
     filter: drop-shadow(0 4px 8px rgba(239, 68, 68, 0.5));
   }
-  70% { 
-    transform: scale(1) rotateY(0deg); 
+
+  70% {
+    transform: scale(1) rotateY(0deg);
     filter: drop-shadow(0 2px 4px rgba(239, 68, 68, 0.3));
   }
 }
@@ -130,6 +188,7 @@ button, a {
 
 /* Custom font size utilities */
 .text-md-sm {
-  font-size: 0.9375rem; /* 15px - between text-md-sm (14px) and text-base (16px) */
+  font-size: 0.9375rem;
+  /* 15px - between text-md-sm (14px) and text-base (16px) */
   line-height: 1.6;
 }

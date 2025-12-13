@@ -36,21 +36,21 @@ export default function FAQSection() {
       name: "Technical",
       icon: Code,
       count: "4 FAQs",
-      color: "from-blue-500 to-blue-600"
+      color: "from-nobleblue-500 to-nobleblue-600"
     },
     {
       id: "business",
       name: "Business",
       icon: TrendingUp,
       count: "5 FAQs",
-      color: "from-blue-600 to-blue-700"
+      color: "from-nobleblue-600 to-nobleblue-700"
     },
     {
       id: "support",
       name: "Support",
       icon: Shield,
       count: "5 FAQs",
-      color: "from-blue-500 to-blue-600"
+      color: "from-nobleblue-500 to-nobleblue-600"
     }
   ];
 
@@ -182,13 +182,13 @@ export default function FAQSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-base font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-nobleblue-100 text-nobleblue-700 text-base font-medium mb-4">
             <MessageCircle className="w-4 h-4 mr-2" />
             Technical FAQ & Solutions Guide
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             Technical Deep Dive
-            <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
+            <span className="text-gradient-nobleblue">
               {" "}
               Questions & Answers
             </span>
@@ -247,7 +247,7 @@ export default function FAQSection() {
                       <span className="text-md-sm sm:text-lg font-semibold text-gray-900">
                         {faq.question}
                       </span>
-                      <span className="text-md-sm sm:text-base px-2 py-1 bg-blue-100 text-blue-700 rounded-full font-medium">
+                      <span className="text-md-sm sm:text-base px-2 py-1 bg-nobleblue-100 text-nobleblue-700 rounded-full font-medium">
                         {faq.complexity}
                       </span>
                     </div>
@@ -297,7 +297,7 @@ export default function FAQSection() {
             Our team is ready to discuss your unique requirements and provide
             detailed solutions tailored to your project needs.
           </p>
-          <button className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-lg hover:shadow-xl font-semibold">
+          <button className="group inline-flex items-center justify-center gap-3 px-8 py-4 gradient-nobleblue-up text-white rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl font-semibold">
             Schedule Technical Consultation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform duration-200" />
           </button>
