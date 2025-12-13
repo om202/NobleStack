@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   keywords: [
     "Noble Stack careers Nepal",
     "AI developer jobs Nepal",
-    "React developer jobs Kathmandu", 
+    "React developer jobs Kathmandu",
     "machine learning jobs Nepal",
     "software engineer careers Nepal",
     "web developer positions Kathmandu",
@@ -93,7 +93,7 @@ export default function CareerLayout({
               "@type": "Place",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Kathmandu",
+                streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
                 addressLocality: "Kathmandu",
                 addressRegion: "Bagmati Province",
                 postalCode: "44600",
@@ -124,7 +124,7 @@ export default function CareerLayout({
             ],
             responsibilities: [
               "Develop AI-powered web applications for Nepal and South Asian markets",
-              "Build responsive and scalable frontend interfaces", 
+              "Build responsive and scalable frontend interfaces",
               "Integrate machine learning models into web applications",
               "Collaborate with international and local teams",
               "Write clean, maintainable code following industry standards"
@@ -136,14 +136,14 @@ export default function CareerLayout({
             },
             applicationContact: {
               "@type": "ContactPoint",
-              email: "careers@noblestack.io",
+              email: "noblestack.io@gmail.com",
               contactType: "HR",
               telephone: "+977-1-XXXXXXX"
             }
           })
         }}
       />
-      
+
       {/* Organization Schema for Career Page */}
       <script
         type="application/ld+json"
@@ -157,7 +157,7 @@ export default function CareerLayout({
             description: "Join our team of passionate developers, designers, and innovators working on cutting-edge AI and web development projects from our Kathmandu office, serving clients across Nepal and South Asia.",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Kathmandu",
+              streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
               addressLocality: "Kathmandu",
               addressRegion: "Bagmati Province",
               postalCode: "44600",
@@ -208,13 +208,13 @@ export default function CareerLayout({
                 jobTitle: "CEO & Founder"
               },
               {
-                "@type": "Person", 
+                "@type": "Person",
                 name: "Sarah Rodriguez",
                 jobTitle: "CTO"
               },
               {
                 "@type": "Person",
-                name: "Michael Park", 
+                name: "Michael Park",
                 jobTitle: "Lead AI Engineer"
               },
               {

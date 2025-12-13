@@ -78,11 +78,11 @@ export default function AboutLayout({
             logo: "https://noblestack.io/nbl.png",
             description: "Noble Stack is a leading technology company based in Kathmandu, Nepal, specializing in AI development, modern web applications, and intelligent automation solutions for clients across Nepal and South Asia.",
             foundingDate: "2019",
-            email: "hello@noblestack.io",
+            email: "noblestack.io@gmail.com",
             telephone: "+977-1-XXXXXXX",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Kathmandu",
+              streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
               addressLocality: "Kathmandu",
               addressRegion: "Bagmati Province",
               postalCode: "44600",

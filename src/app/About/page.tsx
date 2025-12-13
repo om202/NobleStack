@@ -25,13 +25,7 @@ export default function About() {
       image: "/ved.png",
       bio: "",
     },
-    {
-      name: "Pooja",
-      role: "COO",
-      expertise: "Operations Management\nProcess Optimization",
-      image: "/placeholder-avatar.png",
-      bio: "",
-    },
+
     {
       name: "Omprakash",
       role: "CTO",
@@ -40,10 +34,10 @@ export default function About() {
       bio: "",
     },
     {
-      name: "Ranjit",
-      role: "Full Stack Intern",
-      expertise: "Web Development\nModern Frameworks",
-      image: "/ranjit.png",
+      name: "Hesamullah",
+      role: "Marketing Lead",
+      expertise: "Growth Strategy\nDigital Marketing",
+      image: "/Hesamullah.png",
       bio: "",
     },
   ];

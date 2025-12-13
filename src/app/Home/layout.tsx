@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "Noble Stack is Kathmandu's premier AI and web development company, crafting intelligent solutions using cutting-edge AI, machine learning, and modern web technologies. Serving Nepal and South Asia with expert development services.",
   keywords: [
     "AI development company Nepal",
-    "web development services Kathmandu", 
+    "web development services Kathmandu",
     "React development Nepal",
     "Next.js development Kathmandu",
     "machine learning solutions Nepal",
@@ -78,7 +78,7 @@ export default function HomeLayout({
             url: "https://noblestack.io",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Kathmandu",
+              streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
               addressLocality: "Kathmandu",
               addressRegion: "Bagmati Province",
               postalCode: "44600",
@@ -100,7 +100,7 @@ export default function HomeLayout({
               }
             ],
             telephone: "+977-1-XXXXXXX",
-            email: "hello@noblestack.io",
+            email: "noblestack.io@gmail.com",
             potentialAction: {
               "@type": "SearchAction",
               target: "https://noblestack.io/search?q={search_term_string}",

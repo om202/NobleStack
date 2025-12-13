@@ -189,7 +189,7 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <ServiceCard
                 name="Email"
-                description="hello@noblestack.io"
+                description="noblestack.io@gmail.com"
                 icon={Mail}
               />
               <ServiceCard
@@ -199,7 +199,7 @@ export default function Contact() {
               />
               <ServiceCard
                 name="Location"
-                description="Kathmandu, Nepal"
+                description="Saraswati Marg, Kathmandu 44600, Nepal"
                 icon={MapPin}
               />
               <ServiceCard

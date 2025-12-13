@@ -77,7 +77,7 @@ export default function ContactLayout({
               {
                 "@type": "ContactPoint",
                 telephone: "+977-1-XXXXXXX",
-                email: "hello@noblestack.io",
+                email: "noblestack.io@gmail.com",
                 contactType: "Customer Service",
                 areaServed: ["Nepal", "South Asia"],
                 availableLanguage: ["English", "Nepali"],
@@ -91,23 +91,23 @@ export default function ContactLayout({
                 }
               },
               {
-                "@type": "ContactPoint", 
+                "@type": "ContactPoint",
                 contactType: "Technical Support",
-                email: "support@noblestack.io",
+                email: "noblestack.io@gmail.com",
                 areaServed: ["Nepal", "South Asia"],
                 availableLanguage: ["English", "Nepali"]
               },
               {
                 "@type": "ContactPoint",
                 contactType: "Sales",
-                email: "sales@noblestack.io", 
+                email: "noblestack.io@gmail.com",
                 areaServed: ["Nepal", "South Asia"],
                 availableLanguage: ["English", "Nepali"]
               }
             ],
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Kathmandu",
+              streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
               addressLocality: "Kathmandu",
               addressRegion: "Bagmati Province",
               postalCode: "44600",
@@ -125,7 +125,7 @@ export default function ContactLayout({
           })
         }}
       />
-      
+
       {/* Local Business Schema */}
       <script
         type="application/ld+json"
@@ -138,10 +138,10 @@ export default function ContactLayout({
             "@id": "https://noblestack.io/Contact",
             url: "https://noblestack.io",
             telephone: "+977-1-XXXXXXX",
-            email: "hello@noblestack.io",
+            email: "noblestack.io@gmail.com",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Kathmandu",
+              streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
               addressLocality: "Kathmandu",
               addressRegion: "Bagmati Province",
               postalCode: "44600",

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { User } from "lucide-react";
+import CTAButton from "./CTAButton";
 
 interface TeamMember {
   name: string;
@@ -31,10 +32,10 @@ export default function AlbumArtTeam({
   const [imageErrors, setImageErrors] = useState<{ [key: number]: boolean }>({});
 
   const shouldShowPlaceholder = (image: string, index: number) => {
-    return !image || 
-           image === '' || 
-           image.includes('placeholder') || 
-           imageErrors[index];
+    return !image ||
+      image === '' ||
+      image.includes('placeholder') ||
+      imageErrors[index];
   };
 
   const handleImageError = (index: number) => {
@@ -75,9 +76,8 @@ export default function AlbumArtTeam({
     } else {
       // Hidden cards
       return {
-        transform: `translateX(${
-          position > teamMembers.length / 2 ? -200 : 200
-        }px) scale(0.8)`,
+        transform: `translateX(${position > teamMembers.length / 2 ? -200 : 200
+          }px) scale(0.8)`,
         zIndex: 1,
       };
     }
@@ -138,6 +138,11 @@ export default function AlbumArtTeam({
           Our diverse team of experts brings together years of experience in
           technology, design, and business strategy.
         </p>
+        <div className="mt-6 flex justify-center">
+          <CTAButton href="/Career" variant="primary">
+            Interested to Join Us?
+          </CTAButton>
+        </div>
       </div>
     </div>
   );
