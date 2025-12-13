@@ -16,6 +16,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AlbumArtTeam from "../../components/AlbumArtTeam";
 import AnimatedFeatureCarousel from "../../components/AnimatedFeatureCarousel";
+import CTAButton from "../../components/CTAButton";
 
 export default function About() {
   const teamMembers = [
@@ -108,12 +109,12 @@ export default function About() {
       <section className="py-12 px-4 min-h-screen bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-10 sm:mb-16">
+          <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
               About Noble Stack
             </h1>
 
-            <blockquote className="text-base sm:text-lg text-gray-500 mb-6 sm:mb-8 max-w-3xl mx-auto">
+            <blockquote className="text-base sm:text-lg text-gray-500 mb-8 max-w-3xl mx-auto">
               &ldquo;We&apos;re a group of hardworking smart people working
               diligently to bring the latest technology, which is changing
               rapidly like never before, accessible to people of Nepal.&rdquo;
@@ -121,15 +122,15 @@ export default function About() {
           </div>
 
           {/* Team Section - iTunes Style */}
-          <div className="mb-10 sm:mb-16">
+          <div className="mb-16">
             <AlbumArtTeam teamMembers={teamMembers} />
           </div>
 
           {/* Our Story Section */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-10 sm:mb-16">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               <div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                   Our Story
                 </h2>
                 <div className="space-y-3 sm:space-y-4 text-base text-gray-600">
@@ -156,22 +157,13 @@ export default function About() {
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8">
-                  <Link
-                    href="/Services"
-                    className="flex items-center justify-center gap-2 px-6 py-3 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
-                  >
-                    <Globe className="w-5 h-5" />
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8">
+                  <CTAButton variant="primary" icon={Globe} href="/Services" className="w-full sm:w-auto">
                     Our Services
-                  </Link>
-
-                  <Link
-                    href="/Contact"
-                    className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-gray-700 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 font-semibold"
-                  >
-                    <ArrowRight className="w-5 h-5" />
+                  </CTAButton>
+                  <CTAButton variant="secondary" icon={ArrowRight} href="/Contact" className="w-full sm:w-auto">
                     Get In Touch
-                  </Link>
+                  </CTAButton>
                 </div>
               </div>
 
@@ -209,27 +201,19 @@ export default function About() {
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">
               Lets get your work done!
             </h3>
-            <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
               Let&apos;s collaborate to bring your vision to life. Our team is
               excited to discuss your project and explore how we can help you
               achieve your goals.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/Contact"
-                className="flex items-center justify-center gap-2 px-8 py-4 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
-              >
-                <Rocket className="w-5 h-5" />
+              <CTAButton variant="primary" icon={Rocket} href="/Contact" className="w-full sm:w-auto">
                 New Project
-              </Link>
-
-              <Link
-                href="/Portfolio"
-                className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-700 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 font-semibold"
-              >
+              </CTAButton>
+              <CTAButton variant="secondary" href="/Portfolio" className="w-full sm:w-auto">
                 Our Portfolio
-              </Link>
+              </CTAButton>
             </div>
           </div>
         </div>

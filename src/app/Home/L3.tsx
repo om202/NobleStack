@@ -25,6 +25,7 @@ import React from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
 import AnimatedFeatureCarousel from "../../components/AnimatedFeatureCarousel";
 import ServiceCard from "../../components/ServiceCard";
+import SectionHeader from "../../components/SectionHeader";
 
 export default function AIServicesSection() {
   const aiFeatures = [
@@ -151,26 +152,14 @@ export default function AIServicesSection() {
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            We Build AI That
-            <span className="text-gradient-nobleblue">
-              {" "}
-              Actually Works
-            </span>
-          </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            While others promise AI magic, we deliver proven solutions. Our AI
-            chatbots and automation systems are already transforming businesses,
-            handling millions of interactions, and saving countless hours of
-            manual work.
-          </p>
-
-          <button className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-gray-800 rounded-xl border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-semibold">
-            Get Your AI Solution
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </button>
-        </div>
+        <SectionHeader
+          title="We Build AI That"
+          highlightedText="Actually Works"
+          description="While others promise AI magic, we deliver proven solutions. Our AI chatbots and automation systems are already transforming businesses, handling millions of interactions, and saving countless hours of manual work."
+          ctaText="Get Your AI Solution"
+          ctaIcon={ArrowRight}
+          className="animate-fade-in"
+        />
 
         {/* AI Tech Stack - Auto Scrolling */}
         <TechStackCarousel

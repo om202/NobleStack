@@ -2,6 +2,7 @@
 
 import { Send, Upload, FileText } from "lucide-react";
 import { useState } from "react";
+import CTAButton from "../../components/CTAButton";
 
 export default function Career() {
   const [formData, setFormData] = useState({
@@ -37,12 +38,12 @@ export default function Career() {
       <section className="py-12 px-4 min-h-screen bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-10 sm:mb-16">
+          <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
               Join Our Team
             </h1>
 
-            <blockquote className="text-base sm:text-lg text-gray-500 mb-6 sm:mb-8 max-w-3xl mx-auto">
+            <blockquote className="text-base sm:text-lg text-gray-500 mb-8 max-w-3xl mx-auto">
               &ldquo;Be part of a movement to bring cutting-edge technology to
               Nepal. Join our team of passionate developers, designers, and
               innovators building the future.&rdquo;
@@ -51,9 +52,9 @@ export default function Career() {
 
           {/* Application Form */}
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
-            <div className="text-center mb-10 sm:mb-12">
+            <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-2 mb-2">
-                <FileText className="w-6 h-6 text-gray-500" />
+                <FileText className="w-6 h-6 text-nobleblue-600" />
                 <h3 className="text-xl font-semibold text-gray-700">
                   Application Form
                 </h3>
@@ -195,13 +196,9 @@ export default function Career() {
               </div>
 
               <div className="text-center">
-                <button
-                  type="submit"
-                  className="group flex items-center justify-center gap-3 px-8 py-4 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold mx-auto"
-                >
+                <CTAButton type="submit" variant="primary" icon={Send} className="mx-auto">
                   Submit Application
-                  <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </button>
+                </CTAButton>
                 <p className="text-md-sm text-gray-500 mt-4">
                   We&apos;ll review your application and get back to you within
                   48 hours

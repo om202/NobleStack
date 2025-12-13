@@ -12,6 +12,7 @@ import {
 import Link from "next/link";
 import AlbumArtServices from "../../components/AlbumArtServices";
 import TechTicker from "../../components/TechTicker";
+import CTAButton from "../../components/CTAButton";
 
 export default function Services() {
   const services = [
@@ -184,21 +185,21 @@ export default function Services() {
       <section className="py-12 px-4 min-h-screen bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-10 sm:mb-16">
+          <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
               Our Services
             </h1>
           </div>
 
           {/* Services Carousel */}
-          <div className="mb-10 sm:mb-16">
+          <div className="mb-16">
             <AlbumArtServices services={services} />
           </div>
 
           {/* Process Section */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-10 sm:mb-16">
-            <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Our Process
               </h2>
               <p className="text-md-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
@@ -212,8 +213,8 @@ export default function Services() {
               {process.map((step, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="relative mb-4 sm:mb-6">
-                    <div className="w-20 h-20 gradient-nobleblue-up rounded-lg flex items-center justify-center shadow-md">
-                      <span className="text-2xl font-bold text-white">
+                    <div className="w-20 h-20 bg-gray-100 rounded-2xl flex items-center justify-center shadow-sm">
+                      <span className="text-2xl font-bold text-nobleblue-600">
                         {step.step}
                       </span>
                     </div>
@@ -245,8 +246,8 @@ export default function Services() {
                 {process.map((step, index) => (
                   <div key={index} className="text-center relative">
                     <div className="relative mb-6">
-                      <div className="w-20 h-20 gradient-nobleblue-up rounded-lg flex items-center justify-center mx-auto shadow-md">
-                        <span className="text-2xl font-bold text-white">
+                      <div className="w-20 h-20 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto shadow-sm">
+                        <span className="text-2xl font-bold text-nobleblue-600">
                           {step.step}
                         </span>
                       </div>
@@ -275,12 +276,12 @@ export default function Services() {
           </div>
 
           {/* Technology Stack */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-10 sm:mb-16">
-            <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-900">
                 Technology Stack
               </h2>
-              <p className="text-md-sm sm:text-base text-gray-600 max-w-2xl mx-auto mb-6 sm:mb-8">
+              <p className="text-md-sm sm:text-base text-gray-600 max-w-2xl mx-auto mb-8">
                 We work with the latest and most reliable technologies to build
                 robust, scalable solutions. Watch our expertise in action —
                 technologies refresh dynamically to showcase our full stack.
@@ -322,21 +323,12 @@ export default function Services() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/Contact"
-                className="flex items-center justify-center gap-2 px-8 py-4 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
-              >
-                <Rocket className="w-5 h-5" />
+              <CTAButton variant="primary" icon={Rocket} href="/Contact" className="w-full sm:w-auto">
                 Get Started Today
-              </Link>
-
-              <Link
-                href="/Career"
-                className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-700 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 font-semibold"
-              >
-                <Code className="w-5 h-5" />
+              </CTAButton>
+              <CTAButton variant="secondary" icon={Code} href="/Career" className="w-full sm:w-auto">
                 Join Our Team
-              </Link>
+              </CTAButton>
             </div>
           </div>
         </div>

@@ -40,6 +40,7 @@ import React from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
 import AnimatedFeatureCarousel from "../../components/AnimatedFeatureCarousel";
 import ServiceCard from "../../components/ServiceCard";
+import SectionHeader from "../../components/SectionHeader";
 
 const webFeatures = [
   {
@@ -159,25 +160,14 @@ export default function FeaturesSection() {
     <section id="features" className="py-12 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            We Build Modern
-            <span className="text-gradient-nobleblue">
-              {" "}
-              Websites That Convert
-            </span>
-          </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            Specializing in lightning-fast, SEO-optimized websites that look
-            stunning on every device. From landing pages to complex web
-            applications, we create digital experiences that drive results.
-          </p>
-
-          <button className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-gray-800 rounded-xl border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-semibold">
-            Start Your Website Project
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </button>
-        </div>
+        <SectionHeader
+          title="We Build Modern"
+          highlightedText="Websites That Convert"
+          description="Specializing in lightning-fast, SEO-optimized websites that look stunning on every device. From landing pages to complex web applications, we create digital experiences that drive results."
+          ctaText="Start Your Website Project"
+          ctaIcon={ArrowRight}
+          className="animate-fade-in"
+        />
 
         {/* Modern Tech Stack */}
         <TechStackCarousel

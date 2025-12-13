@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import ServiceCard from "../../components/ServiceCard";
+import CTAButton from "../../components/CTAButton";
 
 export default function HeroSection() {
 
@@ -75,27 +76,12 @@ export default function HeroSection() {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <button className="group flex items-center justify-center gap-3 px-8 py-4 w-full sm:w-64 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 font-semibold">
+            <CTAButton variant="primary" icon={ArrowRight} className="w-full sm:w-auto">
               Schedule A Call
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
-            <Link
-              href="/Products"
-              className="group flex items-center justify-center gap-3 px-8 py-4 w-full sm:w-64 bg-white text-gray-800 rounded-xl border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 transform hover:-translate-y-0.5 font-semibold"
-            >
+            </CTAButton>
+            <CTAButton variant="secondary" href="/Products" className="w-full sm:w-auto">
               View Our Products
-              <svg
-                className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </Link>
+            </CTAButton>
           </div>
         </div>
 

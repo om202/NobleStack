@@ -16,6 +16,7 @@ import {
   Rocket,
 } from "lucide-react";
 import FAQItem from "../../components/FAQItem";
+import CTAButton from "../../components/CTAButton";
 
 export default function FAQSection() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -243,10 +244,9 @@ export default function FAQSection() {
             Our team is ready to discuss your unique requirements and provide
             detailed solutions tailored to your project needs.
           </p>
-          <button className="group inline-flex items-center justify-center gap-3 px-8 py-4 gradient-nobleblue-up text-white rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl font-semibold">
+          <CTAButton variant="primary" icon={ArrowRight} className="inline-flex shadow-lg hover:shadow-xl">
             Schedule Technical Consultation
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform duration-200" />
-          </button>
+          </CTAButton>
         </div>
       </div>
     </section>
