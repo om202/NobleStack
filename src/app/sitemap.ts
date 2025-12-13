@@ -2,9 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NODE_ENV === 'production'
-    ? 'https://www.noblestack.io'
-    : 'http://localhost:3000'
+  const baseUrl = 'https://www.noblestack.io'
 
   // Get all posts for dynamic sitemap generation
   const posts = getAllPosts(['slug', 'date'])
