@@ -42,33 +42,22 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
-          {/* Beta Notice - Simple yellow text */}
-          <p className="text-yellow-600 text-sm font-medium mb-5 flex items-center justify-center gap-2">
-            <Wrench className="w-4 h-4" />
-            Site under construction
-          </p>
-          
-          <div className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-blue-100 text-blue-700 text-md-sm sm:text-base font-medium mb-4 sm:mb-6">
-            <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2" />
-            Let&apos;s Build Something Intelligent
-          </div>
-
           {/* Noble Stack Brand */}
           <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
             <Image
               src="/nbl.png"
               alt="Noble Stack Logo"
-              width={70}
-              height={70}
-              className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px]"
+              width={95}
+              height={95}
+              className="w-[68px] h-[68px] sm:w-[95px] sm:h-[95px]"
               quality={100}
               priority
             />
-            <div className="flex flex-col justify-center h-16 sm:h-24">
-              <span className="text-lg sm:text-2xl mb-1 md:text-2xl font-medium text-gray-700 leading-none">
+            <div className="flex flex-col justify-center h-[86px] sm:h-[130px]">
+              <span className="text-[24px] sm:text-[32px] mb-1 md:text-[32px] font-medium text-gray-700 leading-none">
                 Noble
               </span>
-              <span className="text-lg sm:text-2xl md:text-2xl font-medium text-gray-700 leading-none">
+              <span className="text-[24px] sm:text-[32px] md:text-[32px] font-medium text-gray-700 leading-none">
                 Stack
               </span>
             </div>
@@ -79,11 +68,10 @@ export default function HeroSection() {
             <span className="modern-web-text">Modern Web</span>
           </h1>
 
-          <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto">
             At Noble Stack, we build intelligent digital products using advanced
-            AI, LLMs, and modern web stacks. Our first product, Nepali
-            Grammarly, is revolutionizing AI-powered writing tools for
-            underserved languages.
+            AI, LLMs, and modern web technologies. We specialize in transforming
+            innovative ideas into powerful, scalable solutions that drive real business value.
           </p>
 
           {/* Call to Action Buttons */}
@@ -92,7 +80,7 @@ export default function HeroSection() {
               Schedule A Call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </button>
-            <Link 
+            <Link
               href="/Products"
               className="group flex items-center justify-center gap-3 px-8 py-4 w-full sm:w-64 bg-white text-gray-800 rounded-xl border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 transform hover:-translate-y-0.5 font-semibold"
             >
