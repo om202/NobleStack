@@ -87,7 +87,7 @@ export default function HeroSection() {
 
                 {/* Call to Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-                  <CTAButton variant="primary" icon={ArrowRight} className="w-full sm:w-auto">
+                  <CTAButton variant="primary" icon={ArrowRight} className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
                     Schedule A Call
                   </CTAButton>
                   <CTAButton variant="secondary" href="/Products" className="w-full sm:w-auto">

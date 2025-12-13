@@ -157,6 +157,7 @@ export default function AIServicesSection() {
           highlightedText="Actually Works"
           description="While others promise AI magic, we deliver proven solutions. Our AI chatbots and automation systems are already transforming businesses, handling millions of interactions, and saving countless hours of manual work."
           ctaText="Get Your AI Solution"
+          ctaHref="https://calendar.app.google/mWmd6v421Pk66LQ26"
           ctaIcon={ArrowRight}
           className="animate-fade-in"
         />

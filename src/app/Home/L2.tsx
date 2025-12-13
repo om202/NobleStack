@@ -165,6 +165,7 @@ export default function FeaturesSection() {
           highlightedText="Websites That Convert"
           description="Specializing in lightning-fast, SEO-optimized websites that look stunning on every device. From landing pages to complex web applications, we create digital experiences that drive results."
           ctaText="Start Your Website Project"
+          ctaHref="https://calendar.app.google/mWmd6v421Pk66LQ26"
           ctaIcon={ArrowRight}
           className="animate-fade-in"
         />

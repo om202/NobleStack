@@ -244,7 +244,7 @@ export default function FAQSection() {
             Our team is ready to discuss your unique requirements and provide
             detailed solutions tailored to your project needs.
           </p>
-          <CTAButton variant="primary" icon={ArrowRight} className="inline-flex shadow-lg hover:shadow-xl">
+          <CTAButton variant="primary" icon={ArrowRight} className="inline-flex shadow-lg hover:shadow-xl" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
             Schedule Technical Consultation
           </CTAButton>
         </div>

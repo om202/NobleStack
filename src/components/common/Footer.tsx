@@ -53,10 +53,15 @@ export default function Footer() {
               <Mail className="w-4 h-4" />
               <span className="text-md-sm font-medium">Get in touch</span>
             </a>
-            <button className="flex items-center gap-2 px-6 py-3 bg-nobleblue-100/80 text-nobleblue-700 rounded-lg hover:bg-nobleblue-200/80 transition-colors duration-200 text-base font-semibold">
+            <a
+              href="https://calendar.app.google/mWmd6v421Pk66LQ26"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 bg-nobleblue-100/80 text-nobleblue-700 rounded-lg hover:bg-nobleblue-200/80 transition-colors duration-200 text-base font-semibold"
+            >
               <Phone className="w-5 h-5" />
-              Call Now
-            </button>
+              Book a Call
+            </a>
           </div>
         </div>
 
