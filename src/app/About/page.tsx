@@ -55,7 +55,7 @@ export default function About() {
       title: "Innovation-Driven",
       description: "We embrace change. We're constantly experimenting with the latest frameworks, APIs, and AI models — not just to stay relevant, but to build what's next.",
       icon: Brain,
-      color: "from-purple-500 to-pink-500",
+      color: "from-nobleblue-500 to-nobleblue-600",
       stats: ["Latest Tech", "AI Integration", "Future-Ready", "Cutting-Edge"],
     },
     {
@@ -63,7 +63,7 @@ export default function About() {
       title: "Client-First Engineering",
       description: "We don't chase trends — we solve real problems. Every line of code, every design choice, is built to serve the client's goals and improve outcomes.",
       icon: Users,
-      color: "from-blue-500 to-cyan-500",
+      color: "from-nobleblue-400 to-nobleblue-500",
       stats: ["Problem Solving", "Goal-Oriented", "Results-Driven", "Client Focus"],
     },
     {
@@ -71,7 +71,7 @@ export default function About() {
       title: "Fast, But Thoughtful",
       description: "We move quickly — like a startup should — but never at the cost of quality. We believe speed and stability can (and must) co-exist.",
       icon: Zap,
-      color: "from-green-500 to-emerald-500",
+      color: "from-nobleblue-500 to-nobleblue-400",
       stats: ["Quick Delivery", "High Quality", "Stable Code", "Startup Speed"],
     },
     {
@@ -79,7 +79,7 @@ export default function About() {
       title: "Clear Communication",
       description: "We explain complex things simply. Whether you're technical or not, we'll keep you in the loop and speak your language — Nepali or English.",
       icon: MessageCircle,
-      color: "from-orange-500 to-red-500",
+      color: "from-nobleblue-600 to-nobleblue-500",
       stats: ["Simple Explanations", "Multilingual", "Regular Updates", "Transparent"],
     },
     {
@@ -87,7 +87,7 @@ export default function About() {
       title: "Build with Craft",
       description: "Clean code. Reusable components. Scalable infrastructure. We treat every project like it's our own — because your success is our portfolio.",
       icon: Wrench,
-      color: "from-indigo-500 to-purple-500",
+      color: "from-nobleblue-500 to-nobleblue-600",
       stats: ["Clean Code", "Scalable", "Reusable", "Professional"],
     },
     {
@@ -95,7 +95,7 @@ export default function About() {
       title: "Made for Nepal, Built to Scale",
       description: "We're proud to be based in Nepal — and we build software that empowers local businesses while meeting global standards.",
       icon: Heart,
-      color: "from-red-500 to-pink-500",
+      color: "from-nobleblue-600 to-nobleblue-700",
       stats: ["Local Pride", "Global Standards", "Nepal-Focused", "World-Class"],
     },
   ];
@@ -127,7 +127,7 @@ export default function About() {
 
           {/* Our Story Section */}
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-10 sm:mb-16">
-                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               <div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
                   Our Story
@@ -159,7 +159,7 @@ export default function About() {
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8">
                   <Link
                     href="/Services"
-                    className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
+                    className="flex items-center justify-center gap-2 px-6 py-3 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
                   >
                     <Globe className="w-5 h-5" />
                     Our Services
@@ -218,7 +218,7 @@ export default function About() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/Contact"
-                className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
+                className="flex items-center justify-center gap-2 px-8 py-4 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
               >
                 <Rocket className="w-5 h-5" />
                 New Project
@@ -233,48 +233,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
-        <style jsx>{`
-          @keyframes futureGlow {
-            0% {
-              background-position: 0% 50%;
-            }
-            25% {
-              background-position: 50% 0%;
-            }
-            50% {
-              background-position: 100% 50%;
-            }
-            75% {
-              background-position: 50% 100%;
-            }
-            100% {
-              background-position: 0% 50%;
-            }
-          }
-
-          .future-text {
-            background: linear-gradient(
-              135deg,
-              #10b981,
-              #059669,
-              #0d9488,
-              #0f766e,
-              #0891b2,
-              #0e7490,
-              #0284c7,
-              #0369a1,
-              #10b981
-            );
-            background-size: 400% 400%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: futureGlow 2.5s ease-in-out infinite;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-          }
-        `}</style>
       </section>
     </>
   );

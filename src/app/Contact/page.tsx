@@ -47,20 +47,20 @@ export default function Contact() {
             </h1>
 
             <blockquote className="text-base sm:text-lg text-gray-500 mb-6 sm:mb-8 max-w-3xl mx-auto">
-              &ldquo;Ready to transform your ideas into intelligent digital solutions? 
+              &ldquo;Ready to transform your ideas into intelligent digital solutions?
               Let&apos;s discuss your project and explore how we can help you succeed.&rdquo;
             </blockquote>
           </div>
 
           {/* Contact Form */}
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
-                          <div className="text-center mb-10 sm:mb-12">
-                <div className="flex items-center justify-center gap-2 mb-2">
-                  <MessageSquare className="w-6 h-6 text-gray-500" />
-                  <h3 className="text-xl font-semibold text-gray-700">
-                    Send us a Message
-                  </h3>
-                </div>
+            <div className="text-center mb-10 sm:mb-12">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <MessageSquare className="w-6 h-6 text-gray-500" />
+                <h3 className="text-xl font-semibold text-gray-700">
+                  Send us a Message
+                </h3>
+              </div>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 max-w-4xl mx-auto">
@@ -74,12 +74,12 @@ export default function Contact() {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                     placeholder="Your full name"
                     required
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Email Address *
@@ -89,13 +89,13 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                     placeholder="your@email.com"
                     required
                   />
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-md-sm font-semibold text-gray-700 mb-2">
@@ -106,11 +106,11 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                     placeholder="+977 (XXX) XXX-XXXX"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Company/Organization
@@ -120,12 +120,12 @@ export default function Contact() {
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                     placeholder="Your company name"
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                   Subject *
@@ -134,7 +134,7 @@ export default function Contact() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                   required
                 >
                   <option value="">Select a subject</option>
@@ -146,7 +146,7 @@ export default function Contact() {
                   <option value="other">Other</option>
                 </select>
               </div>
-              
+
               <div>
                 <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                   Message *
@@ -156,16 +156,16 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                   placeholder="Tell us about your project, requirements, or any questions you have. What excites you about working with Noble Stack?"
                   required
                 ></textarea>
               </div>
-              
+
               <div className="text-center">
                 <button
                   type="submit"
-                  className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold mx-auto"
+                  className="group flex items-center justify-center gap-3 px-8 py-4 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold mx-auto"
                 >
                   Send Message
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -187,7 +187,7 @@ export default function Contact() {
                 Choose your preferred way to connect with us.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300">
                 <a href="mailto:hello@noblestack.io" className="block">
@@ -238,7 +238,7 @@ export default function Contact() {
 
 
         </div>
-        
+
         <style jsx>{`
           @keyframes futureGlow {
             0% {

@@ -51,21 +51,21 @@ export default function Career() {
 
           {/* Application Form */}
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
-                          <div className="text-center mb-10 sm:mb-12">
-                <div className="flex items-center justify-center gap-2 mb-2">
-                  <FileText className="w-6 h-6 text-gray-500" />
-                  <h3 className="text-xl font-semibold text-gray-700">
-                    Application Form
-                  </h3>
-                </div>
+            <div className="text-center mb-10 sm:mb-12">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <FileText className="w-6 h-6 text-gray-500" />
+                <h3 className="text-xl font-semibold text-gray-700">
+                  Application Form
+                </h3>
+              </div>
             </div>
 
             <form
               onSubmit={handleSubmit}
               className="space-y-4 sm:space-y-6 max-w-4xl mx-auto"
-                          >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                  <div>
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                <div>
                   <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                     Full Name *
                   </label>
@@ -74,7 +74,7 @@ export default function Career() {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                     placeholder="Your full name"
                     required
                   />
@@ -89,7 +89,7 @@ export default function Career() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                     placeholder="your@email.com"
                     required
                   />
@@ -106,7 +106,7 @@ export default function Career() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                     placeholder="+977 (XXX) XXX-XXXX"
                   />
                 </div>
@@ -119,7 +119,7 @@ export default function Career() {
                     name="position"
                     value={formData.position}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                     required
                   >
                     <option value="">Select a position</option>
@@ -146,7 +146,7 @@ export default function Career() {
                   name="experience"
                   value={formData.experience}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                 >
                   <option value="">Select experience level</option>
                   <option value="intern">Intern</option>
@@ -162,7 +162,7 @@ export default function Career() {
                 <label className="block text-md-sm font-semibold text-gray-700 mb-2">
                   Resume/CV *
                 </label>
-                <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-blue-400 transition-colors duration-300">
+                <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-nobleblue-400 transition-colors duration-300">
                   <Upload className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                   <p className="text-base text-gray-600 mb-2 font-medium">
                     Click to upload or drag and drop
@@ -189,7 +189,7 @@ export default function Career() {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
                   placeholder="Tell us about yourself and why you're interested in joining Noble Stack. What excites you about our mission?"
                 ></textarea>
               </div>
@@ -197,7 +197,7 @@ export default function Career() {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold mx-auto"
+                  className="group flex items-center justify-center gap-3 px-8 py-4 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold mx-auto"
                 >
                   Submit Application
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />

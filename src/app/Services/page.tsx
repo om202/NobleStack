@@ -212,7 +212,7 @@ export default function Services() {
               {process.map((step, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="relative mb-4 sm:mb-6">
-                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-md">
+                    <div className="w-20 h-20 gradient-nobleblue-up rounded-lg flex items-center justify-center shadow-md">
                       <span className="text-2xl font-bold text-white">
                         {step.step}
                       </span>
@@ -245,7 +245,7 @@ export default function Services() {
                 {process.map((step, index) => (
                   <div key={index} className="text-center relative">
                     <div className="relative mb-6">
-                      <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                      <div className="w-20 h-20 gradient-nobleblue-up rounded-lg flex items-center justify-center mx-auto shadow-md">
                         <span className="text-2xl font-bold text-white">
                           {step.step}
                         </span>
@@ -324,7 +324,7 @@ export default function Services() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/Contact"
-                className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
+                className="flex items-center justify-center gap-2 px-8 py-4 gradient-nobleblue-up text-white rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold"
               >
                 <Rocket className="w-5 h-5" />
                 Get Started Today
