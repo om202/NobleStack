@@ -9,6 +9,7 @@ interface CTAButtonProps {
     icon?: LucideIcon;
     href?: string;
     onClick?: () => void;
+    type?: "button" | "submit" | "reset";
     className?: string;
 }
 
@@ -18,6 +19,7 @@ export default function CTAButton({
     icon: Icon,
     href,
     onClick,
+    type = "button",
     className = "",
 }: CTAButtonProps) {
     const baseClasses =
@@ -49,7 +51,7 @@ export default function CTAButton({
     }
 
     return (
-        <button onClick={onClick} className={combinedClasses}>
+        <button type={type} onClick={onClick} className={combinedClasses}>
             {content}
         </button>
     );
