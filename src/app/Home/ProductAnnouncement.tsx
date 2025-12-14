@@ -33,7 +33,7 @@ export default function ProductAnnouncement() {
               <div className="flex flex-col items-center gap-2">
                 <h3 className="text-lg font-bold text-main-theme">
                   Introducing{" "}
-                  <span className="text-nobleblue-400">Vyakaranly</span>
+                  <span className="text-nobleblue-300">Vyakaranly</span>
                 </h3>
                 <p className="text-base text-muted-theme font-medium">
                   First Nepali language AI grammar checker — no more manual edits!

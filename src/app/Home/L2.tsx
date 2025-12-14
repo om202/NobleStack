@@ -173,7 +173,6 @@ export default function FeaturesSection() {
         <TechStackCarousel
           technologies={webTechStack}
           title="Modern Web Technologies We Master"
-          autoScrollInterval={2500}
         />
 
         {/* Web Services Grid */}
@@ -187,13 +186,6 @@ export default function FeaturesSection() {
             />
           ))}
         </div>
-
-        {/* What Makes Our Websites Convert - Animated Carousel */}
-        <AnimatedFeatureCarousel
-          features={webFeatures}
-          title="What Makes Our Websites Convert"
-          autoScrollInterval={4000}
-        />
       </div>
     </section>
   );

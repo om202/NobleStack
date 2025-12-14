@@ -106,8 +106,8 @@ export default function Navigation() {
                       key={item.href}
                       href={item.href}
                       className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${isActive
-                          ? "bg-nobleblue-500/20 text-nobleblue-400"
-                          : "text-muted-theme hover:text-nobleblue-400 hover:bg-subtle-theme"
+                        ? "bg-nobleblue-500/20 text-nobleblue-300"
+                        : "text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme"
                         }`}
                     >
                       <Icon className="w-4 h-4" />
@@ -122,7 +122,7 @@ export default function Navigation() {
             <div className="hidden md:flex items-center">
               <a
                 href="tel:+9779876543210"
-                className="flex items-center gap-2 px-4 py-2 bg-subtle-theme text-nobleblue-400 rounded-lg hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme"
+                className="flex items-center gap-2 px-4 py-2 bg-subtle-theme text-nobleblue-300 rounded-lg hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Now</span>
@@ -132,7 +132,7 @@ export default function Navigation() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-muted-theme hover:text-nobleblue-400 hover:bg-subtle-theme transition-colors duration-200"
+              className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme transition-colors duration-200"
             >
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -162,8 +162,8 @@ export default function Navigation() {
                     key={item.href}
                     href={item.href}
                     className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors duration-150 ${isActive
-                        ? "bg-nobleblue-500/20 text-nobleblue-400"
-                        : "text-muted-theme hover:text-nobleblue-400 hover:bg-subtle-theme"
+                      ? "bg-nobleblue-500/20 text-nobleblue-300"
+                      : "text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme"
                       }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -176,7 +176,7 @@ export default function Navigation() {
               {/* Mobile Call Now Button */}
               <a
                 href="tel:+9779876543210"
-                className="flex items-center justify-center gap-2 px-4 py-3 bg-subtle-theme text-nobleblue-400 rounded-xl hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme mt-4"
+                className="flex items-center justify-center gap-2 px-4 py-3 bg-subtle-theme text-nobleblue-300 rounded-xl hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme mt-4"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Now</span>

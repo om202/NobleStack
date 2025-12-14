@@ -18,7 +18,7 @@ export default function FAQItem({
     onToggle,
 }: FAQItemProps) {
     return (
-        <div className="bg-card-theme rounded-2xl shadow-sm border border-theme overflow-hidden">
+        <div className="bg-gray-800 rounded-2xl shadow-sm border border-theme overflow-hidden">
             <button
                 onClick={onToggle}
                 className="w-full text-left px-6 py-6 flex items-center justify-between"
@@ -35,7 +35,7 @@ export default function FAQItem({
             </button>
 
             {isOpen && (
-                <div className="px-6 pb-6 border-t border-theme">
+                <div className="px-6 pb-6 border-t border-theme bg-gray-900">
                     <div className="pl-0 sm:pl-16 pt-6">
                         <p className="text-md-sm sm:text-base text-muted-theme leading-relaxed mb-6">
                             {answer}
@@ -46,7 +46,7 @@ export default function FAQItem({
                             {metrics.map((metric, metricIndex) => (
                                 <div
                                     key={metricIndex}
-                                    className="flex items-center gap-2 px-3 py-2 bg-subtle-theme rounded-lg border border-theme"
+                                    className="flex items-center gap-2 px-3 py-2 bg-gray-800 rounded-lg border border-theme"
                                 >
                                     <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                                     <span className="text-md-sm sm:text-base font-medium text-main-theme">

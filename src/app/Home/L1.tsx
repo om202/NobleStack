@@ -9,6 +9,10 @@ import {
   Zap,
   Brain,
   Wrench,
+  Image as ImageIcon,
+  User,
+  Network,
+  Subtitles,
 } from "lucide-react";
 import Image from "next/image";
 import ServiceCard from "../../components/ServiceCard";
@@ -154,7 +158,7 @@ export default function HeroSection() {
 
       {/* Expertise Section */}
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
           <h2 className="text-xl font-bold text-main-theme mb-8 text-center">
             Our Expertise
           </h2>
@@ -180,7 +184,7 @@ export default function HeroSection() {
 
       {/* Products Section */}
       <div className="max-w-6xl mx-auto px-4 pb-12">
-        <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
           <h2 className="text-xl font-bold text-main-theme mb-8 text-center">
             Our Products
           </h2>
@@ -193,25 +197,12 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="block h-full"
             >
-              <div className="bg-card-theme rounded-2xl p-6 shadow-sm border border-theme hover:bg-subtle-theme transition-all duration-300 group cursor-pointer h-full flex flex-col">
-                <div className="flex items-center mb-6">
-                  <Image
-                    src="/vibe.png"
-                    alt="Vibe AI"
-                    width={80}
-                    height={80}
-                    className="rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <h3 className="text-2xl text-main-theme font-bold mb-3">Vibe AI Photo Editor</h3>
-                <p className="text-base text-muted-theme leading-relaxed mb-4">
-                  Professional photo editing made simple. Remove backgrounds and enhance images with AI.
-                </p>
-                <div className="mt-auto flex items-center text-sm font-medium text-nobleblue-600 group-hover:text-nobleblue-700">
-                  Check it out
-                  <ArrowRight className="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" />
-                </div>
-              </div>
+              <ServiceCard
+                name="Vibe AI Photo Editor"
+                description="Professional photo editing made simple. Remove backgrounds and enhance images with AI."
+                imageSrc="/vibe.png"
+                imageAlt="Vibe AI"
+              />
             </a>
 
             {/* Create Profile Pic */}
@@ -221,25 +212,12 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="block h-full"
             >
-              <div className="bg-card-theme rounded-2xl p-6 shadow-sm border border-theme hover:bg-subtle-theme transition-all duration-300 group cursor-pointer h-full flex flex-col">
-                <div className="flex items-center mb-6">
-                  <Image
-                    src="/create_profile_pic_icon.png"
-                    alt="Create Profile Pic"
-                    width={80}
-                    height={80}
-                    className="rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <h3 className="text-2xl text-main-theme font-bold mb-3">Create Profile Pic</h3>
-                <p className="text-base text-muted-theme leading-relaxed mb-4">
-                  Create stunning profile pictures for any platform. Powered by Google&apos;s Nano Banana AI.
-                </p>
-                <div className="mt-auto flex items-center text-sm font-medium text-nobleblue-600 group-hover:text-nobleblue-700">
-                  Check it out
-                  <ArrowRight className="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" />
-                </div>
-              </div>
+              <ServiceCard
+                name="Create Profile Pic"
+                description="Create stunning profile pictures for any platform. Powered by Google's Nano Banana AI."
+                imageSrc="/create_profile_pic_icon.png"
+                imageAlt="Create Profile Pic"
+              />
             </a>
 
             {/* Loopn */}
@@ -249,48 +227,22 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="block h-full"
             >
-              <div className="bg-card-theme rounded-2xl p-6 shadow-sm border border-theme hover:bg-subtle-theme transition-all duration-300 group cursor-pointer h-full flex flex-col">
-                <div className="flex items-center mb-6">
-                  <Image
-                    src="/loopn_logo.png"
-                    alt="Loopn"
-                    width={80}
-                    height={80}
-                    className="shadow-sm group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <h3 className="text-2xl text-main-theme font-bold mb-3">Loopn</h3>
-                <p className="text-base text-muted-theme leading-relaxed mb-4">
-                  Professional Networking & Career Matching using AI. Resume matching for career growth.
-                </p>
-                <div className="mt-auto flex items-center text-sm font-medium text-nobleblue-600 group-hover:text-nobleblue-700">
-                  Check it out
-                  <ArrowRight className="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" />
-                </div>
-              </div>
+              <ServiceCard
+                name="Loopn"
+                description="Professional Networking & Career Matching using AI. Resume matching for career growth."
+                imageSrc="/loopn_logo.png"
+                imageAlt="Loopn"
+              />
             </a>
 
             {/* Auto Captions */}
             <Link href="/Products" className="block h-full">
-              <div className="bg-card-theme rounded-2xl p-6 shadow-sm border border-theme hover:bg-subtle-theme transition-all duration-300 group cursor-pointer h-full flex flex-col">
-                <div className="flex items-center mb-6">
-                  <Image
-                    src="/autosubai_icon.png"
-                    alt="Auto Captions"
-                    width={80}
-                    height={80}
-                    className="rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <h3 className="text-2xl text-main-theme font-bold mb-3">Auto Captions</h3>
-                <p className="text-base text-muted-theme leading-relaxed mb-4">
-                  Automated subtitle generator in any language. Translate or generate for native voice.
-                </p>
-                <div className="mt-auto flex items-center text-sm font-medium text-gray-500">
-                  Coming Soon
-                  <ArrowRight className="w-4 h-4 ml-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
-                </div>
-              </div>
+              <ServiceCard
+                name="Auto Captions"
+                description="Automated subtitle generator in any language. Translate or generate for native voice."
+                imageSrc="/autosubai_icon.png"
+                imageAlt="Auto Captions"
+              />
             </Link>
           </div>
 

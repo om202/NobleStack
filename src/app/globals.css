@@ -36,16 +36,16 @@
 
 /* Happy Sky Blue — warm, clean, slightly red-tinted */
 @theme {
-  --color-nobleblue-50: #f2f7ff;
-  --color-nobleblue-100: #e4efff;
-  --color-nobleblue-200: #c9ddff;
-  --color-nobleblue-300: #9fc0ff;
-  --color-nobleblue-400: #6fa0f7;
-  --color-nobleblue-500: #4f87ea;
-  --color-nobleblue-600: #3f6fd1;
-  --color-nobleblue-700: #3258aa;
-  --color-nobleblue-800: #26417d;
-  --color-nobleblue-900: #1a2a52;
+  --color-nobleblue-50: #e0f1ff;
+  --color-nobleblue-100: #bfe0ff;
+  --color-nobleblue-200: #9acbfe;
+  --color-nobleblue-300: #7aaefc;
+  --color-nobleblue-400: #559ef8;
+  --color-nobleblue-500: #3a8cf4;
+  --color-nobleblue-600: #2578e2;
+  --color-nobleblue-700: #1c68c0;
+  --color-nobleblue-800: #1a5480;
+  --color-nobleblue-900: #1a3f63;
 
   /* Font family - Tex Gyre Heros only */
   --font-sans: 'Tex Gyre Heros';
@@ -62,8 +62,7 @@
   --bg-subtle: rgba(255, 255, 255, 0.05);
   --bg-subtle-hover: rgba(255, 255, 255, 0.1);
   --text-main: #ffffff;
-  --text-muted: #9CA3AF;
-  /* gray-400 */
+  --text-muted: #D1D5DB;
   --border-theme: rgba(255, 255, 255, 0.1);
   --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
 }

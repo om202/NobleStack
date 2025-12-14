@@ -13,7 +13,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-card-theme/60 backdrop-blur-2xl border-t border-theme backdrop-saturate-150">
+    <footer className="bg-gray-900 backdrop-blur-2xl border-t border-theme backdrop-saturate-150">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
         {/* Main Content */}
         {/* Main Content */}
@@ -56,7 +56,7 @@ export default function Footer() {
                 href="https://calendar.app.google/mWmd6v421Pk66LQ26"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-subtle-theme hover:bg-subtle-hover text-nobleblue-400 font-semibold rounded-lg transition-colors duration-200 text-base border border-theme"
+                className="flex items-center gap-2 px-6 py-3 bg-subtle-theme hover:bg-subtle-hover text-nobleblue-300 font-semibold rounded-lg transition-colors duration-200 text-base border border-theme"
               >
                 <Phone className="w-5 h-5" />
                 Book a Call

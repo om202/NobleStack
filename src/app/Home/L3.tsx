@@ -165,7 +165,6 @@ export default function AIServicesSection() {
         <TechStackCarousel
           technologies={aiTechStack}
           title="Cutting-Edge AI Technologies We Master"
-          autoScrollInterval={2000}
         />
 
         {/* AI Services Grid */}
@@ -179,13 +178,6 @@ export default function AIServicesSection() {
             />
           ))}
         </div>
-
-        {/* Why Our AI Solutions Dominate - Animated Carousel */}
-        <AnimatedFeatureCarousel
-          features={aiFeatures}
-          title="Why Our AI Solutions Dominate the Competition"
-          autoScrollInterval={4500}
-        />
       </div>
     </section>
   );
