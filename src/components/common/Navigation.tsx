@@ -82,13 +82,13 @@ export default function Navigation() {
     <>
       {/* Mobile Toggle Button - Fixed top bar for mobile */}
       <div
-        className={`md:hidden fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-2xl border-b border-gray-300/50 backdrop-saturate-150 transition-transform duration-300 ${isSidebarOpen ? "-translate-y-full" : "translate-y-0"
+        className={`md:hidden fixed top-0 left-0 right-0 z-50 bg-card-theme/60 backdrop-blur-2xl border-b border-theme backdrop-saturate-150 transition-transform duration-300 ${isSidebarOpen ? "-translate-y-full" : "translate-y-0"
           }`}
       >
         <div className="flex items-center h-12 px-4">
           <button
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-            className="inline-flex items-center justify-center p-1.5 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100/50 transition-colors duration-200"
+            className="inline-flex items-center justify-center p-1.5 rounded-md text-muted-theme hover:text-nobleblue-500 hover:bg-subtle-theme transition-colors duration-200"
           >
             {isSidebarOpen ? (
               <X className="w-6 h-6" />
@@ -101,14 +101,14 @@ export default function Navigation() {
 
       {/* Sidebar Navigation */}
       <div
-        className={`fixed left-0 top-0 h-full z-40 bg-white/95 backdrop-blur-xl border-r border-gray-300/50 backdrop-saturate-150 transition-transform duration-200 ease-in-out ${sidebarWidth} ${isSidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+        className={`fixed left-0 top-0 h-full z-40 bg-card-theme/95 backdrop-blur-xl border-r border-theme backdrop-saturate-150 transition-transform duration-200 ease-in-out ${sidebarWidth} ${isSidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
           }`}
       >
 
 
         {/* Logo Section */}
         <div
-          className={`flex items-center gap-3 border-b border-gray-200/50 ml-4 md:ml-0 relative ${isCollapsed ? "md:justify-center md:p-3" : "p-6"
+          className={`flex items-center gap-3 border-b border-theme ml-4 md:ml-0 relative ${isCollapsed ? "md:justify-center md:p-3" : "p-6"
             }`}
         >
           <Image
@@ -124,10 +124,10 @@ export default function Navigation() {
             className={`flex flex-col justify-center ${isCollapsed ? "md:hidden" : ""
               }`}
           >
-            <span className="text-lg font-medium text-gray-700 leading-none">
+            <span className="text-lg font-medium text-main-theme leading-none">
               Noble
             </span>
-            <span className="text-lg font-medium text-gray-700 leading-none">
+            <span className="text-lg font-medium text-main-theme leading-none">
               Stack
             </span>
           </div>
@@ -135,7 +135,7 @@ export default function Navigation() {
           {/* Collapse Toggle on Border */}
           <button
             onClick={() => setIsCollapsed(!isCollapsed)}
-            className="hidden md:flex absolute -right-4 -bottom-4 w-8 h-8 bg-white/80 border border-gray-200/60 rounded-full items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-white/90 transition-all duration-200 z-50"
+            className="hidden md:flex absolute -right-4 -bottom-4 w-8 h-8 bg-card-theme border border-theme rounded-full items-center justify-center text-muted-theme hover:text-main-theme hover:bg-subtle-theme transition-all duration-200 z-50"
           >
             {isCollapsed ? (
               <PanelLeftOpen className="w-4 h-4" />
@@ -157,12 +157,12 @@ export default function Navigation() {
                 href={item.href}
                 className={`group flex items-center gap-3 text-sm font-medium transition-colors duration-150 ${isCollapsed
                   ? `md:flex-col md:justify-center md:gap-1 md:px-2 md:py-3 md:rounded-lg md:w-full ${isActive
-                    ? "md:bg-blue-100/70 md:text-blue-700 px-4 py-3 rounded-xl bg-blue-100/70 text-blue-700"
-                    : "md:text-gray-600 md:hover:text-blue-600 md:hover:bg-blue-50/80 px-4 py-3 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-gray-100/50"
+                    ? "md:bg-nobleblue-500/20 md:text-nobleblue-400 px-4 py-3 rounded-xl bg-nobleblue-500/20 text-nobleblue-400"
+                    : "md:text-muted-theme md:hover:text-nobleblue-400 md:hover:bg-subtle-theme px-4 py-3 rounded-xl text-muted-theme hover:text-nobleblue-400 hover:bg-subtle-theme"
                   }`
                   : `px-4 py-3 rounded-xl ${isActive
-                    ? "bg-blue-100/70 text-blue-700"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-100/50"
+                    ? "bg-nobleblue-500/20 text-nobleblue-400"
+                    : "text-muted-theme hover:text-nobleblue-400 hover:bg-subtle-theme"
                   }`
                   }`}
                 onClick={() => setIsSidebarOpen(false)}
@@ -185,7 +185,7 @@ export default function Navigation() {
         >
           <a
             href="tel:+9779876543210"
-            className={`w-full flex items-center justify-center gap-2 px-4 py-3 bg-blue-100/80 text-blue-700 rounded-xl hover:bg-blue-200/80 transition-colors duration-200 font-semibold text-sm border border-blue-200 ${isCollapsed ? "md:flex-col md:gap-1 md:py-2 md:px-2" : ""}`}
+            className={`w-full flex items-center justify-center gap-2 px-4 py-3 bg-subtle-theme text-nobleblue-400 rounded-xl hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme ${isCollapsed ? "md:flex-col md:gap-1 md:py-2 md:px-2" : ""}`}
           >
             <Phone className="w-4 h-4" />
             <span className={`${isCollapsed ? "md:text-[10px] md:leading-none md:text-center" : ""}`}>

@@ -178,16 +178,16 @@ export default function FAQSection() {
   const currentFaqs = faqCategories[activeCategory as keyof typeof faqCategories];
 
   return (
-    <section id="faq" className="py-12 px-4 bg-gray-50">
+    <section id="faq" className="py-12 px-4 bg-noble-dark">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-main-theme">
             <span className="text-gradient-nobleblue">
               Questions & Answers
             </span>
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-theme max-w-3xl mx-auto">
             Comprehensive technical documentation and answers to help you understand our capabilities,
             methodologies, and how we can solve your specific challenges.
           </p>
@@ -195,7 +195,7 @@ export default function FAQSection() {
 
         {/* Category Selection */}
         <div className="flex justify-center mb-12">
-          <div className="bg-white rounded-xl p-1.5 shadow-sm border border-gray-200 inline-flex gap-1">
+          <div className="bg-card-theme rounded-xl p-1.5 shadow-sm border border-theme inline-flex gap-1">
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -206,7 +206,7 @@ export default function FAQSection() {
                 }}
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 ${activeCategory === category.id
                   ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                  : 'text-muted-theme hover:text-main-theme hover:bg-subtle-theme'
                   }`}
               >
                 <category.icon className="w-4 h-4" />
@@ -236,11 +236,11 @@ export default function FAQSection() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-          <h3 className="text-xl font-bold text-gray-900 mb-4">
+        <div className="text-center bg-card-theme rounded-2xl p-8 border border-theme shadow-sm">
+          <h3 className="text-xl font-bold text-main-theme mb-4">
             Have a specific question?
           </h3>
-          <p className="text-base text-gray-600 mb-6 max-w-2xl mx-auto">
+          <p className="text-base text-muted-theme mb-6 max-w-2xl mx-auto">
             Our team is ready to discuss your unique requirements and provide
             detailed solutions tailored to your project needs.
           </p>
