@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
+import DeviceTracker from "../components/common/DeviceTracker";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -185,6 +186,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <DeviceTracker />
         <div className="min-h-screen">
           <Navigation />
           <div className="pt-12 md:pt-0" id="main-content">

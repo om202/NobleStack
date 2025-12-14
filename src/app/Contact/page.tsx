@@ -16,6 +16,7 @@ import CTAButton from "../../components/CTAButton";
 import ServiceCard from "../../components/ServiceCard";
 import { db } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { getDeviceId } from "@/lib/device";
 
 interface ContactFormData {
   name: string;
@@ -57,6 +58,7 @@ export default function Contact() {
       await addDoc(collection(db, "get_in_touch"), {
         ...formData,
         submittedAt: serverTimestamp(),
+        deviceId: getDeviceId(),
       });
 
       setSubmitStatus("success");

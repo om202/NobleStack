@@ -6,6 +6,7 @@ import CTAButton from "../../components/CTAButton";
 import { db, storage } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { ref, uploadBytes } from "firebase/storage";
+import { getDeviceId } from "@/lib/device";
 
 interface FormData {
   name: string;
@@ -85,6 +86,7 @@ export default function Career() {
         message: formData.message,
         resumePath: resumeUrl, // Storing path strictly
         submittedAt: serverTimestamp(),
+        deviceId: getDeviceId(),
       });
 
       setSubmitStatus("success");
