@@ -77,9 +77,9 @@ export default function HeroSection() {
                   </div>
                 </div>
 
-                <h1 className="text-[36px] md:text-[49px] lg:text-[55px] font-black mb-6 leading-tight">
+                <h1 className="text-[36px] md:text-[49px] font-black mb-6 leading-tight">
                   <div className="">Your Vision, Powered by </div>
-                  <span className="text-yellow-200">AI</span> & <span className="text-yellow-200">Modern Tech</span>
+                  <span>AI & Modern Tech</span>
                 </h1>
 
                 <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-8 max-w-3xl mx-auto">
