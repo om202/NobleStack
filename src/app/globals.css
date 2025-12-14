@@ -1,19 +1,35 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* Arimo Font - Local Files */
+/* Tex Gyre Heros Font - Local Files */
 @font-face {
-  font-family: 'Arimo';
-  src: url('/Arimo/Arimo-VariableFont_wght.ttf') format('truetype');
-  font-weight: 400 700;
+  font-family: 'Tex Gyre Heros';
+  src: url('/fonts/tex/texgyreheros-regular.otf') format('opentype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Arimo';
-  src: url('/Arimo/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
-  font-weight: 400 700;
+  font-family: 'Tex Gyre Heros';
+  src: url('/fonts/tex/texgyreheros-italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tex Gyre Heros';
+  src: url('/fonts/tex/texgyreheros-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tex Gyre Heros';
+  src: url('/fonts/tex/texgyreheros-bolditalic.otf') format('opentype');
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
@@ -31,8 +47,8 @@
   --color-nobleblue-800: #26417d;
   --color-nobleblue-900: #1a2a52;
 
-  /* Font family - Arimo only */
-  --font-sans: 'Arimo';
+  /* Font family - Tex Gyre Heros only */
+  --font-sans: 'Tex Gyre Heros';
 
   /* Gradient utilities */
   --gradient-nobleblue-up: linear-gradient(to right, var(--color-nobleblue-500), var(--color-nobleblue-600));
