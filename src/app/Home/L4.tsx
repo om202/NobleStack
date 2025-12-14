@@ -236,7 +236,7 @@ export default function FAQSection() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center bg-card-theme rounded-2xl p-8 border border-theme shadow-sm">
+        <div className="text-center bg-gray-900 rounded-2xl p-8 border border-theme shadow-sm">
           <h3 className="text-xl font-bold text-main-theme mb-4">
             Have a specific question?
           </h3>

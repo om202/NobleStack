@@ -30,7 +30,7 @@ export default function CTAButton({
     const variantClasses = {
         primary: "gradient-nobleblue-up text-white",
         secondary:
-            "bg-white text-gray-800 border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 shadow-sm hover:shadow-md",
+            "bg-page text-gray-800 border-1 border-gray-700 bg-gray-800 text-white shadow-sm",
     };
 
     const disabledClasses = "opacity-50 cursor-not-allowed pointer-events-none hover:transform-none";

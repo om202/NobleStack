@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 interface TechItem {
   name: string;
@@ -10,105 +10,60 @@ interface TechItem {
 
 interface TechStackCarouselProps {
   technologies: TechItem[];
-  title: string;
-  autoScrollInterval?: number;
+  title?: string;
 }
 
 export default function TechStackCarousel({
   technologies,
   title,
-  autoScrollInterval = 2000,
 }: TechStackCarouselProps) {
-  const [currentTechIndex, setCurrentTechIndex] = useState(0);
-
-  // Auto-scroll through tech stack
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTechIndex((prev) => (prev + 1) % technologies.length);
-    }, autoScrollInterval);
-
-    return () => clearInterval(interval);
-  }, [technologies.length, autoScrollInterval]);
+  // Triple the array for seamless infinite scroll
+  const infiniteTechnologies = [...technologies, ...technologies, ...technologies];
 
   return (
     <div className="mb-16">
-      <div className="relative bg-card-theme rounded-2xl p-4 sm:p-6 border border-theme min-h-[120px] sm:min-h-[140px] flex flex-col justify-center overflow-hidden">
-        {/* Title */}
-        <h3 className="text-base sm:text-lg md:text-xl font-bold text-center text-main-theme mb-4 sm:mb-6">
+      {title && (
+        <h3 className="text-base sm:text-lg md:text-xl font-bold text-center text-main-theme mb-6">
           {title}
         </h3>
+      )}
 
-        {/* Currently Featured Technology */}
-        <div className="text-center mb-4 sm:mb-6">
-          <div
-            key={currentTechIndex}
-            className="flex flex-col items-center transition-opacity duration-500 ease-in-out"
-          >
-            <div className="w-24 h-24 sm:w-28 sm:h-28 bg-subtle-theme rounded-2xl flex items-center justify-center mb-4 border border-theme">
-              {React.createElement(technologies[currentTechIndex].icon, {
-                style: { color: technologies[currentTechIndex].color },
-                className: "w-16 h-16 sm:w-20 sm:h-20"
-              })}
+      <div className="relative overflow-hidden bg-theme-bg rounded-2xl py-6">
+        <style jsx>{`
+          @keyframes scroll-left {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-33.333%);
+            }
+          }
+          .scroll-container {
+            animation: scroll-left 20s linear infinite;
+          }
+          .scroll-container:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+
+        <div className="scroll-container flex gap-8 px-4">
+          {infiniteTechnologies.map((tech, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 flex flex-col items-center justify-center gap-3 transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-110"
+              style={{ minWidth: "140px" }}
+            >
+              <div className="bg-gray-800 rounded-xl p-3 flex items-center justify-center border border-theme">
+                {React.createElement(tech.icon, {
+                  style: { color: tech.color },
+                  className: "w-12 h-12 sm:w-14 sm:h-14"
+                })}
+              </div>
+              <span className="text-sm sm:text-base font-medium text-main-theme whitespace-nowrap">
+                {tech.name}
+              </span>
             </div>
-            <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-main-theme">
-              {technologies[currentTechIndex].name}
-            </h4>
-          </div>
-        </div>
-
-        {/* Tech Stack Preview Grid */}
-        <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
-          {(() => {
-            // Create a sliding window of 8 technologies around the current one
-            const windowSize = Math.min(8, technologies.length);
-            const startIndex = Math.max(
-              0,
-              currentTechIndex - Math.floor(windowSize / 2)
-            );
-            const endIndex = Math.min(
-              technologies.length,
-              startIndex + windowSize
-            );
-            const adjustedStartIndex = Math.max(0, endIndex - windowSize);
-
-            return technologies
-              .slice(adjustedStartIndex, endIndex)
-              .map((tech, index) => {
-                const actualIndex = adjustedStartIndex + index;
-                return (
-                  <div
-                    key={actualIndex}
-                    className={`text-center cursor-pointer transition-opacity duration-300 ease-in-out ${actualIndex === currentTechIndex
-                      ? "opacity-100"
-                      : "opacity-50 hover:opacity-75"
-                      }`}
-                    onClick={() => setCurrentTechIndex(actualIndex)}
-                  >
-                    <div className="bg-subtle-theme rounded-xl p-2 border border-theme">
-                      <div className="flex justify-center mb-1">
-                        <tech.icon
-                          style={{ color: tech.color }}
-                          className="w-5 h-5"
-                        />
-                      </div>
-                      <h5 className="text-muted-theme font-medium text-md-sm sm:text-base truncate">
-                        {tech.name}
-                      </h5>
-                    </div>
-                  </div>
-                );
-              });
-          })()}
-        </div>
-
-        {/* Full Width Progress Bar at Bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-subtle-theme rounded-b-2xl overflow-hidden">
-          <div
-            className="bg-gradient-to-r from-nobleblue-500 to-nobleblue-600 h-full transition-all duration-500 ease-in-out"
-            style={{
-              width: `${((currentTechIndex + 1) / technologies.length) * 100}%`,
-            }}
-          />
+          ))}
         </div>
       </div>
     </div>
