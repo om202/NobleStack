@@ -17,7 +17,7 @@ import {
   PanelLeftOpen,
   BookOpen,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 // Navigation items configuration
@@ -67,10 +67,16 @@ const navigationItems: NavItem[] = [
 
 export default function Navigation() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const pathname = usePathname();
 
   const sidebarWidth = isCollapsed ? "w-52 md:w-20" : "w-52";
+
+  useEffect(() => {
+    // Update the global CSS variable for main content margin
+    const width = isCollapsed ? "80px" : "208px";
+    document.documentElement.style.setProperty("--sidebar-width", width);
+  }, [isCollapsed]);
 
   return (
     <>
@@ -140,7 +146,7 @@ export default function Navigation() {
         </div>
 
         {/* Navigation Items */}
-        <div className="flex flex-col p-4 space-y-2">
+        <div className={`flex flex-col space-y-2 ${isCollapsed ? "p-2" : "p-4"}`}>
           {navigationItems.map((item) => {
             const Icon = item.icon;
             const isActive = pathname === item.href;
@@ -150,7 +156,7 @@ export default function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={`group flex items-center gap-3 text-sm font-medium transition-colors duration-150 ${isCollapsed
-                  ? `md:justify-center md:px-3 md:py-3 md:mx-1 md:rounded-lg ${isActive
+                  ? `md:flex-col md:justify-center md:gap-1 md:px-2 md:py-3 md:rounded-lg md:w-full ${isActive
                     ? "md:bg-blue-100/70 md:text-blue-700 px-4 py-3 rounded-xl bg-blue-100/70 text-blue-700"
                     : "md:text-gray-600 md:hover:text-blue-600 md:hover:bg-blue-50/80 px-4 py-3 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-gray-100/50"
                   }`
@@ -165,7 +171,7 @@ export default function Navigation() {
                 <Icon
                   className="flex-shrink-0 w-5 h-5"
                 />
-                <span className={`${isCollapsed ? "md:hidden" : ""}`}>
+                <span className={`${isCollapsed ? "md:text-[10px] md:leading-none md:text-center" : ""}`}>
                   {item.label}
                 </span>
               </Link>
@@ -173,17 +179,19 @@ export default function Navigation() {
           })}
         </div>
 
-        {/* Call Button at Bottom */}
         <div
           className={`absolute bottom-6 left-4 right-4 ${isCollapsed ? "md:left-2 md:right-2" : ""
             }`}
         >
-          <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-blue-100/80 text-blue-700 rounded-xl hover:bg-blue-200/80 transition-colors duration-200 font-semibold text-sm border border-blue-200">
+          <a
+            href="tel:+9779876543210"
+            className={`w-full flex items-center justify-center gap-2 px-4 py-3 bg-blue-100/80 text-blue-700 rounded-xl hover:bg-blue-200/80 transition-colors duration-200 font-semibold text-sm border border-blue-200 ${isCollapsed ? "md:flex-col md:gap-1 md:py-2 md:px-2" : ""}`}
+          >
             <Phone className="w-4 h-4" />
-            <span className={`${isCollapsed ? "md:hidden" : ""}`}>
+            <span className={`${isCollapsed ? "md:text-[10px] md:leading-none md:text-center" : ""}`}>
               Call Now
             </span>
-          </button>
+          </a>
         </div>
       </div>
 
@@ -195,17 +203,7 @@ export default function Navigation() {
         />
       )}
 
-      {/* Update body margin for main content */}
-      <style jsx global>{`
-        #main-content {
-          margin-left: ${isCollapsed ? "80px" : "208px"};
-        }
-        @media (max-width: 768px) {
-          #main-content {
-            margin-left: 0;
-          }
-        }
-      `}</style>
     </>
   );
 }
+

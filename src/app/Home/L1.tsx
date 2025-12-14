@@ -76,13 +76,13 @@ export default function HeroSection() {
                   </div>
                 </div>
 
-                <h1 className="text-[32.4px] md:text-[43.2px] lg:text-[54px] font-bold mb-6 leading-tight text-gray-900">
-                  Where <span className="text-nobleblue-600">AI</span> Meets the{" "}
-                  <span className="text-nobleblue-600">Modern Web</span>
+                <h1 className="text-[29px] md:text-[39px] lg:text-[48px] font-bold mb-6 leading-tight text-gray-900">
+                  Your Vision, Powered by <span className="text-nobleblue-600">AI</span> and{" "}
+                  <span className="text-nobleblue-600">Modern Tech</span>
                 </h1>
 
                 <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-                  At Noble Stack, we build intelligent digital products using AI, LLMs, and modern web technologies to turn ideas into scalable, high-impact solutions.
+                  Noble Stack is an <strong>AI</strong> first<strong> IT company</strong> that helps you turn your ideas into intelligent, scalable digital products using AI and modern web technologies, delivering solutions that drive real business impact.
                 </p>
 
                 {/* Call to Action Buttons */}
@@ -184,7 +184,7 @@ export default function HeroSection() {
             Our Products
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* Vibe AI */}
             <a
               href="https://apps.apple.com/us/app/ai-photo-editor-vibe/id6752835683"
@@ -193,17 +193,17 @@ export default function HeroSection() {
               className="block h-full"
             >
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group cursor-pointer h-full flex flex-col">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mb-6">
                   <Image
                     src="/vibe.png"
                     alt="Vibe AI"
-                    width={48}
-                    height={48}
+                    width={80}
+                    height={80}
                     className="rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-gray-900 font-semibold mb-2">Vibe AI Photo Editor</h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                <h3 className="text-2xl text-gray-900 font-bold mb-3">Vibe AI Photo Editor</h3>
+                <p className="text-base text-gray-600 leading-relaxed mb-4">
                   Professional photo editing made simple. Remove backgrounds and enhance images with AI.
                 </p>
                 <div className="mt-auto flex items-center text-sm font-medium text-nobleblue-600 group-hover:text-nobleblue-700">
@@ -221,17 +221,17 @@ export default function HeroSection() {
               className="block h-full"
             >
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group cursor-pointer h-full flex flex-col">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mb-6">
                   <Image
                     src="/create_profile_pic_icon.png"
                     alt="Create Profile Pic"
-                    width={48}
-                    height={48}
+                    width={80}
+                    height={80}
                     className="rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-gray-900 font-semibold mb-2">Create Profile Pic</h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                <h3 className="text-2xl text-gray-900 font-bold mb-3">Create Profile Pic</h3>
+                <p className="text-base text-gray-600 leading-relaxed mb-4">
                   Create stunning profile pictures for any platform. Powered by Google&apos;s Nano Banana AI.
                 </p>
                 <div className="mt-auto flex items-center text-sm font-medium text-nobleblue-600 group-hover:text-nobleblue-700">
@@ -249,17 +249,17 @@ export default function HeroSection() {
               className="block h-full"
             >
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group cursor-pointer h-full flex flex-col">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mb-6">
                   <Image
                     src="/loopn_logo.png"
                     alt="Loopn"
-                    width={48}
-                    height={48}
+                    width={80}
+                    height={80}
                     className="shadow-sm group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-gray-900 font-semibold mb-2">Loopn</h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                <h3 className="text-2xl text-gray-900 font-bold mb-3">Loopn</h3>
+                <p className="text-base text-gray-600 leading-relaxed mb-4">
                   Professional Networking & Career Matching using AI. Resume matching for career growth.
                 </p>
                 <div className="mt-auto flex items-center text-sm font-medium text-nobleblue-600 group-hover:text-nobleblue-700">
@@ -272,17 +272,17 @@ export default function HeroSection() {
             {/* Auto Captions */}
             <Link href="/Products" className="block h-full">
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group cursor-pointer h-full flex flex-col">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mb-6">
                   <Image
                     src="/autosubai_icon.png"
                     alt="Auto Captions"
-                    width={48}
-                    height={48}
+                    width={80}
+                    height={80}
                     className="rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-gray-900 font-semibold mb-2">Auto Captions</h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                <h3 className="text-2xl text-gray-900 font-bold mb-3">Auto Captions</h3>
+                <p className="text-base text-gray-600 leading-relaxed mb-4">
                   Automated subtitle generator in any language. Translate or generate for native voice.
                 </p>
                 <div className="mt-auto flex items-center text-sm font-medium text-gray-500">
@@ -300,6 +300,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
