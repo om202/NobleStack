@@ -67,9 +67,10 @@ export default function Career() {
         const storageRef = ref(storage, `resumes/${fileName}`);
 
         // Upload file
-        const snapshot = await uploadBytes(storageRef, formData.resume);
-        // Get download URL
-        resumeUrl = await getDownloadURL(snapshot.ref);
+        await uploadBytes(storageRef, formData.resume);
+        // Note: We cannot getDownloadURL() because we disabled public reads for security.
+        // We will store the path instead, so you can find it in the Firebase Console.
+        resumeUrl = storageRef.fullPath;
       } else {
         throw new Error("Resume is required.");
       }
@@ -82,7 +83,7 @@ export default function Career() {
         position: formData.position,
         experience: formData.experience,
         message: formData.message,
-        resumeUrl: resumeUrl,
+        resumePath: resumeUrl, // Storing path strictly
         submittedAt: serverTimestamp(),
       });
 
