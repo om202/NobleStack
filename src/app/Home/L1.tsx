@@ -82,9 +82,8 @@ export default function HeroSection() {
 
                 </div>
 
-                <h1 className="text-[36px] md:text-[49px] font-black mb-6 leading-tight">
-                  <div className="">Your Vision, Powered by </div>
-                  <span>AI & Modern Tech</span>
+                <h1 className="text-[36px] md:text-[49px] font-black mb-6 leading-tight max-w-xl mx-auto">
+                  Your Vision, Powered by AI & Modern Tech
                 </h1>
 
                 <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-8 max-w-3xl mx-auto">
@@ -92,7 +91,7 @@ export default function HeroSection() {
                 </p>
 
                 {/* Call to Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
                   <CTAButton variant="primary" icon={ArrowRight} className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
                     Schedule A Call
                   </CTAButton>

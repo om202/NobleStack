@@ -147,7 +147,7 @@ export default function AIServicesSection() {
   return (
     <section
       id="ai-services"
-      className="py-12 px-4 bg-noble-dark"
+      className="pt-2 pb-12 px-4 bg-noble-dark"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
@@ -168,7 +168,7 @@ export default function AIServicesSection() {
         />
 
         {/* AI Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {aiServices.map((service, index) => (
             <ServiceCard
               key={index}
