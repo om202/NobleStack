@@ -1,6 +1,23 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Arimo Font - Local Files */
+@font-face {
+  font-family: 'Arimo';
+  src: url('/Arimo/Arimo-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arimo';
+  src: url('/Arimo/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* Happy Sky Blue — warm, clean, slightly red-tinted */
 @theme {
   --color-nobleblue-50: #f2f7ff;
@@ -13,6 +30,9 @@
   --color-nobleblue-700: #3258aa;
   --color-nobleblue-800: #26417d;
   --color-nobleblue-900: #1a2a52;
+
+  /* Font family - Arimo only */
+  --font-sans: 'Arimo';
 
   /* Gradient utilities */
   --gradient-nobleblue-up: linear-gradient(to right, var(--color-nobleblue-500), var(--color-nobleblue-600));

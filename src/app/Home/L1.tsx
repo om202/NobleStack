@@ -66,6 +66,7 @@ export default function HeroSection() {
                     quality={100}
                     priority
                   />
+
                   <div className="flex flex-col justify-center">
                     <span className="text-[24px] sm:text-[32px] md:text-[32px] font-medium text-white leading-none mb-1">
                       Noble
@@ -76,13 +77,13 @@ export default function HeroSection() {
                   </div>
                 </div>
 
-                <h1 className="text-[29px] md:text-[39px] lg:text-[48px] font-bold mb-6 leading-tight text-white">
-                  Your Vision, Powered by <span className="text-nobleblue-400">AI</span> and{" "}
-                  <span className="text-nobleblue-400">Modern Tech</span>
+                <h1 className="text-[36px] md:text-[49px] lg:text-[60px] font-bold mb-6 leading-tight">
+                  <div className="">Your Vision, Powered by </div>
+                  <span className="text-yellow-200">AI</span> & <span className="text-yellow-200">Modern Tech</span>
                 </h1>
 
-                <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-                  Noble Stack is an <strong>AI</strong> first<strong> IT company</strong> that helps you turn your ideas into intelligent, scalable digital products using AI and modern web technologies, delivering solutions that drive real business impact.
+                <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-8 max-w-3xl mx-auto">
+                  Noble Stack is an <strong>AI</strong> first<strong> IT company</strong> that helps you turn your ideas into intelligent, scalable digital products using AI that drive real business impact.
                 </p>
 
                 {/* Call to Action Buttons */}

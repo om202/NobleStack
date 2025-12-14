@@ -1,19 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
 import DeviceTracker from "../components/common/DeviceTracker";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Noble Stack - AI & Web Development Company in Kathmandu, Nepal | South Asia",
@@ -184,7 +173,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="font-sans antialiased"
       >
         <DeviceTracker />
         <div className="min-h-screen">
