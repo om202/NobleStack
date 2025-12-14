@@ -388,20 +388,3 @@ a {
   line-height: 1.6;
   /* Balanced for interactive elements */
 }
-
-/* Layout transition for sidebar */
-:root {
-  --sidebar-width: 80px;
-  /* Default collapsed width */
-}
-
-#main-content {
-  margin-left: var(--sidebar-width);
-  transition: margin-left 0.2s ease-in-out;
-}
-
-@media (max-width: 768px) {
-  #main-content {
-    margin-left: 0 !important;
-  }
-}
