@@ -23,22 +23,22 @@ export default function HeroSection() {
   const expertiseAreas = [
     {
       title: "Artificial Intelligence",
-      description: "Cutting-edge AI solutions leveraging GPT, Claude, and custom machine learning models to solve complex business challenges and automate decision-making processes",
+      description: "Advanced AI solutions using GPT, Claude, and custom models to automate decisions and solve complex business problems.",
       icon: Brain,
     },
     {
       title: "Modern Web Development",
-      description: "Lightning-fast, responsive web applications built with Next.js, React, and modern frameworks, optimized for performance, SEO, and exceptional user experiences",
+      description: "High-performance web apps built with Next.js and React, optimized for speed, SEO, and user experience.",
       icon: Code,
     },
     {
       title: "AI Agents & Automation",
-      description: "Intelligent automation systems that work 24/7, from customer service chatbots to complex workflow orchestration, reducing manual work and increasing efficiency",
+      description: "24/7 intelligent agents that automate workflows, customer support, and business operations.",
       icon: Bot,
     },
     {
-      title: "Custom New Software",
-      description: "End-to-end custom software development tailored to your unique business needs, from initial concept and design through deployment and ongoing support",
+      title: "Custom Software",
+      description: "End-to-end custom software built to fit your business, from concept to deployment and support.",
       icon: Wrench,
     },
   ];
@@ -72,13 +72,14 @@ export default function HeroSection() {
                   />
 
                   <div className="flex flex-col justify-center">
-                    <span className="text-[24px] sm:text-[32px] md:text-[32px] font-medium text-white leading-none mb-1">
+                    <span className="text-[20px] sm:text-[28px] md:text-[28px] font-medium text-white leading-none mb-1">
                       Noble
                     </span>
-                    <span className="text-[24px] sm:text-[32px] md:text-[32px] font-medium text-white leading-none">
+                    <span className="text-[20px] sm:text-[28px] md:text-[28px] font-medium text-white leading-none">
                       Stack
                     </span>
                   </div>
+
                 </div>
 
                 <h1 className="text-[36px] md:text-[49px] font-black mb-6 leading-tight">
@@ -98,27 +99,6 @@ export default function HeroSection() {
                   <CTAButton variant="secondary" href="/Products" className="w-full sm:w-auto">
                     View Our Products
                   </CTAButton>
-                </div>
-              </div>
-
-              {/* Value Propositions */}
-              <div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <ServiceCard
-                    name="Idea to Deployed Software"
-                    description="Complete end-to-end development from concept to production"
-                    icon={CheckCircle}
-                  />
-                  <ServiceCard
-                    name="AI Powered Solutions"
-                    description="Intelligent automation and AI integration in every project"
-                    icon={Bot}
-                  />
-                  <ServiceCard
-                    name="Modern Tech Stack"
-                    description="Latest technologies and best practices for optimal performance"
-                    icon={Zap}
-                  />
                 </div>
               </div>
 
@@ -156,35 +136,10 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Expertise Section */}
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
-          <h2 className="text-xl font-bold text-main-theme mb-8 text-center">
-            Our Expertise
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {expertiseAreas.map((area, index) => (
-              <ServiceCard
-                key={index}
-                name={area.title}
-                description={area.description}
-                icon={area.icon}
-              />
-            ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <CTAButton variant="secondary" href="/Services" icon={ArrowRight}>
-              View All Services
-            </CTAButton>
-          </div>
-        </div>
-      </div>
 
       {/* Products Section */}
-      <div className="max-w-6xl mx-auto px-4 pb-12">
-        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
           <h2 className="text-xl font-bold text-main-theme mb-8 text-center">
             Our Products
           </h2>
@@ -249,6 +204,32 @@ export default function HeroSection() {
           <div className="mt-12 text-center">
             <CTAButton variant="secondary" href="/Products" icon={ArrowRight}>
               View All Products
+            </CTAButton>
+          </div>
+        </div>
+      </div>
+
+      {/* Expertise Section */}
+      <div className="max-w-6xl mx-auto px-4 pb-12">
+        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+          <h2 className="text-xl font-bold text-main-theme mb-8 text-center">
+            Our Expertise
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {expertiseAreas.map((area, index) => (
+              <ServiceCard
+                key={index}
+                name={area.title}
+                description={area.description}
+                icon={area.icon}
+              />
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <CTAButton variant="secondary" href="/Services" icon={ArrowRight}>
+              View All Services
             </CTAButton>
           </div>
         </div>

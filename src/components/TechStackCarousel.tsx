@@ -23,12 +23,12 @@ export default function TechStackCarousel({
   return (
     <div className="mb-16">
       {title && (
-        <h3 className="text-base sm:text-lg md:text-xl font-bold text-center text-main-theme mb-6">
+        <h3 className="text-base sm:text-lg md:text-xl font-bold text-center text-main-theme mb-4 sm:mb-6">
           {title}
         </h3>
       )}
 
-      <div className="relative overflow-hidden bg-theme-bg rounded-2xl py-6">
+      <div className="relative overflow-hidden bg-theme-bg rounded-2xl py-4 sm:py-6">
         <style jsx>{`
           @keyframes scroll-left {
             0% {
@@ -46,20 +46,20 @@ export default function TechStackCarousel({
           }
         `}</style>
 
-        <div className="scroll-container flex gap-8 px-4">
+        <div className="scroll-container flex gap-4 sm:gap-8 px-2 sm:px-4">
           {infiniteTechnologies.map((tech, index) => (
             <div
               key={index}
-              className="flex-shrink-0 flex flex-col items-center justify-center gap-3 transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-110"
-              style={{ minWidth: "140px" }}
+              className="flex-shrink-0 flex flex-col items-center justify-center gap-2 sm:gap-3 transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-110"
+              style={{ minWidth: "100px", maxWidth: "140px" }}
             >
-              <div className="bg-gray-800 rounded-xl p-3 flex items-center justify-center border border-theme">
+              <div className="bg-gray-800 rounded-lg sm:rounded-xl p-2 sm:p-3 flex items-center justify-center border border-theme">
                 {React.createElement(tech.icon, {
                   style: { color: tech.color },
-                  className: "w-12 h-12 sm:w-14 sm:h-14"
+                  className: "w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14"
                 })}
               </div>
-              <span className="text-sm sm:text-base font-medium text-main-theme whitespace-nowrap">
+              <span className="text-xs sm:text-sm md:text-base font-medium text-main-theme whitespace-nowrap">
                 {tech.name}
               </span>
             </div>
