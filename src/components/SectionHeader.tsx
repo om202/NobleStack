@@ -25,7 +25,7 @@ export default function SectionHeader({
     className = "",
 }: SectionHeaderProps) {
     return (
-        <div className={`text-center mb-12 ${className}`}>
+        <div className={`text-center mb-8 ${className}`}>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-main-theme">
                 {title}
                 {highlightedText && (

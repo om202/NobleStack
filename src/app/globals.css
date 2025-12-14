@@ -135,30 +135,46 @@ body {
 /* Base gradient layers */
 .hero-gradient-bg::before {
   background:
-    /* Symmetric Gradient: Intermediate Visibility (Between Toned Down and Cloudy Dark), 40% Black Center */
+    /* Symmetric Gradient: Smoother transitions with extended dark center */
     linear-gradient(135deg,
       #7F7135 0%,
       /* Intermediate Yellow */
-      #7B4E1D 8%,
+      #7B4E1D 6%,
       /* Intermediate Sienna */
-      #662610 16%,
+      #662610 12%,
       /* Intermediate Pure Sienna */
-      #3C0B0A 24%,
+      #4A1810 18%,
+      /* Transitional darker sienna */
+      #3C0B0A 22%,
       /* Intermediate Reddish */
-      #0E1116 30%,
+      #251015 26%,
+      /* Transitional to dark */
+      #0E1116 32%,
       /* Cinematic Bluish Black Starts */
-      #0E1116 70%,
+      #0E1116 68%,
       /* Cinematic Bluish Black Ends */
-      #3C0B0A 76%,
+      #251015 74%,
+      /* Transitional to dark */
+      #3C0B0A 78%,
       /* Intermediate Reddish */
-      #662610 84%,
+      #4A1810 82%,
+      /* Transitional darker sienna */
+      #662610 88%,
       /* Intermediate Pure Sienna */
-      #7B4E1D 92%,
+      #7B4E1D 94%,
       /* Intermediate Sienna */
       #7F7135 100%
       /* Intermediate Yellow */
     );
   background-blend-mode: normal;
+}
+
+/* Grainy texture overlay */
+.hero-gradient-bg::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.25;
+  mix-blend-mode: overlay;
+  z-index: 1;
 }
 
 

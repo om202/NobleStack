@@ -178,7 +178,7 @@ export default function FAQSection() {
   const currentFaqs = faqCategories[activeCategory as keyof typeof faqCategories];
 
   return (
-    <section id="faq" className="py-12 px-4 bg-noble-dark">
+    <section id="faq" className="pt-2 pb-12 px-4 bg-noble-dark">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -222,7 +222,7 @@ export default function FAQSection() {
         </div>
 
         {/* FAQ Items with enhanced styling */}
-        <div className="space-y-4 mb-16" key={animationKey}>
+        <div className="space-y-4 mb-10" key={animationKey}>
           {currentFaqs.map((faq, index) => (
             <FAQItem
               key={`${activeCategory}-${index}`}
