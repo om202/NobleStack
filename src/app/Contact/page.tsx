@@ -7,15 +7,27 @@ import {
   MapPin,
   Clock,
   MessageSquare,
+  Loader2,
+  CheckCircle,
+  AlertCircle,
 } from "lucide-react";
 import { useState } from "react";
 import CTAButton from "../../components/CTAButton";
 import ServiceCard from "../../components/ServiceCard";
+import { db } from "@/lib/firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
-
+interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  company: string;
+  subject: string;
+  message: string;
+}
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
     phone: "",
@@ -24,6 +36,10 @@ export default function Contact() {
     message: ""
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
@@ -31,10 +47,35 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Contact form submitted:", formData);
-    // Handle form submission here
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+    setErrorMessage("");
+
+    try {
+      await addDoc(collection(db, "get_in_touch"), {
+        ...formData,
+        submittedAt: serverTimestamp(),
+      });
+
+      setSubmitStatus("success");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        subject: "",
+        message: ""
+      });
+    } catch (error: unknown) {
+      console.error("Error submitting contact form:", error);
+      setSubmitStatus("error");
+      const msg = error instanceof Error ? error.message : "Something went wrong. Please try again.";
+      setErrorMessage(msg);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -65,114 +106,150 @@ export default function Contact() {
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                <div>
-                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
-                    placeholder="Your full name"
-                    required
-                  />
+            {submitStatus === "success" ? (
+              <div className="text-center py-12">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-6">
+                  <CheckCircle className="w-8 h-8 text-green-600" />
                 </div>
-
-                <div>
-                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
-                    placeholder="your@email.com"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
-                    placeholder="+977 (XXX) XXX-XXXX"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
-                    Company/Organization
-                  </label>
-                  <input
-                    type="text"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
-                    placeholder="Your company name"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-md-sm font-semibold text-gray-700 mb-2">
-                  Subject *
-                </label>
-                <select
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
-                  required
-                >
-                  <option value="">Select a subject</option>
-                  <option value="general-inquiry">General Inquiry</option>
-                  <option value="project-quote">Project Quote</option>
-                  <option value="partnership">Partnership Opportunity</option>
-                  <option value="support">Technical Support</option>
-                  <option value="career">Career Opportunities</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-md-sm font-semibold text-gray-700 mb-2">
-                  Message *
-                </label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
-                  placeholder="Tell us about your project, requirements, or any questions you have. What excites you about working with Noble Stack?"
-                  required
-                ></textarea>
-              </div>
-
-              <div className="text-center">
-                <CTAButton type="submit" variant="primary" icon={Send} className="mx-auto">
-                  Send Message
-                </CTAButton>
-                <p className="text-md-sm text-gray-500 mt-4">
-                  We&apos;ll get back to you within 24 hours
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Message Sent!</h3>
+                <p className="text-gray-600 mb-8">
+                  Thank you for reaching out. We&apos;ve received your message and will be in touch shortly.
                 </p>
+                <CTAButton
+                  type="button"
+                  variant="primary"
+                  onClick={() => setSubmitStatus("idle")}
+                  className="mx-auto"
+                >
+                  Send Another Message
+                </CTAButton>
               </div>
-            </form>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 max-w-4xl mx-auto">
+                {submitStatus === "error" && (
+                  <div className="bg-red-50 border border-red-200 rounded-xl p-4 flex items-start gap-3 text-red-700">
+                    <AlertCircle className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold">Submission Failed</p>
+                      <p className="text-sm">{errorMessage}</p>
+                    </div>
+                  </div>
+                )}
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                  <div>
+                    <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                      Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                      placeholder="Your full name"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                      placeholder="+977 (XXX) XXX-XXXX"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                      Company/Organization
+                    </label>
+                    <input
+                      type="text"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                      placeholder="Your company name"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                    Subject *
+                  </label>
+                  <select
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                    required
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="general-inquiry">General Inquiry</option>
+                    <option value="project-quote">Project Quote</option>
+                    <option value="partnership">Partnership Opportunity</option>
+                    <option value="support">Technical Support</option>
+                    <option value="career">Career Opportunities</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                    Message *
+                  </label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    rows={5}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                    placeholder="Tell us about your project, requirements, or any questions you have. What excites you about working with Noble Stack?"
+                    required
+                  ></textarea>
+                </div>
+
+                <div className="text-center">
+                  <CTAButton
+                    type="submit"
+                    variant="primary"
+                    icon={isSubmitting ? Loader2 : Send}
+                    className="mx-auto"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Sending..." : "Send Message"}
+                  </CTAButton>
+                  <p className="text-md-sm text-gray-500 mt-4">
+                    We&apos;ll get back to you within 24 hours
+                  </p>
+                </div>
+              </form>
+            )}
           </div>
 
           {/* Contact Information Cards */}

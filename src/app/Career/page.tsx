@@ -5,7 +5,7 @@ import { useState } from "react";
 import CTAButton from "../../components/CTAButton";
 import { db, storage } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { ref, uploadBytes } from "firebase/storage";
 
 interface FormData {
   name: string;
