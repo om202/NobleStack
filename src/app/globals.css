@@ -19,6 +19,54 @@
   --gradient-nobleblue-down: linear-gradient(to right, var(--color-nobleblue-500), var(--color-nobleblue-400));
 }
 
+:root {
+  /* Default Dark Theme Variables */
+  --bg-page: #0E1116;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-subtle: rgba(255, 255, 255, 0.05);
+  --bg-subtle-hover: rgba(255, 255, 255, 0.1);
+  --text-main: #ffffff;
+  --text-muted: #9CA3AF;
+  /* gray-400 */
+  --border-theme: rgba(255, 255, 255, 0.1);
+  --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* Base body styles */
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  min-height: 100vh;
+  line-height: 1.7;
+}
+
+/* Deprecated utility, kept for compatibility but not needed for theming anymore */
+.bg-noble-dark {
+  background-color: var(--bg-page);
+}
+
+/* Theme Utilities */
+.bg-card-theme {
+  background-color: var(--bg-card);
+}
+
+.bg-subtle-theme {
+  background-color: var(--bg-subtle);
+}
+
+.text-main-theme {
+  color: var(--text-main);
+}
+
+.text-muted-theme {
+  color: var(--text-muted);
+}
+
+.border-theme {
+  border-color: var(--border-theme);
+}
+
+
 /* Utility classes */
 .gradient-nobleblue-up {
   background: var(--gradient-nobleblue-up);
@@ -52,82 +100,84 @@
 /* Base gradient layers */
 .hero-gradient-bg::before {
   background:
-    /* Base Background - Darker Light Gray Foundation */
-    linear-gradient(to bottom, rgb(243 244 246) 0%, rgb(243 244 246) 100%),
-    /* Light Blue/Cyan Layer - Much More Vibrant and Visible */
-    linear-gradient(to bottom, rgb(191 219 254 / 0.9) 0%, rgb(147 197 253 / 0.8) 40%, transparent 100%),
-    /* Top Right Blue Glow - Strong and Visible */
-    linear-gradient(135deg, rgb(147 197 253 / 0.85) 0%, rgb(191 219 254 / 0.6) 50%, transparent 100%),
-    /* Green/Teal Accent - Left Side */
-    linear-gradient(to bottom right, rgb(167 243 208 / 0.75) 0%, rgb(153 246 228 / 0.5) 50%, transparent 100%),
-    /* Bottom Glow - Vibrant Peach/Orange */
-    linear-gradient(to top, rgb(254 215 170 / 0.75) 0%, rgb(253 230 138 / 0.5) 50%, transparent 100%);
-  background-position:
-    0 0,
-    0 0,
-    100% 0,
-    0 0,
-    0 100%;
-  background-size:
-    100% 100%,
-    100% 70%,
-    60% 80%,
-    50% 70%,
-    100% 50%;
-  background-repeat: no-repeat;
+    /* Symmetric Gradient: Intermediate Visibility (Between Toned Down and Cloudy Dark), 40% Black Center */
+    linear-gradient(135deg,
+      #7F7135 0%,
+      /* Intermediate Yellow */
+      #7B4E1D 8%,
+      /* Intermediate Sienna */
+      #662610 16%,
+      /* Intermediate Pure Sienna */
+      #3C0B0A 24%,
+      /* Intermediate Reddish */
+      #0E1116 30%,
+      /* Cinematic Bluish Black Starts */
+      #0E1116 70%,
+      /* Cinematic Bluish Black Ends */
+      #3C0B0A 76%,
+      /* Intermediate Reddish */
+      #662610 84%,
+      /* Intermediate Pure Sienna */
+      #7B4E1D 92%,
+      /* Intermediate Sienna */
+      #7F7135 100%
+      /* Intermediate Yellow */
+    );
+  background-blend-mode: normal;
 }
 
-/* Grainy texture overlay */
-.hero-gradient-bg::after {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  mix-blend-mode: overlay;
-  opacity: 0.2;
-}
+
 
 /* Decorative blur elements - use with child divs */
 .hero-gradient-blur-blue {
   position: absolute;
-  top: 5rem;
-  right: 10%;
-  width: 500px;
-  height: 500px;
-  background: rgb(201 221 255 / 0.35);
+  bottom: -10%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: rgba(127, 113, 53, 0.15);
+  /* Intermediate Yellow tint */
   border-radius: 9999px;
-  filter: blur(96px);
+  filter: blur(100px);
 }
 
 .hero-gradient-blur-green {
+  /* Intermediate Yellow for top left */
   position: absolute;
-  top: 8rem;
-  left: 8%;
-  width: 450px;
-  height: 450px;
-  background: rgb(167 243 208 / 0.4);
+  top: -10%;
+  left: -5%;
+  width: 600px;
+  height: 600px;
+  background: rgba(127, 113, 53, 0.15);
+  /* Intermediate Yellow tint */
   border-radius: 9999px;
-  filter: blur(96px);
+  filter: blur(100px);
 }
 
 .hero-gradient-blur-orange {
+  /* Intermediate Sienna Accent */
   position: absolute;
-  bottom: 0;
-  left: 5%;
-  width: 600px;
-  height: 400px;
-  background: rgb(254 215 170 / 0.4);
+  top: 30%;
+  left: 20%;
+  width: 500px;
+  height: 500px;
+  background: rgba(123, 78, 29, 0.15);
+  /* Intermediate Sienna tint */
   border-radius: 9999px;
-  filter: blur(96px);
+  filter: blur(120px);
 }
 
 .hero-gradient-blur-amber {
+  /* Intermediate Reddish accent */
   position: absolute;
-  bottom: 5rem;
-  right: 15%;
+  bottom: 20%;
+  right: 20%;
   width: 400px;
   height: 400px;
-  background: rgb(254 215 170 / 0.35);
+  background: rgba(60, 11, 10, 0.2);
+  /* Intermediate Reddish tint */
   border-radius: 9999px;
-  filter: blur(96px);
+  filter: blur(100px);
 }
 
 
@@ -135,12 +185,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #ffffff;
-  min-height: 100vh;
-  line-height: 1.7;
-  /* Increased from default 1.5 for better readability */
-}
+/* Improved typography line heights for better readability */
 
 /* Improved typography line heights for better readability */
 h1,
@@ -196,10 +241,28 @@ a {
 }
 
 .glass-dark {
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(9, 14, 31, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.bg-noble-dark {
+  background-color: #0E1116;
+}
+
+.card-dark {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.text-noble-muted {
+  color: #9CA3AF;
+}
+
+.text-noble-light {
+  color: #F3F4F6;
 }
 
 /* App-like animations */
@@ -292,7 +355,8 @@ a {
 
 /* Layout transition for sidebar */
 :root {
-  --sidebar-width: 80px; /* Default collapsed width */
+  --sidebar-width: 80px;
+  /* Default collapsed width */
 }
 
 #main-content {

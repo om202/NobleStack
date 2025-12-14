@@ -18,26 +18,26 @@ export default function FAQItem({
     onToggle,
 }: FAQItemProps) {
     return (
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div className="bg-card-theme rounded-2xl shadow-sm border border-theme overflow-hidden">
             <button
                 onClick={onToggle}
                 className="w-full text-left px-6 py-6 flex items-center justify-between"
             >
                 <div className="flex-1">
-                    <span className="text-md-sm sm:text-lg font-semibold text-gray-900">
+                    <span className="text-md-sm sm:text-lg font-semibold text-main-theme">
                         {question}
                     </span>
                 </div>
                 <ChevronDown
-                    className={`w-5 h-5 text-gray-600 transition-transform duration-200 ${isOpen ? "rotate-180" : ""
+                    className={`w-5 h-5 text-muted-theme transition-transform duration-200 ${isOpen ? "rotate-180" : ""
                         }`}
                 />
             </button>
 
             {isOpen && (
-                <div className="px-6 pb-6 border-t border-gray-100">
+                <div className="px-6 pb-6 border-t border-theme">
                     <div className="pl-0 sm:pl-16 pt-6">
-                        <p className="text-md-sm sm:text-base text-gray-600 leading-relaxed mb-6">
+                        <p className="text-md-sm sm:text-base text-muted-theme leading-relaxed mb-6">
                             {answer}
                         </p>
 
@@ -46,10 +46,10 @@ export default function FAQItem({
                             {metrics.map((metric, metricIndex) => (
                                 <div
                                     key={metricIndex}
-                                    className="flex items-center gap-2 px-3 py-2 bg-gray-50 rounded-lg border border-gray-200"
+                                    className="flex items-center gap-2 px-3 py-2 bg-subtle-theme rounded-lg border border-theme"
                                 >
                                     <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                                    <span className="text-md-sm sm:text-base font-medium text-gray-700">
+                                    <span className="text-md-sm sm:text-base font-medium text-main-theme">
                                         {metric}
                                     </span>
                                 </div>
