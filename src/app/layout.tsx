@@ -197,9 +197,7 @@ export default function RootLayout({
         <div className="min-h-screen">
           <Navigation />
           <div className="pt-16">
-            <main>
-              {children}
-            </main>
+            {children}
             <Footer />
           </div>
         </div>
