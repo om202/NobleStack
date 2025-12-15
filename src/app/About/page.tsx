@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description: "Learn about Noble Stack, our mission, vision, and the team driving AI and web innovation in Nepal and South Asia.",
 };
 
+// Force static generation for optimal performance
+export const dynamic = 'force-static';
+
 export default function About() {
   return <AboutPageContent />;
 }
