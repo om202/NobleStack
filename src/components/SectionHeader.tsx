@@ -25,7 +25,7 @@ export default function SectionHeader({
     className = "",
 }: SectionHeaderProps) {
     return (
-        <div className={`text-center mb-8 ${className}`}>
+        <header className={`text-center mb-8 ${className}`}>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-main-theme">
                 {title}
                 {highlightedText && (
@@ -47,6 +47,6 @@ export default function SectionHeader({
                     {ctaText}
                 </CTAButton>
             )}
-        </div>
+        </header>
     );
 }

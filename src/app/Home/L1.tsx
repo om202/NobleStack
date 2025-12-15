@@ -66,7 +66,7 @@ export default function HeroSection() {
                     quality={100}
                     priority
                   />
-                  <h2 className="text-[22px] sm:text-[29px] md:text-[29px] font-bold text-white">Noble Stack</h2>
+                  <span className="text-[22px] sm:text-[29px] md:text-[29px] font-bold text-white">Noble Stack</span>
                 </div>
 
                 <h1 className="text-[36px] md:text-[49px] font-black mb-6 leading-tight max-w-xl mx-auto">
@@ -124,11 +124,13 @@ export default function HeroSection() {
 
 
       {/* Products Section */}
-      <div className="max-w-6xl mx-auto px-4 py-12">
+      <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-4 py-12">
         <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
-          <h2 className="text-xl font-bold text-main-theme mb-8 text-center">
-            Our Products
-          </h2>
+          <header className="text-center mb-8">
+            <h2 className="text-xl font-bold text-main-theme">
+              Our Products
+            </h2>
+          </header>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* Vibe AI */}
@@ -193,14 +195,16 @@ export default function HeroSection() {
             </CTAButton>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Expertise Section */}
-      <div className="max-w-6xl mx-auto px-4 pb-12">
+      <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-4 pb-12">
         <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
-          <h2 className="text-xl font-bold text-main-theme mb-8 text-center">
-            Our Expertise
-          </h2>
+          <header className="text-center mb-8">
+            <h2 className="text-xl font-bold text-main-theme">
+              Our Expertise
+            </h2>
+          </header>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {expertiseAreas.map((area, index) => (
@@ -219,7 +223,7 @@ export default function HeroSection() {
             </CTAButton>
           </div>
         </div>
-      </div>
+      </section>
     </section >
   );
 }
