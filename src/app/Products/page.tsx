@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import ProductsPageContent from "./ProductsPageContent";
 
 export const metadata: Metadata = {
-  title: "Products",
-  description: "Discover our suite of AI-powered products including Vibe AI Photo Editor, Create Profile Pic, Loopn, and Auto Captions.",
+  title: "Portfolio",
+  description: "Explore our portfolio of AI-powered products including Vibe AI Photo Editor, Create Profile Pic, Loopn, and Auto Captions. Real projects showcasing our capabilities.",
   keywords: [
     "AI products Nepal",
     "Vibe AI Photo Editor",
