@@ -13,7 +13,7 @@ interface BlogCardProps {
 export default function BlogCard({ post }: BlogCardProps) {
     return (
         <Link href={`/blogs/${post.slug}`} className="group h-full">
-            <div className="bg-gray-800 rounded-2xl overflow-hidden shadow-sm border border-theme hover:shadow-md hover:border-nobleblue-500/50 transition-all duration-300 h-full flex flex-col">
+            <article className="bg-gray-800 rounded-2xl overflow-hidden shadow-sm border border-theme hover:shadow-md hover:border-nobleblue-500/50 transition-all duration-300 h-full flex flex-col">
                 <div className="relative h-48 w-full overflow-hidden">
                     {post.coverImage ? (
                         <Image
@@ -36,7 +36,7 @@ export default function BlogCard({ post }: BlogCardProps) {
                                     {post.tags[0]}
                                 </span>
                             )}
-                            <span className="text-gray-500 text-xs">{post.date}</span>
+                            <time className="text-gray-500 text-xs">{post.date}</time>
                         </div>
                         {post.publisher && (
                             <span className="text-muted-theme text-xs font-medium block">
@@ -54,7 +54,7 @@ export default function BlogCard({ post }: BlogCardProps) {
                         Read Article <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
                     </div>
                 </div>
-            </div>
+            </article>
         </Link>
     );
 }

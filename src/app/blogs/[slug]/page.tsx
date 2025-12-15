@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: Params) {
                 }}
             />
             {/* Hero / Header */}
-            <div className="relative h-[60vh] min-h-[400px] w-full bg-gray-900">
+            <header className="relative h-[60vh] min-h-[400px] w-full bg-gray-900">
                 {post.coverImage && (
                     <Image
                         src={post.coverImage}
@@ -145,12 +145,12 @@ export default async function BlogPostPage({ params }: Params) {
                             )}
                             <div className="flex items-center gap-2">
                                 <Calendar className="w-4 h-4" />
-                                <span>{post.date}</span>
+                                <time>{post.date}</time>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </header>
 
             {/* Content */}
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
