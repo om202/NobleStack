@@ -87,7 +87,7 @@ export default function Navigation() {
             </Link>
 
             {/* Desktop Navigation Items - Centered */}
-            <div className="hidden md:flex items-center justify-center flex-1 px-8">
+            <div className="hidden min-[900px]:flex items-center justify-center flex-1 px-8">
               <div className="flex items-center space-x-1">
                 {navigationItems.map((item) => {
                   const Icon = item.icon;
@@ -97,12 +97,12 @@ export default function Navigation() {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${isActive
+                      className={`flex items-center gap-2 px-2 min-[1165px]:px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${isActive
                         ? "bg-nobleblue-500/20 text-nobleblue-300"
                         : "text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme"
                         }`}
                     >
-                      <Icon className="w-4 h-4" aria-hidden="true" />
+                      <Icon className="w-4 h-4 hidden min-[1165px]:block" aria-hidden="true" />
                       <span>{item.label}</span>
                     </Link>
                   );
@@ -110,30 +110,33 @@ export default function Navigation() {
               </div>
             </div>
 
-            {/* Call Now Button - Desktop */}
-            <div className="hidden md:flex items-center">
-              <a
-                href="tel:+9779851411602"
-                className="flex items-center gap-2 px-4 py-2 bg-subtle-theme text-nobleblue-300 rounded-lg hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme"
-              >
-                <Phone className="w-4 h-4" />
-                <span>Call Now</span>
-              </a>
-            </div>
+            {/* Right Side Actions */}
+            <div className="flex items-center gap-3">
+              {/* Call Now Button */}
+              <div className="flex items-center">
+                <a
+                  href="tel:+9779851411602"
+                  className="flex items-center gap-2 px-4 py-2 bg-subtle-theme text-nobleblue-300 rounded-lg hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span className="whitespace-nowrap">Call Now</span>
+                </a>
+              </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme transition-colors duration-200"
-              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isMobileMenuOpen}
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" aria-hidden="true" />
-              ) : (
-                <Menu className="w-6 h-6" aria-hidden="true" />
-              )}
-            </button>
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="min-[900px]:hidden inline-flex items-center justify-center p-2 rounded-md text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme transition-colors duration-200"
+                aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMobileMenuOpen}
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" aria-hidden="true" />
+                ) : (
+                  <Menu className="w-6 h-6" aria-hidden="true" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -142,10 +145,10 @@ export default function Navigation() {
       {isMobileMenuOpen && (
         <>
           <div
-            className="md:hidden fixed inset-0 bg-black/40 z-40 backdrop-blur-sm"
+            className="min-[900px]:hidden fixed inset-0 bg-black/40 z-40 backdrop-blur-sm"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="md:hidden fixed top-16 left-0 right-0 z-50 bg-card-theme/98 backdrop-blur-xl border-b border-theme backdrop-saturate-150 max-h-[calc(100vh-4rem)] overflow-y-auto">
+          <div className="min-[900px]:hidden fixed top-16 left-0 right-0 z-50 bg-card-theme/98 backdrop-blur-xl border-b border-theme backdrop-saturate-150 max-h-[calc(100vh-4rem)] overflow-y-auto">
             <div className="px-4 py-4 space-y-2">
               {navigationItems.map((item) => {
                 const Icon = item.icon;
@@ -167,14 +170,7 @@ export default function Navigation() {
                 );
               })}
 
-              {/* Mobile Call Now Button */}
-              <a
-                href="tel:+9779851411602"
-                className="flex items-center justify-center gap-2 px-4 py-3 bg-subtle-theme text-nobleblue-300 rounded-xl hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme mt-4"
-              >
-                <Phone className="w-4 h-4" />
-                <span>Call Now</span>
-              </a>
+
             </div>
           </div>
         </>
