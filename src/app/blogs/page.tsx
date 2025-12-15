@@ -12,11 +12,11 @@ export default function BlogsPage() {
     const posts = getAllPosts(["title", "date", "slug", "coverImage", "excerpt", "tags", "publisher"]);
 
     return (
-        <div className="min-h-screen bg-noble-dark">
-            <section className="py-12 px-4">
+        <main className="min-h-screen bg-noble-dark">
+            <div className="py-12 px-4">
                 <div className="max-w-6xl mx-auto">
                     {/* Header Section */}
-                    <div className="text-center mb-12">
+                    <header className="text-center mb-12">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
                             Noble Stack Blogs
                         </h1>
@@ -24,10 +24,10 @@ export default function BlogsPage() {
                         <blockquote className="text-base sm:text-lg text-muted-theme mb-8 max-w-3xl mx-auto">
                             &ldquo;Explore our collection of articles on technology, design, and startup growth.&rdquo;
                         </blockquote>
-                    </div>
+                    </header>
 
                     {/* Blog Grid Card */}
-                    <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+                    <section aria-label="Blog Posts" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
                         {posts.length > 0 ? (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                                 {posts.map((post) => (
@@ -39,9 +39,9 @@ export default function BlogsPage() {
                                 <p>No posts found. Check back soon!</p>
                             </div>
                         )}
-                    </div>
+                    </section>
                 </div>
-            </section>
-        </div>
+            </div>
+        </main>
     );
 }
