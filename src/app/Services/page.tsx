@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   description: "Explore our comprehensive AI and web development services including Full-Stack Engineering, LLM-Powered AI Systems, Automation, and DevOps.",
 };
 
+// Force static generation for optimal performance
+export const dynamic = 'force-static';
+
 export default function Services() {
   const services = [
     {

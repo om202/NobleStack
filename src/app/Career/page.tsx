@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description: "Join the elite team at Noble Stack. We're hiring engineers, designers, and innovators to build world-class AI and web products.",
 };
 
+// Force static generation for optimal performance
+export const dynamic = 'force-static';
+
 export default function Career() {
   return <CareerPageContent />;
 }

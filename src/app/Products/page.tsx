@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   ],
 };
 
+// Force static generation for optimal performance
+export const dynamic = 'force-static';
+
 export default function ProductsPage() {
   return <ProductsPageContent />;
 }

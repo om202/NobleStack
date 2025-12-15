@@ -40,6 +40,9 @@ export async function generateStaticParams() {
     }));
 }
 
+// ISR: Revalidate every 24 hours for fresh content
+export const revalidate = 86400;
+
 export default async function BlogPostPage({ params }: Params) {
     const { slug } = await params;
     let post;
