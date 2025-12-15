@@ -9,8 +9,9 @@ export const size = {
 
 export const contentType = 'image/png'
 
-export default async function Image({ params }: { params: { slug: string } }) {
-    const post = getPostBySlug(params.slug, ['title', 'author', 'date'])
+export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params
+    const post = getPostBySlug(slug, ['title', 'author', 'date'])
 
     return new ImageResponse(
         (
