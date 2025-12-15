@@ -1,39 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* Tex Gyre Heros Font - Local Files */
-@font-face {
-  font-family: 'Tex Gyre Heros';
-  src: url('/fonts/tex/texgyreheros-regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tex Gyre Heros';
-  src: url('/fonts/tex/texgyreheros-italic.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tex Gyre Heros';
-  src: url('/fonts/tex/texgyreheros-bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tex Gyre Heros';
-  src: url('/fonts/tex/texgyreheros-bolditalic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
 /* Happy Sky Blue — warm, clean, slightly red-tinted */
 @theme {
   --color-nobleblue-50: #e0f1ff;
@@ -47,8 +14,8 @@
   --color-nobleblue-800: #1a5480;
   --color-nobleblue-900: #1a3f63;
 
-  /* Font family - Tex Gyre Heros only */
-  --font-sans: 'Tex Gyre Heros';
+  /* Font family - Tex Gyre Heros via Next.js Font */
+  --font-sans: var(--font-tex);
 
   /* Gradient utilities */
   --gradient-nobleblue-up: linear-gradient(to right, var(--color-nobleblue-500), var(--color-nobleblue-600));
