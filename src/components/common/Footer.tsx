@@ -57,6 +57,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-theme hover:text-nobleblue-400 transition-colors duration-200"
+                  aria-label="Visit our LinkedIn page"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
@@ -65,6 +66,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-theme hover:text-nobleblue-400 transition-colors duration-200"
+                  aria-label="Visit our Facebook page"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
@@ -73,12 +75,14 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-theme hover:text-nobleblue-400 transition-colors duration-200"
+                  aria-label="Visit our Instagram page"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
                   href="mailto:noblestack.io@gmail.com"
                   className="text-muted-theme hover:text-nobleblue-400 transition-colors duration-200"
+                  aria-label="Send us an email"
                 >
                   <Mail className="w-5 h-5" />
                 </a>

@@ -41,11 +41,11 @@ export default function CTAButton({
     const content = (
         <>
             {Icon && iconPosition === "left" && (
-                <Icon className={`w-5 h-5 ${!disabled ? "group-hover:-translate-x-1" : ""} transition-transform duration-300`} />
+                <Icon aria-hidden="true" className={`w-5 h-5 ${!disabled ? "group-hover:-translate-x-1" : ""} transition-transform duration-300`} />
             )}
             {children}
             {Icon && iconPosition === "right" && (
-                <Icon className={`w-5 h-5 ${!disabled ? "group-hover:translate-x-1" : ""} transition-transform duration-300`} />
+                <Icon aria-hidden="true" className={`w-5 h-5 ${!disabled ? "group-hover:translate-x-1" : ""} transition-transform duration-300`} />
             )}
         </>
     );

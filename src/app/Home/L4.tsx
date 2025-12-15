@@ -212,7 +212,7 @@ export default function FAQSection() {
                 <category.icon className="w-4 h-4" />
                 <div className="text-left">
                   <div className="font-semibold text-sm">{category.name}</div>
-                  <div className={`text-xs ${activeCategory === category.id ? 'text-white/80' : 'text-gray-500'}`}>
+                  <div className={`text-xs ${activeCategory === category.id ? 'text-white/80' : 'text-gray-400'}`}>
                     {category.count}
                   </div>
                 </div>

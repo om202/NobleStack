@@ -102,7 +102,7 @@ export default function Navigation() {
                         : "text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme"
                         }`}
                     >
-                      <Icon className="w-4 h-4" />
+                      <Icon className="w-4 h-4" aria-hidden="true" />
                       <span>{item.label}</span>
                     </Link>
                   );
@@ -125,11 +125,13 @@ export default function Navigation() {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme transition-colors duration-200"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
+                <X className="w-6 h-6" aria-hidden="true" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className="w-6 h-6" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -159,7 +161,7 @@ export default function Navigation() {
                       }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    <Icon className="w-5 h-5" />
+                    <Icon className="w-5 h-5" aria-hidden="true" />
                     <span>{item.label}</span>
                   </Link>
                 );
