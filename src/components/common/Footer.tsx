@@ -41,7 +41,6 @@ export default function Footer() {
                 width={40}
                 height={40}
                 className="rounded-xl"
-                quality={100}
                 priority
               />
               <div>
