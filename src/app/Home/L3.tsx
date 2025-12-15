@@ -22,69 +22,12 @@ import {
 } from "react-icons/si";
 import React from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
-import AnimatedFeatureCarousel from "../../components/AnimatedFeatureCarousel";
+
 import ServiceCard from "../../components/ServiceCard";
 import SectionHeader from "../../components/SectionHeader";
 
 export default function AIServicesSection() {
-  const aiFeatures = [
-    {
-      id: "language-tools",
-      title: "Nepali Grammarly - Revolutionary Language AI",
-      description:
-        "Our flagship product: the world's first AI-powered grammar and spell checker for Nepali language. Serving 10+ million native speakers with advanced AI language processing.",
-      icon: Languages,
-      color: "from-nobleblue-500 to-nobleblue-600",
-      stats: [
-        "First of Its Kind",
-        "10M+ Speakers",
-        "95% Accuracy",
-        "Real-time Corrections",
-      ],
-    },
-    {
-      id: "ai-chatbots",
-      title: "Intelligent AI Chatbots That Actually Work",
-      description:
-        "We build chatbots powered by GPT-4, Claude, and custom-trained models that understand context, maintain conversations, and deliver real business value—not just scripted responses.",
-      icon: MessageCircle,
-      color: "from-nobleblue-600 to-nobleblue-700",
-      stats: [
-        "99% Uptime",
-        "Human-like Responses",
-        "Multi-Platform",
-        "Custom Trained",
-      ],
-    },
-    {
-      id: "automation",
-      title: "AI Automation That Eliminates Busywork",
-      description:
-        "Our automation systems handle repetitive tasks, process data intelligently, and integrate seamlessly with your existing tools—saving hours of manual work every day.",
-      icon: Zap,
-      color: "from-nobleblue-500 to-nobleblue-600",
-      stats: [
-        "Smart Workflows",
-        "Tool Integration",
-        "24/7 Operation",
-        "ROI Tracking",
-      ],
-    },
-    {
-      id: "custom-ai",
-      title: "Custom AI Solutions Built for Your Business",
-      description:
-        "From document processing to predictive analytics, we create bespoke AI systems that solve your unique challenges with cutting-edge machine learning and LLMs.",
-      icon: Brain,
-      color: "from-nobleblue-600 to-nobleblue-700",
-      stats: [
-        "Tailored Models",
-        "Enterprise Ready",
-        "Scalable",
-        "Production-Tested",
-      ],
-    },
-  ];
+
 
   const aiServices = [
     {

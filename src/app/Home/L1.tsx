@@ -5,17 +5,10 @@ import {
   Phone,
   Box,
   ArrowRight,
-  Calendar,
-  CheckCircle,
   Code,
   Bot,
-  Zap,
   Brain,
   Wrench,
-  Image as ImageIcon,
-  User,
-  Network,
-  Subtitles,
 } from "lucide-react";
 import Image from "next/image";
 import ServiceCard from "../../components/ServiceCard";
