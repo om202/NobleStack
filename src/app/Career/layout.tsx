@@ -72,11 +72,11 @@ export default function CareerLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "JobPosting",
-            title: "SEO Specialist",
-            description: "<p>We are looking for an experienced SEO Specialist to manage all search engine optimization and marketing activities. You will be responsible for managing all SEO activities such as content strategy, link building and keyword strategy to increase rankings on all major search networks.</p><p><strong>Key Responsibilities:</strong></p><ul><li>Execute tests, collect and analyze data and results, identify trends and insights in order to achieve maximum ROI in paid search campaigns</li><li>Track, report, and analyze website analytics and PPC initiatives and campaigns</li><li>Manage campaign expenses, staying on budget, estimating monthly costs and reconciling discrepancies</li><li>Optimize copy and landing pages for search engine marketing</li><li>Perform ongoing keyword discovery, expansion and optimization</li></ul><p><strong>Requirements:</strong></p><ul><li>Proven SEO experience</li><li>Solid understanding of performance marketing, conversion, and online customer acquisition</li><li>In-depth experience with website analytics tools (e.g, Google Analytics, NetInsight, Omniture, WebTrends)</li><li>Experience with bid management tools (e.g., Click Equations, Marin, Kenshoo, Search Ignite)</li><li>Working knowledge of HTML, CSS, and JavaScript development and constraints</li></ul>",
+            title: "SEO Specialist Intern",
+            description: "<p>We are looking for a passionate SEO Specialist Intern to join our marketing team. This is a learning-focused role where you will assist in managing search engine optimization activities. You will learn to develop content strategies, perform keyword research, and analyze data to improve rankings.</p><p><strong>Key Responsibilities:</strong></p><ul><li>Assist in executing tests and collecting data for paid search campaigns</li><li>Learn to track and report on website analytics and PPC initiatives</li><li>Help optimize copy and landing pages for search engine marketing</li><li>Perform keyword discovery and market research under supervision</li><li>Collaborate with the web development team to implement SEO best practices</li></ul><p><strong>Requirements:</strong></p><ul><li>Strong interest in SEO and digital marketing</li><li>Basic understanding of HTML and web concepts</li><li>Familiarity with Google Analytics (preferred but not required)</li><li>Excellent written and verbal communication skills</li><li>Willingness to learn and adapt to new tools and trends</li></ul>",
             datePosted: "2025-12-14",
             validThrough: "2026-12-31",
-            employmentType: "FULL_TIME",
+            employmentType: "INTERN",
             hiringOrganization: {
               "@type": "Organization",
               name: "Noble Stack",
@@ -84,9 +84,9 @@ export default function CareerLayout({
               logo: "https://noblestack.io/nbl.png",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
-                addressLocality: "Kathmandu",
-                addressRegion: "Bagmati Province",
+                streetAddress: "Saraswati Marg",
+                addressLocality: "Munal Law firm",
+                addressRegion: "Kathmandu",
                 postalCode: "44600",
                 addressCountry: "NP"
               }
@@ -95,9 +95,9 @@ export default function CareerLayout({
               "@type": "Place",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
-                addressLocality: "Kathmandu",
-                addressRegion: "Bagmati Province",
+                streetAddress: "Saraswati Marg",
+                addressLocality: "Munal Law firm",
+                addressRegion: "Kathmandu",
                 postalCode: "44600",
                 addressCountry: "NP"
               },
@@ -105,6 +105,15 @@ export default function CareerLayout({
                 "@type": "GeoCoordinates",
                 latitude: "27.6935",
                 longitude: "85.3090"
+              }
+            },
+            baseSalary: {
+              "@type": "MonetaryAmount",
+              currency: "NPR",
+              value: {
+                "@type": "QuantitativeValue",
+                value: 10000,
+                unitText: "MONTH"
               }
             },
             workFromHome: false,
@@ -127,11 +136,11 @@ export default function CareerLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "JobPosting",
-            title: "Social Media Marketer",
-            description: "<p>We are looking for a Social Media Marketer to manage our social media accounts. You will be responsible for creating original text and video content, managing posts and responding to followers. You will manage our company image in a cohesive way to achieve our marketing goals.</p><p><strong>Key Responsibilities:</strong></p><ul><li>Perform research on current benchmark trends and audience preferences</li><li>Design and implement social media strategy to align with business goals</li><li>Set specific objectives and report on ROI</li><li>Generate, edit, publish and share engaging content daily (e.g. original text, photos, videos and news)</li><li>Collaborate with other teams, like marketing, sales and customer service to ensure brand consistency</li></ul><p><strong>Requirements:</strong></p><ul><li>Proven work experience as a Social media manager</li><li>Hands on experience in content management</li><li>Excellent copywriting skills</li><li>Ability to deliver creative content (text, image and video)</li><li>Knowledge of online marketing channels</li></ul>",
+            title: "Social Media Marketer Intern",
+            description: "<p>We are seeking a creative Social Media Marketer Intern to assist in managing our social media channels. You will work closely with our marketing team to create engaging content, draft posts, and interact with our community while learning professional social media strategies.</p><p><strong>Key Responsibilities:</strong></p><ul><li>Assist in researching audience preferences and current trends</li><li>Help create and edit engaging text, image, and video content</li><li>Draft and schedule daily social media posts</li><li>Monitor social media channels and assist in community engagement</li><li> Collaborate with the design team to ensure brand consistency</li></ul><p><strong>Requirements:</strong></p><ul><li>Current student or recent graduate in Marketing, Communications, or related field</li><li>Passion for social media platforms (LinkedIn, Instagram, Facebook, etc.)</li><li>Basic copywriting and content creation skills</li><li>Basic knowledge of design tools (Canva, Photoshop) is a plus</li><li>Creative mindset and eagerness to learn</li></ul>",
             datePosted: "2025-12-14",
             validThrough: "2026-12-31",
-            employmentType: "FULL_TIME",
+            employmentType: "INTERN",
             hiringOrganization: {
               "@type": "Organization",
               name: "Noble Stack",
@@ -139,9 +148,9 @@ export default function CareerLayout({
               logo: "https://noblestack.io/nbl.png",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
-                addressLocality: "Kathmandu",
-                addressRegion: "Bagmati Province",
+                streetAddress: "Saraswati Marg",
+                addressLocality: "Munal Law firm",
+                addressRegion: "Kathmandu",
                 postalCode: "44600",
                 addressCountry: "NP"
               }
@@ -150,9 +159,9 @@ export default function CareerLayout({
               "@type": "Place",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
-                addressLocality: "Kathmandu",
-                addressRegion: "Bagmati Province",
+                streetAddress: "Saraswati Marg",
+                addressLocality: "Munal Law firm",
+                addressRegion: "Kathmandu",
                 postalCode: "44600",
                 addressCountry: "NP"
               },
@@ -160,6 +169,15 @@ export default function CareerLayout({
                 "@type": "GeoCoordinates",
                 latitude: "27.6935",
                 longitude: "85.3090"
+              }
+            },
+            baseSalary: {
+              "@type": "MonetaryAmount",
+              currency: "NPR",
+              value: {
+                "@type": "QuantitativeValue",
+                value: 10000,
+                unitText: "MONTH"
               }
             },
             workFromHome: false,

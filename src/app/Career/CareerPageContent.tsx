@@ -129,53 +129,50 @@ export default function CareerPageContent() {
 
                     {/* Current Openings */}
                     <div className="mb-16 space-y-8">
-                        <h2 className="text-3xl font-bold text-center text-main-theme mb-8">
-                            Current Openings
-                        </h2>
                         <div className="grid grid-cols-1 gap-8">
                             {[
                                 {
-                                    title: "SEO Specialist",
+                                    title: "SEO Specialist Intern",
                                     value: "seo-specialist",
                                     location: "Kathmandu, Nepal",
-                                    type: "Full Time",
+                                    type: "Internship",
                                     description:
-                                        "We are looking for an experienced SEO Specialist to manage all search engine optimization and marketing activities. You will be responsible for managing all SEO activities such as content strategy, link building and keyword strategy to increase rankings on all major search networks.",
+                                        "Join us as an SEO Specialist Intern to learn and apply search engine optimization strategies. You will assist in keyword research, content optimization, and performance tracking.",
                                     responsibilities: [
-                                        "Execute tests, collect and analyze data and results, identify trends and insights in order to achieve maximum ROI in paid search campaigns",
-                                        "Track, report, and analyze website analytics and PPC initiatives and campaigns",
-                                        "Manage campaign expenses, staying on budget, estimating monthly costs and reconciling discrepancies",
-                                        "Optimize copy and landing pages for search engine marketing",
-                                        "Perform ongoing keyword discovery, expansion and optimization"
+                                        "Assist in executing paid search campaigns and analyzing results",
+                                        "Learn to track website analytics and effective keyword strategies",
+                                        "Help optimize copy and landing pages under supervision",
+                                        "Perform keyword discovery and market trend research",
+                                        "collaborate with team to implement SEO best practices"
                                     ],
                                     qualifications: [
-                                        "Proven SEO experience",
-                                        "Solid understanding of performance marketing, conversion, and online customer acquisition",
-                                        "In-depth experience with website analytics tools (e.g, Google Analytics, NetInsight, Omniture, WebTrends)",
-                                        "Experience with bid management tools (e.g., Click Equations, Marin, Kenshoo, Search Ignite)",
-                                        "Working knowledge of HTML, CSS, and JavaScript development and constraints"
+                                        "Strong interest in SEO and digital marketing",
+                                        "Basic understanding of HTML and web technologies",
+                                        "Familiarity with Google Analytics is a plus",
+                                        "Excellent written and verbal communication skills",
+                                        "Creative mindset and willingness to learn"
                                     ]
                                 },
                                 {
-                                    title: "Social Media Marketer",
+                                    title: "Social Media Marketer Intern",
                                     value: "social-media-marketer",
                                     location: "Kathmandu, Nepal",
-                                    type: "Full Time",
+                                    type: "Internship",
                                     description:
-                                        "We are looking for a Social Media Marketer to manage our social media accounts. You will be responsible for creating original text and video content, managing posts and responding to followers. You will manage our company image in a cohesive way to achieve our marketing goals.",
+                                        "We are seeking a creative Social Media Marketer Intern to assist in managing our social channels. You will help create engaging content, draft posts, and interact with our community.",
                                     responsibilities: [
-                                        "Perform research on current benchmark trends and audience preferences",
-                                        "Design and implement social media strategy to align with business goals",
-                                        "Set specific objectives and report on ROI",
-                                        "Generate, edit, publish and share engaging content daily (e.g. original text, photos, videos and news)",
-                                        "Collaborate with other teams, like marketing, sales and customer service to ensure brand consistency"
+                                        "Assist in researching audience preferences and current trends",
+                                        "Help create engaging text, image, and video content",
+                                        "Draft and schedule daily social media posts",
+                                        "Monitor channels and help with community engagement",
+                                        "Collaborate with design team to ensure brand consistency"
                                     ],
                                     qualifications: [
-                                        "Proven work experience as a Social media manager",
-                                        "Hands on experience in content management",
-                                        "Excellent copywriting skills",
-                                        "Ability to deliver creative content (text, image and video)",
-                                        "Knowledge of online marketing channels"
+                                        "Current student or recent graduate in Marketing or related field",
+                                        "Passion for social media platforms and trends",
+                                        "Basic copywriting and content creation skills",
+                                        "Knowledge of design tools like Canva is a plus",
+                                        "Eagerness to learn and adapt"
                                     ]
                                 },
                             ].map((job, index) => (
