@@ -1,22 +1,18 @@
-"use client";
-
-import { Code, ArrowRight, Star, Rocket } from "lucide-react";
-import {
-  SiReact,
-  SiOpenai,
-  SiZapier,
-  SiDocker,
-  SiGithubactions,
-  SiAuth0,
-} from "react-icons/si";
+import { Metadata } from 'next';
+import { ArrowRight } from "lucide-react";
 import AlbumArtServices from "../../components/AlbumArtServices";
 import TechTicker from "../../components/TechTicker";
-import CTAButton from "../../components/CTAButton";
+import ServicesCTA from "../../components/ServicesCTA";
+
+export const metadata: Metadata = {
+  title: "Services - Noble Stack",
+  description: "Explore our comprehensive AI and web development services including Full-Stack Engineering, LLM-Powered AI Systems, Automation, and DevOps.",
+};
 
 export default function Services() {
   const services = [
     {
-      icon: SiReact,
+      icon: "React",
       title: "Full-Stack Product Engineering",
       description:
         "We engineer robust, full-stack systems — from frontend to backend to infrastructure — with code quality and scalability at the core.",
@@ -29,7 +25,7 @@ export default function Services() {
       color: "blue",
     },
     {
-      icon: SiOpenai,
+      icon: "OpenAI",
       title: "LLM-Powered AI Systems",
       description:
         "We design systems that leverage cutting-edge language models to reason, retrieve, and respond — integrated seamlessly into your product or process.",
@@ -42,7 +38,7 @@ export default function Services() {
       color: "purple",
     },
     {
-      icon: SiZapier,
+      icon: "Zapier",
       title: "End-to-End Automation Systems",
       description:
         "From business logic to background jobs, we build automation pipelines that save time, reduce human error, and scale with your growth.",
@@ -55,7 +51,7 @@ export default function Services() {
       color: "green",
     },
     {
-      icon: SiDocker,
+      icon: "Docker",
       title: "Deployment & DevOps",
       description:
         "We ensure your product runs smoothly in production with modern DevOps practices — from zero-downtime deploys to intelligent monitoring.",
@@ -68,7 +64,7 @@ export default function Services() {
       color: "orange",
     },
     {
-      icon: SiAuth0,
+      icon: "Auth0",
       title: "Security, Privacy & Reliability",
       description:
         "From identity to data to systems — we build with trust and resilience in mind, ensuring your application is safe, compliant, and production-ready.",
@@ -81,7 +77,7 @@ export default function Services() {
       color: "red",
     },
     {
-      icon: SiGithubactions,
+      icon: "GitHub Actions",
       title: "Agile, But Engineered",
       description:
         "We move fast — but not recklessly. Our process merges the flexibility of agile with the discipline of software engineering.",
@@ -303,76 +299,8 @@ export default function Services() {
           </section>
 
           {/* CTA Section */}
-          <section id="cta" aria-label="Call to Action" className="bg-gray-900 rounded-2xl p-8 shadow-sm border border-theme text-center">
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <Star className="w-6 h-6 text-yellow-400 fill-current" />
-              <Star className="w-6 h-6 text-yellow-400 fill-current" />
-              <Star className="w-6 h-6 text-yellow-400 fill-current" />
-              <Star className="w-6 h-6 text-yellow-400 fill-current" />
-              <Star className="w-6 h-6 text-yellow-400 fill-current" />
-            </div>
-
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-main-theme">
-              Ready to Start Your Project?
-            </h2>
-            <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
-              Let&apos;s discuss your requirements and create a solution that
-              drives your business forward. Our team is ready to bring your
-              vision to life.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CTAButton variant="primary" icon={Rocket} href="https://calendar.app.google/mWmd6v421Pk66LQ26" className="w-full sm:w-auto">
-                Get Started Today
-              </CTAButton>
-              <CTAButton variant="secondary" icon={Code} href="/Career" className="w-full sm:w-auto">
-                Join Our Team
-              </CTAButton>
-            </div>
-          </section>
+          <ServicesCTA />
         </div>
-
-        <style jsx>{`
-          @keyframes futureGlow {
-            0% {
-              background-position: 0% 50%;
-            }
-            25% {
-              background-position: 50% 0%;
-            }
-            50% {
-              background-position: 100% 50%;
-            }
-            75% {
-              background-position: 50% 100%;
-            }
-            100% {
-              background-position: 0% 50%;
-            }
-          }
-
-          .future-text {
-            background: linear-gradient(
-              135deg,
-              #10b981,
-              #059669,
-              #0d9488,
-              #0f766e,
-              #0891b2,
-              #0e7490,
-              #0284c7,
-              #0369a1,
-              #10b981
-            );
-            background-size: 400% 400%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: futureGlow 2.5s ease-in-out infinite;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-          }
-        `}</style>
       </main >
     </>
   );
