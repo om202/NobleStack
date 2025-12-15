@@ -48,7 +48,7 @@ export default function TechStackCarousel({
 
         <div className="scroll-container flex gap-4 sm:gap-8 px-2 sm:px-4">
           {infiniteTechnologies.map((tech, index) => (
-            <div
+            <figure
               key={index}
               className="flex-shrink-0 flex flex-col items-center justify-center gap-2 sm:gap-3 transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-110"
               style={{ minWidth: "100px", maxWidth: "140px" }}
@@ -59,10 +59,10 @@ export default function TechStackCarousel({
                   className: "w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14"
                 })}
               </div>
-              <span className="text-xs sm:text-sm md:text-base font-medium text-main-theme whitespace-nowrap">
+              <figcaption className="text-xs sm:text-sm md:text-base font-medium text-main-theme whitespace-nowrap">
                 {tech.name}
-              </span>
-            </div>
+              </figcaption>
+            </figure>
           ))}
         </div>
       </div>

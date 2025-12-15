@@ -17,16 +17,20 @@ export default function FAQItem({
     isOpen,
     onToggle,
 }: FAQItemProps) {
+    const contentId = `faq-content-${question.toLowerCase().replace(/\s+/g, '-')}`;
+
     return (
-        <div className="bg-gray-800 rounded-2xl shadow-sm border border-theme overflow-hidden">
+        <article className="bg-gray-800 rounded-2xl shadow-sm border border-theme overflow-hidden">
             <button
                 onClick={onToggle}
+                aria-expanded={isOpen}
+                aria-controls={contentId}
                 className="w-full text-left px-6 py-6 flex items-center justify-between"
             >
                 <div className="flex-1">
-                    <span className="text-md-sm sm:text-lg font-semibold text-main-theme">
+                    <h3 className="text-md-sm sm:text-lg font-semibold text-main-theme">
                         {question}
-                    </span>
+                    </h3>
                 </div>
                 <ChevronDown
                     className={`w-5 h-5 text-muted-theme transition-transform duration-200 ${isOpen ? "rotate-180" : ""
@@ -35,7 +39,12 @@ export default function FAQItem({
             </button>
 
             {isOpen && (
-                <div className="px-6 pb-6 border-t border-theme bg-gray-900">
+                <div
+                    id={contentId}
+                    role="region"
+                    aria-labelledby={contentId}
+                    className="px-6 pb-6 border-t border-theme bg-gray-900"
+                >
                     <div className="pl-0 sm:pl-16 pt-6">
                         <p className="text-md-sm sm:text-base text-muted-theme leading-relaxed mb-6">
                             {answer}
@@ -58,6 +67,6 @@ export default function FAQItem({
                     </div>
                 </div>
             )}
-        </div>
+        </article>
     );
 }
