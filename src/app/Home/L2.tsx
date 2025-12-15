@@ -3,12 +3,9 @@
 import {
   Smartphone,
   Rocket,
-  Zap,
   Globe,
   ArrowRight,
   Monitor,
-  Palette,
-  BarChart3,
   Network,
   Layers,
   Package,
@@ -37,67 +34,11 @@ import {
 } from "react-icons/si";
 import React from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
-import AnimatedFeatureCarousel from "../../components/AnimatedFeatureCarousel";
+
 import ServiceCard from "../../components/ServiceCard";
 import SectionHeader from "../../components/SectionHeader";
 
-const webFeatures = [
-  {
-    id: "responsive-design",
-    title: "Responsive & Mobile-First Design",
-    description:
-      "Beautiful designs that work perfectly on every device, from mobile to desktop. Designed for mobile, enhanced for desktop experience.",
-    icon: Smartphone,
-    color: "from-nobleblue-500 to-nobleblue-600",
-    stats: [
-      "Mobile Optimized",
-      "Cross-Platform",
-      "Touch-Friendly",
-      "Responsive Layout",
-    ],
-    demo: "View Demo",
-  },
-  {
-    id: "performance",
-    title: "Lightning-Fast Performance & SEO",
-    description:
-      "Optimized websites that load in milliseconds and rank high on Google. Built for search engines from day one with optimal performance.",
-    icon: Zap,
-    color: "from-nobleblue-600 to-nobleblue-700",
-    stats: ["Core Web Vitals", "SEO Optimized", "Fast Loading", "Search Ready"],
-    demo: "Speed Test",
-  },
-  {
-    id: "modern-design",
-    title: "Modern UI/UX & Conversion Focus",
-    description:
-      "Contemporary designs that capture attention and guide users to conversion. Every element designed to drive real business results.",
-    icon: Palette,
-    color: "from-nobleblue-500 to-nobleblue-600",
-    stats: [
-      "User-Centered",
-      "Conversion Focused",
-      "Brand Aligned",
-      "Results-Driven",
-    ],
-    demo: "See Designs",
-  },
-  {
-    id: "analytics",
-    title: "Data-Driven Optimization",
-    description:
-      "Built-in analytics and optimization tools to track performance and improve conversions with comprehensive user experience insights.",
-    icon: BarChart3,
-    color: "from-nobleblue-600 to-nobleblue-700",
-    stats: [
-      "Analytics Ready",
-      "A/B Testing",
-      "Performance Tracking",
-      "User Insights",
-    ],
-    demo: "View Analytics",
-  },
-];
+
 
 export default function FeaturesSection() {
 
