@@ -181,7 +181,7 @@ export default function FAQSection() {
     <section id="faq" className="pt-2 pb-12 px-4 bg-noble-dark">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
+        <header className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-main-theme">
             <span className="text-gradient-nobleblue">
               Questions & Answers
@@ -191,10 +191,10 @@ export default function FAQSection() {
             Comprehensive technical documentation and answers to help you understand our capabilities,
             methodologies, and how we can solve your specific challenges.
           </p>
-        </div>
+        </header>
 
         {/* Category Selection */}
-        <div className="flex justify-center mb-12">
+        <nav aria-label="FAQ Categories" className="flex justify-center mb-12">
           <div className="bg-card-theme rounded-xl p-1.5 shadow-sm border border-theme inline-flex gap-1">
             {categories.map((category) => (
               <button
@@ -219,7 +219,7 @@ export default function FAQSection() {
               </button>
             ))}
           </div>
-        </div>
+        </nav>
 
         {/* FAQ Items with enhanced styling */}
         <div className="space-y-4 mb-10" key={animationKey}>
