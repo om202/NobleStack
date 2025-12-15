@@ -86,10 +86,10 @@ export default function Contact() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-12 px-4 min-h-screen bg-noble-dark">
+      <main className="py-12 px-4 min-h-screen bg-noble-dark">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
+          <header className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
               Get In Touch
             </h1>
@@ -98,10 +98,10 @@ export default function Contact() {
               &ldquo;Ready to transform your ideas into intelligent digital solutions?
               Let&apos;s discuss your project and explore how we can help you succeed.&rdquo;
             </blockquote>
-          </div>
+          </header>
 
           {/* Contact Form */}
-          <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+          <section id="contact-form" aria-label="Contact Form" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <MessageSquare className="w-6 h-6 text-nobleblue-600" />
@@ -255,10 +255,10 @@ export default function Contact() {
                 </div>
               </form>
             )}
-          </div>
+          </section>
 
           {/* Contact Information Cards */}
-          <div className="mt-16">
+          <section id="contact-info" aria-label="Contact Information" className="mt-16">
             <div className="text-center mb-12">
               <h3 className="text-xl font-semibold text-main-theme mb-3">
                 Ready to Start Your Project?
@@ -346,7 +346,7 @@ export default function Contact() {
               </a>
             </div>
 
-          </div>
+          </section>
 
 
         </div>
@@ -384,7 +384,7 @@ export default function Contact() {
             letter-spacing: -0.02em;
           }
         `}</style>
-      </section>
+      </main>
     </>
   );
 } 

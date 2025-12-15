@@ -112,10 +112,10 @@ export default function Career() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-12 px-4 min-h-screen bg-noble-dark">
+      <main className="py-12 px-4 min-h-screen bg-noble-dark">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
+          <header className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
               Join Our Team
             </h1>
@@ -125,7 +125,7 @@ export default function Career() {
               Nepal. Join our team of passionate developers, designers, and
               innovators building the future.&rdquo;
             </blockquote>
-          </div>
+          </header>
 
           {/* Application Form */}
           <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
@@ -367,7 +367,7 @@ export default function Career() {
             letter-spacing: -0.02em;
           }
         `}</style>
-      </section>
+      </main>
     </>
   );
 }
