@@ -1,6 +1,6 @@
 "use client";
 
-import { Send, Upload, FileText, Loader2, CheckCircle, AlertCircle } from "lucide-react";
+import { Send, Upload, FileText, Loader2, CheckCircle, AlertCircle, ArrowRight, MapPin, Clock, Briefcase } from "lucide-react";
 import { useState } from "react";
 import CTAButton from "../../components/CTAButton";
 import { db, storage } from "@/lib/firebase";
@@ -127,8 +127,128 @@ export default function CareerPageContent() {
                         </blockquote>
                     </header>
 
+                    {/* Current Openings */}
+                    <div className="mb-16 space-y-8">
+                        <h2 className="text-3xl font-bold text-center text-main-theme mb-8">
+                            Current Openings
+                        </h2>
+                        <div className="grid grid-cols-1 gap-8">
+                            {[
+                                {
+                                    title: "SEO Specialist",
+                                    value: "seo-specialist",
+                                    location: "Kathmandu, Nepal",
+                                    type: "Full Time",
+                                    description:
+                                        "We are looking for an experienced SEO Specialist to manage all search engine optimization and marketing activities. You will be responsible for managing all SEO activities such as content strategy, link building and keyword strategy to increase rankings on all major search networks.",
+                                    responsibilities: [
+                                        "Execute tests, collect and analyze data and results, identify trends and insights in order to achieve maximum ROI in paid search campaigns",
+                                        "Track, report, and analyze website analytics and PPC initiatives and campaigns",
+                                        "Manage campaign expenses, staying on budget, estimating monthly costs and reconciling discrepancies",
+                                        "Optimize copy and landing pages for search engine marketing",
+                                        "Perform ongoing keyword discovery, expansion and optimization"
+                                    ],
+                                    qualifications: [
+                                        "Proven SEO experience",
+                                        "Solid understanding of performance marketing, conversion, and online customer acquisition",
+                                        "In-depth experience with website analytics tools (e.g, Google Analytics, NetInsight, Omniture, WebTrends)",
+                                        "Experience with bid management tools (e.g., Click Equations, Marin, Kenshoo, Search Ignite)",
+                                        "Working knowledge of HTML, CSS, and JavaScript development and constraints"
+                                    ]
+                                },
+                                {
+                                    title: "Social Media Marketer",
+                                    value: "social-media-marketer",
+                                    location: "Kathmandu, Nepal",
+                                    type: "Full Time",
+                                    description:
+                                        "We are looking for a Social Media Marketer to manage our social media accounts. You will be responsible for creating original text and video content, managing posts and responding to followers. You will manage our company image in a cohesive way to achieve our marketing goals.",
+                                    responsibilities: [
+                                        "Perform research on current benchmark trends and audience preferences",
+                                        "Design and implement social media strategy to align with business goals",
+                                        "Set specific objectives and report on ROI",
+                                        "Generate, edit, publish and share engaging content daily (e.g. original text, photos, videos and news)",
+                                        "Collaborate with other teams, like marketing, sales and customer service to ensure brand consistency"
+                                    ],
+                                    qualifications: [
+                                        "Proven work experience as a Social media manager",
+                                        "Hands on experience in content management",
+                                        "Excellent copywriting skills",
+                                        "Ability to deliver creative content (text, image and video)",
+                                        "Knowledge of online marketing channels"
+                                    ]
+                                },
+                            ].map((job, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-md border border-theme"
+                                >
+                                    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                                        <div>
+                                            <h3 className="text-2xl font-bold text-white mb-2">
+                                                {job.title}
+                                            </h3>
+                                            <div className="flex flex-wrap gap-3 text-sm font-medium text-gray-400">
+                                                <span className="bg-gray-800 px-3 py-1 rounded-full border border-gray-700 flex items-center gap-1">
+                                                    <MapPin className="w-3 h-3" /> {job.location}
+                                                </span>
+                                                <span className="bg-gray-800 px-3 py-1 rounded-full border border-gray-700 flex items-center gap-1">
+                                                    <Clock className="w-3 h-3" /> {job.type}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="max-w-none text-muted-theme mb-8">
+                                        <p className="mb-6 leading-relaxed">{job.description}</p>
+
+                                        <div className="grid md:grid-cols-2 gap-8">
+                                            <div>
+                                                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                                                    <Briefcase className="w-4 h-4 text-nobleblue-500" /> Key Responsibilities
+                                                </h4>
+                                                <ul className="list-disc pl-5 space-y-2 text-sm">
+                                                    {job.responsibilities.map((r, i) => <li key={i}>{r}</li>)}
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                                                    <CheckCircle className="w-4 h-4 text-nobleblue-500" /> Requirements
+                                                </h4>
+                                                <ul className="list-disc pl-5 space-y-2 text-sm">
+                                                    {job.qualifications.map((q, i) => <li key={i}>{q}</li>)}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-t border-gray-800 pt-6 flex justify-end">
+                                        <button
+                                            onClick={() => {
+                                                const form = document.getElementById("application-form");
+                                                if (form) {
+                                                    form.scrollIntoView({ behavior: "smooth" });
+                                                    setFormData((prev) => ({
+                                                        ...prev,
+                                                        position: job.value,
+                                                    }));
+                                                }
+                                            }}
+                                            className="inline-flex items-center justify-center rounded-xl bg-nobleblue-600 hover:bg-nobleblue-700 text-white font-medium transition-all duration-300 px-6 py-2.5 text-sm gap-2"
+                                        >
+                                            Apply Now <ArrowRight className="w-4 h-4" />
+                                        </button>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
                     {/* Application Form */}
-                    <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+                    <div
+                        id="application-form"
+                        className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-md border border-theme"
+                    >
                         <div className="text-center mb-12">
                             <div className="flex items-center justify-center gap-2 mb-2">
                                 <FileText className="w-6 h-6 text-nobleblue-600" />
@@ -143,9 +263,12 @@ export default function CareerPageContent() {
                                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-6">
                                     <CheckCircle className="w-8 h-8 text-green-600" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-main-theme mb-4">Application Submitted!</h3>
+                                <h3 className="text-2xl font-bold text-main-theme mb-4">
+                                    Application Submitted!
+                                </h3>
                                 <p className="text-muted-theme mb-8">
-                                    Thank you for your interest in joining Noble Stack. We&apos;ve received your application and will review it shortly.
+                                    Thank you for your interest in joining Noble Stack. We&apos;ve
+                                    received your application and will review it shortly.
                                 </p>
                                 <CTAButton
                                     type="button"
@@ -230,20 +353,29 @@ export default function CareerPageContent() {
                                             required
                                         >
                                             <option value="">Select a position</option>
+                                            <option value="seo-specialist">SEO Specialist</option>
+                                            <option value="social-media-marketer">
+                                                Social Media Marketer
+                                            </option>
                                             <option value="frontend-developer">
                                                 Frontend Developer
                                             </option>
-                                            <option value="backend-developer">Backend Developer</option>
+                                            <option value="backend-developer">
+                                                Backend Developer
+                                            </option>
                                             <option value="fullstack-developer">
                                                 Fullstack Developer
                                             </option>
                                             <option value="ai-engineer">AI/ML Engineer</option>
-                                            <option value="product-designer">Product Designer</option>
+                                            <option value="product-designer">
+                                                Product Designer
+                                            </option>
                                             <option value="devops-engineer">DevOps Engineer</option>
                                             <option value="other">Other</option>
                                         </select>
                                     </div>
                                 </div>
+
 
                                 <div>
                                     <label className="block text-md-sm font-semibold text-muted-theme mb-2">
