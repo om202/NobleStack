@@ -6,6 +6,15 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Blogs - NobleStack",
     description: "Insights, strategies, and updates from the NobleStack team.",
+    keywords: [
+        "tech blogs Nepal",
+        "AI insights",
+        "web development trends",
+        "startup advice",
+        "technology news Kathmandu",
+        "Noble Stack blog",
+        "software development articles"
+    ],
 };
 
 export default function BlogsPage() {
