@@ -183,45 +183,6 @@ export default function CareerLayout({
                 "@type": "Place",
                 name: "South Asia"
               }
-            ],
-            jobPosting: {
-              "@type": "JobPosting",
-              title: "Multiple Positions Available in Nepal",
-              description: "We're always looking for talented developers, designers, and AI specialists to join our growing team in Kathmandu and work remotely across Nepal.",
-              employmentType: ["FULL_TIME", "PART_TIME", "CONTRACTOR", "INTERN"],
-              hiringOrganization: {
-                "@type": "Organization",
-                name: "Noble Stack"
-              },
-              jobLocation: {
-                "@type": "Place",
-                address: {
-                  "@type": "PostalAddress",
-                  addressCountry: "NP"
-                }
-              }
-            },
-            employee: [
-              {
-                "@type": "Person",
-                name: "Alex Chen",
-                jobTitle: "CEO & Founder"
-              },
-              {
-                "@type": "Person",
-                name: "Sarah Rodriguez",
-                jobTitle: "CTO"
-              },
-              {
-                "@type": "Person",
-                name: "Michael Park",
-                jobTitle: "Lead AI Engineer"
-              },
-              {
-                "@type": "Person",
-                name: "Emily Watson",
-                jobTitle: "Design Director"
-              }
             ]
           })
         }}
