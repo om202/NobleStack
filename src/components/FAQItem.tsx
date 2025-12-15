@@ -18,6 +18,7 @@ export default function FAQItem({
     onToggle,
 }: FAQItemProps) {
     const contentId = `faq-content-${question.toLowerCase().replace(/\s+/g, '-')}`;
+    const headerId = `faq-header-${question.toLowerCase().replace(/\s+/g, '-')}`;
 
     return (
         <article className="bg-gray-800 rounded-2xl shadow-sm border border-theme overflow-hidden">
@@ -28,7 +29,7 @@ export default function FAQItem({
                 className="w-full text-left px-6 py-6 flex items-center justify-between"
             >
                 <div className="flex-1">
-                    <h3 className="text-md-sm sm:text-lg font-semibold text-main-theme">
+                    <h3 id={headerId} className="text-md-sm sm:text-lg font-semibold text-main-theme">
                         {question}
                     </h3>
                 </div>
@@ -42,7 +43,7 @@ export default function FAQItem({
                 <div
                     id={contentId}
                     role="region"
-                    aria-labelledby={contentId}
+                    aria-labelledby={headerId}
                     className="px-6 pb-6 border-t border-theme bg-gray-900"
                 >
                     <div className="pl-0 sm:pl-16 pt-6">
