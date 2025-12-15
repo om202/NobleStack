@@ -97,10 +97,10 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-12 px-4 min-h-screen bg-noble-dark">
+      <main className="py-12 px-4 min-h-screen bg-noble-dark">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
+          <header className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
               About Noble Stack
             </h1>
@@ -110,32 +110,32 @@ export default function About() {
               diligently to bring the latest technology, which is changing
               rapidly like never before, accessible to people of Nepal.&rdquo;
             </blockquote>
-          </div>
+          </header>
 
           {/* Team Section - iTunes Style */}
-          <div className="mb-16">
+          <section id="team" aria-label="Our Team" className="mb-16">
             <AlbumArtTeam teamMembers={teamMembers} />
-          </div>
+          </section>
 
           {/* Our Story Section */}
-          <div className="max-w-3xl mx-auto mb-16 space-y-8">
-            <div className="space-y-4">
+          <article id="our-story" className="max-w-3xl mx-auto mb-16 space-y-8">
+            <header className="space-y-4">
               <h2 className="text-4xl font-bold text-main-theme leading-tight">
                 Built in Nepal. Connected Through the USA.
               </h2>
               <h3 className="text-xl text-muted-theme font-medium">
                 Noble Stack’s global model for modern software execution.
               </h3>
-            </div>
+            </header>
 
-            <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-sm">
+            <figure className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-sm">
               <Image
                 src="/nepal.jpg"
                 alt="Beautiful landscape of Nepal"
                 fill
                 className="object-cover"
               />
-            </div>
+            </figure>
 
             <div className="space-y-6 text-lg text-muted-theme leading-relaxed">
               <p>We combine Nepal’s elite engineering talent with US market access to deliver AI first, end‑to‑end product development.</p>
@@ -228,34 +228,38 @@ export default function About() {
 
               <p>Then Noble Stack is built for you. One team. One standard. Global execution.</p>
             </div>
-          </div>
+          </article>
 
           {/* Values Section */}
-          <h2 className="text-2xl font-bold text-main-theme mb-4">Our Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {companyValues.map((val) => (
-              <ServiceCard
-                key={val.id}
-                name={val.title}
-                description={val.description}
-                icon={val.icon}
-              />
-            ))}
-          </div>
+          <section id="values" aria-label="Our Values">
+            <header>
+              <h2 className="text-2xl font-bold text-main-theme mb-4">Our Values</h2>
+            </header>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              {companyValues.map((val) => (
+                <ServiceCard
+                  key={val.id}
+                  name={val.title}
+                  description={val.description}
+                  icon={val.icon}
+                />
+              ))}
+            </div>
+          </section>
 
           {/* CTA Section */}
-          <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme text-center">
-            <div className="flex items-center justify-center gap-2 mb-6">
+          <section id="cta" aria-label="Call to Action" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme text-center">
+            <header className="flex items-center justify-center gap-2 mb-6">
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
-            </div>
+            </header>
 
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-main-theme">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-main-theme">
               Lets get your work done!
-            </h3>
+            </h2>
             <p className="text-base sm:text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
               Let&apos;s collaborate to bring your vision to life. Our team is
               excited to discuss your project and explore how we can help you
@@ -270,9 +274,9 @@ export default function About() {
                 Our Portfolio
               </CTAButton>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </main>
     </>
   );
 }
