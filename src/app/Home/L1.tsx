@@ -2,7 +2,10 @@
 
 import Link from "next/link";
 import {
+  Phone,
+  Box,
   ArrowRight,
+  Calendar,
   CheckCircle,
   Code,
   Bot,
@@ -64,38 +67,29 @@ export default function HeroSection() {
                   <Image
                     src="/nbl.png"
                     alt="Noble Stack Logo"
-                    width={75}
-                    height={75}
-                    className="w-[54px] h-[54px] sm:w-[75px] sm:h-[75px]"
+                    width={60}
+                    height={60}
+                    className="w-[43px] h-[43px] sm:w-[60px] sm:h-[60px] rounded-xl"
                     quality={100}
                     priority
                   />
-
-                  <div className="flex flex-col justify-center">
-                    <span className="text-[20px] sm:text-[28px] md:text-[28px] font-medium text-white leading-none mb-1">
-                      Noble
-                    </span>
-                    <span className="text-[20px] sm:text-[28px] md:text-[28px] font-medium text-white leading-none">
-                      Stack
-                    </span>
-                  </div>
-
+                  <h2 className="text-[22px] sm:text-[29px] md:text-[29px] font-bold text-white">Noble Stack</h2>
                 </div>
 
                 <h1 className="text-[36px] md:text-[49px] font-black mb-6 leading-tight max-w-xl mx-auto">
-                  Your Vision, Powered by AI & Modern Tech
+                  Your Vision, Powered by AI & Modern Web
                 </h1>
 
                 <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-8 max-w-3xl mx-auto">
-                  Noble Stack is an <strong>AI</strong> first<strong> IT company</strong> that helps you turn your ideas into intelligent, scalable digital products using AI that drive real business impact.
+                  We are an AI first IT company that helps you turn your ideas into intelligent, scalable digital products using AI that drive real business impact.
                 </p>
 
                 {/* Call to Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-                  <CTAButton variant="primary" icon={ArrowRight} className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 mt-8">
+                  <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
                     Schedule A Call
                   </CTAButton>
-                  <CTAButton variant="secondary" href="/Products" className="w-full sm:w-auto">
+                  <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/Products" className="w-full sm:w-auto">
                     View Our Products
                   </CTAButton>
                 </div>
