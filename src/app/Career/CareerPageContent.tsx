@@ -45,10 +45,26 @@ export default function CareerPageContent() {
     };
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (e.target.files && e.target.files[0]) {
+        const file = e.target.files?.[0];
+        if (file) {
+            // Validation for file type
+            const allowedExtensions = /\.(pdf|doc|docx|rtf|txt)$/i;
+            if (!allowedExtensions.test(file.name)) {
+                alert("Please upload a valid document type (PDF, DOC, DOCX, RTF, TXT)");
+                e.target.value = "";
+                return;
+            }
+
+            // Validation for file size (5MB)
+            if (file.size > 5 * 1024 * 1024) {
+                alert("File size must be less than 5MB");
+                e.target.value = "";
+                return;
+            }
+
             setFormData({
                 ...formData,
-                resume: e.target.files[0],
+                resume: file,
             });
         }
     };
@@ -134,7 +150,7 @@ export default function CareerPageContent() {
                                 {
                                     title: "SEO Specialist Intern",
                                     value: "seo-specialist",
-                                    location: "Kathmandu, Nepal",
+                                    location: "Remote / Kathmandu",
                                     type: "Internship",
                                     description:
                                         "Join us as an SEO Specialist Intern to learn and apply search engine optimization strategies. You will assist in keyword research, content optimization, and performance tracking.",
@@ -156,7 +172,7 @@ export default function CareerPageContent() {
                                 {
                                     title: "Social Media Marketer Intern",
                                     value: "social-media-marketer",
-                                    location: "Kathmandu, Nepal",
+                                    location: "Remote / Kathmandu",
                                     type: "Internship",
                                     description:
                                         "We are seeking a creative Social Media Marketer Intern to assist in managing our social channels. You will help create engaging content, draft posts, and interact with our community.",
@@ -326,7 +342,7 @@ export default function CareerPageContent() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label className="block text-md-sm font-semibold text-muted-theme mb-2">
-                                            Phone Number
+                                            Phone Number *
                                         </label>
                                         <input
                                             type="tel"
@@ -335,6 +351,7 @@ export default function CareerPageContent() {
                                             onChange={handleInputChange}
                                             className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                             placeholder="+977 (XXX) XXX-XXXX"
+                                            required
                                         />
                                     </div>
 
@@ -376,13 +393,14 @@ export default function CareerPageContent() {
 
                                 <div>
                                     <label className="block text-md-sm font-semibold text-muted-theme mb-2">
-                                        Years of Experience
+                                        Years of Experience *
                                     </label>
                                     <select
                                         name="experience"
                                         value={formData.experience}
                                         onChange={handleInputChange}
                                         className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300 text-main-theme"
+                                        required
                                     >
                                         <option value="">Select experience level</option>
                                         <option value="intern">Intern</option>
@@ -408,12 +426,12 @@ export default function CareerPageContent() {
                                             )}
                                         </p>
                                         <p className="text-md-sm text-muted-theme">
-                                            PDF, DOC, DOCX (max 5MB)
+                                            PDF, DOC, DOCX, RTF, TXT (max 5MB)
                                         </p>
                                         <input
                                             type="file"
                                             name="resume"
-                                            accept=".pdf,.doc,.docx"
+                                            accept=".pdf,.doc,.docx,.rtf,.txt"
                                             className="hidden"
                                             onChange={handleFileChange}
                                             required
@@ -423,7 +441,7 @@ export default function CareerPageContent() {
 
                                 <div>
                                     <label className="block text-md-sm font-semibold text-muted-theme mb-2">
-                                        Cover Letter / Message
+                                        Cover Letter / Message *
                                     </label>
                                     <textarea
                                         name="message"
@@ -432,6 +450,7 @@ export default function CareerPageContent() {
                                         rows={5}
                                         className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                         placeholder="Tell us about yourself and why you're interested in joining Noble Stack. What excites you about our mission?"
+                                        required
                                     ></textarea>
                                 </div>
 
