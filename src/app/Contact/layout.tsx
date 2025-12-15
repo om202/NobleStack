@@ -76,7 +76,7 @@ export default function ContactLayout({
             contactPoint: [
               {
                 "@type": "ContactPoint",
-                telephone: "+977-1-XXXXXXX",
+                telephone: "+977 985-1411602",
                 email: "noblestack.io@gmail.com",
                 contactType: "Customer Service",
                 areaServed: ["Nepal", "South Asia"],
@@ -115,12 +115,13 @@ export default function ContactLayout({
             },
             geo: {
               "@type": "GeoCoordinates",
-              latitude: "27.7172",
-              longitude: "85.3240"
+              latitude: "27.6935",
+              longitude: "85.3090"
             },
             sameAs: [
-              "https://www.linkedin.com/company/noble-stack",
-              "https://github.com/noble-stack"
+              "https://www.linkedin.com/company/noble-stack-pvt-ltd",
+              "https://www.facebook.com/people/Noble-Stack-Pvt-Ltd/61577564326108/",
+              "https://www.instagram.com/noble_stack_/"
             ]
           })
         }}
@@ -137,7 +138,7 @@ export default function ContactLayout({
             image: "https://noblestack.io/nbl.png",
             "@id": "https://noblestack.io/Contact",
             url: "https://noblestack.io",
-            telephone: "+977-1-XXXXXXX",
+            telephone: "+977 985-1411602",
             email: "noblestack.io@gmail.com",
             address: {
               "@type": "PostalAddress",
@@ -149,8 +150,8 @@ export default function ContactLayout({
             },
             geo: {
               "@type": "GeoCoordinates",
-              latitude: "27.7172",
-              longitude: "85.3240"
+              latitude: "27.6935",
+              longitude: "85.3090"
             },
             openingHoursSpecification: {
               "@type": "OpeningHoursSpecification",
@@ -169,8 +170,9 @@ export default function ContactLayout({
               }
             ],
             sameAs: [
-              "https://www.linkedin.com/company/noble-stack",
-              "https://github.com/noble-stack"
+              "https://www.linkedin.com/company/noble-stack-pvt-ltd",
+              "https://www.facebook.com/people/Noble-Stack-Pvt-Ltd/61577564326108/",
+              "https://www.instagram.com/noble_stack_/"
             ],
             priceRange: "$$",
             currenciesAccepted: ["NPR", "USD", "INR"],
@@ -178,8 +180,8 @@ export default function ContactLayout({
               "@type": "GeoCircle",
               geoMidpoint: {
                 "@type": "GeoCoordinates",
-                latitude: "27.7172",
-                longitude: "85.3240"
+                latitude: "27.6935",
+                longitude: "85.3090"
               },
               geoRadius: "1000000"
             }

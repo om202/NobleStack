@@ -86,8 +86,8 @@ export default function HomeLayout({
             },
             geo: {
               "@type": "GeoCoordinates",
-              latitude: "27.7172",
-              longitude: "85.3240"
+              latitude: "27.6935",
+              longitude: "85.3090"
             },
             areaServed: [
               {
@@ -99,7 +99,7 @@ export default function HomeLayout({
                 name: "South Asia"
               }
             ],
-            telephone: "+977-1-XXXXXXX",
+            telephone: "+977 985-1411602",
             email: "noblestack.io@gmail.com",
             potentialAction: {
               "@type": "SearchAction",

@@ -79,7 +79,7 @@ export default function AboutLayout({
             description: "Noble Stack is a leading technology company based in Kathmandu, Nepal, specializing in AI development, modern web applications, and intelligent automation solutions for clients across Nepal and South Asia.",
             foundingDate: "2019",
             email: "noblestack.io@gmail.com",
-            telephone: "+977-1-XXXXXXX",
+            telephone: "+977 985-1411602",
             address: {
               "@type": "PostalAddress",
               streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
@@ -90,8 +90,8 @@ export default function AboutLayout({
             },
             geo: {
               "@type": "GeoCoordinates",
-              latitude: "27.7172",
-              longitude: "85.3240"
+              latitude: "27.6935",
+              longitude: "85.3090"
             },
             areaServed: [
               {
@@ -118,8 +118,9 @@ export default function AboutLayout({
             priceRange: "$$",
             currenciesAccepted: ["NPR", "USD", "INR"],
             sameAs: [
-              "https://www.linkedin.com/company/noble-stack",
-              "https://github.com/noble-stack"
+              "https://www.linkedin.com/company/noble-stack-pvt-ltd",
+              "https://www.facebook.com/people/Noble-Stack-Pvt-Ltd/61577564326108/",
+              "https://www.instagram.com/noble_stack_/"
             ],
             hasOfferCatalog: {
               "@type": "OfferCatalog",

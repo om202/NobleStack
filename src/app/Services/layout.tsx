@@ -81,7 +81,7 @@ export default function ServicesLayout({
                 addressRegion: "Bagmati Province",
                 addressCountry: "NP"
               },
-              telephone: "+977-1-XXXXXXX"
+              telephone: "+977 985-1411602"
             },
             serviceType: "Software Development",
             areaServed: [
