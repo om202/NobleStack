@@ -58,7 +58,7 @@ export default async function BlogPostPage({ params }: Params) {
     }
 
     return (
-        <article className="min-h-screen bg-white">
+        <article className="min-h-screen bg-noble-dark">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -154,13 +154,17 @@ export default async function BlogPostPage({ params }: Params) {
 
             {/* Content */}
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div className="prose prose-lg prose-nobleblue max-w-none 
-                    prose-headings:text-gray-900 prose-headings:font-bold
-                    prose-p:text-gray-600 prose-p:leading-8
-                    prose-a:text-nobleblue-600 prose-a:no-underline hover:prose-a:text-nobleblue-700
-                    prose-strong:text-gray-900
-                    prose-blockquote:border-l-nobleblue-500 prose-blockquote:bg-nobleblue-50 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:text-gray-700
+                <div className="prose prose-lg prose-invert max-w-none 
+                    prose-headings:text-main-theme prose-headings:font-bold
+                    prose-p:text-muted-theme prose-p:leading-8
+                    prose-a:text-nobleblue-400 prose-a:no-underline hover:prose-a:text-nobleblue-300
+                    prose-strong:text-main-theme
+                    prose-blockquote:border-l-nobleblue-500 prose-blockquote:bg-nobleblue-500/10 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:text-muted-theme
                     prose-img:rounded-xl prose-img:shadow-lg
+                    prose-code:text-nobleblue-300 prose-code:bg-gray-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+                    prose-pre:bg-gray-800 prose-pre:border prose-pre:border-theme
+                    prose-ul:text-muted-theme prose-ol:text-muted-theme
+                    prose-li:text-muted-theme
                 ">
                     <ReactMarkdown>{post.content}</ReactMarkdown>
                 </div>
