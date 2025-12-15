@@ -14,8 +14,8 @@ interface TeamMember {
 }
 
 const PlaceholderAvatar = ({ className }: { className?: string }) => (
-  <div className={`w-full h-full bg-gray-50 flex items-center justify-center ${className}`}>
-    <User className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-gray-400" />
+  <div className={`w-full h-full bg-gray-600 flex items-center justify-center ${className}`}>
+    <User className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-gray-500" />
   </div>
 );
 
@@ -84,7 +84,7 @@ export default function AlbumArtTeam({
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white rounded-2xl p-4 md:p-6 shadow-sm border border-gray-200 overflow-hidden">
+    <div className="bg-gray-900 rounded-2xl p-4 md:p-6 shadow-sm border border-theme overflow-hidden">
       <div className="relative h-[350px] md:h-[420px] lg:h-[480px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {teamMembers.map((member, index) => (
@@ -93,10 +93,17 @@ export default function AlbumArtTeam({
               className="absolute transition-all duration-1000 ease-in-out transform-gpu will-change-transform"
               style={getCardStyle(index)}
             >
-              <div className="w-60 h-90 md:w-72 md:h-[420px] lg:w-80 lg:h-[460px] bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transform-gpu">
+              <div className="w-60 h-90 md:w-72 md:h-[420px] lg:w-80 lg:h-[460px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl border border-theme overflow-hidden transform-gpu">
                 {/* Image Section */}
-                <div className="h-48 md:h-56 lg:h-64 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center p-6">
-                  <div className="w-32 h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 rounded-2xl overflow-hidden shadow-lg">
+                <div className="relative h-48 md:h-56 lg:h-64 hero-gradient-bg flex items-center justify-center p-6 overflow-hidden">
+                  {/* Decorative Blur Elements */}
+                  <div className="hero-gradient-blur-blue"></div>
+                  <div className="hero-gradient-blur-green"></div>
+                  <div className="hero-gradient-blur-orange"></div>
+                  <div className="hero-gradient-blur-amber"></div>
+
+                  {/* Image container with relative positioning to appear above gradient */}
+                  <div className="relative z-10 w-32 h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 rounded-2xl overflow-hidden shadow-[0_10px_40px_-10px_rgba(75,85,99,0.8)]">
                     {shouldShowPlaceholder(member.image, index) ? (
                       <PlaceholderAvatar />
                     ) : (
@@ -114,13 +121,13 @@ export default function AlbumArtTeam({
 
                 {/* Info Section */}
                 <div className="p-6 md:p-8 text-center transform-gpu">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-1 md:mb-2 transform-gpu">
+                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-main-theme mb-1 md:mb-2 transform-gpu">
                     {member.name}
                   </h3>
-                  <p className="text-blue-600 font-semibold text-base md:text-lg mb-3 md:mb-4 transform-gpu">
+                  <p className="text-nobleblue-400 font-semibold text-base md:text-lg mb-3 md:mb-4 transform-gpu">
                     {member.role}
                   </p>
-                  <p className="text-gray-500 text-base md:text-lg whitespace-pre-line leading-relaxed mb-4 transform-gpu">
+                  <p className="text-muted-theme text-base md:text-lg whitespace-pre-line leading-relaxed mb-4 transform-gpu">
                     {member.expertise}
                   </p>
                 </div>
@@ -131,10 +138,10 @@ export default function AlbumArtTeam({
       </div>
 
       <div className="text-center mt-8">
-        <h3 className="text-lg font-medium text-gray-500 mb-2">
+        <h3 className="text-lg font-medium text-muted-theme mb-2">
           Meet Our Team
         </h3>
-        <p className="text-base text-gray-400 max-w-xl mx-auto">
+        <p className="text-base text-muted-theme max-w-xl mx-auto">
           Our diverse team of experts brings together years of experience in
           technology, design, and business strategy.
         </p>

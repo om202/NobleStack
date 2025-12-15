@@ -97,15 +97,15 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-12 px-4 min-h-screen bg-gray-50">
+      <section className="py-12 px-4 min-h-screen bg-noble-dark">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
               About Noble Stack
             </h1>
 
-            <blockquote className="text-base sm:text-lg text-gray-500 mb-8 max-w-3xl mx-auto">
+            <blockquote className="text-base sm:text-lg text-muted-theme mb-8 max-w-3xl mx-auto">
               &ldquo;We&apos;re a group of hardworking smart people working
               diligently to bring the latest technology, which is changing
               rapidly like never before, accessible to people of Nepal.&rdquo;
@@ -120,10 +120,10 @@ export default function About() {
           {/* Our Story Section */}
           <div className="max-w-3xl mx-auto mb-16 space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-4xl font-bold text-main-theme leading-tight">
                 Built in Nepal. Connected Through the USA.
               </h2>
-              <h3 className="text-xl text-gray-700 font-medium">
+              <h3 className="text-xl text-muted-theme font-medium">
                 Noble Stack’s global model for modern software execution.
               </h3>
             </div>
@@ -137,7 +137,7 @@ export default function About() {
               />
             </div>
 
-            <div className="space-y-6 text-lg text-gray-800 leading-relaxed">
+            <div className="space-y-6 text-lg text-muted-theme leading-relaxed">
               <p>We combine Nepal’s elite engineering talent with US market access to deliver AI first, end‑to‑end product development.</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Two‑Hub Model: Engineering in Nepal, market access in the USA.</li>
@@ -146,9 +146,9 @@ export default function About() {
                 <li>Full‑cycle delivery from concept to deployment.</li>
               </ul>
 
-              <hr className="border-gray-200 my-8" />
+              <hr className="border-theme my-8" />
 
-              <h2 className="text-2xl font-bold text-gray-900">AI First by Default</h2>
+              <h2 className="text-2xl font-bold text-main-theme">AI First by Default</h2>
 
               <p>
                 We don’t add AI later. We design for it from day one.
@@ -157,7 +157,7 @@ export default function About() {
               <p>At Noble Stack, AI isn’t an integration or an enhancement: it’s the foundation. Every product is architected with an AI-first approach, where intelligence drives the core workflows, decisions, and scale from the start.</p>
 
               <p>We build systems where automation, learning, and decision-making are primary goals - not secondary features.</p>
-              <h3 className="text-xl font-bold text-gray-900 mt-6">Modern Web Infrastructure</h3>
+              <h3 className="text-xl font-bold text-main-theme mt-6">Modern Web Infrastructure</h3>
 
               <p>The frontend is not just a UI layer. It is core infrastructure.</p>
 
@@ -165,7 +165,7 @@ export default function About() {
 
               <p>We design and engineer interfaces that scale, perform under real-world conditions, and evolve without costly rewrites.</p>
 
-              <h3 className="text-xl font-bold text-gray-900 mt-6">AI Agents & Automation</h3>
+              <h3 className="text-xl font-bold text-main-theme mt-6">AI Agents & Automation</h3>
 
               <p>We build autonomous AI agents that take action, not just respond.</p>
 
@@ -179,9 +179,9 @@ export default function About() {
 
               <p>These systems do not just respond. They execute.</p>
 
-              <hr className="border-gray-200 my-8" />
+              <hr className="border-theme my-8" />
 
-              <h2 className="text-2xl font-bold text-gray-900">We Build Before We Sell</h2>
+              <h2 className="text-2xl font-bold text-main-theme">We Build Before We Sell</h2>
 
               <p><strong>Our credibility comes from shipping.</strong></p>
 
@@ -198,9 +198,9 @@ export default function About() {
               <p>We do not experiment on client projects. We bring systems that are already built, tested, and shipped.</p>
 
 
-              <hr className="border-gray-200 my-8" />
+              <hr className="border-theme my-8" />
 
-              <h2 className="text-2xl font-bold text-gray-900">From Concept to Deployed Software</h2>
+              <h2 className="text-2xl font-bold text-main-theme">From Concept to Deployed Software</h2>
 
               <p>Our role is simple. We turn ideas into reliable, scalable software without unnecessary friction.</p>
 
@@ -214,9 +214,9 @@ export default function About() {
               </ol>
 
 
-              <hr className="border-gray-200 my-8" />
+              <hr className="border-theme my-8" />
 
-              <h2 className="text-2xl font-bold text-gray-900">Let&apos;s Build</h2>
+              <h2 className="text-2xl font-bold text-main-theme">Let&apos;s Build</h2>
 
               <p>If you&apos;re looking for a team that combines:</p>
 
@@ -230,8 +230,8 @@ export default function About() {
             </div>
           </div>
 
-          {/* Values Section */
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Values</h2>}
+          {/* Values Section */}
+          <h2 className="text-2xl font-bold text-main-theme mb-4">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {companyValues.map((val) => (
               <ServiceCard
@@ -244,7 +244,7 @@ export default function About() {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 text-center">
+          <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
@@ -253,10 +253,10 @@ export default function About() {
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
             </div>
 
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-main-theme">
               Lets get your work done!
             </h3>
-            <p className="text-base sm:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
               Let&apos;s collaborate to bring your vision to life. Our team is
               excited to discuss your project and explore how we can help you
               achieve your goals.
