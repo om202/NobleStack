@@ -83,26 +83,26 @@ export default function Contact() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-12 px-4 min-h-screen bg-gray-50">
+      <section className="py-12 px-4 min-h-screen bg-noble-dark">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
               Get In Touch
             </h1>
 
-            <blockquote className="text-base sm:text-lg text-gray-500 mb-8 max-w-3xl mx-auto">
+            <blockquote className="text-base sm:text-lg text-muted-theme mb-8 max-w-3xl mx-auto">
               &ldquo;Ready to transform your ideas into intelligent digital solutions?
               Let&apos;s discuss your project and explore how we can help you succeed.&rdquo;
             </blockquote>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
+          <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <MessageSquare className="w-6 h-6 text-nobleblue-600" />
-                <h3 className="text-xl font-semibold text-gray-700">
+                <h3 className="text-xl font-semibold text-main-theme">
                   Send us a Message
                 </h3>
               </div>
@@ -113,8 +113,8 @@ export default function Contact() {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-6">
                   <CheckCircle className="w-8 h-8 text-green-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Message Sent!</h3>
-                <p className="text-gray-600 mb-8">
+                <h3 className="text-2xl font-bold text-main-theme mb-4">Message Sent!</h3>
+                <p className="text-muted-theme mb-8">
                   Thank you for reaching out. We&apos;ve received your message and will be in touch shortly.
                 </p>
                 <CTAButton
@@ -140,7 +140,7 @@ export default function Contact() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                   <div>
-                    <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                    <label className="block text-md-sm font-semibold text-muted-theme mb-2">
                       Full Name *
                     </label>
                     <input
@@ -148,14 +148,14 @@ export default function Contact() {
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                       placeholder="Your full name"
                       required
                     />
                   </div>
 
                   <div>
-                    <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                    <label className="block text-md-sm font-semibold text-muted-theme mb-2">
                       Email Address *
                     </label>
                     <input
@@ -163,7 +163,7 @@ export default function Contact() {
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                       placeholder="your@email.com"
                       required
                     />
@@ -172,7 +172,7 @@ export default function Contact() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                    <label className="block text-md-sm font-semibold text-muted-theme mb-2">
                       Phone Number
                     </label>
                     <input
@@ -180,13 +180,13 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                       placeholder="+977 (XXX) XXX-XXXX"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                    <label className="block text-md-sm font-semibold text-muted-theme mb-2">
                       Company/Organization
                     </label>
                     <input
@@ -194,21 +194,21 @@ export default function Contact() {
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                       placeholder="Your company name"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-md-sm font-semibold text-muted-theme mb-2">
                     Subject *
                   </label>
                   <select
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300 text-main-theme"
                     required
                   >
                     <option value="">Select a subject</option>
@@ -222,7 +222,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="block text-md-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-md-sm font-semibold text-muted-theme mb-2">
                     Message *
                   </label>
                   <textarea
@@ -230,7 +230,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-nobleblue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                     placeholder="Tell us about your project, requirements, or any questions you have. What excites you about working with Noble Stack?"
                     required
                   ></textarea>
@@ -246,7 +246,7 @@ export default function Contact() {
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </CTAButton>
-                  <p className="text-md-sm text-gray-500 mt-4">
+                  <p className="text-md-sm text-muted-theme mt-4">
                     We&apos;ll get back to you within 24 hours
                   </p>
                 </div>
@@ -257,10 +257,10 @@ export default function Contact() {
           {/* Contact Information Cards */}
           <div className="mt-16">
             <div className="text-center mb-12">
-              <h3 className="text-xl font-semibold text-gray-700 mb-3">
+              <h3 className="text-xl font-semibold text-main-theme mb-3">
                 Ready to Start Your Project?
               </h3>
-              <p className="text-gray-500 max-w-2xl mx-auto">
+              <p className="text-muted-theme max-w-2xl mx-auto">
                 Choose your preferred way to connect with us.
               </p>
             </div>
