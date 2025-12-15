@@ -84,14 +84,7 @@ export default function Navigation() {
                 quality={100}
                 priority
               />
-              <div className="flex flex-col justify-center">
-                <span className="text-base font-medium text-main-theme leading-none">
-                  Noble
-                </span>
-                <span className="text-base font-medium text-main-theme leading-none">
-                  Stack
-                </span>
-              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-main-theme">Noble Stack</h3>
             </Link>
 
             {/* Desktop Navigation Items - Centered */}

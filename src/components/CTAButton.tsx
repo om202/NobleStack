@@ -18,12 +18,13 @@ export default function CTAButton({
     children,
     variant = "primary",
     icon: Icon,
+    iconPosition = "right",
     href,
     onClick,
     type = "button",
     className = "",
     disabled = false,
-}: CTAButtonProps) {
+}: CTAButtonProps & { iconPosition?: "left" | "right" }) {
     const baseClasses =
         "group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 font-semibold whitespace-nowrap cursor-pointer";
 
@@ -39,8 +40,11 @@ export default function CTAButton({
 
     const content = (
         <>
+            {Icon && iconPosition === "left" && (
+                <Icon className={`w-5 h-5 ${!disabled ? "group-hover:-translate-x-1" : ""} transition-transform duration-300`} />
+            )}
             {children}
-            {Icon && (
+            {Icon && iconPosition === "right" && (
                 <Icon className={`w-5 h-5 ${!disabled ? "group-hover:translate-x-1" : ""} transition-transform duration-300`} />
             )}
         </>
