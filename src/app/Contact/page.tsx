@@ -10,6 +10,9 @@ import {
   Loader2,
   CheckCircle,
   AlertCircle,
+  Linkedin,
+  Facebook,
+  Instagram,
 } from "lucide-react";
 import { useState } from "react";
 import CTAButton from "../../components/CTAButton";
@@ -273,19 +276,74 @@ export default function Contact() {
               />
               <ServiceCard
                 name="Phone"
-                description="+977 987-654-3210"
+                description="+977 985-1411602"
                 icon={Phone}
               />
-              <ServiceCard
-                name="Location"
-                description="Saraswati Marg, Kathmandu 44600, Nepal"
-                icon={MapPin}
-              />
+              <a
+                href="https://maps.app.goo.gl/FEdRQH1LSC6cRjMfA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <ServiceCard
+                  name="Location"
+                  description="Saraswati Marg, Kathmandu 44600, Nepal"
+                  icon={MapPin}
+                />
+              </a>
               <ServiceCard
                 name="Hours"
-                description="Sun - Fri: 9AM - 6PM"
+                description="Sun - Fri: 9AM - 5PM, Saturday (Closed)"
                 icon={Clock}
               />
+            </div>
+
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-xl font-semibold text-main-theme mb-3">
+                Connect on Social Media
+              </h3>
+              <p className="text-muted-theme max-w-2xl mx-auto">
+                Stay updated with our latest news and announcements.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <a
+                href="https://www.linkedin.com/company/noble-stack-pvt-ltd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <ServiceCard
+                  name="LinkedIn"
+                  description="Follow us on LinkedIn"
+                  icon={Linkedin}
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/people/Noble-Stack-Pvt-Ltd/61577564326108/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <ServiceCard
+                  name="Facebook"
+                  description="Like our Page"
+                  icon={Facebook}
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/noble_stack_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <ServiceCard
+                  name="Instagram"
+                  description="Follow us on Instagram"
+                  icon={Instagram}
+                />
+              </a>
             </div>
 
           </div>

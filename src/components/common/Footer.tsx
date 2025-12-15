@@ -1,4 +1,4 @@
-import { Heart, Phone } from "lucide-react";
+import { Heart, Phone, Linkedin, Facebook, Instagram, Mail } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -50,8 +50,40 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Contact */}
-            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+            {/* Contact & Social */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+              <div className="flex items-center gap-4">
+                <a
+                  href="https://www.linkedin.com/company/noble-stack-pvt-ltd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-theme hover:text-nobleblue-400 transition-colors duration-200"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.facebook.com/people/Noble-Stack-Pvt-Ltd/61577564326108/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-theme hover:text-nobleblue-400 transition-colors duration-200"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/noble_stack_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-theme hover:text-nobleblue-400 transition-colors duration-200"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="mailto:noblestack.io@gmail.com"
+                  className="text-muted-theme hover:text-nobleblue-400 transition-colors duration-200"
+                >
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
               <a
                 href="https://calendar.app.google/mWmd6v421Pk66LQ26"
                 target="_blank"

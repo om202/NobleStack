@@ -114,7 +114,7 @@ export default function Navigation() {
             {/* Call Now Button - Desktop */}
             <div className="hidden md:flex items-center">
               <a
-                href="tel:+9779876543210"
+                href="tel:+9779851411602"
                 className="flex items-center gap-2 px-4 py-2 bg-subtle-theme text-nobleblue-300 rounded-lg hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme"
               >
                 <Phone className="w-4 h-4" />
@@ -168,7 +168,7 @@ export default function Navigation() {
 
               {/* Mobile Call Now Button */}
               <a
-                href="tel:+9779876543210"
+                href="tel:+9779851411602"
                 className="flex items-center justify-center gap-2 px-4 py-3 bg-subtle-theme text-nobleblue-300 rounded-xl hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme mt-4"
               >
                 <Phone className="w-4 h-4" />
