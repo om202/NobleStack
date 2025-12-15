@@ -55,17 +55,55 @@ export default function HeroSection() {
             <div className="relative z-10">
               {/* Header */}
               <div className="text-center mb-12">
-                {/* Noble Stack Brand */}
-                <div className="flex items-center justify-center gap-3 mb-6">
-                  <Image
-                    src="/nbl.png"
-                    alt="Noble Stack Logo"
-                    width={60}
-                    height={60}
-                    className="w-[43px] h-[43px] sm:w-[60px] sm:h-[60px] rounded-xl"
-                    priority
-                  />
-                  <span className="text-[22px] sm:text-[29px] md:text-[29px] font-bold text-white">Noble Stack</span>
+                {/* Logo and Animation Overlay */}
+                <div className="flex justify-center mb-2">
+                  <div style={{
+                    width: '190px',
+                    height: '117px',
+                    position: 'relative'
+                  } as React.CSSProperties}>
+                    {/* Lottie Animation - Background */}
+                    <div style={{
+                      width: '190px',
+                      height: '117px',
+                      overflow: 'hidden',
+                      position: 'absolute',
+                      top: 0,
+                      left: 0
+                    } as React.CSSProperties}>
+                      <dotlottie-wc
+                        src="https://lottie.host/baa23bb9-5554-479a-a69a-96530edd0aa2/aCigwSn7M9.lottie"
+                        style={{
+                          width: '190px',
+                          height: '190px',
+                          position: 'absolute',
+                          top: '-37px',
+                          left: '0'
+                        } as React.CSSProperties}
+                        autoplay
+                        loop
+                      ></dotlottie-wc>
+                    </div>
+
+                    {/* Logo - Centered on Top */}
+                    <div style={{
+                      position: 'absolute',
+                      top: '50%',
+                      left: '50%',
+                      transform: 'translate(-50%, -50%)',
+                      zIndex: 10,
+                      filter: 'drop-shadow(0 0 6px rgba(0, 0, 0, 0.95)) drop-shadow(0 2px 10px rgba(0, 0, 0, 0.9)) drop-shadow(0 4px 14px rgba(0, 0, 0, 0.85)) contrast(1.2) brightness(1.1)'
+                    } as React.CSSProperties}>
+                      <Image
+                        src="/nbl.png"
+                        alt="Noble Stack Logo"
+                        width={55}
+                        height={55}
+                        className="w-[55px] h-[55px] rounded-xl"
+                        priority
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 <h1 className="text-[36px] md:text-[49px] font-black mb-6 leading-tight max-w-4xl mx-auto">
@@ -126,6 +164,29 @@ export default function HeroSection() {
       <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-4 py-12">
         <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
           <header className="text-center mb-8">
+            {/* Portfolio Lottie Animation */}
+            <div className="flex justify-center mb-4">
+              <div style={{
+                width: '120px',
+                height: '70px',
+                overflow: 'hidden',
+                position: 'relative'
+              } as React.CSSProperties}>
+                <dotlottie-wc
+                  src="https://lottie.host/c1acfe5a-71a0-4821-8492-2993922e80bb/sFz1fCwu5b.lottie"
+                  style={{
+                    width: '120px',
+                    height: '120px',
+                    position: 'absolute',
+                    top: '-25px',
+                    left: '0'
+                  } as React.CSSProperties}
+                  autoplay
+                  loop
+                ></dotlottie-wc>
+              </div>
+            </div>
+
             <h2 className="text-xl font-bold text-main-theme">
               Our Portfolio
             </h2>
@@ -203,6 +264,29 @@ export default function HeroSection() {
       <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-4 pb-12">
         <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
           <header className="text-center mb-8">
+            {/* Expertise Lottie Animation */}
+            <div className="flex justify-center mb-4">
+              <div style={{
+                width: '120px',
+                height: '70px',
+                overflow: 'hidden',
+                position: 'relative'
+              } as React.CSSProperties}>
+                <dotlottie-wc
+                  src="https://lottie.host/68086be6-62c4-49e5-aa55-253c9a47426b/xDo80q07A6.lottie"
+                  style={{
+                    width: '120px',
+                    height: '120px',
+                    position: 'absolute',
+                    top: '-25px',
+                    left: '0'
+                  } as React.CSSProperties}
+                  autoplay
+                  loop
+                ></dotlottie-wc>
+              </div>
+            </div>
+
             <h2 className="text-xl font-bold text-main-theme">
               Our Expertise
             </h2>
