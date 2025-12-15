@@ -1,5 +1,7 @@
 "use client";
 
+import React from "react";
+
 import Link from "next/link";
 import {
   Phone,
@@ -71,18 +73,18 @@ export default function HeroSection() {
                       top: 0,
                       left: 0
                     } as React.CSSProperties}>
-                      <dotlottie-wc
-                        src="https://lottie.host/baa23bb9-5554-479a-a69a-96530edd0aa2/aCigwSn7M9.lottie"
-                        style={{
+                      {React.createElement('dotlottie-wc', {
+                        src: 'https://lottie.host/baa23bb9-5554-479a-a69a-96530edd0aa2/aCigwSn7M9.lottie',
+                        style: {
                           width: '190px',
                           height: '190px',
                           position: 'absolute',
                           top: '-37px',
                           left: '0'
-                        } as React.CSSProperties}
-                        autoplay
-                        loop
-                      ></dotlottie-wc>
+                        },
+                        autoplay: true,
+                        loop: true
+                      })}
                     </div>
 
                     {/* Logo - Centered on Top */}
@@ -172,18 +174,19 @@ export default function HeroSection() {
                 overflow: 'hidden',
                 position: 'relative'
               } as React.CSSProperties}>
-                <dotlottie-wc
-                  src="https://lottie.host/c1acfe5a-71a0-4821-8492-2993922e80bb/sFz1fCwu5b.lottie"
-                  style={{
+                {React.createElement('dotlottie-wc', {
+                  src: 'https://lottie.host/c1acfe5a-71a0-4821-8492-2993922e80bb/sFz1fCwu5b.lottie',
+                  style: {
                     width: '120px',
                     height: '120px',
                     position: 'absolute',
                     top: '-25px',
                     left: '0'
-                  } as React.CSSProperties}
-                  autoplay
-                  loop
-                ></dotlottie-wc>
+                  } as React.CSSProperties,
+                  autoplay: true,
+                  loop: true,
+                  ...({} as any)
+                })}
               </div>
             </div>
 
@@ -272,18 +275,19 @@ export default function HeroSection() {
                 overflow: 'hidden',
                 position: 'relative'
               } as React.CSSProperties}>
-                <dotlottie-wc
-                  src="https://lottie.host/68086be6-62c4-49e5-aa55-253c9a47426b/xDo80q07A6.lottie"
-                  style={{
+                {React.createElement('dotlottie-wc', {
+                  src: 'https://lottie.host/68086be6-62c4-49e5-aa55-253c9a47426b/xDo80q07A6.lottie',
+                  style: {
                     width: '120px',
                     height: '120px',
                     position: 'absolute',
                     top: '-25px',
                     left: '0'
-                  } as React.CSSProperties}
-                  autoplay
-                  loop
-                ></dotlottie-wc>
+                  } as React.CSSProperties,
+                  autoplay: true,
+                  loop: true,
+                  ...({} as any)
+                })}
               </div>
             </div>
 
