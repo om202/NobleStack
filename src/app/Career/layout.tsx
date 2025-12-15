@@ -72,11 +72,11 @@ export default function CareerLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "JobPosting",
-            title: "Software Developer - AI & Web Development (Nepal)",
-            description: "Join Noble Stack in Kathmandu as a Software Developer specializing in AI and web development. Work with cutting-edge technologies including React, Next.js, machine learning, and AI automation. Serving clients across Nepal and South Asia.",
-            datePosted: "2025-01-01",
-            validThrough: "2025-12-31",
-            employmentType: ["FULL_TIME", "PART_TIME", "CONTRACTOR"],
+            title: "SEO Specialist",
+            description: "<p>We are looking for an experienced SEO Specialist to manage all search engine optimization and marketing activities. You will be responsible for managing all SEO activities such as content strategy, link building and keyword strategy to increase rankings on all major search networks.</p><p><strong>Key Responsibilities:</strong></p><ul><li>Execute tests, collect and analyze data and results, identify trends and insights in order to achieve maximum ROI in paid search campaigns</li><li>Track, report, and analyze website analytics and PPC initiatives and campaigns</li><li>Manage campaign expenses, staying on budget, estimating monthly costs and reconciling discrepancies</li><li>Optimize copy and landing pages for search engine marketing</li><li>Perform ongoing keyword discovery, expansion and optimization</li></ul><p><strong>Requirements:</strong></p><ul><li>Proven SEO experience</li><li>Solid understanding of performance marketing, conversion, and online customer acquisition</li><li>In-depth experience with website analytics tools (e.g, Google Analytics, NetInsight, Omniture, WebTrends)</li><li>Experience with bid management tools (e.g., Click Equations, Marin, Kenshoo, Search Ignite)</li><li>Working knowledge of HTML, CSS, and JavaScript development and constraints</li></ul>",
+            datePosted: "2025-12-14",
+            validThrough: "2026-12-31",
+            employmentType: "FULL_TIME",
             hiringOrganization: {
               "@type": "Organization",
               name: "Noble Stack",
@@ -84,8 +84,10 @@ export default function CareerLayout({
               logo: "https://noblestack.io/nbl.png",
               address: {
                 "@type": "PostalAddress",
+                streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
                 addressLocality: "Kathmandu",
                 addressRegion: "Bagmati Province",
+                postalCode: "44600",
                 addressCountry: "NP"
               }
             },
@@ -105,31 +107,62 @@ export default function CareerLayout({
                 longitude: "85.3090"
               }
             },
-            baseSalary: {
-              "@type": "MonetaryAmount",
-              currency: "NPR",
-              value: {
-                "@type": "QuantitativeValue",
-                minValue: 600000,
-                maxValue: 1500000,
-                unitText: "YEAR"
+            workFromHome: false,
+            applicantLocationRequirements: {
+              "@type": "Country",
+              name: "Nepal"
+            },
+            applicationContact: {
+              "@type": "ContactPoint",
+              email: "noblestack.io@gmail.com",
+              contactType: "HR",
+              telephone: "+977 985-1411602"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            title: "Social Media Marketer",
+            description: "<p>We are looking for a Social Media Marketer to manage our social media accounts. You will be responsible for creating original text and video content, managing posts and responding to followers. You will manage our company image in a cohesive way to achieve our marketing goals.</p><p><strong>Key Responsibilities:</strong></p><ul><li>Perform research on current benchmark trends and audience preferences</li><li>Design and implement social media strategy to align with business goals</li><li>Set specific objectives and report on ROI</li><li>Generate, edit, publish and share engaging content daily (e.g. original text, photos, videos and news)</li><li>Collaborate with other teams, like marketing, sales and customer service to ensure brand consistency</li></ul><p><strong>Requirements:</strong></p><ul><li>Proven work experience as a Social media manager</li><li>Hands on experience in content management</li><li>Excellent copywriting skills</li><li>Ability to deliver creative content (text, image and video)</li><li>Knowledge of online marketing channels</li></ul>",
+            datePosted: "2025-12-14",
+            validThrough: "2026-12-31",
+            employmentType: "FULL_TIME",
+            hiringOrganization: {
+              "@type": "Organization",
+              name: "Noble Stack",
+              sameAs: "https://noblestack.io",
+              logo: "https://noblestack.io/nbl.png",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
+                addressLocality: "Kathmandu",
+                addressRegion: "Bagmati Province",
+                postalCode: "44600",
+                addressCountry: "NP"
               }
             },
-            qualifications: [
-              "Experience with React, Next.js, and modern web technologies",
-              "Knowledge of AI/ML technologies and frameworks",
-              "Strong problem-solving and communication skills",
-              "Bachelor's degree in Computer Science or related field (preferred)",
-              "English proficiency required, Nepali language skills a plus"
-            ],
-            responsibilities: [
-              "Develop AI-powered web applications for Nepal and South Asian markets",
-              "Build responsive and scalable frontend interfaces",
-              "Integrate machine learning models into web applications",
-              "Collaborate with international and local teams",
-              "Write clean, maintainable code following industry standards"
-            ],
-            workFromHome: true,
+            jobLocation: {
+              "@type": "Place",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
+                addressLocality: "Kathmandu",
+                addressRegion: "Bagmati Province",
+                postalCode: "44600",
+                addressCountry: "NP"
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "27.6935",
+                longitude: "85.3090"
+              }
+            },
+            workFromHome: false,
             applicantLocationRequirements: {
               "@type": "Country",
               name: "Nepal"
