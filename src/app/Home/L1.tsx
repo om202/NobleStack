@@ -63,7 +63,6 @@ export default function HeroSection() {
                     width={60}
                     height={60}
                     className="w-[43px] h-[43px] sm:w-[60px] sm:h-[60px] rounded-xl"
-                    quality={100}
                     priority
                   />
                   <span className="text-[22px] sm:text-[29px] md:text-[29px] font-bold text-white">Noble Stack</span>

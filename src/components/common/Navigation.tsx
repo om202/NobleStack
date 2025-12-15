@@ -81,7 +81,6 @@ export default function Navigation() {
                 width={40}
                 height={40}
                 className="rounded-xl"
-                quality={100}
                 priority
               />
               <h3 className="text-xl sm:text-2xl font-bold text-main-theme">Noble Stack</h3>
