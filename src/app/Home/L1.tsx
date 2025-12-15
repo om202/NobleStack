@@ -68,18 +68,18 @@ export default function HeroSection() {
                   <span className="text-[22px] sm:text-[29px] md:text-[29px] font-bold text-white">Noble Stack</span>
                 </div>
 
-                <h1 className="text-[36px] md:text-[49px] font-black mb-6 leading-tight max-w-xl mx-auto">
-                  Your Vision, Powered by AI & Modern Web
+                <h1 className="text-[36px] md:text-[49px] font-black mb-6 leading-tight max-w-4xl mx-auto">
+                  We Convert Business Ideas Into Profitable AI Products
                 </h1>
 
                 <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-8 max-w-3xl mx-auto">
-                  We are an AI first IT company that helps you turn your ideas into intelligent, scalable digital products using AI that drive real business impact.
+                  We're a software development agency specializing in AI and modern web apps. From smart automations to high speed websites, we build products that deliver measurable business results.
                 </p>
 
                 {/* Call to Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 mt-8">
                   <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                    Schedule A Call
+                    Schedule a Free Consultation
                   </CTAButton>
                   <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/Products" className="w-full sm:w-auto">
                     View Our Products
@@ -127,8 +127,11 @@ export default function HeroSection() {
         <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
           <header className="text-center mb-8">
             <h2 className="text-xl font-bold text-main-theme">
-              Our Products
+              Our Portfolio
             </h2>
+            <p className="text-sm text-gray-400 mt-2 max-w-2xl mx-auto">
+              Real products we've built and launched. These showcase our capabilities in AI development, web applications, and bringing ideas to market.
+            </p>
           </header>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">

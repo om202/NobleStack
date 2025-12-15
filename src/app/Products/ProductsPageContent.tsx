@@ -22,7 +22,18 @@ export default function ProductsPageContent() {
     return (
         <main className="py-12 px-4 min-h-screen bg-noble-dark">
             <div className="max-w-6xl mx-auto">
-                <h1 className="sr-only">Our Products</h1>
+                <h1 className="sr-only">Our Portfolio</h1>
+
+                {/* Page Header */}
+                <header className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-main-theme">
+                        Our Portfolio
+                    </h2>
+                    <p className="text-base sm:text-lg text-muted-theme max-w-3xl mx-auto">
+                        Real products we've built and launched. These showcase our capabilities in AI development,
+                        web applications, mobile apps (iOS/Android), and bringing ideas to market.
+                    </p>
+                </header>
                 {/* Vibe AI Section */}
                 <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
                     <header className="text-center mb-12">
