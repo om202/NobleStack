@@ -270,7 +270,7 @@ export default function AboutPageContent() {
                             <CTAButton variant="primary" icon={Rocket} href="/Contact" className="w-full sm:w-auto">
                                 New Project
                             </CTAButton>
-                            <CTAButton variant="secondary" href="/Portfolio" className="w-full sm:w-auto">
+                            <CTAButton variant="secondary" href="/Products" className="w-full sm:w-auto">
                                 Our Portfolio
                             </CTAButton>
                         </div>
