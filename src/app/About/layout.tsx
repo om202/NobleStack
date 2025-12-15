@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Noble Stack - Leading AI & Web Development Company in Kathmandu, Nepal",
+  title: "About - Leading AI & Web Development Company in Kathmandu, Nepal",
   description: "Founded in 2019 in Kathmandu, Nepal, Noble Stack is South Asia's premier AI and web development company. Meet our expert team delivering cutting-edge solutions across Nepal and neighboring countries.",
   keywords: [
     "Noble Stack Nepal",
