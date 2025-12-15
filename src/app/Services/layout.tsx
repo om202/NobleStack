@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI & Web Development Services in Kathmandu, Nepal | Noble Stack",
+  title: "AI & Web Development Services in Kathmandu, Nepal",
   description: "Professional AI development, web applications, and automation services in Kathmandu, Nepal. Serving businesses across Nepal and South Asia with React, Next.js, machine learning, and custom software solutions.",
   keywords: [
     "AI services Nepal",

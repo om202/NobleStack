@@ -33,7 +33,10 @@ const tex = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.noblestack.io"),
-  title: "Noble Stack - AI & Web Development Company in Kathmandu, Nepal | South Asia",
+  title: {
+    template: '%s | Noble Stack',
+    default: 'Noble Stack - AI & Web Development Company in Kathmandu, Nepal',
+  },
   description: "Leading AI and web development company in Kathmandu, Nepal. Noble Stack provides cutting-edge AI solutions, React/Next.js development, and automation services across Nepal and South Asia. Transform your business with local expertise.",
   keywords: [
     "AI development Nepal",

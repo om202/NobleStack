@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     try {
         const post = getPostBySlug(slug, ["title", "excerpt", "coverImage"]);
         return {
-            title: `${post.title} | NobleStack Blog`,
+            title: post.title,
             description: post.excerpt,
             openGraph: {
                 title: post.title,
