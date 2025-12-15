@@ -69,14 +69,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.noblestack.io",
   },
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
-  },
   other: {
-    'google-site-verification': 'your-google-verification-code',
-    'msvalidate.01': 'your-bing-verification-code',
     'geo.region': 'NP-BA', // Bagmati Province, Nepal
     'geo.placename': 'Kathmandu',
     'geo.position': '27.7172;85.3240', // Kathmandu coordinates
@@ -103,70 +96,63 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": ["WebSite", "LocalBusiness"],
-              name: "Noble Stack",
-              url: "https://www.noblestack.io",
-              description: "Leading AI and web development company in Kathmandu, Nepal providing cutting-edge solutions across South Asia.",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
-                addressLocality: "Kathmandu",
-                addressRegion: "Bagmati Province",
-                postalCode: "44600",
-                addressCountry: "NP"
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: "27.7172",
-                longitude: "85.3240"
-              },
-              areaServed: [
+              "@graph": [
                 {
-                  "@type": "Country",
-                  name: "Nepal"
+                  "@type": "WebSite",
+                  "name": "Noble Stack",
+                  "url": "https://www.noblestack.io",
+                  "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://www.noblestack.io/search?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                  }
                 },
                 {
-                  "@type": "Place",
-                  name: "South Asia"
-                },
-                {
-                  "@type": "City",
-                  name: "Kathmandu"
+                  "@type": "LocalBusiness",
+                  "name": "Noble Stack",
+                  "url": "https://www.noblestack.io",
+                  "logo": "https://www.noblestack.io/nbl.png",
+                  "image": "https://www.noblestack.io/nbl.png",
+                  "description": "Leading AI and web development company in Kathmandu, Nepal providing cutting-edge solutions across South Asia.",
+                  "telephone": "+977 985-1411602",
+                  "email": "noblestack.io@gmail.com",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Saraswati Marg, Kathmandu 44600, Nepal",
+                    "addressLocality": "Kathmandu",
+                    "addressRegion": "Bagmati Province",
+                    "postalCode": "44600",
+                    "addressCountry": "NP"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "27.7172",
+                    "longitude": "85.3240"
+                  },
+                  "areaServed": [
+                    {
+                      "@type": "Country",
+                      "name": "Nepal"
+                    },
+                    {
+                      "@type": "Place",
+                      "name": "South Asia"
+                    },
+                    {
+                      "@type": "City",
+                      "name": "Kathmandu"
+                    }
+                  ],
+                  "priceRange": "$$",
+                  "foundingDate": "2019",
+                  "currenciesAccepted": ["NPR", "USD"],
+                  "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+                  "sameAs": [
+                    "https://www.linkedin.com/company/noble-stack-pvt-ltd",
+                    "https://www.facebook.com/people/Noble-Stack-Pvt-Ltd/61577564326108/",
+                    "https://www.instagram.com/noble_stack_/"
+                  ]
                 }
-              ],
-              serviceArea: {
-                "@type": "GeoCircle",
-                geoMidpoint: {
-                  "@type": "GeoCoordinates",
-                  latitude: "27.7172",
-                  longitude: "85.3240"
-                },
-                geoRadius: "1000000"
-              },
-              telephone: "+977-1-XXXXXXX",
-              email: "noblestack.io@gmail.com",
-              priceRange: "$$",
-              foundingDate: "2019",
-              currenciesAccepted: ["NPR", "USD"],
-              paymentAccepted: ["Cash", "Credit Card", "Bank Transfer"],
-              publisher: {
-                "@type": "Organization",
-                name: "Noble Stack",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://www.noblestack.io/nbl.png"
-                }
-              },
-              potentialAction: {
-                "@type": "SearchAction",
-                target: "https://www.noblestack.io/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              },
-              sameAs: [
-                "https://www.linkedin.com/company/noble-stack",
-                "https://github.com/noble-stack",
-                "https://www.facebook.com/noblestack.io",
-                "https://www.instagram.com/noblestack.io"
               ]
             })
           }}

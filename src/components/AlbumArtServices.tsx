@@ -2,9 +2,26 @@
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, CheckCircle } from "lucide-react";
+import {
+  SiReact,
+  SiOpenai,
+  SiZapier,
+  SiDocker,
+  SiGithubactions,
+  SiAuth0,
+} from "react-icons/si";
+
+const ICON_MAP: { [key: string]: React.ComponentType<{ className?: string }> } = {
+  "React": SiReact,
+  "OpenAI": SiOpenai,
+  "Zapier": SiZapier,
+  "Docker": SiDocker,
+  "GitHub Actions": SiGithubactions,
+  "Auth0": SiAuth0,
+};
 
 interface Service {
-  icon: React.ComponentType<{ className?: string }>;
+  icon: string;
   title: string;
   description: string;
   features: string[];
@@ -91,7 +108,7 @@ export default function AlbumArtServices({
       <div className="relative h-[600px] md:h-[650px] lg:h-[700px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {services.map((service, index) => {
-            const Icon = service.icon;
+            const Icon = ICON_MAP[service.icon] || SiReact;
             const colors = getColorClasses(service.color);
             const gradientColors = colors.split(' ')[0] + ' ' + colors.split(' ')[1];
             const textColor = colors.split(' ')[2];
@@ -181,8 +198,8 @@ export default function AlbumArtServices({
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${index === currentIndex
-                  ? "bg-blue-500 scale-110"
-                  : "bg-gray-300 hover:bg-gray-400"
+                ? "bg-blue-500 scale-110"
+                : "bg-gray-300 hover:bg-gray-400"
                 }`}
               aria-label={`Go to service ${index + 1}`}
             />
