@@ -181,23 +181,23 @@ export default function Services() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-12 px-4 min-h-screen bg-noble-dark">
+      <main className="py-12 px-4 min-h-screen bg-noble-dark">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
+          <header className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
               Our Services
             </h1>
-          </div>
+          </header>
 
           {/* Services Carousel */}
-          <div className="mb-16">
+          <section id="services" aria-label="Services List" className="mb-16">
             <AlbumArtServices services={services} />
-          </div>
+          </section>
 
           {/* Process Section */}
-          <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
-            <div className="text-center mb-12">
+          <section id="process" aria-label="Our Process" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
+            <header className="text-center mb-12">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-main-theme mb-6">
                 Our Process
               </h2>
@@ -205,7 +205,7 @@ export default function Services() {
                 We follow a proven methodology to ensure your project is
                 delivered on time, within budget, and exceeds your expectations.
               </p>
-            </div>
+            </header>
 
             {/* Mobile Layout - Vertical Flow */}
             <div className="block lg:hidden space-y-6 sm:space-y-8">
@@ -272,11 +272,11 @@ export default function Services() {
                 ))}
               </div>
             </div>
-          </div>
+          </section>
 
           {/* Technology Stack */}
-          <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
-            <div className="text-center mb-12">
+          <section id="tech-stack" aria-label="Technology Stack" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
+            <header className="text-center mb-12">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-main-theme">
                 Technology Stack
               </h2>
@@ -285,7 +285,7 @@ export default function Services() {
                 robust, scalable solutions. Watch our expertise in action —
                 technologies refresh dynamically to showcase our full stack.
               </p>
-            </div>
+            </header>
 
             {/* Animated Technology Ticker */}
             <TechTicker
@@ -300,10 +300,10 @@ export default function Services() {
                 evolving
               </p>
             </div>
-          </div>
+          </section>
 
           {/* CTA Section */}
-          <div className="bg-gray-900 rounded-2xl p-8 shadow-sm border border-theme text-center">
+          <section id="cta" aria-label="Call to Action" className="bg-gray-900 rounded-2xl p-8 shadow-sm border border-theme text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
@@ -312,9 +312,9 @@ export default function Services() {
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
             </div>
 
-            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-main-theme">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-main-theme">
               Ready to Start Your Project?
-            </h3>
+            </h2>
             <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
               Let&apos;s discuss your requirements and create a solution that
               drives your business forward. Our team is ready to bring your
@@ -329,7 +329,7 @@ export default function Services() {
                 Join Our Team
               </CTAButton>
             </div>
-          </div>
+          </section>
         </div>
 
         <style jsx>{`
@@ -373,7 +373,7 @@ export default function Services() {
             letter-spacing: -0.02em;
           }
         `}</style>
-      </section>
+      </main >
     </>
   );
 }
