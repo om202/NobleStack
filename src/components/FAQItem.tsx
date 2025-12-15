@@ -26,7 +26,7 @@ export default function FAQItem({
                 onClick={onToggle}
                 aria-expanded={isOpen}
                 aria-controls={contentId}
-                className="w-full text-left px-6 py-6 flex items-center justify-between"
+                className="w-full text-left px-6 py-6 flex items-center justify-between cursor-pointer"
             >
                 <div className="flex-1">
                     <h3 id={headerId} className="text-md-sm sm:text-lg font-semibold text-main-theme">

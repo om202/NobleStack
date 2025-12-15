@@ -87,6 +87,14 @@ export default function FAQSection() {
         metrics: ["Zero Downtime", "API-First", "Microservices", "Smart Routing"],
         complexity: "Advanced",
         deliveryTime: "3-6 weeks"
+      },
+      {
+        question: "What coding standards and development practices do you follow?",
+        answer: "We strictly adhere to TypeScript for type safety, enforce consistency with ESLint and Prettier, and utilize component-driven development. Our workflow includes mandatory code reviews, automated testing pipelines, and comprehensive documentation to ensure maintainable, high-quality codebases.",
+        icon: Code,
+        metrics: ["TypeScript Strong", "Clean Code", "Code Reviews", "Maintainable"],
+        complexity: "Standardized",
+        deliveryTime: "Continuous"
       }
     ],
     business: [
@@ -204,18 +212,13 @@ export default function FAQSection() {
                   setOpenFaq(null);
                   setAnimationKey(prev => prev + 1);
                 }}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 ${activeCategory === category.id
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer ${activeCategory === category.id
                   ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
                   : 'text-muted-theme hover:text-main-theme hover:bg-subtle-theme'
                   }`}
               >
                 <category.icon className="w-4 h-4" />
-                <div className="text-left">
-                  <div className="font-semibold text-sm">{category.name}</div>
-                  <div className={`text-xs ${activeCategory === category.id ? 'text-white/80' : 'text-gray-400'}`}>
-                    {category.count}
-                  </div>
-                </div>
+                <span className="font-semibold text-sm">{category.name}</span>
               </button>
             ))}
           </div>
