@@ -5,11 +5,11 @@ import FAQSection from "./L4";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <HeroSection />
       <FeaturesSection />
       <ServicesSection />
       <FAQSection />
-    </>
+    </main>
   );
 } 
