@@ -101,8 +101,8 @@ export default function CareerLayout({
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: "27.7172",
-                longitude: "85.3240"
+                latitude: "27.6935",
+                longitude: "85.3090"
               }
             },
             baseSalary: {
@@ -138,7 +138,7 @@ export default function CareerLayout({
               "@type": "ContactPoint",
               email: "noblestack.io@gmail.com",
               contactType: "HR",
-              telephone: "+977-1-XXXXXXX"
+              telephone: "+977 985-1411602"
             }
           })
         }}
@@ -165,8 +165,8 @@ export default function CareerLayout({
             },
             geo: {
               "@type": "GeoCoordinates",
-              latitude: "27.7172",
-              longitude: "85.3240"
+              latitude: "27.6935",
+              longitude: "85.3090"
             },
             numberOfEmployees: {
               "@type": "QuantitativeValue",

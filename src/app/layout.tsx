@@ -100,8 +100,8 @@ export const metadata: Metadata = {
   other: {
     'geo.region': 'NP-BA', // Bagmati Province, Nepal
     'geo.placename': 'Kathmandu',
-    'geo.position': '27.7172;85.3240', // Kathmandu coordinates
-    'ICBM': '27.7172, 85.3240',
+    'geo.position': '27.6935;85.3090', // Kathmandu coordinates
+    'ICBM': '27.6935, 85.3090',
   },
 };
 
@@ -155,8 +155,8 @@ export default function RootLayout({
                   },
                   "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": "27.7172",
-                    "longitude": "85.3240"
+                    "latitude": "27.6935",
+                    "longitude": "85.3090"
                   },
                   "areaServed": [
                     {
