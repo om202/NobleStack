@@ -20,11 +20,12 @@ import ServiceCard from "../../components/ServiceCard";
 
 export default function ProductsPage() {
   return (
-    <section className="py-12 px-4 min-h-screen bg-noble-dark">
+    <main className="py-12 px-4 min-h-screen bg-noble-dark">
       <div className="max-w-6xl mx-auto">
+        <h1 className="sr-only">Our Products</h1>
         {/* Vibe AI Section */}
-        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
-          <div className="text-center mb-12">
+        <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+          <header className="text-center mb-12">
             <div className="flex flex-col items-center justify-center gap-4 mb-6">
               <Image
                 src="/vibe.png"
@@ -33,9 +34,9 @@ export default function ProductsPage() {
                 height={112}
                 className="rounded-2xl shadow-lg"
               />
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
                 Vibe AI Photo Editor
-              </h1>
+              </h2>
             </div>
 
             <div className="space-y-4 mb-12 max-w-4xl mx-auto">
@@ -46,7 +47,7 @@ export default function ProductsPage() {
 
             {/* Screenshot */}
             <div className="mb-12 flex justify-center">
-              <div className="rounded-[2rem] border border-theme shadow-lg overflow-hidden max-w-[300px]">
+              <figure className="rounded-[2rem] border border-theme shadow-lg overflow-hidden max-w-[300px]">
                 <Image
                   src="/vibe_screen.png"
                   alt="Vibe AI Photo Editor interface"
@@ -55,7 +56,7 @@ export default function ProductsPage() {
                   className="w-full h-auto"
                   priority
                 />
-              </div>
+              </figure>
             </div>
 
             {/* App Store Button */}
@@ -71,7 +72,7 @@ export default function ProductsPage() {
                 </CTAButton>
               </a>
             </div>
-          </div>
+          </header>
 
           {/* Key Features Section */}
           <div className="mb-12">
@@ -102,11 +103,11 @@ export default function ProductsPage() {
               />
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Create Profile Pic Web Section */}
-        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
-          <div className="text-center mb-12">
+        <section id="create-profile-pic" aria-label="Create Profile Pic" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+          <header className="text-center mb-12">
             <div className="flex flex-col items-center justify-center gap-4 mb-6">
               <Image
                 src="/create_profile_pic_icon.png"
@@ -115,9 +116,9 @@ export default function ProductsPage() {
                 height={112}
                 className="rounded-2xl shadow-lg"
               />
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
                 Create Profile Pic
-              </h1>
+              </h2>
             </div>
 
             <div className="space-y-4 mb-12 max-w-4xl mx-auto">
@@ -128,7 +129,7 @@ export default function ProductsPage() {
 
             {/* Screenshot */}
             <div className="mb-12 flex justify-center">
-              <div className="rounded-xl border border-theme shadow-lg overflow-hidden max-w-4xl w-full">
+              <figure className="rounded-xl border border-theme shadow-lg overflow-hidden max-w-4xl w-full">
                 <Image
                   src="/cpp_screenshot.png"
                   alt="Create Profile Pic Interface"
@@ -136,7 +137,7 @@ export default function ProductsPage() {
                   height={675}
                   className="w-full h-auto"
                 />
-              </div>
+              </figure>
             </div>
 
             {/* Web Link Button */}
@@ -152,7 +153,7 @@ export default function ProductsPage() {
                 </CTAButton>
               </a>
             </div>
-          </div>
+          </header>
 
           {/* Web Features Section */}
           <div className="mb-12">
@@ -183,11 +184,11 @@ export default function ProductsPage() {
               />
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Loopn Section */}
-        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
-          <div className="text-center mb-12">
+        <section id="loopn" aria-label="Loopn" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+          <header className="text-center mb-12">
             <div className="flex flex-col items-center justify-center gap-4 mb-6">
               <Image
                 src="/loopn_logo.png"
@@ -195,9 +196,9 @@ export default function ProductsPage() {
                 width={112}
                 height={112}
               />
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
                 Loopn
-              </h1>
+              </h2>
             </div>
 
             <div className="space-y-4 mb-12 max-w-4xl mx-auto">
@@ -208,7 +209,7 @@ export default function ProductsPage() {
 
             {/* Screenshot */}
             <div className="mb-12 flex justify-center">
-              <div className="rounded-xl border border-theme shadow-lg overflow-hidden max-w-4xl w-full">
+              <figure className="rounded-xl border border-theme shadow-lg overflow-hidden max-w-4xl w-full">
                 <Image
                   src="/loopn_screenshot.png"
                   alt="Loopn Interface"
@@ -216,7 +217,7 @@ export default function ProductsPage() {
                   height={675}
                   className="w-full h-auto"
                 />
-              </div>
+              </figure>
             </div>
 
             {/* Loopn Link Button */}
@@ -232,7 +233,7 @@ export default function ProductsPage() {
                 </CTAButton>
               </a>
             </div>
-          </div>
+          </header>
 
           {/* Loopn Features Section */}
           <div className="mb-12">
@@ -263,11 +264,11 @@ export default function ProductsPage() {
               />
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Auto Captions Section */}
-        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
-          <div className="text-center mb-12">
+        <section id="auto-captions" aria-label="Auto Captions" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+          <header className="text-center mb-12">
             <div className="flex flex-col items-center justify-center gap-4 mb-6">
               <Image
                 src="/autosubai_icon.png"
@@ -276,9 +277,9 @@ export default function ProductsPage() {
                 height={112}
                 className="rounded-2xl shadow-lg"
               />
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
                 Auto Captions
-              </h1>
+              </h2>
             </div>
 
             <div className="space-y-4 mb-12 max-w-4xl mx-auto">
@@ -289,7 +290,7 @@ export default function ProductsPage() {
 
             {/* Screenshot */}
             <div className="mb-12 flex justify-center">
-              <div className="rounded-[2rem] border border-theme shadow-lg overflow-hidden max-w-[300px]">
+              <figure className="rounded-[2rem] border border-theme shadow-lg overflow-hidden max-w-[300px]">
                 <Image
                   src="/autosubai_screen.png"
                   alt="Auto Captions Interface"
@@ -297,7 +298,7 @@ export default function ProductsPage() {
                   height={650}
                   className="w-full h-auto"
                 />
-              </div>
+              </figure>
             </div>
 
             {/* Coming Soon Button */}
@@ -308,7 +309,7 @@ export default function ProductsPage() {
                 </CTAButton>
               </div>
             </div>
-          </div>
+          </header>
 
           {/* Auto Captions Features Section */}
           <div className="mb-12">
@@ -339,8 +340,8 @@ export default function ProductsPage() {
               />
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </main>
   );
 }
