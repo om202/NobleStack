@@ -1,10 +1,38 @@
 import type { Metadata, Viewport } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
 import DeviceTracker from "../components/common/DeviceTracker";
 
+const tex = localFont({
+  src: [
+    {
+      path: "../../public/fonts/tex/texgyreheros-regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/tex/texgyreheros-italic.otf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/tex/texgyreheros-bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/tex/texgyreheros-bolditalic.otf",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-tex",
+});
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.noblestack.io"),
   title: "Noble Stack - AI & Web Development Company in Kathmandu, Nepal | South Asia",
   description: "Leading AI and web development company in Kathmandu, Nepal. Noble Stack provides cutting-edge AI solutions, React/Next.js development, and automation services across Nepal and South Asia. Transform your business with local expertise.",
   keywords: [
@@ -80,6 +108,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  themeColor: '#000000',
 };
 
 export default function RootLayout({
@@ -159,7 +188,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="font-sans antialiased"
+        className={`${tex.className} font-sans antialiased bg-noble-dark text-white`}
       >
         <DeviceTracker />
         <div className="min-h-screen">
