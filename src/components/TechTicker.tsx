@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import {
-  SiReact, SiOpenai, SiAmazon, SiTailwindcss, SiPrisma, SiLangchain, 
+  SiReact, SiOpenai, SiAmazon, SiTailwindcss, SiPrisma, SiLangchain,
   SiVercel, SiFirebase, SiZapier, SiStripe, SiAnthropic, SiFigma,
-  SiFramer, SiRedux, SiClerk, SiHuggingface, SiStreamlit, SiFastapi, 
+  SiFramer, SiRedux, SiClerk, SiHuggingface, SiStreamlit, SiFastapi,
   SiN8N, SiMake, SiGithubactions, SiGitlab, SiPrettier, SiEslint,
   SiDatadog, SiSlack, SiGmail, SiGoogle
 } from 'react-icons/si';
@@ -134,8 +134,8 @@ const CARD_POSITIONS = [
   { transform: "translateX(240px) scale(0.7)", zIndex: 2, opacity: 0.4 },  // Far right
 ];
 
-export default function TechTicker({ 
-  technologies, 
+export default function TechTicker({
+  technologies,
   interval = 2000,
   className = "",
   auto = false
@@ -145,7 +145,7 @@ export default function TechTicker({
   // Auto-scroll through technologies only if auto is true
   useEffect(() => {
     if (!auto) return;
-    
+
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % technologies.length);
     }, interval);
@@ -154,7 +154,7 @@ export default function TechTicker({
 
   // Manual navigation functions
   const goToPrevious = () => {
-    setCurrentIndex((prev) => 
+    setCurrentIndex((prev) =>
       prev === 0 ? technologies.length - 1 : prev - 1
     );
   };
@@ -166,12 +166,12 @@ export default function TechTicker({
   const getCardStyle = (index: number) => {
     const position = (index - currentIndex + technologies.length) % technologies.length;
     const totalTechs = technologies.length;
-    
+
     // Handle visible positions
     if (position < CARD_POSITIONS.length) return CARD_POSITIONS[position];
     if (position === totalTechs - 1) return { ...CARD_POSITIONS[1], transform: "translateX(-140px) scale(0.85)" }; // Left
     if (position === totalTechs - 2) return { ...CARD_POSITIONS[2], transform: "translateX(-240px) scale(0.7)" };  // Far left
-    
+
     // Hidden cards
     return {
       transform: `translateX(${position > totalTechs / 2 ? 400 : -400}px) scale(0.5)`,
@@ -184,15 +184,15 @@ export default function TechTicker({
     const IconComponent = TECH_ICONS[techName];
     if (IconComponent) {
       return (
-        <IconComponent 
-          className="mb-2" 
-          style={{ 
-            color: '#1F2937',
+        <IconComponent
+          className="mb-2"
+          style={{
+            color: '#D1D5DB',
             width: '32px',
             height: '32px',
             minWidth: '32px',
             minHeight: '32px'
-          }} 
+          }}
         />
       );
     }
@@ -206,17 +206,17 @@ export default function TechTicker({
         <>
           <button
             onClick={goToPrevious}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full p-2 hover:bg-gray-50 hover:border-gray-300 transition-all duration-200 shadow-sm"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 border border-theme rounded-full p-2 hover:bg-gray-700 hover:border-gray-600 transition-all duration-200 shadow-sm"
             aria-label="Previous technology"
           >
-            <ChevronLeft className="w-5 h-5 text-gray-600" />
+            <ChevronLeft className="w-5 h-5 text-gray-300" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full p-2 hover:bg-gray-50 hover:border-gray-300 transition-all duration-200 shadow-sm"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 border border-theme rounded-full p-2 hover:bg-gray-700 hover:border-gray-600 transition-all duration-200 shadow-sm"
             aria-label="Next technology"
           >
-            <ChevronRight className="w-5 h-5 text-gray-600" />
+            <ChevronRight className="w-5 h-5 text-gray-300" />
           </button>
         </>
       )}
@@ -228,17 +228,17 @@ export default function TechTicker({
             className="absolute transition-all duration-1000 ease-in-out transform-gpu will-change-transform"
             style={getCardStyle(index)}
           >
-            <div className="w-56 h-36 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg border border-gray-300 overflow-hidden transform-gpu relative">
+            <div className="w-56 h-36 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg border border-theme overflow-hidden transform-gpu relative">
               <div className="h-full flex flex-col items-center justify-center p-4 text-center transform-gpu">
                 {renderIcon(tech.name)}
-                <h3 className="text-lg font-bold text-gray-900 mb-1 transform-gpu">
+                <h3 className="text-lg font-bold text-main-theme mb-1 transform-gpu">
                   {tech.name}
                 </h3>
-                <p className="text-gray-600 font-medium text-md-sm transform-gpu">
+                <p className="text-muted-theme font-medium text-md-sm transform-gpu">
                   {TECH_DESCRIPTIONS[tech.name] || "Technology Solution"}
                 </p>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/5 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent pointer-events-none" />
             </div>
           </div>
         ))}
@@ -251,11 +251,10 @@ export default function TechTicker({
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                index === currentIndex
-                  ? "bg-blue-500 scale-125"
-                  : "bg-gray-300 hover:bg-gray-400"
-              }`}
+              className={`w-2 h-2 rounded-full transition-all duration-200 ${index === currentIndex
+                ? "bg-blue-500 scale-125"
+                : "bg-gray-300 hover:bg-gray-400"
+                }`}
               aria-label={`Go to technology ${index + 1}`}
             />
           ))}

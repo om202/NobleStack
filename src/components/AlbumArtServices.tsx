@@ -16,9 +16,9 @@ interface AlbumArtServicesProps {
   autoRotateInterval?: number; // in milliseconds, default 5000
 }
 
-export default function AlbumArtServices({ 
-  services, 
-  autoRotateInterval = 5000 
+export default function AlbumArtServices({
+  services,
+  autoRotateInterval = 5000
 }: AlbumArtServicesProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -66,9 +66,8 @@ export default function AlbumArtServices({
     } else {
       // Hidden cards
       return {
-        transform: `translateX(${
-          position > services.length / 2 ? -500 : 500
-        }px) scale(0.7)`,
+        transform: `translateX(${position > services.length / 2 ? -500 : 500
+          }px) scale(0.7)`,
         zIndex: 1,
         opacity: 0.3,
       };
@@ -88,7 +87,7 @@ export default function AlbumArtServices({
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-200 overflow-hidden">
+    <div className="bg-gray-900 rounded-2xl p-6 md:p-8 shadow-sm border border-theme overflow-hidden">
       <div className="relative h-[600px] md:h-[650px] lg:h-[700px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {services.map((service, index) => {
@@ -103,30 +102,38 @@ export default function AlbumArtServices({
                 className="absolute transition-all duration-700 ease-in-out transform-gpu will-change-transform"
                 style={getCardStyle(index)}
               >
-                <div className="w-80 sm:w-72 md:w-96 lg:w-[420px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden transform-gpu">
+                <div className="w-80 sm:w-72 md:w-96 lg:w-[420px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl border border-theme overflow-hidden transform-gpu">
                   {/* Header Section */}
-                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 sm:p-6 md:p-8 text-center">
-                    <div className={`w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br ${gradientColors} rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-lg`}>
-                      <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" />
+                  <div className="relative bg-gradient-to-br from-gray-700 to-gray-800 p-6 sm:p-6 md:p-8 text-center overflow-hidden">
+                    {/* Decorative Blur Elements */}
+                    <div className="hero-gradient-blur-blue"></div>
+                    <div className="hero-gradient-blur-green"></div>
+                    <div className="hero-gradient-blur-orange"></div>
+                    <div className="hero-gradient-blur-amber"></div>
+
+                    <div className="relative z-10">
+                      <div className={`w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br ${gradientColors} rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-lg`}>
+                        <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" />
+                      </div>
+                      <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-main-theme mb-2 sm:mb-3 leading-tight">
+                        {service.title}
+                      </h3>
+                      <p className="text-md-sm sm:text-md-sm md:text-base text-muted-theme leading-relaxed">
+                        {service.description}
+                      </p>
                     </div>
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight">
-                      {service.title}
-                    </h3>
-                    <p className="text-md-sm sm:text-md-sm md:text-base text-gray-600 leading-relaxed">
-                      {service.description}
-                    </p>
                   </div>
 
                   {/* Features Section */}
                   <div className="p-6 sm:p-6 md:p-8 flex-1">
-                    <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-3 sm:mb-4 md:mb-6">
+                    <h4 className="text-base sm:text-lg md:text-xl font-semibold text-main-theme mb-3 sm:mb-4 md:mb-6">
                       Key Technologies
                     </h4>
                     <ul className="space-y-2 sm:space-y-3 md:space-y-4">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-2 sm:gap-3">
                           <CheckCircle className={`w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ${textColor} flex-shrink-0 mt-0.5`} />
-                          <span className="text-md-sm sm:text-md-sm md:text-md-sm lg:text-base text-gray-700 leading-relaxed font-medium">
+                          <span className="text-md-sm sm:text-md-sm md:text-md-sm lg:text-base text-muted-theme leading-relaxed font-medium">
                             {feature}
                           </span>
                         </li>
@@ -142,42 +149,41 @@ export default function AlbumArtServices({
         {/* Navigation Buttons */}
         <button
           onClick={prevService}
-          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:shadow-xl transition-all duration-300 z-10 group"
+          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-gray-800 rounded-full shadow-lg border border-theme flex items-center justify-center hover:bg-gray-700 hover:shadow-xl transition-all duration-300 z-10 group"
           aria-label="Previous service"
         >
-          <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-gray-600 group-hover:text-gray-800" />
+          <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-gray-300 group-hover:text-white" />
         </button>
 
         <button
           onClick={nextService}
-          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:shadow-xl transition-all duration-300 z-10 group"
+          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-gray-800 rounded-full shadow-lg border border-theme flex items-center justify-center hover:bg-gray-700 hover:shadow-xl transition-all duration-300 z-10 group"
           aria-label="Next service"
         >
-          <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-gray-600 group-hover:text-gray-800" />
+          <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-gray-300 group-hover:text-white" />
         </button>
       </div>
 
       {/* Bottom Section */}
       <div className="text-center mt-6 md:mt-8">
-        <h3 className="text-lg md:text-xl font-medium text-gray-500 mb-2">
+        <h3 className="text-lg md:text-xl font-medium text-muted-theme mb-2">
           Our Services Portfolio
         </h3>
-        <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto px-2">
-          We offer comprehensive digital solutions tailored to transform your business 
+        <p className="text-sm md:text-base text-muted-theme max-w-2xl mx-auto px-2">
+          We offer comprehensive digital solutions tailored to transform your business
           and drive innovation in today&apos;s competitive landscape.
         </p>
-        
+
         {/* Dots Indicator */}
         <div className="flex justify-center gap-2 mt-4 md:mt-6">
           {services.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
-                index === currentIndex
+              className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${index === currentIndex
                   ? "bg-blue-500 scale-110"
                   : "bg-gray-300 hover:bg-gray-400"
-              }`}
+                }`}
               aria-label={`Go to service ${index + 1}`}
             />
           ))}

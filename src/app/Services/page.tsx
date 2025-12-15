@@ -181,11 +181,11 @@ export default function Services() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-12 px-4 min-h-screen bg-gray-50">
+      <section className="py-12 px-4 min-h-screen bg-noble-dark">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
               Our Services
             </h1>
           </div>
@@ -196,12 +196,12 @@ export default function Services() {
           </div>
 
           {/* Process Section */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-16">
+          <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
             <div className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-main-theme mb-6">
                 Our Process
               </h2>
-              <p className="text-md-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
+              <p className="text-md-sm sm:text-base text-muted-theme max-w-2xl mx-auto">
                 We follow a proven methodology to ensure your project is
                 delivered on time, within budget, and exceeds your expectations.
               </p>
@@ -212,25 +212,25 @@ export default function Services() {
               {process.map((step, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="relative mb-4 sm:mb-6">
-                    <div className="w-20 h-20 bg-gray-100 rounded-2xl flex items-center justify-center shadow-sm">
+                    <div className="w-20 h-20 bg-gray-800 rounded-2xl flex items-center justify-center shadow-sm">
                       <span className="text-2xl font-bold text-nobleblue-600">
                         {step.step}
                       </span>
                     </div>
                   </div>
 
-                  <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 text-center">
+                  <h3 className="text-base sm:text-lg font-bold text-main-theme mb-2 sm:mb-3 text-center">
                     {step.title}
                   </h3>
 
-                  <p className="text-md-sm sm:text-base text-gray-600 text-center max-w-xs">
+                  <p className="text-md-sm sm:text-base text-muted-theme text-center max-w-xs">
                     {step.description}
                   </p>
 
                   {/* Vertical Arrow for Mobile */}
                   {index < process.length - 1 && (
                     <div className="mt-8 mb-4">
-                      <div className="bg-gradient-to-br from-gray-500 to-gray-600 rounded-full p-2">
+                      <div className="bg-gradient-to-br from-nobleblue-500 to-nobleblue-600 rounded-full p-2">
                         <ArrowRight className="w-5 h-5 text-white transform rotate-90" />
                       </div>
                     </div>
@@ -245,7 +245,7 @@ export default function Services() {
                 {process.map((step, index) => (
                   <div key={index} className="text-center relative">
                     <div className="relative mb-6">
-                      <div className="w-20 h-20 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto shadow-sm">
+                      <div className="w-20 h-20 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto shadow-sm">
                         <span className="text-2xl font-bold text-nobleblue-600">
                           {step.step}
                         </span>
@@ -254,18 +254,18 @@ export default function Services() {
                       {/* Connecting Arrow */}
                       {index < process.length - 1 && (
                         <div className="absolute top-1/2 left-full transform -translate-y-1/2 w-12 flex items-center justify-center">
-                          <div className="bg-gradient-to-br from-gray-500 to-gray-600 rounded-full p-2">
+                          <div className="bg-gradient-to-br from-nobleblue-500 to-nobleblue-600 rounded-full p-2">
                             <ArrowRight className="w-5 h-5 text-white" />
                           </div>
                         </div>
                       )}
                     </div>
 
-                    <h3 className="text-lg font-bold text-gray-900 mb-3">
+                    <h3 className="text-lg font-bold text-main-theme mb-3">
                       {step.title}
                     </h3>
 
-                    <p className="text-base text-gray-600">
+                    <p className="text-base text-muted-theme">
                       {step.description}
                     </p>
                   </div>
@@ -275,12 +275,12 @@ export default function Services() {
           </div>
 
           {/* Technology Stack */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 mb-16">
+          <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
             <div className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-main-theme">
                 Technology Stack
               </h2>
-              <p className="text-md-sm sm:text-base text-gray-600 max-w-2xl mx-auto mb-8">
+              <p className="text-md-sm sm:text-base text-muted-theme max-w-2xl mx-auto mb-8">
                 We work with the latest and most reliable technologies to build
                 robust, scalable solutions. Watch our expertise in action —
                 technologies refresh dynamically to showcase our full stack.
@@ -295,7 +295,7 @@ export default function Services() {
             />
 
             <div className="text-center mt-8">
-              <p className="text-md-sm text-gray-500">
+              <p className="text-md-sm text-muted-theme">
                 {allTechnologies.length}+ Technologies in our arsenal • Always
                 evolving
               </p>
@@ -303,7 +303,7 @@ export default function Services() {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 text-center">
+          <div className="bg-gray-900 rounded-2xl p-8 shadow-sm border border-theme text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
@@ -312,10 +312,10 @@ export default function Services() {
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
             </div>
 
-            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-main-theme">
               Ready to Start Your Project?
             </h3>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
               Let&apos;s discuss your requirements and create a solution that
               drives your business forward. Our team is ready to bring your
               vision to life.
