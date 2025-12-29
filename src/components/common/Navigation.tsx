@@ -71,8 +71,8 @@ export default function Navigation() {
     <>
       {/* Top Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-4 pointer-events-none">
-        <div className="max-w-7xl mx-auto flex justify-center">
-          <div className="flex items-center gap-4 py-2 px-3 sm:px-4 bg-white/[0.03] backdrop-blur-3xl border border-white/5 rounded-full shadow-2xl pointer-events-auto backdrop-saturate-150 transition-all duration-300">
+        <div className="max-w-7xl mx-auto flex justify-center w-full">
+          <div className="w-full sm:w-auto flex items-center justify-between sm:justify-center gap-2 sm:gap-4 py-2 px-3 sm:px-4 bg-white/[0.03] backdrop-blur-3xl border border-white/5 rounded-full shadow-2xl pointer-events-auto backdrop-saturate-150 transition-all duration-300">
             {/* Logo Section */}
             <Link href="/" className="flex items-center gap-2 flex-shrink-0 group">
               <Image
@@ -83,7 +83,7 @@ export default function Navigation() {
                 className="rounded-lg"
                 priority
               />
-              <span className="hidden sm:block text-lg font-bold text-main-theme tracking-tight">Noble Stack</span>
+              <span className="text-base sm:text-xl font-bold text-main-theme tracking-tight text-nowrap">Noble Stack</span>
             </Link>
 
             {/* Separator */}
@@ -110,17 +110,17 @@ export default function Navigation() {
             </div>
 
             {/* Separator */}
-            <div className="w-px h-6 bg-theme" />
+            <div className="hidden min-[900px]:block w-px h-6 bg-theme" />
 
             {/* Right Side Actions */}
             <div className="flex items-center gap-2">
               {/* Call Now Button */}
               <a
                 href="tel:+9779851411602"
-                className="flex items-center gap-2 px-4 py-1.5 bg-white text-black rounded-full hover:bg-gray-200 transition-all duration-200 font-semibold text-sm shadow-sm"
+                className="flex items-center gap-2 px-3 sm:px-4 py-1.5 bg-white text-black rounded-full hover:bg-gray-200 transition-all duration-200 font-semibold text-sm shadow-sm"
               >
-                <Phone className="w-3.5 h-3.5" />
-                <span className="hidden min-[400px]:inline whitespace-nowrap">Talk to Us</span>
+                <Phone className="w-3.5 h-3.5 fill-current" />
+                <span className="whitespace-nowrap text-xs sm:text-sm">Talk to Us</span>
               </a>
 
               {/* Mobile Menu Button */}
