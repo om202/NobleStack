@@ -38,9 +38,9 @@ export default function SocialBadges() {
                                 href={badge.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group transition-all duration-300 hover:scale-105"
+                                className="group transition-transform duration-300 hover:scale-105"
                             >
-                                <div className="bg-subtle-theme backdrop-blur-sm border border-theme rounded-2xl p-4 md:p-6 w-[160px] h-[80px] md:w-[200px] md:h-[100px] flex items-center justify-center group-hover:bg-subtle-hover group-hover:border-theme transition-all">
+                                <div className="bg-subtle-theme border border-theme rounded-2xl p-4 md:p-6 w-[160px] h-[80px] md:w-[200px] md:h-[100px] flex items-center justify-center group-hover:bg-subtle-hover group-hover:border-theme transition-[background-color,border-color]">
                                     <div className={`relative w-full h-full ${badge.name === 'Goodfirms' ? 'scale-150' : ''}`}>
                                         <Image
                                             src={badge.logo}

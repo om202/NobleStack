@@ -103,6 +103,14 @@ body {
   pointer-events: none;
 }
 
+.hero-gradient-blur-blue,
+.hero-gradient-blur-green,
+.hero-gradient-blur-orange,
+.hero-gradient-blur-amber {
+  transform: translateZ(0);
+  will-change: filter;
+}
+
 /* Base gradient layers */
 .hero-gradient-bg::before {
   background: linear-gradient(135deg,
