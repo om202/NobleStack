@@ -126,24 +126,19 @@ body {
   overflow: hidden;
 }
 
-.hero-gradient-bg::before,
-.hero-gradient-bg::after {
+/* Base background image layer */
+.hero-gradient-bg::before {
   content: '';
   position: absolute;
   inset: 0;
   pointer-events: none;
-}
-
-/* Base background image layer */
-.hero-gradient-bg::before {
   background-image: url('/hero_gradient.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.9;
+  opacity: 1;
   background-color: rgb(18 18 18);
   /* Ensure dark base for image overlay */
-  /* Subtle opacity to let any dark background show through slightly if needed */
 }
 
 
