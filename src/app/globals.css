@@ -374,3 +374,21 @@ a {
   line-height: 1.6;
   /* Balanced for interactive elements */
 }
+
+/* Tech Stack Carousel Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+.pause-on-hover:hover {
+  animation-play-state: paused;
+}
