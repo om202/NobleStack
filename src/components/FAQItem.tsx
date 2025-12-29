@@ -21,7 +21,7 @@ export default function FAQItem({
     const headerId = `faq-header-${question.toLowerCase().replace(/\s+/g, '-')}`;
 
     return (
-        <article className="bg-gray-850 rounded-2xl shadow-sm border border-theme overflow-hidden">
+        <article className="bg-subtle-theme rounded-2xl shadow-sm border border-theme overflow-hidden">
             <button
                 onClick={onToggle}
                 aria-expanded={isOpen}
@@ -44,7 +44,7 @@ export default function FAQItem({
                     id={contentId}
                     role="region"
                     aria-labelledby={headerId}
-                    className="px-6 pb-6 border-t border-theme bg-gray-900"
+                    className="px-6 pb-6 border-t border-theme bg-card-theme"
                 >
                     <div className="pl-0 sm:pl-16 pt-6">
                         <p className="text-md-sm sm:text-base text-muted-theme leading-relaxed mb-6">
@@ -56,7 +56,7 @@ export default function FAQItem({
                             {metrics.map((metric, metricIndex) => (
                                 <div
                                     key={metricIndex}
-                                    className="flex items-center gap-2 px-3 py-2 bg-gray-850 rounded-lg border border-theme"
+                                    className="flex items-center gap-2 px-3 py-2 bg-subtle-theme rounded-lg border border-theme"
                                 >
                                     <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                                     <span className="text-md-sm sm:text-base font-medium text-main-theme">

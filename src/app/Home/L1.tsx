@@ -164,7 +164,7 @@ export default function HeroSection() {
 
       {/* Products Section */}
       <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-4 py-12">
-        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+        <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
           <header className="text-center mb-8">
             {/* Portfolio Lottie Animation */}
             <div className="flex justify-center mb-4">
@@ -193,7 +193,7 @@ export default function HeroSection() {
             <h2 className="text-xl font-bold text-main-theme">
               Our Portfolio
             </h2>
-            <p className="text-sm text-gray-300 mt-2 max-w-2xl mx-auto">
+            <p className="text-sm text-muted-theme mt-2 max-w-2xl mx-auto">
               Real products we've built and launched. These showcase our capabilities in AI development, web applications, and bringing ideas to market.
             </p>
           </header>
@@ -265,7 +265,7 @@ export default function HeroSection() {
 
       {/* Expertise Section */}
       <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-4 pb-12">
-        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+        <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
           <header className="text-center mb-8">
             {/* Expertise Lottie Animation */}
             <div className="flex justify-center mb-4">
