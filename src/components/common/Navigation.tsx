@@ -72,7 +72,7 @@ export default function Navigation() {
       {/* Top Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-4 pointer-events-none">
         <div className="max-w-7xl mx-auto flex justify-center">
-          <div className="flex items-center gap-4 py-2 px-3 sm:px-4 bg-white/5 backdrop-blur-2xl border border-theme rounded-full shadow-2xl pointer-events-auto backdrop-saturate-150 transition-all duration-300">
+          <div className="flex items-center gap-4 py-2 px-3 sm:px-4 bg-white/[0.03] backdrop-blur-3xl border border-white/5 rounded-full shadow-2xl pointer-events-auto backdrop-saturate-150 transition-all duration-300">
             {/* Logo Section */}
             <Link href="/" className="flex items-center gap-2 flex-shrink-0 group">
               <Image
@@ -145,10 +145,10 @@ export default function Navigation() {
       {isMobileMenuOpen && (
         <>
           <div
-            className="min-[900px]:hidden fixed inset-0 bg-black/60 z-40 backdrop-blur-md"
+            className="min-[900px]:hidden fixed inset-0 bg-black/40 z-40 backdrop-blur-sm"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="min-[900px]:hidden fixed top-20 left-4 right-4 z-50 bg-card-theme/90 backdrop-blur-2xl border border-theme rounded-3xl shadow-2xl backdrop-saturate-150 max-h-[calc(100vh-6rem)] overflow-y-auto transform transition-all duration-300 ease-out origin-top">
+          <div className="min-[900px]:hidden fixed top-20 left-4 right-4 z-50 bg-white/[0.03] backdrop-blur-3xl border border-white/10 rounded-3xl shadow-2xl backdrop-saturate-150 max-h-[calc(100vh-6rem)] overflow-y-auto transform transition-all duration-300 ease-out origin-top">
             <div className="p-4 space-y-2">
               {navigationItems.map((item) => {
                 const Icon = item.icon;
