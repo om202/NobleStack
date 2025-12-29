@@ -47,7 +47,7 @@ export default function AboutPageContent() {
             title: "Innovation-Driven",
             description: "We embrace change. We're constantly experimenting with the latest frameworks, APIs, and AI models - not just to stay relevant, but to build what's next.",
             icon: Brain,
-            color: "from-nobleblue-500 to-nobleblue-600",
+            color: "from-blue-500 to-blue-600",
             stats: ["Latest Tech", "AI Integration", "Future-Ready", "Cutting-Edge"],
         },
         {
@@ -55,7 +55,7 @@ export default function AboutPageContent() {
             title: "Client-First Engineering",
             description: "We don't chase trends - we solve real problems. Every line of code, every design choice, is built to serve the client's goals and improve outcomes.",
             icon: Users,
-            color: "from-nobleblue-400 to-nobleblue-500",
+            color: "from-blue-400 to-blue-500",
             stats: ["Problem Solving", "Goal-Oriented", "Results-Driven", "Client Focus"],
         },
         {
@@ -63,7 +63,7 @@ export default function AboutPageContent() {
             title: "Fast, But Thoughtful",
             description: "We move quickly - like a startup should - but never at the cost of quality. We believe speed and stability can (and must) co-exist.",
             icon: Zap,
-            color: "from-nobleblue-500 to-nobleblue-400",
+            color: "from-blue-500 to-blue-400",
             stats: ["Quick Delivery", "High Quality", "Stable Code", "Startup Speed"],
         },
         {
@@ -71,7 +71,7 @@ export default function AboutPageContent() {
             title: "Clear Communication",
             description: "We explain complex things simply. Whether you're technical or not, we'll keep you in the loop and speak your language - Nepali or English.",
             icon: MessageCircle,
-            color: "from-nobleblue-600 to-nobleblue-500",
+            color: "from-blue-600 to-blue-500",
             stats: ["Simple Explanations", "Multilingual", "Regular Updates", "Transparent"],
         },
         {
@@ -79,7 +79,7 @@ export default function AboutPageContent() {
             title: "Build with Craft",
             description: "Clean code. Reusable components. Scalable infrastructure. We treat every project like it's our own - because your success is our portfolio.",
             icon: Wrench,
-            color: "from-nobleblue-500 to-nobleblue-600",
+            color: "from-blue-500 to-blue-600",
             stats: ["Clean Code", "Scalable", "Reusable", "Professional"],
         },
         {
@@ -87,7 +87,7 @@ export default function AboutPageContent() {
             title: "Made for Nepal, Built to Scale",
             description: "We're proud to be based in Nepal - and we build software that empowers local businesses while meeting global standards.",
             icon: Heart,
-            color: "from-nobleblue-600 to-nobleblue-700",
+            color: "from-blue-600 to-blue-700",
             stats: ["Local Pride", "Global Standards", "Nepal-Focused", "World-Class"],
         },
     ];

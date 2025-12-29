@@ -118,7 +118,7 @@ export default async function BlogPostPage({ params }: Params) {
 
                         <div className="flex flex-wrap gap-2 mb-6">
                             {post.tags?.map(tag => (
-                                <span key={tag} className="bg-nobleblue-500/20 backdrop-blur-sm border border-nobleblue-400/30 text-nobleblue-200 text-sm px-3 py-1 rounded-full">
+                                <span key={tag} className="bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 text-blue-200 text-sm px-3 py-1 rounded-full">
                                     {tag}
                                 </span>
                             ))}
@@ -160,11 +160,11 @@ export default async function BlogPostPage({ params }: Params) {
                 <div className="prose prose-lg prose-invert max-w-none 
                     prose-headings:text-main-theme prose-headings:font-bold
                     prose-p:text-muted-theme prose-p:leading-8
-                    prose-a:text-nobleblue-400 prose-a:no-underline hover:prose-a:text-nobleblue-300
+                    prose-a:text-blue-400 prose-a:no-underline hover:prose-a:text-blue-300
                     prose-strong:text-main-theme
-                    prose-blockquote:border-l-nobleblue-500 prose-blockquote:bg-nobleblue-500/10 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:text-muted-theme
+                    prose-blockquote:border-l-blue-500 prose-blockquote:bg-blue-500/10 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:text-muted-theme
                     prose-img:rounded-xl prose-img:shadow-lg
-                    prose-code:text-nobleblue-300 prose-code:bg-gray-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+                    prose-code:text-blue-300 prose-code:bg-gray-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
                     prose-pre:bg-gray-800 prose-pre:border prose-pre:border-theme
                     prose-ul:text-muted-theme prose-ol:text-muted-theme
                     prose-li:text-muted-theme
