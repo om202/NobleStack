@@ -180,7 +180,7 @@ export default function Services() {
   return (
     <>
       {/* Hero Section */}
-      <main className="min-h-screen bg-noble-dark">
+      <main className="min-h-screen bg-page-theme transition-colors duration-300">
         <section className="max-w-6xl mx-auto px-4 pt-32 pb-16 sm:pt-40 sm:pb-20">
           {/* Header */}
           <header className="text-center mb-12">
@@ -274,7 +274,7 @@ export default function Services() {
           </section>
 
           {/* Technology Stack */}
-          <section id="tech-stack" aria-label="Technology Stack" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
+          <section id="tech-stack" aria-label="Technology Stack" className="bg-page-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
             <header className="text-center mb-12">
               <h2 className="text-xl md:text-2xl font-bold mb-6 text-main-theme">
                 Technology Stack

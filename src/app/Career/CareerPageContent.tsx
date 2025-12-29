@@ -128,7 +128,7 @@ export default function CareerPageContent() {
     return (
         <>
             {/* Hero Section */}
-            <main className="min-h-screen bg-noble-dark">
+            <main className="min-h-screen bg-page-theme transition-colors duration-300">
                 <section className="max-w-6xl mx-auto px-4 pt-32 pb-16 sm:pt-40 sm:pb-20">
                     {/* Header */}
                     <header className="text-center mb-12">
@@ -198,10 +198,10 @@ export default function CareerPageContent() {
                                 >
                                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                                         <div>
-                                            <h3 className="text-xl font-bold text-white mb-2">
+                                            <h3 className="text-xl font-bold text-main-theme mb-2">
                                                 {job.title}
                                             </h3>
-                                            <div className="flex flex-wrap gap-3 text-sm font-medium text-gray-400">
+                                            <div className="flex flex-wrap gap-3 text-sm font-medium text-muted-theme">
                                                 <span className="bg-subtle-theme px-3 py-1 rounded-full border border-theme flex items-center gap-1">
                                                     <MapPin className="w-3 h-3" /> {job.location}
                                                 </span>
@@ -217,7 +217,7 @@ export default function CareerPageContent() {
 
                                         <div className="grid md:grid-cols-2 gap-8">
                                             <div>
-                                                <h4 className="text-base font-semibold text-white mb-3 flex items-center gap-2">
+                                                <h4 className="text-base font-semibold text-main-theme mb-3 flex items-center gap-2">
                                                     <Briefcase className="w-4 h-4 text-blue-500" /> Key Responsibilities
                                                 </h4>
                                                 <ul className="list-disc pl-5 space-y-2 text-sm">
@@ -225,7 +225,7 @@ export default function CareerPageContent() {
                                                 </ul>
                                             </div>
                                             <div>
-                                                <h4 className="text-base font-semibold text-white mb-3 flex items-center gap-2">
+                                                <h4 className="text-base font-semibold text-main-theme mb-3 flex items-center gap-2">
                                                     <CheckCircle className="w-4 h-4 text-blue-500" /> Requirements
                                                 </h4>
                                                 <ul className="list-disc pl-5 space-y-2 text-sm">
@@ -317,7 +317,7 @@ export default function CareerPageContent() {
                                             name="name"
                                             value={formData.name}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder:text-muted-theme/50"
                                             placeholder="Your full name"
                                             required
                                         />
@@ -448,7 +448,7 @@ export default function CareerPageContent() {
                                         value={formData.message}
                                         onChange={handleInputChange}
                                         rows={5}
-                                        className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                        className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder:text-muted-theme/50"
                                         placeholder="Tell us about yourself and why you're interested in joining Noble Stack. What excites you about our mission?"
                                         required
                                     ></textarea>

@@ -187,7 +187,7 @@ export default function TechTicker({
         <IconComponent
           className="mb-2"
           style={{
-            color: '#D1D5DB',
+            color: 'var(--text-muted)',
             width: '32px',
             height: '32px',
             minWidth: '32px',
@@ -206,17 +206,17 @@ export default function TechTicker({
         <>
           <button
             onClick={goToPrevious}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 border border-theme rounded-full p-2 hover:bg-gray-700 hover:border-gray-600 transition-[background-color,border-color] duration-200 shadow-sm"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-card-theme border border-theme rounded-full p-2 hover:bg-subtle-theme hover:border-theme transition-[background-color,border-color] duration-200 shadow-sm"
             aria-label="Previous technology"
           >
-            <ChevronLeft className="w-5 h-5 text-gray-300" />
+            <ChevronLeft className="w-5 h-5 text-muted-theme" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 border border-theme rounded-full p-2 hover:bg-gray-700 hover:border-gray-600 transition-[background-color,border-color] duration-200 shadow-sm"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-card-theme border border-theme rounded-full p-2 hover:bg-subtle-theme hover:border-theme transition-[background-color,border-color] duration-200 shadow-sm"
             aria-label="Next technology"
           >
-            <ChevronRight className="w-5 h-5 text-gray-300" />
+            <ChevronRight className="w-5 h-5 text-muted-theme" />
           </button>
         </>
       )}
@@ -228,7 +228,7 @@ export default function TechTicker({
             className="absolute transition-[transform,opacity] duration-1000 ease-in-out transform-gpu will-change-transform"
             style={getCardStyle(index)}
           >
-            <div className="w-56 h-36 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg border border-theme overflow-hidden transform-gpu relative">
+            <div className="w-56 h-36 bg-card-theme rounded-lg border border-theme overflow-hidden transform-gpu relative">
               <div className="h-full flex flex-col items-center justify-center p-4 text-center transform-gpu">
                 {renderIcon(tech.name)}
                 <h3 className="text-lg font-bold text-main-theme mb-1 transform-gpu">
@@ -238,7 +238,7 @@ export default function TechTicker({
                   {TECH_DESCRIPTIONS[tech.name] || "Technology Solution"}
                 </p>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-page-theme/20 to-transparent pointer-events-none" />
             </div>
           </div>
         ))}
@@ -253,7 +253,7 @@ export default function TechTicker({
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-[background-color,transform] duration-200 ${index === currentIndex
                 ? "bg-blue-500 scale-125"
-                : "bg-gray-300 hover:bg-gray-400"
+                : "bg-muted-theme/30 hover:bg-muted-theme/50"
                 }`}
               aria-label={`Go to technology ${index + 1}`}
             />

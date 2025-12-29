@@ -61,7 +61,7 @@ export default async function BlogPostPage({ params }: Params) {
     }
 
     return (
-        <article className="min-h-screen bg-noble-dark">
+        <article className="min-h-screen bg-page-theme transition-colors duration-300">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -93,81 +93,89 @@ export default async function BlogPostPage({ params }: Params) {
                     })
                 }}
             />
-            {/* Hero / Header */}
-            <header className="relative h-[60vh] min-h-[400px] w-full bg-card-theme">
-                {post.coverImage && (
-                    <Image
-                        src={post.coverImage}
-                        alt={post.title}
-                        fill
-                        className="object-cover opacity-60"
-                        priority
-                    />
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-bg-page via-bg-page/40 to-transparent" />
+            {/* Header / Meta */}
+            <header className="pt-32 pb-8 sm:pt-40">
+                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                    <Link
+                        href="/blogs"
+                        className="inline-flex items-center text-muted-theme hover:text-main-theme mb-12 transition-colors group"
+                    >
+                        <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+                        Back to Stories
+                    </Link>
 
-                <div className="absolute inset-0 flex flex-col justify-end pb-20">
-                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-                        <Link
-                            href="/blogs"
-                            className="inline-flex items-center text-muted-theme hover:text-main-theme mb-8 transition-colors group"
-                        >
-                            <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-                            Back to Stories
-                        </Link>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                        {post.tags?.map(tag => (
+                            <span key={tag} className="bg-subtle-theme border border-theme text-muted-theme text-xs sm:text-sm px-3 py-1 rounded-full transition-colors duration-300">
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
 
-                        <div className="flex flex-wrap gap-2 mb-6">
-                            {post.tags?.map(tag => (
-                                <span key={tag} className="bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 text-blue-200 text-sm px-3 py-1 rounded-full">
-                                    {tag}
-                                </span>
-                            ))}
-                        </div>
+                    <h1 className="text-3xl md:text-5xl font-bold text-main-theme mb-8 leading-tight tracking-tight">
+                        {post.title}
+                    </h1>
 
-                        <h1 className="text-2xl md:text-4xl md:leading-tight font-bold text-white mb-6">
-                            {post.title}
-                        </h1>
-
-                        <div className="flex items-center gap-6 text-muted-theme text-sm md:text-base">
-                            {post.author && (
-                                <div className="flex items-center gap-2">
-                                    {post.author.picture ? (
-                                        <div className="relative w-8 h-8 rounded-full overflow-hidden border border-theme">
-                                            <Image
-                                                src={post.author.picture}
-                                                alt={post.author.name}
-                                                fill
-                                                className="object-cover"
-                                            />
+                    <div className="flex items-center justify-between py-6 border-y border-theme">
+                        <div className="flex items-center gap-4">
+                            {post.author ? (
+                                <>
+                                    <div className="relative w-12 h-12 rounded-full overflow-hidden border border-theme">
+                                        <Image
+                                            src={post.author.picture || "/nbl.png"}
+                                            alt={post.author.name}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <span className="font-bold text-main-theme text-sm sm:text-base">{post.author.name}</span>
+                                        <div className="flex items-center gap-2 text-muted-theme text-xs sm:text-sm mt-0.5">
+                                            <time>{post.date}</time>
+                                            <span>•</span>
+                                            <span>5 min read</span>
                                         </div>
-                                    ) : (
-                                        <User className="w-5 h-5" />
-                                    )}
-                                    <span className="font-medium text-white">{post.author.name}</span>
+                                    </div>
+                                </>
+                            ) : (
+                                <div className="flex items-center gap-3 text-muted-theme">
+                                    <User className="w-5 h-5" />
+                                    <time className="text-sm">{post.date}</time>
                                 </div>
                             )}
-                            <div className="flex items-center gap-2">
-                                <Calendar className="w-4 h-4" />
-                                <time>{post.date}</time>
-                            </div>
                         </div>
                     </div>
                 </div>
             </header>
 
+            {/* Featured Image */}
+            {post.coverImage && (
+                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+                    <div className="relative aspect-video w-full rounded-2xl overflow-hidden border border-theme shadow-lg">
+                        <Image
+                            src={post.coverImage}
+                            alt={post.title}
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
+                </div>
+            )}
+
             {/* Content */}
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div className="prose prose-lg prose-invert max-w-none 
+                <div className="prose prose-lg max-w-none 
                     prose-headings:text-main-theme prose-headings:font-bold
-                    prose-p:text-muted-theme prose-p:leading-8
-                    prose-a:text-blue-400 prose-a:no-underline hover:prose-a:text-blue-300
+                    prose-p:text-main-theme prose-p:leading-8
+                    prose-a:text-blue-500 prose-a:no-underline hover:prose-a:text-blue-400
                     prose-strong:text-main-theme
                     prose-blockquote:border-l-blue-500 prose-blockquote:bg-blue-500/10 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:text-muted-theme
                     prose-img:rounded-xl prose-img:shadow-lg
-                    prose-code:text-blue-300 prose-code:bg-gray-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
-                    prose-pre:bg-gray-800 prose-pre:border prose-pre:border-theme
-                    prose-ul:text-muted-theme prose-ol:text-muted-theme
-                    prose-li:text-muted-theme
+                    prose-code:text-blue-600 dark:prose-code:text-blue-300 prose-code:bg-subtle-theme prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+                    prose-pre:bg-subtle-theme prose-pre:border prose-pre:border-theme
+                    prose-ul:text-main-theme prose-ol:text-main-theme
+                    prose-li:text-main-theme
                 ">
                     <ReactMarkdown>{post.content}</ReactMarkdown>
                 </div>

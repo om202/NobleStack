@@ -21,8 +21,11 @@ export default function BlogsPage() {
     const posts = getAllPosts(["title", "date", "slug", "coverImage", "excerpt", "tags", "publisher"]);
 
     return (
-        <main className="min-h-screen bg-noble-dark">
+        <main className="min-h-screen bg-page-theme transition-colors duration-300">
             <header className="px-4 pt-32 pb-16 sm:pt-40 sm:pb-20 text-center">
+                <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
+                    Noble Blogs
+                </h1>
                 <blockquote className="text-base text-muted-theme mb-8 max-w-3xl mx-auto">
                     &ldquo;Explore our collection of articles on technology, design, and startup growth.&rdquo;
                 </blockquote>
