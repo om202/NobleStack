@@ -1,5 +1,6 @@
 import { Heart, Phone, Linkedin, Facebook, Instagram, Mail } from "lucide-react";
 import Image from "next/image";
+import CTAButton from "../CTAButton";
 
 export default function Footer() {
   const quickLinks = [
@@ -87,15 +88,15 @@ export default function Footer() {
                   <Mail className="w-5 h-5" />
                 </a>
               </div>
-              <a
+              <CTAButton
                 href="https://calendar.app.google/mWmd6v421Pk66LQ26"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-subtle-theme hover:bg-subtle-hover text-blue-600 dark:text-blue-300 font-semibold rounded-lg transition-colors duration-200 text-base border border-theme"
+                variant="primary"
+                icon={Phone}
+                iconPosition="left"
+                className="!px-6 !py-3 !text-base"
               >
-                <Phone className="w-5 h-5" />
                 Book a Call
-              </a>
+              </CTAButton>
             </div>
           </div>
         </div>

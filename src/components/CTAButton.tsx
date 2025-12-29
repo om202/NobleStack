@@ -10,6 +10,7 @@ interface CTAButtonProps {
     type?: "button" | "submit" | "reset";
     className?: string;
     disabled?: boolean;
+    external?: boolean;
 }
 
 export default function CTAButton({
@@ -22,6 +23,7 @@ export default function CTAButton({
     type = "button",
     className = "",
     disabled = false,
+    external = false,
 }: CTAButtonProps & { iconPosition?: "left" | "right" }) {
     const baseClasses =
         "group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl transition-[transform,background-color,border-color,box-shadow,color] duration-300 transform hover:-translate-y-0.5 font-semibold whitespace-nowrap cursor-pointer";
@@ -49,8 +51,14 @@ export default function CTAButton({
     );
 
     if (href && !disabled) {
+        const isExternal = external || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:');
+
         return (
-            <Link href={href} className={combinedClasses}>
+            <Link
+                href={href}
+                className={combinedClasses}
+                {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            >
                 {content}
             </Link>
         );
