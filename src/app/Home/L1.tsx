@@ -55,6 +55,19 @@ export default function HeroSection() {
             <div className="relative z-10">
               {/* Header */}
               <div className="text-center mb-12">
+                <div className="flex items-center justify-center gap-3 mb-8">
+                  <Image
+                    src="/nbl.png"
+                    alt="Noble Stack Logo"
+                    width={50}
+                    height={50}
+                    className="rounded-lg"
+                    priority
+                  />
+                  <span className="text-3xl font-bold tracking-tight text-white">
+                    Noble Stack
+                  </span>
+                </div>
 
                 <h1 className="text-[32px] md:text-[45px] font-bold mb-6 leading-tight max-w-4xl mx-auto">
                   We Convert Business Ideas Into Profitable AI Products
