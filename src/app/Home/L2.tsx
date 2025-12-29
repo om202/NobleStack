@@ -6,12 +6,6 @@ import {
   Globe,
   ArrowRight,
   Monitor,
-  Network,
-  Layers,
-  Package,
-  Search,
-  Shield,
-  CheckCircle,
 } from "lucide-react";
 import {
   SiReact,
@@ -81,18 +75,11 @@ export default function FeaturesSection() {
     { name: "Express.js", icon: SiExpress, color: "#000000" },
     { name: "Prisma", icon: SiPrisma, color: "#2D3748" },
     { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
-    { name: "REST API", icon: Network, color: "#FF6B35" },
-    { name: "WebSockets", icon: Network, color: "#0066CC" },
-    { name: "Zustand", icon: Package, color: "#FF8C00" },
     { name: "Radix UI", icon: SiRadixui, color: "#161618" },
-    { name: "ShadCN UI", icon: Layers, color: "#000000" },
     { name: "Framer Motion", icon: SiFramer, color: "#0055FF" },
-    { name: "SWR", icon: Search, color: "#000000" },
-    { name: "Zod", icon: Shield, color: "#3E63DD" },
     { name: "Jest", icon: SiJest, color: "#C21325" },
     { name: "Prettier", icon: SiPrettier, color: "#F7B93E" },
     { name: "ESLint", icon: SiEslint, color: "#4B32C3" },
-    { name: "Clerk", icon: CheckCircle, color: "#6C47FF" },
     { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
   ];
 
