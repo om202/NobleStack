@@ -42,7 +42,7 @@ export default function SocialBadges() {
                                 rel="noopener noreferrer"
                                 className="group transition-all duration-300 hover:scale-105"
                             >
-                                <div className="bg-gray-800/60 backdrop-blur-sm border border-theme rounded-2xl p-4 md:p-6 w-[160px] h-[80px] md:w-[200px] md:h-[100px] flex items-center justify-center group-hover:bg-gray-700/80 group-hover:border-theme transition-all">
+                                <div className="bg-gray-850/60 backdrop-blur-sm border border-theme rounded-2xl p-4 md:p-6 w-[160px] h-[80px] md:w-[200px] md:h-[100px] flex items-center justify-center group-hover:bg-gray-800/80 group-hover:border-theme transition-all">
                                     <div className={`relative w-full h-full ${badge.name === 'Goodfirms' ? 'scale-150' : ''}`}>
                                         <Image
                                             src={badge.logo}

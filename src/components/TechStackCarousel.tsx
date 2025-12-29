@@ -28,7 +28,7 @@ export default function TechStackCarousel({
         </h3>
       )}
 
-      <div className="relative overflow-hidden bg-theme-bg rounded-2xl py-4 sm:py-6">
+      <div className="relative overflow-hidden bg-gray-900 rounded-2xl py-4 sm:py-6">
         <style jsx>{`
           @keyframes scroll-left {
             0% {
@@ -53,7 +53,7 @@ export default function TechStackCarousel({
               className="flex-shrink-0 flex flex-col items-center justify-center gap-2 sm:gap-3 transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-110"
               style={{ minWidth: "100px", maxWidth: "140px" }}
             >
-              <div className="bg-gray-800 rounded-lg sm:rounded-xl p-2 sm:p-3 flex items-center justify-center border border-theme">
+              <div className="bg-gray-850 rounded-lg sm:rounded-xl p-2 sm:p-3 flex items-center justify-center border border-theme">
                 {React.createElement(tech.icon, {
                   style: { color: tech.color },
                   className: "w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14"

@@ -20,7 +20,7 @@ export default function ServiceCard({
     imageAlt,
 }: ServiceCardProps) {
     return (
-        <article className="bg-gray-800 rounded-2xl p-6 border border-theme hover:bg-subtle-theme transition-all duration-300 group cursor-pointer min-h-[180px]">
+        <article className="bg-gray-850 rounded-2xl p-6 border border-theme hover:bg-subtle-theme transition-all duration-300 group cursor-pointer min-h-[180px]">
             <div className="flex items-center mb-4">
                 {imageSrc ? (
                     <Image

@@ -21,7 +21,7 @@ export default function FAQItem({
     const headerId = `faq-header-${question.toLowerCase().replace(/\s+/g, '-')}`;
 
     return (
-        <article className="bg-gray-800 rounded-2xl shadow-sm border border-theme overflow-hidden">
+        <article className="bg-gray-850 rounded-2xl shadow-sm border border-theme overflow-hidden">
             <button
                 onClick={onToggle}
                 aria-expanded={isOpen}
@@ -56,7 +56,7 @@ export default function FAQItem({
                             {metrics.map((metric, metricIndex) => (
                                 <div
                                     key={metricIndex}
-                                    className="flex items-center gap-2 px-3 py-2 bg-gray-800 rounded-lg border border-theme"
+                                    className="flex items-center gap-2 px-3 py-2 bg-gray-850 rounded-lg border border-theme"
                                 >
                                     <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                                     <span className="text-md-sm sm:text-base font-medium text-main-theme">
