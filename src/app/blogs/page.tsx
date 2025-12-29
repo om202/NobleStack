@@ -22,7 +22,7 @@ export default function BlogsPage() {
 
     return (
         <main className="min-h-screen bg-noble-dark">
-            <header className="px-4 pt-24 pb-12 sm:pt-32 sm:pb-16 text-center">
+            <header className="px-4 pt-32 pb-16 sm:pt-40 sm:pb-20 text-center">
                 <blockquote className="text-base text-muted-theme mb-8 max-w-3xl mx-auto">
                     &ldquo;Explore our collection of articles on technology, design, and startup growth.&rdquo;
                 </blockquote>
