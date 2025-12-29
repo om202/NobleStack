@@ -15,6 +15,9 @@
   --color-blue-900: rgb(30 58 138);
   --color-blue-950: rgb(23 37 84);
 
+  /* Custom Gray-850 - Between gray-800 and gray-900 */
+  --color-gray-850: rgb(28 34 52);
+
   /* Font family - Tex Gyre Heros via Next.js Font */
   --font-sans: var(--font-tex);
 
