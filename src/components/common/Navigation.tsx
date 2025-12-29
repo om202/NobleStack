@@ -99,7 +99,7 @@ export default function Navigation() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`flex items-center px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${isActive
+                    className={`flex items-center px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
                       ? "text-main-theme bg-main-theme/10"
                       : "text-muted-theme hover:text-main-theme hover:bg-main-theme/5"
                       }`}
@@ -161,7 +161,7 @@ export default function Navigation() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`flex items-center gap-4 px-5 py-4 rounded-2xl text-base font-medium transition-all duration-150 ${isActive
+                    className={`flex items-center gap-4 px-5 py-4 rounded-2xl text-base font-semibold transition-all duration-150 ${isActive
                       ? "bg-main-theme/10 text-main-theme"
                       : "text-muted-theme hover:text-main-theme hover:bg-main-theme/5"
                       }`}
