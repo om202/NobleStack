@@ -169,7 +169,7 @@ export default function AlbumArtServices({
           className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-subtle-theme rounded-full shadow-lg border border-theme flex items-center justify-center hover:bg-subtle-hover hover:shadow-xl transition-all duration-300 z-10 group"
           aria-label="Previous service"
         >
-          <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-gray-300 group-hover:text-white" />
+          <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-muted-theme group-hover:text-main-theme" />
         </button>
 
         <button
@@ -177,7 +177,7 @@ export default function AlbumArtServices({
           className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-subtle-theme rounded-full shadow-lg border border-theme flex items-center justify-center hover:bg-subtle-hover hover:shadow-xl transition-all duration-300 z-10 group"
           aria-label="Next service"
         >
-          <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-gray-300 group-hover:text-white" />
+          <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-muted-theme group-hover:text-main-theme" />
         </button>
       </div>
 

@@ -86,7 +86,7 @@ export default function ContactPageContent() {
     return (
         <>
             {/* Hero Section */}
-            <main className="min-h-screen bg-noble-dark">
+            <main className="min-h-screen bg-page-theme transition-colors duration-300">
                 <section className="max-w-6xl mx-auto px-4 pt-32 pb-16 sm:pt-40 sm:pb-20">
                     {/* Header */}
                     <header className="text-center mb-12">
@@ -151,7 +151,7 @@ export default function ContactPageContent() {
                                             name="name"
                                             value={formData.name}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder:text-muted-theme/50"
                                             placeholder="Your full name"
                                             required
                                         />
@@ -166,7 +166,7 @@ export default function ContactPageContent() {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder:text-muted-theme/50"
                                             placeholder="your@email.com"
                                             required
                                         />
@@ -183,7 +183,7 @@ export default function ContactPageContent() {
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder:text-muted-theme/50"
                                             placeholder="+977 (XXX) XXX-XXXX"
                                         />
                                     </div>
@@ -197,7 +197,7 @@ export default function ContactPageContent() {
                                             name="company"
                                             value={formData.company}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder:text-muted-theme/50"
                                             placeholder="Your company name"
                                         />
                                     </div>
@@ -233,7 +233,7 @@ export default function ContactPageContent() {
                                         value={formData.message}
                                         onChange={handleInputChange}
                                         rows={5}
-                                        className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                        className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder:text-muted-theme/50"
                                         placeholder="Tell us about your project, requirements, or any questions you have. What excites you about working with Noble Stack?"
                                         required
                                     ></textarea>

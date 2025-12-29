@@ -163,42 +163,32 @@ export default function AboutLayout({
             employee: [
               {
                 "@type": "Person",
-                name: "Alex Chen",
-                jobTitle: "CEO & Founder",
-                description: "10+ years of experience in building scalable web applications and AI solutions.",
-                hasOccupation: {
+                "name": "Ved Prakash",
+                "jobTitle": "CEO",
+                "description": "Strategic leader with a focus on business development and bringing modern technology to Nepal.",
+                "hasOccupation": {
                   "@type": "Occupation",
-                  name: "Full-Stack Development, AI Strategy"
+                  "name": "Strategic Leadership, Business Development"
                 }
               },
               {
                 "@type": "Person",
-                name: "Sarah Rodriguez",
-                jobTitle: "CTO",
-                description: "Expert in designing robust cloud infrastructure and implementing CI/CD pipelines.",
-                hasOccupation: {
+                "name": "Omprakash",
+                "jobTitle": "CTO",
+                "description": "Technology strategist and system architect specializing in AI-first product development.",
+                "hasOccupation": {
                   "@type": "Occupation",
-                  name: "Cloud Architecture, DevOps"
+                  "name": "Technology Strategy, System Architecture"
                 }
               },
               {
                 "@type": "Person",
-                name: "Michael Park",
-                jobTitle: "Lead AI Engineer",
-                description: "PhD in Computer Science with focus on deep learning and natural language processing.",
-                hasOccupation: {
+                "name": "Hesamullah",
+                "jobTitle": "Marketing Lead",
+                "description": "Expert in growth strategy and digital marketing, driving the reach of AI solutions in South Asia.",
+                "hasOccupation": {
                   "@type": "Occupation",
-                  name: "Machine Learning, Data Science"
-                }
-              },
-              {
-                "@type": "Person",
-                name: "Emily Watson",
-                jobTitle: "Design Director",
-                description: "Creates intuitive and beautiful user experiences that drive engagement and conversion.",
-                hasOccupation: {
-                  "@type": "Occupation",
-                  name: "UX/UI Design, Product Strategy"
+                  "name": "Growth Strategy, Digital Marketing"
                 }
               }
             ]

@@ -97,7 +97,7 @@ export default function AboutPageContent() {
     return (
         <>
             {/* Hero Section */}
-            <main className="min-h-screen bg-noble-dark">
+            <main className="min-h-screen bg-page-theme transition-colors duration-300">
                 <section className="max-w-6xl mx-auto px-4 pt-32 pb-16 sm:pt-40 sm:pb-20">
                     {/* Header */}
                     <header className="text-center mb-12">
@@ -118,7 +118,7 @@ export default function AboutPageContent() {
                     </section>
 
                     {/* Our Story Section */}
-                    <article id="our-story" className="max-w-3xl mx-auto mb-16 space-y-8">
+                    <article id="our-story" className="max-w-3xl mx-auto mb-16 space-y-8 bg-card-theme p-8 rounded-2xl shadow-sm border border-theme">
                         <header className="space-y-4">
                             <h2 className="text-2xl md:text-3xl font-bold text-main-theme leading-tight">
                                 Built in Nepal. Connected Through the USA.
@@ -231,7 +231,7 @@ export default function AboutPageContent() {
                     </article>
 
                     {/* Values Section */}
-                    <section id="values" aria-label="Our Values">
+                    <section id="values" aria-label="Our Values" className="mb-16">
                         <header>
                             <h2 className="text-lg font-bold text-main-theme mb-4">Our Values</h2>
                         </header>
