@@ -21,12 +21,12 @@ export default function FAQItem({
     const headerId = `faq-header-${question.toLowerCase().replace(/\s+/g, '-')}`;
 
     return (
-        <article className="bg-subtle-theme rounded-2xl shadow-sm border border-theme overflow-hidden">
+        <article className="bg-card-theme rounded-2xl shadow-sm border border-theme overflow-hidden transition-colors duration-300">
             <button
                 onClick={onToggle}
                 aria-expanded={isOpen}
                 aria-controls={contentId}
-                className="w-full text-left px-6 py-6 flex items-center justify-between cursor-pointer"
+                className="w-full text-left px-6 py-6 flex items-center justify-between cursor-pointer hover:bg-subtle-theme/50 transition-colors"
             >
                 <div className="flex-1">
                     <h3 id={headerId} className="text-md-sm sm:text-lg font-semibold text-main-theme">

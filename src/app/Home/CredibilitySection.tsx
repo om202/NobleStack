@@ -44,7 +44,7 @@ export default function CredibilitySection() {
     ];
 
     return (
-        <section className="py-12 px-4 bg-noble-dark">
+        <section className="py-12 px-4 transition-colors">
             <div className="max-w-6xl mx-auto">
                 <header className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-main-theme">
@@ -62,7 +62,7 @@ export default function CredibilitySection() {
                     {credibilityPoints.map((point, index) => (
                         <div
                             key={index}
-                            className="bg-gray-900 rounded-xl p-6 border border-theme hover:border-blue-500 transition-colors duration-300 group"
+                            className="bg-card-theme rounded-xl p-6 border border-theme hover:border-blue-500/50 transition-all duration-300 group"
                         >
                             <div className="flex items-start gap-4">
                                 <div className="flex-shrink-0">
@@ -71,10 +71,10 @@ export default function CredibilitySection() {
                                     </div>
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="text-lg font-bold text-white mb-2">
+                                    <h3 className="text-lg font-bold text-main-theme mb-2">
                                         {point.title}
                                     </h3>
-                                    <p className="text-sm text-gray-400">
+                                    <p className="text-sm text-muted-theme">
                                         {point.description}
                                     </p>
                                 </div>

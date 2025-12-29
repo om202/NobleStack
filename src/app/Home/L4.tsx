@@ -186,7 +186,7 @@ export default function FAQSection() {
   const currentFaqs = faqCategories[activeCategory as keyof typeof faqCategories];
 
   return (
-    <section id="faq" className="pt-2 pb-12 px-4 bg-noble-dark">
+    <section id="faq" className="pt-2 pb-12 px-4 transition-colors">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <header className="text-center mb-12">
@@ -212,7 +212,7 @@ export default function FAQSection() {
                   setOpenFaq(null);
                   setAnimationKey(prev => prev + 1);
                 }}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-[background-color,color,box-shadow] duration-200 cursor-pointer ${activeCategory === category.id
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer ${activeCategory === category.id
                   ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
                   : 'text-muted-theme hover:text-main-theme hover:bg-subtle-theme'
                   }`}
@@ -239,7 +239,7 @@ export default function FAQSection() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center bg-card-theme rounded-2xl p-8 border border-theme shadow-sm">
+        <div className="text-center bg-card-theme rounded-2xl p-8 border border-theme shadow-sm transition-colors">
           <h3 className="text-lg font-bold text-main-theme mb-4">
             Have a specific question?
           </h3>

@@ -18,7 +18,7 @@ export default function ServiceCard({
     imageAlt,
 }: ServiceCardProps) {
     return (
-        <article className="bg-subtle-theme rounded-2xl p-6 border border-theme hover:bg-subtle-hover transition-[transform,background-color,border-color] duration-300 group cursor-pointer min-h-[180px]">
+        <article className="bg-card-theme rounded-2xl p-6 border border-theme hover:bg-subtle-theme transition-[transform,background-color,border-color] duration-300 group cursor-pointer min-h-[180px]">
             <div className="flex items-center mb-4">
                 {imageSrc ? (
                     <Image
@@ -31,9 +31,9 @@ export default function ServiceCard({
                     />
                 ) : Icon ? (
                     <div
-                        className="w-16 h-16 bg-subtle-theme rounded-xl flex items-center justify-center border border-theme"
+                        className="w-16 h-16 bg-subtle-theme rounded-xl flex items-center justify-center border border-theme transition-colors duration-300"
                     >
-                        <Icon className="w-8 h-8 text-blue-400" />
+                        <Icon className="w-8 h-8 text-blue-500 dark:text-blue-400" />
                     </div>
                 ) : null}
             </div>
