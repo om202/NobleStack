@@ -33,7 +33,7 @@
   --bg-subtle: rgba(31, 41, 55, 0.6);
   --bg-subtle-hover: rgba(55, 65, 81, 0.7);
   --text-main: rgb(249 250 251);
-  --text-muted: rgb(156 163 175);
+  --text-muted: rgb(209 213 219);
   --border-theme: rgba(107, 114, 128, 0.3);
   --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
 }
@@ -280,7 +280,7 @@ a {
 }
 
 .text-noble-muted {
-  color: #9CA3AF;
+  color: #D1D5DB;
 }
 
 .text-noble-light {
