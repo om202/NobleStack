@@ -28,29 +28,22 @@ export default function BlogCard({ post }: BlogCardProps) {
                         </div>
                     )}
                 </div>
-                <div className="p-6 flex flex-col flex-1">
-                    <div className="flex flex-col gap-2 mb-3">
-                        <div className="flex items-center justify-between w-full">
-                            {post.tags?.[0] && (
-                                <span className="bg-nobleblue-500/20 text-nobleblue-300 text-xs font-medium px-2.5 py-1 rounded-full border border-nobleblue-400/30">
-                                    {post.tags[0]}
-                                </span>
-                            )}
-                            <time className="text-gray-500 text-xs">{post.date}</time>
-                        </div>
+                <div className="p-7 flex flex-col flex-1">
+                    <div className="flex items-center justify-between w-full mb-4">
                         {post.publisher && (
-                            <span className="text-muted-theme text-xs font-medium block">
+                            <span className="text-gray-500 text-xs">
                                 Published by {post.publisher}
                             </span>
                         )}
+                        <time className="text-gray-500 text-xs">{post.date}</time>
                     </div>
-                    <h3 className="text-xl font-bold text-main-theme mb-2 group-hover:text-nobleblue-400 transition-colors line-clamp-2">
+                    <h3 className="text-xl font-bold text-main-theme mb-3 group-hover:text-nobleblue-400 transition-colors line-clamp-2">
                         {post.title}
                     </h3>
-                    <p className="text-muted-theme text-sm mb-4 line-clamp-3 flex-1">
+                    <p className="text-muted-theme text-sm mb-6 line-clamp-3 flex-1">
                         {post.excerpt}
                     </p>
-                    <div className="flex items-center text-nobleblue-400 font-medium text-sm mt-auto">
+                    <div className="flex items-center justify-center text-blue-400 font-medium text-sm mt-auto border border-blue-400/30 rounded-lg px-4 py-2 bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors pointer-events-none">
                         Read Article <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
                     </div>
                 </div>
