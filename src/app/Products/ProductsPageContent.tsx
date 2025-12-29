@@ -26,16 +26,16 @@ export default function ProductsPageContent() {
 
                 {/* Page Header */}
                 <header className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-main-theme">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-main-theme">
                         Our Portfolio
                     </h2>
-                    <p className="text-base sm:text-lg text-muted-theme max-w-3xl mx-auto">
+                    <p className="text-base text-muted-theme max-w-3xl mx-auto">
                         Real products we've built and launched. These showcase our capabilities in AI development,
                         web applications, mobile apps (iOS/Android), and bringing ideas to market.
                     </p>
                 </header>
                 {/* Vibe AI Section */}
-                <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+                <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -45,13 +45,13 @@ export default function ProductsPageContent() {
                                 height={112}
                                 className="rounded-2xl shadow-lg"
                             />
-                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
+                            <h2 className="text-xl md:text-2xl font-bold leading-tight text-main-theme">
                                 Vibe AI Photo Editor
                             </h2>
                         </div>
                         {/* ... Rest of Vibe AI section ... (Using brief content for this tool call, but full content will be used in real edit) */}
                         <div className="space-y-4 mb-12 max-w-4xl mx-auto">
-                            <p className="text-base sm:text-lg text-muted-theme leading-relaxed">
+                            <p className="text-base text-muted-theme leading-relaxed">
                                 Create stunning profile pictures and edit photos with AI-powered tools. Remove backgrounds instantly, enhance images, and transform your photos with professional filters and AI magic.
                             </p>
                         </div>
@@ -87,7 +87,7 @@ export default function ProductsPageContent() {
 
                     {/* Key Features Section */}
                     <div className="mb-12">
-                        <h3 className="text-2xl md:text-3xl font-bold text-center text-main-theme mb-12">
+                        <h3 className="text-lg md:text-xl font-bold text-center text-main-theme mb-12">
                             Key Features
                         </h3>
 
@@ -117,7 +117,7 @@ export default function ProductsPageContent() {
                 </section>
 
                 {/* Create Profile Pic Web Section */}
-                <section id="create-profile-pic" aria-label="Create Profile Pic" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+                <section id="create-profile-pic" aria-label="Create Profile Pic" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -127,13 +127,13 @@ export default function ProductsPageContent() {
                                 height={112}
                                 className="rounded-2xl shadow-lg"
                             />
-                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
+                            <h2 className="text-xl md:text-2xl font-bold leading-tight text-main-theme">
                                 Create Profile Pic
                             </h2>
                         </div>
 
                         <div className="space-y-4 mb-12 max-w-4xl mx-auto">
-                            <p className="text-base sm:text-lg text-muted-theme leading-relaxed">
+                            <p className="text-base text-muted-theme leading-relaxed">
                                 The web-based solution for professional profile pictures. Powered by Google&apos;s Nano Banana AI, just describe the changes you want in plain English. No subscription required.
                             </p>
                         </div>
@@ -168,7 +168,7 @@ export default function ProductsPageContent() {
 
                     {/* Web Features Section */}
                     <div className="mb-12">
-                        <h3 className="text-2xl md:text-3xl font-bold text-center text-main-theme mb-12">
+                        <h3 className="text-lg md:text-xl font-bold text-center text-main-theme mb-12">
                             Web Features
                         </h3>
 
@@ -198,7 +198,7 @@ export default function ProductsPageContent() {
                 </section>
 
                 {/* Loopn Section */}
-                <section id="loopn" aria-label="Loopn" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+                <section id="loopn" aria-label="Loopn" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -207,13 +207,13 @@ export default function ProductsPageContent() {
                                 width={112}
                                 height={112}
                             />
-                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
+                            <h2 className="text-xl md:text-2xl font-bold leading-tight text-main-theme">
                                 Loopn
                             </h2>
                         </div>
 
                         <div className="space-y-4 mb-12 max-w-4xl mx-auto">
-                            <p className="text-base sm:text-lg text-muted-theme leading-relaxed">
+                            <p className="text-base text-muted-theme leading-relaxed">
                                 Professional Networking & Career Matching using AI. Upload your resume and get matched instantly with compatible professionals for meaningful connections.
                             </p>
                         </div>
@@ -248,7 +248,7 @@ export default function ProductsPageContent() {
 
                     {/* Loopn Features Section */}
                     <div className="mb-12">
-                        <h3 className="text-2xl md:text-3xl font-bold text-center text-main-theme mb-12">
+                        <h3 className="text-lg md:text-xl font-bold text-center text-main-theme mb-12">
                             Why Loopn?
                         </h3>
 
@@ -278,7 +278,7 @@ export default function ProductsPageContent() {
                 </section>
 
                 {/* Auto Captions Section */}
-                <section id="auto-captions" aria-label="Auto Captions" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+                <section id="auto-captions" aria-label="Auto Captions" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -288,13 +288,13 @@ export default function ProductsPageContent() {
                                 height={112}
                                 className="rounded-2xl shadow-lg"
                             />
-                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-main-theme">
+                            <h2 className="text-xl md:text-2xl font-bold leading-tight text-main-theme">
                                 Auto Captions
                             </h2>
                         </div>
 
                         <div className="space-y-4 mb-12 max-w-4xl mx-auto">
-                            <p className="text-base sm:text-lg text-muted-theme leading-relaxed">
+                            <p className="text-base text-muted-theme leading-relaxed">
                                 Automated subtitle generator for any language. Instantly translate or generate captions for native voice with high accuracy.
                             </p>
                         </div>
@@ -324,7 +324,7 @@ export default function ProductsPageContent() {
 
                     {/* Auto Captions Features Section */}
                     <div className="mb-12">
-                        <h3 className="text-2xl md:text-3xl font-bold text-center text-main-theme mb-12">
+                        <h3 className="text-lg md:text-xl font-bold text-center text-main-theme mb-12">
                             Coming Features
                         </h3>
 
