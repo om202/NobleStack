@@ -20,8 +20,8 @@ import ServiceCard from "../../components/ServiceCard";
 
 export default function ProductsPageContent() {
     return (
-        <main className="px-4 min-h-screen bg-noble-dark">
-            <section className="max-w-6xl mx-auto px-4 pt-24 pb-12 sm:pt-32 sm:pb-16">
+        <main className="min-h-screen bg-noble-dark">
+            <section className="max-w-6xl mx-auto px-4 pt-32 pb-16 sm:pt-40 sm:pb-20">
                 <h1 className="sr-only">Our Portfolio</h1>
 
                 {/* Page Header */}

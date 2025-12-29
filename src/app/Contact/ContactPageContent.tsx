@@ -86,8 +86,8 @@ export default function ContactPageContent() {
     return (
         <>
             {/* Hero Section */}
-            <main className="px-4 min-h-screen bg-noble-dark">
-                <section className="max-w-6xl mx-auto px-4 pt-24 pb-12 sm:pt-32 sm:pb-16">
+            <main className="min-h-screen bg-noble-dark">
+                <section className="max-w-6xl mx-auto px-4 pt-32 pb-16 sm:pt-40 sm:pb-20">
                     {/* Header */}
                     <header className="text-center mb-12">
                         <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
