@@ -46,7 +46,7 @@ export default function AnimatedFeatureCarousel({
         <div className="bg-gray-900 rounded-2xl p-4 sm:p-6 md:p-8 border border-theme shadow-sm h-[260px] sm:h-[240px] flex flex-col justify-center">
           <div
             key={activeFeature}
-            className="flex items-start gap-4 sm:gap-6 transition-opacity duration-500"
+            className="flex items-start gap-4 sm:gap-6 transition-opacity duration-500 will-change-opacity"
           >
             <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-800 rounded-2xl flex items-center justify-center flex-shrink-0">
               {React.createElement(features[activeFeature].icon, {
@@ -80,7 +80,7 @@ export default function AnimatedFeatureCarousel({
             <button
               key={index}
               onClick={() => setActiveFeature(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === activeFeature
+              className={`w-3 h-3 rounded-full transition-[background-color] duration-300 ${index === activeFeature
                 ? "bg-nobleblue-600"
                 : "bg-subtle-theme hover:bg-theme-border"
                 }`}

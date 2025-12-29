@@ -103,92 +103,14 @@ body {
   pointer-events: none;
 }
 
-.hero-gradient-blur-blue,
-.hero-gradient-blur-green,
-.hero-gradient-blur-orange,
-.hero-gradient-blur-amber {
-  transform: translateZ(0);
-  will-change: filter;
-}
-
-/* Base gradient layers */
+/* Base background image layer */
 .hero-gradient-bg::before {
-  background: linear-gradient(135deg,
-      #7F7135 0%,
-      #662610 16%,
-      #3C0B0A 30%,
-      #0E1116 42%,
-      #0E1116 58%,
-      #3C0B0A 70%,
-      #662610 84%,
-      #7F7135 100%);
-  background-blend-mode: normal;
-}
-
-/* Grainy texture overlay - DISABLED for cleaner look */
-.hero-gradient-bg::after {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  opacity: 0;
-  mix-blend-mode: overlay;
-  z-index: 1;
-}
-
-/* Decorative blur elements - use with child divs */
-.hero-gradient-blur-blue {
-  position: absolute;
-  bottom: -10%;
-  right: -5%;
-  width: 600px;
-  height: 600px;
-  background: rgba(127, 113, 53, 0.15);
-  border-radius: 9999px;
-  filter: blur(100px);
-}
-
-.hero-gradient-blur-green {
-  position: absolute;
-  top: -10%;
-  left: -5%;
-  width: 600px;
-  height: 600px;
-  background: rgba(127, 113, 53, 0.15);
-  border-radius: 9999px;
-  filter: blur(100px);
-}
-
-.hero-gradient-blur-orange {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  width: 500px;
-  height: 500px;
-  background: rgba(123, 78, 29, 0.15);
-  border-radius: 9999px;
-  filter: blur(120px);
-}
-
-.hero-gradient-blur-amber {
-  position: absolute;
-  bottom: 20%;
-  right: 20%;
-  width: 400px;
-  height: 400px;
-  background: rgba(60, 11, 10, 0.2);
-  border-radius: 9999px;
-  filter: blur(100px);
-}
-
-@media (max-width: 768px) {
-
-  .hero-gradient-blur-blue,
-  .hero-gradient-blur-green,
-  .hero-gradient-blur-orange,
-  .hero-gradient-blur-amber {
-    width: 300px;
-    height: 300px;
-    filter: blur(60px);
-    opacity: 0.6;
-  }
+  background-image: url('/hero_gradient.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  /* Subtle opacity to let any dark background show through slightly if needed */
 }
 
 
