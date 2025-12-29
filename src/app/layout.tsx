@@ -192,13 +192,25 @@ export default function RootLayout({
             })
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (!sessionStorage.getItem('theme-initialized')) {
+                  localStorage.removeItem('theme');
+                  sessionStorage.setItem('theme-initialized', 'true');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
       </head>
       <body
         className={`${tex.className} font-sans antialiased`}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
