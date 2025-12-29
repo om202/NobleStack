@@ -59,16 +59,16 @@ export default function HeroSection() {
                     priority
                     sizes="(max-width: 768px) 40px, 50px"
                   />
-                  <span className="text-2xl md:text-3xl font-bold tracking-tight text-main-theme">
+                  <span className="text-2xl md:text-3xl font-bold tracking-tight text-white">
                     Noble Stack
                   </span>
                 </div>
 
-                <h1 className="text-[32px] md:text-[45px] font-bold mb-6 leading-tight max-w-4xl mx-auto text-main-theme">
+                <h1 className="text-[32px] md:text-[45px] font-bold mb-6 leading-tight max-w-4xl mx-auto text-white">
                   We Convert Business Ideas Into Profitable AI Products
                 </h1>
 
-                <p className="text-base text-muted-theme mb-8 max-w-3xl mx-auto">
+                <p className="text-base text-gray-100 mb-8 max-w-3xl mx-auto">
                   We're a software development agency specializing in AI, modern web & apps. From smart automations to high speed websites, we build products that deliver measurable business results.
                 </p>
 
@@ -85,9 +85,9 @@ export default function HeroSection() {
 
               {/* Proudly building in Nepal and USA */}
               <div className="mt-12 text-center">
-                <p className="text-base text-muted-theme font-medium flex items-center justify-center gap-2">
+                <p className="text-base text-white/80 font-medium flex items-center justify-center gap-2">
                   Proudly building in
-                  <span className="inline-flex items-center gap-1.5 text-main-theme">
+                  <span className="inline-flex items-center gap-1.5 text-white">
                     Nepal
                     <Image
                       src="/Flag_of_Nepal.svg"
@@ -100,7 +100,7 @@ export default function HeroSection() {
                     />
                   </span>
                   and
-                  <span className="inline-flex items-center gap-1.5 text-main-theme">
+                  <span className="inline-flex items-center gap-1.5 text-white">
                     USA
                     <Image
                       src="/Flag_of_the_United_States.svg"

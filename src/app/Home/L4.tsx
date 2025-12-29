@@ -186,7 +186,7 @@ export default function FAQSection() {
   const currentFaqs = faqCategories[activeCategory as keyof typeof faqCategories];
 
   return (
-    <section id="faq" className="pt-2 pb-12 px-4 transition-colors">
+    <section id="faq" className="pt-2 pb-12 px-4 bg-card-theme transition-colors">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <header className="text-center mb-12">

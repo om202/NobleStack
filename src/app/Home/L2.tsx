@@ -82,7 +82,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section id="features" className="py-12 px-4">
+    <section id="features" className="py-12 px-4 bg-page-theme">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <SectionHeader
