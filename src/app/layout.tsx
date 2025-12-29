@@ -122,8 +122,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Lottie Animation Script */}
-        <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
 
         {/* Website Schema */}
         <script
