@@ -60,14 +60,14 @@ export default function HeroSection() {
                 {/* Logo and Animation Overlay */}
                 <div className="flex justify-center mb-2">
                   <div style={{
-                    width: '190px',
-                    height: '117px',
+                    width: '160px',
+                    height: '98px',
                     position: 'relative'
                   } as React.CSSProperties}>
                     {/* Lottie Animation - Background */}
                     <div style={{
-                      width: '190px',
-                      height: '117px',
+                      width: '160px',
+                      height: '98px',
                       overflow: 'hidden',
                       position: 'absolute',
                       top: 0,
@@ -76,10 +76,10 @@ export default function HeroSection() {
                       {React.createElement('dotlottie-wc', {
                         src: 'https://lottie.host/baa23bb9-5554-479a-a69a-96530edd0aa2/aCigwSn7M9.lottie',
                         style: {
-                          width: '190px',
-                          height: '190px',
+                          width: '160px',
+                          height: '160px',
                           position: 'absolute',
-                          top: '-37px',
+                          top: '-31px',
                           left: '0'
                         },
                         autoplay: true,
@@ -108,12 +108,12 @@ export default function HeroSection() {
                   </div>
                 </div>
 
-                <h1 className="text-[36px] md:text-[49px] font-black mb-6 leading-tight max-w-4xl mx-auto">
+                <h1 className="text-[36px] md:text-[49px] font-bold mb-6 leading-tight max-w-4xl mx-auto">
                   We Convert Business Ideas Into Profitable AI Products
                 </h1>
 
-                <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-8 max-w-3xl mx-auto">
-                  We're a software development agency specializing in AI and modern web apps. From smart automations to high speed websites, we build products that deliver measurable business results.
+                <p className="text-base sm:text-lg md:text-lg text-gray-100 mb-8 max-w-3xl mx-auto">
+                  We're a software development agency specializing in AI, modern web & apps. From smart automations to high speed websites, we build products that deliver measurable business results.
                 </p>
 
                 {/* Call to Action Buttons */}
@@ -129,7 +129,7 @@ export default function HeroSection() {
 
               {/* Proudly building in Nepal and USA */}
               <div className="mt-12 text-center">
-                <p className="text-base sm:text-lg text-gray-300 font-medium flex items-center justify-center gap-2">
+                <p className="text-base sm:text-lg text-gray-200 font-medium flex items-center justify-center gap-2">
                   Proudly building in
                   <span className="inline-flex items-center gap-1.5">
                     Nepal
@@ -193,7 +193,7 @@ export default function HeroSection() {
             <h2 className="text-xl font-bold text-main-theme">
               Our Portfolio
             </h2>
-            <p className="text-sm text-gray-400 mt-2 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-300 mt-2 max-w-2xl mx-auto">
               Real products we've built and launched. These showcase our capabilities in AI development, web applications, and bringing ideas to market.
             </p>
           </header>
