@@ -24,6 +24,14 @@
   /* Gradient utilities using Tailwind blue */
   --gradient-blue-up: linear-gradient(to right, rgb(59 130 246), rgb(37 99 235));
   --gradient-blue-down: linear-gradient(to right, rgb(59 130 246), rgb(96 165 250));
+
+  /* Theme colors linked to CSS variables */
+  --color-main-theme: var(--text-main);
+  --color-muted-theme: var(--text-muted);
+  --color-page-theme: var(--bg-page);
+  --color-card-theme: var(--bg-card);
+  --color-subtle-theme: var(--bg-subtle);
+  --color-border-theme: var(--border-theme);
 }
 
 :root {
@@ -69,6 +77,10 @@ body {
 }
 
 /* Theme Utilities */
+.bg-page-theme {
+  background-color: var(--bg-page);
+}
+
 .bg-card-theme {
   background-color: var(--bg-card);
 }
