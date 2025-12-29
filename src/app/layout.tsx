@@ -199,7 +199,7 @@ export default function RootLayout({
         <DeviceTracker />
         <div className="min-h-screen">
           <Navigation />
-          <div className="pt-16">
+          <div>
             {children}
             <Footer />
           </div>

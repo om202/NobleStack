@@ -45,7 +45,7 @@ export default function HeroSection() {
     <section className="min-h-screen">
       {/* Hero Section with Background - Full Width */}
       <div className="relative w-full overflow-hidden">
-        <div className="relative py-16 sm:py-20 hero-gradient-bg">
+        <div className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 hero-gradient-bg">
           {/* Decorative Blur Elements */}
           <div className="hero-gradient-blur-blue"></div>
           <div className="hero-gradient-blur-green"></div>
