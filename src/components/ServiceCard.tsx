@@ -34,7 +34,7 @@ export default function ServiceCard({
                     <div
                         className="w-16 h-16 bg-subtle-theme rounded-xl flex items-center justify-center border border-theme"
                     >
-                        <Icon className="w-8 h-8 text-nobleblue-300 sm:text-nobleblue-300" />
+                        <Icon className="w-8 h-8 text-blue-400" />
                     </div>
                 ) : null}
             </div>

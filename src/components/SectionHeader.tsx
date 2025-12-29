@@ -29,7 +29,7 @@ export default function SectionHeader({
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-main-theme">
                 {title}
                 {highlightedText && (
-                    <span className="text-gradient-nobleblue"> {highlightedText}</span>
+                    <span className="text-gradient-blue"> {highlightedText}</span>
                 )}
             </h2>
             <p className="text-base sm:text-lg text-muted-theme max-w-3xl mx-auto mb-8">
