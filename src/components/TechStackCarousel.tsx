@@ -27,12 +27,12 @@ export default function TechStackCarousel({
       )}
 
       <div className="relative overflow-hidden bg-card-theme rounded-2xl py-4 sm:py-6">
-        <div className="scroll-container flex gap-4 sm:gap-8 px-2 sm:px-4 animate-scroll-left pause-on-hover">
+        <div className="scroll-container flex gap-4 sm:gap-8 px-2 sm:px-4 animate-scroll-left pause-on-hover will-change-transform">
 
           {infiniteTechnologies.map((tech, index) => (
             <figure
               key={index}
-              className="flex-shrink-0 flex flex-col items-center justify-center gap-2 sm:gap-3 transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-110"
+              className="flex-shrink-0 flex flex-col items-center justify-center gap-2 sm:gap-3 transition-[transform,opacity] duration-300 opacity-80 hover:opacity-100 hover:scale-110"
               style={{ minWidth: "100px", maxWidth: "140px" }}
             >
               <div className="bg-subtle-theme rounded-lg sm:rounded-xl p-2 sm:p-3 flex items-center justify-center border border-theme">
