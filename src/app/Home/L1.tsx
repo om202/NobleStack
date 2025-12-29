@@ -108,8 +108,8 @@ export default function HeroSection() {
                   </div>
                 </div>
 
-                <h1 className="text-[32px] md:text-[40px] font-bold mb-6 leading-tight max-w-4xl mx-auto">
-                  We Convert Business Ideas<br />Into Profitable AI Products
+                <h1 className="text-[32px] md:text-[45px] font-bold mb-6 leading-tight max-w-4xl mx-auto">
+                  We Convert Business Ideas Into Profitable AI Products
                 </h1>
 
                 <p className="text-base text-gray-100 mb-8 max-w-3xl mx-auto">
