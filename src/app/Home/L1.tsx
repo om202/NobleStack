@@ -63,6 +63,7 @@ export default function HeroSection() {
                     height={50}
                     className="rounded-lg"
                     priority
+                    sizes="50px"
                   />
                   <span className="text-3xl font-bold tracking-tight text-white">
                     Noble Stack
@@ -101,6 +102,7 @@ export default function HeroSection() {
                       height={13}
                       className="inline-block"
                       priority
+                      sizes="13px"
                     />
                   </span>
                   and
@@ -113,6 +115,7 @@ export default function HeroSection() {
                       height={28}
                       className="inline-block"
                       priority
+                      sizes="28px"
                     />
                   </span>
                 </p>

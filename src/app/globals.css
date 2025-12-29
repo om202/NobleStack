@@ -105,38 +105,15 @@ body {
 
 /* Base gradient layers */
 .hero-gradient-bg::before {
-  background:
-    /* Symmetric Gradient: More colorful with reduced central dark area */
-    linear-gradient(135deg,
+  background: linear-gradient(135deg,
       #7F7135 0%,
-      /* Intermediate Yellow */
-      #7B4E1D 8%,
-      /* Intermediate Sienna */
       #662610 16%,
-      /* Intermediate Pure Sienna */
-      #4A1810 24%,
-      /* Transitional darker sienna */
       #3C0B0A 30%,
-      /* Intermediate Reddish */
-      #251015 36%,
-      /* Transitional to dark */
       #0E1116 42%,
-      /* Cinematic Bluish Black Starts */
       #0E1116 58%,
-      /* Cinematic Bluish Black Ends - REDUCED from 68% */
-      #251015 64%,
-      /* Transitional to dark */
       #3C0B0A 70%,
-      /* Intermediate Reddish */
-      #4A1810 76%,
-      /* Transitional darker sienna */
       #662610 84%,
-      /* Intermediate Pure Sienna */
-      #7B4E1D 92%,
-      /* Intermediate Sienna */
-      #7F7135 100%
-      /* Intermediate Yellow */
-    );
+      #7F7135 100%);
   background-blend-mode: normal;
 }
 
@@ -148,8 +125,6 @@ body {
   z-index: 1;
 }
 
-
-
 /* Decorative blur elements - use with child divs */
 .hero-gradient-blur-blue {
   position: absolute;
@@ -158,48 +133,54 @@ body {
   width: 600px;
   height: 600px;
   background: rgba(127, 113, 53, 0.15);
-  /* Intermediate Yellow tint */
   border-radius: 9999px;
   filter: blur(100px);
 }
 
 .hero-gradient-blur-green {
-  /* Intermediate Yellow for top left */
   position: absolute;
   top: -10%;
   left: -5%;
   width: 600px;
   height: 600px;
   background: rgba(127, 113, 53, 0.15);
-  /* Intermediate Yellow tint */
   border-radius: 9999px;
   filter: blur(100px);
 }
 
 .hero-gradient-blur-orange {
-  /* Intermediate Sienna Accent */
   position: absolute;
   top: 30%;
   left: 20%;
   width: 500px;
   height: 500px;
   background: rgba(123, 78, 29, 0.15);
-  /* Intermediate Sienna tint */
   border-radius: 9999px;
   filter: blur(120px);
 }
 
 .hero-gradient-blur-amber {
-  /* Intermediate Reddish accent */
   position: absolute;
   bottom: 20%;
   right: 20%;
   width: 400px;
   height: 400px;
   background: rgba(60, 11, 10, 0.2);
-  /* Intermediate Reddish tint */
   border-radius: 9999px;
   filter: blur(100px);
+}
+
+@media (max-width: 768px) {
+
+  .hero-gradient-blur-blue,
+  .hero-gradient-blur-green,
+  .hero-gradient-blur-orange,
+  .hero-gradient-blur-amber {
+    width: 300px;
+    height: 300px;
+    filter: blur(60px);
+    opacity: 0.6;
+  }
 }
 
 
@@ -380,6 +361,7 @@ a {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-33.333%);
   }
