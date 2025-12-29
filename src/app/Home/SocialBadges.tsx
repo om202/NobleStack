@@ -30,7 +30,7 @@ export default function SocialBadges() {
         <section className="py-12 bg-noble-dark border-t border-theme">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex flex-col items-center gap-8">
-                    <h3 className="text-xl font-semibold text-muted-theme uppercase tracking-widest text-center">
+                    <h3 className="text-lg font-semibold text-muted-theme uppercase tracking-widest text-center">
                         Find us on
                     </h3>
                     <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
