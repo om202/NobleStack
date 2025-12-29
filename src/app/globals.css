@@ -1,37 +1,38 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* Happy Sky Blue — warm, clean, slightly red-tinted */
+/* Tailwind Blue Colors */
 @theme {
-  --color-nobleblue-50: #e0f1ff;
-  --color-nobleblue-100: #bfe0ff;
-  --color-nobleblue-200: #9acbfe;
-  --color-nobleblue-300: #7aaefc;
-  --color-nobleblue-400: #559ef8;
-  --color-nobleblue-500: #3a8cf4;
-  --color-nobleblue-600: #2578e2;
-  --color-nobleblue-700: #1c68c0;
-  --color-nobleblue-800: #1a5480;
-  --color-nobleblue-900: #1a3f63;
+  --color-blue-50: rgb(239 246 255);
+  --color-blue-100: rgb(219 234 254);
+  --color-blue-200: rgb(191 219 254);
+  --color-blue-300: rgb(147 197 253);
+  --color-blue-400: rgb(96 165 250);
+  --color-blue-500: rgb(59 130 246);
+  --color-blue-600: rgb(37 99 235);
+  --color-blue-700: rgb(29 78 216);
+  --color-blue-800: rgb(30 64 175);
+  --color-blue-900: rgb(30 58 138);
+  --color-blue-950: rgb(23 37 84);
 
   /* Font family - Tex Gyre Heros via Next.js Font */
   --font-sans: var(--font-tex);
 
-  /* Gradient utilities */
-  --gradient-nobleblue-up: linear-gradient(to right, var(--color-nobleblue-500), var(--color-nobleblue-600));
-  --gradient-nobleblue-down: linear-gradient(to right, var(--color-nobleblue-500), var(--color-nobleblue-400));
+  /* Gradient utilities using Tailwind blue */
+  --gradient-blue-up: linear-gradient(to right, rgb(59 130 246), rgb(37 99 235));
+  --gradient-blue-down: linear-gradient(to right, rgb(59 130 246), rgb(96 165 250));
 }
 
 :root {
-  /* Default Dark Theme Variables */
-  --bg-page: #0E1116;
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --bg-subtle: rgba(255, 255, 255, 0.05);
-  --bg-subtle-hover: rgba(255, 255, 255, 0.1);
-  --text-main: #ffffff;
-  --text-muted: #D1D5DB;
-  --border-theme: rgba(255, 255, 255, 0.1);
-  --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  /* Gray Theme Variables - Exact Tailwind RGB Values */
+  --bg-page: rgb(3 7 18);
+  --bg-card: rgba(17, 24, 39, 0.8);
+  --bg-subtle: rgba(31, 41, 55, 0.6);
+  --bg-subtle-hover: rgba(55, 65, 81, 0.7);
+  --text-main: rgb(249 250 251);
+  --text-muted: rgb(156 163 175);
+  --border-theme: rgba(107, 114, 128, 0.3);
+  --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
 }
 
 /* Base body styles */
@@ -69,17 +70,17 @@ body {
 }
 
 
-/* Utility classes */
-.gradient-nobleblue-up {
-  background: var(--gradient-nobleblue-up);
+/* Utility classes - Updated to use Tailwind blue */
+.gradient-blue-up {
+  background: var(--gradient-blue-up);
 }
 
-.gradient-nobleblue-down {
-  background: var(--gradient-nobleblue-down);
+.gradient-blue-down {
+  background: var(--gradient-blue-down);
 }
 
-.text-gradient-nobleblue {
-  background: var(--gradient-nobleblue-up);
+.text-gradient-blue {
+  background: var(--gradient-blue-up);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -266,12 +267,12 @@ a {
 }
 
 .bg-noble-dark {
-  background-color: #0E1116;
+  background-color: rgb(3 7 18);
 }
 
 .card-dark {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(107, 114, 128, 0.3);
   backdrop-filter: blur(10px);
 }
 

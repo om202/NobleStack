@@ -36,21 +36,21 @@ export default function FAQSection() {
       name: "Technical",
       icon: Code,
       count: "4 FAQs",
-      color: "from-nobleblue-500 to-nobleblue-600"
+      color: "from-blue-500 to-blue-600"
     },
     {
       id: "business",
       name: "Business",
       icon: TrendingUp,
       count: "5 FAQs",
-      color: "from-nobleblue-600 to-nobleblue-700"
+      color: "from-blue-600 to-blue-700"
     },
     {
       id: "support",
       name: "Support",
       icon: Shield,
       count: "5 FAQs",
-      color: "from-nobleblue-500 to-nobleblue-600"
+      color: "from-blue-500 to-blue-600"
     }
   ];
 
@@ -191,7 +191,7 @@ export default function FAQSection() {
         {/* Header */}
         <header className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-main-theme">
-            <span className="text-gradient-nobleblue">
+            <span className="text-gradient-blue">
               Questions & Answers
             </span>
           </h2>

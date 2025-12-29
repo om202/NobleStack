@@ -48,7 +48,7 @@ export default function CredibilitySection() {
             <div className="max-w-6xl mx-auto">
                 <header className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-main-theme">
-                        <span className="text-gradient-nobleblue">
+                        <span className="text-gradient-blue">
                             Why Choose Noble Stack
                         </span>
                     </h2>
@@ -62,11 +62,11 @@ export default function CredibilitySection() {
                     {credibilityPoints.map((point, index) => (
                         <div
                             key={index}
-                            className="bg-gray-900 rounded-xl p-6 border border-theme hover:border-nobleblue-500 transition-all duration-300 group"
+                            className="bg-gray-900 rounded-xl p-6 border border-theme hover:border-blue-500 transition-all duration-300 group"
                         >
                             <div className="flex items-start gap-4">
                                 <div className="flex-shrink-0">
-                                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-nobleblue-500 to-nobleblue-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                         <point.icon className="w-6 h-6 text-white" />
                                     </div>
                                 </div>

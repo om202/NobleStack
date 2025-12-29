@@ -98,8 +98,8 @@ export default function Navigation() {
                       key={item.href}
                       href={item.href}
                       className={`flex items-center gap-2 px-2 min-[1165px]:px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${isActive
-                        ? "bg-nobleblue-500/20 text-nobleblue-300"
-                        : "text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme"
+                        ? "bg-blue-500/20 text-blue-300"
+                        : "text-muted-theme hover:text-blue-300 hover:bg-subtle-theme"
                         }`}
                     >
                       <Icon className="w-4 h-4 hidden min-[1165px]:block" aria-hidden="true" />
@@ -116,7 +116,7 @@ export default function Navigation() {
               <div className="flex items-center">
                 <a
                   href="tel:+9779851411602"
-                  className="flex items-center gap-2 px-4 py-2 bg-subtle-theme text-nobleblue-300 rounded-lg hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme"
+                  className="flex items-center gap-2 px-4 py-2 bg-subtle-theme text-blue-300 rounded-lg hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme"
                 >
                   <Phone className="w-4 h-4" />
                   <span className="whitespace-nowrap">Call Now</span>
@@ -126,7 +126,7 @@ export default function Navigation() {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="min-[900px]:hidden inline-flex items-center justify-center p-2 rounded-md text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme transition-colors duration-200"
+                className="min-[900px]:hidden inline-flex items-center justify-center p-2 rounded-md text-muted-theme hover:text-blue-300 hover:bg-subtle-theme transition-colors duration-200"
                 aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={isMobileMenuOpen}
               >
@@ -159,8 +159,8 @@ export default function Navigation() {
                     key={item.href}
                     href={item.href}
                     className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors duration-150 ${isActive
-                      ? "bg-nobleblue-500/20 text-nobleblue-300"
-                      : "text-muted-theme hover:text-nobleblue-300 hover:bg-subtle-theme"
+                      ? "bg-blue-500/20 text-blue-300"
+                      : "text-muted-theme hover:text-blue-300 hover:bg-subtle-theme"
                       }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

@@ -29,9 +29,9 @@ export default function CTAButton({
         "group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 font-semibold whitespace-nowrap cursor-pointer";
 
     const variantClasses = {
-        primary: "gradient-nobleblue-up text-white",
+        primary: "gradient-blue-up text-white",
         secondary:
-            "bg-page text-gray-800 border-1 border-gray-700 bg-gray-800 text-white shadow-sm",
+            "bg-gray-800 text-white border border-gray-700 shadow-sm",
     };
 
     const disabledClasses = "opacity-50 cursor-not-allowed pointer-events-none hover:transform-none";
