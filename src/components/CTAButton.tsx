@@ -29,7 +29,7 @@ export default function CTAButton({
     const variantClasses = {
         primary: "gradient-blue-up text-white",
         secondary:
-            "bg-subtle-theme text-white border border-theme shadow-sm hover:bg-subtle-hover",
+            "bg-card-theme text-main-theme border border-theme shadow-sm hover:bg-subtle-theme transition-colors",
     };
 
     const disabledClasses = "opacity-50 cursor-not-allowed pointer-events-none hover:transform-none";

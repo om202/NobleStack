@@ -27,6 +27,20 @@
 }
 
 :root {
+  /* Apple Light Mode - Neutral Gray Theme */
+  --bg-page: rgb(255 255 255);
+  --bg-card: rgb(242 242 247);
+  --bg-subtle: rgb(229 229 234);
+  --bg-subtle-hover: rgb(209 209 214);
+  --text-main: rgb(0 0 0);
+  --text-muted: rgb(142 142 147);
+  --border-theme: rgba(0, 0, 0, 0.1);
+  --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --nav-border: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
   /* Apple Dark Mode - Neutral Gray Theme */
   --bg-page: rgb(18 18 18);
   --bg-card: rgb(28 28 30);
@@ -36,6 +50,8 @@
   --text-muted: rgb(152 152 157);
   --border-theme: rgba(84, 84, 88, 0.65);
   --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+  --nav-bg: rgba(18, 18, 18, 0.8);
+  --nav-border: rgba(255, 255, 255, 0.1);
 }
 
 /* Base body styles */
@@ -44,6 +60,7 @@ body {
   color: var(--text-main);
   min-height: 100vh;
   line-height: 1.7;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Deprecated utility, kept for compatibility but not needed for theming anymore */

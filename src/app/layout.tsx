@@ -115,15 +115,16 @@ export const viewport: Viewport = {
   themeColor: '#000000',
 };
 
+import { ThemeProvider } from "../components/theme/ThemeProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-
         {/* Website Schema */}
         <script
           type="application/ld+json"
@@ -193,16 +194,23 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${tex.className} font-sans antialiased bg-noble-dark text-white`}
+        className={`${tex.className} font-sans antialiased`}
       >
-        <DeviceTracker />
-        <div className="min-h-screen">
-          <Navigation />
-          <div>
-            {children}
-            <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <DeviceTracker />
+          <div className="min-h-screen">
+            <Navigation />
+            <div>
+              {children}
+              <Footer />
+            </div>
           </div>
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );

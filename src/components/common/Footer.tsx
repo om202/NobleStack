@@ -24,7 +24,7 @@ export default function Footer() {
               <a
                 key={index}
                 href={link.href}
-                className="text-muted-theme hover:text-blue-500 hover:bg-subtle-theme px-3 py-2 rounded-lg transition-colors duration-200 font-medium text-md-sm"
+                className="text-muted-theme hover:text-blue-600 dark:hover:text-blue-400 hover:bg-subtle-theme px-3 py-2 rounded-lg transition-colors duration-200 font-medium text-md-sm"
               >
                 {link.name}
               </a>
@@ -56,7 +56,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/company/noble-stack-pvt-ltd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-theme hover:text-blue-400 transition-colors duration-200"
+                  className="text-muted-theme hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                   aria-label="Visit our LinkedIn page"
                 >
                   <Linkedin className="w-5 h-5" />
@@ -65,7 +65,7 @@ export default function Footer() {
                   href="https://www.facebook.com/people/Noble-Stack-Pvt-Ltd/61577564326108/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-theme hover:text-blue-400 transition-colors duration-200"
+                  className="text-muted-theme hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                   aria-label="Visit our Facebook page"
                 >
                   <Facebook className="w-5 h-5" />
@@ -74,14 +74,14 @@ export default function Footer() {
                   href="https://www.instagram.com/noble_stack_/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-theme hover:text-blue-400 transition-colors duration-200"
+                  className="text-muted-theme hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                   aria-label="Visit our Instagram page"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
                   href="mailto:noblestack.io@gmail.com"
-                  className="text-muted-theme hover:text-blue-400 transition-colors duration-200"
+                  className="text-muted-theme hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                   aria-label="Send us an email"
                 >
                   <Mail className="w-5 h-5" />
@@ -91,7 +91,7 @@ export default function Footer() {
                 href="https://calendar.app.google/mWmd6v421Pk66LQ26"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-subtle-theme hover:bg-subtle-hover text-blue-300 font-semibold rounded-lg transition-colors duration-200 text-base border border-theme"
+                className="flex items-center gap-2 px-6 py-3 bg-subtle-theme hover:bg-subtle-hover text-blue-600 dark:text-blue-300 font-semibold rounded-lg transition-colors duration-200 text-base border border-theme"
               >
                 <Phone className="w-5 h-5" />
                 Book a Call

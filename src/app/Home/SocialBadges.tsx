@@ -25,7 +25,7 @@ const badges = [
 
 export default function SocialBadges() {
     return (
-        <section className="py-12 bg-noble-dark border-t border-theme">
+        <section className="py-12 border-t border-theme transition-colors duration-300">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex flex-col items-center gap-8">
                     <h3 className="text-lg font-semibold text-muted-theme uppercase tracking-widest text-center">
@@ -40,13 +40,13 @@ export default function SocialBadges() {
                                 rel="noopener noreferrer"
                                 className="group transition-transform duration-300 hover:scale-105"
                             >
-                                <div className="bg-subtle-theme border border-theme rounded-2xl p-4 md:p-6 w-[160px] h-[80px] md:w-[200px] md:h-[100px] flex items-center justify-center group-hover:bg-subtle-hover group-hover:border-theme transition-[background-color,border-color]">
+                                <div className="bg-card-theme border border-theme rounded-2xl p-4 md:p-6 w-[160px] h-[80px] md:w-[200px] md:h-[100px] flex items-center justify-center hover:bg-subtle-theme transition-[background-color,border-color]">
                                     <div className={`relative w-full h-full ${badge.name === 'Goodfirms' ? 'scale-150' : ''}`}>
                                         <Image
                                             src={badge.logo}
                                             alt={badge.name}
                                             fill
-                                            className="object-contain"
+                                            className="object-contain dark:brightness-100 brightness-0 dark:invert-0 invert opacity-60 group-hover:opacity-100 transition-opacity"
                                         />
                                     </div>
                                 </div>
