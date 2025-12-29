@@ -132,11 +132,11 @@ export default function CareerPageContent() {
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}
                     <header className="text-center mb-12">
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
+                        <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
                             Join Our Team
                         </h1>
 
-                        <blockquote className="text-base sm:text-lg text-muted-theme mb-8 max-w-3xl mx-auto">
+                        <blockquote className="text-base text-muted-theme mb-8 max-w-3xl mx-auto">
                             &ldquo;Be part of a movement to bring cutting-edge technology to
                             Nepal. Join our team of passionate developers, designers, and
                             innovators building the future.&rdquo;
@@ -194,18 +194,18 @@ export default function CareerPageContent() {
                             ].map((job, index) => (
                                 <div
                                     key={index}
-                                    className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-md border border-theme"
+                                    className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-md border border-theme"
                                 >
                                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                                         <div>
-                                            <h3 className="text-2xl font-bold text-white mb-2">
+                                            <h3 className="text-xl font-bold text-white mb-2">
                                                 {job.title}
                                             </h3>
                                             <div className="flex flex-wrap gap-3 text-sm font-medium text-gray-400">
-                                                <span className="bg-gray-800 px-3 py-1 rounded-full border border-gray-700 flex items-center gap-1">
+                                                <span className="bg-subtle-theme px-3 py-1 rounded-full border border-theme flex items-center gap-1">
                                                     <MapPin className="w-3 h-3" /> {job.location}
                                                 </span>
-                                                <span className="bg-gray-800 px-3 py-1 rounded-full border border-gray-700 flex items-center gap-1">
+                                                <span className="bg-subtle-theme px-3 py-1 rounded-full border border-theme flex items-center gap-1">
                                                     <Clock className="w-3 h-3" /> {job.type}
                                                 </span>
                                             </div>
@@ -217,7 +217,7 @@ export default function CareerPageContent() {
 
                                         <div className="grid md:grid-cols-2 gap-8">
                                             <div>
-                                                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                                                <h4 className="text-base font-semibold text-white mb-3 flex items-center gap-2">
                                                     <Briefcase className="w-4 h-4 text-blue-500" /> Key Responsibilities
                                                 </h4>
                                                 <ul className="list-disc pl-5 space-y-2 text-sm">
@@ -225,7 +225,7 @@ export default function CareerPageContent() {
                                                 </ul>
                                             </div>
                                             <div>
-                                                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                                                <h4 className="text-base font-semibold text-white mb-3 flex items-center gap-2">
                                                     <CheckCircle className="w-4 h-4 text-blue-500" /> Requirements
                                                 </h4>
                                                 <ul className="list-disc pl-5 space-y-2 text-sm">
@@ -235,7 +235,7 @@ export default function CareerPageContent() {
                                         </div>
                                     </div>
 
-                                    <div className="border-t border-gray-800 pt-6 flex justify-end">
+                                    <div className="border-t border-theme pt-6 flex justify-end">
                                         <button
                                             onClick={() => {
                                                 const form = document.getElementById("application-form");
@@ -260,12 +260,12 @@ export default function CareerPageContent() {
                     {/* Application Form */}
                     <div
                         id="application-form"
-                        className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-md border border-theme"
+                        className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-md border border-theme"
                     >
                         <div className="text-center mb-12">
                             <div className="flex items-center justify-center gap-2 mb-2">
                                 <FileText className="w-6 h-6 text-blue-600" />
-                                <h3 className="text-xl font-semibold text-main-theme">
+                                <h3 className="text-lg font-semibold text-main-theme">
                                     Application Form
                                 </h3>
                             </div>
@@ -317,7 +317,7 @@ export default function CareerPageContent() {
                                             name="name"
                                             value={formData.name}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                             placeholder="Your full name"
                                             required
                                         />
@@ -332,7 +332,7 @@ export default function CareerPageContent() {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                             placeholder="your@email.com"
                                             required
                                         />
@@ -349,7 +349,7 @@ export default function CareerPageContent() {
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                             placeholder="+977 (XXX) XXX-XXXX"
                                             required
                                         />
@@ -363,7 +363,7 @@ export default function CareerPageContent() {
                                             name="position"
                                             value={formData.position}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme"
                                             required
                                         >
                                             <option value="">Select a position</option>
@@ -399,7 +399,7 @@ export default function CareerPageContent() {
                                         name="experience"
                                         value={formData.experience}
                                         onChange={handleInputChange}
-                                        className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme"
+                                        className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme"
                                         required
                                     >
                                         <option value="">Select experience level</option>
@@ -416,7 +416,7 @@ export default function CareerPageContent() {
                                     <label className="block text-md-sm font-semibold text-muted-theme mb-2">
                                         Resume/CV *
                                     </label>
-                                    <label className="border-2 border-dashed border-theme rounded-xl p-8 text-center hover:border-blue-400 transition-colors duration-300 block cursor-pointer bg-gray-800 hover:bg-gray-700 group">
+                                    <label className="border-2 border-dashed border-theme rounded-xl p-8 text-center hover:border-blue-400 transition-colors duration-300 block cursor-pointer bg-subtle-theme hover:bg-subtle-hover group">
                                         <Upload className="w-12 h-12 text-gray-500 mx-auto mb-4 group-hover:text-blue-500 transition-colors" />
                                         <p className="text-base text-muted-theme mb-2 font-medium">
                                             {formData.resume ? (
@@ -448,7 +448,7 @@ export default function CareerPageContent() {
                                         value={formData.message}
                                         onChange={handleInputChange}
                                         rows={5}
-                                        className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                        className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                         placeholder="Tell us about yourself and why you're interested in joining Noble Stack. What excites you about our mission?"
                                         required
                                     ></textarea>

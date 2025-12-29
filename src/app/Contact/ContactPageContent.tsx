@@ -90,22 +90,22 @@ export default function ContactPageContent() {
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}
                     <header className="text-center mb-12">
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
+                        <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
                             Get In Touch
                         </h1>
 
-                        <blockquote className="text-base sm:text-lg text-muted-theme mb-8 max-w-3xl mx-auto">
+                        <blockquote className="text-base text-muted-theme mb-8 max-w-3xl mx-auto">
                             &ldquo;Ready to transform your ideas into intelligent digital solutions?
                             Let&apos;s discuss your project and explore how we can help you succeed.&rdquo;
                         </blockquote>
                     </header>
 
                     {/* Contact Form */}
-                    <section id="contact-form" aria-label="Contact Form" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+                    <section id="contact-form" aria-label="Contact Form" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
                         <div className="text-center mb-12">
                             <div className="flex items-center justify-center gap-2 mb-2">
                                 <MessageSquare className="w-6 h-6 text-blue-600" />
-                                <h3 className="text-xl font-semibold text-main-theme">
+                                <h3 className="text-lg font-semibold text-main-theme">
                                     Send us a Message
                                 </h3>
                             </div>
@@ -151,7 +151,7 @@ export default function ContactPageContent() {
                                             name="name"
                                             value={formData.name}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                             placeholder="Your full name"
                                             required
                                         />
@@ -166,7 +166,7 @@ export default function ContactPageContent() {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                             placeholder="your@email.com"
                                             required
                                         />
@@ -183,7 +183,7 @@ export default function ContactPageContent() {
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                             placeholder="+977 (XXX) XXX-XXXX"
                                         />
                                     </div>
@@ -197,7 +197,7 @@ export default function ContactPageContent() {
                                             name="company"
                                             value={formData.company}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                             placeholder="Your company name"
                                         />
                                     </div>
@@ -211,7 +211,7 @@ export default function ContactPageContent() {
                                         name="subject"
                                         value={formData.subject}
                                         onChange={handleInputChange}
-                                        className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme"
+                                        className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme"
                                         required
                                     >
                                         <option value="">Select a subject</option>
@@ -233,7 +233,7 @@ export default function ContactPageContent() {
                                         value={formData.message}
                                         onChange={handleInputChange}
                                         rows={5}
-                                        className="w-full px-4 py-3 bg-gray-800 border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                        className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
                                         placeholder="Tell us about your project, requirements, or any questions you have. What excites you about working with Noble Stack?"
                                         required
                                     ></textarea>
@@ -260,10 +260,10 @@ export default function ContactPageContent() {
                     {/* Contact Information Cards */}
                     <section id="contact-info" aria-label="Contact Information" className="mt-16">
                         <div className="text-center mb-12">
-                            <h3 className="text-xl font-semibold text-main-theme mb-3">
+                            <h3 className="text-lg font-semibold text-main-theme mb-3">
                                 Ready to Start Your Project?
                             </h3>
-                            <p className="text-muted-theme max-w-2xl mx-auto">
+                            <p className="text-base text-muted-theme max-w-2xl mx-auto">
                                 Choose your preferred way to connect with us.
                             </p>
                         </div>
@@ -299,10 +299,10 @@ export default function ContactPageContent() {
                         </div>
 
                         <div className="text-center mt-16 mb-12">
-                            <h3 className="text-xl font-semibold text-main-theme mb-3">
+                            <h3 className="text-lg font-semibold text-main-theme mb-3">
                                 Connect on Social Media
                             </h3>
-                            <p className="text-muted-theme max-w-2xl mx-auto">
+                            <p className="text-base text-muted-theme max-w-2xl mx-auto">
                                 Stay updated with our latest news and announcements.
                             </p>
                         </div>

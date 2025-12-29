@@ -184,7 +184,7 @@ export default function Services() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <header className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-main-theme">
+            <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
               Our Services
             </h1>
           </header>
@@ -195,12 +195,12 @@ export default function Services() {
           </section>
 
           {/* Process Section */}
-          <section id="process" aria-label="Our Process" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
+          <section id="process" aria-label="Our Process" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
             <header className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-main-theme mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-main-theme mb-6">
                 Our Process
               </h2>
-              <p className="text-md-sm sm:text-base text-muted-theme max-w-2xl mx-auto">
+              <p className="text-base text-muted-theme max-w-2xl mx-auto">
                 We follow a proven methodology to ensure your project is
                 delivered on time, within budget, and exceeds your expectations.
               </p>
@@ -211,18 +211,18 @@ export default function Services() {
               {process.map((step, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="relative mb-4 sm:mb-6">
-                    <div className="w-20 h-20 bg-gray-800 rounded-2xl flex items-center justify-center shadow-sm">
+                    <div className="w-20 h-20 bg-subtle-theme rounded-2xl flex items-center justify-center shadow-sm">
                       <span className="text-2xl font-bold text-blue-600">
                         {step.step}
                       </span>
                     </div>
                   </div>
 
-                  <h3 className="text-base sm:text-lg font-bold text-main-theme mb-2 sm:mb-3 text-center">
+                  <h3 className="text-base font-bold text-main-theme mb-2 sm:mb-3 text-center">
                     {step.title}
                   </h3>
 
-                  <p className="text-md-sm sm:text-base text-muted-theme text-center max-w-xs">
+                  <p className="text-base text-muted-theme text-center max-w-xs">
                     {step.description}
                   </p>
 
@@ -244,7 +244,7 @@ export default function Services() {
                 {process.map((step, index) => (
                   <div key={index} className="text-center relative">
                     <div className="relative mb-6">
-                      <div className="w-20 h-20 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto shadow-sm">
+                      <div className="w-20 h-20 bg-subtle-theme rounded-2xl flex items-center justify-center mx-auto shadow-sm">
                         <span className="text-2xl font-bold text-blue-600">
                           {step.step}
                         </span>
@@ -274,12 +274,12 @@ export default function Services() {
           </section>
 
           {/* Technology Stack */}
-          <section id="tech-stack" aria-label="Technology Stack" className="bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
+          <section id="tech-stack" aria-label="Technology Stack" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-16">
             <header className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-main-theme">
+              <h2 className="text-xl md:text-2xl font-bold mb-6 text-main-theme">
                 Technology Stack
               </h2>
-              <p className="text-md-sm sm:text-base text-muted-theme max-w-2xl mx-auto mb-8">
+              <p className="text-base text-muted-theme max-w-2xl mx-auto mb-8">
                 We work with the latest and most reliable technologies to build
                 robust, scalable solutions. Watch our expertise in action —
                 technologies refresh dynamically to showcase our full stack.
@@ -294,7 +294,7 @@ export default function Services() {
             />
 
             <div className="text-center mt-8">
-              <p className="text-md-sm text-muted-theme">
+              <p className="text-base text-muted-theme">
                 {allTechnologies.length}+ Technologies in our arsenal • Always
                 evolving
               </p>

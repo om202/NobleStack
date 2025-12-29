@@ -104,7 +104,7 @@ export default function AlbumArtServices({
   };
 
   return (
-    <div className="bg-gray-900 rounded-2xl p-6 md:p-8 shadow-sm border border-theme overflow-hidden">
+    <div className="bg-card-theme rounded-2xl p-6 md:p-8 shadow-sm border border-theme overflow-hidden">
       <div className="relative h-[600px] md:h-[650px] lg:h-[700px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {services.map((service, index) => {
@@ -119,9 +119,9 @@ export default function AlbumArtServices({
                 className="absolute transition-all duration-700 ease-in-out transform-gpu will-change-transform"
                 style={getCardStyle(index)}
               >
-                <div className="w-80 sm:w-72 md:w-96 lg:w-[420px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl border border-theme overflow-hidden transform-gpu">
+                <div className="w-80 sm:w-72 md:w-96 lg:w-[420px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] bg-subtle-theme rounded-2xl shadow-2xl border border-theme overflow-hidden transform-gpu">
                   {/* Header Section */}
-                  <div className="relative bg-gradient-to-br from-gray-700 to-gray-800 p-6 sm:p-6 md:p-8 text-center overflow-hidden">
+                  <div className="relative bg-subtle-hover p-6 sm:p-6 md:p-8 text-center overflow-hidden">
                     {/* Decorative Blur Elements */}
                     <div className="hero-gradient-blur-blue"></div>
                     <div className="hero-gradient-blur-green"></div>
@@ -132,10 +132,10 @@ export default function AlbumArtServices({
                       <div className={`w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br ${gradientColors} rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-lg`}>
                         <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" />
                       </div>
-                      <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-main-theme mb-2 sm:mb-3 leading-tight">
+                      <h3 className="text-base md:text-lg lg:text-xl font-bold text-main-theme mb-2 sm:mb-3 leading-tight">
                         {service.title}
                       </h3>
-                      <p className="text-md-sm sm:text-md-sm md:text-base text-muted-theme leading-relaxed">
+                      <p className="text-base text-muted-theme leading-relaxed">
                         {service.description}
                       </p>
                     </div>
@@ -143,14 +143,14 @@ export default function AlbumArtServices({
 
                   {/* Features Section */}
                   <div className="p-6 sm:p-6 md:p-8 flex-1">
-                    <h4 className="text-base sm:text-lg md:text-xl font-semibold text-main-theme mb-3 sm:mb-4 md:mb-6">
+                    <h4 className="text-base md:text-lg font-semibold text-main-theme mb-3 sm:mb-4 md:mb-6">
                       Key Technologies
                     </h4>
                     <ul className="space-y-2 sm:space-y-3 md:space-y-4">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-2 sm:gap-3">
                           <CheckCircle className={`w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ${textColor} flex-shrink-0 mt-0.5`} />
-                          <span className="text-md-sm sm:text-md-sm md:text-md-sm lg:text-base text-muted-theme leading-relaxed font-medium">
+                          <span className="text-base text-muted-theme leading-relaxed font-medium">
                             {feature}
                           </span>
                         </li>
@@ -166,7 +166,7 @@ export default function AlbumArtServices({
         {/* Navigation Buttons */}
         <button
           onClick={prevService}
-          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-gray-800 rounded-full shadow-lg border border-theme flex items-center justify-center hover:bg-gray-700 hover:shadow-xl transition-all duration-300 z-10 group"
+          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-subtle-theme rounded-full shadow-lg border border-theme flex items-center justify-center hover:bg-subtle-hover hover:shadow-xl transition-all duration-300 z-10 group"
           aria-label="Previous service"
         >
           <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-gray-300 group-hover:text-white" />
@@ -174,7 +174,7 @@ export default function AlbumArtServices({
 
         <button
           onClick={nextService}
-          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-gray-800 rounded-full shadow-lg border border-theme flex items-center justify-center hover:bg-gray-700 hover:shadow-xl transition-all duration-300 z-10 group"
+          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-subtle-theme rounded-full shadow-lg border border-theme flex items-center justify-center hover:bg-subtle-hover hover:shadow-xl transition-all duration-300 z-10 group"
           aria-label="Next service"
         >
           <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-gray-300 group-hover:text-white" />
@@ -199,7 +199,7 @@ export default function AlbumArtServices({
               onClick={() => setCurrentIndex(index)}
               className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${index === currentIndex
                 ? "bg-blue-500 scale-110"
-                : "bg-gray-300 hover:bg-gray-400"
+                : "bg-subtle-theme hover:bg-subtle-hover"
                 }`}
               aria-label={`Go to service ${index + 1}`}
             />
