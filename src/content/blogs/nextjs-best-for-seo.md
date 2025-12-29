@@ -1,4 +1,12 @@
-# Why Noble Stack Builds Modern Web Apps with Next.js
+---
+title: "Why Noble Stack Builds Modern Web Apps with Next.js"
+date: "2025-12-29"
+slug: "nextjs-best-for-seo"
+coverImage: "/blog7.jpg"
+excerpt: "At Noble Stack, Next.js is our default choice for serious, performance-focused web applications. Here is why we chose it—from a technical and product perspective."
+tags: ["Next.js", "React", "Web Development", "SEO", "Technology"]
+publisher: "Noble Stack Team"
+---
 
 Web development didn’t suddenly change.
 It *settled down*.
