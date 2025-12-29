@@ -1,6 +1,7 @@
 import HeroSection from "./L1";
 import FeaturesSection from "./L2";
 import ServicesSection from "./L3";
+import SocialBadges from "./SocialBadges";
 import FAQSection from "./L4";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <FeaturesSection />
       <ServicesSection />
+      <SocialBadges />
       <FAQSection />
     </main>
   );
