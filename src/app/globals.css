@@ -32,6 +32,8 @@
   --color-card-theme: var(--bg-card);
   --color-subtle-theme: var(--bg-subtle);
   --color-border-theme: var(--border-theme);
+  --color-nav-bg: var(--nav-bg);
+  --color-nav-border: var(--nav-border);
 }
 
 :root {
@@ -45,7 +47,7 @@
   --border-theme: rgba(0, 0, 0, 0.08);
   --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   --nav-bg: rgba(255, 255, 255, 0.9);
-  --nav-border: rgba(0, 0, 0, 0.08);
+  --nav-border: var(--border-theme);
 }
 
 .dark {
@@ -59,7 +61,7 @@
   --border-theme: rgba(84, 84, 88, 0.65);
   --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
   --nav-bg: rgba(18, 18, 18, 0.9);
-  --nav-border: rgba(255, 255, 255, 0.1);
+  --nav-border: var(--border-theme);
 }
 
 /* Base body styles */

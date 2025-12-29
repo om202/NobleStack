@@ -120,7 +120,7 @@ export default function Navigation() {
               {/* Call Now Button */}
               <a
                 href="tel:+9779851411602"
-                className="flex items-center gap-2 px-3 sm:px-4 py-1.5 bg-main-theme text-bg-page rounded-full hover:opacity-90 transition-all duration-200 font-semibold text-sm shadow-sm"
+                className="flex items-center gap-2 px-3 sm:px-4 py-1.5 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-200 font-semibold text-sm shadow-sm"
               >
                 <Phone className="w-3.5 h-3.5 fill-current" />
                 <span className="whitespace-nowrap text-xs sm:text-sm">Talk to Us</span>
