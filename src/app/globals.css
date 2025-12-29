@@ -103,33 +103,33 @@ body {
 /* Base gradient layers */
 .hero-gradient-bg::before {
   background:
-    /* Symmetric Gradient: Smoother transitions with extended dark center */
+    /* Symmetric Gradient: More colorful with reduced central dark area */
     linear-gradient(135deg,
       #7F7135 0%,
       /* Intermediate Yellow */
-      #7B4E1D 6%,
+      #7B4E1D 8%,
       /* Intermediate Sienna */
-      #662610 12%,
+      #662610 16%,
       /* Intermediate Pure Sienna */
-      #4A1810 18%,
+      #4A1810 24%,
       /* Transitional darker sienna */
-      #3C0B0A 22%,
+      #3C0B0A 30%,
       /* Intermediate Reddish */
-      #251015 26%,
+      #251015 36%,
       /* Transitional to dark */
-      #0E1116 32%,
+      #0E1116 42%,
       /* Cinematic Bluish Black Starts */
-      #0E1116 68%,
-      /* Cinematic Bluish Black Ends */
-      #251015 74%,
+      #0E1116 58%,
+      /* Cinematic Bluish Black Ends - REDUCED from 68% */
+      #251015 64%,
       /* Transitional to dark */
-      #3C0B0A 78%,
+      #3C0B0A 70%,
       /* Intermediate Reddish */
-      #4A1810 82%,
+      #4A1810 76%,
       /* Transitional darker sienna */
-      #662610 88%,
+      #662610 84%,
       /* Intermediate Pure Sienna */
-      #7B4E1D 94%,
+      #7B4E1D 92%,
       /* Intermediate Sienna */
       #7F7135 100%
       /* Intermediate Yellow */
@@ -137,10 +137,10 @@ body {
   background-blend-mode: normal;
 }
 
-/* Grainy texture overlay */
+/* Grainy texture overlay - DISABLED for cleaner look */
 .hero-gradient-bg::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  opacity: 0.25;
+  opacity: 0;
   mix-blend-mode: overlay;
   z-index: 1;
 }
