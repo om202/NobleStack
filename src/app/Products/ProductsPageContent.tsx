@@ -20,8 +20,8 @@ import ServiceCard from "../../components/ServiceCard";
 
 export default function ProductsPageContent() {
     return (
-        <main className="py-12 px-4 min-h-screen bg-noble-dark">
-            <div className="max-w-6xl mx-auto">
+        <main className="px-4 min-h-screen bg-noble-dark">
+            <section className="max-w-6xl mx-auto px-4 pt-24 pb-12 sm:pt-32 sm:pb-16">
                 <h1 className="sr-only">Our Portfolio</h1>
 
                 {/* Page Header */}
@@ -352,7 +352,7 @@ export default function ProductsPageContent() {
                         </div>
                     </div>
                 </section>
-            </div>
+            </section>
         </main>
     );
 }

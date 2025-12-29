@@ -181,7 +181,7 @@ export default function Services() {
     <>
       {/* Hero Section */}
       <main className="py-12 px-4 min-h-screen bg-noble-dark">
-        <div className="max-w-6xl mx-auto">
+        <section className="max-w-6xl mx-auto px-4 pt-24 pb-12 sm:pt-32 sm:pb-16">
           {/* Header */}
           <header className="text-center mb-12">
             <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
@@ -303,7 +303,7 @@ export default function Services() {
 
           {/* CTA Section */}
           <ServicesCTA />
-        </div>
+        </section>
       </main >
     </>
   );

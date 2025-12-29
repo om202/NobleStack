@@ -70,70 +70,70 @@ export default function Navigation() {
   return (
     <>
       {/* Top Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-card-theme/95 backdrop-blur-xl border-b border-theme backdrop-saturate-150">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-4 pointer-events-none">
+        <div className="max-w-7xl mx-auto flex justify-center">
+          <div className="flex items-center gap-4 py-2 px-3 sm:px-4 bg-white/5 backdrop-blur-2xl border border-theme rounded-full shadow-2xl pointer-events-auto backdrop-saturate-150 transition-all duration-300">
             {/* Logo Section */}
-            <Link href="/" className="flex items-center gap-3 flex-shrink-0">
+            <Link href="/" className="flex items-center gap-2 flex-shrink-0 group">
               <Image
                 src="/nbl.png"
                 alt="Noble Stack Logo"
-                width={40}
-                height={40}
-                className="rounded-xl"
+                width={32}
+                height={32}
+                className="rounded-lg"
                 priority
               />
-              <h3 className="text-xl sm:text-2xl font-bold text-main-theme">Noble Stack</h3>
+              <span className="hidden sm:block text-lg font-bold text-main-theme tracking-tight">Noble Stack</span>
             </Link>
 
-            {/* Desktop Navigation Items - Centered */}
-            <div className="hidden min-[900px]:flex items-center justify-center flex-1 px-8">
-              <div className="flex items-center space-x-1">
-                {navigationItems.map((item) => {
-                  const Icon = item.icon;
-                  const isActive = pathname === item.href;
+            {/* Separator */}
+            <div className="hidden md:block w-px h-6 bg-theme" />
 
-                  return (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className={`flex items-center gap-2 px-2 min-[1165px]:px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${isActive
-                        ? "bg-blue-500/20 text-blue-300"
-                        : "text-muted-theme hover:text-blue-300 hover:bg-subtle-theme"
-                        }`}
-                    >
-                      <Icon className="w-4 h-4 hidden min-[1165px]:block" aria-hidden="true" />
-                      <span>{item.label}</span>
-                    </Link>
-                  );
-                })}
-              </div>
+            {/* Desktop Navigation Items */}
+            <div className="hidden min-[900px]:flex items-center space-x-1">
+              {navigationItems.map((item) => {
+                const isActive = pathname === item.href;
+
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`flex items-center px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${isActive
+                      ? "text-main-theme bg-white/10"
+                      : "text-muted-theme hover:text-main-theme hover:bg-white/5"
+                      }`}
+                  >
+                    <span>{item.label}</span>
+                  </Link>
+                );
+              })}
             </div>
 
+            {/* Separator */}
+            <div className="w-px h-6 bg-theme" />
+
             {/* Right Side Actions */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
               {/* Call Now Button */}
-              <div className="flex items-center">
-                <a
-                  href="tel:+9779851411602"
-                  className="flex items-center gap-2 px-4 py-2 bg-subtle-theme text-blue-300 rounded-lg hover:bg-subtle-hover transition-colors duration-200 font-semibold text-sm border border-theme"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span className="whitespace-nowrap">Call Now</span>
-                </a>
-              </div>
+              <a
+                href="tel:+9779851411602"
+                className="flex items-center gap-2 px-4 py-1.5 bg-white text-black rounded-full hover:bg-gray-200 transition-all duration-200 font-semibold text-sm shadow-sm"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span className="hidden min-[400px]:inline whitespace-nowrap">Talk to Us</span>
+              </a>
 
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="min-[900px]:hidden inline-flex items-center justify-center p-2 rounded-md text-muted-theme hover:text-blue-300 hover:bg-subtle-theme transition-colors duration-200"
+                className="min-[900px]:hidden inline-flex items-center justify-center p-2 rounded-full text-muted-theme hover:text-main-theme hover:bg-white/5 transition-colors duration-200"
                 aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={isMobileMenuOpen}
               >
                 {isMobileMenuOpen ? (
-                  <X className="w-6 h-6" aria-hidden="true" />
+                  <X className="w-5 h-5" aria-hidden="true" />
                 ) : (
-                  <Menu className="w-6 h-6" aria-hidden="true" />
+                  <Menu className="w-5 h-5" aria-hidden="true" />
                 )}
               </button>
             </div>
@@ -145,11 +145,11 @@ export default function Navigation() {
       {isMobileMenuOpen && (
         <>
           <div
-            className="min-[900px]:hidden fixed inset-0 bg-black/40 z-40 backdrop-blur-sm"
+            className="min-[900px]:hidden fixed inset-0 bg-black/60 z-40 backdrop-blur-md"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="min-[900px]:hidden fixed top-16 left-0 right-0 z-50 bg-card-theme/98 backdrop-blur-xl border-b border-theme backdrop-saturate-150 max-h-[calc(100vh-4rem)] overflow-y-auto">
-            <div className="px-4 py-4 space-y-2">
+          <div className="min-[900px]:hidden fixed top-20 left-4 right-4 z-50 bg-card-theme/90 backdrop-blur-2xl border border-theme rounded-3xl shadow-2xl backdrop-saturate-150 max-h-[calc(100vh-6rem)] overflow-y-auto transform transition-all duration-300 ease-out origin-top">
+            <div className="p-4 space-y-2">
               {navigationItems.map((item) => {
                 const Icon = item.icon;
                 const isActive = pathname === item.href;
@@ -158,19 +158,17 @@ export default function Navigation() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors duration-150 ${isActive
-                      ? "bg-blue-500/20 text-blue-300"
-                      : "text-muted-theme hover:text-blue-300 hover:bg-subtle-theme"
+                    className={`flex items-center gap-4 px-5 py-4 rounded-2xl text-base font-medium transition-all duration-150 ${isActive
+                      ? "bg-white/10 text-main-theme"
+                      : "text-muted-theme hover:text-main-theme hover:bg-white/5"
                       }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    <Icon className="w-5 h-5" aria-hidden="true" />
+                    <Icon className="w-5 h-5 opacity-70" aria-hidden="true" />
                     <span>{item.label}</span>
                   </Link>
                 );
               })}
-
-
             </div>
           </div>
         </>

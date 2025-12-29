@@ -22,35 +22,28 @@ export default function BlogsPage() {
 
     return (
         <main className="min-h-screen bg-noble-dark">
-            <div className="py-12 px-4">
-                <div className="max-w-6xl mx-auto">
-                    {/* Header Section */}
-                    <header className="text-center mb-12">
-                        <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
-                            Noble Stack Blogs
-                        </h1>
+            <header className="px-4 pt-24 pb-12 sm:pt-32 sm:pb-16 text-center">
+                <blockquote className="text-base text-muted-theme mb-8 max-w-3xl mx-auto">
+                    &ldquo;Explore our collection of articles on technology, design, and startup growth.&rdquo;
+                </blockquote>
+            </header>
 
-                        <blockquote className="text-base text-muted-theme mb-8 max-w-3xl mx-auto">
-                            &ldquo;Explore our collection of articles on technology, design, and startup growth.&rdquo;
-                        </blockquote>
-                    </header>
-
-                    {/* Blog Grid Card */}
-                    <section aria-label="Blog Posts" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
-                        {posts.length > 0 ? (
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {posts.map((post) => (
-                                    <BlogCard key={post.slug} post={post} />
-                                ))}
-                            </div>
-                        ) : (
-                            <div className="text-center py-20 text-muted-theme">
-                                <p>No posts found. Check back soon!</p>
-                            </div>
-                        )}
-                    </section>
+            {/* Blog Grid Card */}
+            <section aria-label="Blog Posts" className="max-w-6xl mx-auto px-4 pb-16">
+                <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+                    {posts.length > 0 ? (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {posts.map((post) => (
+                                <BlogCard key={post.slug} post={post} />
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="text-center py-20 text-muted-theme">
+                            <p>No posts found. Check back soon!</p>
+                        </div>
+                    )}
                 </div>
-            </div>
+            </section>
         </main>
     );
 }
