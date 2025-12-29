@@ -5,7 +5,7 @@ import CTAButton from "./CTAButton";
 
 export default function ServicesCTA() {
     return (
-        <section id="cta" aria-label="Call to Action" className="bg-gray-900 rounded-2xl p-8 shadow-sm border border-theme text-center">
+        <section id="cta" aria-label="Call to Action" className="bg-card-theme rounded-2xl p-8 shadow-sm border border-theme text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
                 <Star className="w-6 h-6 text-yellow-400 fill-current" />
                 <Star className="w-6 h-6 text-yellow-400 fill-current" />
@@ -14,10 +14,10 @@ export default function ServicesCTA() {
                 <Star className="w-6 h-6 text-yellow-400 fill-current" />
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-main-theme">
+            <h2 className="text-xl md:text-2xl font-bold mb-4 text-main-theme">
                 Ready to Start Your Project?
             </h2>
-            <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
+            <p className="text-base text-muted-theme mb-8 max-w-2xl mx-auto">
                 Let&apos;s discuss your requirements and create a solution that
                 drives your business forward. Our team is ready to bring your
                 vision to life.
