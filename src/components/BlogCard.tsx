@@ -43,7 +43,7 @@ export default function BlogCard({ post }: BlogCardProps) {
                     <p className="text-muted-theme text-sm mb-6 line-clamp-3 flex-1">
                         {post.excerpt}
                     </p>
-                    <div className="flex items-center justify-center text-main-theme font-medium text-sm mt-auto border border-theme rounded-lg px-4 py-2 bg-subtle-theme group-hover:bg-subtle-hover transition-colors pointer-events-none">
+                    <div className="flex items-center justify-center text-main-theme font-medium text-sm mt-auto border border-theme rounded-lg px-4 py-2 bg-card-theme group-hover:bg-subtle-hover transition-colors pointer-events-none">
                         Read Article <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
                     </div>
                 </div>
