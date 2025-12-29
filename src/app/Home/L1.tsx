@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 
 import Link from "next/link";
@@ -89,6 +87,7 @@ export default function HeroSection() {
                       width={13}
                       height={13}
                       className="inline-block"
+                      priority
                     />
                   </span>
                   and
@@ -100,6 +99,7 @@ export default function HeroSection() {
                       width={28}
                       height={28}
                       className="inline-block"
+                      priority
                     />
                   </span>
                 </p>

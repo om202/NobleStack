@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 
 interface TechItem {
@@ -29,24 +27,8 @@ export default function TechStackCarousel({
       )}
 
       <div className="relative overflow-hidden bg-card-theme rounded-2xl py-4 sm:py-6">
-        <style jsx>{`
-          @keyframes scroll-left {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-33.333%);
-            }
-          }
-          .scroll-container {
-            animation: scroll-left 20s linear infinite;
-          }
-          .scroll-container:hover {
-            animation-play-state: paused;
-          }
-        `}</style>
+        <div className="scroll-container flex gap-4 sm:gap-8 px-2 sm:px-4 animate-scroll-left pause-on-hover">
 
-        <div className="scroll-container flex gap-4 sm:gap-8 px-2 sm:px-4">
           {infiniteTechnologies.map((tech, index) => (
             <figure
               key={index}
