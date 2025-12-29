@@ -48,6 +48,10 @@
   --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   --nav-bg: rgba(255, 255, 255, 0.9);
   --nav-border: var(--border-theme);
+  /* Scrollbar - Light Mode */
+  --scrollbar-track: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.35);
+  --scrollbar-thumb-hover: rgba(0, 0, 0, 0.5);
 }
 
 .dark {
@@ -62,6 +66,10 @@
   --shadow-theme: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
   --nav-bg: rgba(18, 18, 18, 0.9);
   --nav-border: var(--border-theme);
+  /* Scrollbar - Dark Mode */
+  --scrollbar-track: rgba(255, 255, 255, 0.08);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.3);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.45);
 }
 
 /* Base body styles */
@@ -174,23 +182,23 @@ a {
   /* Balanced for interactive elements */
 }
 
-/* Custom scrollbar - Light colors for dark theme */
+/* Custom scrollbar - Theme-aware colors */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--scrollbar-track);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--scrollbar-thumb);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.45);
+  background: var(--scrollbar-thumb-hover);
 }
 
 /* Glassmorphism utilities */
