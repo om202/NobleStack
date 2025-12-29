@@ -29,6 +29,7 @@ const tex = localFont({
     },
   ],
   variable: "--font-tex",
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
