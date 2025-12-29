@@ -62,7 +62,7 @@ export default function CredibilitySection() {
                     {credibilityPoints.map((point, index) => (
                         <div
                             key={index}
-                            className="bg-gray-900 rounded-xl p-6 border border-theme hover:border-blue-500 transition-all duration-300 group"
+                            className="bg-gray-900 rounded-xl p-6 border border-theme hover:border-blue-500 transition-colors duration-300 group"
                         >
                             <div className="flex items-start gap-4">
                                 <div className="flex-shrink-0">

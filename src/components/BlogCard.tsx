@@ -13,7 +13,7 @@ interface BlogCardProps {
 export default function BlogCard({ post }: BlogCardProps) {
     return (
         <Link href={`/blogs/${post.slug}`} className="group h-full">
-            <article className="bg-subtle-theme rounded-2xl overflow-hidden shadow-sm border border-theme hover:bg-subtle-hover hover:border-theme transition-all duration-300 h-full flex flex-col">
+            <article className="bg-subtle-theme rounded-2xl overflow-hidden shadow-sm border border-theme hover:bg-subtle-hover hover:border-theme transition-[background-color,border-color] duration-300 h-full flex flex-col">
                 <div className="relative h-48 w-full overflow-hidden">
                     {post.coverImage ? (
                         <Image

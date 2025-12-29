@@ -206,14 +206,14 @@ export default function TechTicker({
         <>
           <button
             onClick={goToPrevious}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 border border-theme rounded-full p-2 hover:bg-gray-700 hover:border-gray-600 transition-all duration-200 shadow-sm"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 border border-theme rounded-full p-2 hover:bg-gray-700 hover:border-gray-600 transition-[background-color,border-color] duration-200 shadow-sm"
             aria-label="Previous technology"
           >
             <ChevronLeft className="w-5 h-5 text-gray-300" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 border border-theme rounded-full p-2 hover:bg-gray-700 hover:border-gray-600 transition-all duration-200 shadow-sm"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 border border-theme rounded-full p-2 hover:bg-gray-700 hover:border-gray-600 transition-[background-color,border-color] duration-200 shadow-sm"
             aria-label="Next technology"
           >
             <ChevronRight className="w-5 h-5 text-gray-300" />
@@ -225,7 +225,7 @@ export default function TechTicker({
         {technologies.map((tech, index) => (
           <div
             key={index}
-            className="absolute transition-all duration-1000 ease-in-out transform-gpu will-change-transform"
+            className="absolute transition-[transform,opacity] duration-1000 ease-in-out transform-gpu will-change-transform"
             style={getCardStyle(index)}
           >
             <div className="w-56 h-36 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg border border-theme overflow-hidden transform-gpu relative">
@@ -251,7 +251,7 @@ export default function TechTicker({
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-200 ${index === currentIndex
+              className={`w-2 h-2 rounded-full transition-[background-color,transform] duration-200 ${index === currentIndex
                 ? "bg-blue-500 scale-125"
                 : "bg-gray-300 hover:bg-gray-400"
                 }`}

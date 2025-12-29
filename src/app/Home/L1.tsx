@@ -44,12 +44,6 @@ export default function HeroSection() {
       {/* Hero Section with Background - Full Width */}
       <div className="relative w-full overflow-hidden">
         <div className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 hero-gradient-bg">
-          {/* Decorative Blur Elements */}
-          <div className="hero-gradient-blur-blue"></div>
-          <div className="hero-gradient-blur-green"></div>
-          <div className="hero-gradient-blur-orange"></div>
-          <div className="hero-gradient-blur-amber"></div>
-
           {/* Content */}
           <div className="max-w-6xl mx-auto px-4">
             <div className="relative z-10">
@@ -61,11 +55,11 @@ export default function HeroSection() {
                     alt="Noble Stack Logo"
                     width={50}
                     height={50}
-                    className="rounded-lg"
+                    className="rounded-lg w-10 h-10 md:w-[50px] md:h-[50px]"
                     priority
-                    sizes="50px"
+                    sizes="(max-width: 768px) 40px, 50px"
                   />
-                  <span className="text-3xl font-bold tracking-tight text-white">
+                  <span className="text-2xl md:text-3xl font-bold tracking-tight text-white">
                     Noble Stack
                   </span>
                 </div>
