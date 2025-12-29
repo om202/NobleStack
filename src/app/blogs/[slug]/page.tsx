@@ -94,7 +94,7 @@ export default async function BlogPostPage({ params }: Params) {
                 }}
             />
             {/* Hero / Header */}
-            <header className="relative h-[60vh] min-h-[400px] w-full bg-gray-900">
+            <header className="relative h-[60vh] min-h-[400px] w-full bg-card-theme">
                 {post.coverImage && (
                     <Image
                         src={post.coverImage}
@@ -104,16 +104,16 @@ export default async function BlogPostPage({ params }: Params) {
                         priority
                     />
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-bg-page via-bg-page/40 to-transparent" />
 
                 <div className="absolute inset-0 flex flex-col justify-end pb-20">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                         <Link
                             href="/blogs"
-                            className="inline-flex items-center text-gray-300 hover:text-white mb-8 transition-colors group"
+                            className="inline-flex items-center text-muted-theme hover:text-main-theme mb-8 transition-colors group"
                         >
                             <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-                            Back to Publications
+                            Back to Stories
                         </Link>
 
                         <div className="flex flex-wrap gap-2 mb-6">
@@ -124,15 +124,15 @@ export default async function BlogPostPage({ params }: Params) {
                             ))}
                         </div>
 
-                        <h1 className="text-3xl md:text-5xl md:leading-tight font-bold text-white mb-6">
+                        <h1 className="text-2xl md:text-4xl md:leading-tight font-bold text-white mb-6">
                             {post.title}
                         </h1>
 
-                        <div className="flex items-center gap-6 text-gray-300 text-sm md:text-base">
+                        <div className="flex items-center gap-6 text-muted-theme text-sm md:text-base">
                             {post.author && (
                                 <div className="flex items-center gap-2">
                                     {post.author.picture ? (
-                                        <div className="relative w-8 h-8 rounded-full overflow-hidden border border-gray-500">
+                                        <div className="relative w-8 h-8 rounded-full overflow-hidden border border-theme">
                                             <Image
                                                 src={post.author.picture}
                                                 alt={post.author.name}
