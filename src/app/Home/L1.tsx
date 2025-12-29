@@ -108,11 +108,11 @@ export default function HeroSection() {
                   </div>
                 </div>
 
-                <h1 className="text-[36px] md:text-[49px] font-bold mb-6 leading-tight max-w-4xl mx-auto">
-                  We Convert Business Ideas Into Profitable AI Products
+                <h1 className="text-[32px] md:text-[40px] font-bold mb-6 leading-tight max-w-4xl mx-auto">
+                  We Convert Business Ideas<br />Into Profitable AI Products
                 </h1>
 
-                <p className="text-base sm:text-lg md:text-lg text-gray-100 mb-8 max-w-3xl mx-auto">
+                <p className="text-base text-gray-100 mb-8 max-w-3xl mx-auto">
                   We're a software development agency specializing in AI, modern web & apps. From smart automations to high speed websites, we build products that deliver measurable business results.
                 </p>
 
@@ -129,7 +129,7 @@ export default function HeroSection() {
 
               {/* Proudly building in Nepal and USA */}
               <div className="mt-12 text-center">
-                <p className="text-base sm:text-lg text-gray-200 font-medium flex items-center justify-center gap-2">
+                <p className="text-base text-gray-200 font-medium flex items-center justify-center gap-2">
                   Proudly building in
                   <span className="inline-flex items-center gap-1.5">
                     Nepal
@@ -190,7 +190,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <h2 className="text-xl font-bold text-main-theme">
+            <h2 className="text-lg font-bold text-main-theme">
               Our Portfolio
             </h2>
             <p className="text-sm text-muted-theme mt-2 max-w-2xl mx-auto">
@@ -291,7 +291,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <h2 className="text-xl font-bold text-main-theme">
+            <h2 className="text-lg font-bold text-main-theme">
               Our Expertise
             </h2>
           </header>

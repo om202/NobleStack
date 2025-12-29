@@ -190,12 +190,12 @@ export default function FAQSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <header className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-main-theme">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-main-theme">
             <span className="text-gradient-blue">
               Questions & Answers
             </span>
           </h2>
-          <p className="text-base sm:text-lg text-muted-theme max-w-3xl mx-auto">
+          <p className="text-base text-muted-theme max-w-3xl mx-auto">
             Comprehensive technical documentation and answers to help you understand our capabilities,
             methodologies, and how we can solve your specific challenges.
           </p>
@@ -240,7 +240,7 @@ export default function FAQSection() {
 
         {/* Bottom CTA */}
         <div className="text-center bg-card-theme rounded-2xl p-8 border border-theme shadow-sm">
-          <h3 className="text-xl font-bold text-main-theme mb-4">
+          <h3 className="text-lg font-bold text-main-theme mb-4">
             Have a specific question?
           </h3>
           <p className="text-base text-muted-theme mb-6 max-w-2xl mx-auto">
