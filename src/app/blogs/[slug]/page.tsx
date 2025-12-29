@@ -165,12 +165,12 @@ export default async function BlogPostPage({ params }: Params) {
 
             {/* Content */}
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div className="prose prose-lg max-w-none 
+                <div className="prose prose-lg dark:prose-invert max-w-none 
                     prose-headings:text-main-theme prose-headings:font-bold
                     prose-p:text-main-theme prose-p:leading-8
                     prose-a:text-blue-500 prose-a:no-underline hover:prose-a:text-blue-400
                     prose-strong:text-main-theme
-                    prose-blockquote:border-l-blue-500 prose-blockquote:bg-blue-500/10 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:text-muted-theme
+                    prose-blockquote:border-l-blue-500 prose-blockquote:bg-blue-500/10 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:text-main-theme
                     prose-img:rounded-xl prose-img:shadow-lg
                     prose-code:text-blue-600 dark:prose-code:text-blue-300 prose-code:bg-subtle-theme prose-code:px-1 prose-code:py-0.5 prose-code:rounded
                     prose-pre:bg-subtle-theme prose-pre:border prose-pre:border-theme
