@@ -47,7 +47,7 @@ export default function SocialBadges() {
                                                 src={badge.logo}
                                                 alt={badge.name}
                                                 fill
-                                                className="object-contain dark:brightness-100 dark:invert-0 invert opacity-60 group-hover:opacity-100 transition-opacity drop-shadow-[0_3px_5px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_3px_5px_rgba(0,0,0,0.85)]"
+                                                className="object-contain dark:brightness-100 dark:invert-0 invert drop-shadow-[0_3px_5px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_3px_5px_rgba(0,0,0,0.85)]"
                                             />
                                         </div>
                                     </div>
