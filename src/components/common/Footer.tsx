@@ -81,7 +81,7 @@ export default function Footer() {
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="mailto:noblestack.io@gmail.com"
+                  href="mailto:info@noblestack.io"
                   className="text-muted-theme hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                   aria-label="Send us an email"
                 >

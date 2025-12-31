@@ -123,7 +123,7 @@ export default function CareerLayout({
             },
             applicationContact: {
               "@type": "ContactPoint",
-              email: "noblestack.io@gmail.com",
+              email: "info@noblestack.io",
               contactType: "HR",
               telephone: "+977 985-1411602"
             }
@@ -187,7 +187,7 @@ export default function CareerLayout({
             },
             applicationContact: {
               "@type": "ContactPoint",
-              email: "noblestack.io@gmail.com",
+              email: "info@noblestack.io",
               contactType: "HR",
               telephone: "+977 985-1411602"
             }

@@ -100,7 +100,7 @@ export default function HomeLayout({
               }
             ],
             telephone: "+977 985-1411602",
-            email: "noblestack.io@gmail.com",
+            email: "info@noblestack.io",
             potentialAction: {
               "@type": "SearchAction",
               target: "https://noblestack.io/search?q={search_term_string}",

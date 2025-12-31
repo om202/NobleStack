@@ -77,7 +77,7 @@ export default function ContactLayout({
               {
                 "@type": "ContactPoint",
                 telephone: "+977 985-1411602",
-                email: "noblestack.io@gmail.com",
+                email: "info@noblestack.io",
                 contactType: "Customer Service",
                 areaServed: ["Nepal", "South Asia"],
                 availableLanguage: ["English", "Nepali"],
@@ -93,14 +93,14 @@ export default function ContactLayout({
               {
                 "@type": "ContactPoint",
                 contactType: "Technical Support",
-                email: "noblestack.io@gmail.com",
+                email: "info@noblestack.io",
                 areaServed: ["Nepal", "South Asia"],
                 availableLanguage: ["English", "Nepali"]
               },
               {
                 "@type": "ContactPoint",
                 contactType: "Sales",
-                email: "noblestack.io@gmail.com",
+                email: "info@noblestack.io",
                 areaServed: ["Nepal", "South Asia"],
                 availableLanguage: ["English", "Nepali"]
               }
@@ -139,7 +139,7 @@ export default function ContactLayout({
             "@id": "https://noblestack.io/Contact",
             url: "https://noblestack.io",
             telephone: "+977 985-1411602",
-            email: "noblestack.io@gmail.com",
+            email: "info@noblestack.io",
             address: {
               "@type": "PostalAddress",
               streetAddress: "Saraswati Marg, Kathmandu 44600, Nepal",
