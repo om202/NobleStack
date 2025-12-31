@@ -273,11 +273,13 @@ export default function ContactPageContent() {
                                 name="Email"
                                 description="info@noblestack.io"
                                 icon={Mail}
+                                copyable={true}
                             />
                             <ServiceCard
                                 name="Phone"
                                 description="+977 985-1411602"
                                 icon={Phone}
+                                copyable={true}
                             />
                             <a
                                 href="https://maps.app.goo.gl/FEdRQH1LSC6cRjMfA"
@@ -289,6 +291,7 @@ export default function ContactPageContent() {
                                     name="Location"
                                     description="Saraswati Marg, Kathmandu 44600, Nepal"
                                     icon={MapPin}
+                                    copyable={true}
                                 />
                             </a>
                             <ServiceCard
