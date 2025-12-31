@@ -150,7 +150,7 @@ export default function RootLayout({
                   "image": "https://www.noblestack.io/nbl.png",
                   "description": "Leading AI and web development company in Kathmandu, Nepal providing cutting-edge solutions across South Asia.",
                   "telephone": "+977 985-1411602",
-                  "email": "noblestack.io@gmail.com",
+                  "email": "info@noblestack.io",
                   "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "Saraswati Marg, Kathmandu 44600, Nepal",

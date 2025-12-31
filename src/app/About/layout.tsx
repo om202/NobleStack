@@ -78,7 +78,7 @@ export default function AboutLayout({
             logo: "https://noblestack.io/nbl.png",
             description: "Noble Stack is a leading technology company based in Kathmandu, Nepal, specializing in AI development, modern web applications, and intelligent automation solutions for clients across Nepal and South Asia.",
             foundingDate: "2019",
-            email: "noblestack.io@gmail.com",
+            email: "info@noblestack.io",
             telephone: "+977 985-1411602",
             address: {
               "@type": "PostalAddress",

@@ -271,7 +271,7 @@ export default function ContactPageContent() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <ServiceCard
                                 name="Email"
-                                description="noblestack.io@gmail.com"
+                                description="info@noblestack.io"
                                 icon={Mail}
                             />
                             <ServiceCard
