@@ -1,5 +1,5 @@
 import React from "react";
-import { LucideIcon } from "lucide-react";
+import { LucideIcon, Copy, Check } from "lucide-react";
 import Image from "next/image";
 
 interface ServiceCardProps {
@@ -8,6 +8,7 @@ interface ServiceCardProps {
     icon?: LucideIcon;
     imageSrc?: string;
     imageAlt?: string;
+    copyable?: boolean;
 }
 
 export default function ServiceCard({
@@ -16,9 +17,10 @@ export default function ServiceCard({
     icon: Icon,
     imageSrc,
     imageAlt,
+    copyable = false,
 }: ServiceCardProps) {
     return (
-        <article className="bg-card-theme rounded-2xl p-6 border border-theme hover:bg-subtle-theme transition-[transform,background-color,border-color] duration-300 group cursor-pointer min-h-[180px]">
+        <article className={`bg-card-theme rounded-2xl p-6 border border-theme hover:bg-subtle-theme transition-[transform,background-color,border-color] duration-300 group cursor-pointer min-h-[180px] flex flex-col`}>
             <div className="flex items-center mb-4">
                 {imageSrc ? (
                     <Image
@@ -38,7 +40,20 @@ export default function ServiceCard({
                 ) : null}
             </div>
             <h3 className="text-main-theme font-semibold mb-2">{name}</h3>
-            <p className="text-muted-theme text-base mb-4">{description}</p>
+            <div className="flex items-start gap-2">
+                <p className="text-muted-theme text-base mb-4 break-words flex-grow">{description}</p>
+                {copyable && (
+                    <button
+                        type="button"
+                        data-copy={description}
+                        className="p-1.5 rounded-md bg-subtle-theme border border-theme hover:bg-page-theme hover:text-blue-500 transition-colors duration-200 flex-shrink-0 mt-0.5 copy-button"
+                        title="Copy to clipboard"
+                    >
+                        <Copy className="w-3.5 h-3.5 copy-icon-default" />
+                        <Check className="w-3.5 h-3.5 text-green-500 copy-icon-success" style={{ display: 'none' }} />
+                    </button>
+                )}
+            </div>
         </article>
     );
 

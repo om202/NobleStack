@@ -201,6 +201,28 @@ export default function RootLayout({
                   sessionStorage.setItem('theme-initialized', 'true');
                 }
               } catch (e) {}
+
+              // Global copy listener
+              document.addEventListener('click', function(e) {
+                const btn = e.target.closest('[data-copy]');
+                if (btn) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  const text = btn.getAttribute('data-copy');
+                  navigator.clipboard.writeText(text).then(() => {
+                    const defaultIcon = btn.querySelector('.copy-icon-default');
+                    const successIcon = btn.querySelector('.copy-icon-success');
+                    if (defaultIcon && successIcon) {
+                      defaultIcon.style.display = 'none';
+                      successIcon.style.display = 'block';
+                      setTimeout(() => {
+                        defaultIcon.style.display = 'block';
+                        successIcon.style.display = 'none';
+                      }, 2000);
+                    }
+                  });
+                }
+              });
             `,
           }}
         />
