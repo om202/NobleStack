@@ -113,7 +113,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>for global impact</span>
+              <span>by Team Noble Stack</span>
             </div>
           </div>
         </div>
