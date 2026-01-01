@@ -13,6 +13,8 @@ import {
     Linkedin,
     Facebook,
     Instagram,
+    X,
+    ExternalLink,
 } from "lucide-react";
 import { useState } from "react";
 import CTAButton from "../../components/CTAButton";
@@ -43,6 +45,7 @@ export default function ContactPageContent() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
     const [errorMessage, setErrorMessage] = useState("");
+    const [showReviewDialog, setShowReviewDialog] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setFormData({
@@ -310,7 +313,7 @@ export default function ContactPageContent() {
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <a
                                 href="https://www.linkedin.com/company/noble-stack-pvt-ltd"
                                 target="_blank"
@@ -347,10 +350,80 @@ export default function ContactPageContent() {
                                     icon={Instagram}
                                 />
                             </a>
+                            <div className="block cursor-pointer" onClick={() => setShowReviewDialog(true)}>
+                                <ServiceCard
+                                    name="Google Review"
+                                    description="Scan to review us on Google"
+                                    imageSrc="/google.png"
+                                    imageAlt="Google Logo"
+                                />
+                            </div>
                         </div>
 
                     </section>
                 </section>
+
+                {/* Google Review Dialog */}
+                {showReviewDialog && (
+                    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-all duration-300">
+                        <div className="bg-card-theme border border-theme rounded-3xl p-8 max-w-md w-full shadow-2xl relative animate-in fade-in zoom-in duration-300">
+                            <button
+                                onClick={() => setShowReviewDialog(false)}
+                                className="absolute top-4 right-4 p-2 hover:bg-subtle-theme rounded-full transition-colors duration-200 text-muted-theme"
+                            >
+                                <X className="w-5 h-5" />
+                            </button>
+
+                            <div className="text-center">
+                                <h3 className="text-2xl font-bold text-main-theme mb-4">
+                                    We&apos;d love your feedback!
+                                </h3>
+                                <p className="text-muted-theme mb-8">
+                                    Your support means the world to us. If you enjoyed our services, please take a moment to leave us a review on Google.
+                                </p>
+
+                                <div className="bg-white p-4 rounded-2xl inline-block mb-8 shadow-inner border border-theme">
+                                    <img
+                                        src="/google-qr.png"
+                                        alt="Google QR Code"
+                                        className="w-48 h-48 md:w-64 md:h-64 object-contain"
+                                    />
+                                </div>
+
+                                <div className="space-y-4">
+                                    <p className="text-sm font-medium text-muted-theme">
+                                        Scan the QR code with your phone camera
+                                    </p>
+
+                                    <div className="flex flex-col gap-3">
+                                        <a
+                                            href="https://g.page/r/CZN2-T24M49DEBI/review"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="w-full"
+                                        >
+                                            <CTAButton
+                                                variant="primary"
+                                                className="w-full"
+                                                icon={ExternalLink}
+                                            >
+                                                Leave a Review Online
+                                            </CTAButton>
+                                        </a>
+
+                                        <CTAButton
+                                            variant="secondary"
+                                            className="w-full"
+                                            onClick={() => setShowReviewDialog(false)}
+                                        >
+                                            I&apos;ll do it later
+                                        </CTAButton>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
 
                 <style jsx>{`
           @keyframes futureGlow {

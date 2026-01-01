@@ -118,32 +118,32 @@ export default function AboutPageContent() {
                     </section>
 
                     {/* Our Story Section */}
-                    <article id="our-story" className="max-w-3xl mx-auto mb-16 space-y-8 bg-card-theme p-8 rounded-2xl shadow-sm border border-theme">
+                    <article id="our-story" className="w-full mb-16 space-y-8 bg-card-theme p-8 rounded-2xl shadow-sm border border-theme">
                         <header className="space-y-4">
                             <h2 className="text-2xl md:text-3xl font-bold text-main-theme leading-tight">
-                                Built in Nepal. Connected Through the USA.
+                                AI First, Built In Nepal
                             </h2>
                             <h3 className="text-lg text-muted-theme font-medium">
-                                Noble Stack’s global model for modern software execution.
+                                Noble Stack’s blueprint for intelligent, modern software execution.
                             </h3>
                         </header>
 
                         <figure className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-sm">
                             <Image
                                 src="/nepal.jpg"
-                                alt="Beautiful landscape of Nepal"
+                                alt="Engineering Excellence in Nepal"
                                 fill
                                 className="object-cover"
                             />
                         </figure>
 
                         <div className="space-y-6 text-base text-muted-theme leading-relaxed">
-                            <p>We combine Nepal’s elite engineering talent with US market access to deliver AI first, end‑to‑end product development.</p>
+                            <p>We leverage Nepal’s elite engineering talent to deliver AI-native, end‑to‑end product development for a global market.</p>
                             <ul className="list-disc pl-6 space-y-2">
-                                <li>Two‑Hub Model: Engineering in Nepal, market access in the USA.</li>
-                                <li>AI First: GPT-5, GPT-4o, Claude 4.5, Langchain v1.1</li>
-                                <li>Modern Stack: Next.js, React, TypeScript, Tailwind CSS, Vercel.</li>
-                                <li>Full‑cycle delivery from concept to deployment.</li>
+                                <li><strong>AI Native:</strong> Built from the ground up with GPT-5, GPT-4o, and Claude 4.5.</li>
+                                <li><strong>Global Execution:</strong> Engineering excellence in Nepal with seamless global delivery.</li>
+                                <li><strong>Modern Stack:</strong> Next.js, React, TypeScript, and Vercel infrastructure.</li>
+                                <li><strong>Full-Cycle:</strong> Turning complex ideas into deployed, scalable software.</li>
                             </ul>
 
                             <hr className="border-theme my-8" />
@@ -221,12 +221,12 @@ export default function AboutPageContent() {
                             <p>If you&apos;re looking for a team that combines:</p>
 
                             <ul className="list-disc pl-6 space-y-2">
-                                <li>Nepal&apos;s elite engineering talent</li>
-                                <li>US access to global technology, partners, and markets</li>
-                                <li>Clear ownership and execution</li>
+                                <li>Nepal&apos;s elite AI engineering talent</li>
+                                <li>Global technology standards and execution</li>
+                                <li>Clear ownership and rapid delivery</li>
                             </ul>
 
-                            <p>Then Noble Stack is built for you. One team. One standard. Global execution.</p>
+                            <p>Then Noble Stack is built for you. One team. AI first. Built in Nepal.</p>
                         </div>
                     </article>
 

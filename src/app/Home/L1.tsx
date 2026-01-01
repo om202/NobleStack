@@ -83,7 +83,7 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Proudly building in Nepal and USA */}
+              {/* Proudly building in Nepal */}
               <div className="mt-12 text-center">
                 <p className="text-base text-white/80 font-medium flex items-center justify-center gap-2">
                   Proudly building in
@@ -97,19 +97,6 @@ export default function HeroSection() {
                       className="inline-block"
                       priority
                       sizes="13px"
-                    />
-                  </span>
-                  and
-                  <span className="inline-flex items-center gap-1.5 text-white">
-                    USA
-                    <Image
-                      src="/Flag_of_the_United_States.svg"
-                      alt="USA Flag"
-                      width={28}
-                      height={28}
-                      className="inline-block"
-                      priority
-                      sizes="28px"
                     />
                   </span>
                 </p>
