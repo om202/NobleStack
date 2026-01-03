@@ -13,7 +13,7 @@ export default function FullStackEngineering() {
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
                 {/* Gradient Background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-cyan-50 to-indigo-50 dark:from-blue-950/30 dark:via-cyan-950/20 dark:to-indigo-950/30" />
 
@@ -28,24 +28,24 @@ export default function FullStackEngineering() {
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-3xl blur-xl opacity-50" />
-                            <div className="relative w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-3xl flex items-center justify-center shadow-2xl">
-                                <Code2 className="w-12 h-12 md:w-16 md:h-16 text-white" strokeWidth={1.5} />
+                            <div className="relative w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-3xl flex items-center justify-center shadow-2xl">
+                                <Code2 className="w-8 h-8 md:w-10 md:h-10 text-white" strokeWidth={1.5} />
                             </div>
                         </div>
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 text-main-theme bg-gradient-to-br from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-main-theme bg-gradient-to-br from-blue-600 to-cyan-600 bg-clip-text text-transparent">
                         Full-Stack Product Engineering
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="text-xl md:text-2xl text-muted-theme mb-8 max-w-3xl mx-auto font-medium">
+                    <p className="text-base text-muted-theme mb-6 max-w-3xl mx-auto">
                         End-to-End Software Solutions Built to Scale
                     </p>
 
                     {/* Description */}
-                    <p className="text-lg md:text-xl text-muted-theme max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-muted-theme max-w-2xl mx-auto leading-relaxed">
                         We engineer robust, full-stack systems — from frontend to backend to infrastructure — with code quality and scalability at the core.
                     </p>
 
@@ -62,7 +62,7 @@ export default function FullStackEngineering() {
 
             {/* Capabilities Section */}
             <section className="max-w-6xl mx-auto px-4 py-20">
-                <h2 className="text-3xl md:text-4xl font-bold text-main-theme text-center mb-16">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     What We Build
                 </h2>
 
@@ -176,7 +176,7 @@ export default function FullStackEngineering() {
             {/* CTA Section */}
             <section className="max-w-4xl mx-auto px-4 py-20 text-center">
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-3xl p-12 border border-theme">
-                    <h2 className="text-3xl md:text-4xl font-bold text-main-theme mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready to Build Your Product?
                     </h2>
                     <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">

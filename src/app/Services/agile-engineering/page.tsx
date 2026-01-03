@@ -13,7 +13,7 @@ export default function AgileEngineering() {
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
                 {/* Gradient Background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-violet-50 to-purple-50 dark:from-indigo-950/30 dark:via-violet-950/20 dark:to-purple-950/30" />
 
@@ -28,24 +28,24 @@ export default function AgileEngineering() {
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-indigo-400 to-violet-600 rounded-3xl blur-xl opacity-50" />
-                            <div className="relative w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-indigo-500 to-violet-600 rounded-3xl flex items-center justify-center shadow-2xl">
-                                <GitPullRequest className="w-12 h-12 md:w-16 md:h-16 text-white" strokeWidth={1.5} />
+                            <div className="relative w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-indigo-500 to-violet-600 rounded-3xl flex items-center justify-center shadow-2xl">
+                                <GitPullRequest className="w-8 h-8 md:w-10 md:h-10 text-white" strokeWidth={1.5} />
                             </div>
                         </div>
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 text-main-theme bg-gradient-to-br from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-main-theme bg-gradient-to-br from-indigo-600 to-violet-600 bg-clip-text text-transparent">
                         Agile, But Engineered
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="text-xl md:text-2xl text-muted-theme mb-8 max-w-3xl mx-auto font-medium">
+                    <p className="text-base text-muted-theme mb-6 max-w-3xl mx-auto">
                         Fast Iteration Meets Engineering Discipline
                     </p>
 
                     {/* Description */}
-                    <p className="text-lg md:text-xl text-muted-theme max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-muted-theme max-w-2xl mx-auto leading-relaxed">
                         We move fast — but not recklessly. Our process merges the flexibility of agile with the discipline of software engineering.
                     </p>
 
@@ -62,7 +62,7 @@ export default function AgileEngineering() {
 
             {/* Capabilities Section */}
             <section className="max-w-6xl mx-auto px-4 py-20">
-                <h2 className="text-3xl md:text-4xl font-bold text-main-theme text-center mb-16">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     Our Development Process
                 </h2>
 
@@ -175,7 +175,7 @@ export default function AgileEngineering() {
 
             {/* Development Values */}
             <section className="max-w-6xl mx-auto px-4 py-20">
-                <h2 className="text-3xl md:text-4xl font-bold text-main-theme text-center mb-12">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     Our Core Values
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
@@ -209,7 +209,7 @@ export default function AgileEngineering() {
             {/* CTA Section */}
             <section className="max-w-4xl mx-auto px-4 py-20 text-center">
                 <div className="bg-gradient-to-br from-indigo-50 to-violet-50 dark:from-indigo-950/20 dark:to-violet-950/20 rounded-3xl p-12 border border-theme">
-                    <h2 className="text-3xl md:text-4xl font-bold text-main-theme mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready to Work With a True Engineering Partner?
                     </h2>
                     <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">

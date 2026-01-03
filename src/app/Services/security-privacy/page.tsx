@@ -13,7 +13,7 @@ export default function SecurityPrivacy() {
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
                 {/* Gradient Background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-red-50 via-rose-50 to-pink-50 dark:from-red-950/30 dark:via-rose-950/20 dark:to-pink-950/30" />
 
@@ -28,24 +28,24 @@ export default function SecurityPrivacy() {
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-red-400 to-rose-600 rounded-3xl blur-xl opacity-50" />
-                            <div className="relative w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-red-500 to-rose-600 rounded-3xl flex items-center justify-center shadow-2xl">
-                                <Shield className="w-12 h-12 md:w-16 md:h-16 text-white" strokeWidth={1.5} />
+                            <div className="relative w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-red-500 to-rose-600 rounded-3xl flex items-center justify-center shadow-2xl">
+                                <Shield className="w-8 h-8 md:w-10 md:h-10 text-white" strokeWidth={1.5} />
                             </div>
                         </div>
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 text-main-theme bg-gradient-to-br from-red-600 to-rose-600 bg-clip-text text-transparent">
+                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-main-theme bg-gradient-to-br from-red-600 to-rose-600 bg-clip-text text-transparent">
                         Security, Privacy & Reliability
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="text-xl md:text-2xl text-muted-theme mb-8 max-w-3xl mx-auto font-medium">
+                    <p className="text-base text-muted-theme mb-6 max-w-3xl mx-auto">
                         Building Trust Through Secure, Compliant Systems
                     </p>
 
                     {/* Description */}
-                    <p className="text-lg md:text-xl text-muted-theme max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-muted-theme max-w-2xl mx-auto leading-relaxed">
                         From identity to data to systems — we build with trust and resilience in mind, ensuring your application is safe, compliant, and production-ready.
                     </p>
 
@@ -62,7 +62,7 @@ export default function SecurityPrivacy() {
 
             {/* Capabilities Section */}
             <section className="max-w-6xl mx-auto px-4 py-20">
-                <h2 className="text-3xl md:text-4xl font-bold text-main-theme text-center mb-16">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     Security Services We Provide
                 </h2>
 
@@ -175,7 +175,7 @@ export default function SecurityPrivacy() {
 
             {/* Security Best Practices */}
             <section className="max-w-6xl mx-auto px-4 py-20">
-                <h2 className="text-3xl md:text-4xl font-bold text-main-theme text-center mb-12">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     Our Security Standards
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
@@ -209,7 +209,7 @@ export default function SecurityPrivacy() {
             {/* CTA Section */}
             <section className="max-w-4xl mx-auto px-4 py-20 text-center">
                 <div className="bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-950/20 dark:to-rose-950/20 rounded-3xl p-12 border border-theme">
-                    <h2 className="text-3xl md:text-4xl font-bold text-main-theme mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready to Secure Your Application?
                     </h2>
                     <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
