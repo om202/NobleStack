@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Smartphone, Zap, Bell, Wifi } from 'lucide-react';
 import { SiReact, SiFlutter, SiSwift, SiKotlin, SiAndroid, SiApple, SiFirebase, SiExpo, SiTypescript, SiJavascript } from 'react-icons/si';
 import ServiceCard from '../../../components/ServiceCard';
@@ -47,13 +48,28 @@ export default function MobileApps() {
 
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 via-teal-50 to-sky-50 dark:from-cyan-950/30 dark:via-teal-950/20 dark:to-sky-950/30" />
+            <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <Image
+                        src="/services/mobile-apps.jpg"
+                        alt="Mobile Apps Development"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                </div>
+
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/90 via-teal-900/85 to-sky-900/90" />
+
+                {/* Additional gradient for depth */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-page-theme/60" />
                 <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10">
                     <div className="w-96 h-96 bg-gradient-to-br from-cyan-400 to-teal-600 rounded-full blur-3xl" />
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 text-center">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-600 rounded-3xl blur-xl opacity-50" />
@@ -63,15 +79,15 @@ export default function MobileApps() {
                         </div>
                     </div>
 
-                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-main-theme bg-gradient-to-br from-cyan-600 to-teal-600 bg-clip-text text-transparent">
+                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
                         iOS & Android Apps
                     </h1>
 
-                    <p className="text-base text-muted-theme mb-6 max-w-3xl mx-auto">
+                    <p className="text-base text-white/90 mb-6 max-w-3xl mx-auto">
                         Native & Cross-Platform Mobile Experiences
                     </p>
 
-                    <p className="text-base text-muted-theme max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
                         We build native and cross-platform mobile applications that deliver seamless experiences on iOS and Android — from concept to App Store deployment.
                     </p>
 
@@ -136,17 +152,35 @@ export default function MobileApps() {
                 </div>
             </section>
 
-            <section className="max-w-4xl mx-auto px-4 py-12 text-center">
-                <div className="bg-gradient-to-br from-cyan-50 to-teal-50 dark:from-cyan-950/20 dark:to-teal-950/20 rounded-3xl p-12 border border-theme">
-                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
-                        Ready to Build Your Mobile App?
-                    </h2>
-                    <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
-                        Let's create a mobile experience that delights your users on iOS and Android.
-                    </p>
-                    <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                        Schedule Free Consultation
-                    </CTAButton>
+            <section className="relative overflow-hidden">
+                <div className="max-w-6xl mx-auto px-4 py-12">
+                    <div className="relative rounded-3xl overflow-hidden">
+                        {/* Background Image */}
+                        <div className="absolute inset-0">
+                            <Image
+                                src="/services/mobile-apps.jpg"
+                                alt="Mobile Apps"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+
+                        {/* Gradient Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/95 via-teal-900/90 to-sky-900/95" />
+
+                        {/* Content */}
+                        <div className="relative z-10 p-12 text-center">
+                            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+                                Ready to Build Your Mobile App?
+                            </h2>
+                            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+                                Let's create a mobile experience that delights your users on iOS and Android.
+                            </p>
+                            <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
+                                Schedule Free Consultation
+                            </CTAButton>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

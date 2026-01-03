@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Code2, Database, Globe, Server } from 'lucide-react';
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiNestjs, SiExpress, SiLaravel, SiGraphql, SiPostgresql, SiMongodb, SiRedis, SiDocker, SiAmazon, SiFirebase, SiVercel, SiGithubactions, SiPrisma } from 'react-icons/si';
 import ServiceCard from '../../../components/ServiceCard';
@@ -39,9 +40,23 @@ export default function FullStackEngineering() {
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
-                {/* Gradient Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-cyan-50 to-indigo-50 dark:from-blue-950/30 dark:via-cyan-950/20 dark:to-indigo-950/30" />
+            <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <Image
+                        src="/services/full-stack.jpg"
+                        alt="Full-Stack Engineering"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                </div>
+
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90" />
+
+                {/* Additional gradient for depth */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-page-theme/60" />
 
                 {/* Icon with Gradient */}
                 <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10">
@@ -49,7 +64,7 @@ export default function FullStackEngineering() {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 text-center">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
                     {/* Icon */}
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
@@ -61,17 +76,17 @@ export default function FullStackEngineering() {
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-main-theme bg-gradient-to-br from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
                         Full-Stack Product Engineering
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="text-base text-muted-theme mb-6 max-w-3xl mx-auto">
+                    <p className="text-base text-white/90 mb-6 max-w-3xl mx-auto">
                         End-to-End Software Solutions Built to Scale
                     </p>
 
                     {/* Description */}
-                    <p className="text-base text-muted-theme max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
                         We engineer robust, full-stack systems — from frontend to backend to infrastructure — with code quality and scalability at the core.
                     </p>
 
@@ -142,17 +157,35 @@ export default function FullStackEngineering() {
             </section>
 
             {/* CTA Section */}
-            <section className="max-w-4xl mx-auto px-4 py-12 text-center">
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-3xl p-12 border border-theme">
-                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
-                        Ready to Build Your Product?
-                    </h2>
-                    <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
-                        Let's discuss how we can bring your vision to life with scalable, production-ready engineering.
-                    </p>
-                    <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                        Schedule Free Consultation
-                    </CTAButton>
+            <section className="relative overflow-hidden">
+                <div className="max-w-6xl mx-auto px-4 py-12">
+                    <div className="relative rounded-3xl overflow-hidden">
+                        {/* Background Image */}
+                        <div className="absolute inset-0">
+                            <Image
+                                src="/services/full-stack.jpg"
+                                alt="Full-Stack Engineering"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+
+                        {/* Gradient Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/95 via-cyan-900/90 to-indigo-900/95" />
+
+                        {/* Content */}
+                        <div className="relative z-10 p-12 text-center">
+                            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+                                Ready to Build Your Product?
+                            </h2>
+                            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+                                Let's discuss how we can bring your vision to life with scalable, production-ready engineering.
+                            </p>
+                            <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
+                                Schedule Free Consultation
+                            </CTAButton>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
