@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Workflow, GitBranch, Webhook, Cog } from 'lucide-react';
 import ServiceCard from '../../../components/ServiceCard';
 import CTAButton from '../../../components/CTAButton';
@@ -46,13 +47,25 @@ export default function AutomationSystems() {
 
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 dark:from-green-950/30 dark:via-emerald-950/20 dark:to-teal-950/30" />
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10">
-                    <div className="w-96 h-96 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full blur-3xl" />
+            <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <Image
+                        src="/services/automation.jpg"
+                        alt="Automation Systems"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 text-center">
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-green-900/90 via-emerald-900/85 to-teal-900/90" />
+
+                {/* Additional gradient for depth */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-page-theme/60" />
+
+                <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-emerald-600 rounded-3xl blur-xl opacity-50" />
@@ -62,15 +75,15 @@ export default function AutomationSystems() {
                         </div>
                     </div>
 
-                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-main-theme bg-gradient-to-br from-green-600 to-emerald-600 bg-clip-text text-transparent">
+                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
                         End-to-End Automation Systems
                     </h1>
 
-                    <p className="text-base text-muted-theme mb-6 max-w-3xl mx-auto">
+                    <p className="text-base text-white/90 mb-6 max-w-3xl mx-auto">
                         Intelligent Automation That Scales With Your Business
                     </p>
 
-                    <p className="text-base text-muted-theme max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
                         From business logic to background jobs, we build automation pipelines that save time, reduce human error, and scale with your growth.
                     </p>
 
@@ -134,17 +147,35 @@ export default function AutomationSystems() {
                 </div>
             </section>
 
-            <section className="max-w-4xl mx-auto px-4 py-12 text-center">
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 rounded-3xl p-12 border border-theme">
-                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
-                        Ready to Automate Your Workflows?
-                    </h2>
-                    <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
-                        Let's identify repetitive tasks and build intelligent automation to free up your team's time.
-                    </p>
-                    <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                        Schedule Free Consultation
-                    </CTAButton>
+            <section className="relative overflow-hidden">
+                <div className="max-w-6xl mx-auto px-4 py-12">
+                    <div className="relative rounded-3xl overflow-hidden">
+                        {/* Background Image */}
+                        <div className="absolute inset-0">
+                            <Image
+                                src="/services/automation.jpg"
+                                alt="Automation Systems"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+
+                        {/* Gradient Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-green-900/95 via-emerald-900/90 to-teal-900/95" />
+
+                        {/* Content */}
+                        <div className="relative z-10 p-12 text-center">
+                            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+                                Ready to Automate Your Workflows?
+                            </h2>
+                            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+                                Let's identify repetitive tasks and build intelligent automation to free up your team's time.
+                            </p>
+                            <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
+                                Schedule Free Consultation
+                            </CTAButton>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

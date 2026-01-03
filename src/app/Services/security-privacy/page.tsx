@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Shield, Lock, Key, Eye } from 'lucide-react';
 import ServiceCard from '../../../components/ServiceCard';
 import CTAButton from '../../../components/CTAButton';
@@ -46,13 +47,25 @@ export default function SecurityPrivacy() {
 
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-50 via-rose-50 to-pink-50 dark:from-red-950/30 dark:via-rose-950/20 dark:to-pink-950/30" />
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10">
-                    <div className="w-96 h-96 bg-gradient-to-br from-red-400 to-rose-600 rounded-full blur-3xl" />
+            <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <Image
+                        src="/services/security.jpg"
+                        alt="Security, Privacy & Reliability"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 text-center">
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-red-900/90 via-rose-900/85 to-pink-900/90" />
+
+                {/* Additional gradient for depth */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-page-theme/60" />
+
+                <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-red-400 to-rose-600 rounded-3xl blur-xl opacity-50" />
@@ -62,15 +75,15 @@ export default function SecurityPrivacy() {
                         </div>
                     </div>
 
-                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-main-theme bg-gradient-to-br from-red-600 to-rose-600 bg-clip-text text-transparent">
+                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
                         Security, Privacy & Reliability
                     </h1>
 
-                    <p className="text-base text-muted-theme mb-6 max-w-3xl mx-auto">
+                    <p className="text-base text-white/90 mb-6 max-w-3xl mx-auto">
                         Building Trust Through Secure, Compliant Systems
                     </p>
 
-                    <p className="text-base text-muted-theme max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
                         From identity to data to systems — we build with trust and resilience in mind, ensuring your application is safe, compliant, and production-ready.
                     </p>
 
@@ -134,17 +147,35 @@ export default function SecurityPrivacy() {
                 </div>
             </section>
 
-            <section className="max-w-4xl mx-auto px-4 py-12 text-center">
-                <div className="bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-950/20 dark:to-rose-950/20 rounded-3xl p-12 border border-theme">
-                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
-                        Ready to Secure Your Application?
-                    </h2>
-                    <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
-                        Let's build security, privacy, and reliability into every layer of your product.
-                    </p>
-                    <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                        Schedule Free Consultation
-                    </CTAButton>
+            <section className="relative overflow-hidden">
+                <div className="max-w-6xl mx-auto px-4 py-12">
+                    <div className="relative rounded-3xl overflow-hidden">
+                        {/* Background Image */}
+                        <div className="absolute inset-0">
+                            <Image
+                                src="/services/security.jpg"
+                                alt="Security, Privacy & Reliability"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+
+                        {/* Gradient Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-red-900/95 via-rose-900/90 to-pink-900/95" />
+
+                        {/* Content */}
+                        <div className="relative z-10 p-12 text-center">
+                            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+                                Ready to Secure Your Application?
+                            </h2>
+                            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+                                Let's build security, privacy, and reliability into every layer of your product.
+                            </p>
+                            <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
+                                Schedule Free Consultation
+                            </CTAButton>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
