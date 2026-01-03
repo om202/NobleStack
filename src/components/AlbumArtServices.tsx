@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, CheckCircle } from "lucide-react";
+import Link from "next/link";
+import { ChevronLeft, ChevronRight, CheckCircle, Smartphone } from "lucide-react";
 import {
   SiReact,
   SiOpenai,
@@ -18,6 +19,18 @@ const ICON_MAP: { [key: string]: React.ComponentType<{ className?: string }> } =
   "Docker": SiDocker,
   "GitHub Actions": SiGithubactions,
   "Auth0": SiAuth0,
+  "Smartphone": Smartphone,
+};
+
+// Map service titles to their page URLs
+const SERVICE_URL_MAP: { [key: string]: string } = {
+  "Full-Stack Product Engineering": "/Services/full-stack-engineering",
+  "LLM-Powered AI Systems": "/Services/llm-ai-systems",
+  "End-to-End Automation Systems": "/Services/automation-systems",
+  "Deployment & DevOps": "/Services/devops-deployment",
+  "Security, Privacy & Reliability": "/Services/security-privacy",
+  "Agile, But Engineered": "/Services/agile-engineering",
+  "iOS & Android Apps": "/Services/mobile-apps",
 };
 
 interface Service {
@@ -93,12 +106,13 @@ export default function AlbumArtServices({
 
   const getColorClasses = (color: string) => {
     const colorMap = {
-      blue: "from-blue-400 to-blue-600 text-blue-600",
-      purple: "from-purple-400 to-purple-600 text-purple-600",
-      green: "from-green-400 to-green-600 text-green-600",
-      orange: "from-orange-400 to-orange-600 text-orange-600",
-      red: "from-red-400 to-red-600 text-red-600",
-      indigo: "from-indigo-400 to-indigo-600 text-indigo-600",
+      blue: "from-blue-400 to-blue-600 text-blue-600 bg-blue-500 hover:bg-blue-600",
+      purple: "from-purple-400 to-purple-600 text-purple-600 bg-purple-500 hover:bg-purple-600",
+      green: "from-green-400 to-green-600 text-green-600 bg-green-500 hover:bg-green-600",
+      orange: "from-orange-400 to-orange-600 text-orange-600 bg-orange-500 hover:bg-orange-600",
+      red: "from-red-400 to-red-600 text-red-600 bg-red-500 hover:bg-red-600",
+      indigo: "from-indigo-400 to-indigo-600 text-indigo-600 bg-indigo-500 hover:bg-indigo-600",
+      cyan: "from-cyan-400 to-cyan-600 text-cyan-600 bg-cyan-500 hover:bg-cyan-600",
     };
     return colorMap[color as keyof typeof colorMap] || colorMap.blue;
   };
@@ -142,11 +156,11 @@ export default function AlbumArtServices({
                   </div>
 
                   {/* Features Section */}
-                  <div className="p-6 sm:p-6 md:p-8 flex-1">
+                  <div className="p-6 sm:p-6 md:p-8 flex-1 flex flex-col">
                     <h4 className="text-base md:text-lg font-semibold text-main-theme mb-3 sm:mb-4 md:mb-6">
                       Key Technologies
                     </h4>
-                    <ul className="space-y-2 sm:space-y-3 md:space-y-4">
+                    <ul className="space-y-2 sm:space-y-3 md:space-y-4 flex-1">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-2 sm:gap-3">
                           <CheckCircle className={`w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ${textColor} flex-shrink-0 mt-0.5`} />
@@ -156,6 +170,14 @@ export default function AlbumArtServices({
                         </li>
                       ))}
                     </ul>
+
+                    {/* Learn More Button */}
+                    <Link
+                      href={SERVICE_URL_MAP[service.title] || "/Services"}
+                      className={`mt-4 sm:mt-6 w-full py-3 px-4 rounded-xl text-white font-semibold text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${colors.split(' ')[3]} ${colors.split(' ')[4]}`}
+                    >
+                      Learn More
+                    </Link>
                   </div>
                 </div>
               </div>

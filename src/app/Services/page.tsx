@@ -92,6 +92,19 @@ export default function Services() {
       ],
       color: "indigo",
     },
+    {
+      icon: "Smartphone",
+      title: "iOS & Android Apps",
+      description:
+        "We build native and cross-platform mobile applications that deliver seamless experiences on iOS and Android — from concept to App Store deployment.",
+      features: [
+        "React Native & Flutter",
+        "Swift, Kotlin & Native APIs",
+        "Push Notifications & In-App Purchases",
+        "App Store & Play Store Deployment",
+      ],
+      color: "cyan",
+    },
   ];
 
   const process = [
