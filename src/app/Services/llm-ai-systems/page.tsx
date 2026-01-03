@@ -13,7 +13,7 @@ export default function LLMAISystems() {
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
                 {/* Gradient Background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-fuchsia-50 to-pink-50 dark:from-purple-950/30 dark:via-fuchsia-950/20 dark:to-pink-950/30" />
 
@@ -28,24 +28,24 @@ export default function LLMAISystems() {
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-fuchsia-600 rounded-3xl blur-xl opacity-50" />
-                            <div className="relative w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-purple-500 to-fuchsia-600 rounded-3xl flex items-center justify-center shadow-2xl">
-                                <Brain className="w-12 h-12 md:w-16 md:h-16 text-white" strokeWidth={1.5} />
+                            <div className="relative w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-purple-500 to-fuchsia-600 rounded-3xl flex items-center justify-center shadow-2xl">
+                                <Brain className="w-8 h-8 md:w-10 md:h-10 text-white" strokeWidth={1.5} />
                             </div>
                         </div>
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 text-main-theme bg-gradient-to-br from-purple-600 to-fuchsia-600 bg-clip-text text-transparent">
+                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-main-theme bg-gradient-to-br from-purple-600 to-fuchsia-600 bg-clip-text text-transparent">
                         LLM-Powered AI Systems
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="text-xl md:text-2xl text-muted-theme mb-8 max-w-3xl mx-auto font-medium">
+                    <p className="text-base text-muted-theme mb-6 max-w-3xl mx-auto">
                         Intelligent Systems That Reason, Retrieve, and Respond
                     </p>
 
                     {/* Description */}
-                    <p className="text-lg md:text-xl text-muted-theme max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-muted-theme max-w-2xl mx-auto leading-relaxed">
                         We design systems that leverage cutting-edge language models to reason, retrieve, and respond — integrated seamlessly into your product or process.
                     </p>
 
@@ -62,7 +62,7 @@ export default function LLMAISystems() {
 
             {/* Capabilities Section */}
             <section className="max-w-6xl mx-auto px-4 py-20">
-                <h2 className="text-3xl md:text-4xl font-bold text-main-theme text-center mb-16">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     AI Capabilities We Deliver
                 </h2>
 
@@ -175,7 +175,7 @@ export default function LLMAISystems() {
 
             {/* Use Cases Section */}
             <section className="max-w-6xl mx-auto px-4 py-20">
-                <h2 className="text-3xl md:text-4xl font-bold text-main-theme text-center mb-12">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     Real-World Applications
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
@@ -197,7 +197,7 @@ export default function LLMAISystems() {
             {/* CTA Section */}
             <section className="max-w-4xl mx-auto px-4 py-20 text-center">
                 <div className="bg-gradient-to-br from-purple-50 to-fuchsia-50 dark:from-purple-950/20 dark:to-fuchsia-950/20 rounded-3xl p-12 border border-theme">
-                    <h2 className="text-3xl md:text-4xl font-bold text-main-theme mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready to Build AI Into Your Product?
                     </h2>
                     <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">

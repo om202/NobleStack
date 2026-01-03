@@ -13,7 +13,7 @@ export default function DevOpsDeployment() {
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
                 {/* Gradient Background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 dark:from-orange-950/30 dark:via-amber-950/20 dark:to-yellow-950/30" />
 
@@ -28,24 +28,24 @@ export default function DevOpsDeployment() {
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-amber-600 rounded-3xl blur-xl opacity-50" />
-                            <div className="relative w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-orange-500 to-amber-600 rounded-3xl flex items-center justify-center shadow-2xl">
-                                <Rocket className="w-12 h-12 md:w-16 md:h-16 text-white" strokeWidth={1.5} />
+                            <div className="relative w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-orange-500 to-amber-600 rounded-3xl flex items-center justify-center shadow-2xl">
+                                <Rocket className="w-8 h-8 md:w-10 md:h-10 text-white" strokeWidth={1.5} />
                             </div>
                         </div>
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 text-main-theme bg-gradient-to-br from-orange-600 to-amber-600 bg-clip-text text-transparent">
+                    <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-main-theme bg-gradient-to-br from-orange-600 to-amber-600 bg-clip-text text-transparent">
                         Deployment & DevOps
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="text-xl md:text-2xl text-muted-theme mb-8 max-w-3xl mx-auto font-medium">
+                    <p className="text-base text-muted-theme mb-6 max-w-3xl mx-auto">
                         Reliable Infrastructure for Production-Ready Applications
                     </p>
 
                     {/* Description */}
-                    <p className="text-lg md:text-xl text-muted-theme max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-muted-theme max-w-2xl mx-auto leading-relaxed">
                         We ensure your product runs smoothly in production with modern DevOps practices — from zero-downtime deploys to intelligent monitoring.
                     </p>
 
@@ -62,7 +62,7 @@ export default function DevOpsDeployment() {
 
             {/* Capabilities Section */}
             <section className="max-w-6xl mx-auto px-4 py-20">
-                <h2 className="text-3xl md:text-4xl font-bold text-main-theme text-center mb-16">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     DevOps Services We Provide
                 </h2>
 
@@ -175,7 +175,7 @@ export default function DevOpsDeployment() {
 
             {/* Best Practices Section */}
             <section className="max-w-6xl mx-auto px-4 py-20">
-                <h2 className="text-3xl md:text-4xl font-bold text-main-theme text-center mb-12">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     Our DevOps Best Practices
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
@@ -209,7 +209,7 @@ export default function DevOpsDeployment() {
             {/* CTA Section */}
             <section className="max-w-4xl mx-auto px-4 py-20 text-center">
                 <div className="bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20 rounded-3xl p-12 border border-theme">
-                    <h2 className="text-3xl md:text-4xl font-bold text-main-theme mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready for Production-Grade Infrastructure?
                     </h2>
                     <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
