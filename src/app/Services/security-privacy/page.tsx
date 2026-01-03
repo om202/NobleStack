@@ -52,7 +52,7 @@ export default function SecurityPrivacy() {
                     <div className="w-96 h-96 bg-gradient-to-br from-red-400 to-rose-600 rounded-full blur-3xl" />
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 text-center">
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-red-400 to-rose-600 rounded-3xl blur-xl opacity-50" />
@@ -81,7 +81,7 @@ export default function SecurityPrivacy() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     Security Services We Provide
                 </h2>
@@ -92,7 +92,35 @@ export default function SecurityPrivacy() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            {/* Technologies Section */}
+            <section className="max-w-6xl mx-auto px-4 py-12">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
+                    Key Technologies
+                </h2>
+
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {[
+                        "OAuth2, OpenID Connect & SAML",
+                        "Auth0, Clerk & Firebase Auth",
+                        "JWT & Session Management",
+                        "AES-256 Encryption",
+                        "HTTPS/TLS & SSL Certificates",
+                        "AWS Secrets Manager & Vault",
+                        "2FA & Multi-Factor Auth",
+                        "Rate Limiting & DDoS Protection",
+                        "GDPR & CCPA Compliance",
+                        "Audit Logs & Monitoring",
+                        "Security Headers & CORS",
+                        "Penetration Testing & Scanning",
+                    ].map((tech, index) => (
+                        <div key={index} className="bg-card-theme rounded-xl p-6 border border-theme text-center">
+                            <p className="text-muted-theme font-medium">{tech}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     Our Security Standards
                 </h2>
@@ -106,7 +134,7 @@ export default function SecurityPrivacy() {
                 </div>
             </section>
 
-            <section className="max-w-4xl mx-auto px-4 py-20 text-center">
+            <section className="max-w-4xl mx-auto px-4 py-12 text-center">
                 <div className="bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-950/20 dark:to-rose-950/20 rounded-3xl p-12 border border-theme">
                     <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready to Secure Your Application?

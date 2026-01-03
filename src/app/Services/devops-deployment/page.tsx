@@ -51,7 +51,7 @@ export default function DevOpsDeployment() {
                 <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10"><div className="w-96 h-96 bg-gradient-to-br from-orange-400 to-amber-600 rounded-full blur-3xl" />
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 text-center">
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-amber-600 rounded-3xl blur-xl opacity-50" />
@@ -80,7 +80,7 @@ export default function DevOpsDeployment() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     DevOps Services We Provide
                 </h2>
@@ -91,7 +91,35 @@ export default function DevOpsDeployment() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            {/* Technologies Section */}
+            <section className="max-w-6xl mx-auto px-4 py-12">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
+                    Key Technologies
+                </h2>
+
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {[
+                        "Docker & Kubernetes",
+                        "GitHub Actions & GitLab CI",
+                        "Terraform & CloudFormation",
+                        "AWS, GCP & Azure",
+                        "Jenkins & CircleCI",
+                        "Datadog & New Relic",
+                        "Nginx & Load Balancers",
+                        "Prometheus & Grafana",
+                        "ELK Stack (Elasticsearch, Logstash, Kibana)",
+                        "Ansible & Chef",
+                        "ArgoCD & Flux",
+                        "Vault & Secrets Management",
+                    ].map((tech, index) => (
+                        <div key={index} className="bg-card-theme rounded-xl p-6 border border-theme text-center">
+                            <p className="text-muted-theme font-medium">{tech}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     Our DevOps Best Practices
                 </h2>
@@ -105,7 +133,7 @@ export default function DevOpsDeployment() {
                 </div>
             </section>
 
-            <section className="max-w-4xl mx-auto px-4 py-20 text-center">
+            <section className="max-w-4xl mx-auto px-4 py-12 text-center">
                 <div className="bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20 rounded-3xl p-12 border border-theme">
                     <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready for Production-Grade Infrastructure?

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, Code2, Database, Globe, Server } from 'lucide-react';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiNestjs, SiExpress, SiLaravel, SiGraphql, SiPostgresql, SiMongodb, SiRedis, SiDocker, SiAmazon, SiFirebase, SiVercel, SiGithubactions, SiPrisma } from 'react-icons/si';
 import ServiceCard from '../../../components/ServiceCard';
 import CTAButton from '../../../components/CTAButton';
 
@@ -48,7 +49,7 @@ export default function FullStackEngineering() {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 text-center">
                     {/* Icon */}
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
@@ -86,7 +87,7 @@ export default function FullStackEngineering() {
             </section>
 
             {/* Capabilities Section */}
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     What We Build
                 </h2>
@@ -103,8 +104,45 @@ export default function FullStackEngineering() {
                 </div>
             </section>
 
+            {/* Technologies Section */}
+            <section className="max-w-6xl mx-auto px-4 py-12">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
+                    Technologies We Use
+                </h2>
+
+                <div className="bg-card-theme rounded-2xl p-8 border border-theme">
+                    <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                        {[
+                            { Icon: SiReact, name: "React" },
+                            { Icon: SiNextdotjs, name: "Next.js" },
+                            { Icon: SiTypescript, name: "TypeScript" },
+                            { Icon: SiTailwindcss, name: "Tailwind" },
+                            { Icon: SiNodedotjs, name: "Node.js" },
+                            { Icon: SiExpress, name: "Express" },
+                            { Icon: SiNestjs, name: "NestJS" },
+                            { Icon: SiLaravel, name: "Laravel" },
+                            { Icon: SiGraphql, name: "GraphQL" },
+                            { Icon: SiPostgresql, name: "PostgreSQL" },
+                            { Icon: SiMongodb, name: "MongoDB" },
+                            { Icon: SiRedis, name: "Redis" },
+                            { Icon: SiPrisma, name: "Prisma" },
+                            { Icon: SiDocker, name: "Docker" },
+                            { Icon: SiAmazon, name: "AWS" },
+                            { Icon: SiFirebase, name: "Firebase" },
+                            { Icon: SiVercel, name: "Vercel" },
+                            { Icon: SiGithubactions, name: "GitHub Actions" },
+                        ].map((tech, index) => (
+                            <div key={index} className="flex flex-col items-center justify-center p-4 rounded-xl bg-subtle-theme hover:bg-subtle-hover transition-colors duration-200">
+                                <tech.Icon className="w-8 h-8 mb-2 text-blue-500 dark:text-blue-400" />
+                                <span className="text-sm text-muted-theme text-center">{tech.name}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* CTA Section */}
-            <section className="max-w-4xl mx-auto px-4 py-20 text-center">
+            <section className="max-w-4xl mx-auto px-4 py-12 text-center">
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-3xl p-12 border border-theme">
                     <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready to Build Your Product?

@@ -80,19 +80,6 @@ export default function Services() {
       color: "red",
     },
     {
-      icon: "GitHub Actions",
-      title: "Agile, But Engineered",
-      description:
-        "We move fast — but not recklessly. Our process merges the flexibility of agile with the discipline of software engineering.",
-      features: [
-        "Scrum, Kanban & Weekly Demos",
-        "Code Reviews & Pair Programming",
-        "Unit, Integration & E2E Testing",
-        "Tech Specs, API Docs & Changelogs",
-      ],
-      color: "indigo",
-    },
-    {
       icon: "Smartphone",
       title: "iOS & Android Apps",
       description:

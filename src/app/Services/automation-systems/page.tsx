@@ -52,7 +52,7 @@ export default function AutomationSystems() {
                     <div className="w-96 h-96 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full blur-3xl" />
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 text-center">
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-emerald-600 rounded-3xl blur-xl opacity-50" />
@@ -81,7 +81,7 @@ export default function AutomationSystems() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     Automation Solutions We Build
                 </h2>
@@ -92,7 +92,35 @@ export default function AutomationSystems() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            {/* Technologies Section */}
+            <section className="max-w-6xl mx-auto px-4 py-12">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
+                    Key Technologies
+                </h2>
+
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {[
+                        "Zapier, Make & n8n",
+                        "Python & Node.js Scripts",
+                        "AWS Lambda & Cloud Functions",
+                        "Stripe & PayPal APIs",
+                        "Gmail, Slack & Teams",
+                        "Salesforce & HubSpot",
+                        "Airtable & Google Sheets",
+                        "Webhooks & REST APIs",
+                        "Cron Jobs & Schedulers",
+                        "Redis & Message Queues",
+                        "Retool & Admin Panels",
+                        "Error Handling & Monitoring",
+                    ].map((tech, index) => (
+                        <div key={index} className="bg-card-theme rounded-xl p-6 border border-theme text-center">
+                            <p className="text-muted-theme font-medium">{tech}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     Common Automation Use Cases
                 </h2>
@@ -106,7 +134,7 @@ export default function AutomationSystems() {
                 </div>
             </section>
 
-            <section className="max-w-4xl mx-auto px-4 py-20 text-center">
+            <section className="max-w-4xl mx-auto px-4 py-12 text-center">
                 <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 rounded-3xl p-12 border border-theme">
                     <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready to Automate Your Workflows?

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, Smartphone, Zap, Bell, Wifi } from 'lucide-react';
+import { SiReact, SiFlutter, SiSwift, SiKotlin, SiAndroid, SiApple, SiFirebase, SiExpo, SiTypescript, SiJavascript } from 'react-icons/si';
 import ServiceCard from '../../../components/ServiceCard';
 import CTAButton from '../../../components/CTAButton';
 
@@ -52,7 +53,7 @@ export default function MobileApps() {
                     <div className="w-96 h-96 bg-gradient-to-br from-cyan-400 to-teal-600 rounded-full blur-3xl" />
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 text-center">
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-600 rounded-3xl blur-xl opacity-50" />
@@ -81,7 +82,7 @@ export default function MobileApps() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     Mobile Development Services
                 </h2>
@@ -92,7 +93,36 @@ export default function MobileApps() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            {/* Technologies Section */}
+            <section className="max-w-6xl mx-auto px-4 py-12">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
+                    Technologies We Use
+                </h2>
+
+                <div className="bg-card-theme rounded-2xl p-8 border border-theme">
+                    <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                        {[
+                            { Icon: SiReact, name: "React Native" },
+                            { Icon: SiFlutter, name: "Flutter" },
+                            { Icon: SiSwift, name: "Swift" },
+                            { Icon: SiKotlin, name: "Kotlin" },
+                            { Icon: SiExpo, name: "Expo" },
+                            { Icon: SiTypescript, name: "TypeScript" },
+                            { Icon: SiJavascript, name: "JavaScript" },
+                            { Icon: SiAndroid, name: "Android" },
+                            { Icon: SiApple, name: "iOS" },
+                            { Icon: SiFirebase, name: "Firebase" },
+                        ].map((tech, index) => (
+                            <div key={index} className="flex flex-col items-center justify-center p-4 rounded-xl bg-subtle-theme hover:bg-subtle-hover transition-colors duration-200">
+                                <tech.Icon className="w-8 h-8 mb-2 text-cyan-500 dark:text-cyan-400" />
+                                <span className="text-sm text-muted-theme text-center">{tech.name}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     End-to-End App Lifecycle
                 </h2>
@@ -106,7 +136,7 @@ export default function MobileApps() {
                 </div>
             </section>
 
-            <section className="max-w-4xl mx-auto px-4 py-20 text-center">
+            <section className="max-w-4xl mx-auto px-4 py-12 text-center">
                 <div className="bg-gradient-to-br from-cyan-50 to-teal-50 dark:from-cyan-950/20 dark:to-teal-950/20 rounded-3xl p-12 border border-theme">
                     <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready to Build Your Mobile App?
