@@ -29,7 +29,6 @@ const SERVICE_URL_MAP: { [key: string]: string } = {
   "End-to-End Automation Systems": "/Services/automation-systems",
   "Deployment & DevOps": "/Services/devops-deployment",
   "Security, Privacy & Reliability": "/Services/security-privacy",
-  "Agile, But Engineered": "/Services/agile-engineering",
   "iOS & Android Apps": "/Services/mobile-apps",
 };
 

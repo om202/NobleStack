@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, Brain, Sparkles, MessageSquare, Zap } from 'lucide-react';
+import { SiOpenai, SiPython, SiPytorch, SiTensorflow, SiGooglecloud, SiAmazon, SiMeta, SiGithub } from 'react-icons/si';
 import ServiceCard from '../../../components/ServiceCard';
 import CTAButton from '../../../components/CTAButton';
 
@@ -43,14 +44,13 @@ export default function LLMAISystems() {
 
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
-            {/* Hero Section */}
             <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-fuchsia-50 to-pink-50 dark:from-purple-950/30 dark:via-fuchsia-950/20 dark:to-pink-950/30" />
                 <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10">
                     <div className="w-96 h-96 bg-gradient-to-br from-purple-400 to-fuchsia-600 rounded-full blur-3xl" />
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 text-center">
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-fuchsia-600 rounded-3xl blur-xl opacity-50" />
@@ -79,8 +79,7 @@ export default function LLMAISystems() {
                 </div>
             </section>
 
-            {/* Capabilities Section */}
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     AI Capabilities We Deliver
                 </h2>
@@ -92,8 +91,35 @@ export default function LLMAISystems() {
                 </div>
             </section>
 
-            {/* Use Cases Section */}
-            <section className="max-w-6xl mx-auto px-4 py-20">
+            {/* Technologies Section */}
+            <section className="max-w-6xl mx-auto px-4 py-12">
+                <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
+                    Key Technologies
+                </h2>
+
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {[
+                        "OpenAI, Anthropic & Mistral APIs",
+                        "LangChain, RAG & CrewAI",
+                        "Notion, PDF & Web Data Sources",
+                        "RunPod, Modal & GPU Inference",
+                        "PyTorch & TensorFlow",
+                        "Hugging Face Transformers",
+                        "Python & TypeScript",
+                        "Vector Databases (Pinecone, Weaviate)",
+                        "AWS Bedrock & Vertex AI",
+                        "Fine-tuning & Prompt Engineering",
+                        "Semantic Search & Embeddings",
+                        "Multi-Agent Systems",
+                    ].map((tech, index) => (
+                        <div key={index} className="bg-card-theme rounded-xl p-6 border border-theme text-center">
+                            <p className="text-muted-theme font-medium">{tech}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     Real-World Applications
                 </h2>
@@ -107,8 +133,7 @@ export default function LLMAISystems() {
                 </div>
             </section>
 
-            {/* CTA Section */}
-            <section className="max-w-4xl mx-auto px-4 py-20 text-center">
+            <section className="max-w-4xl mx-auto px-4 py-12 text-center">
                 <div className="bg-gradient-to-br from-purple-50 to-fuchsia-50 dark:from-purple-950/20 dark:to-fuchsia-950/20 rounded-3xl p-12 border border-theme">
                     <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Ready to Build AI Into Your Product?
@@ -121,6 +146,6 @@ export default function LLMAISystems() {
                     </CTAButton>
                 </div>
             </section>
-        </main>
+        </main >
     );
 }
