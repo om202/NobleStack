@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, Code2, Database, Globe, Server } from 'lucide-react';
+import ServiceCard from '../../../components/ServiceCard';
+import CTAButton from '../../../components/CTAButton';
 
 export const metadata: Metadata = {
     title: "Full-Stack Product Engineering - Noble Stack",
@@ -10,6 +12,29 @@ export const metadata: Metadata = {
 export const dynamic = 'force-static';
 
 export default function FullStackEngineering() {
+    const capabilities = [
+        {
+            icon: Globe,
+            name: "Modern Frontend",
+            description: "React, Next.js & Tailwind CSS for responsive interfaces. TypeScript for type-safe development. Redux, Zustand & real-time state management. Progressive Web Apps (PWA) with offline support.",
+        },
+        {
+            icon: Server,
+            name: "Scalable Backend",
+            description: "Node.js, NestJS & Express for robust APIs. GraphQL & REST API design patterns. Microservices architecture & event-driven systems. Real-time features with WebSockets & Server-Sent Events.",
+        },
+        {
+            icon: Database,
+            name: "Data Management",
+            description: "PostgreSQL & MongoDB for flexible data storage. Prisma ORM for type-safe database queries. Redis caching & session management. Real-time data synchronization across clients.",
+        },
+        {
+            icon: Server,
+            name: "Cloud Infrastructure",
+            description: "Docker containerization for consistent deployments. AWS, GCP & Firebase hosting solutions. CI/CD pipelines with GitHub Actions. Auto-scaling & load balancing for high availability.",
+        },
+    ];
+
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
             {/* Hero Section */}
@@ -66,110 +91,15 @@ export default function FullStackEngineering() {
                     What We Build
                 </h2>
 
-                <div className="grid md:grid-cols-2 gap-8">
-                    {/* Frontend */}
-                    <div className="bg-card-theme rounded-2xl p-8 border border-theme hover:shadow-lg transition-shadow duration-300">
-                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6">
-                            <Globe className="w-8 h-8 text-white" />
-                        </div>
-                        <h3 className="text-xl font-bold text-main-theme mb-4">Modern Frontend</h3>
-                        <ul className="space-y-3 text-muted-theme">
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>React, Next.js & Tailwind CSS for responsive interfaces</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>TypeScript for type-safe development</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>Redux, Zustand & real-time state management</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>Progressive Web Apps (PWA) with offline support</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Backend */}
-                    <div className="bg-card-theme rounded-2xl p-8 border border-theme hover:shadow-lg transition-shadow duration-300">
-                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6">
-                            <Server className="w-8 h-8 text-white" />
-                        </div>
-                        <h3 className="text-xl font-bold text-main-theme mb-4">Scalable Backend</h3>
-                        <ul className="space-y-3 text-muted-theme">
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>Node.js, NestJS & Express for robust APIs</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>GraphQL & REST API design patterns</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>Microservices architecture & event-driven systems</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>Real-time features with WebSockets & Server-Sent Events</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Database */}
-                    <div className="bg-card-theme rounded-2xl p-8 border border-theme hover:shadow-lg transition-shadow duration-300">
-                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6">
-                            <Database className="w-8 h-8 text-white" />
-                        </div>
-                        <h3 className="text-xl font-bold text-main-theme mb-4">Data Management</h3>
-                        <ul className="space-y-3 text-muted-theme">
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>PostgreSQL & MongoDB for flexible data storage</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>Prisma ORM for type-safe database queries</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>Redis caching & session management</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>Real-time data synchronization across clients</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Infrastructure */}
-                    <div className="bg-card-theme rounded-2xl p-8 border border-theme hover:shadow-lg transition-shadow duration-300">
-                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6">
-                            <Server className="w-8 h-8 text-white" />
-                        </div>
-                        <h3 className="text-xl font-bold text-main-theme mb-4">Cloud Infrastructure</h3>
-                        <ul className="space-y-3 text-muted-theme">
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>Docker containerization for consistent deployments</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>AWS, GCP & Firebase hosting solutions</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>CI/CD pipelines with GitHub Actions</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                <span>Auto-scaling & load balancing for high availability</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                    {capabilities.map((capability, index) => (
+                        <ServiceCard
+                            key={index}
+                            name={capability.name}
+                            description={capability.description}
+                            icon={capability.icon}
+                        />
+                    ))}
                 </div>
             </section>
 
@@ -182,12 +112,9 @@ export default function FullStackEngineering() {
                     <p className="text-lg text-muted-theme mb-8 max-w-2xl mx-auto">
                         Let's discuss how we can bring your vision to life with scalable, production-ready engineering.
                     </p>
-                    <Link
-                        href="/Contact"
-                        className="inline-block px-8 py-4 bg-gradient-to-br from-blue-500 to-cyan-600 text-white rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-                    >
-                        Get in Touch
-                    </Link>
+                    <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
+                        Schedule Free Consultation
+                    </CTAButton>
                 </div>
             </section>
         </main>
