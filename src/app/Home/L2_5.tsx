@@ -23,6 +23,7 @@ import TechStackCarousel from "../../components/TechStackCarousel";
 
 import ServiceCard from "../../components/ServiceCard";
 import SectionHeader from "../../components/SectionHeader";
+import CTAButton from "../../components/CTAButton";
 
 export default function MobileDevSection() {
 
@@ -73,9 +74,6 @@ export default function MobileDevSection() {
                 <SectionHeader
                     title="Native & Cross-Platform Mobile App Development"
                     description="Building high-performance mobile applications for iOS and Android. From native Swift and Kotlin apps to cross-platform React Native solutions, we create mobile experiences that users love and businesses rely on."
-                    ctaText="Schedule a Free Consultation"
-                    ctaHref="https://calendar.app.google/mWmd6v421Pk66LQ26"
-                    ctaIcon={ArrowRight}
                     className="animate-fade-in"
                 />
 
@@ -94,6 +92,13 @@ export default function MobileDevSection() {
                             icon={service.icon}
                         />
                     ))}
+                </div>
+
+                {/* CTA Button */}
+                <div className="mt-12 text-center">
+                    <CTAButton variant="secondary" href="https://calendar.app.google/mWmd6v421Pk66LQ26" icon={ArrowRight}>
+                        Schedule a Free Consultation
+                    </CTAButton>
                 </div>
             </div>
         </section>

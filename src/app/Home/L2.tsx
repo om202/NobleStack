@@ -29,6 +29,7 @@ import TechStackCarousel from "../../components/TechStackCarousel";
 
 import ServiceCard from "../../components/ServiceCard";
 import SectionHeader from "../../components/SectionHeader";
+import CTAButton from "../../components/CTAButton";
 
 
 
@@ -88,9 +89,6 @@ export default function FeaturesSection() {
         <SectionHeader
           title="Full-Stack Web Development Using Cutting-Edge Technologies"
           description="Specializing in lightning-fast, SEO-optimized websites and native mobile apps that look stunning on every device. From landing pages to complex web applications and iOS/Android apps, we create digital experiences that drive results."
-          ctaText="Schedule a Free Consultation"
-          ctaHref="https://calendar.app.google/mWmd6v421Pk66LQ26"
-          ctaIcon={ArrowRight}
           className="animate-fade-in"
         />
 
@@ -109,6 +107,13 @@ export default function FeaturesSection() {
               icon={service.icon}
             />
           ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-12 text-center">
+          <CTAButton variant="secondary" href="https://calendar.app.google/mWmd6v421Pk66LQ26" icon={ArrowRight}>
+            Schedule a Free Consultation
+          </CTAButton>
         </div>
       </div>
     </section>
