@@ -118,7 +118,7 @@ export default function AlbumArtServices({
 
   return (
     <div className="bg-card-theme rounded-2xl p-6 md:p-8 shadow-sm border border-theme overflow-hidden">
-      <div className="relative h-[600px] md:h-[650px] lg:h-[700px]">
+      <div className="relative min-h-[720px] md:min-h-[680px] lg:min-h-[700px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {services.map((service, index) => {
             const Icon = ICON_MAP[service.icon] || SiReact;
@@ -132,7 +132,7 @@ export default function AlbumArtServices({
                 className="absolute transition-all duration-700 ease-in-out transform-gpu will-change-transform"
                 style={getCardStyle(index)}
               >
-                <div className="w-80 sm:w-72 md:w-96 lg:w-[420px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] bg-subtle-theme rounded-2xl shadow-2xl border border-theme overflow-hidden transform-gpu">
+                <div className="w-80 sm:w-72 md:w-96 lg:w-[420px] min-h-[620px] sm:min-h-[580px] md:min-h-[600px] lg:min-h-[620px] bg-subtle-theme rounded-2xl shadow-2xl border border-theme overflow-hidden transform-gpu flex flex-col">
                   {/* Header Section */}
                   <div className="relative bg-subtle-hover p-6 sm:p-6 md:p-8 text-center overflow-hidden">
                     {/* Decorative Blur Elements */}
@@ -155,7 +155,7 @@ export default function AlbumArtServices({
                   </div>
 
                   {/* Features Section */}
-                  <div className="p-6 sm:p-6 md:p-8 flex-1 flex flex-col">
+                  <div className="pt-3 px-6 pb-6 sm:pt-3 sm:px-6 sm:pb-6 md:pt-4 md:px-8 md:pb-8 flex-1 flex flex-col">
                     <h4 className="text-base md:text-lg font-semibold text-main-theme mb-3 sm:mb-4 md:mb-6">
                       Key Technologies
                     </h4>

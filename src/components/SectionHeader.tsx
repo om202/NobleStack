@@ -24,10 +24,10 @@ export default function SectionHeader({
 }: SectionHeaderProps) {
     return (
         <header className={`text-center mb-8 ${className}`}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-main-theme">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-main-theme">
                 {title}
                 {highlightedText && (
-                    <span className="text-gradient-blue"> {highlightedText}</span>
+                    <span className="text-main-theme"> {highlightedText}</span>
                 )}
             </h2>
             <p className="text-base sm:text-lg text-muted-theme max-w-3xl mx-auto mb-8">
