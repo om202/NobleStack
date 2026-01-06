@@ -25,9 +25,9 @@ const badges = [
 
 export default function SocialBadges() {
     return (
-        <section className="py-12 border-t border-theme transition-colors duration-300">
-            <div className="max-w-6xl mx-auto px-4">
-                <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+        <section className="py-8 sm:py-12 border-t border-theme transition-colors duration-300">
+            <div className="max-w-6xl mx-auto px-3 sm:px-4">
+                <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
                     <div className="flex flex-col items-center gap-8">
                         <h3 className="text-2xl sm:text-3xl font-bold text-main-theme text-center">
                             Find us on
