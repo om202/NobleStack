@@ -68,7 +68,7 @@ export default function MobileDevSection() {
     ];
 
     return (
-        <section id="mobile-dev" className="py-12 px-4 bg-card-theme">
+        <section id="mobile-dev" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme">
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <SectionHeader

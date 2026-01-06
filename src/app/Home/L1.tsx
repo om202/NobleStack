@@ -53,7 +53,7 @@ export default function HeroSection() {
     <section className="min-h-screen">
       {/* Hero Section with Background - Full Width */}
       <div className="relative w-full overflow-hidden">
-        <div className="relative pt-24 pb-12 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20 hero-gradient-bg">
+        <div className="relative pt-28 pb-12 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20 hero-gradient-bg">
           {/* Content */}
           <div className="max-w-6xl mx-auto px-4">
             <div className="relative z-10">
@@ -83,7 +83,7 @@ export default function HeroSection() {
                 </p>
 
                 {/* Call to Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 mt-16">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 mt-8 sm:mt-16">
                   <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
                     Schedule Your Free Consultation
                   </CTAButton>
@@ -94,7 +94,7 @@ export default function HeroSection() {
               </div>
 
               {/* Proudly building in Nepal */}
-              <div className="mt-16 text-center">
+              <div className="mt-10 sm:mt-16 text-center">
                 <p className="text-base text-white/80 font-medium flex items-center justify-center gap-2">
                   Proudly building in
                   <span className="inline-flex items-center gap-1.5 text-white">
@@ -110,8 +110,8 @@ export default function HeroSection() {
       </div>
 
       {/* Expertise Section */}
-      <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-4 py-12">
-        <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+      <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+        <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
           <header className="text-center mb-8">
 
             <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
@@ -144,8 +144,8 @@ export default function HeroSection() {
       </section>
 
       {/* Products Section */}
-      <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-4 pb-12">
-        <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+      <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-3 pb-8 sm:px-4 sm:pb-12">
+        <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
           <header className="text-center mb-8">
 
             <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">

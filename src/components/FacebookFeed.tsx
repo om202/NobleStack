@@ -44,7 +44,7 @@ export default function FacebookFeed() {
     const hasMore = visiblePosts < FACEBOOK_POSTS.length;
 
     return (
-        <section className="max-w-6xl mx-auto px-4 py-12 sm:py-16">
+        <section className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12 md:py-16">
             {/* Section Header */}
             <div className="text-center mb-12">
                 <h2 className="text-2xl sm:text-3xl font-bold text-main-theme">

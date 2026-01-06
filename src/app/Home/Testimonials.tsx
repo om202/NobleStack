@@ -31,7 +31,7 @@ export default function Testimonials() {
     ];
 
     return (
-        <section id="testimonials" className="py-12 px-4 bg-page-theme transition-colors">
+        <section id="testimonials" className="py-8 px-3 sm:py-12 sm:px-4 bg-page-theme transition-colors">
             <div className="max-w-6xl mx-auto">
                 <header className="text-center mb-12">
                     <h2 className="text-2xl md:text-3xl font-bold mb-6 text-main-theme">
@@ -46,7 +46,7 @@ export default function Testimonials() {
                     {testimonials.map((testimonial, index) => (
                         <article
                             key={index}
-                            className="bg-card-theme rounded-2xl p-6 border border-theme hover:border-blue-500/50 transition-all duration-300 group relative"
+                            className="bg-card-theme rounded-2xl p-4 sm:p-6 border border-theme hover:border-blue-500/50 transition-all duration-300 group relative"
                         >
                             {/* Quote Icon */}
                             <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
