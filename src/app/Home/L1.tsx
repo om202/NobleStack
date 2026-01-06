@@ -43,7 +43,7 @@ export default function HeroSection() {
     <section className="min-h-screen">
       {/* Hero Section with Background - Full Width */}
       <div className="relative w-full overflow-hidden">
-        <div className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 hero-gradient-bg">
+        <div className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 md:pt-48 md:pb-24 hero-gradient-bg">
           {/* Content */}
           <div className="max-w-6xl mx-auto px-4">
             <div className="relative z-10">
@@ -114,10 +114,10 @@ export default function HeroSection() {
         <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
           <header className="text-center mb-8">
 
-            <h2 className="text-lg font-bold text-main-theme">
+            <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
               Our Portfolio
             </h2>
-            <p className="text-sm text-muted-theme mt-2 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
               Real products we've built and launched. These showcase our capabilities in AI development, web applications, and bringing ideas to market.
             </p>
           </header>
@@ -192,9 +192,12 @@ export default function HeroSection() {
         <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
           <header className="text-center mb-8">
 
-            <h2 className="text-lg font-bold text-main-theme">
+            <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
               Our Expertise
             </h2>
+            <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
+              Core technologies and methodologies we use to build exceptional digital products.
+            </p>
           </header>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
