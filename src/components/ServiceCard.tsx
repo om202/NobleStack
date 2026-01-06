@@ -9,6 +9,8 @@ interface ServiceCardProps {
     imageSrc?: string;
     imageAlt?: string;
     copyable?: boolean;
+    backgroundImage?: string;
+    gradientOverlay?: string;
 }
 
 export default function ServiceCard({
@@ -18,10 +20,29 @@ export default function ServiceCard({
     imageSrc,
     imageAlt,
     copyable = false,
+    backgroundImage,
+    gradientOverlay,
 }: ServiceCardProps) {
     return (
-        <article className={`bg-card-theme rounded-2xl p-6 border border-theme hover:bg-subtle-theme transition-[transform,background-color,border-color] duration-300 group cursor-pointer min-h-[180px] flex flex-col`}>
-            <div className="flex items-center mb-4">
+        <article className={`relative bg-card-theme rounded-2xl p-6 border border-theme hover:bg-subtle-theme transition-[transform,background-color,border-color] duration-300 group cursor-pointer min-h-[180px] flex flex-col overflow-hidden`}>
+            {/* Background Image */}
+            {backgroundImage && (
+                <>
+                    <div className="absolute inset-0 z-0">
+                        <Image
+                            src={backgroundImage}
+                            alt={imageAlt || name}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                    </div>
+                    {/* Gradient Overlay */}
+                    <div className={`absolute inset-0 z-0 ${gradientOverlay || 'bg-gradient-to-br from-black/80 via-black/70 to-black/80'}`} />
+                </>
+            )}
+
+            <div className="relative z-10 flex items-center mb-4">
                 {imageSrc ? (
                     <Image
                         src={imageSrc}
@@ -33,15 +54,15 @@ export default function ServiceCard({
                     />
                 ) : Icon ? (
                     <div
-                        className="w-16 h-16 bg-subtle-theme rounded-xl flex items-center justify-center border border-theme transition-colors duration-300"
+                        className={`w-16 h-16 ${backgroundImage ? 'bg-white/10 backdrop-blur-sm' : 'bg-subtle-theme'} rounded-xl flex items-center justify-center border ${backgroundImage ? 'border-white/20' : 'border-theme'} transition-colors duration-300`}
                     >
-                        <Icon className="w-8 h-8 text-blue-500 dark:text-blue-400" />
+                        <Icon className={`w-8 h-8 ${backgroundImage ? 'text-white' : 'text-blue-500 dark:text-blue-400'}`} />
                     </div>
                 ) : null}
             </div>
-            <h3 className="text-main-theme font-semibold mb-2">{name}</h3>
-            <div className="flex items-start gap-2">
-                <p className="text-muted-theme text-base mb-4 break-words flex-grow">{description}</p>
+            <h3 className={`font-semibold mb-2 relative z-10 ${backgroundImage ? 'text-white' : 'text-main-theme'}`}>{name}</h3>
+            <div className="flex items-start gap-2 relative z-10">
+                <p className={`text-base mb-4 break-words flex-grow ${backgroundImage ? 'text-white/90' : 'text-muted-theme'}`}>{description}</p>
                 {copyable && (
                     <button
                         type="button"

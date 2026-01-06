@@ -79,8 +79,7 @@ export default function AIServicesSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <SectionHeader
-          title="We Build AI That"
-          highlightedText="Actually Works"
+          title="AI Solutions That Revolutionize Your Business"
           description="While others promise AI magic, we deliver proven solutions. Our AI chatbots and automation systems are already transforming businesses, handling millions of interactions, and saving countless hours of manual work."
           ctaText="Schedule a Free Consultation"
           ctaHref="https://calendar.app.google/mWmd6v421Pk66LQ26"
@@ -91,7 +90,6 @@ export default function AIServicesSection() {
         {/* AI Tech Stack - Auto Scrolling */}
         <TechStackCarousel
           technologies={aiTechStack}
-          title="Cutting-Edge AI Technologies We Master"
         />
 
         {/* AI Services Grid */}

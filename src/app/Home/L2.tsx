@@ -36,7 +36,7 @@ export default function FeaturesSection() {
 
   const webServices = [
     {
-      name: "Modern Web Development",
+      name: "Full-Stack Web Development",
       icon: Globe,
       status: "Specialized",
       description: "React, Next.js, TypeScript",
@@ -86,9 +86,8 @@ export default function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <SectionHeader
-          title="We Build Modern"
-          highlightedText="Websites That Convert"
-          description="Specializing in lightning-fast, SEO-optimized websites that look stunning on every device. From landing pages to complex web applications, we create digital experiences that drive results."
+          title="Full-Stack Web Development Using Cutting-Edge Technologies"
+          description="Specializing in lightning-fast, SEO-optimized websites and native mobile apps that look stunning on every device. From landing pages to complex web applications and iOS/Android apps, we create digital experiences that drive results."
           ctaText="Schedule a Free Consultation"
           ctaHref="https://calendar.app.google/mWmd6v421Pk66LQ26"
           ctaIcon={ArrowRight}
@@ -98,7 +97,6 @@ export default function FeaturesSection() {
         {/* Modern Tech Stack */}
         <TechStackCarousel
           technologies={webTechStack}
-          title="Modern Web Technologies We Master"
         />
 
         {/* Web Services Grid */}
