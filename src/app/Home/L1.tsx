@@ -83,7 +83,7 @@ export default function HeroSection() {
                 </p>
 
                 {/* Call to Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 mt-8">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 mt-16">
                   <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
                     Schedule Your Free Consultation
                   </CTAButton>
@@ -94,21 +94,11 @@ export default function HeroSection() {
               </div>
 
               {/* Proudly building in Nepal */}
-              <div className="mt-12 text-center">
+              <div className="mt-16 text-center">
                 <p className="text-base text-white/80 font-medium flex items-center justify-center gap-2">
                   Proudly building in
                   <span className="inline-flex items-center gap-1.5 text-white">
-                    Nepal
-                    <Image
-                      src="/Flag_of_Nepal.svg"
-                      alt="Nepal Flag"
-                      width={13}
-                      height={13}
-                      className="inline-block"
-                      style={{ height: 'auto' }}
-                      priority
-                      sizes="13px"
-                    />
+                    Nepal <span className="text-xl">🇳🇵</span>
                   </span>
                 </p>
               </div>

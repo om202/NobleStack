@@ -68,6 +68,7 @@ export default function FacebookFeed() {
                             frameBorder="0"
                             allowFullScreen={true}
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"
                         />
                     </div>
                 ))}
