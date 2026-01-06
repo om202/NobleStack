@@ -53,7 +53,7 @@ export default function HeroSection() {
     <section className="min-h-screen">
       {/* Hero Section with Background - Full Width */}
       <div className="relative w-full overflow-hidden">
-        <div className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 md:pt-48 md:pb-24 hero-gradient-bg">
+        <div className="relative pt-24 pb-12 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20 hero-gradient-bg">
           {/* Content */}
           <div className="max-w-6xl mx-auto px-4">
             <div className="relative z-10">
