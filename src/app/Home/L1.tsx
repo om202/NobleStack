@@ -105,6 +105,7 @@ export default function HeroSection() {
                       width={13}
                       height={13}
                       className="inline-block"
+                      style={{ height: 'auto' }}
                       priority
                       sizes="13px"
                     />
@@ -123,9 +124,9 @@ export default function HeroSection() {
         <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
           <header className="text-center mb-8">
 
-            <h3 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
               Our Expertise
-            </h3>
+            </h2>
             <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
               Core technologies and methodologies we use to build exceptional digital products.
             </p>
@@ -157,9 +158,9 @@ export default function HeroSection() {
         <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
           <header className="text-center mb-8">
 
-            <h3 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
               Real Projects We've Built
-            </h3>
+            </h2>
             <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
               From AI-powered mobile apps to professional networking platforms, explore the real-world products we've designed, developed, and launched for clients worldwide.
             </p>
