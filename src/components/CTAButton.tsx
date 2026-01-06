@@ -26,7 +26,7 @@ export default function CTAButton({
     external = false,
 }: CTAButtonProps & { iconPosition?: "left" | "right" }) {
     const baseClasses =
-        "group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl transition-[transform,background-color,border-color,box-shadow,color] duration-300 transform hover:-translate-y-0.5 font-semibold whitespace-nowrap cursor-pointer";
+        "group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl transition-[background-color,border-color,box-shadow,color] duration-300 font-semibold whitespace-nowrap cursor-pointer";
 
     const variantClasses = {
         primary: "gradient-blue-up text-white",
