@@ -1,4 +1,5 @@
 import { Heart, Phone, Linkedin, Facebook, Instagram, Mail } from "lucide-react";
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 import Image from "next/image";
 import CTAButton from "../CTAButton";
 
@@ -79,6 +80,24 @@ export default function Footer() {
                   aria-label="Visit our Instagram page"
                 >
                   <Instagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://x.com/NobleStackNepal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-theme hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                  aria-label="Visit our X (Twitter) page"
+                >
+                  <FaXTwitter className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.youtube.com/@NobleStack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-theme hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                  aria-label="Visit our YouTube channel"
+                >
+                  <FaYoutube className="w-5 h-5" />
                 </a>
                 <a
                   href="mailto:info@noblestack.io"

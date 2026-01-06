@@ -16,6 +16,7 @@ import {
     X,
     ExternalLink,
 } from "lucide-react";
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { useState } from "react";
 import CTAButton from "../../components/CTAButton";
 import ServiceCard from "../../components/ServiceCard";
@@ -313,7 +314,7 @@ export default function ContactPageContent() {
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <a
                                 href="https://www.linkedin.com/company/noble-stack-pvt-ltd"
                                 target="_blank"
@@ -348,6 +349,30 @@ export default function ContactPageContent() {
                                     name="Instagram"
                                     description="Follow us on Instagram"
                                     icon={Instagram}
+                                />
+                            </a>
+                            <a
+                                href="https://x.com/NobleStackNepal"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block"
+                            >
+                                <ServiceCard
+                                    name="X (Twitter)"
+                                    description="Follow us on X"
+                                    icon={FaXTwitter}
+                                />
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@NobleStack"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block"
+                            >
+                                <ServiceCard
+                                    name="YouTube"
+                                    description="Subscribe to our Channel"
+                                    icon={FaYoutube}
                                 />
                             </a>
                             <div className="block cursor-pointer" onClick={() => setShowReviewDialog(true)}>
