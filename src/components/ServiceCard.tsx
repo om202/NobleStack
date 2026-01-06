@@ -5,7 +5,7 @@ import Image from "next/image";
 interface ServiceCardProps {
     name: string;
     description: string;
-    icon?: LucideIcon;
+    icon?: LucideIcon | React.ComponentType<{ className?: string }>;
     imageSrc?: string;
     imageAlt?: string;
     copyable?: boolean;
