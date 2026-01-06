@@ -5,11 +5,13 @@ import {
   Phone,
   Box,
   ArrowRight,
-  Code,
-  Bot,
-  Brain,
-  Wrench,
 } from "lucide-react";
+import {
+  SiReact,
+  SiOpenai,
+  SiZapier,
+} from "react-icons/si";
+import { Smartphone } from "lucide-react";
 import Image from "next/image";
 import ServiceCard from "../../components/ServiceCard";
 import CTAButton from "../../components/CTAButton";
@@ -18,24 +20,32 @@ export default function HeroSection() {
 
   const expertiseAreas = [
     {
-      title: "Artificial Intelligence",
-      description: "Advanced AI solutions using GPT, Claude, and custom models to automate decisions and solve complex business problems.",
-      icon: Brain,
+      title: "Full-Stack Product Engineering",
+      description: "Robust, full-stack systems from frontend to backend to infrastructure with code quality and scalability at the core.",
+      icon: SiReact,
+      backgroundImage: "/services/full-stack.jpg",
+      gradientOverlay: "bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90",
     },
     {
-      title: "Modern Web Development",
-      description: "High-performance web apps built with Next.js and React, optimized for speed, SEO, and user experience.",
-      icon: Code,
+      title: "LLM-Powered AI Systems",
+      description: "Systems that leverage cutting-edge language models to reason, retrieve, and respond seamlessly into your product.",
+      icon: SiOpenai,
+      backgroundImage: "/services/llm.jpg",
+      gradientOverlay: "bg-gradient-to-br from-purple-900/90 via-fuchsia-900/85 to-pink-900/90",
     },
     {
-      title: "AI Agents & Automation",
-      description: "24/7 intelligent agents that automate workflows, customer support, and business operations.",
-      icon: Bot,
+      title: "End-to-End Automation Systems",
+      description: "Automation pipelines that save time, reduce human error, and scale with your growth.",
+      icon: SiZapier,
+      backgroundImage: "/services/automation.jpg",
+      gradientOverlay: "bg-gradient-to-br from-green-900/90 via-emerald-900/85 to-teal-900/90",
     },
     {
-      title: "Custom Software",
-      description: "End-to-end custom software built to fit your business, from concept to deployment and support.",
-      icon: Wrench,
+      title: "iOS & Android Apps",
+      description: "Native and cross-platform mobile applications that deliver seamless experiences on iOS and Android.",
+      icon: Smartphone,
+      backgroundImage: "/services/mobile-apps.jpg",
+      gradientOverlay: "bg-gradient-to-br from-cyan-900/90 via-blue-900/85 to-indigo-900/90",
     },
   ];
 
@@ -65,20 +75,20 @@ export default function HeroSection() {
                 </div>
 
                 <h1 className="text-[32px] md:text-[45px] font-bold mb-6 leading-tight max-w-4xl mx-auto text-white">
-                  We Convert Business Ideas Into Profitable AI Products
+                  We Build Scalable, AI-Driven Products That Transform Your Business
                 </h1>
 
                 <p className="text-base text-gray-100 mb-8 max-w-3xl mx-auto">
-                  We're a software development agency specializing in AI, modern web & apps. From smart automations to high speed websites, we build products that deliver measurable business results.
+                  Transform your ideas into reality with our AI-powered software solutions and high-performance websites. Partner with our team of experts in Kathmandu, Nepal, to drive innovation.
                 </p>
 
                 {/* Call to Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 mt-8">
                   <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                    Schedule Free Consultation
+                    Schedule Your Free Consultation
                   </CTAButton>
                   <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/Products" className="w-full sm:w-auto">
-                    View Our Products
+                    See Our Products
                   </CTAButton>
                 </div>
               </div>
@@ -108,17 +118,50 @@ export default function HeroSection() {
         </div>
       </div>
 
-
-      {/* Products Section */}
-      <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-4 py-12">
+      {/* Expertise Section */}
+      <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-4 py-12">
         <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
           <header className="text-center mb-8">
 
-            <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
-              Our Portfolio
-            </h2>
+            <h3 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
+              Our Expertise
+            </h3>
             <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
-              Real products we've built and launched. These showcase our capabilities in AI development, web applications, and bringing ideas to market.
+              Core technologies and methodologies we use to build exceptional digital products.
+            </p>
+          </header>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {expertiseAreas.map((area, index) => (
+              <ServiceCard
+                key={index}
+                name={area.title}
+                description={area.description}
+                icon={area.icon}
+                backgroundImage={area.backgroundImage}
+                gradientOverlay={area.gradientOverlay}
+              />
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <CTAButton variant="secondary" href="/Services" icon={ArrowRight}>
+              View All Services
+            </CTAButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-4 pb-12">
+        <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
+          <header className="text-center mb-8">
+
+            <h3 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
+              Real Projects We've Built
+            </h3>
+            <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
+              From AI-powered mobile apps to professional networking platforms, explore the real-world products we've designed, developed, and launched for clients worldwide.
             </p>
           </header>
 
@@ -182,38 +225,6 @@ export default function HeroSection() {
           <div className="mt-12 text-center">
             <CTAButton variant="secondary" href="/Products" icon={ArrowRight}>
               View All Products
-            </CTAButton>
-          </div>
-        </div>
-      </section>
-
-      {/* Expertise Section */}
-      <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-4 pb-12">
-        <div className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme">
-          <header className="text-center mb-8">
-
-            <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
-              Our Expertise
-            </h2>
-            <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
-              Core technologies and methodologies we use to build exceptional digital products.
-            </p>
-          </header>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {expertiseAreas.map((area, index) => (
-              <ServiceCard
-                key={index}
-                name={area.title}
-                description={area.description}
-                icon={area.icon}
-              />
-            ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <CTAButton variant="secondary" href="/Services" icon={ArrowRight}>
-              View All Services
             </CTAButton>
           </div>
         </div>

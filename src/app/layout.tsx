@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.noblestack.io"),
   title: {
     template: '%s | Noble Stack',
-    default: 'Noble Stack - AI & Web Development Company in Kathmandu, Nepal',
+    default: 'Noble Stack - AI & Full-Stack Web Development Company in Kathmandu, Nepal',
   },
-  description: "Leading AI and web development company in Kathmandu, Nepal. Noble Stack provides cutting-edge AI solutions, React/Next.js development, and automation services across Nepal and South Asia. Transform your business with local expertise.",
+  description: "Noble Stack delivers cutting-edge AI solutions, full-stack web & mobile app development, and automation services from Kathmandu, Nepal to clients worldwide. Transform your business with proven expertise.",
   keywords: [
     "AI development Nepal",
     "web development Kathmandu",
@@ -76,8 +76,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Noble Stack - AI & Web Development Company in Kathmandu, Nepal",
-    description: "Leading AI and web development company in Kathmandu, Nepal. Transform your business with expert AI development, web applications, and automation services across Nepal and South Asia.",
+    title: "Noble Stack - AI & Full-Stack Web Development Company in Kathmandu, Nepal",
+    description: "Noble Stack delivers cutting-edge AI solutions, full-stack web & mobile app development, and automation services from Kathmandu, Nepal to clients worldwide. Transform your business with proven expertise.",
     url: "https://www.noblestack.io",
     siteName: "Noble Stack",
     images: [
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
         url: "https://www.noblestack.io/nbl.png",
         width: 1200,
         height: 630,
-        alt: "Noble Stack - AI & Web Development Company in Kathmandu, Nepal",
+        alt: "Noble Stack - AI & Full-Stack Web Development Company in Kathmandu, Nepal",
       },
     ],
     locale: "en_US",
@@ -93,8 +93,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noble Stack - AI & Web Development Company in Kathmandu, Nepal",
-    description: "Leading AI and web development company in Kathmandu, Nepal. Transform your business with expert AI development and automation services across South Asia.",
+    title: "Noble Stack - AI & Full-Stack Web Development Company in Kathmandu, Nepal",
+    description: "Noble Stack delivers cutting-edge AI solutions, full-stack web & mobile app development, and automation services from Kathmandu, Nepal to clients worldwide. Transform your business with proven expertise.",
     images: ["https://www.noblestack.io/nbl.png"],
     creator: "@noblestack",
   },
@@ -160,7 +160,7 @@ export default function RootLayout({
                   "url": "https://www.noblestack.io",
                   "logo": "https://www.noblestack.io/nbl.png",
                   "image": "https://www.noblestack.io/nbl.png",
-                  "description": "Leading AI and web development company in Kathmandu, Nepal providing cutting-edge solutions across South Asia.",
+                  "description": "Noble Stack delivers cutting-edge AI solutions, full-stack web & mobile app development, and automation services from Kathmandu, Nepal to clients worldwide.",
                   "telephone": "+977 985-1411602",
                   "email": "info@noblestack.io",
                   "address": {

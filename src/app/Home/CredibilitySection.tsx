@@ -19,7 +19,7 @@ export default function CredibilitySection() {
         {
             icon: Zap,
             title: "Cutting-Edge Tech Stack",
-            description: "Mastery of latest AI models (GPT-4, Claude) and modern web frameworks (Next.js, React)",
+            description: "Mastery of latest AI models (GPT-4, Claude), modern web frameworks (Next.js, React), and mobile development (React Native, Swift, Kotlin)",
         },
         {
             icon: Shield,
@@ -48,9 +48,7 @@ export default function CredibilitySection() {
             <div className="max-w-6xl mx-auto">
                 <header className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-main-theme">
-                        <span className="text-gradient-blue">
-                            Why Choose Noble Stack
-                        </span>
+                        Why Choose Noble Stack? Expertise in AI, Full-Stack Web & Mobile Development
                     </h2>
                     <p className="text-base sm:text-lg text-muted-theme max-w-3xl mx-auto">
                         We're a new agency with proven capabilities. Our portfolio speaks for itself—real products,

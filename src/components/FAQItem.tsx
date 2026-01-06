@@ -5,7 +5,7 @@ import { ChevronDown, CheckCircle } from "lucide-react";
 interface FAQItemProps {
     question: string;
     answer: string;
-    metrics: string[];
+    metrics?: string[];
     isOpen: boolean;
     onToggle: () => void;
 }
@@ -51,20 +51,22 @@ export default function FAQItem({
                             {answer}
                         </p>
 
-                        {/* Metrics Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
-                            {metrics.map((metric, metricIndex) => (
-                                <div
-                                    key={metricIndex}
-                                    className="flex items-center gap-2 px-3 py-2 bg-subtle-theme rounded-lg border border-theme"
-                                >
-                                    <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                                    <span className="text-md-sm sm:text-base font-medium text-main-theme">
-                                        {metric}
-                                    </span>
-                                </div>
-                            ))}
-                        </div>
+                        {/* Metrics Grid - Only show if metrics exist */}
+                        {metrics && metrics.length > 0 && (
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+                                {metrics.map((metric, metricIndex) => (
+                                    <div
+                                        key={metricIndex}
+                                        className="flex items-center gap-2 px-3 py-2 bg-subtle-theme rounded-lg border border-theme"
+                                    >
+                                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                                        <span className="text-md-sm sm:text-base font-medium text-main-theme">
+                                            {metric}
+                                        </span>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 </div>
             )}
