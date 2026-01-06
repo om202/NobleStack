@@ -50,7 +50,7 @@ export default function ServiceCard({
                         width={55}
                         height={55}
                         className="rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300"
-                        style={{ height: 'auto' }}
+                        style={{ width: 'auto', height: 'auto' }}
                         sizes="55px"
                     />
                 ) : Icon ? (
