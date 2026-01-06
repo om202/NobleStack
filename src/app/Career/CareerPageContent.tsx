@@ -129,7 +129,7 @@ export default function CareerPageContent() {
         <>
             {/* Hero Section */}
             <main className="min-h-screen bg-page-theme transition-colors duration-300">
-                <section className="max-w-6xl mx-auto px-4 pt-32 pb-16 sm:pt-40 sm:pb-20">
+                <section className="max-w-6xl mx-auto px-3 pt-28 pb-12 sm:px-4 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
                     {/* Header */}
                     <header className="text-center mb-12">
                         <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
@@ -194,7 +194,7 @@ export default function CareerPageContent() {
                             ].map((job, index) => (
                                 <div
                                     key={index}
-                                    className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-md border border-theme"
+                                    className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-md border border-theme"
                                 >
                                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                                         <div>
@@ -260,7 +260,7 @@ export default function CareerPageContent() {
                     {/* Application Form */}
                     <div
                         id="application-form"
-                        className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-md border border-theme"
+                        className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-md border border-theme"
                     >
                         <div className="text-center mb-12">
                             <div className="flex items-center justify-center gap-2 mb-2">

@@ -21,7 +21,7 @@ import ServiceCard from "../../components/ServiceCard";
 export default function ProductsPageContent() {
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
-            <section className="max-w-6xl mx-auto px-4 pt-32 pb-16 sm:pt-40 sm:pb-20">
+            <section className="max-w-6xl mx-auto px-3 pt-28 pb-12 sm:px-4 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
                 <h1 className="sr-only">Our Portfolio</h1>
 
                 {/* Page Header */}
@@ -35,7 +35,7 @@ export default function ProductsPageContent() {
                     </p>
                 </header>
                 {/* Vibe AI Section */}
-                <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+                <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -117,7 +117,7 @@ export default function ProductsPageContent() {
                 </section>
 
                 {/* Create Profile Pic Web Section */}
-                <section id="create-profile-pic" aria-label="Create Profile Pic" className="bg-page-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+                <section id="create-profile-pic" aria-label="Create Profile Pic" className="bg-page-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -198,7 +198,7 @@ export default function ProductsPageContent() {
                 </section>
 
                 {/* Loopn Section */}
-                <section id="loopn" aria-label="Loopn" className="bg-card-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+                <section id="loopn" aria-label="Loopn" className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -278,7 +278,7 @@ export default function ProductsPageContent() {
                 </section>
 
                 {/* Auto Captions Section */}
-                <section id="auto-captions" aria-label="Auto Captions" className="bg-page-theme rounded-2xl p-6 sm:p-8 shadow-sm border border-theme mb-8">
+                <section id="auto-captions" aria-label="Auto Captions" className="bg-page-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
