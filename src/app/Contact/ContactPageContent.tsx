@@ -16,7 +16,7 @@ import {
     X,
     ExternalLink,
 } from "lucide-react";
-import { FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { FaXTwitter, FaYoutube, FaTiktok } from "react-icons/fa6";
 import { useState } from "react";
 import CTAButton from "../../components/CTAButton";
 import ServiceCard from "../../components/ServiceCard";
@@ -373,6 +373,18 @@ export default function ContactPageContent() {
                                     name="YouTube"
                                     description="Subscribe to our Channel"
                                     icon={FaYoutube}
+                                />
+                            </a>
+                            <a
+                                href="https://www.tiktok.com/@noblestack"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block"
+                            >
+                                <ServiceCard
+                                    name="TikTok"
+                                    description="Follow us on TikTok"
+                                    icon={FaTiktok}
                                 />
                             </a>
                             <div className="block cursor-pointer" onClick={() => setShowReviewDialog(true)}>
