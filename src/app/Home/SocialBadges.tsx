@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Linkedin, Facebook, Instagram } from "lucide-react";
+import { FaXTwitter, FaYoutube, FaTiktok } from "react-icons/fa6";
 
 const badges = [
     {
@@ -23,6 +25,39 @@ const badges = [
     },
 ];
 
+const socialMedia = [
+    {
+        name: "LinkedIn",
+        icon: Linkedin,
+        url: "https://www.linkedin.com/company/noble-stack-pvt-ltd",
+    },
+    {
+        name: "Facebook",
+        icon: Facebook,
+        url: "https://www.facebook.com/people/Noble-Stack-Pvt-Ltd/61577564326108/",
+    },
+    {
+        name: "Instagram",
+        icon: Instagram,
+        url: "https://www.instagram.com/noble_stack_/",
+    },
+    {
+        name: "X (Twitter)",
+        icon: FaXTwitter,
+        url: "https://x.com/NobleStackNepal",
+    },
+    {
+        name: "YouTube",
+        icon: FaYoutube,
+        url: "https://www.youtube.com/@NobleStack",
+    },
+    {
+        name: "TikTok",
+        icon: FaTiktok,
+        url: "https://www.tiktok.com/@noblestack",
+    },
+];
+
 export default function SocialBadges() {
     return (
         <section className="py-8 sm:py-12 border-t border-theme transition-colors duration-300">
@@ -32,6 +67,8 @@ export default function SocialBadges() {
                         <h3 className="text-2xl sm:text-3xl font-bold text-main-theme text-center">
                             Find us on
                         </h3>
+
+                        {/* Platform Badges */}
                         <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
                             {badges.map((badge) => (
                                 <a
@@ -47,12 +84,34 @@ export default function SocialBadges() {
                                                 src={badge.logo}
                                                 alt={badge.name}
                                                 fill
-                                                className="object-contain dark:brightness-100 dark:invert-0 invert drop-shadow-[0_3px_5px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_3px_5px_rgba(0,0,0,0.85)]"
+                                                className="object-contain dark:brightness-100 dark:invert-0 invert drop-shadow-[0_2px_3px_rgba(0,0,0,0.4)] dark:drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
                                             />
                                         </div>
                                     </div>
                                 </a>
                             ))}
+                        </div>
+
+                        {/* Social Media Links */}
+                        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 pt-4 border-t border-theme w-full">
+                            {socialMedia.map((social) => {
+                                const Icon = social.icon;
+                                return (
+                                    <a
+                                        key={social.name}
+                                        href={social.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group flex items-center gap-2 px-4 py-2 bg-subtle-theme border border-theme rounded-xl hover:bg-subtle-hover hover:border-blue-500 transition-all duration-200"
+                                        aria-label={`Visit our ${social.name} page`}
+                                    >
+                                        <Icon className="w-5 h-5 text-muted-theme group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200" />
+                                        <span className="text-sm font-medium text-main-theme hidden sm:inline">
+                                            {social.name}
+                                        </span>
+                                    </a>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

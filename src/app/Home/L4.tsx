@@ -158,7 +158,7 @@ export default function FAQSection() {
 
         {/* Category Selection */}
         <nav aria-label="FAQ Categories" className="flex justify-center mb-12">
-          <div className="bg-card-theme rounded-xl p-1.5 shadow-sm border border-theme inline-flex gap-1">
+          <div className="bg-card-theme rounded-xl p-1.5 shadow-sm border border-theme inline-flex flex-wrap gap-1 max-w-full">
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -167,13 +167,13 @@ export default function FAQSection() {
                   setOpenFaq(null);
                   setAnimationKey(prev => prev + 1);
                 }}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer ${activeCategory === category.id
+                className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer ${activeCategory === category.id
                   ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
                   : 'text-muted-theme hover:text-main-theme hover:bg-subtle-theme'
                   }`}
               >
-                <category.icon className="w-4 h-4" />
-                <span className="font-semibold text-sm">{category.name}</span>
+                <category.icon className="w-4 h-4 flex-shrink-0" />
+                <span className="font-semibold text-sm hidden sm:inline">{category.name}</span>
               </button>
             ))}
           </div>
