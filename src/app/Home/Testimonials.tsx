@@ -31,7 +31,7 @@ export default function Testimonials() {
     ];
 
     return (
-        <section id="testimonials" className="py-8 px-3 sm:py-12 sm:px-4 bg-page-theme transition-colors">
+        <section id="testimonials" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme transition-colors">
             <div className="max-w-6xl mx-auto">
                 <header className="text-center mb-12">
                     <h2 className="text-2xl md:text-3xl font-bold mb-6 text-main-theme">

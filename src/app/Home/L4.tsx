@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import {
   MessageCircle,
   Shield,
@@ -10,7 +9,6 @@ import {
   Zap,
   TrendingUp,
   Users,
-  ArrowRight,
   Cpu,
   Database,
   Globe,
@@ -18,7 +16,6 @@ import {
   Brain,
 } from "lucide-react";
 import FAQItem from "../../components/FAQItem";
-import CTAButton from "../../components/CTAButton";
 
 export default function FAQSection() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -143,7 +140,7 @@ export default function FAQSection() {
   const currentFaqs = faqCategories[activeCategory as keyof typeof faqCategories];
 
   return (
-    <section id="faq" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme transition-colors">
+    <section id="faq" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme transition-colors">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <header className="text-center mb-12">
@@ -190,36 +187,6 @@ export default function FAQSection() {
               onToggle={() => toggleFaq(index)}
             />
           ))}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="relative rounded-3xl overflow-hidden">
-          {/* Background Image */}
-          <div className="absolute inset-0">
-            <Image
-              src="/hero_gradient.jpg"
-              alt="Contact Background"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-cyan-900/75 to-indigo-900/80"></div>
-
-          {/* Content */}
-          <div className="relative z-10 p-6 sm:p-8 md:p-12 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-              Have a Specific Question?
-            </h3>
-            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-              Our team is ready to discuss your unique requirements and provide
-              detailed solutions tailored to your project needs.
-            </p>
-            <CTAButton variant="primary" icon={ArrowRight} className="inline-flex shadow-lg hover:shadow-xl" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-              Schedule a Free Consultation
-            </CTAButton>
-          </div>
         </div>
       </div>
     </section>
