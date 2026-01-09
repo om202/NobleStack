@@ -61,19 +61,19 @@ export default function MobileApps() {
                 </div>
 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/90 via-teal-900/85 to-sky-900/90" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90" />
 
                 {/* Additional gradient for depth */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-page-theme/60" />
                 <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10">
-                    <div className="w-96 h-96 bg-gradient-to-br from-cyan-400 to-teal-600 rounded-full blur-3xl" />
+                    <div className="w-96 h-96 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-full blur-3xl" />
                 </div>
 
                 <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-600 rounded-3xl blur-xl opacity-50" />
-                            <div className="relative w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-3xl flex items-center justify-center shadow-2xl">
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-3xl blur-xl opacity-50" />
+                            <div className="relative w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-3xl flex items-center justify-center shadow-2xl">
                                 <Smartphone className="w-8 h-8 md:w-10 md:h-10 text-white" strokeWidth={1.5} />
                             </div>
                         </div>
@@ -166,7 +166,7 @@ export default function MobileApps() {
                         </div>
 
                         {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/95 via-teal-900/90 to-sky-900/95" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/95 via-cyan-900/90 to-indigo-900/95" />
 
                         {/* Content */}
                         <div className="relative z-10 p-12 text-center">

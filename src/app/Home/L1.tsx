@@ -32,21 +32,21 @@ export default function HeroSection() {
       description: "Systems that leverage cutting-edge language models to reason, retrieve, and respond seamlessly into your product.",
       icon: SiOpenai,
       backgroundImage: "/services/llm.jpg",
-      gradientOverlay: "bg-gradient-to-br from-purple-900/90 via-fuchsia-900/85 to-pink-900/90",
+      gradientOverlay: "bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90",
     },
     {
       title: "End-to-End Automation Systems",
       description: "Automation pipelines that save time, reduce human error, and scale with your growth.",
       icon: SiZapier,
       backgroundImage: "/services/automation.jpg",
-      gradientOverlay: "bg-gradient-to-br from-green-900/90 via-emerald-900/85 to-teal-900/90",
+      gradientOverlay: "bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90",
     },
     {
       title: "iOS & Android Apps",
       description: "Native and cross-platform mobile applications that deliver seamless experiences on iOS and Android.",
       icon: SiApple,
       backgroundImage: "/services/mobile-apps.jpg",
-      gradientOverlay: "bg-gradient-to-br from-cyan-900/90 via-blue-900/85 to-indigo-900/90",
+      gradientOverlay: "bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90",
     },
   ];
 

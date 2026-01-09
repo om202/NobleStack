@@ -104,16 +104,8 @@ export default function AlbumArtServices({
   };
 
   const getColorClasses = (color: string) => {
-    const colorMap = {
-      blue: "from-blue-400 to-blue-600 text-blue-600 bg-blue-500 hover:bg-blue-600",
-      purple: "from-purple-400 to-purple-600 text-purple-600 bg-purple-500 hover:bg-purple-600",
-      green: "from-green-400 to-green-600 text-green-600 bg-green-500 hover:bg-green-600",
-      orange: "from-orange-400 to-orange-600 text-orange-600 bg-orange-500 hover:bg-orange-600",
-      red: "from-red-400 to-red-600 text-red-600 bg-red-500 hover:bg-red-600",
-      indigo: "from-indigo-400 to-indigo-600 text-indigo-600 bg-indigo-500 hover:bg-indigo-600",
-      cyan: "from-cyan-400 to-cyan-600 text-cyan-600 bg-cyan-500 hover:bg-cyan-600",
-    };
-    return colorMap[color as keyof typeof colorMap] || colorMap.blue;
+    // Always use app's default blue color for consistency
+    return "from-blue-400 to-blue-600 text-blue-600 bg-blue-500 hover:bg-blue-600";
   };
 
   return (
