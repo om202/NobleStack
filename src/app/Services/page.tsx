@@ -39,7 +39,7 @@ export default function Services() {
         "Notion, PDF & Web Data Sources",
         "RunPod, Modal & GPU Inference",
       ],
-      color: "purple",
+      color: "blue",
     },
     {
       icon: "Zapier",
@@ -52,7 +52,7 @@ export default function Services() {
         "Gmail, Slack & Stripe Integrations",
         "React Admin & Real-time Dashboards",
       ],
-      color: "green",
+      color: "blue",
     },
     {
       icon: "Docker",
@@ -65,7 +65,7 @@ export default function Services() {
         "GCP, AWS & Firebase Hosting",
         "Datadog & Real-time Monitoring",
       ],
-      color: "orange",
+      color: "blue",
     },
     {
       icon: "Auth0",
@@ -78,7 +78,7 @@ export default function Services() {
         "GDPR, CCPA & Audit Trails",
         "2FA, Rate Limiting & Session Management",
       ],
-      color: "red",
+      color: "blue",
     },
     {
       icon: "Smartphone",
@@ -91,7 +91,7 @@ export default function Services() {
         "Push Notifications & In-App Purchases",
         "App Store & Play Store Deployment",
       ],
-      color: "cyan",
+      color: "blue",
     },
   ];
 

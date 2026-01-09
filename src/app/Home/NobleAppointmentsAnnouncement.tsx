@@ -14,7 +14,7 @@ export default function NobleAppointmentsAnnouncement() {
         <section className="px-4">
             <div className="max-w-4xl mx-auto">
                 {/* Noble Appointments Announcement Banner */}
-                <div className="relative bg-card-theme rounded-xl p-4 pr-8 border border-orange-500/30 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="relative bg-card-theme rounded-xl p-4 pr-8 border border-blue-500/30 shadow-sm hover:shadow-md transition-shadow duration-300">
                     {/* Close Button */}
                     <button
                         onClick={() => setShowBanner(false)}
@@ -42,7 +42,7 @@ export default function NobleAppointmentsAnnouncement() {
                             <div className="flex flex-col gap-1">
                                 <h3 className="text-base md:text-lg font-bold text-main-theme">
                                     Introducing{" "}
-                                    <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
+                                    <span className="text-gradient-blue">
                                         Noble Appointments
                                     </span>
                                 </h3>
@@ -58,7 +58,7 @@ export default function NobleAppointmentsAnnouncement() {
                                 href="https://appointments.noblestack.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group flex items-center justify-center gap-2 px-6 py-2 w-full md:w-auto bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-white rounded-lg hover:from-orange-600 hover:via-pink-600 hover:to-purple-600 transition-[transform,background-color,box-shadow] duration-300 transform hover:-translate-y-0.5 font-semibold text-sm shadow-md hover:shadow-lg"
+                                className="group flex items-center justify-center gap-2 px-6 py-2 w-full md:w-auto gradient-blue-up text-white rounded-lg hover:opacity-90 transition-[transform,opacity,box-shadow] duration-300 transform hover:-translate-y-0.5 font-semibold text-sm shadow-md hover:shadow-lg"
                             >
                                 Coming Soon
                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
