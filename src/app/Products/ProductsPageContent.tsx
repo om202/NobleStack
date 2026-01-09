@@ -21,21 +21,23 @@ import ServiceCard from "../../components/ServiceCard";
 export default function ProductsPageContent() {
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
-            <section className="max-w-6xl mx-auto px-3 pt-28 pb-12 sm:px-4 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
-                <h1 className="sr-only">Our Portfolio</h1>
+            {/* Vibe AI Section (with Page Header) */}
+            <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="py-8 px-3 pt-28 sm:py-12 sm:px-4 sm:pt-32 md:pt-40 bg-card-theme border-b border-theme">
+                <div className="max-w-6xl mx-auto">
+                    <h1 className="sr-only">Our Portfolio</h1>
 
-                {/* Page Header */}
-                <header className="text-center mb-12">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-main-theme">
-                        Our Portfolio
-                    </h2>
-                    <p className="text-base text-muted-theme max-w-3xl mx-auto">
-                        Real products we've built and launched. These showcase our capabilities in AI development,
-                        web applications, mobile apps (iOS/Android), and bringing ideas to market.
-                    </p>
-                </header>
-                {/* Vibe AI Section */}
-                <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
+                    {/* Page Header */}
+                    <header className="text-center mb-16">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-main-theme">
+                            Our Portfolio
+                        </h2>
+                        <p className="text-base text-muted-theme max-w-3xl mx-auto">
+                            Real products we've built and launched. These showcase our capabilities in AI development,
+                            web applications, mobile apps (iOS/Android), and bringing ideas to market.
+                        </p>
+                    </header>
+
+                    {/* Vibe AI Content */}
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -49,7 +51,6 @@ export default function ProductsPageContent() {
                                 Vibe AI Photo Editor
                             </h2>
                         </div>
-                        {/* ... Rest of Vibe AI section ... (Using brief content for this tool call, but full content will be used in real edit) */}
                         <div className="space-y-4 mb-12 max-w-4xl mx-auto">
                             <p className="text-base text-muted-theme leading-relaxed">
                                 Create stunning profile pictures and edit photos with AI-powered tools. Remove backgrounds instantly, enhance images, and transform your photos with professional filters and AI magic.
@@ -86,7 +87,7 @@ export default function ProductsPageContent() {
                     </header>
 
                     {/* Key Features Section */}
-                    <div className="mb-12">
+                    <div className="mb-8">
                         <h3 className="text-lg md:text-xl font-bold text-center text-main-theme mb-12">
                             Key Features
                         </h3>
@@ -114,10 +115,15 @@ export default function ProductsPageContent() {
                             />
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                {/* Create Profile Pic Web Section */}
-                <section id="create-profile-pic" aria-label="Create Profile Pic" className="bg-page-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
+            {/* Dark gap spacer */}
+            <div className="h-6 sm:h-8 bg-page-theme" />
+
+            {/* Create Profile Pic Web Section */}
+            <section id="create-profile-pic" aria-label="Create Profile Pic" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
+                <div className="max-w-6xl mx-auto">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -167,7 +173,7 @@ export default function ProductsPageContent() {
                     </header>
 
                     {/* Web Features Section */}
-                    <div className="mb-12">
+                    <div className="mb-8">
                         <h3 className="text-lg md:text-xl font-bold text-center text-main-theme mb-12">
                             Web Features
                         </h3>
@@ -195,10 +201,15 @@ export default function ProductsPageContent() {
                             />
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                {/* Loopn Section */}
-                <section id="loopn" aria-label="Loopn" className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
+            {/* Dark gap spacer */}
+            <div className="h-6 sm:h-8 bg-page-theme" />
+
+            {/* Loopn Section */}
+            <section id="loopn" aria-label="Loopn" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
+                <div className="max-w-6xl mx-auto">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -247,7 +258,7 @@ export default function ProductsPageContent() {
                     </header>
 
                     {/* Loopn Features Section */}
-                    <div className="mb-12">
+                    <div className="mb-8">
                         <h3 className="text-lg md:text-xl font-bold text-center text-main-theme mb-12">
                             Why Loopn?
                         </h3>
@@ -275,10 +286,15 @@ export default function ProductsPageContent() {
                             />
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                {/* Auto Captions Section */}
-                <section id="auto-captions" aria-label="Auto Captions" className="bg-page-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
+            {/* Dark gap spacer */}
+            <div className="h-6 sm:h-8 bg-page-theme" />
+
+            {/* Auto Captions Section */}
+            <section id="auto-captions" aria-label="Auto Captions" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
+                <div className="max-w-6xl mx-auto">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -323,7 +339,7 @@ export default function ProductsPageContent() {
                     </header>
 
                     {/* Auto Captions Features Section */}
-                    <div className="mb-12">
+                    <div className="mb-8">
                         <h3 className="text-lg md:text-xl font-bold text-center text-main-theme mb-12">
                             Coming Features
                         </h3>
@@ -351,8 +367,9 @@ export default function ProductsPageContent() {
                             />
                         </div>
                     </div>
-                </section>
+                </div>
             </section>
         </main>
     );
 }
+
