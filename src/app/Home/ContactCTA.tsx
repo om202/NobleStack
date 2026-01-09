@@ -18,7 +18,7 @@ export default function ContactCTA() {
                 </div>
 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-cyan-900/75 to-indigo-900/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/60 via-cyan-900/55 to-indigo-900/60" />
 
                 {/* Content */}
                 <div className="relative z-10 p-6 sm:p-8 md:p-12 text-center">

@@ -60,7 +60,7 @@ export default function SecurityPrivacy() {
                 </div>
 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/60 via-cyan-900/55 to-indigo-900/60" />
 
                 {/* Additional gradient for depth */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-page-theme/60" />
@@ -79,11 +79,11 @@ export default function SecurityPrivacy() {
                         Security, Privacy & Reliability
                     </h1>
 
-                    <p className="text-base text-white/90 mb-6 max-w-3xl mx-auto">
+                    <p className="text-lg text-white/90 mb-6 max-w-3xl mx-auto">
                         Building Trust Through Secure, Compliant Systems
                     </p>
 
-                    <p className="text-base text-white/80 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
                         From identity to data to systems — we build with trust and resilience in mind, ensuring your application is safe, compliant, and production-ready.
                     </p>
 
@@ -161,7 +161,7 @@ export default function SecurityPrivacy() {
                         </div>
 
                         {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/95 via-cyan-900/90 to-indigo-900/95" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/60 via-cyan-900/55 to-indigo-900/60" />
 
                         {/* Content */}
                         <div className="relative z-10 p-12 text-center">

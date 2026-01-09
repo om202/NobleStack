@@ -25,28 +25,28 @@ export default function HeroSection() {
       description: "Robust, full-stack systems from frontend to backend to infrastructure with code quality and scalability at the core.",
       icon: SiReact,
       backgroundImage: "/services/full-stack.jpg",
-      gradientOverlay: "bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90",
+      gradientOverlay: "bg-gradient-to-br from-blue-900/60 via-cyan-900/55 to-indigo-900/60",
     },
     {
       title: "LLM-Powered AI Systems",
       description: "Systems that leverage cutting-edge language models to reason, retrieve, and respond seamlessly into your product.",
       icon: SiOpenai,
       backgroundImage: "/services/llm.jpg",
-      gradientOverlay: "bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90",
+      gradientOverlay: "bg-gradient-to-br from-blue-900/60 via-cyan-900/55 to-indigo-900/60",
     },
     {
       title: "End-to-End Automation Systems",
       description: "Automation pipelines that save time, reduce human error, and scale with your growth.",
       icon: SiZapier,
       backgroundImage: "/services/automation.jpg",
-      gradientOverlay: "bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90",
+      gradientOverlay: "bg-gradient-to-br from-blue-900/60 via-cyan-900/55 to-indigo-900/60",
     },
     {
       title: "iOS & Android Apps",
       description: "Native and cross-platform mobile applications that deliver seamless experiences on iOS and Android.",
       icon: SiApple,
       backgroundImage: "/services/mobile-apps.jpg",
-      gradientOverlay: "bg-gradient-to-br from-blue-900/90 via-cyan-900/85 to-indigo-900/90",
+      gradientOverlay: "bg-gradient-to-br from-blue-900/60 via-cyan-900/55 to-indigo-900/60",
     },
   ];
 
@@ -55,6 +55,9 @@ export default function HeroSection() {
       {/* Hero Section with Background - Full Width */}
       <div className="relative w-full overflow-hidden">
         <div className="relative pt-32 pb-28 sm:pt-36 sm:pb-32 md:pt-44 md:pb-40 hero-gradient-bg">
+          {/* Gradient Overlay - Muted version */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/60 via-cyan-900/55 to-indigo-900/60" />
+
           {/* Content */}
           <div className="max-w-6xl mx-auto px-4">
             <div className="relative z-10">
