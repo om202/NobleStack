@@ -1,19 +1,19 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* Tailwind Blue Colors */
+/* Noble Blue Colors - Pure, vibrant blue inspired by Apple iOS & Google Material */
 @theme {
-  --color-blue-50: rgb(239 246 255);
-  --color-blue-100: rgb(219 234 254);
-  --color-blue-200: rgb(191 219 254);
-  --color-blue-300: rgb(147 197 253);
-  --color-blue-400: rgb(96 165 250);
-  --color-blue-500: rgb(59 130 246);
-  --color-blue-600: rgb(37 99 235);
-  --color-blue-700: rgb(29 78 216);
-  --color-blue-800: rgb(30 64 175);
-  --color-blue-900: rgb(30 58 138);
-  --color-blue-950: rgb(23 37 84);
+  --color-blue-50: rgb(235 245 255);
+  --color-blue-100: rgb(214 237 255);
+  --color-blue-200: rgb(173 220 255);
+  --color-blue-300: rgb(112 199 255);
+  --color-blue-400: rgb(51 177 255);
+  --color-blue-500: rgb(0 122 255);
+  --color-blue-600: rgb(0 99 235);
+  --color-blue-700: rgb(0 76 204);
+  --color-blue-800: rgb(0 64 173);
+  --color-blue-900: rgb(0 51 142);
+  --color-blue-950: rgb(0 38 102);
 
   /* Custom Gray-850 - Between gray-800 and gray-900 */
   --color-gray-850: rgb(28 34 52);
@@ -21,9 +21,9 @@
   /* Font family - Tex Gyre Heros via Next.js Font */
   --font-sans: var(--font-tex);
 
-  /* Gradient utilities using Tailwind blue */
-  --gradient-blue-up: linear-gradient(to right, rgb(59 130 246), rgb(37 99 235));
-  --gradient-blue-down: linear-gradient(to right, rgb(59 130 246), rgb(96 165 250));
+  /* Gradient utilities using Noble Blue */
+  --gradient-blue-up: linear-gradient(to right, rgb(0 122 255), rgb(0 99 235));
+  --gradient-blue-down: linear-gradient(to right, rgb(0 122 255), rgb(51 177 255));
 
   /* Theme colors linked to CSS variables */
   --color-main-theme: var(--text-main);
