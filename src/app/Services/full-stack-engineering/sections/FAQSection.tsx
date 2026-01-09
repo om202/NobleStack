@@ -14,23 +14,23 @@ export default function FAQSection() {
     const faqs = [
         {
             question: "What is full-stack product engineering?",
-            answer: "Full-stack product engineering is the end-to-end process of designing, building, deploying, and scaling digital products across frontend, backend, databases, and cloud infrastructure.",
+            answer: "Full-stack product engineering is the end-to-end process of designing, building, deploying, and scaling digital products across frontend, backend, databases, and cloud infrastructure. It encompasses everything from user interface design and API development to database optimization and DevOps automation. Our approach ensures all layers of your application work seamlessly together to deliver exceptional user experiences and business value.",
         },
         {
             question: "How is product engineering different from software development?",
-            answer: "Product engineering focuses on long-term scalability, user experience, and business outcomes, while software development often focuses only on feature implementation.",
+            answer: "Product engineering focuses on long-term scalability, user experience, and business outcomes, while software development often focuses only on feature implementation. We take a holistic approach that considers market fit, technical architecture, performance optimization, and maintainability from day one. This strategic mindset ensures your product can evolve with your business needs and scale efficiently as you grow.",
         },
         {
             question: "Do you help startups build MVPs?",
-            answer: "Yes. We help startups validate ideas, build MVPs quickly, and prepare products for scaling.",
+            answer: "Yes. We help startups validate ideas, build MVPs quickly, and prepare products for scaling. Our rapid prototyping approach focuses on core features that demonstrate value to users and investors while maintaining clean, scalable code architecture. We work closely with founders to iterate based on user feedback and prepare the technical foundation for future growth.",
         },
         {
             question: "Can you scale existing products?",
-            answer: "Absolutely. We optimize performance, refactor architecture, and modernize infrastructure to support growth.",
+            answer: "Absolutely. We optimize performance, refactor architecture, and modernize infrastructure to support growth. Whether you're experiencing slow load times, database bottlenecks, or infrastructure limitations, we identify and resolve technical debt systematically. Our scaling solutions include performance optimization, microservices migration, cloud infrastructure upgrades, and implementing robust monitoring systems.",
         },
         {
             question: "What industries do you work with?",
-            answer: "We work with startups and companies across SaaS, AI, fintech, e-commerce, and enterprise platforms.",
+            answer: "We work with startups and companies across SaaS, AI, fintech, e-commerce, and enterprise platforms. Our team has deep experience building secure financial applications, AI-powered tools, high-traffic e-commerce systems, and complex B2B platforms. We adapt our engineering approach to meet the unique regulatory, security, and performance requirements of each industry.",
         },
     ];
 
