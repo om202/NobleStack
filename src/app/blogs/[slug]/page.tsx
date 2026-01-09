@@ -4,7 +4,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import ReactMarkdown from "react-markdown";
-import { ArrowLeft, Calendar, User } from "lucide-react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { ArrowLeft, User } from "lucide-react";
 import { Metadata } from "next";
 
 interface Params {
@@ -156,7 +158,7 @@ export default async function BlogPostPage({ params }: Params) {
                             src={post.coverImage}
                             alt={post.title}
                             fill
-                            className="object-cover"
+                            className="object-contain"
                             priority
                         />
                     </div>
@@ -173,11 +175,51 @@ export default async function BlogPostPage({ params }: Params) {
                     prose-blockquote:border-l-blue-500 prose-blockquote:bg-blue-500/10 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:text-main-theme
                     prose-img:rounded-xl prose-img:shadow-lg
                     prose-code:text-blue-600 dark:prose-code:text-blue-300 prose-code:bg-subtle-theme prose-code:px-1 prose-code:py-0.5 prose-code:rounded
-                    prose-pre:bg-subtle-theme prose-pre:border prose-pre:border-theme
+                    prose-pre:bg-transparent prose-pre:p-0 prose-pre:m-0 prose-pre:border-0
                     prose-ul:text-main-theme prose-ol:text-main-theme
                     prose-li:text-main-theme
                 ">
-                    <ReactMarkdown>{post.content}</ReactMarkdown>
+                    <ReactMarkdown
+                        components={{
+                            code({ className, children, ...props }) {
+                                const match = /language-(\w+)/.exec(className || "");
+                                const isInline = !match;
+                                return !isInline && match ? (
+                                    <SyntaxHighlighter
+                                        style={vscDarkPlus}
+                                        language={match[1]}
+                                        PreTag="div"
+                                        className="rounded-xl !my-6 text-sm shadow-lg"
+                                        showLineNumbers={true}
+                                        customStyle={{
+                                            margin: 0,
+                                            padding: '1rem',
+                                            background: '#1e1e1e',
+                                        }}
+                                        lineNumberStyle={{
+                                            minWidth: '2.5em',
+                                            paddingRight: '1em',
+                                            color: '#6e7681',
+                                            userSelect: 'none',
+                                        }}
+                                        codeTagProps={{
+                                            style: {
+                                                background: 'transparent',
+                                            }
+                                        }}
+                                    >
+                                        {String(children).replace(/\n$/, "")}
+                                    </SyntaxHighlighter>
+                                ) : (
+                                    <code className={className} {...props}>
+                                        {children}
+                                    </code>
+                                );
+                            },
+                        }}
+                    >
+                        {post.content}
+                    </ReactMarkdown>
                 </div>
             </div>
         </article>
