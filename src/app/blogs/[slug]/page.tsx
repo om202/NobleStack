@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { ArrowLeft, User } from "lucide-react";
@@ -178,6 +179,9 @@ export default async function BlogPostPage({ params }: Params) {
                     prose-pre:bg-transparent prose-pre:p-0 prose-pre:m-0 prose-pre:border-0
                     prose-ul:text-main-theme prose-ol:text-main-theme
                     prose-li:text-main-theme
+                    prose-table:text-main-theme prose-table:border-collapse prose-table:w-full
+                    prose-th:bg-subtle-theme prose-th:text-main-theme prose-th:font-bold prose-th:px-4 prose-th:py-2 prose-th:border prose-th:border-theme
+                    prose-td:text-main-theme/90 prose-td:px-4 prose-td:py-2 prose-td:border prose-td:border-theme
                 ">
                     <ReactMarkdown
                         components={{
@@ -189,7 +193,7 @@ export default async function BlogPostPage({ params }: Params) {
                                         style={vscDarkPlus}
                                         language={match[1]}
                                         PreTag="div"
-                                        className="rounded-xl !my-6 text-sm shadow-lg"
+                                        className="rounded-xl !my-6 text-base shadow-lg"
                                         showLineNumbers={true}
                                         customStyle={{
                                             margin: 0,
@@ -217,6 +221,7 @@ export default async function BlogPostPage({ params }: Params) {
                                 );
                             },
                         }}
+                        remarkPlugins={[remarkGfm]}
                     >
                         {post.content}
                     </ReactMarkdown>
