@@ -15,8 +15,8 @@ export default function TechStackCarousel({
   technologies,
   title,
 }: TechStackCarouselProps) {
-  // Triple the array for seamless infinite scroll
-  const infiniteTechnologies = [...technologies, ...technologies, ...technologies];
+  // Quadruple the array for ultra-smooth seamless infinite scroll
+  const infiniteTechnologies = [...technologies, ...technologies, ...technologies, ...technologies];
 
   return (
     <div className="mb-16">
@@ -27,6 +27,12 @@ export default function TechStackCarousel({
       )}
 
       <div className="relative overflow-hidden">
+        {/* Left fade overlay */}
+        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-r from-card-theme to-transparent z-10 pointer-events-none" />
+
+        {/* Right fade overlay */}
+        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-l from-card-theme to-transparent z-10 pointer-events-none" />
+
         <div className="scroll-container flex gap-4 sm:gap-8 px-2 sm:px-4 animate-scroll-left pause-on-hover will-change-transform">
 
           {infiniteTechnologies.map((tech, index) => (

@@ -10,8 +10,8 @@ import {
   SiReact,
   SiOpenai,
   SiZapier,
+  SiApple,
 } from "react-icons/si";
-import { Smartphone } from "lucide-react";
 import Image from "next/image";
 import ServiceCard from "../../components/ServiceCard";
 import CTAButton from "../../components/CTAButton";
@@ -43,7 +43,7 @@ export default function HeroSection() {
     {
       title: "iOS & Android Apps",
       description: "Native and cross-platform mobile applications that deliver seamless experiences on iOS and Android.",
-      icon: Smartphone,
+      icon: SiApple,
       backgroundImage: "/services/mobile-apps.jpg",
       gradientOverlay: "bg-gradient-to-br from-cyan-900/90 via-blue-900/85 to-indigo-900/90",
     },

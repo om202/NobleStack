@@ -1,9 +1,5 @@
 import {
-  Smartphone,
-  Rocket,
-  Globe,
   ArrowRight,
-  Monitor,
 } from "lucide-react";
 import {
   SiReact,
@@ -23,6 +19,8 @@ import {
   SiPrettier,
   SiEslint,
   SiPostgresql,
+  SiShopify,
+  SiGoogleads,
 } from "react-icons/si";
 import React from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
@@ -38,25 +36,25 @@ export default function FeaturesSection() {
   const webServices = [
     {
       name: "Full-Stack Web Development",
-      icon: Globe,
+      icon: SiReact,
       status: "Specialized",
       description: "React, Next.js, TypeScript",
     },
     {
       name: "E-commerce Websites",
-      icon: Smartphone,
+      icon: SiShopify,
       status: "Expert",
       description: "Shopify, Custom Solutions",
     },
     {
       name: "SaaS Platforms",
-      icon: Monitor,
+      icon: SiVercel,
       status: "Advanced",
       description: "Full-Stack Applications",
     },
     {
       name: "Landing Pages",
-      icon: Rocket,
+      icon: SiGoogleads,
       status: "Conversion Pro",
       description: "High-Converting Pages",
     },

@@ -1,9 +1,5 @@
 import {
-  Zap,
-  MessageCircle,
-  Brain,
   ArrowRight,
-  Languages,
 } from "lucide-react";
 import {
   SiOpenai,
@@ -16,6 +12,7 @@ import {
   SiFastapi,
   SiN8N,
   SiZapier,
+  SiGoogletranslate,
 } from "react-icons/si";
 import React from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
@@ -30,25 +27,25 @@ export default function AIServicesSection() {
   const aiServices = [
     {
       name: "AI Language Tools",
-      icon: Languages,
+      icon: SiGoogletranslate,
       status: "🚀 NEW",
       description: "Nepali Grammarly - First AI Grammar Checker",
     },
     {
       name: "AI Chatbots & Virtual Assistants",
-      icon: MessageCircle,
+      icon: SiOpenai,
       status: "AI Expert",
       description: "GPT-4, Claude, Custom Models",
     },
     {
       name: "Business Process Automation",
-      icon: Zap,
+      icon: SiZapier,
       status: "Automation Pro",
       description: "Smart Workflows & Integration",
     },
     {
       name: "Custom AI Development",
-      icon: Brain,
+      icon: SiHuggingface,
       status: "ML Specialist",
       description: "Tailored AI Solutions",
     },
