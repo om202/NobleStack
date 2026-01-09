@@ -5,18 +5,30 @@ import ServicesSection from "./L3";
 import Testimonials from "./Testimonials";
 import SocialBadges from "./SocialBadges";
 import FAQSection from "./L4";
-import FacebookFeed from "@/components/FacebookFeed";
+import ContactCTA from "./ContactCTA";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-page-theme">
       <HeroSection />
+      {/* Dark gap spacer for visual separation */}
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <FeaturesSection />
+      {/* Dark gap spacer for visual separation */}
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <MobileDevSection />
+      {/* Dark gap spacer for visual separation */}
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <ServicesSection />
+      {/* Dark gap spacer for visual separation */}
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <Testimonials />
-      <FacebookFeed />
+      {/* Dark gap spacer for visual separation */}
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <SocialBadges />
+      <ContactCTA />
+      {/* Dark gap spacer for visual separation */}
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <FAQSection />
     </main>
   );

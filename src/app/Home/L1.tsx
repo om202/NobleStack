@@ -53,24 +53,37 @@ export default function HeroSection() {
     <section className="min-h-screen">
       {/* Hero Section with Background - Full Width */}
       <div className="relative w-full overflow-hidden">
-        <div className="relative pt-28 pb-56 sm:pt-32 sm:pb-72 md:pt-40 md:pb-80 hero-gradient-bg">
+        <div className="relative pt-32 pb-28 sm:pt-36 sm:pb-32 md:pt-44 md:pb-40 hero-gradient-bg">
           {/* Content */}
           <div className="max-w-6xl mx-auto px-4">
             <div className="relative z-10">
               {/* Header */}
               <div className="text-center mb-12">
+                {/* Logo */}
+                <div className="flex items-center justify-center gap-3 mb-8">
+                  <Image
+                    src="/nbl.png"
+                    alt="Noble Stack Logo"
+                    width={48}
+                    height={48}
+                    className="rounded-lg"
+                    priority
+                  />
+                  <span className="text-3xl font-bold text-white tracking-tight">Noble Stack</span>
+                </div>
+
                 <h1 className="text-[32px] md:text-[45px] font-bold mb-6 leading-tight max-w-4xl mx-auto text-white">
                   We Build Scalable, AI-Driven Products That Transform Your Business
                 </h1>
 
-                <p className="text-lg text-gray-100 mb-8 max-w-3xl mx-auto">
+                <p className="text-lg text-white/90 mb-8 max-w-3xl mx-auto">
                   Transform your ideas into reality with our AI-powered software solutions and high-performance websites. Partner with our team of experts in Kathmandu, Nepal, to drive innovation.
                 </p>
 
                 {/* Call to Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 mt-8 sm:mt-16">
                   <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                    Schedule Your Free Consultation
+                    Schedule Consultation
                   </CTAButton>
                   <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/Products" className="w-full sm:w-auto">
                     See Our Products
@@ -87,7 +100,7 @@ export default function HeroSection() {
       </div>
 
       {/* Expertise Section - Overlapping Hero */}
-      <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-3 -mt-40 sm:-mt-56 md:-mt-64 relative z-20">
+      <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-3 -mt-12 sm:-mt-16 md:-mt-20 relative z-20">
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
           <header className="text-center mb-8">
 

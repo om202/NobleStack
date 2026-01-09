@@ -43,12 +43,12 @@ export default function AnimatedFeatureCarousel({
 
       {/* Animated Feature Display */}
       <div className="relative overflow-hidden">
-        <div className="bg-gray-900 rounded-2xl p-4 sm:p-6 md:p-8 border border-theme shadow-sm h-[260px] sm:h-[240px] flex flex-col justify-center">
+        <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 border border-theme shadow-sm h-[260px] sm:h-[240px] flex flex-col justify-center">
           <div
             key={activeFeature}
             className="flex items-start gap-4 sm:gap-6 transition-opacity duration-500 will-change-opacity"
           >
-            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-800 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-subtle-theme rounded-2xl flex items-center justify-center flex-shrink-0">
               {React.createElement(features[activeFeature].icon, {
                 className: "w-6 h-6 sm:w-8 sm:h-8 text-nobleblue-600",
               })}
@@ -64,7 +64,7 @@ export default function AnimatedFeatureCarousel({
                 {features[activeFeature].stats.map((stat, statIndex) => (
                   <span
                     key={statIndex}
-                    className="text-md-sm sm:text-md-sm px-3 sm:px-4 py-1 sm:py-2 bg-gray-800 text-muted-theme rounded-full font-medium"
+                    className="text-md-sm sm:text-md-sm px-3 sm:px-4 py-1 sm:py-2 bg-subtle-theme text-muted-theme rounded-full font-medium"
                   >
                     {stat}
                   </span>

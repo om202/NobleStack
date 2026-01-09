@@ -75,7 +75,7 @@ export default function AIServicesSection() {
   return (
     <section
       id="ai-services"
-      className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme"
+      className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}

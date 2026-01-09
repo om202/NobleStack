@@ -60,60 +60,61 @@ const socialMedia = [
 
 export default function SocialBadges() {
     return (
-        <section className="py-8 sm:py-12 border-t border-theme transition-colors duration-300">
-            <div className="max-w-6xl mx-auto px-3 sm:px-4">
-                <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
-                    <div className="flex flex-col items-center gap-8">
-                        <h3 className="text-2xl sm:text-3xl font-bold text-main-theme text-center">
-                            Find us on
-                        </h3>
+        <section className="max-w-6xl mx-auto px-3 pb-8 sm:px-4 sm:pb-12 transition-colors duration-300">
+            <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
+                <header className="text-center mb-8">
+                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
+                        Find us on
+                    </h2>
+                    <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
+                        Connect with Noble Stack across platforms to stay updated on our latest work, insights, and company news.
+                    </p>
+                </header>
 
-                        {/* Platform Badges */}
-                        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
-                            {badges.map((badge) => (
-                                <a
-                                    key={badge.name}
-                                    href={badge.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="group transition-transform duration-300 hover:scale-105"
-                                >
-                                    <div className="bg-subtle-theme border border-theme rounded-2xl p-4 md:p-6 w-[160px] h-[80px] md:w-[200px] md:h-[100px] flex items-center justify-center hover:bg-subtle-hover transition-[background-color,border-color]">
-                                        <div className={`relative w-full h-full ${badge.name === 'Goodfirms' ? 'scale-150' : ''}`}>
-                                            <Image
-                                                src={badge.logo}
-                                                alt={badge.name}
-                                                fill
-                                                className="object-contain dark:brightness-100 dark:invert-0 invert drop-shadow-[0_2px_3px_rgba(0,0,0,0.4)] dark:drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
-                                            />
-                                        </div>
-                                    </div>
-                                </a>
-                            ))}
-                        </div>
+                {/* Platform Badges */}
+                <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-8">
+                    {badges.map((badge) => (
+                        <a
+                            key={badge.name}
+                            href={badge.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group transition-transform duration-300 hover:scale-105"
+                        >
+                            <div className="bg-subtle-theme border border-theme rounded-2xl p-4 md:p-6 w-[160px] h-[80px] md:w-[200px] md:h-[100px] flex items-center justify-center hover:bg-subtle-hover transition-[background-color,border-color]">
+                                <div className={`relative w-full h-full ${badge.name === 'Goodfirms' ? 'scale-150' : ''}`}>
+                                    <Image
+                                        src={badge.logo}
+                                        alt={badge.name}
+                                        fill
+                                        className="object-contain dark:brightness-100 dark:invert-0 invert drop-shadow-[0_2px_3px_rgba(0,0,0,0.4)] dark:drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
+                                    />
+                                </div>
+                            </div>
+                        </a>
+                    ))}
+                </div>
 
-                        {/* Social Media Links */}
-                        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 pt-4 border-t border-theme w-full">
-                            {socialMedia.map((social) => {
-                                const Icon = social.icon;
-                                return (
-                                    <a
-                                        key={social.name}
-                                        href={social.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="group flex items-center gap-2 px-4 py-2 bg-subtle-theme border border-theme rounded-xl hover:bg-subtle-hover hover:border-blue-500 transition-all duration-200"
-                                        aria-label={`Visit our ${social.name} page`}
-                                    >
-                                        <Icon className="w-5 h-5 text-muted-theme group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200" />
-                                        <span className="text-sm font-medium text-main-theme hidden sm:inline">
-                                            {social.name}
-                                        </span>
-                                    </a>
-                                );
-                            })}
-                        </div>
-                    </div>
+                {/* Social Media Links */}
+                <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 pt-6 border-t border-theme">
+                    {socialMedia.map((social) => {
+                        const Icon = social.icon;
+                        return (
+                            <a
+                                key={social.name}
+                                href={social.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center gap-2 px-4 py-2 bg-subtle-theme border border-theme rounded-xl hover:bg-subtle-hover hover:border-blue-500 transition-all duration-200"
+                                aria-label={`Visit our ${social.name} page`}
+                            >
+                                <Icon className="w-5 h-5 text-muted-theme group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200" />
+                                <span className="text-sm font-medium text-main-theme hidden sm:inline">
+                                    {social.name}
+                                </span>
+                            </a>
+                        );
+                    })}
                 </div>
             </div>
         </section>

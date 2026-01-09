@@ -332,7 +332,7 @@ export default function CareerPageContent() {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder:text-muted-theme/50"
                                             placeholder="your@email.com"
                                             required
                                         />
@@ -349,7 +349,7 @@ export default function CareerPageContent() {
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder-gray-500"
+                                            className="w-full px-4 py-3 bg-subtle-theme border border-theme rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-main-theme placeholder:text-muted-theme/50"
                                             placeholder="+977 (XXX) XXX-XXXX"
                                             required
                                         />
@@ -417,7 +417,7 @@ export default function CareerPageContent() {
                                         Resume/CV *
                                     </label>
                                     <label className="border-2 border-dashed border-theme rounded-xl p-8 text-center hover:border-blue-400 transition-colors duration-300 block cursor-pointer bg-subtle-theme hover:bg-subtle-hover group">
-                                        <Upload className="w-12 h-12 text-gray-500 mx-auto mb-4 group-hover:text-blue-500 transition-colors" />
+                                        <Upload className="w-12 h-12 text-muted-theme mx-auto mb-4 group-hover:text-blue-500 transition-colors" />
                                         <p className="text-base text-muted-theme mb-2 font-medium">
                                             {formData.resume ? (
                                                 <span className="text-blue-600 font-semibold">{formData.resume.name}</span>

@@ -44,55 +44,60 @@ export default function FacebookFeed() {
     const hasMore = visiblePosts < FACEBOOK_POSTS.length;
 
     return (
-        <section className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12 md:py-16">
-            {/* Section Header */}
-            <div className="text-center mb-12">
-                <h2 className="text-2xl sm:text-3xl font-bold text-main-theme">
-                    Latest Updates
-                </h2>
-            </div>
+        <section className="max-w-6xl mx-auto px-3 pb-8 sm:px-4 sm:pb-12">
+            <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
+                {/* Section Header */}
+                <header className="text-center mb-8">
+                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
+                        Latest Updates
+                    </h2>
+                    <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
+                        Stay connected with our latest news, product launches, and insights from the Noble Stack team.
+                    </p>
+                </header>
 
-            {/* Individual Facebook Posts Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {FACEBOOK_POSTS.slice(0, visiblePosts).map((post, index) => (
-                    <div
-                        key={index}
-                        className="bg-white rounded-2xl border border-theme overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
-                    >
-                        <iframe
-                            src={post.src}
-                            width="100%"
-                            height={post.height}
-                            style={{ border: 'none', overflow: 'hidden' }}
-                            scrolling="no"
-                            frameBorder="0"
-                            allowFullScreen={true}
-                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                            sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"
-                        />
-                    </div>
-                ))}
-            </div>
+                {/* Individual Facebook Posts Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {FACEBOOK_POSTS.slice(0, visiblePosts).map((post, index) => (
+                        <div
+                            key={index}
+                            className="bg-white rounded-2xl border border-theme overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+                        >
+                            <iframe
+                                src={post.src}
+                                width="100%"
+                                height={post.height}
+                                style={{ border: 'none', overflow: 'hidden' }}
+                                scrolling="no"
+                                frameBorder="0"
+                                allowFullScreen={true}
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"
+                            />
+                        </div>
+                    ))}
+                </div>
 
-            {/* CTA Buttons */}
-            <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
-                {hasMore && (
+                {/* CTA Buttons */}
+                <div className="mt-12 flex flex-wrap justify-center items-center gap-4">
+                    {hasMore && (
+                        <CTAButton
+                            variant="primary"
+                            icon={ChevronDown}
+                            onClick={showMore}
+                        >
+                            Show More Posts
+                        </CTAButton>
+                    )}
+
                     <CTAButton
-                        variant="primary"
-                        icon={ChevronDown}
-                        onClick={showMore}
+                        variant="secondary"
+                        icon={ExternalLink}
+                        href="https://www.facebook.com/profile.php?id=61577564326108"
                     >
-                        Show More Posts
+                        View All on Facebook
                     </CTAButton>
-                )}
-
-                <CTAButton
-                    variant="secondary"
-                    icon={ExternalLink}
-                    href="https://www.facebook.com/profile.php?id=61577564326108"
-                >
-                    View All on Facebook
-                </CTAButton>
+                </div>
             </div>
         </section>
     );

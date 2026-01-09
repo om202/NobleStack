@@ -99,6 +99,10 @@ body {
   background-color: var(--bg-subtle);
 }
 
+.bg-subtle-hover {
+  background-color: var(--bg-subtle-hover);
+}
+
 .text-main-theme {
   color: var(--text-main);
 }
@@ -216,22 +220,19 @@ a {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-.bg-noble-dark {
-  background-color: rgb(18 18 18);
-}
-
+/* Legacy utilities - using theme variables for consistency */
 .card-dark {
-  background: rgb(28 28 30);
-  border: 1px solid rgba(84, 84, 88, 0.65);
+  background: var(--bg-card);
+  border: 1px solid var(--border-theme);
   backdrop-filter: blur(10px);
 }
 
 .text-noble-muted {
-  color: rgb(152 152 157);
+  color: var(--text-muted);
 }
 
 .text-noble-light {
-  color: rgb(255 255 255);
+  color: var(--text-main);
 }
 
 /* App-like animations */
