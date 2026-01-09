@@ -6,28 +6,28 @@ import SectionHeader from "../../components/SectionHeader";
 export default function Testimonials() {
     const testimonials = [
         {
-            name: "Rajesh Shrestha",
-            role: "Noble Stack Customer",
+            name: "Rajesh S.",
+            role: "Small Business Owner",
             company: "",
             image: "/testimonials/avatar-male-1.svg",
             rating: 5,
-            text: "Noble Stack's AI solutions transformed our workflow and boosted productivity by 30%. Their team is exceptional at understanding business needs and delivering cutting-edge technology.",
+            text: "The team was easy to work with and kept me updated throughout the project. They took the time to understand what I actually needed, not just what I asked for. Appreciated their patience with my questions.",
         },
         {
-            name: "Anjali Gurung",
-            role: "Noble Stack Customer",
+            name: "Anjali G.",
+            role: "Startup Founder",
             company: "",
             image: "/testimonials/avatar-female-1.svg",
             rating: 5,
-            text: "Working with Noble Stack was a game-changer for our e-commerce platform. Their full-stack expertise and attention to detail resulted in a lightning-fast website that doubled our conversions.",
+            text: "As a first-time founder, I had a lot to learn about the tech side. Noble Stack walked me through every decision and helped me launch something I'm genuinely proud of. Responsive and honest throughout.",
         },
         {
-            name: "Bikash Thapa",
-            role: "Noble Stack Customer",
+            name: "Bikash T.",
+            role: "Local Business Owner",
             company: "",
             image: "/testimonials/avatar-male-2.svg",
             rating: 5,
-            text: "The mobile app Noble Stack built for us exceeded all expectations. Their knowledge of React Native and backend integration is world-class. Highly recommend for any serious tech project!",
+            text: "I needed a simple app for my business and they delivered exactly that—nothing overcomplicated, just something that works. Good communication and fair pricing for the quality of work.",
         },
     ];
 
@@ -45,7 +45,7 @@ export default function Testimonials() {
                     {testimonials.map((testimonial, index) => (
                         <article
                             key={index}
-                            className="bg-card-theme rounded-2xl p-4 sm:p-6 border border-theme hover:border-blue-500/50 transition-all duration-300 group relative"
+                            className="bg-card-theme rounded-2xl p-4 sm:p-6 border border-theme hover:border-blue-500/50 transition-all duration-300 group relative flex flex-col"
                         >
                             {/* Quote Icon */}
                             <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -63,12 +63,12 @@ export default function Testimonials() {
                             </div>
 
                             {/* Testimonial Text */}
-                            <blockquote className="text-base text-muted-theme mb-6 leading-relaxed relative z-10">
+                            <blockquote className="text-base text-muted-theme mb-6 leading-relaxed relative z-10 flex-1">
                                 "{testimonial.text}"
                             </blockquote>
 
-                            {/* Author Info */}
-                            <footer className="flex items-center gap-3 pt-4 border-t border-theme">
+                            {/* Author Info - Always at bottom */}
+                            <footer className="flex items-center gap-3 pt-4 border-t border-theme mt-auto">
                                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg">
                                     {testimonial.name.charAt(0)}
                                 </div>
@@ -93,6 +93,15 @@ export default function Testimonials() {
                             "@context": "https://schema.org",
                             "@type": "Organization",
                             "name": "Noble Stack",
+                            "url": "https://www.noblestack.io",
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": (testimonials.reduce((sum, t) => sum + t.rating, 0) / testimonials.length).toFixed(1),
+                                "bestRating": 5,
+                                "worstRating": 1,
+                                "ratingCount": testimonials.length,
+                                "reviewCount": testimonials.length
+                            },
                             "review": testimonials.map(t => ({
                                 "@type": "Review",
                                 "author": {
@@ -107,7 +116,8 @@ export default function Testimonials() {
                                 "reviewRating": {
                                     "@type": "Rating",
                                     "ratingValue": t.rating,
-                                    "bestRating": 5
+                                    "bestRating": 5,
+                                    "worstRating": 1
                                 },
                                 "reviewBody": t.text
                             }))
