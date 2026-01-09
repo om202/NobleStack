@@ -20,7 +20,7 @@ export default function BlogCard({ post }: BlogCardProps) {
                             src={post.coverImage}
                             alt={post.title}
                             fill
-                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            className="object-contain transition-transform duration-500 group-hover:scale-105"
                         />
                     ) : (
                         <div className="w-full h-full bg-linear-to-r from-bg-subtle to-bg-subtle-hover flex items-center justify-center">
