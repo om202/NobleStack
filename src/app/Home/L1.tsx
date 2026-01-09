@@ -192,15 +192,21 @@ export default function HeroSection() {
               />
             </a>
 
-            {/* Auto Captions */}
-            <Link href="/Products" className="block h-full">
+            {/* Noble Appointments */}
+            <div className="block h-full relative">
               <ServiceCard
-                name="Auto Captions"
-                description="Automated subtitle generator in any language. Translate or generate for native voice."
-                imageSrc="/autosubai_icon.png"
-                imageAlt="Auto Captions"
+                name="Noble Appointments"
+                description="Fully Nepali Bikram Sambat based calendar — specially built for Nepali businesses in mind!"
+                imageSrc="/noble-appointments-logo.png"
+                imageAlt="Noble Appointments"
               />
-            </Link>
+              {/* Coming Soon Badge */}
+              <div className="absolute top-4 right-4 z-10">
+                <span className="inline-flex items-center px-3 py-1.5 rounded-lg bg-subtle-theme border border-theme text-muted-theme text-xs font-semibold">
+                  Coming Soon
+                </span>
+              </div>
+            </div>
           </div>
 
           <div className="mt-12 text-center">
