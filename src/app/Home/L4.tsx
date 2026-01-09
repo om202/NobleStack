@@ -16,6 +16,7 @@ import {
   Brain,
 } from "lucide-react";
 import FAQItem from "../../components/FAQItem";
+import SectionHeader from "../../components/SectionHeader";
 
 export default function FAQSection() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -143,15 +144,12 @@ export default function FAQSection() {
     <section id="faq" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme transition-colors">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <header className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-main-theme">
-            Questions & Answers
-          </h2>
-          <p className="text-base text-muted-theme max-w-3xl mx-auto">
-            Comprehensive technical documentation and answers to help you understand our capabilities,
-            methodologies, and how we can solve your specific challenges.
-          </p>
-        </header>
+        <SectionHeader
+          title="Questions & Answers"
+          description="Comprehensive technical documentation and answers to help you understand our capabilities, methodologies, and how we can solve your specific challenges."
+          imageSrc="/undraw_questions_g2px.svg"
+          imageAlt="Questions & Answers Illustration"
+        />
 
         {/* Category Selection */}
         <nav aria-label="FAQ Categories" className="flex justify-center mb-12">

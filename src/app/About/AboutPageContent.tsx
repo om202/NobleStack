@@ -14,6 +14,7 @@ import Image from "next/image";
 import AlbumArtTeam from "../../components/AlbumArtTeam";
 import ServiceCard from "../../components/ServiceCard";
 import CTAButton from "../../components/CTAButton";
+import SectionHeader from "../../components/SectionHeader";
 
 export default function AboutPageContent() {
     const teamMembers = [
@@ -100,17 +101,15 @@ export default function AboutPageContent() {
             <main className="min-h-screen bg-page-theme transition-colors duration-300">
                 <section className="max-w-6xl mx-auto px-3 pt-28 pb-12 sm:px-4 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
                     {/* Header */}
-                    <header className="text-center mb-12">
-                        <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
-                            About Noble Stack
-                        </h1>
+                    <SectionHeader
+                        title="About Noble Stack"
+                        description="&ldquo;We're a group of hardworking smart people working diligently to bring the latest technology, which is changing rapidly like never before, accessible to people of Nepal.&rdquo;"
+                        imageSrc="/undraw_team-spirit_18vw.svg"
+                        imageAlt="About Noble Stack - Team Spirit"
+                    />
 
-                        <blockquote className="text-base text-muted-theme mb-8 max-w-3xl mx-auto">
-                            &ldquo;We&apos;re a group of hardworking smart people working
-                            diligently to bring the latest technology, which is changing
-                            rapidly like never before, accessible to people of Nepal.&rdquo;
-                        </blockquote>
-                    </header>
+                    {/* Spacer */}
+                    <div className="h-8 sm:h-12 md:h-16" />
 
                     {/* Team Section - iTunes Style */}
                     <section id="team" aria-label="Our Team" className="mb-16">

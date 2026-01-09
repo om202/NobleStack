@@ -15,6 +15,7 @@ import {
 import Image from "next/image";
 import ServiceCard from "../../components/ServiceCard";
 import CTAButton from "../../components/CTAButton";
+import SectionHeader from "../../components/SectionHeader";
 
 export default function HeroSection() {
 
@@ -102,15 +103,12 @@ export default function HeroSection() {
       {/* Expertise Section - Overlapping Hero */}
       <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-3 -mt-12 sm:-mt-16 md:-mt-20 relative z-20">
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
-          <header className="text-center mb-8">
-
-            <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
-              Our Expertise
-            </h2>
-            <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
-              Core technologies and methodologies we use to build exceptional digital products.
-            </p>
-          </header>
+          <SectionHeader
+            title="Our Expertise"
+            description="Core technologies and methodologies we use to build exceptional digital products."
+            imageSrc="/undraw_dev-environment_n5by.svg"
+            imageAlt="Our Expertise Illustration"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {expertiseAreas.map((area, index) => (
@@ -136,15 +134,12 @@ export default function HeroSection() {
       {/* Products Section */}
       <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-3 pb-8 sm:px-4 sm:pb-12">
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
-          <header className="text-center mb-8">
-
-            <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
-              Real Projects We've Built
-            </h2>
-            <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
-              From AI-powered mobile apps to professional networking platforms, explore the real-world products we've designed, developed, and launched for clients worldwide.
-            </p>
-          </header>
+          <SectionHeader
+            title="Real Projects We've Built"
+            description="From AI-powered mobile apps to professional networking platforms, explore the real-world products we've designed, developed, and launched for clients worldwide."
+            imageSrc="/undraw_programming_j1zw.svg"
+            imageAlt="Real Projects Illustration"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* Vibe AI */}

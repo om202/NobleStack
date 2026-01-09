@@ -80,6 +80,8 @@ export default function AIServicesSection() {
           title="AI Solutions That Revolutionize Your Business"
           description="While others promise AI magic, we deliver proven solutions. Our AI chatbots and automation systems are already transforming businesses, handling millions of interactions, and saving countless hours of manual work."
           className="animate-fade-in"
+          imageSrc="/undraw_ai-agent_pdkp.svg"
+          imageAlt="AI Solutions Illustration"
         />
 
         {/* AI Tech Stack - Auto Scrolling */}

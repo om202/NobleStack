@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import AlbumArtServices from "../../components/AlbumArtServices";
 import TechTicker from "../../components/TechTicker";
 import ServicesCTA from "../../components/ServicesCTA";
+import SectionHeader from "../../components/SectionHeader";
 
 export const metadata: Metadata = {
   title: "Services - Noble Stack",
@@ -183,11 +184,15 @@ export default function Services() {
       <main className="min-h-screen bg-page-theme transition-colors duration-300">
         <section className="max-w-6xl mx-auto px-3 pt-28 pb-12 sm:px-4 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
           {/* Header */}
-          <header className="text-center mb-12">
-            <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
-              Our Services
-            </h1>
-          </header>
+          <SectionHeader
+            title="Our Services"
+            description="From AI-powered systems to full-stack engineering, we deliver end-to-end solutions that transform your business and drive measurable results."
+            imageSrc="/undraw_engineering-team_13ax.svg"
+            imageAlt="Our Engineering Services"
+          />
+
+          {/* Spacer */}
+          <div className="h-8 sm:h-12 md:h-16" />
 
           {/* Services Carousel */}
           <section id="services" aria-label="Services List" className="mb-16">

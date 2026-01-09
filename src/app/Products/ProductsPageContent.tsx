@@ -17,6 +17,7 @@ import {
 import Image from "next/image";
 import CTAButton from "../../components/CTAButton";
 import ServiceCard from "../../components/ServiceCard";
+import SectionHeader from "../../components/SectionHeader";
 
 export default function ProductsPageContent() {
     return (
@@ -27,15 +28,15 @@ export default function ProductsPageContent() {
                     <h1 className="sr-only">Our Portfolio</h1>
 
                     {/* Page Header */}
-                    <header className="text-center mb-16">
-                        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-main-theme">
-                            Our Portfolio
-                        </h2>
-                        <p className="text-base text-muted-theme max-w-3xl mx-auto">
-                            Real products we've built and launched. These showcase our capabilities in AI development,
-                            web applications, mobile apps (iOS/Android), and bringing ideas to market.
-                        </p>
-                    </header>
+                    <SectionHeader
+                        title="Our Portfolio"
+                        description="Real products we've built and launched. These showcase our capabilities in AI development, web applications, mobile apps (iOS/Android), and bringing ideas to market."
+                        imageSrc="/undraw_portfolio_btd8.svg"
+                        imageAlt="Our Portfolio Illustration"
+                    />
+
+                    {/* Spacer */}
+                    <div className="h-8 sm:h-12 md:h-16" />
 
                     {/* Vibe AI Content */}
                     <header className="text-center mb-12">
