@@ -54,11 +54,7 @@ export default function ServiceCard({
                         sizes="55px"
                     />
                 ) : Icon ? (
-                    <div
-                        className={`w-16 h-16 ${backgroundImage ? 'bg-white/10 backdrop-blur-sm' : 'bg-subtle-theme'} rounded-xl flex items-center justify-center border ${backgroundImage ? 'border-white/20' : 'border-theme'} transition-colors duration-300`}
-                    >
-                        <Icon className={`w-8 h-8 ${backgroundImage ? 'text-white' : 'text-[#007AFF]'}`} />
-                    </div>
+                    <Icon className={`w-7 h-7 ${backgroundImage ? 'text-white' : 'text-muted-theme'} transition-transform duration-300 group-hover:scale-110`} />
                 ) : null}
             </div>
             <h3 className={`font-semibold mb-2 relative z-10 ${backgroundImage ? 'text-white' : 'text-main-theme'}`}>{name}</h3>

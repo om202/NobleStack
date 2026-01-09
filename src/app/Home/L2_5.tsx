@@ -1,9 +1,5 @@
 import {
-    Smartphone,
-    Tablet,
-    Apple,
     ArrowRight,
-    Zap,
 } from "lucide-react";
 import {
     SiReact,
@@ -14,9 +10,9 @@ import {
     SiApple,
     SiAndroid,
     SiXcode,
-    SiReactos,
     SiExpo,
     SiTestinglibrary,
+    SiPwa,
 } from "react-icons/si";
 import React from "react";
 import TechStackCarousel from "../../components/TechStackCarousel";
@@ -30,25 +26,25 @@ export default function MobileDevSection() {
     const mobileServices = [
         {
             name: "iOS App Development",
-            icon: Apple,
+            icon: SiSwift,
             status: "Native Expert",
             description: "Swift, SwiftUI, UIKit",
         },
         {
             name: "Android App Development",
-            icon: Smartphone,
+            icon: SiAndroid,
             status: "Native Expert",
             description: "Kotlin, Jetpack Compose",
         },
         {
             name: "Cross-Platform Apps",
-            icon: Tablet,
+            icon: SiReact,
             status: "Specialized",
             description: "React Native, Flutter",
         },
         {
             name: "Progressive Web Apps",
-            icon: Zap,
+            icon: SiPwa,
             status: "Advanced",
             description: "PWA, Offline-First",
         },
