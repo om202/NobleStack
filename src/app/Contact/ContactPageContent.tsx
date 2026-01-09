@@ -20,6 +20,7 @@ import { FaXTwitter, FaYoutube, FaTiktok } from "react-icons/fa6";
 import { useState } from "react";
 import CTAButton from "../../components/CTAButton";
 import ServiceCard from "../../components/ServiceCard";
+import SectionHeader from "../../components/SectionHeader";
 import { db } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { getDeviceId } from "@/lib/device";
@@ -93,16 +94,16 @@ export default function ContactPageContent() {
             <main className="min-h-screen bg-page-theme transition-colors duration-300">
                 <section className="max-w-6xl mx-auto px-3 pt-28 pb-12 sm:px-4 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
                     {/* Header */}
-                    <header className="text-center mb-12">
-                        <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
-                            Get In Touch
-                        </h1>
+                    <SectionHeader
+                        title="Get In Touch"
+                        description="Ready to transform your ideas into intelligent digital solutions? Let's discuss your project and explore how we can help you succeed."
+                        imageSrc="/undraw_talking-on-the-phone_lc9v.svg"
+                        imageAlt="Get In Touch"
+                        imageSize="small"
+                    />
 
-                        <blockquote className="text-base text-muted-theme mb-8 max-w-3xl mx-auto">
-                            &ldquo;Ready to transform your ideas into intelligent digital solutions?
-                            Let&apos;s discuss your project and explore how we can help you succeed.&rdquo;
-                        </blockquote>
-                    </header>
+                    {/* Spacer */}
+                    <div className="h-8 sm:h-12 md:h-16" />
 
                     {/* Contact Form */}
                     <section id="contact-form" aria-label="Contact Form" className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">

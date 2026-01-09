@@ -1,6 +1,7 @@
 "use client";
 
 import { Star, Quote } from "lucide-react";
+import SectionHeader from "../../components/SectionHeader";
 
 export default function Testimonials() {
     const testimonials = [
@@ -33,14 +34,12 @@ export default function Testimonials() {
     return (
         <section id="testimonials" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme transition-colors">
             <div className="max-w-6xl mx-auto">
-                <header className="text-center mb-12">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-main-theme">
-                        What Our Clients Say
-                    </h2>
-                    <p className="text-base text-muted-theme max-w-3xl mx-auto">
-                        Don't just take our word for it. Here's what business leaders across Nepal say about working with Noble Stack.
-                    </p>
-                </header>
+                <SectionHeader
+                    title="What Our Clients Say"
+                    description="Don't just take our word for it. Here's what business leaders across Nepal say about working with Noble Stack."
+                    imageSrc="/undraw_interview_yz52.svg"
+                    imageAlt="Client Testimonials Illustration"
+                />
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {testimonials.map((testimonial, index) => (

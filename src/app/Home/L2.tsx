@@ -88,6 +88,8 @@ export default function FeaturesSection() {
           title="Full-Stack Web Development Using Cutting-Edge Technologies"
           description="Specializing in lightning-fast, SEO-optimized websites and native mobile apps that look stunning on every device. From landing pages to complex web applications and iOS/Android apps, we create digital experiences that drive results."
           className="animate-fade-in"
+          imageSrc="/undraw_server-cluster_7ugi.svg"
+          imageAlt="Full-Stack Web Development Illustration"
         />
 
         {/* Modern Tech Stack */}

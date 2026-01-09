@@ -3,6 +3,7 @@
 import { Send, Upload, FileText, Loader2, CheckCircle, AlertCircle, ArrowRight, MapPin, Clock, Briefcase } from "lucide-react";
 import { useState } from "react";
 import CTAButton from "../../components/CTAButton";
+import SectionHeader from "../../components/SectionHeader";
 import { db, storage } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { ref, uploadBytes } from "firebase/storage";
@@ -131,17 +132,16 @@ export default function CareerPageContent() {
             <main className="min-h-screen bg-page-theme transition-colors duration-300">
                 <section className="max-w-6xl mx-auto px-3 pt-28 pb-12 sm:px-4 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
                     {/* Header */}
-                    <header className="text-center mb-12">
-                        <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-main-theme">
-                            Join Our Team
-                        </h1>
+                    <SectionHeader
+                        title="Join Our Team"
+                        description="Be part of a movement to bring cutting-edge technology to Nepal. Join our team of passionate developers, designers, and innovators building the future."
+                        imageSrc="/undraw_team_85hs.svg"
+                        imageAlt="Join Our Team"
+                        imageSize="small"
+                    />
 
-                        <blockquote className="text-base text-muted-theme mb-8 max-w-3xl mx-auto">
-                            &ldquo;Be part of a movement to bring cutting-edge technology to
-                            Nepal. Join our team of passionate developers, designers, and
-                            innovators building the future.&rdquo;
-                        </blockquote>
-                    </header>
+                    {/* Spacer */}
+                    <div className="h-8 sm:h-12 md:h-16" />
 
                     {/* Current Openings */}
                     <div className="mb-16 space-y-8">
