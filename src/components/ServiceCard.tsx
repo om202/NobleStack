@@ -57,7 +57,7 @@ export default function ServiceCard({
                     <div
                         className={`w-16 h-16 ${backgroundImage ? 'bg-white/10 backdrop-blur-sm' : 'bg-subtle-theme'} rounded-xl flex items-center justify-center border ${backgroundImage ? 'border-white/20' : 'border-theme'} transition-colors duration-300`}
                     >
-                        <Icon className={`w-8 h-8 ${backgroundImage ? 'text-white' : 'text-blue-500 dark:text-blue-400'}`} />
+                        <Icon className={`w-8 h-8 ${backgroundImage ? 'text-white' : 'text-[#007AFF]'}`} />
                     </div>
                 ) : null}
             </div>

@@ -53,32 +53,17 @@ export default function HeroSection() {
     <section className="min-h-screen">
       {/* Hero Section with Background - Full Width */}
       <div className="relative w-full overflow-hidden">
-        <div className="relative pt-28 pb-12 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20 hero-gradient-bg">
+        <div className="relative pt-28 pb-56 sm:pt-32 sm:pb-72 md:pt-40 md:pb-80 hero-gradient-bg">
           {/* Content */}
           <div className="max-w-6xl mx-auto px-4">
             <div className="relative z-10">
               {/* Header */}
               <div className="text-center mb-12">
-                <div className="flex items-center justify-center gap-3 mb-8">
-                  <Image
-                    src="/nbl.png"
-                    alt="Noble Stack Logo"
-                    width={50}
-                    height={50}
-                    className="rounded-lg w-10 h-10 md:w-[50px] md:h-[50px]"
-                    priority
-                    sizes="(max-width: 768px) 40px, 50px"
-                  />
-                  <span className="text-2xl md:text-3xl font-bold tracking-tight text-white">
-                    Noble Stack
-                  </span>
-                </div>
-
                 <h1 className="text-[32px] md:text-[45px] font-bold mb-6 leading-tight max-w-4xl mx-auto text-white">
                   We Build Scalable, AI-Driven Products That Transform Your Business
                 </h1>
 
-                <p className="text-base text-gray-100 mb-8 max-w-3xl mx-auto">
+                <p className="text-lg text-gray-100 mb-8 max-w-3xl mx-auto">
                   Transform your ideas into reality with our AI-powered software solutions and high-performance websites. Partner with our team of experts in Kathmandu, Nepal, to drive innovation.
                 </p>
 
@@ -93,15 +78,7 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Proudly building in Nepal */}
-              <div className="mt-10 sm:mt-16 text-center">
-                <p className="text-base text-white/80 font-medium flex items-center justify-center gap-2">
-                  Proudly building in
-                  <span className="inline-flex items-center gap-1.5 text-white">
-                    Nepal <span className="text-xl">🇳🇵</span>
-                  </span>
-                </p>
-              </div>
+
             </div>
           </div>
 
@@ -109,8 +86,8 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Expertise Section */}
-      <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+      {/* Expertise Section - Overlapping Hero */}
+      <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-3 -mt-40 sm:-mt-56 md:-mt-64 relative z-20">
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
           <header className="text-center mb-8">
 
