@@ -135,7 +135,7 @@ export default function HeroSection() {
       </section>
 
       {/* Products Section */}
-      <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-3 pb-8 sm:px-4 sm:pb-12">
+      <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-3 pb-4 sm:px-4 sm:pb-8">
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
           <SectionHeader
             title="Real Projects We've Built"
