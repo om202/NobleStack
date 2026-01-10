@@ -25,14 +25,6 @@ export default function AboutPageContent() {
             image: "/ved.png",
             bio: "",
         },
-
-        {
-            name: "Omprakash",
-            role: "CTO",
-            expertise: "Technology Strategy\nSystem Architecture",
-            image: "/om.png",
-            bio: "",
-        },
         {
             name: "Hesamullah",
             role: "Marketing Lead",
