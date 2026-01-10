@@ -173,16 +173,6 @@ export default function AboutLayout({
               },
               {
                 "@type": "Person",
-                "name": "Omprakash",
-                "jobTitle": "CTO",
-                "description": "Technology strategist and system architect specializing in AI-first product development.",
-                "hasOccupation": {
-                  "@type": "Occupation",
-                  "name": "Technology Strategy, System Architecture"
-                }
-              },
-              {
-                "@type": "Person",
                 "name": "Hesamullah",
                 "jobTitle": "Marketing Lead",
                 "description": "Expert in growth strategy and digital marketing, driving the reach of AI solutions in South Asia.",
