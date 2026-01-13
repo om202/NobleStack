@@ -26,6 +26,7 @@ export default function HeroSection() {
       icon: SiReact,
       backgroundImage: "/services/full-stack.jpg",
       gradientOverlay: "bg-gradient-to-br from-slate-100 via-blue-50 to-slate-100 dark:from-blue-900/60 dark:via-cyan-900/55 dark:to-indigo-900/60",
+      href: "/Services/full-stack-engineering",
     },
     {
       title: "LLM-Powered AI Systems",
@@ -33,6 +34,7 @@ export default function HeroSection() {
       icon: SiOpenai,
       backgroundImage: "/services/llm.jpg",
       gradientOverlay: "bg-gradient-to-br from-slate-100 via-blue-50 to-slate-100 dark:from-blue-900/60 dark:via-cyan-900/55 dark:to-indigo-900/60",
+      href: "/Services/llm-ai-systems",
     },
     {
       title: "End-to-End Automation Systems",
@@ -40,6 +42,7 @@ export default function HeroSection() {
       icon: SiZapier,
       backgroundImage: "/services/automation.jpg",
       gradientOverlay: "bg-gradient-to-br from-slate-100 via-blue-50 to-slate-100 dark:from-blue-900/60 dark:via-cyan-900/55 dark:to-indigo-900/60",
+      href: "/Services/automation-systems",
     },
     {
       title: "iOS & Android Apps",
@@ -47,6 +50,7 @@ export default function HeroSection() {
       icon: SiApple,
       backgroundImage: "/services/mobile-apps.jpg",
       gradientOverlay: "bg-gradient-to-br from-slate-100 via-blue-50 to-slate-100 dark:from-blue-900/60 dark:via-cyan-900/55 dark:to-indigo-900/60",
+      href: "/Services/mobile-apps",
     },
   ];
 
@@ -112,14 +116,19 @@ export default function HeroSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {expertiseAreas.map((area, index) => (
-              <ServiceCard
+              <Link
                 key={index}
-                name={area.title}
-                description={area.description}
-                icon={area.icon}
-                backgroundImage={area.backgroundImage}
-                gradientOverlay={area.gradientOverlay}
-              />
+                href={area.href}
+                className="block h-full"
+              >
+                <ServiceCard
+                  name={area.title}
+                  description={area.description}
+                  icon={area.icon}
+                  backgroundImage={area.backgroundImage}
+                  gradientOverlay={area.gradientOverlay}
+                />
+              </Link>
             ))}
           </div>
 
