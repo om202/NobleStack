@@ -1,11 +1,11 @@
 "use client";
 
 import * as React from "react";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Monitor } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export function ThemeToggle() {
-    const { setTheme, resolvedTheme } = useTheme();
+    const { theme, setTheme, resolvedTheme } = useTheme();
     const [mounted, setMounted] = React.useState(false);
 
     // Avoid hydration mismatch
@@ -21,17 +21,45 @@ export function ThemeToggle() {
         );
     }
 
+    const cycleTheme = () => {
+        if (theme === "light") {
+            setTheme("dark");
+        } else if (theme === "dark") {
+            setTheme("system");
+        } else {
+            setTheme("light");
+        }
+    };
+
+    // Determine which icon to show
+    const getIcon = () => {
+        if (theme === "system") {
+            return <Monitor className="h-[1.2rem] w-[1.2rem] transition-all" />;
+        } else if (theme === "light" || resolvedTheme === "light") {
+            return <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />;
+        } else {
+            return <Moon className="h-[1.2rem] w-[1.2rem] transition-all" />;
+        }
+    };
+
+    const getAriaLabel = () => {
+        if (theme === "system") {
+            return "Theme: System (click for Light)";
+        } else if (theme === "light") {
+            return "Theme: Light (click for Dark)";
+        } else {
+            return "Theme: Dark (click for System)";
+        }
+    };
+
     return (
         <button
-            onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
+            onClick={cycleTheme}
             className="p-2 rounded-full bg-subtle-theme border border-border-theme hover:bg-subtle-theme/80 transition-colors flex items-center justify-center text-muted-theme hover:text-main-theme"
-            aria-label="Toggle theme"
+            aria-label={getAriaLabel()}
+            title={getAriaLabel()}
         >
-            {resolvedTheme === "light" ? (
-                <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />
-            ) : (
-                <Moon className="h-[1.2rem] w-[1.2rem] transition-all" />
-            )}
+            {getIcon()}
         </button>
     );
 }
