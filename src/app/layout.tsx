@@ -207,13 +207,6 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              try {
-                if (!sessionStorage.getItem('theme-initialized')) {
-                  localStorage.removeItem('theme');
-                  sessionStorage.setItem('theme-initialized', 'true');
-                }
-              } catch (e) {}
-
               // Global copy listener
               document.addEventListener('click', function(e) {
                 const btn = e.target.closest('[data-copy]');
@@ -244,7 +237,8 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
+          enableSystem
           disableTransitionOnChange
         >
           <DeviceTracker />
