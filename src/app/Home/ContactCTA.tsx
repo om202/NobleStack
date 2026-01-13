@@ -10,7 +10,7 @@ export default function ContactCTA() {
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <Image
-                        src="/hero_gradient.jpg"
+                        src="/hero_gradient.png"
                         alt="Contact Background"
                         fill
                         className="object-cover"
