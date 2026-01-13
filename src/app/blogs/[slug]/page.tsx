@@ -175,7 +175,7 @@ export default async function BlogPostPage({ params }: Params) {
                     prose-strong:text-main-theme
                     prose-blockquote:border-l-blue-500 prose-blockquote:bg-blue-500/10 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:text-main-theme
                     prose-img:rounded-xl prose-img:shadow-lg
-                    prose-code:text-blue-600 dark:prose-code:text-blue-300 prose-code:bg-subtle-theme prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+                                        prose-code:text-blue-800 dark:prose-code:text-blue-300 prose-code:bg-subtle-theme prose-code:px-1 prose-code:py-0.5 prose-code:rounded
                     prose-pre:bg-transparent prose-pre:p-0 prose-pre:m-0 prose-pre:border-0
                     prose-ul:text-main-theme prose-ol:text-main-theme
                     prose-li:text-main-theme
@@ -185,36 +185,45 @@ export default async function BlogPostPage({ params }: Params) {
                 ">
                     <ReactMarkdown
                         components={{
-                            code({ className, children, ...props }) {
+                            code({ className, children, node, ...props }) {
                                 const match = /language-(\w+)/.exec(className || "");
-                                const isInline = !match;
-                                return !isInline && match ? (
-                                    <SyntaxHighlighter
-                                        style={vscDarkPlus}
-                                        language={match[1]}
-                                        PreTag="div"
-                                        className="rounded-xl !my-6 text-base shadow-lg"
-                                        showLineNumbers={true}
-                                        customStyle={{
-                                            margin: 0,
-                                            padding: '1rem',
-                                            background: '#1e1e1e',
-                                        }}
-                                        lineNumberStyle={{
-                                            minWidth: '2.5em',
-                                            paddingRight: '1em',
-                                            color: '#6e7681',
-                                            userSelect: 'none',
-                                        }}
-                                        codeTagProps={{
-                                            style: {
-                                                background: 'transparent',
-                                            }
-                                        }}
-                                    >
-                                        {String(children).replace(/\n$/, "")}
-                                    </SyntaxHighlighter>
-                                ) : (
+                                // Check if this is a block-level code (has newlines) vs inline
+                                const content = String(children);
+                                const isBlock = content.includes('\n') || (node?.position && node.position.start.line !== node.position.end.line);
+
+                                // For blocks with language OR plain multi-line blocks, use dark terminal style
+                                if (match || isBlock) {
+                                    return (
+                                        <SyntaxHighlighter
+                                            style={vscDarkPlus}
+                                            language={match ? match[1] : "text"}
+                                            PreTag="div"
+                                            className="rounded-xl !my-6 text-base shadow-lg"
+                                            showLineNumbers={!!match} // Only show line numbers for language-tagged code
+                                            customStyle={{
+                                                margin: 0,
+                                                padding: '1rem',
+                                                background: '#1e1e1e',
+                                            }}
+                                            lineNumberStyle={{
+                                                minWidth: '2.5em',
+                                                paddingRight: '1em',
+                                                color: '#6e7681',
+                                                userSelect: 'none',
+                                            }}
+                                            codeTagProps={{
+                                                style: {
+                                                    background: 'transparent',
+                                                }
+                                            }}
+                                        >
+                                            {content.replace(/\n$/, "")}
+                                        </SyntaxHighlighter>
+                                    );
+                                }
+
+                                // For inline code, use the styled inline code
+                                return (
                                     <code className={className} {...props}>
                                         {children}
                                     </code>
