@@ -50,12 +50,12 @@ export default function ServiceCard({
                         sizes="55px"
                     />
                 ) : Icon ? (
-                    <Icon className={`w-7 h-7 ${backgroundImage ? 'text-black dark:text-white' : 'text-muted-theme'} transition-transform duration-300 group-hover:scale-110`} />
+                    <Icon className={`w-7 h-7 ${backgroundImage ? 'text-overlay-main' : 'text-muted-theme'} transition-transform duration-300 group-hover:scale-110`} />
                 ) : null}
             </div>
-            <h3 className={`font-semibold mb-2 relative z-10 ${backgroundImage ? 'text-black dark:text-white' : 'text-main-theme'}`}>{name}</h3>
+            <h3 className={`font-semibold mb-2 relative z-10 ${backgroundImage ? 'text-overlay-main' : 'text-main-theme'}`}>{name}</h3>
             <div className="flex items-start gap-2 relative z-10">
-                <p className={`text-base mb-4 break-words flex-grow ${backgroundImage ? 'text-gray-800 dark:text-gray-100' : 'text-subtitle-theme'}`}>{description}</p>
+                <p className={`text-base mb-4 break-words flex-grow ${backgroundImage ? 'text-overlay-muted' : 'text-subtitle-theme'}`}>{description}</p>
                 {copyable && (
                     <button
                         type="button"
