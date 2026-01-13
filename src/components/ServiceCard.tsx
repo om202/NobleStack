@@ -25,20 +25,16 @@ export default function ServiceCard({
 }: ServiceCardProps) {
     return (
         <article className={`relative bg-card-theme rounded-2xl p-6 border border-theme hover:bg-subtle-theme transition-[transform,background-color,border-color] duration-300 group cursor-pointer min-h-[180px] flex flex-col overflow-hidden`}>
-            {/* Background Image */}
             {backgroundImage && (
                 <>
-                    <div className="absolute inset-0 z-0">
-                        <Image
-                            src={backgroundImage}
-                            alt={imageAlt || name}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        />
-                    </div>
-                    {/* Gradient Overlay */}
-                    <div className={`absolute inset-0 z-0 ${gradientOverlay || 'bg-gradient-to-br from-black/80 via-black/70 to-black/80'}`} />
+                    <Image
+                        src={backgroundImage}
+                        alt={imageAlt || name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                    <div className="service-card-overlay" />
                 </>
             )}
 
@@ -54,12 +50,12 @@ export default function ServiceCard({
                         sizes="55px"
                     />
                 ) : Icon ? (
-                    <Icon className={`w-7 h-7 ${backgroundImage ? 'text-white' : 'text-muted-theme'} transition-transform duration-300 group-hover:scale-110`} />
+                    <Icon className={`w-7 h-7 ${backgroundImage ? 'text-gray-900 dark:text-white' : 'text-muted-theme'} transition-transform duration-300 group-hover:scale-110`} />
                 ) : null}
             </div>
-            <h3 className={`font-semibold mb-2 relative z-10 ${backgroundImage ? 'text-white' : 'text-main-theme'}`}>{name}</h3>
+            <h3 className={`font-semibold mb-2 relative z-10 ${backgroundImage ? 'text-gray-900 dark:text-white' : 'text-main-theme'}`}>{name}</h3>
             <div className="flex items-start gap-2 relative z-10">
-                <p className={`text-base mb-4 break-words flex-grow ${backgroundImage ? 'text-white/90' : 'text-muted-theme'}`}>{description}</p>
+                <p className={`text-base mb-4 break-words flex-grow ${backgroundImage ? 'text-gray-600 dark:text-gray-100' : 'text-muted-theme'}`}>{description}</p>
                 {copyable && (
                     <button
                         type="button"

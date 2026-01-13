@@ -132,27 +132,29 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Hero Gradient Background - Multi-color with grain texture */
+/* Hero Gradient Background - Theme-aware images */
 .hero-gradient-bg {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Base background image layer */
-.hero-gradient-bg::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background-image: url('/hero_gradient.jpg');
+  background-image: url('/hero_gradient_light.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 1;
-  background-color: rgb(18 18 18);
-  /* Ensure dark base for image overlay */
 }
 
+.dark .hero-gradient-bg {
+  background-image: url('/hero_gradient.png');
+}
+
+/* Service Card Overlay - Theme-aware */
+.service-card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom right, #f1f5f9, #eff6ff, #f1f5f9);
+}
+
+.dark .service-card-overlay {
+  background: linear-gradient(to bottom right, rgba(30, 58, 138, 0.6), rgba(22, 78, 99, 0.55), rgba(49, 46, 129, 0.6));
+}
 
 html {
   scroll-behavior: smooth;
