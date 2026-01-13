@@ -114,7 +114,7 @@ export default function AboutPageContent() {
                             <h2 className="text-2xl md:text-3xl font-bold text-main-theme leading-tight">
                                 AI First, Built In Nepal
                             </h2>
-                            <h3 className="text-lg text-muted-theme font-medium">
+                            <h3 className="text-lg text-subtitle-theme font-medium">
                                 Noble Stack’s blueprint for intelligent, modern software execution.
                             </h3>
                         </header>
@@ -251,7 +251,7 @@ export default function AboutPageContent() {
                         <h2 className="text-xl md:text-2xl font-bold mb-4 text-main-theme">
                             Lets get your work done!
                         </h2>
-                        <p className="text-base text-muted-theme mb-8 max-w-2xl mx-auto">
+                        <p className="text-base text-subtitle-theme mb-8 max-w-2xl mx-auto">
                             Let&apos;s collaborate to bring your vision to life. Our team is
                             excited to discuss your project and explore how we can help you
                             achieve your goals.

@@ -140,7 +140,7 @@ export default function AlbumArtServices({
                       <h3 className="text-base md:text-lg lg:text-xl font-bold text-main-theme mb-2 sm:mb-3 leading-tight">
                         {service.title}
                       </h3>
-                      <p className="text-base text-muted-theme leading-relaxed">
+                      <p className="text-base text-subtitle-theme leading-relaxed">
                         {service.description}
                       </p>
                     </div>
@@ -196,7 +196,7 @@ export default function AlbumArtServices({
 
       {/* Bottom Section */}
       <div className="text-center mt-6 md:mt-8">
-        <h3 className="text-lg md:text-xl font-medium text-muted-theme mb-2">
+        <h3 className="text-lg md:text-xl font-medium text-subtitle-theme mb-2">
           Our Services Portfolio
         </h3>
         <p className="text-sm md:text-base text-muted-theme max-w-2xl mx-auto px-2">

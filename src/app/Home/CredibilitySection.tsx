@@ -50,7 +50,7 @@ export default function CredibilitySection() {
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-main-theme">
                         Why Choose Noble Stack? Expertise in AI, Full-Stack Web & Mobile Development
                     </h2>
-                    <p className="text-base sm:text-lg text-muted-theme max-w-3xl mx-auto">
+                    <p className="text-base sm:text-lg text-subtitle-theme max-w-3xl mx-auto">
                         We're a new agency with proven capabilities. Our portfolio speaks for itself—real products,
                         real users, real results. We bring enterprise-level expertise with the agility of a startup.
                     </p>

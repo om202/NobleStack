@@ -51,7 +51,7 @@ export default function FacebookFeed() {
                     <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Latest Updates
                     </h2>
-                    <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
+                    <p className="text-sm sm:text-base text-subtitle-theme max-w-3xl mx-auto">
                         Stay connected with our latest news, product launches, and insights from the Noble Stack team.
                     </p>
                 </header>

@@ -17,7 +17,7 @@ export default function ServicesCTA() {
             <h2 className="text-xl md:text-2xl font-bold mb-4 text-main-theme">
                 Ready to Start Your Project?
             </h2>
-            <p className="text-base text-muted-theme mb-8 max-w-2xl mx-auto">
+            <p className="text-base text-subtitle-theme mb-8 max-w-2xl mx-auto">
                 Let&apos;s discuss your requirements and create a solution that
                 drives your business forward. Our team is ready to bring your
                 vision to life.
