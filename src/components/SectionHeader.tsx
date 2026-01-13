@@ -63,7 +63,7 @@ export default function SectionHeader({
                             <span className="text-main-theme"> {highlightedText}</span>
                         )}
                     </h2>
-                    <p className="text-base sm:text-lg text-muted-theme max-w-3xl mx-auto md:mx-0 mb-0">
+                    <p className="text-base sm:text-lg text-subtitle-theme max-w-3xl mx-auto md:mx-0 mb-0">
                         {description}
                     </p>
                 </div>

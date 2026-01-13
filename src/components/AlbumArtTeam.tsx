@@ -141,7 +141,7 @@ export default function AlbumArtTeam({
         <h3 className="text-base font-bold text-main-theme mb-2">
           Meet Our Team
         </h3>
-        <p className="text-base text-muted-theme max-w-xl mx-auto">
+        <p className="text-base text-subtitle-theme max-w-xl mx-auto">
           Our diverse team of experts brings together years of experience in
           technology, design, and business strategy.
         </p>

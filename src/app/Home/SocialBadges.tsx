@@ -66,7 +66,7 @@ export default function SocialBadges() {
                     <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
                         Find us on
                     </h2>
-                    <p className="text-sm sm:text-base text-muted-theme max-w-3xl mx-auto">
+                    <p className="text-sm sm:text-base text-subtitle-theme max-w-3xl mx-auto">
                         Connect with Noble Stack across platforms to stay updated on our latest work, insights, and company news.
                     </p>
                 </header>

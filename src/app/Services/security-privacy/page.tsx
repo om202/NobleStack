@@ -127,7 +127,7 @@ export default function SecurityPrivacy() {
                         "Penetration Testing & Scanning",
                     ].map((tech, index) => (
                         <div key={index} className="bg-card-theme rounded-xl p-6 border border-theme text-center">
-                            <p className="text-muted-theme font-medium">{tech}</p>
+                            <p className="text-subtitle-theme font-medium">{tech}</p>
                         </div>
                     ))}
                 </div>

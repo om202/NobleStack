@@ -268,7 +268,7 @@ export default function ContactPageContent() {
                             <h3 className="text-lg font-semibold text-main-theme mb-3">
                                 Ready to Start Your Project?
                             </h3>
-                            <p className="text-base text-muted-theme max-w-2xl mx-auto">
+                            <p className="text-base text-subtitle-theme max-w-2xl mx-auto">
                                 Choose your preferred way to connect with us.
                             </p>
                         </div>
@@ -310,7 +310,7 @@ export default function ContactPageContent() {
                             <h3 className="text-lg font-semibold text-main-theme mb-3">
                                 Connect on Social Media
                             </h3>
-                            <p className="text-base text-muted-theme max-w-2xl mx-auto">
+                            <p className="text-base text-subtitle-theme max-w-2xl mx-auto">
                                 Stay updated with our latest news and announcements.
                             </p>
                         </div>

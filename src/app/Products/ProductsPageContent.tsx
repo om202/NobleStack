@@ -53,7 +53,7 @@ export default function ProductsPageContent() {
                             </h2>
                         </div>
                         <div className="space-y-4 mb-12 max-w-4xl mx-auto">
-                            <p className="text-base text-muted-theme leading-relaxed">
+                            <p className="text-base text-subtitle-theme leading-relaxed">
                                 Create stunning profile pictures and edit photos with AI-powered tools. Remove backgrounds instantly, enhance images, and transform your photos with professional filters and AI magic.
                             </p>
                         </div>
@@ -140,7 +140,7 @@ export default function ProductsPageContent() {
                         </div>
 
                         <div className="space-y-4 mb-12 max-w-4xl mx-auto">
-                            <p className="text-base text-muted-theme leading-relaxed">
+                            <p className="text-base text-subtitle-theme leading-relaxed">
                                 The web-based solution for professional profile pictures. Powered by Google&apos;s Nano Banana AI, just describe the changes you want in plain English. No subscription required.
                             </p>
                         </div>
@@ -225,7 +225,7 @@ export default function ProductsPageContent() {
                         </div>
 
                         <div className="space-y-4 mb-12 max-w-4xl mx-auto">
-                            <p className="text-base text-muted-theme leading-relaxed">
+                            <p className="text-base text-subtitle-theme leading-relaxed">
                                 Professional Networking & Career Matching using AI. Upload your resume and get matched instantly with compatible professionals for meaningful connections.
                             </p>
                         </div>
@@ -311,7 +311,7 @@ export default function ProductsPageContent() {
                         </div>
 
                         <div className="space-y-4 mb-12 max-w-4xl mx-auto">
-                            <p className="text-base text-muted-theme leading-relaxed">
+                            <p className="text-base text-subtitle-theme leading-relaxed">
                                 Automated subtitle generator for any language. Instantly translate or generate captions for native voice with high accuracy.
                             </p>
                         </div>

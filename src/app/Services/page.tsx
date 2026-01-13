@@ -205,7 +205,7 @@ export default function Services() {
               <h2 className="text-xl md:text-2xl font-bold text-main-theme mb-6">
                 Our Process
               </h2>
-              <p className="text-base text-muted-theme max-w-2xl mx-auto">
+              <p className="text-base text-subtitle-theme max-w-2xl mx-auto">
                 We follow a proven methodology to ensure your project is
                 delivered on time, within budget, and exceeds your expectations.
               </p>
@@ -284,7 +284,7 @@ export default function Services() {
               <h2 className="text-xl md:text-2xl font-bold mb-6 text-main-theme">
                 Technology Stack
               </h2>
-              <p className="text-base text-muted-theme max-w-2xl mx-auto mb-8">
+              <p className="text-base text-subtitle-theme max-w-2xl mx-auto mb-8">
                 We work with the latest and most reliable technologies to build
                 robust, scalable solutions. Watch our expertise in action —
                 technologies refresh dynamically to showcase our full stack.

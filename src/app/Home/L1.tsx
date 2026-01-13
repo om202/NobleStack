@@ -77,7 +77,7 @@ export default function HeroSection() {
                   We Build Scalable, AI-Driven Products That Transform Your Business
                 </h1>
 
-                <p className="text-lg text-muted-theme mb-8 max-w-3xl mx-auto">
+                <p className="text-lg text-subtitle-theme mb-8 max-w-3xl mx-auto">
                   Transform your ideas into reality with our AI-powered software solutions and high-performance websites. Partner with our team of experts in Kathmandu, Nepal, to drive innovation.
                 </p>
 
