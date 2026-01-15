@@ -23,6 +23,11 @@ const badges = [
         logo: "/The Manifest_idzYxBbVCG_0.png",
         url: "https://themanifest.com/company/noble-stack",
     },
+    {
+        name: "Crunchbase",
+        logo: "/crunchbase.jpg",
+        url: "https://www.crunchbase.com/organization/noble-stack-pvt-ltd",
+    },
 ];
 
 const socialMedia = [
@@ -81,15 +86,20 @@ export default function SocialBadges() {
                             rel="noopener noreferrer"
                             className="group transition-transform duration-300 hover:scale-105"
                         >
-                            <div className="bg-subtle-theme border border-theme rounded-2xl p-4 md:p-6 w-[160px] h-[80px] md:w-[200px] md:h-[100px] flex items-center justify-center hover:bg-subtle-hover transition-[background-color,border-color]">
-                                <div className={`relative w-full h-full ${badge.name === 'Goodfirms' ? 'scale-150' : ''}`}>
-                                    <Image
-                                        src={badge.logo}
-                                        alt={badge.name}
-                                        fill
-                                        className="object-contain drop-shadow-[0_2px_3px_rgba(0,0,0,0.4)] dark:drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
-                                    />
+                            <div className="bg-subtle-theme border border-theme rounded-2xl p-3 md:p-4 w-[130px] md:w-[160px] flex flex-col items-center justify-center hover:bg-subtle-hover transition-[background-color,border-color] gap-2">
+                                <div className="relative w-full h-[50px] md:h-[60px]">
+                                    <div className={`relative w-full h-full ${badge.name === 'Goodfirms' ? 'scale-150' : ''}`}>
+                                        <Image
+                                            src={badge.logo}
+                                            alt={badge.name}
+                                            fill
+                                            className="object-contain drop-shadow-[0_2px_3px_rgba(0,0,0,0.4)] dark:drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
+                                        />
+                                    </div>
                                 </div>
+                                <span className="text-xs md:text-sm font-medium text-subtitle-theme text-center">
+                                    {badge.name}
+                                </span>
                             </div>
                         </a>
                     ))}
