@@ -10,18 +10,23 @@ export default function VideoGallery() {
     const videos = [
         {
             id: 1,
-            url: "https://iframe.mediadelivery.net/embed/577800/777df40b-ce70-4d1f-9f94-521205836ab1?autoplay=false&loop=false&muted=false&preload=true&responsive=true",
+            url: "https://iframe.mediadelivery.net/embed/577800/777df40b-ce70-4d1f-9f94-521205836ab1?autoplay=false&loop=false&muted=false&preload=true&responsive=true&defaultQuality=480p",
             title: "Lets introduce Noble Stack!",
         },
         {
             id: 2,
-            url: "https://iframe.mediadelivery.net/embed/577800/8487bd22-5d2b-46c5-b096-cff0cdb68006?autoplay=false&loop=false&muted=false&preload=true&responsive=true",
+            url: "https://iframe.mediadelivery.net/embed/577800/8487bd22-5d2b-46c5-b096-cff0cdb68006?autoplay=false&loop=false&muted=false&preload=true&responsive=true&defaultQuality=480p",
             title: "What is Noble Appointments?",
         },
         {
             id: 3,
-            url: "https://iframe.mediadelivery.net/embed/577800/d48e0897-bde9-4073-9854-9840514c51bb?autoplay=false&loop=false&muted=false&preload=true&responsive=true",
+            url: "https://iframe.mediadelivery.net/embed/577800/d48e0897-bde9-4073-9854-9840514c51bb?autoplay=false&loop=false&muted=false&preload=true&responsive=true&defaultQuality=480p",
             title: "Why Noble Stack is \"AI First\" company?",
+        },
+        {
+            id: 4,
+            url: "https://iframe.mediadelivery.net/embed/577800/5552ca92-1555-48e0-8227-c2b674ac888e?autoplay=false&loop=false&muted=false&preload=true&responsive=true&defaultQuality=480p",
+            title: "No Risk, No Future",
         },
     ];
 
