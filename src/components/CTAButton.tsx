@@ -11,6 +11,7 @@ interface CTAButtonProps {
     className?: string;
     disabled?: boolean;
     external?: boolean;
+    shine?: boolean;
 }
 
 export default function CTAButton({
@@ -24,6 +25,7 @@ export default function CTAButton({
     className = "",
     disabled = false,
     external = false,
+    shine = false,
 }: CTAButtonProps & { iconPosition?: "left" | "right" }) {
     const baseClasses =
         "group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl transition-[background-color,border-color,box-shadow,color] duration-300 font-semibold whitespace-nowrap cursor-pointer";
@@ -36,16 +38,20 @@ export default function CTAButton({
 
     const disabledClasses = "opacity-50 cursor-not-allowed pointer-events-none hover:transform-none";
 
-    const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${disabled ? disabledClasses : ""} ${className}`;
+    const shineClasses = shine
+        ? "relative before:absolute before:inset-[-2px] before:rounded-[14px] before:bg-[conic-gradient(from_var(--shine-angle),transparent_0%,transparent_40%,white_50%,transparent_60%,transparent_100%)] before:animate-[border-spin_3s_linear_infinite] before:opacity-75 after:absolute after:inset-0 after:rounded-xl after:bg-[linear-gradient(to_right,rgb(0_122_255),rgb(0_99_235))]"
+        : "";
+
+    const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${disabled ? disabledClasses : ""} ${shineClasses} ${className}`;
 
     const content = (
         <>
             {Icon && iconPosition === "left" && (
-                <Icon aria-hidden="true" className={`w-5 h-5 ${!disabled ? "group-hover:-translate-x-1" : ""} transition-transform duration-300`} />
+                <Icon aria-hidden="true" className={`w-5 h-5 ${!disabled ? "group-hover:-translate-x-1" : ""} transition-transform duration-300 relative z-10`} />
             )}
-            {children}
+            <span className="relative z-10">{children}</span>
             {Icon && iconPosition === "right" && (
-                <Icon aria-hidden="true" className={`w-5 h-5 ${!disabled ? "group-hover:translate-x-1" : ""} transition-transform duration-300`} />
+                <Icon aria-hidden="true" className={`w-5 h-5 ${!disabled ? "group-hover:translate-x-1" : ""} transition-transform duration-300 relative z-10`} />
             )}
         </>
     );
