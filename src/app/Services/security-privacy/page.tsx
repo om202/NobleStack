@@ -94,7 +94,7 @@ export default function SecurityPrivacy() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+            <section className="max-w-7xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     Security Services We Provide
                 </h2>
@@ -106,7 +106,7 @@ export default function SecurityPrivacy() {
             </section>
 
             {/* Technologies Section */}
-            <section className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+            <section className="max-w-7xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     Key Technologies
                 </h2>
@@ -133,7 +133,7 @@ export default function SecurityPrivacy() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+            <section className="max-w-7xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     Our Security Standards
                 </h2>
@@ -148,7 +148,7 @@ export default function SecurityPrivacy() {
             </section>
 
             <section className="relative overflow-hidden">
-                <div className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+                <div className="max-w-7xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
                     <div className="relative rounded-3xl overflow-hidden">
                         {/* Background Image */}
                         <div className="absolute inset-0">

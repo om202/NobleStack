@@ -130,7 +130,7 @@ export default function CareerPageContent() {
         <>
             {/* Hero Section */}
             <main className="min-h-screen bg-page-theme transition-colors duration-300">
-                <section className="max-w-6xl mx-auto px-3 pt-28 pb-12 sm:px-4 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
+                <section className="max-w-7xl mx-auto px-3 pt-28 pb-12 sm:px-4 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
                     {/* Header */}
                     <SectionHeader
                         title="Join Our Team"

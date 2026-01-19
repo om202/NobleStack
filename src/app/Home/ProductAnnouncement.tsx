@@ -11,7 +11,7 @@ export default function ProductAnnouncement() {
 
   return (
     <section className="py-6 sm:py-8 md:py-10 lg:py-12 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Product Announcement - Ad Banner */}
         <div className="relative bg-card-theme rounded-2xl p-6 pr-10 border border-blue-500/30 shadow-sm hover:shadow-md transition-shadow duration-300">
           {/* Close Button */}

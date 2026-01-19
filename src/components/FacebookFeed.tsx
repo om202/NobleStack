@@ -44,7 +44,7 @@ export default function FacebookFeed() {
     const hasMore = visiblePosts < FACEBOOK_POSTS.length;
 
     return (
-        <section className="max-w-6xl mx-auto px-3 pb-8 sm:px-4 sm:pb-12">
+        <section className="max-w-7xl mx-auto px-3 pb-8 sm:px-4 sm:pb-12">
             <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
                 {/* Section Header */}
                 <header className="text-center mb-8">

@@ -45,7 +45,7 @@ export default function CredibilitySection() {
 
     return (
         <section className="py-12 px-4 bg-page-theme transition-colors duration-300">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <header className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-main-theme">
                         Why Choose Noble Stack? Expertise in AI, Full-Stack Web & Mobile Development

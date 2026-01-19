@@ -4,7 +4,7 @@ import CTAButton from "../../components/CTAButton";
 
 export default function ContactCTA() {
     return (
-        <section className="max-w-6xl mx-auto px-3 pb-8 sm:px-4 sm:pb-12">
+        <section className="max-w-7xl mx-auto px-3 pb-8 sm:px-4 sm:pb-12">
             {/* Card container with gradient background */}
             <div className="relative rounded-2xl overflow-hidden shadow-sm">
                 {/* Background Image */}

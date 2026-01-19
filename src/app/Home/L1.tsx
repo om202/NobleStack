@@ -60,7 +60,7 @@ export default function HeroSection() {
       <div className="relative w-full overflow-hidden">
         <div className="relative pt-32 pb-28 sm:pt-36 sm:pb-32 md:pt-44 md:pb-40 hero-gradient-bg">
           {/* Content */}
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-7xl mx-auto px-4">
             <div className="relative">
               {/* Header */}
               <div className="text-center mb-12">
@@ -105,7 +105,7 @@ export default function HeroSection() {
       </div>
 
       {/* Expertise Section - Overlapping Hero */}
-      <section id="expertise" aria-label="Our Expertise" className="max-w-6xl mx-auto px-3 -mt-12 sm:-mt-16 md:-mt-20 relative z-20">
+      <section id="expertise" aria-label="Our Expertise" className="max-w-7xl mx-auto px-3 -mt-12 sm:-mt-16 md:-mt-20 relative z-20">
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
           <SectionHeader
             title="Our Expertise"
@@ -141,7 +141,7 @@ export default function HeroSection() {
       </section>
 
       {/* Products Section */}
-      <section id="products" aria-label="Our Products" className="max-w-6xl mx-auto px-3 pb-4 sm:px-4 sm:pb-8">
+      <section id="products" aria-label="Our Products" className="max-w-7xl mx-auto px-3 pb-4 sm:px-4 sm:pb-8">
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
           <SectionHeader
             title="Real Projects We've Built"

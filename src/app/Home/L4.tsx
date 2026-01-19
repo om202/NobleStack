@@ -142,7 +142,7 @@ export default function FAQSection() {
 
   return (
     <section id="faq" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme transition-colors">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader
           title="Questions & Answers"
