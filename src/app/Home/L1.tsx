@@ -65,16 +65,16 @@ export default function HeroSection() {
               {/* Header */}
               <div className="text-center mb-12">
                 {/* Logo */}
-                <div className="flex items-center justify-center gap-3 mb-8">
+                <div className="flex items-center justify-center gap-2 mb-8">
                   <Image
                     src="/nbl.png"
                     alt="Noble Stack Logo"
-                    width={40}
-                    height={40}
+                    width={32}
+                    height={32}
                     className="rounded-lg"
                     priority
                   />
-                  <span className="text-3xl font-medium text-main-theme tracking-tight">Noble Stack</span>
+                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-muted-theme">Noble Stack</span>
                 </div>
 
                 <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight max-w-4xl mx-auto text-main-theme font-serif">
