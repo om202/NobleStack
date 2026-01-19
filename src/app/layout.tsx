@@ -1,20 +1,31 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Sans, Lora } from "next/font/google";
+import { IBM_Plex_Sans, IBM_Plex_Serif, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
 import DeviceTracker from "../components/common/DeviceTracker";
 
+// IBM Carbon Design System Typography - IBM Plex Sans (Primary)
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "600"], // Light, Regular, SemiBold per Carbon standards
   variable: "--font-ibm-plex-sans",
   display: "swap",
 });
 
-const lora = Lora({
+// IBM Carbon Design System Typography - IBM Plex Serif (Editorial)
+const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
-  variable: "--font-lora",
+  weight: ["300", "400", "600"], // Light, Regular, SemiBold per Carbon standards
+  variable: "--font-ibm-plex-serif",
+  display: "swap",
+});
+
+// IBM Carbon Design System Typography - IBM Plex Mono (Code)
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400", "600"], // Light, Regular, SemiBold per Carbon standards
+  variable: "--font-ibm-plex-mono",
   display: "swap",
 });
 
@@ -219,7 +230,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${ibmPlexSans.variable} ${lora.variable} font-sans antialiased`}
+        className={`${ibmPlexSans.variable} ${ibmPlexSerif.variable} ${ibmPlexMono.variable} font-sans antialiased`}
       >
         <ThemeProvider
           attribute="class"
