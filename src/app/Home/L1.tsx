@@ -76,14 +76,14 @@ export default function HeroSection() {
             <div className="relative z-10">
               {/* 60/40 Split Layout */}
               <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
-                {/* Left side - Text Content (60%) */}
-                <div className="flex-13 lg:flex-3 w-full">
+                {/* Left side - Text Content (65%) */}
+                <div className="flex-13 lg:flex-13 w-full">
                   <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight text-center lg:text-left text-main-theme font-serif text-engraved">
                     We Build Scalable, AI-Driven Products That Transform Your Business
                   </h1>
 
                   <p className="text-lg text-subtitle-theme mb-8 text-center lg:text-left">
-                    <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Transform your ideas into reality with our AI-powered software solutions, high-performance websites, and intelligent automation. Partner with our expert team in Kathmandu, Nepal, to scale your business and deliver exceptional digital experiences.
+                    <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Transform your ideas into reality with our AI-powered software solutions and high-performance websites. Partner with our team of experts in Kathmandu, Nepal, to drive innovation.
                   </p>
 
                   {/* Call to Action Buttons */}
@@ -97,8 +97,8 @@ export default function HeroSection() {
                   </div>
                 </div>
 
-                {/* Right side - Hero Illustration (40%) */}
-                <div className="flex-7 lg:flex-2 w-full max-w-sm mx-auto lg:mx-0 lg:max-w-none lg:ml-auto">
+                {/* Right side - Hero Illustration (35%) */}
+                <div className="flex-7 lg:flex-7 w-full max-w-xs mx-auto lg:mx-0 lg:max-w-none lg:ml-auto">
                   <div className="relative w-full aspect-square">
                     <Image
                       src="/hero_illus.png"
