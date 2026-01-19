@@ -1,35 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
+import { IBM_Plex_Sans, Lora } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
 import DeviceTracker from "../components/common/DeviceTracker";
 
-const tex = localFont({
-  src: [
-    {
-      path: "../../public/fonts/tex/texgyreheros-regular.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/tex/texgyreheros-italic.otf",
-      weight: "400",
-      style: "italic",
-    },
-    {
-      path: "../../public/fonts/tex/texgyreheros-bold.otf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/tex/texgyreheros-bolditalic.otf",
-      weight: "700",
-      style: "italic",
-    },
-  ],
-  variable: "--font-tex",
-  display: 'swap',
+const ibmPlexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-ibm-plex-sans",
+  display: "swap",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-lora",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -233,7 +219,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${tex.className} font-sans antialiased`}
+        className={`${ibmPlexSans.variable} ${lora.variable} font-sans antialiased`}
       >
         <ThemeProvider
           attribute="class"

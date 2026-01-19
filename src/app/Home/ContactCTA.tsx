@@ -22,7 +22,7 @@ export default function ContactCTA() {
 
                 {/* Content */}
                 <div className="relative z-10 p-6 sm:p-8 md:p-12 text-center">
-                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+                    <h2 className="text-2xl md:text-3xl text-white mb-6 font-serif">
                         Have a Specific Question?
                     </h2>
                     <p className="text-base sm:text-lg text-white/90 mb-8 max-w-2xl mx-auto">

@@ -57,7 +57,7 @@ export default function SectionHeader({
 
                 {/* Text Content */}
                 <div className={imageSrc ? "md:w-2/3 text-center md:text-left" : "w-full"}>
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-main-theme">
+                    <h2 className="text-2xl md:text-3xl mb-4 text-main-theme font-serif">
                         {title}
                         {highlightedText && (
                             <span className="text-main-theme"> {highlightedText}</span>
