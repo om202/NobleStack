@@ -16,6 +16,7 @@ import Image from "next/image";
 import ServiceCard from "../../components/ServiceCard";
 import CTAButton from "../../components/CTAButton";
 import SectionHeader from "../../components/SectionHeader";
+import NetworkBackground from "../../components/NetworkBackground";
 
 export default function HeroSection() {
 
@@ -56,12 +57,23 @@ export default function HeroSection() {
 
   return (
     <section className="min-h-screen">
-      {/* Hero Section with Background - Full Width */}
+      {/* Hero Section with Network Background - Full Width */}
       <div className="relative w-full overflow-hidden">
         <div className="relative pt-24 pb-20 sm:pt-28 sm:pb-24 md:pt-32 md:pb-28 hero-gradient-bg">
+          {/* Network Background Effect - Layered on top */}
+          <NetworkBackground
+            particleCount={32}
+            particleColor="rgba(0, 122, 255, 0.7)"
+            lineColor="rgba(0, 122, 255, 0.65)"
+            particleSize={2.5}
+            lineWidth={3}
+            connectionDistance={250}
+            speed={0.4}
+          />
+
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4">
-            <div className="relative">
+            <div className="relative z-10">
               {/* Header */}
               <div className="text-center mb-12">
                 {/* Logo */}
@@ -74,7 +86,7 @@ export default function HeroSection() {
                     className="rounded-lg"
                     priority
                   />
-                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-muted-theme">Noble Stack</span>
+                  <span className="text-xl sm:text-2xl font-bold text-main-theme tracking-tight">Noble Stack</span>
                 </div>
 
                 <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight max-w-4xl mx-auto text-main-theme font-serif">
