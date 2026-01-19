@@ -74,41 +74,42 @@ export default function HeroSection() {
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4">
             <div className="relative z-10">
-              {/* Header */}
-              <div className="text-center mb-12">
-                {/* Logo */}
-                <div className="flex items-center justify-center gap-2 mb-8">
-                  <Image
-                    src="/nbl.png"
-                    alt="Noble Stack Logo"
-                    width={32}
-                    height={32}
-                    className="rounded-lg"
-                    priority
-                  />
-                  <span className="text-xl sm:text-2xl font-bold text-main-theme tracking-tight">Noble Stack</span>
+              {/* 60/40 Split Layout */}
+              <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                {/* Left side - Text Content (60%) */}
+                <div className="flex-13 lg:flex-3 w-full">
+                  <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight text-center lg:text-left text-main-theme font-serif text-engraved">
+                    We Build Scalable, AI-Driven Products That Transform Your Business
+                  </h1>
+
+                  <p className="text-lg text-subtitle-theme mb-8 text-center lg:text-left">
+                    <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Transform your ideas into reality with our AI-powered software solutions, high-performance websites, and intelligent automation. Partner with our expert team in Kathmandu, Nepal, to scale your business and deliver exceptional digital experiences.
+                  </p>
+
+                  {/* Call to Action Buttons */}
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10 mt-8 sm:mt-16">
+                    <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26" shine>
+                      Schedule Consultation
+                    </CTAButton>
+                    <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/Products" className="w-full sm:w-auto">
+                      See Our Products
+                    </CTAButton>
+                  </div>
                 </div>
 
-                <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight max-w-4xl mx-auto text-main-theme font-serif">
-                  We Build Scalable, AI-Driven Products That Transform Your Business
-                </h1>
-
-                <p className="text-lg text-subtitle-theme mb-8 max-w-3xl mx-auto">
-                  Transform your ideas into reality with our AI-powered software solutions and high-performance websites. Partner with our team of experts in Kathmandu, Nepal, to drive innovation.
-                </p>
-
-                {/* Call to Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 mt-8 sm:mt-16">
-                  <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                    Schedule Consultation
-                  </CTAButton>
-                  <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/Products" className="w-full sm:w-auto">
-                    See Our Products
-                  </CTAButton>
+                {/* Right side - Hero Illustration (40%) */}
+                <div className="flex-7 lg:flex-2 w-full max-w-sm mx-auto lg:mx-0 lg:max-w-none lg:ml-auto">
+                  <div className="relative w-full aspect-square">
+                    <Image
+                      src="/hero_illus.png"
+                      alt="AI and Technology Illustration"
+                      fill
+                      className="object-contain lg:object-right"
+                      priority
+                    />
+                  </div>
                 </div>
               </div>
-
-
             </div>
           </div>
 

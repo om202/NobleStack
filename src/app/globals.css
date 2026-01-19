@@ -387,3 +387,41 @@ a {
 .pause-on-hover:hover {
   animation-play-state: paused;
 }
+/* Shine animation for CTA buttons */
+@keyframes shine {
+  0% {
+    transform: translateX(-200%) skewX(-15deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+  }
+}
+
+/* Border spin animation for rotating shine effect */
+@property --shine-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes border-spin {
+  0% {
+    --shine-angle: 0deg;
+  }
+  100% {
+    --shine-angle: 360deg;
+  }
+}
+
+/* Engraved text effect for hero title */
+.text-engraved {
+  text-shadow: 
+    0 1px 0 rgba(255, 255, 255, 0.1),
+    0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.dark .text-engraved {
+  text-shadow: 
+    0 1px 0 rgba(0, 0, 0, 0.8),
+    0 -1px 0 rgba(255, 255, 255, 0.1);
+}

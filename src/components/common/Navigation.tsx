@@ -73,7 +73,7 @@ export default function Navigation() {
       {/* Top Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-4 pointer-events-none">
         <div className="max-w-7xl mx-auto flex justify-center w-full">
-          <div className="w-full sm:w-auto flex items-center justify-between sm:justify-center gap-2 sm:gap-4 py-2 px-3 sm:px-4 bg-nav-bg backdrop-blur-md border border-nav-border rounded-full shadow-2xl pointer-events-auto transition-all duration-300">
+          <div className="w-full flex items-center justify-between gap-2 sm:gap-4 py-2 px-3 sm:px-4 bg-nav-bg backdrop-blur-md border border-nav-border rounded-full shadow-2xl pointer-events-auto transition-all duration-300">
             {/* Logo Section */}
             <Link href="/" className="flex items-center gap-2 flex-shrink-0 group">
               <Image
