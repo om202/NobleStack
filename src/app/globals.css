@@ -18,11 +18,16 @@
   /* Custom Gray-850 - Between gray-800 and gray-900 */
   --color-gray-850: rgb(28 34 52);
 
-  /* Font family - IBM Plex Sans for body text */
+  /* IBM Carbon Design System Typography */
+
+  /* Font family - IBM Plex Sans (Primary - for UI and body text) */
   --font-sans: var(--font-ibm-plex-sans);
 
-  /* Font family - Lora for titles */
-  --font-serif: var(--font-lora);
+  /* Font family - IBM Plex Serif (Editorial - for headings and expressive content) */
+  --font-serif: var(--font-ibm-plex-serif);
+
+  /* Font family - IBM Plex Mono (Code - for code blocks and technical content) */
+  --font-mono: var(--font-ibm-plex-mono);
 
   /* Gradient utilities using Noble Blue */
   --gradient-blue-up: linear-gradient(to right, rgb(0 122 255), rgb(0 99 235));
@@ -187,6 +192,7 @@ html {
 }
 
 /* Improved typography line heights for better readability */
+/* IBM Carbon Design System - Typography for Headings */
 h1,
 h2,
 h3,
@@ -194,11 +200,21 @@ h4,
 h5,
 h6 {
   line-height: 1.3 !important;
-  /* Slightly tighter for headings */
-  font-family: var(--font-lora), serif !important;
-  /* Apply Lora to all headings */
-  font-weight: 500 !important;
-  /* Semibold weight for better hierarchy */
+  /* Slightly tighter for headings per Carbon standards */
+  font-family: var(--font-ibm-plex-sans), sans-serif !important;
+  /* IBM Plex Sans for headings (productive type scale) */
+  font-weight: 600 !important;
+  /* SemiBold (600) - Carbon's recommended weight for section headers */
+}
+
+/* IBM Plex Mono for code elements */
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-ibm-plex-mono), monospace !important;
+  font-weight: 400 !important;
+  /* Regular weight for code */
 }
 
 p,
