@@ -33,7 +33,7 @@ export default function Testimonials() {
 
     return (
         <section id="testimonials" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme transition-colors">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="What Our Clients Say"
                     description="Don't just take our word for it. Here's what business leaders across Nepal say about working with Noble Stack."

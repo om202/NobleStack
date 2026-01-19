@@ -4,7 +4,7 @@ import CTAButton from '../../../../components/CTAButton';
 export default function CTASection() {
     return (
         <section className="relative overflow-hidden">
-            <div className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+            <div className="max-w-7xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
                 <div className="relative rounded-3xl overflow-hidden">
                     {/* Background Image */}
                     <div className="absolute inset-0">

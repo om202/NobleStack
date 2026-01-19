@@ -30,7 +30,7 @@ export default function ServicesSection() {
 
     return (
         <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <SectionHeader
                     title="Mobile Development Services"

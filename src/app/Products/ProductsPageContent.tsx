@@ -24,7 +24,7 @@ export default function ProductsPageContent() {
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
             {/* Vibe AI Section (with Page Header) */}
             <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="py-8 px-3 pt-28 sm:py-12 sm:px-4 sm:pt-32 md:pt-40 bg-card-theme border-b border-theme">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-7xl mx-auto">
                     <h1 className="sr-only">Our Portfolio</h1>
 
                     {/* Page Header */}
@@ -124,7 +124,7 @@ export default function ProductsPageContent() {
 
             {/* Create Profile Pic Web Section */}
             <section id="create-profile-pic" aria-label="Create Profile Pic" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-7xl mx-auto">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -210,7 +210,7 @@ export default function ProductsPageContent() {
 
             {/* Loopn Section */}
             <section id="loopn" aria-label="Loopn" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-7xl mx-auto">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -295,7 +295,7 @@ export default function ProductsPageContent() {
 
             {/* Auto Captions Section */}
             <section id="auto-captions" aria-label="Auto Captions" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-7xl mx-auto">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image

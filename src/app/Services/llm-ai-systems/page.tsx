@@ -91,7 +91,7 @@ export default function LLMAISystems() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+            <section className="max-w-7xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     AI Capabilities We Deliver
                 </h2>
@@ -104,7 +104,7 @@ export default function LLMAISystems() {
             </section>
 
             {/* Technologies Section */}
-            <section className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+            <section className="max-w-7xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-16">
                     Key Technologies
                 </h2>
@@ -131,7 +131,7 @@ export default function LLMAISystems() {
                 </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+            <section className="max-w-7xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
                 <h2 className="text-xl md:text-2xl font-bold text-main-theme text-center mb-12">
                     Real-World Applications
                 </h2>
@@ -146,7 +146,7 @@ export default function LLMAISystems() {
             </section>
 
             <section className="relative overflow-hidden">
-                <div className="max-w-6xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+                <div className="max-w-7xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
                     <div className="relative rounded-3xl overflow-hidden">
                         {/* Background Image */}
                         <div className="absolute inset-0">

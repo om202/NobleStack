@@ -13,7 +13,7 @@ export default function EndToEndSection() {
 
     return (
         <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="End-to-End Full-Stack Product Engineering"
                     description="Our comprehensive product engineering services cover every aspect of building successful digital products."
