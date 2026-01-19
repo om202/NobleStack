@@ -68,7 +68,7 @@ export default function SocialBadges() {
         <section className="max-w-7xl mx-auto px-3 pb-8 sm:px-4 sm:pb-12 transition-colors duration-300">
             <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
                 <header className="text-center mb-8">
-                    <h2 className="text-2xl md:text-3xl font-bold text-main-theme mb-6">
+                    <h2 className="text-2xl md:text-3xl text-main-theme mb-6 font-serif">
                         Find us on
                     </h2>
                     <p className="text-sm sm:text-base text-subtitle-theme max-w-3xl mx-auto">

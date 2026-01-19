@@ -58,7 +58,7 @@ export default function HeroSection() {
     <section className="min-h-screen">
       {/* Hero Section with Background - Full Width */}
       <div className="relative w-full overflow-hidden">
-        <div className="relative pt-32 pb-28 sm:pt-36 sm:pb-32 md:pt-44 md:pb-40 hero-gradient-bg">
+        <div className="relative pt-24 pb-20 sm:pt-28 sm:pb-24 md:pt-32 md:pb-28 hero-gradient-bg">
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4">
             <div className="relative">
@@ -69,15 +69,15 @@ export default function HeroSection() {
                   <Image
                     src="/nbl.png"
                     alt="Noble Stack Logo"
-                    width={48}
-                    height={48}
+                    width={40}
+                    height={40}
                     className="rounded-lg"
                     priority
                   />
-                  <span className="text-3xl font-bold text-main-theme tracking-tight">Noble Stack</span>
+                  <span className="text-3xl font-medium text-main-theme tracking-tight">Noble Stack</span>
                 </div>
 
-                <h1 className="text-[32px] md:text-[45px] font-bold mb-6 leading-tight max-w-4xl mx-auto text-main-theme">
+                <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight max-w-4xl mx-auto text-main-theme font-serif">
                   We Build Scalable, AI-Driven Products That Transform Your Business
                 </h1>
 

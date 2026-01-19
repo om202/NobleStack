@@ -98,7 +98,7 @@ export default function VideoGallery() {
                                     />
                                 </div>
                                 <div className="p-4">
-                                    <h3 className="text-sm font-semibold text-main-theme line-clamp-2">
+                                    <h3 className="text-sm text-main-theme line-clamp-2 font-serif">
                                         {video.title}
                                     </h3>
                                 </div>
