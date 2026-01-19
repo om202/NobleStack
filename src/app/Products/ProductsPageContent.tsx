@@ -22,8 +22,8 @@ import SectionHeader from "../../components/SectionHeader";
 export default function ProductsPageContent() {
     return (
         <main className="min-h-screen bg-page-theme transition-colors duration-300">
-            {/* Vibe AI Section (with Page Header) */}
-            <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="py-8 px-3 pt-28 sm:py-12 sm:px-4 sm:pt-32 md:pt-40 bg-card-theme border-b border-theme">
+            {/* npgo.to Section (with Page Header) */}
+            <section id="npgoto" aria-label="npgo.to" className="py-8 px-3 pt-28 sm:py-12 sm:px-4 sm:pt-32 md:pt-40 bg-card-theme border-b border-theme">
                 <div className="max-w-7xl mx-auto">
                     <h1 className="sr-only">Our Portfolio</h1>
 
@@ -38,7 +38,95 @@ export default function ProductsPageContent() {
                     {/* Spacer */}
                     <div className="h-8 sm:h-12 md:h-16" />
 
-                    {/* Vibe AI Content */}
+                    {/* npgo.to Content */}
+                    <header className="text-center mb-12">
+                        <div className="flex flex-col items-center justify-center gap-4 mb-6">
+                            <Image
+                                src="/npgoto.webp"
+                                alt="npgo.to Logo"
+                                width={112}
+                                height={112}
+                                className="rounded-2xl"
+                            />
+                            <h2 className="text-xl md:text-2xl font-bold leading-tight text-main-theme">
+                                npgo.to
+                            </h2>
+                        </div>
+                        <div className="space-y-4 mb-12 max-w-4xl mx-auto">
+                            <p className="text-base text-subtitle-theme leading-relaxed">
+                                Free URL shortener and QR code generator made for Nepal and Nepali businesses.
+                                Create short, memorable links in seconds and track every click with real-time analytics.
+                                Sign in with Google to manage all your links from one powerful dashboard—no subscriptions, no complicated setup.
+                            </p>
+                        </div>
+
+                        {/* Screenshot */}
+                        <div className="mb-12 flex justify-center">
+                            <figure className="rounded-xl border border-theme shadow-lg overflow-hidden max-w-4xl w-full">
+                                <Image
+                                    src="/npgoto_screen.webp"
+                                    alt="npgo.to Interface"
+                                    width={1200}
+                                    height={675}
+                                    className="w-full h-auto"
+                                    priority
+                                />
+                            </figure>
+                        </div>
+
+                        {/* Web Link Button */}
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <a
+                                href="https://npgo.to/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block"
+                            >
+                                <CTAButton variant="primary" icon={Globe} className="w-full sm:w-auto text-lg px-10 py-5">
+                                    Start Shortening Free
+                                </CTAButton>
+                            </a>
+                        </div>
+                    </header>
+
+                    {/* Features Section */}
+                    <div className="mb-8">
+                        <h3 className="text-lg md:text-xl font-bold text-center text-main-theme mb-12">
+                            Why npgo.to?
+                        </h3>
+
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <ServiceCard
+                                name="Free Forever"
+                                description="No hidden fees, no subscriptions. Create unlimited short links completely free."
+                                icon={Coins}
+                            />
+                            <ServiceCard
+                                name="Made for Nepal"
+                                description="Built specifically for Nepali businesses and creators with local needs in mind."
+                                icon={Globe}
+                            />
+                            <ServiceCard
+                                name="Instant QR Codes"
+                                description="Get a QR code for every link automatically. Perfect for print, posters, and offline sharing."
+                                icon={Zap}
+                            />
+                            <ServiceCard
+                                name="Real-Time Analytics"
+                                description="Track clicks, view stats, and understand your audience with powerful analytics dashboard."
+                                icon={TrendingUp}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Dark gap spacer */}
+            <div className="h-6 sm:h-8 bg-page-theme" />
+
+            {/* Vibe AI Section */}
+            <section id="vibe-ai" aria-label="Vibe AI Photo Editor" className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
+                <div className="max-w-7xl mx-auto">
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
@@ -67,7 +155,6 @@ export default function ProductsPageContent() {
                                     width={300}
                                     height={650}
                                     className="w-full h-auto"
-                                    priority
                                 />
                             </figure>
                         </div>

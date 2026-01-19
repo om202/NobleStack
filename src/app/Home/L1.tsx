@@ -116,8 +116,67 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Expertise Section - Overlapping Hero */}
-      <section id="expertise" aria-label="Our Expertise" className="max-w-7xl mx-auto px-3 -mt-12 sm:-mt-16 md:-mt-20 relative z-20">
+      {/* npgo.to Section - Overlapping Hero */}
+      <section id="npgoto" aria-label="npgo.to - Free URL Shortener for Nepal" className="max-w-7xl mx-auto px-3 -mt-12 sm:-mt-16 md:-mt-20 relative z-20">
+        <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
+          <div className="flex flex-col md:flex-row gap-8 items-center">
+            {/* Left side - Logo and Description */}
+            <div className="flex-[2] space-y-6">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/npgoto.webp"
+                  alt="npgo.to Logo"
+                  width={64}
+                  height={64}
+                  className="rounded-lg"
+                />
+                <div>
+                  <h2 className="text-3xl font-serif text-main-theme mb-2">New Product Launch</h2>
+                  <p className="text-lg font-semibold text-subtitle-theme">npgo.to - Free URL Shortener for Nepal</p>
+                </div>
+              </div>
+
+              <p className="text-base text-subtitle-theme leading-relaxed">
+                Stop wasting time with complicated URL shorteners. Get your free, Nepal-made URL shortener and QR code generator built specifically for Nepali businesses.
+                Start shortening in seconds, track every click with real-time analytics, and manage everything from one powerful dashboard.
+                Join hundreds of Nepali businesses already sharing smarter with npgo.to.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <CTAButton
+                  variant="secondary"
+                  href="https://npgo.to/"
+                  icon={ArrowRight}
+                  className="w-full sm:w-auto"
+                >
+                  Try npgo.to Now
+                </CTAButton>
+              </div>
+            </div>
+
+            {/* Right side - Screenshot */}
+            <div className="flex-1 w-full max-w-md">
+              <a
+                href="https://npgo.to/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-xl overflow-hidden border border-theme shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <Image
+                  src="/npgoto_screen.webp"
+                  alt="npgo.to Screenshot"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Expertise Section */}
+      <section id="expertise" aria-label="Our Expertise" className="max-w-7xl mx-auto px-3 pb-4 sm:px-4 sm:pb-8">
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
           <SectionHeader
             title="Our Expertise"
@@ -178,18 +237,18 @@ export default function HeroSection() {
               />
             </a>
 
-            {/* Create Profile Pic */}
+            {/* npgo.to */}
             <a
-              href="https://createprofilepic.com/"
+              href="https://npgo.to/"
               target="_blank"
               rel="noopener noreferrer"
               className="block h-full"
             >
               <ServiceCard
-                name="Create Profile Pic"
-                description="Create stunning profile pictures for any platform. Powered by Google's Nano Banana AI."
-                imageSrc="/create_profile_pic_icon.png"
-                imageAlt="Create Profile Pic"
+                name="npgo.to"
+                description="Free URL shortener and QR code generator made for Nepal. Shorten links instantly and track clicks."
+                imageSrc="/npgoto.webp"
+                imageAlt="npgo.to"
               />
             </a>
 
