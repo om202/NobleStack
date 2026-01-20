@@ -79,7 +79,7 @@ export default function HeroSection() {
                 {/* Left side - Text Content (65%) */}
                 <div className="flex-13 lg:flex-13 w-full">
                   <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight text-center lg:text-left text-main-theme font-serif text-engraved">
-                    We Build Scalable, AI-Driven Products That Transform Your Business
+                    We Build Scalable, AI-Driven Products For Your Business
                   </h1>
 
                   <p className="text-lg text-subtitle-theme mb-8 text-center lg:text-left">
@@ -132,15 +132,14 @@ export default function HeroSection() {
                   className="rounded-lg"
                 />
                 <div>
-                  <h2 className="text-3xl font-serif text-main-theme mb-2">New Product Launch</h2>
+                  <h2 className="text-2xl font-serif text-main-theme mb-2">New Product Launch</h2>
                   <p className="text-lg font-semibold text-subtitle-theme">npgo.to - Free URL Shortener for Nepal</p>
                 </div>
               </div>
 
               <p className="text-base text-subtitle-theme leading-relaxed">
-                Stop wasting time with complicated URL shorteners. Get your free, Nepal-made URL shortener and QR code generator built specifically for Nepali businesses.
-                Start shortening in seconds, track every click with real-time analytics, and manage everything from one powerful dashboard.
-                Join hundreds of Nepali businesses already sharing smarter with npgo.to.
+                Stop wasting time with complicated URL shorteners. Get your free, Nepal-made URL shortener and QR code generator built for Nepali businesses.
+                Shorten URLs in seconds and manage everything from one dashboard.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
