@@ -113,6 +113,7 @@ export const viewport: Viewport = {
 };
 
 import { ThemeProvider } from "../components/theme/ThemeProvider";
+import SmoothScroll from "../components/common/SmoothScroll";
 
 export default function RootLayout({
   children,
@@ -238,6 +239,7 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
+          <SmoothScroll />
           <DeviceTracker />
           <div className="min-h-screen">
             <Navigation />
