@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@import "lenis/dist/lenis.css";
 
 /* Noble Blue Colors - Pure, vibrant blue inspired by Apple iOS & Google Material */
 @theme {
