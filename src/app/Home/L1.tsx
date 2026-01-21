@@ -16,7 +16,7 @@ import Image from "next/image";
 import ServiceCard from "../../components/ServiceCard";
 import CTAButton from "../../components/CTAButton";
 import SectionHeader from "../../components/SectionHeader";
-import NetworkBackground from "../../components/NetworkBackground";
+import VantaBackground from "../../components/VantaBackground";
 
 export default function HeroSection() {
 
@@ -60,54 +60,30 @@ export default function HeroSection() {
       {/* Hero Section with Network Background - Full Width */}
       <div className="relative w-full overflow-hidden">
         <div className="relative pt-24 pb-20 sm:pt-28 sm:pb-24 md:pt-32 md:pb-28 hero-gradient-bg">
-          {/* Network Background Effect - Layered on top */}
-          <NetworkBackground
-            particleCount={32}
-            particleColor="rgba(0, 122, 255, 0.7)"
-            lineColor="rgba(0, 122, 255, 0.65)"
-            particleSize={2.5}
-            lineWidth={3}
-            connectionDistance={250}
-            speed={0.4}
-          />
+          {/* Vanta.js DOTS Background Effect - Layered on gradient */}
+          <VantaBackground />
 
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4">
             <div className="relative z-10">
-              {/* 60/40 Split Layout */}
-              <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
-                {/* Left side - Text Content (65%) */}
-                <div className="flex-13 lg:flex-13 w-full">
-                  <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight text-center lg:text-left text-main-theme font-serif text-engraved">
-                    We Build Scalable, AI-Driven Products For Your Business
-                  </h1>
+              {/* Left-aligned on desktop, centered on mobile */}
+              <div className="flex flex-col items-center text-center lg:items-start lg:text-left max-w-2xl mx-auto lg:mx-0">
+                <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight text-main-theme font-serif text-engraved">
+                  We Build Scalable, AI-Driven Products For Your Business
+                </h1>
 
-                  <p className="text-lg text-subtitle-theme mb-8 text-center lg:text-left">
-                    <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Transform your ideas into reality with our AI-powered software solutions and high-performance websites. Partner with our team of experts in Kathmandu, Nepal, to drive innovation.
-                  </p>
+                <p className="text-lg text-subtitle-theme mb-8">
+                  <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Transform your ideas into reality with our AI-powered software solutions and high-performance websites. Partner with our team of experts in Kathmandu, Nepal, to drive innovation.
+                </p>
 
-                  {/* Call to Action Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10 mt-8 sm:mt-16">
-                    <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26" shine>
-                      Schedule Consultation
-                    </CTAButton>
-                    <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/Products" className="w-full sm:w-auto">
-                      See Our Products
-                    </CTAButton>
-                  </div>
-                </div>
-
-                {/* Right side - Hero Illustration (35%) */}
-                <div className="flex-7 lg:flex-7 w-full max-w-xs mx-auto lg:mx-0 lg:max-w-none lg:ml-auto">
-                  <div className="relative w-full aspect-square">
-                    <Image
-                      src="/hero_illus.png"
-                      alt="AI and Technology Illustration"
-                      fill
-                      className="object-contain lg:object-right"
-                      priority
-                    />
-                  </div>
+                {/* Call to Action Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start mb-10 mt-8 sm:mt-16">
+                  <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26" shine>
+                    Schedule Consultation
+                  </CTAButton>
+                  <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/Products" className="w-full sm:w-auto">
+                    See Our Products
+                  </CTAButton>
                 </div>
               </div>
             </div>
