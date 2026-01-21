@@ -58,7 +58,10 @@ const VantaBackground: React.FC<VantaBackgroundProps> = ({ className = '' }) => 
                 minHeight: 200.00,
                 minWidth: 200.00,
                 scale: 1.00,
-                scaleMobile: 1.00
+                scaleMobile: 1.00,
+                color: 0x007aff,
+                backgroundColor: 0x000000,
+                backgroundAlpha: 0
             });
         }
 
