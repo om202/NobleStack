@@ -76,7 +76,7 @@ const VantaBackground: React.FC<VantaBackgroundProps> = ({ className = '' }) => 
     return (
         <div
             ref={vantaRef}
-            className={`absolute inset-0 ${className}`}
+            className={`absolute inset-0 opacity-20 md:opacity-75 ${className}`}
             style={{
                 pointerEvents: 'none',
                 width: '100%',
