@@ -1,10 +1,31 @@
 import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
+import fs from 'fs'
+import path from 'path'
+
+/**
+ * Dynamically discover all service pages from the Services directory
+ */
+function getServicePages(): string[] {
+  const servicesDir = path.join(process.cwd(), 'src/app/Services')
+
+  try {
+    const entries = fs.readdirSync(servicesDir, { withFileTypes: true })
+
+    // Filter for directories only (each service sub-page is a directory with page.tsx)
+    return entries
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => entry.name)
+  } catch (error) {
+    console.error('Error reading Services directory:', error)
+    return []
+  }
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.noblestack.io'
 
-  // Get all posts for dynamic sitemap generation
+  // Get all blog posts for dynamic sitemap generation
   const posts = getAllPosts(['slug', 'date'])
 
   const blogUrls = posts.map((post) => ({
@@ -12,6 +33,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.date),
     changeFrequency: 'weekly' as const,
     priority: 0.6,
+  }))
+
+  // Get all service pages dynamically
+  const servicePages = getServicePages()
+  const serviceUrls = servicePages.map((serviceName) => ({
+    url: `${baseUrl}/Services/${serviceName}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
   }))
 
   return [
@@ -32,6 +62,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
+    },
+    // Dynamically added service sub-pages
+    ...serviceUrls,
+    {
+      url: `${baseUrl}/Products`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/Career`,
