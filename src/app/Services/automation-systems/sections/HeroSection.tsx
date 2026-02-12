@@ -45,7 +45,9 @@ export default function HeroSection() {
 
                 {/* Description */}
                 <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-                    We design and build end-to-end automation systems that eliminate repetitive work, reduce human error, and scale seamlessly with your business. From no-code workflows to custom automation pipelines, we help companies automate business logic, background jobs, integrations, and reporting — allowing teams to focus on high-impact work instead of manual processes.
+                    At Noble Stack, we design and build end-to-end automation systems that eliminate repetitive work, reduce human error, and scale seamlessly with your business.
+From no-code workflows to custom automation pipelines, we help companies automate business logic, background jobs, integrations, and reporting  allowing teams to focus on high-impact work instead of manual processes.
+
                 </p>
             </div>
         </section>
