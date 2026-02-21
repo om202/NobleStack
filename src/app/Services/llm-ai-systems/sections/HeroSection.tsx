@@ -8,8 +8,8 @@ export default function HeroSection() {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
-                    src="/services/automation.jpg"
-                    alt="Automation Systems"
+                    src="/services/llm.jpg"
+                    alt="LLM-Powered AI Systems"
                     fill
                     className="object-cover"
                     priority
@@ -40,12 +40,20 @@ export default function HeroSection() {
 
                 {/* Title */}
                 <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
-                    Automation Systems & Workflow Automation Services
+                    LLM-Powered AI Systems Company
                 </h1>
 
+                {/* Subtitle */}
+                <p className="text-lg text-white/90 mb-4 max-w-3xl mx-auto">
+                    Enterprise-Grade AI Systems That Reason, Retrieve, and Respond
+                </p>
+
                 {/* Description */}
-                <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-                    At Noble Stack, we design and build end-to-end automation systems that eliminate repetitive work, reduce human error, and scale seamlessly with your business. From no-code workflows to custom automation pipelines, we help companies automate business logic, background jobs, integrations, and reporting—allowing teams to focus on high-impact work instead of manual processes.
+                <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+                    Noble Stack is an LLM-powered AI systems company designing and deploying production-ready artificial intelligence solutions for startups, SaaS companies, and enterprises. We build intelligent systems that combine large language models, retrieval pipelines, and AI orchestration to deliver accurate, scalable, and secure outcomes.
+                </p>
+                <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed mt-4">
+                    Our LLM AI systems integrate seamlessly into your products, platforms, and internal workflows — enabling advanced reasoning, contextual responses, and knowledge-driven automation at scale. We focus on real-world AI performance, not demos.
                 </p>
             </div>
         </section>

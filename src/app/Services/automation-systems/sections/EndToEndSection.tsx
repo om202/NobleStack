@@ -14,7 +14,7 @@ export default function EndToEndSection() {
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="End-to-End Automation Systems That Scale"
-                    description="Our automation systems are designed to deliver measurable business value."
+                    description="Automation is not just about connecting tools. It is about building reliable systems that operate continuously, recover from failures, and evolve with your operations."
                     imageSrc="/undraw_software-engineer_xv60.svg"
                     imageAlt="End-to-End Automation Illustration"
                 />
