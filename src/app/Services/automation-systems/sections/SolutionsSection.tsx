@@ -9,22 +9,22 @@ export default function SolutionsSection() {
         {
             icon: Zap,
             name: "No-Code & Low-Code Workflow Automation",
-            description: "We design powerful workflows using no-code and low-code platforms for rapid automation. Zapier, Make (Integromat), and n8n workflows. Multi-step automation with conditional logic. Cross-platform integrations and data synchronization. Error handling, retries, and fallback logic.",
+            description: "We design powerful workflows using no-code and low-code platforms for rapid automation. Our workflow automation services include: Zapier, Make (Integromat), and n8n workflows; multi-step automation with conditional logic; cross-platform integrations and data synchronization; error handling, retries, and fallback logic. Outcome: Faster automation with lower development cost and easy maintenance.",
         },
         {
             icon: Code,
             name: "Custom Automation Scripts",
-            description: "For advanced or performance-critical workflows, we build fully custom automation systems. Python and Node.js automation scripts. Scheduled jobs and cron task management. Background workers and job queues. Cloud Functions on AWS Lambda and Google Cloud Functions.",
+            description: "For advanced or performance-critical workflows, we build fully custom automation systems. Our custom automation capabilities include: Python and Node.js automation scripts; scheduled jobs and cron task management; background workers and job queues; Cloud Functions on AWS Lambda and Google Cloud Functions. Outcome: Flexible, scalable automation tailored to complex business logic.",
         },
         {
             icon: LinkIcon,
             name: "API & Service Integrations",
-            description: "We connect your tools, platforms, and services into a unified automation ecosystem. Gmail, Slack, and Microsoft Teams automation. Stripe and PayPal payment workflows. Salesforce and HubSpot CRM synchronization. Custom API development and webhook handling.",
+            description: "We connect your tools, platforms, and services into a unified automation ecosystem. Our integration services include: Gmail, Slack, and Microsoft Teams automation; Stripe and PayPal payment workflows; Salesforce and HubSpot CRM synchronization; custom API development and webhook handling. Outcome: Seamless data flow across your entire tech stack.",
         },
         {
             icon: BarChart,
             name: "Real-Time Dashboards & Admin Panels",
-            description: "We build dashboards to monitor, control, and manage automation systems. React-based admin panels and control systems. Real-time workflow monitoring and alerts. Analytics and reporting dashboards. Manual overrides and approval workflows.",
+            description: "We build dashboards to monitor, control, and manage automation systems. Our dashboard solutions include: React-based admin panels and control systems; real-time workflow monitoring and alerts; analytics and reporting dashboards; manual overrides and approval workflows. Outcome: Full visibility and control over automated processes.",
         },
     ];
 

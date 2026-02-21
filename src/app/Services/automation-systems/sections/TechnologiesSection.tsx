@@ -12,7 +12,7 @@ export default function TechnologiesSection() {
                 />
 
                 <div className="bg-subtle-theme rounded-2xl p-8 md:p-12 border border-theme">
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div>
                             <h3 className="text-xl font-bold text-main-theme mb-3">Workflow Automation</h3>
                             <p className="text-lg text-main-theme/80">Zapier, Make, n8n</p>
@@ -34,8 +34,20 @@ export default function TechnologiesSection() {
                             <p className="text-lg text-main-theme/80">Airtable, Google Sheets, Databases</p>
                         </div>
                         <div>
-                            <h3 className="text-xl font-bold text-main-theme mb-3">APIs & Messaging</h3>
-                            <p className="text-lg text-main-theme/80">REST APIs, Webhooks, Redis, Message Queues</p>
+                            <h3 className="text-xl font-bold text-main-theme mb-3">Messaging</h3>
+                            <p className="text-lg text-main-theme/80">Redis, Message Queues</p>
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-main-theme mb-3">APIs</h3>
+                            <p className="text-lg text-main-theme/80">REST APIs, Webhooks</p>
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-main-theme mb-3">Admin Tools</h3>
+                            <p className="text-lg text-main-theme/80">Retool, Custom Admin Panels</p>
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-main-theme mb-3">Monitoring</h3>
+                            <p className="text-lg text-main-theme/80">Error handling, logging, alerts</p>
                         </div>
                     </div>
                 </div>

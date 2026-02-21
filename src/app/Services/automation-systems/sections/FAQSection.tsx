@@ -14,23 +14,23 @@ export default function FAQSection() {
     const faqs = [
         {
             question: "What is an automation system?",
-            answer: "An automation system is a set of workflows, scripts, and integrations that perform tasks automatically without manual intervention. These systems can handle repetitive processes like data entry, report generation, customer notifications, inventory management, and cross-platform synchronization. By automating routine tasks, businesses save time, reduce errors, and allow teams to focus on strategic work that drives growth.",
+            answer: "An automation system is a set of workflows, scripts, and integrations that perform tasks automatically without manual intervention.",
         },
         {
             question: "Do you use no-code or custom development?",
-            answer: "We use both. No-code tools like Zapier, Make, and n8n for speed and rapid deployment, and custom code when scalability or complexity requires it. This hybrid approach allows us to deliver quick wins with no-code solutions while building robust, enterprise-grade automations with custom development. We evaluate each use case to determine the most efficient and maintainable solution for your specific needs.",
+            answer: "We use both. No-code tools for speed and custom code when scalability or complexity requires it.",
         },
         {
             question: "Can you automate existing tools?",
-            answer: "Yes. We integrate and automate existing platforms like CRMs, payment systems, and internal tools. Using APIs, webhooks, and custom integrations, we connect your existing software ecosystem to create seamless automated workflows. Whether it's Salesforce, Stripe, Shopify, QuickBooks, or proprietary internal systems, we build bridges between your tools to eliminate manual data transfer and streamline operations.",
+            answer: "Yes. We integrate and automate existing platforms like CRMs, payment systems, and internal tools.",
         },
         {
             question: "Are automation systems secure?",
-            answer: "Yes. We follow best practices for authentication, permissions, and data protection. All integrations use secure API keys, OAuth authentication, and encrypted connections to protect sensitive data. We implement role-based access controls, audit logging, and regular security reviews to ensure your automation systems meet industry compliance standards. Data privacy and security are built into every automation we create.",
+            answer: "Yes. We follow best practices for authentication, permissions, and data protection.",
         },
         {
             question: "Do you provide ongoing support?",
-            answer: "Yes. We monitor, maintain, and optimize automation systems over time. Our support includes proactive monitoring for failures, regular updates when APIs change, performance optimization as your data volume grows, and continuous improvements based on usage patterns. We provide detailed logging and alerting so you're always aware of your automation health and can quickly address any issues that arise.",
+            answer: "Yes. We monitor, maintain, and optimize automation systems over time.",
         },
     ];
 
