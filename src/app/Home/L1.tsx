@@ -59,7 +59,7 @@ export default function HeroSection() {
     <section className="min-h-screen">
       {/* Hero Section with Network Background - Full Width */}
       <div className="relative w-full overflow-hidden">
-        <div className="relative pt-24 pb-20 sm:pt-28 sm:pb-24 md:pt-32 md:pb-28 hero-gradient-bg">
+        <div className="relative pt-28 pb-24 sm:pt-36 sm:pb-32 md:pt-44 md:pb-40 hero-gradient-bg">
           <CSSGlobe />
 
           {/* Content */}
