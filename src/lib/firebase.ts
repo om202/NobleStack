@@ -19,12 +19,15 @@ const db = getFirestore(app);
 const storage = getStorage(app);
 
 let analytics;
+// Defer analytics initialization to prevent main-thread blocking during page load
 if (typeof window !== "undefined") {
-    isSupported().then((supported) => {
-        if (supported) {
-            analytics = getAnalytics(app);
-        }
-    });
+    setTimeout(() => {
+        isSupported().then((supported) => {
+            if (supported) {
+                analytics = getAnalytics(app);
+            }
+        });
+    }, 5000); // 5 seconds delay ensures idle time
 }
 
 export { app, db, storage, analytics };

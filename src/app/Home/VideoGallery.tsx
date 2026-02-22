@@ -1,8 +1,74 @@
 "use client";
 
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import SectionHeader from "../../components/SectionHeader";
-import { useRef } from "react";
+import { useState, useRef } from "react";
+
+// Sub-component to handle the click-to-play facade
+function VideoCard({ video }: { video: { id: number, url: string, title: string, thumbnailUrl?: string } }) {
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    // Swap autoplay=false to autoplay=true when clicked so it instantly plays
+    const autoplayUrl = video.url.replace("autoplay=false", "autoplay=true");
+
+    // Extract video ID from URL (e.g., https://iframe.mediadelivery.net/embed/577800/777df40b-cc70...)
+    const urlObj = new URL(video.url);
+    const pathParts = urlObj.pathname.split('/');
+    const videoId = pathParts[pathParts.length - 1];
+
+    // Bunny Stream standard thumbnail URL constructed from the video ID
+    const thumbnailUrl = video.thumbnailUrl || `https://vz-8246bf27-db5.b-cdn.net/${videoId}/thumbnail.jpg`;
+
+    return (
+        <div
+            className="shrink-0 bg-card-theme rounded-2xl border border-theme hover:border-blue-500/50 transition-all duration-300 overflow-hidden group/video"
+            style={{ width: '294px' }}
+        >
+            <div
+                style={{ position: 'relative', paddingTop: '177.78%' }}
+                className="bg-subtle-theme cursor-pointer"
+                onClick={() => setIsPlaying(true)}
+            >
+                {isPlaying ? (
+                    <iframe
+                        src={autoplayUrl}
+                        title={video.title}
+                        loading="lazy"
+                        width="100%"
+                        height="100%"
+                        style={{
+                            border: 0,
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            height: '100%',
+                            width: '100%',
+                        }}
+                        allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+                        allowFullScreen
+                    />
+                ) : (
+                    <div
+                        className="absolute inset-0 flex flex-col items-center justify-center bg-slate-900 group-hover/video:opacity-90 transition-opacity bg-cover bg-center"
+                        style={{ backgroundImage: `url(${thumbnailUrl})` }}
+                    >
+                        <div className="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition-colors" />
+
+                        {/* Play Button */}
+                        <div className="relative z-10 w-16 h-16 rounded-full bg-blue-600/90 flex items-center justify-center text-white backdrop-blur-sm group-hover/video:scale-110 group-hover/video:bg-blue-500 transition-all duration-300 shadow-[0_0_30px_rgba(0,122,255,0.4)]">
+                            <Play className="w-8 h-8 ml-1 fill-white" />
+                        </div>
+                    </div>
+                )}
+            </div>
+            <div className="p-4">
+                <h3 className="text-sm text-main-theme line-clamp-2 font-serif group-hover/video:text-blue-500 transition-colors">
+                    {video.title}
+                </h3>
+            </div>
+        </div>
+    );
+}
 
 export default function VideoGallery() {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -27,6 +93,7 @@ export default function VideoGallery() {
             id: 4,
             url: "https://iframe.mediadelivery.net/embed/577800/5552ca92-1555-48e0-8227-c2b674ac888e?autoplay=false&loop=false&muted=false&preload=false&responsive=true&defaultQuality=480p&maxQuality=480p",
             title: "No Risk, No Future",
+            thumbnailUrl: "https://vz-8246bf27-db5.b-cdn.net/5552ca92-1555-48e0-8227-c2b674ac888e/thumbnail_aed4dda5.jpg",
         },
     ];
 
@@ -75,37 +142,7 @@ export default function VideoGallery() {
                         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                     >
                         {videos.map((video) => (
-                            <div
-                                key={video.id}
-                                className="shrink-0 bg-card-theme rounded-2xl border border-theme hover:border-blue-500/50 transition-all duration-300 overflow-hidden group/video"
-                                style={{ width: '294px' }}
-                            >
-                                {/* Bunny.net responsive embed pattern - 9:16 reel aspect ratio */}
-                                <div style={{ position: 'relative', paddingTop: '177.78%' }}>
-                                    <iframe
-                                        src={video.url}
-                                        title={video.title}
-                                        loading="lazy"
-                                        width="100%"
-                                        height="100%"
-                                        style={{
-                                            border: 0,
-                                            position: 'absolute',
-                                            top: 0,
-                                            left: 0,
-                                            height: '100%',
-                                            width: '100%',
-                                        }}
-                                        allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-                                        allowFullScreen
-                                    />
-                                </div>
-                                <div className="p-4">
-                                    <h3 className="text-sm text-main-theme line-clamp-2 font-serif">
-                                        {video.title}
-                                    </h3>
-                                </div>
-                            </div>
+                            <VideoCard key={video.id} video={video} />
                         ))}
                     </div>
 

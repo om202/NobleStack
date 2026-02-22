@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import nextDynamic from 'next/dynamic';
 import HeroSection from './sections/HeroSection';
 import WhyChooseSection from './sections/WhyChooseSection';
 import CapabilitiesSection from './sections/CapabilitiesSection';
@@ -6,8 +7,9 @@ import ApplicationsSection from './sections/ApplicationsSection';
 import HowWeWorkSection from './sections/HowWeWorkSection';
 import WhoWeWorkWithSection from './sections/WhoWeWorkWithSection';
 import TechnologiesSection from './sections/TechnologiesSection';
-import FAQSection from './sections/FAQSection';
 import CTASection from './sections/CTASection';
+
+const FAQSection = nextDynamic(() => import('./sections/FAQSection'));
 
 export const metadata: Metadata = {
     title: "LLM-Powered AI Systems Company | Enterprise AI Solutions – Noble Stack",
