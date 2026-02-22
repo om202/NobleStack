@@ -2,7 +2,7 @@
 title: "The Silent $500 Million Unicorn Hiding in the Himalayas"
 date: "2025-12-13"
 slug: "nepal-it-sector"
-coverImage: "/blog4.jpg"
+coverImage: "/blog4.webp"
 excerpt: "Everyone looks at Nepal and sees mountains. They are missing the point. A quiet digital revolution is turning the \"Roof of the World\" into one of Asia’s most efficient, high-value tech hubs."
 tags: ["Technology", "Economy", "Startups", "Nepal"]
 publisher: "Noble Stack Team"

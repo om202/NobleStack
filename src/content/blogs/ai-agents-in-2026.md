@@ -2,7 +2,7 @@
 title: "Living in 2026: Why My AI Agent Makes More Decisions Than I Do"
 date: "2025-12-28"
 slug: "ai-agents-in-2026"
-coverImage: "/blog6.jpg"
+coverImage: "/blog6.webp"
 excerpt: "It's not about ChatGPT anymore. It's about autonomous workers, letting go of control, and the weird reality of being the 'human in the loop.'"
 tags: ["AI", "AI Agents", "Technology", "Future"]
 publisher: "Noble Stack Team"

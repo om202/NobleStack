@@ -2,7 +2,7 @@
 title: "The Silicon Valley of the Himalayas: 17 Tech Companies Redefining Nepal in 2025"
 date: "2025-12-13"
 slug: "list-of-tech-companies-in-nepal"
-coverImage: "/blog5.jpg"
+coverImage: "/blog5.webp"
 excerpt: "When the world thinks of Nepal, the mind naturally drifts to the snowy peaks of Mount Everest. It rarely pictures high-end code being shipped to Boeing, AI models being fine-tuned for Microsoft, or a fintech sector processing $25 billion annually."
 tags: ["Technology", "Startups", "Nepal", "Companies"]
 publisher: "Noble Stack Team"

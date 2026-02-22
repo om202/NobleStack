@@ -2,7 +2,7 @@
 title: "The Hierarchy of Generative Models: A Complete Technical Guide"
 date: "2026-01-09"
 slug: "hierarchy-of-generative-models"
-coverImage: "/blog9.png"
+coverImage: "/blog9.webp"
 excerpt: "From GANs to Diffusion Models, from VAEs to Autoregressive LLMs—this comprehensive guide maps out the entire landscape of generative AI and explains how each family of models works."
 tags: ["AI", "Machine Learning", "Generative Models", "Deep Learning", "LLMs"]
 publisher: "Noble Stack Team"
