@@ -163,7 +163,22 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Hero Gradient Backgrounds removed - now using Next/Image with priority for LCP */
+/* Explicit Light/Dark Mode image toggles for Next-Themes compatibility */
+.light-mode-img {
+  display: block;
+}
+
+.dark .light-mode-img {
+  display: none;
+}
+
+.dark-mode-img {
+  display: none;
+}
+
+.dark .dark-mode-img {
+  display: block;
+}
 
 /* Service Card Overlay - Theme-aware */
 .service-card-overlay {

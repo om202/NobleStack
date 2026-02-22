@@ -119,9 +119,13 @@
         display: none;
     }
 
-    .globe-dot {
-        animation: none;
-        transform: rotateX(90deg) scale(0.8) translateZ(0px);
+    /* Use higher specificity to override both light and .dark mode dot styles */
+    .globe-dot,
+    .dark .globe-dot,
+    .globe-dot[class*="globe-dot-"],
+    .dark .globe-dot[class*="globe-dot-"] {
+        animation: none !important;
+        transform: rotateX(90deg) scale(0.8) translateZ(0px) !important;
     }
 }
 
