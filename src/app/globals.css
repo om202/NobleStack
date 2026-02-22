@@ -163,17 +163,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Hero Gradient Background - Theme-aware images */
-.hero-gradient-bg {
-  background-image: url('/hero_gradient_light.webp');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.dark .hero-gradient-bg {
-  background-image: url('/hero_gradient.webp');
-}
+/* Hero Gradient Backgrounds removed - now using Next/Image with priority for LCP */
 
 /* Service Card Overlay - Theme-aware */
 .service-card-overlay {

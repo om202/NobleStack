@@ -108,12 +108,17 @@
     background-color: #00c6ff;
 }
 
-/* Mobile: 50% opacity and disabled complex animations for performance */
+/* Mobile: Aggressive optimization for performance */
 @media (max-width: 767px) {
     .globe-sphere {
         opacity: 0.5;
     }
-    
+
+    /* On mobile, only render half the planes to reduce node count and rendering complexity */
+    .globe-plane:nth-child(odd) {
+        display: none;
+    }
+
     .globe-dot {
         animation: none;
         transform: rotateX(90deg) scale(0.8) translateZ(0px);
