@@ -59,7 +59,26 @@ export default function HeroSection() {
     <section className="min-h-screen">
       {/* Hero Section with Network Background - Full Width */}
       <div className="relative w-full overflow-hidden">
-        <div className="relative pt-28 pb-24 sm:pt-36 sm:pb-32 md:pt-44 md:pb-40 hero-gradient-bg">
+        {/* Preload Background Images for fast LCP setup */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/hero_gradient_light.webp"
+            alt="Hero Background"
+            fill
+            priority
+            quality={90}
+            className="object-cover object-center block dark:hidden"
+          />
+          <Image
+            src="/hero_gradient.webp"
+            alt="Hero Background"
+            fill
+            priority
+            quality={90}
+            className="object-cover object-center hidden dark:block"
+          />
+        </div>
+        <div className="relative pt-28 pb-24 sm:pt-36 sm:pb-32 md:pt-44 md:pb-40">
           <CSSGlobe />
 
           {/* Content */}
