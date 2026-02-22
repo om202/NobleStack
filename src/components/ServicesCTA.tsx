@@ -1,5 +1,3 @@
-"use client";
-
 import { Code, Rocket, Star } from "lucide-react";
 import CTAButton from "./CTAButton";
 
