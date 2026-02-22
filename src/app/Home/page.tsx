@@ -1,13 +1,15 @@
+import dynamic from 'next/dynamic';
 import HeroSection from "./L1";
 import FeaturesSection from "./L2";
 import MobileDevSection from "./L2_5";
 import ServicesSection from "./L3";
 import Testimonials from "./Testimonials";
-import VideoGallery from "./VideoGallery";
 import AboutUs from "./AboutUs";
 import SocialBadges from "./SocialBadges";
-import FAQSection from "./L4";
 import ContactCTA from "./ContactCTA";
+
+const VideoGallery = dynamic(() => import("./VideoGallery"));
+const FAQSection = dynamic(() => import("./L4"));
 
 export default function Home() {
   return (

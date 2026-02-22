@@ -105,6 +105,7 @@ export default function HeroSection() {
                   width={64}
                   height={64}
                   className="rounded-lg"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
                 <div>
                   <h2 className="text-2xl font-serif text-main-theme mb-2">New Product Launch</h2>
@@ -144,6 +145,7 @@ export default function HeroSection() {
                   height={600}
                   sizes="(max-width: 768px) 100vw, 800px"
                   className="w-full h-auto"
+                  style={{ width: '100%', height: 'auto' }}
                 />
               </a>
             </div>

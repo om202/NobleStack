@@ -43,13 +43,14 @@ export default function SectionHeader({
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
                 {/* Illustration */}
                 {imageSrc && (
-                    <div className={`w-full md:w-1/4 ${sizeClasses}`}>
+                    <div className={`w-full md:w-1/4 flex justify-center ${sizeClasses}`}>
                         <Image
                             src={imageSrc}
                             alt={imageAlt || title}
                             width={imageWidth}
                             height={imageHeight}
                             className="w-full h-auto"
+                            style={{ width: '100%', height: 'auto' }}
                             priority
                         />
                     </div>

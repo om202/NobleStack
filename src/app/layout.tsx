@@ -121,7 +121,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
       <head>
 
         {/* Website Schema */}
@@ -237,12 +237,12 @@ export default function RootLayout({
             </div>
           </div>
         </ThemeProvider>
-        {/* Google Analytics - deferred to after page is interactive */}
+        {/* Google Analytics - deferred to browser idle time */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-V3LXP1WCLF"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id="gtag-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
