@@ -77,7 +77,7 @@ export default function Navigation() {
             {/* Logo Section */}
             <Link href="/" className="flex items-center gap-2 flex-shrink-0 group">
               <Image
-                src="/nbl.png"
+                src="/nbl.webp"
                 alt="Noble Stack Logo"
                 width={32}
                 height={32}

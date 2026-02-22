@@ -25,7 +25,7 @@ export default function HeroSection() {
       title: "Full-Stack Product Engineering",
       description: "Robust, full-stack systems from frontend to backend to infrastructure with code quality and scalability at the core.",
       icon: SiReact,
-      backgroundImage: "/services/full-stack.jpg",
+      backgroundImage: "/services/full-stack.webp",
       gradientOverlay: "bg-gradient-to-br from-slate-100 via-blue-50 to-slate-100 dark:from-blue-900/60 dark:via-cyan-900/55 dark:to-indigo-900/60",
       href: "/Services/full-stack-engineering",
     },
@@ -33,7 +33,7 @@ export default function HeroSection() {
       title: "LLM-Powered AI Systems",
       description: "Systems that leverage cutting-edge language models to reason, retrieve, and respond seamlessly into your product.",
       icon: SiOpenai,
-      backgroundImage: "/services/llm.jpg",
+      backgroundImage: "/services/llm.webp",
       gradientOverlay: "bg-gradient-to-br from-slate-100 via-blue-50 to-slate-100 dark:from-blue-900/60 dark:via-cyan-900/55 dark:to-indigo-900/60",
       href: "/Services/llm-ai-systems",
     },
@@ -41,7 +41,7 @@ export default function HeroSection() {
       title: "End-to-End Automation Systems",
       description: "Automation pipelines that save time, reduce human error, and scale with your growth.",
       icon: SiZapier,
-      backgroundImage: "/services/automation.jpg",
+      backgroundImage: "/services/automation.webp",
       gradientOverlay: "bg-gradient-to-br from-slate-100 via-blue-50 to-slate-100 dark:from-blue-900/60 dark:via-cyan-900/55 dark:to-indigo-900/60",
       href: "/Services/automation-systems",
     },
@@ -49,7 +49,7 @@ export default function HeroSection() {
       title: "iOS & Android Apps",
       description: "Native and cross-platform mobile applications that deliver seamless experiences on iOS and Android.",
       icon: SiApple,
-      backgroundImage: "/services/mobile-apps.jpg",
+      backgroundImage: "/services/mobile-apps.webp",
       gradientOverlay: "bg-gradient-to-br from-slate-100 via-blue-50 to-slate-100 dark:from-blue-900/60 dark:via-cyan-900/55 dark:to-indigo-900/60",
       href: "/Services/mobile-apps",
     },
@@ -208,7 +208,7 @@ export default function HeroSection() {
               <ServiceCard
                 name="Vibe AI Photo Editor"
                 description="Professional photo editing made simple. Remove backgrounds and enhance images with AI."
-                imageSrc="/vibe.png"
+                imageSrc="/vibe.webp"
                 imageAlt="Vibe AI"
               />
             </a>
@@ -238,7 +238,7 @@ export default function HeroSection() {
               <ServiceCard
                 name="Loopn"
                 description="Professional Networking & Career Matching using AI. Resume matching for career growth."
-                imageSrc="/loopn_logo.png"
+                imageSrc="/loopn_logo.webp"
                 imageAlt="Loopn"
               />
             </a>
@@ -248,7 +248,7 @@ export default function HeroSection() {
               <ServiceCard
                 name="Noble Appointments"
                 description="Fully Nepali Bikram Sambat based calendar — specially built for Nepali businesses in mind!"
-                imageSrc="/noble-appointments-logo.png"
+                imageSrc="/noble-appointments-logo.webp"
                 imageAlt="Noble Appointments"
               />
               {/* Coming Soon Badge */}

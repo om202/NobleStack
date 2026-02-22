@@ -128,7 +128,7 @@ export default function ProductsPageContent() {
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
-                                src="/vibe.png"
+                                src="/vibe.webp"
                                 alt="Vibe AI Photo Editor Logo"
                                 width={112}
                                 height={112}
@@ -148,7 +148,7 @@ export default function ProductsPageContent() {
                         <div className="mb-12 flex justify-center">
                             <figure className="rounded-4xl border border-theme shadow-lg overflow-hidden max-w-[300px]">
                                 <Image
-                                    src="/vibe_screen.png"
+                                    src="/vibe_screen.webp"
                                     alt="Vibe AI Photo Editor interface"
                                     width={300}
                                     height={650}
@@ -213,7 +213,7 @@ export default function ProductsPageContent() {
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
-                                src="/create_profile_pic_icon.png"
+                                src="/create_profile_pic_icon.webp"
                                 alt="Create Profile Pic Logo"
                                 width={112}
                                 height={112}
@@ -234,7 +234,7 @@ export default function ProductsPageContent() {
                         <div className="mb-12 flex justify-center">
                             <figure className="rounded-xl border border-theme shadow-lg overflow-hidden max-w-4xl w-full">
                                 <Image
-                                    src="/cpp_screenshot.png"
+                                    src="/cpp_screenshot.webp"
                                     alt="Create Profile Pic Interface"
                                     width={1200}
                                     height={675}
@@ -299,7 +299,7 @@ export default function ProductsPageContent() {
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
-                                src="/loopn_logo.png"
+                                src="/loopn_logo.webp"
                                 alt="Loopn Logo"
                                 width={112}
                                 height={112}
@@ -319,7 +319,7 @@ export default function ProductsPageContent() {
                         <div className="mb-12 flex justify-center">
                             <figure className="rounded-xl border border-theme shadow-lg overflow-hidden max-w-4xl w-full">
                                 <Image
-                                    src="/loopn_screenshot.png"
+                                    src="/loopn_screenshot.webp"
                                     alt="Loopn Interface"
                                     width={1200}
                                     height={675}
@@ -384,7 +384,7 @@ export default function ProductsPageContent() {
                     <header className="text-center mb-12">
                         <div className="flex flex-col items-center justify-center gap-4 mb-6">
                             <Image
-                                src="/autosubai_icon.png"
+                                src="/autosubai_icon.webp"
                                 alt="Auto Captions Logo"
                                 width={112}
                                 height={112}
@@ -405,7 +405,7 @@ export default function ProductsPageContent() {
                         <div className="mb-12 flex justify-center">
                             <figure className="rounded-4xl border border-theme shadow-lg overflow-hidden max-w-[300px]">
                                 <Image
-                                    src="/autosubai_screen.png"
+                                    src="/autosubai_screen.webp"
                                     alt="Auto Captions Interface"
                                     width={300}
                                     height={650}

@@ -10,22 +10,22 @@ const badges = [
     },
     {
         name: "Clutch",
-        logo: "/clutch.png",
+        logo: "/clutch.webp",
         url: "https://clutch.co/profile/noble-stack",
     },
     {
         name: "Bizdire Nepal",
-        logo: "/bizdire.png",
+        logo: "/bizdire.webp",
         url: "https://www.bizdirenepal.com/noble-stack-pvt-ltd",
     },
     {
         name: "The Manifest",
-        logo: "/The Manifest_idzYxBbVCG_0.png",
+        logo: "/The Manifest_idzYxBbVCG_0.webp",
         url: "https://themanifest.com/company/noble-stack",
     },
     {
         name: "Crunchbase",
-        logo: "/crunchbase.jpg",
+        logo: "/crunchbase.webp",
         url: "https://www.crunchbase.com/organization/noble-stack-pvt-ltd",
     },
 ];

@@ -38,7 +38,7 @@ export default function Footer() {
             {/* Brand */}
             <div className="flex items-center gap-3">
               <Image
-                src="/nbl.png"
+                src="/nbl.webp"
                 alt="Noble Stack Logo"
                 width={40}
                 height={40}
