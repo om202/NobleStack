@@ -9,7 +9,7 @@ export default function CTASection() {
                     {/* Background Image */}
                     <div className="absolute inset-0">
                         <Image
-                            src="/services/llm.jpg"
+                            src="/services/llm.webp"
                             alt="LLM-Powered AI Systems"
                             fill
                             className="object-cover"

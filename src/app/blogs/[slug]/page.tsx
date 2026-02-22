@@ -125,7 +125,7 @@ export default async function BlogPostPage({ params }: Params) {
                                 <>
                                     <div className="relative w-12 h-12 rounded-full overflow-hidden border border-theme">
                                         <Image
-                                            src={post.author.picture || "/nbl.png"}
+                                            src={post.author.picture || "/nbl.webp"}
                                             alt={post.author.name}
                                             fill
                                             className="object-cover"

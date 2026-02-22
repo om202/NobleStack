@@ -392,7 +392,7 @@ export default function ContactPageContent() {
                                 <ServiceCard
                                     name="Google Review"
                                     description="Scan to review us on Google"
-                                    imageSrc="/google.png"
+                                    imageSrc="/google.webp"
                                     imageAlt="Google Logo"
                                 />
                             </div>
@@ -422,7 +422,7 @@ export default function ContactPageContent() {
 
                                 <div className="bg-white p-4 rounded-2xl inline-block mb-8 shadow-inner border border-theme">
                                     <img
-                                        src="/google-qr.png"
+                                        src="/google-qr.webp"
                                         alt="Google QR Code"
                                         className="w-48 h-48 md:w-64 md:h-64 object-contain"
                                     />

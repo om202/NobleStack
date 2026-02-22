@@ -8,7 +8,7 @@ export default function HeroSection() {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
-                    src="/services/full-stack.jpg"
+                    src="/services/full-stack.webp"
                     alt="Full-Stack Engineering"
                     fill
                     className="object-cover"

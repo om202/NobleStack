@@ -20,14 +20,14 @@ export default function AboutPageContent() {
             name: "Ved Prakash",
             role: "CEO",
             expertise: "Strategic Leadership\nBusiness Development",
-            image: "/ved.png",
+            image: "/ved.webp",
             bio: "",
         },
         {
             name: "Hesamullah",
             role: "Marketing Lead",
             expertise: "Growth Strategy\nDigital Marketing",
-            image: "/Hesamullah.png",
+            image: "/Hesamullah.webp",
             bio: "",
         },
     ];
@@ -119,7 +119,7 @@ export default function AboutPageContent() {
 
                         <figure className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-sm">
                             <Image
-                                src="/nepal.jpg"
+                                src="/nepal.webp"
                                 alt="Engineering Excellence in Nepal"
                                 fill
                                 className="object-cover"

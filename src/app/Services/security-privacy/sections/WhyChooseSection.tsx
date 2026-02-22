@@ -15,7 +15,7 @@ export default function WhyChooseSection() {
                 <SectionHeader
                     title="Why Choose Noble Stack for Application Security"
                     description="We bring deep expertise in application security and a commitment to building systems that protect your business and your users."
-                    imageSrc="/nbl.png"
+                    imageSrc="/nbl.webp"
                     imageAlt="Noble Stack Logo"
                     imageSize="small"
                 />

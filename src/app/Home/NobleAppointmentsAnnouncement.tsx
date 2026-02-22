@@ -29,7 +29,7 @@ export default function NobleAppointmentsAnnouncement() {
                         <div className="flex-shrink-0">
                             <div className="relative w-12 h-12 md:w-16 md:h-16">
                                 <Image
-                                    src="/noble-appointments-logo.png"
+                                    src="/noble-appointments-logo.webp"
                                     alt="Noble Appointments Logo"
                                     fill
                                     className="object-contain"

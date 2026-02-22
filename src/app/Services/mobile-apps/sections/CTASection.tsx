@@ -9,7 +9,7 @@ export default function CTASection() {
                     {/* Background Image */}
                     <div className="absolute inset-0">
                         <Image
-                            src="/services/mobile-apps.jpg"
+                            src="/services/mobile-apps.webp"
                             alt="Mobile Apps"
                             fill
                             className="object-cover"

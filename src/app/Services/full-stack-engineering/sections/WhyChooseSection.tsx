@@ -15,7 +15,7 @@ export default function WhyChooseSection() {
                 <SectionHeader
                     title="Why Choose Noble Stack"
                     description="We work as a long-term engineering partner, helping you evolve and scale your product over time."
-                    imageSrc="/nbl.png"
+                    imageSrc="/nbl.webp"
                     imageAlt="Noble Stack Logo"
                     imageSize="small"
                 />
