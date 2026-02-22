@@ -61,22 +61,26 @@ export default function HeroSection() {
       <div className="relative w-full overflow-hidden">
         {/* Preload Background Images for fast LCP setup */}
         <div className="absolute inset-0 z-0 pointer-events-none">
-          <Image
-            src="/hero_gradient_light.webp"
-            alt="Hero Background"
-            fill
-            priority
-            quality={90}
-            className="object-cover object-center block dark:hidden"
-          />
-          <Image
-            src="/hero_gradient.webp"
-            alt="Hero Background"
-            fill
-            priority
-            quality={90}
-            className="object-cover object-center hidden dark:block"
-          />
+          <div className="absolute inset-0 light-mode-img">
+            <Image
+              src="/hero_gradient_light.webp"
+              alt="Hero Background Light"
+              fill
+              priority
+              quality={90}
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="absolute inset-0 dark-mode-img">
+            <Image
+              src="/hero_gradient.webp"
+              alt="Hero Background Dark"
+              fill
+              priority
+              quality={90}
+              className="object-cover object-center"
+            />
+          </div>
         </div>
         <div className="relative pt-28 pb-24 sm:pt-36 sm:pb-32 md:pt-44 md:pb-40">
           <CSSGlobe />
