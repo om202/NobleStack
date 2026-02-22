@@ -12,15 +12,24 @@ const VantaBackground: React.FC<VantaBackgroundProps> = ({ className = '' }) => 
     const [scriptsLoaded, setScriptsLoaded] = useState(false);
 
     useEffect(() => {
-        // Load Three.js and Vanta.js scripts
-        const loadScripts = async () => {
+        // Defer loading until the main thread is idle — prevents TBT hit
+        const scheduleLoad = () => {
+            if ('requestIdleCallback' in window) {
+                (window as any).requestIdleCallback(() => loadScripts(), { timeout: 3000 });
+            } else {
+                // Fallback: delay 2s after load
+                setTimeout(loadScripts, 2000);
+            }
+        };
+
+        const loadScripts = () => {
             // Check if scripts are already loaded
             if ((window as any).THREE && (window as any).VANTA) {
                 setScriptsLoaded(true);
                 return;
             }
 
-            // Load Three.js
+            // Load Three.js (minified, ~600KB but deferred)
             const threeScript = document.createElement('script');
             threeScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js';
             threeScript.async = true;
@@ -30,7 +39,7 @@ const VantaBackground: React.FC<VantaBackgroundProps> = ({ className = '' }) => 
             vantaScript.src = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js';
             vantaScript.async = true;
 
-            // Wait for Three.js to load first
+            // Chain: Three.js first, then Vanta
             threeScript.onload = () => {
                 document.head.appendChild(vantaScript);
             };
@@ -42,7 +51,7 @@ const VantaBackground: React.FC<VantaBackgroundProps> = ({ className = '' }) => 
             document.head.appendChild(threeScript);
         };
 
-        loadScripts();
+        scheduleLoad();
     }, []);
 
     useEffect(() => {
@@ -76,7 +85,7 @@ const VantaBackground: React.FC<VantaBackgroundProps> = ({ className = '' }) => 
     return (
         <div
             ref={vantaRef}
-            className={`absolute inset-0 opacity-20 md:opacity-75 ${className}`}
+            className={`absolute inset-0 opacity-0 md:opacity-0 transition-opacity duration-1000 ${scriptsLoaded ? '!opacity-20 md:!opacity-75' : ''} ${className}`}
             style={{
                 pointerEvents: 'none',
                 width: '100%',
