@@ -11,6 +11,7 @@ export default function HeroSection() {
                     src="/services/mobile-apps.webp"
                     alt="Mobile Apps Development"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                 />

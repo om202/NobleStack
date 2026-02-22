@@ -11,6 +11,7 @@ export default function HeroSection() {
                     src="/services/llm.webp"
                     alt="LLM-Powered AI Systems"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                 />

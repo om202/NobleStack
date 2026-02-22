@@ -54,6 +54,7 @@ export default function DevOpsDeployment() {
                         src="/services/devops.webp"
                         alt="DevOps & Deployment"
                         fill
+                        sizes="100vw"
                         className="object-cover"
                         priority
                     />
@@ -156,6 +157,7 @@ export default function DevOpsDeployment() {
                                 src="/services/devops.webp"
                                 alt="DevOps & Deployment"
                                 fill
+                                sizes="100vw"
                                 className="object-cover"
                             />
                         </div>

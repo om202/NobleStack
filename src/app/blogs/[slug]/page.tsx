@@ -128,6 +128,7 @@ export default async function BlogPostPage({ params }: Params) {
                                             src={post.author.picture || "/nbl.webp"}
                                             alt={post.author.name}
                                             fill
+                                            sizes="48px"
                                             className="object-cover"
                                         />
                                     </div>
@@ -159,6 +160,7 @@ export default async function BlogPostPage({ params }: Params) {
                             src={post.coverImage}
                             alt={post.title}
                             fill
+                            sizes="(max-width: 1024px) 100vw, 1024px"
                             className="object-contain"
                             priority
                         />

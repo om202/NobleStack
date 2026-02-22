@@ -11,6 +11,7 @@ export default function HeroSection() {
                     src="/services/automation.webp"
                     alt="Automation Systems"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                 />

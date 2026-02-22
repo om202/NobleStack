@@ -142,6 +142,7 @@ export default function HeroSection() {
                   alt="npgo.to Screenshot"
                   width={800}
                   height={600}
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="w-full h-auto"
                 />
               </a>
