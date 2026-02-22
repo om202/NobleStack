@@ -25,7 +25,7 @@ export default function AboutPageContent() {
         },
         {
             name: "Dildar Hussain",
-            role: "Marketing Lead",
+            role: "SEO Strategist",
             expertise: "Growth Strategy\nDigital Marketing",
             image: "",
             bio: "",
