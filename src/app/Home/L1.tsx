@@ -98,7 +98,7 @@ export default function HeroSection() {
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             {/* Left side - Logo and Description */}
-            <div className="flex-[2] space-y-6">
+            <div className="flex-2 space-y-6">
               <div className="flex items-center gap-4">
                 <Image
                   src="/npgoto.webp"

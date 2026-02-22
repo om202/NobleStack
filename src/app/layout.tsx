@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Sans, IBM_Plex_Serif, IBM_Plex_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
@@ -122,18 +123,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3LXP1WCLF"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-V3LXP1WCLF');
-            `,
-          }}
-        />
+
         {/* Website Schema */}
         <script
           type="application/ld+json"
@@ -247,6 +237,19 @@ export default function RootLayout({
             </div>
           </div>
         </ThemeProvider>
+        {/* Google Analytics - deferred to after page is interactive */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-V3LXP1WCLF"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-V3LXP1WCLF');
+          `}
+        </Script>
       </body>
     </html>
   );
