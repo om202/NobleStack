@@ -15,7 +15,7 @@ export function ThemeToggle() {
 
     if (!mounted) {
         return (
-            <button className="p-2 rounded-full bg-subtle-theme border border-border-theme w-9 h-9 flex items-center justify-center">
+            <button className="p-2 rounded-full bg-subtle-theme border border-border-theme w-9 h-9 flex items-center justify-center" aria-label="Toggle theme">
                 <div className="w-4 h-4 bg-muted-theme/20 rounded-full animate-pulse" />
             </button>
         );
