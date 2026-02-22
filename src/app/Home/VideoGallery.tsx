@@ -77,13 +77,14 @@ export default function VideoGallery() {
                         {videos.map((video) => (
                             <div
                                 key={video.id}
-                                className="flex-shrink-0 bg-card-theme rounded-2xl border border-theme hover:border-blue-500/50 transition-all duration-300 overflow-hidden group/video"
+                                className="shrink-0 bg-card-theme rounded-2xl border border-theme hover:border-blue-500/50 transition-all duration-300 overflow-hidden group/video"
                                 style={{ width: '294px' }}
                             >
                                 {/* Bunny.net responsive embed pattern - 9:16 reel aspect ratio */}
                                 <div style={{ position: 'relative', paddingTop: '177.78%' }}>
                                     <iframe
                                         src={video.url}
+                                        title={video.title}
                                         loading="lazy"
                                         style={{
                                             border: 0,
