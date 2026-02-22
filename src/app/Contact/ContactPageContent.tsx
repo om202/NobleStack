@@ -424,6 +424,8 @@ export default function ContactPageContent() {
                                     <img
                                         src="/google-qr.webp"
                                         alt="Google QR Code"
+                                        width="192"
+                                        height="192"
                                         className="w-48 h-48 md:w-64 md:h-64 object-contain"
                                     />
                                 </div>

@@ -81,7 +81,7 @@ export default function Navigation() {
                 alt="Noble Stack Logo"
                 width={32}
                 height={32}
-                className="rounded-lg"
+                className="w-8 h-8 rounded-lg"
                 priority
               />
               <span className="text-base sm:text-xl font-bold text-main-theme tracking-tight text-nowrap">Noble Stack</span>

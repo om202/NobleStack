@@ -12,6 +12,7 @@ export default function HeroSection() {
                     src="/services/security.webp"
                     alt="Application Security Services"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                 />

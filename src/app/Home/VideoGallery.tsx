@@ -86,6 +86,8 @@ export default function VideoGallery() {
                                         src={video.url}
                                         title={video.title}
                                         loading="lazy"
+                                        width="100%"
+                                        height="100%"
                                         style={{
                                             border: 0,
                                             position: 'absolute',

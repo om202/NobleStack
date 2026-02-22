@@ -122,6 +122,7 @@ export default function AboutPageContent() {
                                 src="/nepal.webp"
                                 alt="Engineering Excellence in Nepal"
                                 fill
+                                sizes="(max-width: 1200px) 100vw, 1200px"
                                 className="object-cover"
                             />
                         </figure>

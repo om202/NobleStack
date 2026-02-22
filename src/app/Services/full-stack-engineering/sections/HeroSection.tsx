@@ -11,6 +11,7 @@ export default function HeroSection() {
                     src="/services/full-stack.webp"
                     alt="Full-Stack Engineering"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                 />
