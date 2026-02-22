@@ -31,12 +31,12 @@ const VantaBackground: React.FC<VantaBackgroundProps> = ({ className = '' }) => 
 
             // Load Three.js (minified, ~600KB but deferred)
             const threeScript = document.createElement('script');
-            threeScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js';
+            threeScript.src = '/vendor/three.min.js';
             threeScript.async = true;
 
             // Load Vanta GLOBE
             const vantaScript = document.createElement('script');
-            vantaScript.src = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js';
+            vantaScript.src = '/vendor/vanta.globe.min.js';
             vantaScript.async = true;
 
             // Chain: Three.js first, then Vanta
@@ -85,7 +85,7 @@ const VantaBackground: React.FC<VantaBackgroundProps> = ({ className = '' }) => 
     return (
         <div
             ref={vantaRef}
-            className={`absolute inset-0 opacity-0 md:opacity-0 transition-opacity duration-1000 ${scriptsLoaded ? '!opacity-20 md:!opacity-75' : ''} ${className}`}
+            className={`absolute inset-0 opacity-0 md:opacity-0 transition-opacity duration-1000 ${scriptsLoaded ? 'opacity-20! md:opacity-75!' : ''} ${className}`}
             style={{
                 pointerEvents: 'none',
                 width: '100%',
