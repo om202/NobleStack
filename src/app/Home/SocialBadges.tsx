@@ -91,7 +91,7 @@ export default function SocialBadges() {
                                     <div className={`relative w-full h-full ${badge.name === 'Goodfirms' ? 'scale-150' : ''}`}>
                                         <Image
                                             src={badge.logo}
-                                            alt={badge.name}
+                                            alt=""
                                             fill
                                             className="object-contain drop-shadow-[0_2px_3px_rgba(0,0,0,0.4)] dark:drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
                                         />
