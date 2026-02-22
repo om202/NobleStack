@@ -1,0 +1,148 @@
+.globe-wrapper {
+    display: flex;
+    position: absolute;
+    transform-style: preserve-3d;
+    perspective: 400px;
+    perspective-origin: 80% 50%;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 80rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.globe-sphere {
+    transform-style: preserve-3d;
+    width: 420px;
+    height: 420px;
+    position: relative;
+    animation: globe-rotate 25s linear infinite;
+}
+
+.globe-plane {
+    position: absolute;
+    transform-style: preserve-3d;
+    inset: 0;
+}
+
+.globe-spoke {
+    transform-origin: 0 0;
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 210px;
+    width: 0;
+}
+
+.globe-dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: -3px;
+    top: 100%;
+    transform: rotateX(90deg);
+    animation: globe-pulsate 1.2s infinite alternate both;
+}
+
+/* ── Light mode colors (default) — deep navy/indigo ── */
+.globe-dot {
+    background-color: #1e40af;
+}
+
+.globe-dot-a {
+    background-color: #1d4ed8;
+}
+
+.globe-dot-b {
+    background-color: #2563eb;
+}
+
+.globe-dot-c {
+    background-color: #3730a3;
+}
+
+.globe-dot-d {
+    background-color: #4338ca;
+}
+
+.globe-dot-e {
+    background-color: #4f46e5;
+}
+
+.globe-dot-f {
+    background-color: #3730a3;
+}
+
+/* ── Dark mode colors — bright cyan/blue ── */
+.dark .globe-dot {
+    background-color: #007aff;
+}
+
+.dark .globe-dot-a {
+    background-color: #00c6ff;
+}
+
+.dark .globe-dot-b {
+    background-color: #007aff;
+}
+
+.dark .globe-dot-c {
+    background-color: #0066ff;
+}
+
+.dark .globe-dot-d {
+    background-color: #4f46e5;
+}
+
+.dark .globe-dot-e {
+    background-color: #007aff;
+}
+
+.dark .globe-dot-f {
+    background-color: #00c6ff;
+}
+
+/* Mobile: 50% opacity */
+@media (max-width: 767px) {
+    .globe-sphere {
+        opacity: 0.5;
+    }
+}
+
+@keyframes globe-rotate {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    25% {
+        transform: rotate3d(1, 1, 1, 90deg);
+    }
+
+    50% {
+        transform: rotate3d(1, 1, 1, 180deg);
+    }
+
+    75% {
+        transform: rotate3d(1, 1, 1, 270deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes globe-pulsate {
+    0% {
+        transform: rotateX(90deg) scale(0.3) translateZ(20px);
+    }
+
+    100% {
+        transform: rotateX(90deg) scale(1) translateZ(0px);
+    }
+}

@@ -16,7 +16,7 @@ import Image from "next/image";
 import ServiceCard from "../../components/ServiceCard";
 import CTAButton from "../../components/CTAButton";
 import SectionHeader from "../../components/SectionHeader";
-import VantaBackground from "../../components/VantaBackground";
+import CSSGlobe from "../../components/CSSGlobe";
 
 export default function HeroSection() {
 
@@ -60,8 +60,7 @@ export default function HeroSection() {
       {/* Hero Section with Network Background - Full Width */}
       <div className="relative w-full overflow-hidden">
         <div className="relative pt-24 pb-20 sm:pt-28 sm:pb-24 md:pt-32 md:pb-28 hero-gradient-bg">
-          {/* Vanta.js DOTS Background Effect - Layered on gradient */}
-          <VantaBackground />
+          <CSSGlobe />
 
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4">
