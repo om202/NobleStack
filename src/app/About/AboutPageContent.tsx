@@ -24,10 +24,10 @@ export default function AboutPageContent() {
             bio: "",
         },
         {
-            name: "Hesamullah",
+            name: "Dildar Hussain",
             role: "Marketing Lead",
             expertise: "Growth Strategy\nDigital Marketing",
-            image: "/Hesamullah.webp",
+            image: "",
             bio: "",
         },
     ];
