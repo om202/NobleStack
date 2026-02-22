@@ -2,7 +2,7 @@
 title: "GEO is the New SEO: Your Guide to Winning in the Age of AI Answers"
 date: "2025-12-13"
 slug: "geo-is-the-new-seo"
-coverImage: "/blog3.png"
+coverImage: "/blog3.webp"
 excerpt: "Remember the good old days of the internet? You'd ask Google a question, and it would hand you a long list of blue links. Well, that era is fading fast."
 tags: ["AI", "SEO", "GEO", "Technology"]
 publisher: "Noble Stack Team"

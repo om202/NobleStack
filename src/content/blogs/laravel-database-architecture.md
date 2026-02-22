@@ -2,7 +2,7 @@
 title: "Understanding Laravel's Database Communication Architecture: A Deep Dive"
 date: "2026-01-09"
 slug: "laravel-database-architecture"
-coverImage: "/blog8.png"
+coverImage: "/blog8.webp"
 excerpt: "Laravel's database layer is one of the most elegant abstractions in modern PHP development. This comprehensive guide breaks down each layer—from Controllers to PDO—and explains how they work together to make database operations seamless."
 tags: ["Laravel", "PHP", "Database", "Architecture", "Backend Development"]
 publisher: "Noble Stack Team"

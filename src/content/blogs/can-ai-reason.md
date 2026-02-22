@@ -5,7 +5,7 @@ excerpt: "The rapid growth of Large Language Models has made everyone wonder: do
 coverImage: "/blog1.webp"
 author: 
   name: "Noble Stack Team"
-  picture: "/nbl.png"
+  picture: "/nbl.webp"
 tags: ["AI", "LLMs", "Technology"]
 publisher: "Noble Stack Team"
 ---
