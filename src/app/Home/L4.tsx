@@ -162,12 +162,14 @@ export default function FAQSection() {
                   setOpenFaq(null);
                   setAnimationKey(prev => prev + 1);
                 }}
+                aria-label={category.name}
+                aria-pressed={activeCategory === category.id}
                 className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer ${activeCategory === category.id
                   ? `bg-gradient-to-r ${category.color} text-white shadow-sm`
                   : 'text-muted-theme hover:text-main-theme hover:bg-subtle-theme'
                   }`}
               >
-                <category.icon className="w-4 h-4 flex-shrink-0" />
+                <category.icon className="w-4 h-4 shrink-0" />
                 <span className="font-semibold text-sm hidden sm:inline">{category.name}</span>
               </button>
             ))}
