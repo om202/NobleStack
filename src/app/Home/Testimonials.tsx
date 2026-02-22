@@ -1,5 +1,3 @@
-"use client";
-
 import { Star, Quote } from "lucide-react";
 import SectionHeader from "../../components/SectionHeader";
 
@@ -69,7 +67,7 @@ export default function Testimonials() {
 
                             {/* Author Info - Always at bottom */}
                             <footer className="flex items-center gap-3 pt-4 border-t border-theme mt-auto">
-                                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg">
+                                <div className="w-12 h-12 rounded-full bg-linear-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg">
                                     {testimonial.name.charAt(0)}
                                 </div>
                                 <div>

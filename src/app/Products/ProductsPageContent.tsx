@@ -1,5 +1,3 @@
-"use client";
-
 import {
     Sparkles,
     Wand2,
@@ -148,7 +146,7 @@ export default function ProductsPageContent() {
 
                         {/* Screenshot */}
                         <div className="mb-12 flex justify-center">
-                            <figure className="rounded-[2rem] border border-theme shadow-lg overflow-hidden max-w-[300px]">
+                            <figure className="rounded-4xl border border-theme shadow-lg overflow-hidden max-w-[300px]">
                                 <Image
                                     src="/vibe_screen.png"
                                     alt="Vibe AI Photo Editor interface"
@@ -405,7 +403,7 @@ export default function ProductsPageContent() {
 
                         {/* Screenshot */}
                         <div className="mb-12 flex justify-center">
-                            <figure className="rounded-[2rem] border border-theme shadow-lg overflow-hidden max-w-[300px]">
+                            <figure className="rounded-4xl border border-theme shadow-lg overflow-hidden max-w-[300px]">
                                 <Image
                                     src="/autosubai_screen.png"
                                     alt="Auto Captions Interface"
