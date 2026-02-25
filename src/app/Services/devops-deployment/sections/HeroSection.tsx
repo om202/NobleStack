@@ -8,8 +8,8 @@ export default function HeroSection() {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
-                    src="/services/llm.jpg"
-                    alt="LLM-Powered AI Systems"
+                    src="/services/devops.jpg"
+                    alt="DevOps & Deployment"
                     fill
                     className="object-cover"
                     priority
@@ -40,20 +40,15 @@ export default function HeroSection() {
 
                 {/* Title */}
                 <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
-                    LLM-Powered AI Systems Company
+                    Deployment & DevOps Services
                 </h1>
 
-                {/* Subtitle */}
-                <p className="text-lg text-white/90 mb-4 max-w-3xl mx-auto">
-                    Enterprise-Grade AI Systems That Reason, Retrieve, and Respond
-                </p>
-
                 {/* Description */}
-                <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-                    Noble Stack is an LLM-powered AI systems company designing and deploying production-ready artificial intelligence solutions for startups, SaaS companies, and enterprises. We build intelligent systems that combine large language models, retrieval pipelines, and AI orchestration to deliver accurate, scalable, and secure outcomes.
+                <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
+                    Noble Stack is a trusted DevOps services company delivering secure, scalable, and production-ready deployment solutions for startups, SMBs, and enterprises worldwide. We help organizations deploy faster, scale reliably, and operate securely using modern DevOps practices, cloud-native infrastructure, and automation.
                 </p>
-                <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed mt-4">
-                    Our LLM AI systems integrate seamlessly into your products, platforms, and internal workflows — enabling advanced reasoning, contextual responses, and knowledge-driven automation at scale. We focus on real-world AI performance, not demos.
+                <p className="text-lg text-white/80 max-w-3xl mx-auto mt-4 leading-relaxed">
+                    Our Deployment & DevOps services ensure your applications run smoothly in production — from zero-downtime CI/CD pipelines and container orchestration to cloud infrastructure automation, monitoring, and disaster recovery.
                 </p>
             </div>
         </section>

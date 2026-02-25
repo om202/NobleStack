@@ -9,10 +9,9 @@ export default function HeroSection() {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
-                    src="/services/security.webp"
+                    src="/services/security.jpg"
                     alt="Application Security Services"
                     fill
-                    sizes="100vw"
                     className="object-cover"
                     priority
                 />
@@ -51,8 +50,11 @@ export default function HeroSection() {
                 </p>
 
                 {/* Description */}
-                <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
                     Build secure, compliant, and resilient digital products with Noble Stack. We deliver application security services that protect modern web, SaaS, and AI-driven systems across identity, data, infrastructure, and compliance layers.
+                </p>
+                <p className="text-lg text-white/90 max-w-3xl mx-auto mt-4">
+                    Schedule a free security consultation and get a clear roadmap to secure your application at scale.
                 </p>
 
                 {/* CTA */}

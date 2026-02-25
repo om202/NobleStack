@@ -29,14 +29,14 @@ export default function ServicesSection() {
     ];
 
     return (
-        <section className="py-8 px-3 sm:py-12 sm:px-4 bg-page-theme">
+        <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <SectionHeader
                     title="Application Security Services We Provide"
                     description="Comprehensive security solutions designed to protect your applications, data, and users from modern threats."
-                    imageSrc="/undraw_software-engineer_xv60.svg"
-                    imageAlt="Security Services Illustration"
+                    imageSrc="/undraw_server-cluster_7ugi.svg"
+                    imageAlt="Application Security Services Illustration"
                 />
 
                 {/* Services Grid */}
@@ -54,7 +54,7 @@ export default function ServicesSection() {
                 {/* CTA Button */}
                 <div className="mt-12 text-center">
                     <CTAButton variant="secondary" href="https://calendar.app.google/mWmd6v421Pk66LQ26" icon={ArrowRight}>
-                        Get Your Security Roadmap
+                        Schedule a Free Security Consultation
                     </CTAButton>
                 </div>
             </div>

@@ -8,10 +8,9 @@ export default function HeroSection() {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
-                    src="/services/automation.webp"
+                    src="/services/automation.jpg"
                     alt="Automation Systems"
                     fill
-                    sizes="100vw"
                     className="object-cover"
                     priority
                 />

@@ -9,8 +9,8 @@ export default function CTASection() {
                     {/* Background Image */}
                     <div className="absolute inset-0">
                         <Image
-                            src="/services/llm.jpg"
-                            alt="LLM-Powered AI Systems"
+                            src="/services/devops.jpg"
+                            alt="DevOps & Deployment"
                             fill
                             className="object-cover"
                         />
@@ -22,13 +22,13 @@ export default function CTASection() {
                     {/* Content */}
                     <div className="relative z-10 p-12 text-center">
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                            Ready to Build AI Into Your Product?
+                            Hire a Trusted Deployment & DevOps Company
                         </h2>
                         <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                            Let's explore how LLM-powered AI systems can transform your workflows, products, and customer experiences.
+                            Whether you need CI/CD automation, cloud deployment, or enterprise DevOps consulting, Noble Stack is ready to help. Schedule a free consultation, request a custom quote, or start building production-ready infrastructure today.
                         </p>
                         <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                            Schedule a Free AI Consultation
+                            Schedule Free DevOps Consultation
                         </CTAButton>
                     </div>
                 </div>

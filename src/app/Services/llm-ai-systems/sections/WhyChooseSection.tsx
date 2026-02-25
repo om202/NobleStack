@@ -15,7 +15,7 @@ export default function WhyChooseSection() {
                 <SectionHeader
                     title="Why Choose Noble Stack for LLM AI Systems"
                     description="At Noble Stack, we design enterprise-grade AI architectures engineered for reliability, performance, and long-term scalability. Our systems are built to handle real users, real data, and real business risk."
-                    imageSrc="/nbl.webp"
+                    imageSrc="/nbl.png"
                     imageAlt="Noble Stack Logo"
                     imageSize="small"
                 />
