@@ -29,11 +29,11 @@ export default function StandardsSection() {
     ];
 
     return (
-        <section className="py-8 px-3 sm:py-12 sm:px-4 bg-page-theme">
+        <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="Our Security Standards and Practices"
-                    description="We follow industry-leading security practices to ensure your systems are protected at every layer."
+                    description="We use proven, enterprise-grade practices to ensure your systems are protected at every layer."
                     imageSrc="/undraw_team_85hs.svg"
                     imageAlt="Security Standards Illustration"
                 />

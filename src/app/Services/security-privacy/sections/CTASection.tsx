@@ -9,7 +9,7 @@ export default function CTASection() {
                     {/* Background Image */}
                     <div className="absolute inset-0">
                         <Image
-                            src="/services/security.webp"
+                            src="/services/security.jpg"
                             alt="Application Security Services"
                             fill
                             className="object-cover"
@@ -28,7 +28,7 @@ export default function CTASection() {
                             Protect your application, data, and users with enterprise-grade application security services. Schedule a free security consultation and receive a tailored security roadmap for your product.
                         </p>
                         <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                            Schedule Free Consultation
+                            Schedule Free Security Consultation
                         </CTAButton>
                     </div>
                 </div>
