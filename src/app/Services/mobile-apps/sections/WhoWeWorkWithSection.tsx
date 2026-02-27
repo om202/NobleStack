@@ -4,19 +4,19 @@ export default function WhoWeWorkWithSection() {
     const clients = [
         {
             title: "Startups",
-            description: "Building MVPs and consumer apps",
+            description: "Building MVPs and investor-ready mobile applications that validate product–market fit.",
         },
         {
             title: "SaaS Companies",
-            description: "Expanding to mobile platforms",
+            description: "Extending web platforms into mobile ecosystems with native or cross-platform apps.",
         },
         {
             title: "Enterprises",
-            description: "Modernizing mobile experiences",
+            description: "Modernizing internal tools and customer-facing mobile experiences at scale.",
         },
         {
             title: "Founders",
-            description: "Launching new mobile products",
+            description: "Launching innovative mobile-first products from idea to production.",
         },
     ];
 

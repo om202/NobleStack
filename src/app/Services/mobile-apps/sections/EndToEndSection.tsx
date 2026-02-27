@@ -2,13 +2,13 @@ import SectionHeader from '../../../../components/SectionHeader';
 
 export default function EndToEndSection() {
     const services = [
-        "Product discovery and mobile strategy",
-        "UI/UX design for mobile-first experiences",
-        "Native and cross-platform app development",
-        "Backend integration and API development",
-        "Offline support and performance optimization",
-        "App Store and Play Store deployment",
-        "Post-launch support and continuous improvement",
+        "Discovery & strategy to align business goals, users, and technical requirements",
+        "Architecture & planning for scalable, secure mobile systems",
+        "UI/UX design for intuitive, mobile-first experiences",
+        "Agile development of native and cross-platform applications",
+        "QA, performance, and security testing across devices",
+        "Launch, monitoring, and optimization for App Store and Play Store",
+        "Post-launch support, maintenance, and feature expansion",
     ];
 
     return (
@@ -16,14 +16,14 @@ export default function EndToEndSection() {
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="End-to-End Mobile App Development"
-                    description="Our end-to-end mobile development services cover every aspect of building successful mobile applications."
+                    description="Our end-to-end mobile app development services cover every stage of the product lifecycle, from idea to long-term optimization."
                     imageSrc="/undraw_software-engineer_xv60.svg"
                     imageAlt="End-to-End Mobile Development Illustration"
                 />
 
                 <div className="bg-subtle-theme rounded-2xl p-8 md:p-12 border border-theme">
                     <p className="text-lg text-main-theme/80 mb-6 leading-relaxed">
-                        Our end-to-end mobile development services include:
+                        Our structured mobile app development process reduces risk, improves quality, and accelerates time-to-market:
                     </p>
                     <ul className="space-y-3 text-lg text-main-theme/80 mb-6">
                         {services.map((service, index) => (
@@ -34,7 +34,7 @@ export default function EndToEndSection() {
                         ))}
                     </ul>
                     <p className="text-lg text-main-theme/80 leading-relaxed">
-                        Whether you are building a new mobile product or extending an existing platform, we ensure your app is production-ready and scalable.
+                        Whether you are building an MVP, modernizing an existing application, or scaling a production system, we ensure your mobile app is production-ready, scalable, and aligned with your growth goals.
                     </p>
                 </div>
             </div>

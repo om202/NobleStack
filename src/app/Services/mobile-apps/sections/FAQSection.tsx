@@ -14,23 +14,23 @@ export default function FAQSection() {
     const faqs = [
         {
             question: "Do you build both iOS and Android apps?",
-            answer: "Yes. We build native iOS apps using Swift, native Android apps using Kotlin, and cross-platform applications using React Native or Flutter depending on your requirements. Our team has deep expertise across all major mobile platforms and frameworks. We help you choose the best approach based on your target audience, performance needs, and business goals.",
+            answer: "Yes. We develop both native and cross-platform applications for iOS and Android. We use Swift and SwiftUI for iOS, Kotlin and Jetpack Compose for Android, and React Native or Flutter for cross-platform builds. Based on your requirements, budget, and timeline, we recommend the most suitable technical approach.",
         },
         {
             question: "Which is better: native or cross-platform?",
-            answer: "It depends on performance needs, timeline, and budget. We help you choose the right approach. Native development offers the best performance and platform-specific features, while cross-platform development enables faster time-to-market and shared codebase across iOS and Android. We analyze your specific requirements, user expectations, and long-term roadmap to recommend the optimal solution.",
+            answer: "There is no one-size-fits-all answer. Native development offers maximum performance, deep platform integration, and the best access to device capabilities. Cross-platform development is ideal when you want faster time-to-market, a shared codebase, and reduced maintenance costs. We evaluate your performance needs, roadmap, and resources to help you decide.",
         },
         {
-            question: "Do you help with App Store submission?",
-            answer: "Yes. We handle the complete App Store and Play Store submission process. This includes preparing app metadata, screenshots, privacy policies, and compliance documentation required by Apple and Google. We navigate the review process, address any feedback from app store reviewers, and ensure your app meets all platform guidelines for successful approval.",
+            question: "How much does mobile app development cost?",
+            answer: "The cost depends on app complexity, feature set, integrations, platforms (iOS, Android, or both), and non-functional requirements like security and scalability. MVPs with a focused feature set are more affordable and typically start lower, while enterprise-grade or highly complex apps require larger investments. After a short discovery call, we can provide a tailored estimate for your specific project.",
         },
         {
-            question: "Can you add features to an existing app?",
-            answer: "Absolutely. We enhance, optimize, and scale existing mobile applications. Whether you need new features, performance improvements, UI/UX redesigns, or integration with third-party services, we work with your existing codebase. We conduct thorough code audits, refactor where necessary, and implement best practices to ensure your app remains maintainable and scalable.",
+            question: "How long does it take to build a mobile app?",
+            answer: "Timelines vary depending on scope and complexity. MVPs typically take around 8–12 weeks from discovery to launch. More complex applications with advanced integrations, custom UI, or enterprise requirements can take 4–6 months or more. During planning, we define a clear roadmap, milestones, and release plan.",
         },
         {
             question: "Do you provide post-launch support?",
-            answer: "Yes. We offer ongoing maintenance, monitoring, and feature improvements. Our post-launch support includes bug fixes, OS compatibility updates, performance monitoring, crash analytics, and regular feature enhancements based on user feedback. We ensure your app stays current with the latest platform updates and continues to deliver exceptional user experiences.",
+            answer: "Yes. Launch is just the beginning. We provide post-launch maintenance, updates, performance optimization, crash monitoring, analytics, and feature expansion. Our goal is to help you continuously improve your app based on user feedback and evolving business needs.",
         },
     ];
 

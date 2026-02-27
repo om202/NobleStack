@@ -2,11 +2,13 @@ import SectionHeader from '../../../../components/SectionHeader';
 
 export default function WhyChooseSection() {
     const reasons = [
-        "Mobile-first engineering mindset",
-        "Expertise in both native and cross-platform development",
-        "Scalable, secure, and maintainable codebases",
-        "AI-ready and cloud-integrated solutions",
-        "Transparent communication and delivery",
+        "Mobile-first product strategy shaped around your business goals",
+        "Expertise in both native (Swift, Kotlin) and cross-platform (React Native, Flutter) development",
+        "AI-ready and cloud-integrable architecture for future-proof systems",
+        "Scalable, secure, and maintainable mobile codebases",
+        "Transparent development process with clear communication and milestones",
+        "Dedicated post-launch support and continuous improvement",
+        "Based in Kathmandu, serving clients across Asia, Europe, and North America",
     ];
 
     return (
