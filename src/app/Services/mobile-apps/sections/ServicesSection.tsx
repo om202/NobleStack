@@ -8,23 +8,23 @@ export default function ServicesSection() {
     const services = [
         {
             icon: Smartphone,
-            name: "Cross-Platform App Development",
-            description: "We build cross-platform applications that deliver consistent experiences across iOS and Android while reducing development time and cost. React Native for shared iOS and Android codebases. Flutter for high-performance, visually rich interfaces. Expo for rapid prototyping and faster iteration. Shared business logic across platforms.",
+            name: "Custom iOS App Development",
+            description: "We build high-performance native iOS applications using Swift, SwiftUI, UIKit, Apple SDKs, APNs (push notifications), and Apple In-App Purchases. Our iOS apps are optimized for performance, security, and seamless integration with the Apple ecosystem—ideal for consumer apps, subscription platforms, FinTech solutions, and enterprise mobility.",
         },
         {
             icon: Zap,
-            name: "Native App Development",
-            description: "For performance-critical or platform-specific applications, we build fully native mobile apps. Swift and SwiftUI for modern iOS applications. Kotlin and Jetpack Compose for Android development. Deep platform integrations and custom animations. Hardware-level optimizations for performance.",
+            name: "Custom Android App Development",
+            description: "We develop powerful Android applications using Kotlin, Jetpack Compose, and the Android SDK. Our Android apps are engineered for device compatibility, performance efficiency, and long-term maintainability, with support for Google Play Billing, FCM, and the broader Google ecosystem.",
         },
         {
             icon: Bell,
-            name: "Mobile-First Features",
-            description: "We integrate advanced mobile features that enhance usability and engagement. Push notifications using FCM and APNs. In-app purchases and subscription management. Camera, GPS, and location-based services. Biometric authentication (Face ID, Touch ID). Deep linking and universal links.",
+            name: "Cross-Platform App Development (React Native & Flutter)",
+            description: "We reduce development time and cost by building high-quality cross-platform apps using React Native, Flutter, and Expo. A single shared TypeScript codebase powers both iOS and Android, enabling faster time to market, reduced maintenance overhead, and a consistent user experience—perfect for startups and SaaS products.",
         },
         {
             icon: Wifi,
-            name: "Offline Support and Performance Optimization",
-            description: "We design mobile apps to perform reliably in real-world conditions. Offline-first architecture with local storage. Background synchronization and conflict resolution. Smooth animations and 60fps performance. App size optimization and lazy loading.",
+            name: "Backend, API & Advanced Mobile Integrations",
+            description: "We design and integrate robust backends and advanced mobile features: REST and GraphQL APIs, cloud integration (AWS, GCP, Firebase), real-time features, authentication systems, and payment gateways. We also implement push notifications (FCM & APNs), in-app purchases, biometrics, GPS and location services, deep linking, offline-first architecture, and background synchronization.",
         },
     ];
 
@@ -33,10 +33,10 @@ export default function ServicesSection() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <SectionHeader
-                    title="Mobile Development Services"
-                    description="Mobile app development is more than writing code. It is about creating reliable, engaging experiences that users trust and return to."
+                    title="Our Mobile App Development Services"
+                    description="From native iOS and Android apps to cross-platform development, UI/UX design, and backend integration, we help you design, build, launch, and scale production-ready mobile applications."
                     imageSrc="/undraw_mobile-site_qjby.svg"
-                    imageAlt="Mobile Development Services Illustration"
+                    imageAlt="Mobile App Development Services Illustration"
                 />
 
                 {/* Services Grid */}

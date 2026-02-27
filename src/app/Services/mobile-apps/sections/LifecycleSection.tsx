@@ -3,28 +3,28 @@ import SectionHeader from '../../../../components/SectionHeader';
 export default function LifecycleSection() {
     const lifecycle = [
         {
-            title: "App Store Deployment",
-            description: "Complete submission and release process for Apple App Store and Google Play Store.",
+            title: "App Store & Play Store Deployment",
+            description: "End-to-end submission and release management for the Apple App Store and Google Play Store, including compliance and review support.",
         },
         {
             title: "Beta Testing",
-            description: "TestFlight and Google Play Console beta distribution for early feedback and validation.",
+            description: "Beta distribution via TestFlight and Google Play Console to collect real-world feedback before full launch.",
         },
         {
             title: "OTA Updates",
-            description: "Over-the-air updates using CodePush for rapid bug fixes and improvements.",
+            description: "Over-the-air (OTA) updates using CodePush and modern delivery pipelines for rapid bug fixes and feature rollouts.",
         },
         {
-            title: "Analytics and Monitoring",
-            description: "Firebase Analytics and Crashlytics for performance tracking and stability monitoring.",
+            title: "Analytics Integration",
+            description: "Product and behavioral analytics integrations to understand user journeys, engagement, and retention across platforms.",
+        },
+        {
+            title: "Crash Tracking & Performance Monitoring",
+            description: "Crash tracking with tools like Firebase Crashlytics and performance monitoring to keep your app stable and fast.",
         },
         {
             title: "App Store Optimization (ASO)",
-            description: "Optimized screenshots, descriptions, and keywords for better visibility and downloads.",
-        },
-        {
-            title: "CI/CD Pipelines",
-            description: "Automated builds and deployments using Fastlane and App Center.",
+            description: "Optimized metadata, keywords, and creative assets to improve discoverability and conversion in app stores.",
         },
     ];
 

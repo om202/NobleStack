@@ -46,7 +46,7 @@ export default function HeroSection() {
 
                 {/* Description */}
                 <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-                    We provide mobile app development services that help startups, SaaS companies, and enterprises design, build, launch, and scale high-quality iOS and Android applications. We build native and cross-platform mobile apps that are fast, secure, and user-focused — handling everything from product ideation and UI/UX to App Store deployment and long-term maintenance.
+                    Noble Stack is a leading mobile app development company in Kathmandu, Nepal, delivering high-performance, scalable, and secure iOS and Android applications for startups, SaaS companies, enterprises, and founders worldwide. We provide end-to-end mobile app development services—from product discovery and UI/UX design to native and cross-platform development, App Store deployment, and long-term optimization. Whether you need to build an MVP, modernize an existing application, or scale a production system, our mobile engineers deliver solutions designed for growth.
                 </p>
             </div>
         </section>
