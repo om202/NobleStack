@@ -1,4 +1,4 @@
-import { Smartphone, Apple, Android } from 'lucide-react';
+import { Smartphone, Apple } from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 import ServiceCard from '../../../../components/ServiceCard';
 import SectionHeader from '../../../../components/SectionHeader';
@@ -13,7 +13,7 @@ export default function CapabilitiesSection() {
                 "High-performance native iOS applications built with Swift, SwiftUI, UIKit, and Apple SDKs. We integrate APNs for push notifications, Apple In-App Purchases for subscriptions and payments, and deliver apps that feel at home in the Apple ecosystem—optimized for security, performance, and App Store compliance.",
         },
         {
-            icon: Android,
+            icon: Smartphone,
             name: "Custom Android App Development",
             description:
                 "Robust Android applications using Kotlin, Jetpack Compose, and the Android SDK. We design for device compatibility, performance efficiency, and long-term maintainability, with integrations such as Google Play Billing, FCM (Firebase Cloud Messaging), and modern Android libraries.",
