@@ -10,8 +10,8 @@ import TechnologiesSection from './sections/TechnologiesSection';
 import CTASection from './sections/CTASection';
 
 export const metadata: Metadata = {
-    title: "Full-Stack Product Engineering Services - Noble Stack",
-    description: "End-to-end product engineering from discovery to scale. We design, build, launch, and scale high-performance digital products with secure, maintainable architecture ready for real-world growth.",
+    title: "Mobile App Development Services (iOS & Android) | Noble Stack Nepal",
+    description: "Custom mobile app development services for iOS & Android. Noble Stack builds scalable, secure apps for startups, SaaS & enterprises. Based in Nepal. Book a free consultation.",
 };
 
 export const dynamic = 'force-static';

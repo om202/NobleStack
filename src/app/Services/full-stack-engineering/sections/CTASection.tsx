@@ -9,8 +9,13 @@ export default function CTASection() {
                     {/* Background Image */}
                     <div className="absolute inset-0">
                         <Image
+<<<<<<< HEAD
                             src="/services/full-stack.webp"
                             alt="Full-Stack Engineering"
+=======
+                            src="/services/full-stack.jpg"
+                            alt="Mobile App Development"
+>>>>>>> 886819b (full stack enginering updated)
                             fill
                             className="object-cover"
                         />
@@ -22,13 +27,13 @@ export default function CTASection() {
                     {/* Content */}
                     <div className="relative z-10 p-12 text-center">
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                            Ready to Build Your Product?
+                            Ready to Build Your Mobile App?
                         </h2>
                         <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                            If you are looking for Full-Stack Product Engineering services that combine technical excellence with business understanding, Noble Stack is ready to help. Schedule a free consultation and let's turn your idea into a scalable, production-ready product.
+                            If you are looking for reliable, scalable, and high-performance mobile app development services, Noble Stack is ready to help. Book a free strategy call today and turn your mobile app idea into a production-ready digital product.
                         </p>
                         <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
-                            Schedule Free Consultation
+                            Book a Free Strategy Call
                         </CTAButton>
                     </div>
                 </div>

@@ -13,24 +13,29 @@ export default function FAQSection() {
 
     const faqs = [
         {
-            question: "What is full-stack product engineering?",
-            answer: "Full-stack product engineering is the end-to-end process of designing, building, deploying, and scaling digital products across frontend, backend, databases, and cloud infrastructure. It encompasses everything from user interface design and API development to database optimization and DevOps automation. Our approach ensures all layers of your application work seamlessly together to deliver exceptional user experiences and business value.",
+            question: "Do you build both iOS and Android apps?",
+            answer:
+                "Yes. We develop both native and cross-platform applications for iOS and Android. Depending on your requirements, budget, and timeline, we recommend the best technical approach—whether that is Swift and Kotlin or React Native and Flutter.",
         },
         {
-            question: "How is product engineering different from software development?",
-            answer: "Product engineering focuses on long-term scalability, user experience, and business outcomes, while software development often focuses only on feature implementation. We take a holistic approach that considers market fit, technical architecture, performance optimization, and maintainability from day one. This strategic mindset ensures your product can evolve with your business needs and scale efficiently as you grow.",
+            question: "Which is better: native or cross-platform development?",
+            answer:
+                "Native development offers maximum performance, deep platform integration, and the best use of iOS and Android capabilities. Cross-platform development is ideal for faster launches and reduced costs with a shared codebase. We help you choose the right approach based on your business goals, timeline, and budget.",
         },
         {
-            question: "Do you help startups build MVPs?",
-            answer: "Yes. We help startups validate ideas, build MVPs quickly, and prepare products for scaling. Our rapid prototyping approach focuses on core features that demonstrate value to users and investors while maintaining clean, scalable code architecture. We work closely with founders to iterate based on user feedback and prepare the technical foundation for future growth.",
+            question: "How much does mobile app development cost?",
+            answer:
+                "The cost depends on app complexity, features, integrations, and platform choice (iOS, Android, or both). MVPs with a focused feature set are typically more affordable, while enterprise-grade applications require advanced architecture, security, and integrations. Contact us for a tailored estimate based on your scope.",
         },
         {
-            question: "Can you scale existing products?",
-            answer: "Absolutely. We optimize performance, refactor architecture, and modernize infrastructure to support growth. Whether you're experiencing slow load times, database bottlenecks, or infrastructure limitations, we identify and resolve technical debt systematically. Our scaling solutions include performance optimization, microservices migration, cloud infrastructure upgrades, and implementing robust monitoring systems.",
+            question: "How long does it take to build a mobile app?",
+            answer:
+                "Timelines vary by complexity. MVPs generally take around 8–12 weeks from discovery to launch, while more complex applications can take 4–6 months or longer. We work in iterative sprints so you see progress early and often.",
         },
         {
-            question: "What industries do you work with?",
-            answer: "We work with startups and companies across SaaS, AI, fintech, e-commerce, and enterprise platforms. Our team has deep experience building secure financial applications, AI-powered tools, high-traffic e-commerce systems, and complex B2B platforms. We adapt our engineering approach to meet the unique regulatory, security, and performance requirements of each industry.",
+            question: "Do you provide post-launch support?",
+            answer:
+                "Yes. Launch is just the beginning. We offer post-launch support that includes performance monitoring, crash tracking, analytics integration, OTA updates (where applicable), feature expansion, and continuous improvement to keep your app competitive over time.",
         },
     ];
 
@@ -39,7 +44,7 @@ export default function FAQSection() {
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="Frequently Asked Questions"
-                    description="Everything you need to know about our full-stack product engineering services."
+                    description="Everything you need to know about our mobile app development services."
                     imageSrc="/undraw_questions_g2px.svg"
                     imageAlt="FAQ Illustration"
                 />
