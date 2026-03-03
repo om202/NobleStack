@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/mohamed-nohassi--0xMiYQmk8g-unsplash.jpg"
+          src="/mohamed-nohassi--0xMiYQmk8g-unsplash.webp"
           alt="Abstract AI-themed background"
           fill
           sizes="100vw"
