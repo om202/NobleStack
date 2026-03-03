@@ -8,8 +8,13 @@ export default function HeroSection() {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
+<<<<<<< HEAD
                     src="/services/full-stack.webp"
                     alt="Full-Stack Engineering"
+=======
+                    src="/services/full-stack.jpg"
+                    alt="Mobile App Development"
+>>>>>>> 886819b (full stack enginering updated)
                     fill
                     sizes="100vw"
                     className="object-cover"
@@ -41,12 +46,12 @@ export default function HeroSection() {
 
                 {/* Title */}
                 <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
-                    Full-Stack Product Engineering Services
+                    Mobile App Development Services (iOS &amp; Android)
                 </h1>
 
                 {/* Description */}
                 <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-                    Design, Build, Launch, and Scale High-Performance Digital Products. We deliver end-to-end product engineering services that help startups, SaaS companies, and enterprises build secure, maintainable, and scalable products ready for real-world growth.
+                    Noble Stack is a leading mobile app development company in Kathmandu, Nepal, delivering high-performance, scalable, and secure iOS and Android applications for startups, SaaS companies, enterprises, and founders worldwide. We provide end-to-end mobile app development services—from product discovery and UI/UX design to native and cross-platform development, App Store deployment, and long-term optimization.
                 </p>
             </div>
         </section>

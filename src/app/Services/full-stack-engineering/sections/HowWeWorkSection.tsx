@@ -4,23 +4,23 @@ export default function HowWeWorkSection() {
     const steps = [
         {
             number: 1,
-            title: "Discovery & Planning",
-            description: "We understand your business goals, users, and technical requirements.",
+            title: "Discovery & Strategy",
+            description: "We analyze your business goals, target users, and technical requirements to define a clear mobile roadmap.",
         },
         {
             number: 2,
-            title: "Architecture & Design",
-            description: "We design scalable system architectures and user-focused interfaces.",
+            title: "Architecture & Planning",
+            description: "We design scalable, secure mobile and backend architecture, choosing the right stack (native or cross-platform) for your use case.",
         },
         {
             number: 3,
-            title: "Development & Testing",
-            description: "We build full-stack solutions with clean code and rigorous testing.",
+            title: "Design, Development & QA",
+            description: "We create mobile-first UI/UX, build high-quality iOS and Android apps, and run rigorous QA and performance testing.",
         },
         {
             number: 4,
-            title: "Launch & Scale",
-            description: "We deploy, monitor, and continuously improve your product.",
+            title: "Launch & Optimization",
+            description: "We handle App Store and Play Store deployment, monitor performance, and continuously optimize based on real user data.",
         },
     ];
 
@@ -29,7 +29,7 @@ export default function HowWeWorkSection() {
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="How We Work"
-                    description="Our product engineering process is designed for clarity, speed, and quality."
+                    description="Our mobile app development process is structured to reduce risk, increase quality, and accelerate time to market."
                     imageSrc="/undraw_working-at-home_pxaa.svg"
                     imageAlt="How We Work Illustration"
                 />

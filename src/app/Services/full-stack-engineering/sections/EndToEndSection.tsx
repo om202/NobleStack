@@ -2,28 +2,28 @@ import SectionHeader from '../../../../components/SectionHeader';
 
 export default function EndToEndSection() {
     const services = [
-        "Product discovery and technical planning",
-        "System architecture and technology selection",
-        "Frontend and backend development",
-        "Database design and data architecture",
-        "Cloud infrastructure and DevOps",
-        "Performance optimization and scaling",
-        "Ongoing maintenance and product evolution",
+        "Discovery and mobile product strategy",
+        "User journey mapping and requirements analysis",
+        "Mobile app UI/UX design and prototyping",
+        "Native iOS, Android, and cross-platform development",
+        "Backend, API, and third-party integration",
+        "App Store & Play Store deployment and ASO",
+        "Post-launch support, analytics, and optimization",
     ];
 
     return (
         <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
-                    title="End-to-End Full-Stack Product Engineering"
-                    description="Our comprehensive product engineering services cover every aspect of building successful digital products."
+                    title="End-to-End Mobile App Development"
+                    description="Our comprehensive mobile app development services cover the full lifecycle—from idea to launch and beyond."
                     imageSrc="/undraw_software-engineer_xv60.svg"
-                    imageAlt="End-to-End Engineering Illustration"
+                    imageAlt="End-to-End Mobile Development Illustration"
                 />
 
                 <div className="bg-subtle-theme rounded-2xl p-8 md:p-12 border border-theme">
                     <p className="text-lg text-main-theme/80 mb-6 leading-relaxed">
-                        Our end-to-end product engineering services include:
+                        Our end-to-end mobile app development services include:
                     </p>
                     <ul className="space-y-3 text-lg text-main-theme/80 mb-6">
                         {services.map((service, index) => (
@@ -34,7 +34,7 @@ export default function EndToEndSection() {
                         ))}
                     </ul>
                     <p className="text-lg text-main-theme/80 leading-relaxed">
-                        Whether you are building an MVP, launching a SaaS platform, or modernizing an existing system, we engineer products with long-term success in mind.
+                        Whether you need to build an MVP, modernize an existing application, or scale a production system, we engineer mobile solutions designed for long-term growth.
                     </p>
                 </div>
             </div>

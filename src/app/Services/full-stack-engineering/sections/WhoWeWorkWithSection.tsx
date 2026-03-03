@@ -4,19 +4,19 @@ export default function WhoWeWorkWithSection() {
     const clients = [
         {
             title: "Startups",
-            description: "Building MVPs and early-stage products",
+            description: "Building MVPs and investor-ready mobile applications",
         },
         {
             title: "SaaS Companies",
-            description: "Scaling platforms and user bases",
+            description: "Expanding web platforms into mobile ecosystems",
         },
         {
             title: "Enterprises",
-            description: "Modernizing legacy systems",
+            description: "Modernizing internal tools and customer-facing mobile apps",
         },
         {
             title: "Founders",
-            description: "Turning ideas into market-ready products",
+            description: "Turning ideas into production-ready mobile products",
         },
     ];
 
@@ -25,7 +25,7 @@ export default function WhoWeWorkWithSection() {
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="Who We Work With"
-                    description="If you need reliable full-stack product engineering, we are built for it."
+                    description="If you need a reliable mobile app development partner, we are built for it."
                     imageSrc="/undraw_working_n9u0.svg"
                     imageAlt="Who We Work With Illustration"
                 />
