@@ -13,15 +13,9 @@ export default function WhyChooseSection() {
         <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
-<<<<<<< HEAD
-                    title="Why Choose Noble Stack"
-                    description="We work as a long-term engineering partner, helping you evolve and scale your product over time."
-                    imageSrc="/nbl.webp"
-=======
                     title="Why Businesses Choose Noble Stack for Mobile Apps"
                     description="We are not just a development vendor—we are your long-term mobile engineering partner."
                     imageSrc="/nbl.png"
->>>>>>> 886819b (full stack enginering updated)
                     imageAlt="Noble Stack Logo"
                     imageSize="small"
                 />

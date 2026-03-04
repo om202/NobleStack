@@ -9,13 +9,8 @@ export default function CTASection() {
                     {/* Background Image */}
                     <div className="absolute inset-0">
                         <Image
-<<<<<<< HEAD
-                            src="/services/full-stack.webp"
-                            alt="Full-Stack Engineering"
-=======
                             src="/services/full-stack.jpg"
                             alt="Mobile App Development"
->>>>>>> 886819b (full stack enginering updated)
                             fill
                             className="object-cover"
                         />
