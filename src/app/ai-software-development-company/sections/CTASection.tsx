@@ -9,8 +9,8 @@ export default function CTASection() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
-              src="/undraw_ai-agent_pdkp.svg"
-              alt="AI development illustration"
+              src="/services/ai-software-development.webp"
+              alt="AI Software Development"
               fill
               className="object-cover"
             />

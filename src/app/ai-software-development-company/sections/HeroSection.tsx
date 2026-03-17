@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
-import CTAButton from "../../../components/CTAButton";
-import { Rocket, Calendar } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -10,7 +8,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/mohamed-nohassi--0xMiYQmk8g-unsplash.webp"
+          src="/services/ai-software-development.webp"
           alt="AI Software Development"
           fill
           sizes="100vw"
@@ -41,39 +39,15 @@ export default function HeroSection() {
           <span>Back to Services</span>
         </Link>
 
-        {/* Featured Snippet */}
-        <div className="mb-8 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 max-w-3xl mx-auto text-left">
-          <p className="text-sm font-semibold text-blue-300 mb-2 uppercase tracking-wide">What is an AI Software Development Company?</p>
-          <p className="text-base text-white/90 leading-relaxed">
-            An AI software development company designs and builds applications that use artificial intelligence technologies such as machine learning, natural language processing, and predictive analytics to automate tasks, analyze data, and make intelligent decisions. These systems enable businesses to operate more efficiently, deliver personalized experiences, and scale operations with intelligent automation.
-          </p>
-        </div>
-
         {/* Title */}
-        <h1 className="text-[32px] md:text-[45px] font-bold mb-6 text-white">
+        <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
           AI Software Development Company for Intelligent Digital Products
         </h1>
 
         {/* Description */}
-        <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed mb-4">
-          Modern businesses generate massive amounts of data—but only companies using AI-powered software turn that data into real competitive advantage.
+        <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
+          Noble Stack builds custom AI-powered software using machine learning, automation, and advanced data systems — helping organizations automate decisions, unlock new revenue, and scale intelligent products for long-term growth.
         </p>
-        <p className="text-base text-white/80 max-w-3xl mx-auto leading-relaxed mb-4">
-          Noble Stack is an experienced AI software development company that builds intelligent applications using machine learning, automation, and advanced data systems. We help organizations design and deploy custom AI solutions that improve operations, automate decision-making, and unlock new revenue opportunities.
-        </p>
-        <p className="text-base text-white/80 max-w-3xl mx-auto leading-relaxed mb-8">
-          Build intelligent software that works faster, learns continuously, and scales with your business.
-        </p>
-
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <CTAButton variant="primary" icon={Rocket} href="https://calendar.app.google/mWmd6v421Pk66LQ26" className="w-full sm:w-auto">
-            Start Your AI Project
-          </CTAButton>
-          <CTAButton variant="secondary" icon={Calendar} href="https://calendar.app.google/mWmd6v421Pk66LQ26" className="w-full sm:w-auto">
-            Schedule a Free AI Consultation
-          </CTAButton>
-        </div>
       </div>
     </section>
   );
