@@ -65,6 +65,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Dynamically added service sub-pages
     ...serviceUrls,
+    // Root-level AI pages
+    {
+      url: `${baseUrl}/ai-development-company-in-nepal`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/hire-ai-developers`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/Products`,
       lastModified: new Date(),

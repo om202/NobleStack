@@ -22,11 +22,11 @@ export const metadata: Metadata = {
       "AI Software Development Company | Custom AI Solutions | Noble Stack",
     description:
       "AI software development company building custom AI solutions, machine learning systems, generative AI applications, and automation platforms. Start your AI project today.",
-    url: "https://noblestack.io/ai-software-development-company",
+    url: "https://noblestack.io/services/ai-software-development-company",
     siteName: "Noble Stack",
   },
   alternates: {
-    canonical: "https://noblestack.io/ai-software-development-company",
+    canonical: "https://noblestack.io/services/ai-software-development-company",
   },
 };
 

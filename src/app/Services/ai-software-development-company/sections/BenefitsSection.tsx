@@ -1,5 +1,5 @@
 import { Zap, BarChart3, Users, Lightbulb, TrendingUp } from "lucide-react";
-import SectionHeader from "../../../components/SectionHeader";
+import SectionHeader from "../../../../components/SectionHeader";
 
 export default function BenefitsSection() {
   const benefits = [

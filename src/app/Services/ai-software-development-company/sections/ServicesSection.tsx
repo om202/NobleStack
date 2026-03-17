@@ -1,8 +1,8 @@
 import { Brain, LineChart, Sparkles, Layers, Bot, MessageCircle } from "lucide-react";
 import { ArrowRight } from "lucide-react";
-import ServiceCard from "../../../components/ServiceCard";
-import SectionHeader from "../../../components/SectionHeader";
-import CTAButton from "../../../components/CTAButton";
+import ServiceCard from "../../../../components/ServiceCard";
+import SectionHeader from "../../../../components/SectionHeader";
+import CTAButton from "../../../../components/CTAButton";
 
 export default function ServicesSection() {
   const services = [
