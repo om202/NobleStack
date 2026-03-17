@@ -7,8 +7,10 @@ import {
     MessageCircle,
     Wrench,
     Heart,
+    ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import AlbumArtTeam from "../../components/AlbumArtTeam";
 import ServiceCard from "../../components/ServiceCard";
 import CTAButton from "../../components/CTAButton";
@@ -217,6 +219,29 @@ export default function AboutPageContent() {
                             </ul>
 
                             <p>Then Noble Stack is built for you. One team. AI first. Built in Nepal.</p>
+
+                            <div className="grid sm:grid-cols-2 gap-4 mt-6">
+                                <Link
+                                    href="/ai-development-company-in-nepal"
+                                    className="flex items-center justify-between gap-4 bg-card-theme rounded-xl p-5 border border-theme hover:bg-subtle-theme transition-colors"
+                                >
+                                    <div>
+                                        <p className="font-semibold text-main-theme text-sm">AI Development in Nepal</p>
+                                        <p className="text-xs text-subtitle-theme mt-1">Learn how we deliver world-class AI from Kathmandu</p>
+                                    </div>
+                                    <ArrowRight className="w-4 h-4 text-blue-500 shrink-0" />
+                                </Link>
+                                <Link
+                                    href="/hire-ai-developers"
+                                    className="flex items-center justify-between gap-4 bg-card-theme rounded-xl p-5 border border-theme hover:bg-subtle-theme transition-colors"
+                                >
+                                    <div>
+                                        <p className="font-semibold text-main-theme text-sm">Hire AI Developers</p>
+                                        <p className="text-xs text-subtitle-theme mt-1">Dedicated AI engineers for your custom project</p>
+                                    </div>
+                                    <ArrowRight className="w-4 h-4 text-blue-500 shrink-0" />
+                                </Link>
+                            </div>
                         </div>
                     </article>
 
