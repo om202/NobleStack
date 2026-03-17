@@ -166,7 +166,7 @@ export default function AlbumArtServices({
 
                     {/* Learn More Button */}
                     <Link
-                      href={SERVICE_URL_MAP[service.title] || "/Services"}
+                      href={SERVICE_URL_MAP[service.title] || "/services"}
                       className={`mt-4 sm:mt-6 w-full py-3 px-4 rounded-xl text-white font-semibold text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${colors.split(' ')[3]} ${colors.split(' ')[4]}`}
                     >
                       Learn More

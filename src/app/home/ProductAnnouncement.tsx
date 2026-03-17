@@ -44,7 +44,7 @@ export default function ProductAnnouncement() {
             {/* Buttons - Centered */}
             <div className="flex justify-center">
               <Link
-                href="/Products"
+                href="/products"
                 className="group flex items-center justify-center gap-3 px-12 py-3 w-full max-w-xs gradient-blue-up text-white rounded-xl hover:from-blue-700 hover:to-blue-800 transition-[transform,background-color,box-shadow] duration-300 transform hover:-translate-y-0.5 font-semibold text-base shadow-md hover:shadow-lg"
               >
                 Try Now

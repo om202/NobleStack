@@ -33,22 +33,22 @@ const navigationItems: NavItem[] = [
     icon: House,
   },
   {
-    href: "/Products",
+    href: "/products",
     label: "Products",
     icon: Package,
   },
   {
-    href: "/About",
+    href: "/about",
     label: "About",
     icon: Building,
   },
   {
-    href: "/Services",
+    href: "/services",
     label: "Services",
     icon: Laptop,
   },
   {
-    href: "/Career",
+    href: "/career",
     label: "Career",
     icon: Briefcase,
   },
@@ -58,7 +58,7 @@ const navigationItems: NavItem[] = [
     icon: BookOpen,
   },
   {
-    href: "/Contact",
+    href: "/contact",
     label: "Contact",
     icon: Mail,
   },

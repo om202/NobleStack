@@ -146,7 +146,7 @@ export default function AlbumArtTeam({
           technology, design, and business strategy.
         </p>
         <div className="mt-6 flex justify-center">
-          <CTAButton href="/Career" variant="primary">
+          <CTAButton href="/career" variant="primary">
             Interested to Join Us?
           </CTAButton>
         </div>

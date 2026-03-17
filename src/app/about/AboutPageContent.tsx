@@ -282,10 +282,10 @@ export default function AboutPageContent() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <CTAButton variant="primary" icon={Rocket} href="/Contact" className="w-full sm:w-auto">
+                            <CTAButton variant="primary" icon={Rocket} href="/contact" className="w-full sm:w-auto">
                                 New Project
                             </CTAButton>
-                            <CTAButton variant="secondary" href="/Products" className="w-full sm:w-auto">
+                            <CTAButton variant="secondary" href="/products" className="w-full sm:w-auto">
                                 Our Portfolio
                             </CTAButton>
                         </div>

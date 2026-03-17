@@ -103,7 +103,7 @@ export default function HeroSection() {
                   <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26" shine>
                     Schedule Consultation
                   </CTAButton>
-                  <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/Products" className="w-full sm:w-auto">
+                  <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/products" className="w-full sm:w-auto">
                     See Our Products
                   </CTAButton>
                 </div>
@@ -205,7 +205,7 @@ export default function HeroSection() {
           </div>
 
           <div className="mt-12 text-center">
-            <CTAButton variant="secondary" href="/Services" icon={ArrowRight}>
+            <CTAButton variant="secondary" href="/services" icon={ArrowRight}>
               View All Services
             </CTAButton>
           </div>
@@ -286,7 +286,7 @@ export default function HeroSection() {
           </div>
 
           <div className="mt-12 text-center">
-            <CTAButton variant="secondary" href="/Products" icon={ArrowRight}>
+            <CTAButton variant="secondary" href="/products" icon={ArrowRight}>
               View All Products
             </CTAButton>
           </div>

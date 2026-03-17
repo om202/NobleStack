@@ -32,7 +32,7 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
         {/* Back Link */}
         <Link
-          href="/Services"
+          href="/services"
           className="inline-flex items-center gap-2 mb-12 px-6 py-3 bg-card-theme border border-theme rounded-xl hover:bg-subtle-theme transition-colors duration-200"
         >
           <ArrowLeft className="w-4 h-4" />

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
+import CTAButton from '../../../../components/CTAButton';
 
 export default function HeroSection() {
     return (
@@ -8,10 +9,9 @@ export default function HeroSection() {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
-                    src="/services/mobile-apps.webp"
-                    alt="Mobile Apps Development"
+                    src="/services/security.webp"
+                    alt="Application Security Services"
                     fill
-                    sizes="100vw"
                     className="object-cover"
                     priority
                 />
@@ -32,7 +32,7 @@ export default function HeroSection() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
                 {/* Back Link */}
                 <Link
-                    href="/Services"
+                    href="/services"
                     className="inline-flex items-center gap-2 mb-12 px-6 py-3 bg-card-theme border border-theme rounded-xl hover:bg-subtle-theme transition-colors duration-200"
                 >
                     <ArrowLeft className="w-4 h-4" />
@@ -41,13 +41,28 @@ export default function HeroSection() {
 
                 {/* Title */}
                 <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
-                    Mobile App Development Services (iOS & Android)
+                    Application Security Services
                 </h1>
+
+                {/* Subtitle */}
+                <p className="text-lg text-white/90 mb-4 max-w-3xl mx-auto">
+                    Enterprise Security, Privacy & Compliance for Web and AI Applications
+                </p>
 
                 {/* Description */}
                 <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-                    Noble Stack is a leading mobile app development company in Kathmandu, Nepal, delivering high-performance, scalable, and secure iOS and Android applications for startups, SaaS companies, enterprises, and founders worldwide. We provide end-to-end mobile app development services—from product discovery and UI/UX design to native and cross-platform development, App Store deployment, and long-term optimization. Whether you need to build an MVP, modernize an existing application, or scale a production system, our mobile engineers deliver solutions designed for growth.
+                    Build secure, compliant, and resilient digital products with Noble Stack. We deliver application security services that protect modern web, SaaS, and AI-driven systems across identity, data, infrastructure, and compliance layers.
                 </p>
+                <p className="text-lg text-white/90 max-w-3xl mx-auto mt-4">
+                    Schedule a free security consultation and get a clear roadmap to secure your application at scale.
+                </p>
+
+                {/* CTA */}
+                <div className="mt-8">
+                    <CTAButton variant="primary" href="https://calendar.app.google/mWmd6v421Pk66LQ26">
+                        Schedule a Free Security Consultation
+                    </CTAButton>
+                </div>
             </div>
         </section>
     );

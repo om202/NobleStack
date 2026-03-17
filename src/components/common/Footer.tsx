@@ -6,12 +6,12 @@ import CTAButton from "../CTAButton";
 export default function Footer() {
   const quickLinks = [
     { name: "Home", href: "/" },
-    { name: "Products", href: "/Products" },
-    { name: "About", href: "/About" },
-    { name: "Services", href: "/Services" },
-    { name: "Career", href: "/Career" },
+    { name: "Products", href: "/products" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Career", href: "/career" },
     { name: "Blogs", href: "/blogs" },
-    { name: "Contact", href: "/Contact" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (

@@ -15,7 +15,7 @@ export default function AboutUs() {
                 />
 
                 <div className="mt-8 text-center">
-                    <CTAButton variant="secondary" href="/About" icon={ArrowRight}>
+                    <CTAButton variant="secondary" href="/about" icon={ArrowRight}>
                         Read More About Us
                     </CTAButton>
                 </div>

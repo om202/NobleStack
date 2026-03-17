@@ -25,7 +25,7 @@ export default function ServicesCTA() {
                 <CTAButton variant="primary" icon={Rocket} href="https://calendar.app.google/mWmd6v421Pk66LQ26" className="w-full sm:w-auto">
                     Get Started Today
                 </CTAButton>
-                <CTAButton variant="secondary" icon={Code} href="/Career" className="w-full sm:w-auto">
+                <CTAButton variant="secondary" icon={Code} href="/career" className="w-full sm:w-auto">
                     Join Our Team
                 </CTAButton>
             </div>
