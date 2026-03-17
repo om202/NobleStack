@@ -93,6 +93,19 @@ export default function Services() {
       ],
       color: "blue",
     },
+    {
+      icon: "Brain",
+      title: "AI Software Development",
+      description:
+        "We build custom AI-powered software products — from machine learning systems and generative AI applications to intelligent automation platforms.",
+      features: [
+        "Custom ML & Predictive Analytics",
+        "Generative AI & LLM Integration",
+        "AI SaaS Product Development",
+        "NLP, Chatbots & Automation Systems",
+      ],
+      color: "blue",
+    },
   ];
 
   const process = [

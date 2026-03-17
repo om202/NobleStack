@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, CheckCircle, Smartphone } from "lucide-react";
+import { ChevronLeft, ChevronRight, CheckCircle, Smartphone, Brain } from "lucide-react";
 import {
   SiReact,
   SiOpenai,
@@ -20,16 +20,18 @@ const ICON_MAP: { [key: string]: React.ComponentType<{ className?: string }> } =
   "GitHub Actions": SiGithubactions,
   "Auth0": SiAuth0,
   "Smartphone": Smartphone,
+  "Brain": Brain,
 };
 
 // Map service titles to their page URLs
 const SERVICE_URL_MAP: { [key: string]: string } = {
-  "Full-Stack Product Engineering": "/Services/full-stack-engineering",
-  "LLM-Powered AI Systems": "/Services/llm-ai-systems",
-  "End-to-End Automation Systems": "/Services/automation-systems",
-  "Deployment & DevOps": "/Services/devops-deployment",
-  "Security, Privacy & Reliability": "/Services/security-privacy",
-  "iOS & Android Apps": "/Services/mobile-apps",
+  "Full-Stack Product Engineering": "/services/full-stack-engineering",
+  "LLM-Powered AI Systems": "/services/llm-ai-systems",
+  "End-to-End Automation Systems": "/services/automation-systems",
+  "Deployment & DevOps": "/services/devops-deployment",
+  "Security, Privacy & Reliability": "/services/security-privacy",
+  "iOS & Android Apps": "/services/mobile-apps",
+  "AI Software Development": "/services/ai-software-development-company",
 };
 
 interface Service {
