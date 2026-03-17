@@ -4,10 +4,10 @@ import fs from 'fs'
 import path from 'path'
 
 /**
- * Dynamically discover all service pages from the Services directory
+ * Dynamically discover all service pages from the services directory
  */
 function getServicePages(): string[] {
-  const servicesDir = path.join(process.cwd(), 'src/app/Services')
+  const servicesDir = path.join(process.cwd(), 'src/app/services')
 
   try {
     const entries = fs.readdirSync(servicesDir, { withFileTypes: true })
@@ -17,7 +17,7 @@ function getServicePages(): string[] {
       .filter((entry) => entry.isDirectory())
       .map((entry) => entry.name)
   } catch (error) {
-    console.error('Error reading Services directory:', error)
+    console.error('Error reading services directory:', error)
     return []
   }
 }
@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Get all service pages dynamically
   const servicePages = getServicePages()
   const serviceUrls = servicePages.map((serviceName) => ({
-    url: `${baseUrl}/Services/${serviceName}`,
+    url: `${baseUrl}/services/${serviceName}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
@@ -52,13 +52,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/About`,
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/Services`,
+      url: `${baseUrl}/services`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
@@ -79,19 +79,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/Products`,
+      url: `${baseUrl}/products`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/Career`,
+      url: `${baseUrl}/career`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/Contact`,
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
