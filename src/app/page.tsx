@@ -1,6 +1,6 @@
 import Home from "./home/page";
 
-// entry point
+// main entry
 export default function Page() {
   return <Home />;
 }
