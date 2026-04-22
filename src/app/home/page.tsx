@@ -5,6 +5,7 @@ import MobileDevSection from "./L2_5";
 import ServicesSection from "./L3";
 import Testimonials from "./Testimonials";
 import AboutUs from "./AboutUs";
+import WhyNobleStack from "./WhyNobleStack";
 import SocialBadges from "./SocialBadges";
 import ContactCTA from "./ContactCTA";
 
@@ -19,6 +20,9 @@ export default function Home() {
       {/* Dark gap spacer for visual separation */}
       <div className="h-6 sm:h-8 bg-page-theme" />
       <AboutUs />
+      {/* Dark gap spacer for visual separation */}
+      <div className="h-6 sm:h-8 bg-page-theme" />
+      <WhyNobleStack />
       {/* Dark gap spacer for visual separation */}
       <div className="h-6 sm:h-8 bg-page-theme" />
       <FeaturesSection />

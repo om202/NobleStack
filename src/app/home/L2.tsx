@@ -85,7 +85,7 @@ export default function FeaturesSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader
-          title="Full-Stack Web Development Using Cutting-Edge Technologies"
+          title="Full-Stack Web Development — Top IT Software Company in Nepal"
           description="Specializing in lightning-fast, SEO-optimized websites and native mobile apps that look stunning on every device. From landing pages to complex web applications and iOS/Android apps, we create digital experiences that drive results."
           className="animate-fade-in"
           imageSrc="/undraw_server-cluster_7ugi.svg"

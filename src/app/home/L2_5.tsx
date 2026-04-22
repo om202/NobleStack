@@ -68,7 +68,7 @@ export default function MobileDevSection() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <SectionHeader
-                    title="Native & Cross-Platform Mobile App Development"
+                    title="Mobile App Development — IT Firm in Kathmandu, Nepal"
                     description="Building high-performance mobile applications for iOS and Android. From native Swift and Kotlin apps to cross-platform React Native solutions, we create mobile experiences that users love and businesses rely on."
                     className="animate-fade-in"
                     imageSrc="/undraw_mobile-site_qjby.svg"

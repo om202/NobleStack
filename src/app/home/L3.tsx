@@ -77,7 +77,7 @@ export default function AIServicesSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader
-          title="AI Solutions That Revolutionize Your Business"
+          title="AI & IT Solutions for Businesses in Kathmandu, Nepal"
           description="While others promise AI magic, we deliver proven solutions. Our AI chatbots and automation systems are already transforming businesses, handling millions of interactions, and saving countless hours of manual work."
           className="animate-fade-in"
           imageSrc="/undraw_ai-agent_pdkp.svg"

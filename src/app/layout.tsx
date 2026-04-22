@@ -31,11 +31,8 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.noblestack.io"),
-  title: {
-    template: '%s | Noble Stack',
-    default: 'Noble Stack - AI & Full-Stack Web Development Company in Kathmandu, Nepal',
-  },
+  metadataBase: new URL("https://noblestack.co"),
+  title: "Noble Stack - AI & Full-Stack Web Development Company in Kathmandu, Nepal",
   description: "Noble Stack delivers cutting-edge AI solutions, full-stack web & mobile app development, and automation services from Kathmandu, Nepal to clients worldwide. Transform your business with proven expertise.",
   keywords: [
     "AI development Nepal",
@@ -61,43 +58,29 @@ export const metadata: Metadata = {
     "digital transformation Nepal"
   ],
   authors: [{ name: "Noble Stack Team" }],
-
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
   openGraph: {
     title: "Noble Stack - AI & Full-Stack Web Development Company in Kathmandu, Nepal",
     description: "Noble Stack delivers cutting-edge AI solutions, full-stack web & mobile app development, and automation services from Kathmandu, Nepal to clients worldwide. Transform your business with proven expertise.",
-    url: "https://www.noblestack.io",
-    siteName: "Noble Stack",
+    url: "https://noblestack.co/",
+    type: "website",
     images: [
       {
-        url: "https://www.noblestack.io/nbl.png",
-        width: 1200,
-        height: 630,
-        alt: "Noble Stack - AI & Full-Stack Web Development Company in Kathmandu, Nepal",
+        url: "https://noblestack.co/og-image.jpg",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Noble Stack - AI & Full-Stack Web Development Company in Kathmandu, Nepal",
     description: "Noble Stack delivers cutting-edge AI solutions, full-stack web & mobile app development, and automation services from Kathmandu, Nepal to clients worldwide. Transform your business with proven expertise.",
-    images: ["https://www.noblestack.io/nbl.png"],
-    creator: "@noblestack",
+    images: ["https://noblestack.co/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://www.noblestack.io",
+    canonical: "https://noblestack.co/",
   },
   other: {
     'geo.region': 'NP-BA', // Bagmati Province, Nepal
@@ -123,71 +106,86 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
       <head>
-
-        {/* Website Schema */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        {/* SCHEMA: Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "WebSite",
-                  "name": "Noble Stack",
-                  "url": "https://www.noblestack.io",
-                  "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "https://www.noblestack.io/search?q={search_term_string}",
-                    "query-input": "required name=search_term_string"
-                  }
-                },
-                {
-                  "@type": "LocalBusiness",
-                  "name": "Noble Stack",
-                  "url": "https://www.noblestack.io",
-                  "logo": "https://www.noblestack.io/nbl.png",
-                  "image": "https://www.noblestack.io/nbl.png",
-                  "description": "Noble Stack delivers cutting-edge AI solutions, full-stack web & mobile app development, and automation services from Kathmandu, Nepal to clients worldwide.",
-                  "telephone": "+977 985-1411602",
-                  "email": "info@noblestack.io",
-                  "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Saraswati Marg, Kathmandu 44600, Nepal",
-                    "addressLocality": "Kathmandu",
-                    "addressRegion": "Bagmati Province",
-                    "postalCode": "44600",
-                    "addressCountry": "NP"
-                  },
-                  "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": "27.6935",
-                    "longitude": "85.3090"
-                  },
-                  "areaServed": [
-                    {
-                      "@type": "Country",
-                      "name": "Nepal"
-                    },
-                    {
-                      "@type": "Place",
-                      "name": "South Asia"
-                    },
-                    {
-                      "@type": "City",
-                      "name": "Kathmandu"
-                    }
-                  ],
-                  "priceRange": "$$",
-                  "foundingDate": "2019",
-                  "currenciesAccepted": ["NPR", "USD"],
-                  "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
-                  "sameAs": [
-                    "https://www.linkedin.com/company/noble-stack-pvt-ltd",
-                    "https://www.facebook.com/people/Noble-Stack-Pvt-Ltd/61577564326108/",
-                    "https://www.instagram.com/noble_stack_/"
-                  ]
-                }
+              "@type": "Organization",
+              "name": "Noble Stack",
+              "url": "https://noblestack.co",
+              "logo": "https://noblestack.co/logo.png",
+              "description": "Noble Stack delivers cutting-edge AI solutions, full-stack web & mobile app development, and automation services from Kathmandu, Nepal to clients worldwide.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kathmandu",
+                "addressRegion": "Bagmati",
+                "addressCountry": "NP"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/noblestack",
+                "https://www.facebook.com/noblestack",
+                "https://twitter.com/noblestack",
+                "https://www.youtube.com/@noblestack",
+                "https://www.instagram.com/noblestack"
               ]
+            })
+          }}
+        />
+        {/* SCHEMA: LocalBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Noble Stack",
+              "description": "AI & Full-Stack Web Development Company in Kathmandu, Nepal",
+              "url": "https://noblestack.co",
+              "telephone": "+977-XXXXXXXXXX",
+              "email": "hello@noblestack.co",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kathmandu",
+                "addressRegion": "Bagmati Province",
+                "addressCountry": "NP"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "27.7172",
+                "longitude": "85.3240"
+              },
+              "areaServed": ["Nepal", "South Asia", "Worldwide"],
+              "serviceType": [
+                "AI Development",
+                "Web Development",
+                "Mobile App Development",
+                "Business Automation",
+                "LLM Integration",
+                "SaaS Development"
+              ],
+              "priceRange": "$$"
+            })
+          }}
+        />
+        {/* SCHEMA: WebSite with SearchAction */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Noble Stack",
+              "url": "https://noblestack.co",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://noblestack.co/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
             })
           }}
         />

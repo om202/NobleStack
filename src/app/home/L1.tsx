@@ -64,9 +64,10 @@ export default function HeroSection() {
           <div className="absolute inset-0 light-mode-img">
             <Image
               src="/hero_gradient_light.webp"
-              alt="Hero Background Light"
+              alt="Noble Stack AI and web development company Kathmandu Nepal"
               fill
               priority
+              fetchPriority="high"
               quality={90}
               className="object-cover object-center"
             />
@@ -74,9 +75,10 @@ export default function HeroSection() {
           <div className="absolute inset-0 dark-mode-img">
             <Image
               src="/hero_gradient.webp"
-              alt="Hero Background Dark"
+              alt="Noble Stack AI and web development company Kathmandu Nepal"
               fill
               priority
+              fetchPriority="high"
               quality={90}
               className="object-cover object-center"
             />
@@ -90,21 +92,29 @@ export default function HeroSection() {
             <div className="relative z-10">
               {/* Left-aligned on desktop, centered on mobile */}
               <div className="flex flex-col items-center text-center lg:items-start lg:text-left max-w-2xl mx-auto lg:mx-0">
-                <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight text-main-theme font-serif text-engraved">
-                  We Build Scalable, AI-Driven Products For Your Business
-                </h1>
+                <h2 className="text-[32px] md:text-[45px] mb-6 leading-tight text-main-theme font-serif text-engraved">
+                  Top IT Company in Kathmandu, Nepal — AI-Powered Software & Web Solutions
+                </h2>
+                {/* SEO FIX: single H1 enforced */}
+                <div className="mb-6">
+                  <h1 className="text-xl md:text-2xl font-semibold text-main-theme">
+                    We Build Scalable, AI-Driven Products For Your Business
+                  </h1>
+                </div>
 
+                {/* SEO FIX: keyword density reduced */}
                 <p className="text-lg text-subtitle-theme mb-8">
-                  <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Transform your ideas into reality with our AI-powered software solutions and high-performance websites. Partner with our team of experts in Kathmandu, Nepal, to drive innovation.
+                  Noble Stack is an innovative technology firm building intelligent, scalable software products for businesses worldwide. We specialize in AI-driven web development, mobile apps, and full-stack solutions. Whether you need a cutting-edge SaaS platform, a business automation system, or custom engineered tech — our expert team delivers results that matter.
                 </p>
 
                 {/* Call to Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start mb-10 mt-8 sm:mt-16">
+                  {/* SEO FIX: CTA optimized */}
                   <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26" shine>
-                    Schedule Consultation
+                    Schedule a Free Consultation
                   </CTAButton>
                   <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/products" className="w-full sm:w-auto">
-                    See Our Products
+                    Explore Our AI Products
                   </CTAButton>
                 </div>
               </div>
@@ -124,15 +134,19 @@ export default function HeroSection() {
               <div className="flex items-center gap-4">
                 <Image
                   src="/npgoto.webp"
-                  alt="npgo.to Logo"
+                  alt="npgo.to free URL shortener Nepal by Noble Stack"
                   width={64}
                   height={64}
                   className="rounded-lg"
                   style={{ width: 'auto', height: 'auto' }}
+                  loading="lazy"
                 />
                 <div>
                   <h2 className="text-2xl font-serif text-main-theme mb-2">New Product Launch</h2>
-                  <p className="text-lg font-semibold text-subtitle-theme">npgo.to - Free URL Shortener for Nepal</p>
+                  <p className="text-lg font-semibold text-subtitle-theme">
+                    {/* SEO FIX: keyword-rich internal link */}
+                    <a href="https://npgo.to" className="hover:underline">Free URL Shortener for Nepal</a>
+                  </p>
                 </div>
               </div>
 
@@ -142,13 +156,14 @@ export default function HeroSection() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
+                {/* SEO FIX: CTA optimized */}
                 <CTAButton
                   variant="secondary"
                   href="https://npgo.to/"
                   icon={ArrowRight}
                   className="w-full sm:w-auto"
                 >
-                  Try npgo.to Now
+                  Try Nepal's Free URL Shortener
                 </CTAButton>
               </div>
             </div>
@@ -161,14 +176,16 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className="block rounded-xl overflow-hidden border border-theme shadow-lg hover:shadow-xl transition-shadow"
               >
+                {/* SEO FIX: keyword alt text added */}
                 <Image
                   src="/npgoto_screen.webp"
-                  alt="npgo.to Screenshot"
+                  alt="npgo.to free URL shortener Nepal by Noble Stack"
                   width={800}
                   height={600}
                   sizes="(max-width: 768px) 100vw, 800px"
                   className="w-full h-auto"
                   style={{ width: '100%', height: 'auto' }}
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -179,11 +196,12 @@ export default function HeroSection() {
       {/* Expertise Section */}
       <section id="expertise" aria-label="Our Expertise" className="max-w-7xl mx-auto px-3 pb-4 sm:px-4 sm:pb-8">
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme mb-8">
+          {/* SEO FIX: keyword-rich heading & alt text added */}
           <SectionHeader
-            title="Our Expertise"
+            title="Our Web, Mobile & AI Development Expertise"
             description="Core technologies and methodologies we use to build exceptional digital products."
             imageSrc="/undraw_dev-environment_n5by.svg"
-            imageAlt="Our Expertise Illustration"
+            imageAlt="Web mobile and AI development expertise Nepal"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -205,8 +223,9 @@ export default function HeroSection() {
           </div>
 
           <div className="mt-12 text-center">
+            {/* SEO FIX: CTA optimized */}
             <CTAButton variant="secondary" href="/services" icon={ArrowRight}>
-              View All Services
+              View All IT Services
             </CTAButton>
           </div>
         </div>
@@ -215,66 +234,74 @@ export default function HeroSection() {
       {/* Products Section */}
       <section id="products" aria-label="Our Products" className="max-w-7xl mx-auto px-3 pb-4 sm:px-4 sm:pb-8">
         <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
+          {/* SEO FIX: keyword-rich heading & alt text added */}
           <SectionHeader
-            title="Real Projects We've Built"
+            title="Real AI & Software Products Built by Our Nepal Team"
             description="From AI-powered mobile apps to professional networking platforms, explore the real-world products we've designed, developed, and launched for clients worldwide."
             imageSrc="/undraw_programming_j1zw.svg"
-            imageAlt="Real Projects Illustration"
+            imageAlt="AI software products built by Noble Stack Nepal team"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* Vibe AI */}
-            <a
-              href="https://apps.apple.com/us/app/ai-photo-editor-vibe/id6752835683"
+            {/* SEO FIX: keyword-rich internal link */}
+            <Link
+              href="/products/vibe-ai"
               target="_blank"
               rel="noopener noreferrer"
               className="block h-full"
             >
               <ServiceCard
-                name="Vibe AI Photo Editor"
+                name="AI Photo Editor App by Noble Stack"
                 description="Professional photo editing made simple. Remove backgrounds and enhance images with AI."
                 imageSrc="/vibe.webp"
-                imageAlt="Vibe AI"
+                imageAlt="Vibe AI photo editor app built by Noble Stack"
               />
-            </a>
+            </Link>
 
             {/* npgo.to */}
-            <a
-              href="https://npgo.to/"
+            {/* SEO FIX: keyword-rich internal link */}
+            <Link
+              href="https://npgo.to"
               target="_blank"
               rel="noopener noreferrer"
               className="block h-full"
             >
               <ServiceCard
-                name="npgo.to"
+                name="Free URL Shortener for Nepal"
                 description="Free URL shortener and QR code generator made for Nepal. Shorten links instantly and track clicks."
                 imageSrc="/npgoto.webp"
-                imageAlt="npgo.to"
+                imageAlt="npgo.to free URL shortener Nepal by Noble Stack"
               />
-            </a>
+            </Link>
 
             {/* Loopn */}
-            <a
-              href="https://www.loopn.io/"
+            {/* SEO FIX: keyword-rich internal link */}
+            <Link
+              href="/products/loopn"
               target="_blank"
               rel="noopener noreferrer"
               className="block h-full"
             >
               <ServiceCard
-                name="Loopn"
+                name="AI Career Matching Platform Nepal"
                 description="Professional Networking & Career Matching using AI. Resume matching for career growth."
                 imageSrc="/loopn_logo.webp"
-                imageAlt="Loopn"
+                imageAlt="Loopn AI career matching platform Nepal"
               />
-            </a>
+            </Link>
 
             {/* Noble Appointments */}
-            <div className="block h-full relative">
+            {/* SEO FIX: keyword-rich internal link */}
+            <Link
+              href="/products/noble-appointments"
+              className="block h-full relative"
+            >
               <ServiceCard
-                name="Noble Appointments"
+                name="Bikram Sambat Calendar App Nepal"
                 description="Fully Nepali Bikram Sambat based calendar — specially built for Nepali businesses in mind!"
                 imageSrc="/noble-appointments-logo.webp"
-                imageAlt="Noble Appointments"
+                imageAlt="Noble Appointments Bikram Sambat calendar app Nepal"
               />
               {/* Coming Soon Badge */}
               <div className="absolute top-4 right-4 z-10">
@@ -282,12 +309,13 @@ export default function HeroSection() {
                   Coming Soon
                 </span>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="mt-12 text-center">
+            {/* SEO FIX: CTA optimized */}
             <CTAButton variant="secondary" href="/products" icon={ArrowRight}>
-              View All Products
+              View All Software Products
             </CTAButton>
           </div>
         </div>

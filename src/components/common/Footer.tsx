@@ -132,9 +132,9 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row justify-between items-center pt-4 sm:pt-6 border-t border-theme gap-3 sm:gap-4">
           <div className="text-md-sm text-muted-theme text-center sm:text-left max-w-lg">
-            <p>Noble Stack is a premier AI & web development firm based in Kathmandu.</p>
-            <p>We craft scalable, intelligent digital solutions containing AI.</p>
-            <p>Partner with us to transform your innovative ideas into reality.</p>
+            <p>Noble Stack is a premier IT company and software solutions firm based in Kathmandu, Nepal.</p>
+            <p>We craft scalable, AI-powered digital products — from web and mobile apps to full-stack IT systems.</p>
+            <p>As one of the best IT companies in Nepal, we partner with businesses to transform ideas into intelligent, high-performance software.</p>
           </div>
           <div className="flex flex-col items-center sm:items-end gap-1 text-md-sm text-muted-theme">
             <span>© 2025 Noble Stack.</span>
@@ -145,6 +145,14 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
+        {/* SEO FIX: NAP block added for local SEO */}
+        <address style={{ fontStyle: "normal", marginTop: "1rem", lineHeight: "1.8" }} className="text-muted-theme text-sm text-center border-t border-theme pt-4 sm:pt-6 mt-4">
+          <strong>Noble Stack</strong><br/>
+          Kathmandu, Bagmati Province, Nepal<br/>
+          Email: <a href="mailto:hello@noblestack.co" className="hover:text-blue-500 transition-colors">hello@noblestack.co</a><br/>
+          Website: <a href="https://noblestack.co" className="hover:text-blue-500 transition-colors">noblestack.co</a>
+        </address>
       </div>
     </footer>
   );

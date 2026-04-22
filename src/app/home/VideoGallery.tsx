@@ -117,8 +117,9 @@ export default function VideoGallery() {
             className="pt-6 pb-8 px-3 sm:pt-6 sm:pb-12 sm:px-4 bg-card-theme border-y border-theme transition-colors"
         >
             <div className="max-w-7xl mx-auto">
+                {/* SEO FIX: keyword-rich video section heading */}
                 <SectionHeader
-                    title="Video Gallery"
+                    title="Noble Stack Project Demos & Success Stories"
                     description="Watch our latest project demos and success stories in action."
                     imageSrc="/undraw_portfolio_btd8.svg"
                     imageAlt="Video Gallery Illustration"
