@@ -8,8 +8,8 @@ export default function AboutUs() {
         <section id="about" aria-label="About Us" className="max-w-7xl mx-auto px-3 pb-4 sm:px-4 sm:pb-8">
             <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
                 <SectionHeader
-                    title="About Noble Stack"
-                    description="We're an AI-first software company based in Kathmandu, Nepal, building intelligent products with global standards. Our credibility comes from shipping real products, not just promises."
+                    title="About Noble Stack — Best AI & IT Company in Kathmandu, Nepal"
+                    description="We are an AI-first IT company based in Kathmandu, Nepal, recognized as one of the best AI companies in Nepal — building websites, custom software, mobile apps, and AI-powered systems with global engineering standards. Our credibility comes from shipping real products, not just promises."
                     imageSrc="/undraw_team-spirit_18vw.svg"
                     imageAlt="About Noble Stack"
                 />

@@ -1,23 +1,24 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Noble Stack - Leading AI & Web Development Company in Kathmandu, Nepal",
-  description: "Noble Stack is Kathmandu's premier AI and web development company, crafting intelligent solutions using cutting-edge AI, machine learning, and modern web technologies. Serving Nepal and South Asia with expert development services.",
+  title: "Noble Stack — AI-First IT Company in Kathmandu, Nepal | Web, Software, Mobile & AI",
+  description: "Noble Stack is a leading AI-first IT company in Kathmandu, Nepal — building websites, custom software, mobile apps, SaaS platforms, and AI automation for startups, enterprises, and global businesses.",
   keywords: [
+    "IT company in Kathmandu Nepal",
+    "best IT company Kathmandu Nepal",
+    "IT companies in Kathmandu Nepal",
+    "software company in Kathmandu Nepal",
+    "AI company in Nepal",
     "AI development company Nepal",
     "web development services Kathmandu",
-    "React development Nepal",
-    "Next.js development Kathmandu",
-    "machine learning solutions Nepal",
-    "AI automation Nepal",
+    "website development company Kathmandu",
     "custom software development Nepal",
-    "AI consulting Nepal",
-    "web applications Nepal",
-    "Noble Stack Nepal",
-    "intelligent digital solutions Nepal",
-    "tech startup Kathmandu",
-    "South Asia AI development",
-    "software company Nepal"
+    "mobile app development Nepal",
+    "SaaS development Nepal",
+    "AI automation Nepal",
+    "Next.js development Kathmandu",
+    "React development Nepal",
+    "Noble Stack Nepal"
   ],
   authors: [{ name: "Noble Stack Team" }],
   robots: {
@@ -32,8 +33,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Noble Stack - Leading AI & Web Development Company in Kathmandu, Nepal",
-    description: "Transform your business with expert AI development, web applications, and automation services from Nepal's leading tech company. Serving South Asia with cutting-edge technology solutions.",
+    title: "Noble Stack — AI-First IT Company in Kathmandu, Nepal | Web, Software, Mobile & AI",
+    description: "Noble Stack is an AI-first IT company in Kathmandu, Nepal — delivering websites, custom software, mobile apps, SaaS platforms, and AI automation for startups and global businesses.",
     url: "https://noblestack.io",
     siteName: "Noble Stack",
     images: [
@@ -49,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noble Stack - Leading AI & Web Development Company in Kathmandu, Nepal",
-    description: "Transform your business with expert AI development and web applications from Nepal's premier tech company serving South Asia.",
+    title: "Noble Stack — AI-First IT Company in Kathmandu, Nepal",
+    description: "AI-first IT company in Kathmandu, Nepal — websites, custom software, mobile apps, SaaS platforms, and AI automation for startups and global businesses.",
     images: ["https://noblestack.io/nbl.png"],
     creator: "@noblestack",
   },

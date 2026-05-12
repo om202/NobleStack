@@ -95,7 +95,7 @@ export default function HeroSection() {
                 </h1>
 
                 <p className="text-lg text-subtitle-theme mb-8">
-                  <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Transform your ideas into reality with our AI-powered software solutions and high-performance websites. Partner with our team of experts in Kathmandu, Nepal, to drive innovation.
+                  <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Noble Stack is recognized as one of the best AI and IT companies in Kathmandu, Nepal. We turn your ideas into AI-powered software, high-performance websites, mobile apps, and SaaS platforms — for startups, enterprises, and growing businesses worldwide.
                 </p>
 
                 {/* Call to Action Buttons */}
