@@ -148,6 +148,28 @@ export default function CareerPageContent() {
                         <div className="grid grid-cols-1 gap-8">
                             {[
                                 {
+                                    title: "Full Stack Engineer Intern",
+                                    value: "fullstack-engineer-intern",
+                                    location: "Remote / Kathmandu",
+                                    type: "Internship",
+                                    description:
+                                        "Join us as a Full Stack Engineer Intern to build modern web applications end-to-end. You will work alongside senior engineers on real production features across the frontend, backend, and database layers using Next.js, React, TypeScript, and Node.js.",
+                                    responsibilities: [
+                                        "Build features across the frontend and backend under senior engineer guidance",
+                                        "Write clean, well-tested TypeScript code reviewed on every pull request",
+                                        "Work with REST and GraphQL APIs and relational/non-relational databases",
+                                        "Help debug, profile, and improve performance of shipped features",
+                                        "Collaborate with designers and product to ship polished user-facing work"
+                                    ],
+                                    qualifications: [
+                                        "Current student or recent graduate in Computer Science or related field",
+                                        "Working knowledge of JavaScript/TypeScript and React",
+                                        "Familiarity with Node.js and at least one database (PostgreSQL or MongoDB)",
+                                        "Comfortable with Git, code reviews, and reading other people's code",
+                                        "Curiosity, ownership mindset, and willingness to learn modern stacks"
+                                    ]
+                                },
+                                {
                                     title: "SEO Specialist Intern",
                                     value: "seo-specialist",
                                     location: "Remote / Kathmandu",
@@ -379,6 +401,9 @@ export default function CareerPageContent() {
                                             </option>
                                             <option value="fullstack-developer">
                                                 Fullstack Developer
+                                            </option>
+                                            <option value="fullstack-engineer-intern">
+                                                Full Stack Engineer Intern
                                             </option>
                                             <option value="ai-engineer">AI/ML Engineer</option>
                                             <option value="product-designer">
