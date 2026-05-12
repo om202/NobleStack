@@ -54,7 +54,7 @@ export default function ProductsPageContent() {
                             <p className="text-base text-subtitle-theme leading-relaxed">
                                 Free URL shortener and QR code generator made for Nepal and Nepali businesses.
                                 Create short, memorable links in seconds and track every click with real-time analytics.
-                                Sign in with Google to manage all your links from one powerful dashboard—no subscriptions, no complicated setup.
+                                Sign in with Google to manage all your links from one powerful dashboard, no subscriptions, no complicated setup.
                             </p>
                         </div>
 

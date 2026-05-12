@@ -10,7 +10,7 @@ export default function CapabilitiesSection() {
             icon: Apple,
             name: "Custom iOS App Development",
             description:
-                "High-performance native iOS applications built with Swift, SwiftUI, UIKit, and Apple SDKs. We integrate APNs for push notifications, Apple In-App Purchases for subscriptions and payments, and deliver apps that feel at home in the Apple ecosystem—optimized for security, performance, and App Store compliance.",
+                "High-performance native iOS applications built with Swift, SwiftUI, UIKit, and Apple SDKs. We integrate APNs for push notifications, Apple In-App Purchases for subscriptions and payments, and deliver apps that feel at home in the Apple ecosystem, optimized for security, performance, and App Store compliance.",
         },
         {
             icon: Smartphone,
@@ -22,13 +22,13 @@ export default function CapabilitiesSection() {
             icon: Smartphone,
             name: "Cross-Platform Apps (React Native & Flutter)",
             description:
-                "Faster time to market with a single codebase for iOS and Android. We build cross-platform apps using React Native, Flutter, Expo, and shared TypeScript codebases—balancing performance, native feel, and cost efficiency. Ideal for startups and SaaS companies launching MVPs or iterating quickly.",
+                "Faster time to market with a single codebase for iOS and Android. We build cross-platform apps using React Native, Flutter, Expo, and shared TypeScript codebases, balancing performance, native feel, and cost efficiency. Ideal for startups and SaaS companies launching MVPs or iterating quickly.",
         },
         {
             icon: Smartphone,
             name: "Backend, APIs & Integrations",
             description:
-                "Mobile apps that are powered by robust backends and APIs. We design and integrate REST and GraphQL APIs, real-time features, authentication, and payment gateways—plus cloud services on AWS, GCP, and Firebase—to ensure your mobile app is secure, reliable, and ready to scale.",
+                "Mobile apps that are powered by robust backends and APIs. We design and integrate REST and GraphQL APIs, real-time features, authentication, and payment gateways, plus cloud services on AWS, GCP, and Firebase, to ensure your mobile app is secure, reliable, and ready to scale.",
         },
     ];
 
@@ -38,7 +38,7 @@ export default function CapabilitiesSection() {
                 {/* Header */}
                 <SectionHeader
                     title="Our Mobile App Development Services"
-                    description="We design and build mobile applications that are fast, secure, and ready to scale across iOS and Android—whether you are shipping an MVP or a production-grade platform."
+                    description="We design and build mobile applications that are fast, secure, and ready to scale across iOS and Android, whether you are shipping an MVP or a production-grade platform."
                     imageSrc="/undraw_server-cluster_7ugi.svg"
                     imageAlt="Mobile App Development Services Illustration"
                 />

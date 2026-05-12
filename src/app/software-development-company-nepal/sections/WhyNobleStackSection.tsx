@@ -3,19 +3,19 @@ import SectionHeader from "../../../components/SectionHeader";
 export default function WhyNobleStackSection() {
   const reasons = [
     "Scalable architecture built for high-growth startups and enterprise scale.",
-    "Agile delivery with quick time-to-market—without cutting engineering corners.",
+    "Agile delivery with quick time-to-market, without cutting engineering corners.",
     "Modern tech stack focused on performance, security, and maintainability.",
     "Proven track record with international clients across multiple time zones.",
-    "Senior engineering review on every PR—not a junior team learning on your project.",
+    "Senior engineering review on every PR, not a junior team learning on your project.",
     "Long-term partnership mindset focused on iteration and continuous improvement.",
   ];
 
   const principles = [
-    "We build before we sell—our own products validate our engineering standards.",
+    "We build before we sell, our own products validate our engineering standards.",
     "Transparent communication with structured updates and clear deliverables.",
     "Realistic timelines with milestone-based delivery you can plan around.",
     "Clean architecture and documented code you can build on for years.",
-    "Direct access to the engineers building your product—no middle layers.",
+    "Direct access to the engineers building your product, no middle layers.",
   ];
 
   return (

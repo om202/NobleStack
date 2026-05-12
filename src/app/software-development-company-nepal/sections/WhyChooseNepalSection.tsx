@@ -8,7 +8,7 @@ export default function WhyChooseNepalSection() {
       icon: DollarSign,
       name: "Cost-Effective Development",
       description:
-        "Save 40–70% on development costs compared to US and European rates—without compromising on engineering quality or delivery standards.",
+        "Save 40–70% on development costs compared to US and European rates, without compromising on engineering quality or delivery standards.",
     },
     {
       icon: Code,
@@ -26,7 +26,7 @@ export default function WhyChooseNepalSection() {
       icon: TrendingUp,
       name: "Growing Tech Ecosystem",
       description:
-        "Nepal's IT exports crossed NPR 12 billion in FY 2024–25—reflecting a rapidly maturing IT hub with a strong base of reliable engineering partners.",
+        "Nepal's IT exports crossed NPR 12 billion in FY 2024–25, reflecting a rapidly maturing IT hub with a strong base of reliable engineering partners.",
     },
     {
       icon: MessageSquare,
@@ -41,7 +41,7 @@ export default function WhyChooseNepalSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Why Choose a Software Development Company in Nepal?"
-          description="Nepal is now a serious destination for software outsourcing—an ideal choice for startups and enterprises that want high-quality engineering at competitive cost."
+          description="Nepal is now a serious destination for software outsourcing, an ideal choice for startups and enterprises that want high-quality engineering at competitive cost."
           imageSrc="/Flag_of_Nepal.svg"
           imageAlt="Nepal flag"
           imageSize="small"

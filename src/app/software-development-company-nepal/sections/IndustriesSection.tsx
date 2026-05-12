@@ -8,7 +8,7 @@ export default function IndustriesSection() {
       icon: Rocket,
       name: "Startups & SaaS",
       description:
-        "Scalable SaaS product development from MVP to market-ready platforms—built for speed without creating long-term technical debt.",
+        "Scalable SaaS product development from MVP to market-ready platforms, built for speed without creating long-term technical debt.",
     },
     {
       icon: Landmark,
@@ -20,7 +20,7 @@ export default function IndustriesSection() {
       icon: ShoppingCart,
       name: "E-Commerce",
       description:
-        "High-performance online stores and retail management systems—mobile-first, conversion-optimized, and built to scale with seasonal traffic.",
+        "High-performance online stores and retail management systems, mobile-first, conversion-optimized, and built to scale with seasonal traffic.",
     },
     {
       icon: Stethoscope,
@@ -41,7 +41,7 @@ export default function IndustriesSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Industries We Serve"
-          description="Cross-industry experience that lets us deliver software tailored to the realities of different business models—not generic templates."
+          description="Cross-industry experience that lets us deliver software tailored to the realities of different business models, not generic templates."
           imageSrc="/undraw_engineering-team_13ax.svg"
           imageAlt="Industries illustration"
         />

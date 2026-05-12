@@ -28,7 +28,7 @@ export default function ServicesSection() {
       icon: ScanEye,
       name: "Computer Vision Solutions",
       description:
-        "Using advanced deep learning models, we build intelligent vision systems for quality inspection, facial recognition, object detection, medical image analysis, and security monitoring—with faster, more accurate visual analysis.",
+        "Using advanced deep learning models, we build intelligent vision systems for quality inspection, facial recognition, object detection, medical image analysis, and security monitoring, with faster, more accurate visual analysis.",
     },
     {
       icon: Compass,

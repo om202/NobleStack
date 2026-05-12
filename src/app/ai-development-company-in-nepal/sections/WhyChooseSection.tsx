@@ -2,7 +2,7 @@ import SectionHeader from "../../../components/SectionHeader";
 
 export default function WhyChooseSection() {
   const benefits = [
-    "Custom-built AI solutions—no generic templates or one-size-fits-all frameworks.",
+    "Custom-built AI solutions, no generic templates or one-size-fits-all frameworks.",
     "Scalable architecture designed for long-term growth and future use cases.",
     "Enterprise-grade security practices around data, models, and infrastructure.",
     "A dedicated AI engineering team you can speak directly with.",
@@ -23,7 +23,7 @@ export default function WhyChooseSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Why Work with Noble Stack for AI Development?"
-          description="Choosing the right AI company in Nepal makes all the difference. We focus on real outcomes—not hype—and design AI systems that your business can operate, trust, and scale."
+          description="Choosing the right AI company in Nepal makes all the difference. We focus on real outcomes, not hype, and design AI systems that your business can operate, trust, and scale."
           imageSrc="/undraw_team-spirit_18vw.svg"
           imageAlt="Why choose us illustration"
         />

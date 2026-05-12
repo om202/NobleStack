@@ -46,7 +46,7 @@ export default function HeroSection() {
 
         {/* Description */}
         <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-          Noble Stack builds custom AI-powered software using machine learning, automation, and advanced data systems — helping organizations automate decisions, unlock new revenue, and scale intelligent products for long-term growth.
+          Noble Stack builds custom AI-powered software using machine learning, automation, and advanced data systems, helping organizations automate decisions, unlock new revenue, and scale intelligent products for long-term growth.
         </p>
       </div>
     </section>

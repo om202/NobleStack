@@ -19,7 +19,7 @@ export default function IndustriesSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Industries We Serve"
-          description="Cross-industry experience that lets us deliver software tailored to the realities of different business models—from local Nepali businesses to international SaaS companies."
+          description="Cross-industry experience that lets us deliver software tailored to the realities of different business models, from local Nepali businesses to international SaaS companies."
           imageSrc="/undraw_engineering-team_13ax.svg"
           imageAlt="Industries illustration"
         />

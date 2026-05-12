@@ -8,7 +8,7 @@ export default function WhoWeServeSection() {
       icon: Rocket,
       name: "Startups Building Their First App",
       description:
-        "You have a product idea and need to validate it with real users. We help you ship a production-quality MVP to the App Store quickly—without building technical debt that will haunt you for years.",
+        "You have a product idea and need to validate it with real users. We help you ship a production-quality MVP to the App Store quickly, without building technical debt that will haunt you for years.",
     },
     {
       icon: MonitorSmartphone,
@@ -26,7 +26,7 @@ export default function WhoWeServeSection() {
       icon: Globe2,
       name: "International Clients Outsourcing",
       description:
-        "Companies in Singapore, Australia, the US, and the UK hire Noble Stack as their Nepal-based mobile engineering partner—delivering local-agency quality at 60–80% lower cost.",
+        "Companies in Singapore, Australia, the US, and the UK hire Noble Stack as their Nepal-based mobile engineering partner, delivering local-agency quality at 60–80% lower cost.",
     },
     {
       icon: Store,
@@ -41,7 +41,7 @@ export default function WhoWeServeSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Who Noble Stack Builds Mobile Apps For"
-          description="From startups validating their first MVP to enterprises shipping internal tools—we work across the full spectrum of mobile product needs."
+          description="From startups validating their first MVP to enterprises shipping internal tools, we work across the full spectrum of mobile product needs."
           imageSrc="/undraw_team_85hs.svg"
           imageAlt="Who we serve illustration"
         />

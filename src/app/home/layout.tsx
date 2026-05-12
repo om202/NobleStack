@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AI-First IT Company in Kathmandu, Nepal | Web, Software, Mobile & AI",
-  description: "Noble Stack is a leading AI-first IT company in Kathmandu, Nepal — building websites, custom software, mobile apps, SaaS platforms, and AI automation for startups, enterprises, and global businesses.",
+  description: "Noble Stack is a leading AI-first IT company in Kathmandu, Nepal, building websites, custom software, mobile apps, SaaS platforms, and AI automation for startups, enterprises, and global businesses.",
   keywords: [
     "IT company in Kathmandu Nepal",
     "best IT company Kathmandu Nepal",
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Noble Stack — AI-First IT Company in Kathmandu, Nepal | Web, Software, Mobile & AI",
-    description: "Noble Stack is an AI-first IT company in Kathmandu, Nepal — delivering websites, custom software, mobile apps, SaaS platforms, and AI automation for startups and global businesses.",
+    title: "Noble Stack, AI-First IT Company in Kathmandu, Nepal | Web, Software, Mobile & AI",
+    description: "Noble Stack is an AI-first IT company in Kathmandu, Nepal, delivering websites, custom software, mobile apps, SaaS platforms, and AI automation for startups and global businesses.",
     url: "https://noblestack.io",
     siteName: "Noble Stack",
     images: [
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noble Stack — AI-First IT Company in Kathmandu, Nepal",
-    description: "AI-first IT company in Kathmandu, Nepal — websites, custom software, mobile apps, SaaS platforms, and AI automation for startups and global businesses.",
+    title: "Noble Stack, AI-First IT Company in Kathmandu, Nepal",
+    description: "AI-first IT company in Kathmandu, Nepal, websites, custom software, mobile apps, SaaS platforms, and AI automation for startups and global businesses.",
     images: ["https://noblestack.io/nbl.png"],
     creator: "@noblestack",
   },

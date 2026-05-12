@@ -41,7 +41,7 @@ export default function TopCompaniesList() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Top 50 Tech Companies in Nepal"
-          description="Ranked by engineering quality, innovation, global delivery, and real-world execution—from established industry leaders to rising startups."
+          description="Ranked by engineering quality, innovation, global delivery, and real-world execution, from established industry leaders to rising startups."
           imageSrc="/undraw_team_85hs.svg"
           imageAlt="Top companies illustration"
         />

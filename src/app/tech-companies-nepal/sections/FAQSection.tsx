@@ -15,7 +15,7 @@ export default function FAQSection() {
     {
       question: "What are the best tech companies in Nepal?",
       answer:
-        "The best tech companies in Nepal include Noble Stack, Leapfrog Technology, Fusemachines, Cotiviti Nepal, and CloudFactory—based on engineering quality, innovation, and global delivery track record.",
+        "The best tech companies in Nepal include Noble Stack, Leapfrog Technology, Fusemachines, Cotiviti Nepal, and CloudFactory, based on engineering quality, innovation, and global delivery track record.",
     },
     {
       question: "Which is the best AI company in Nepal?",
@@ -30,7 +30,7 @@ export default function FAQSection() {
     {
       question: "How much does it cost to hire developers in Nepal?",
       answer:
-        "Hiring developers in Nepal costs between $500 and $5,000 per month depending on experience, seniority, and technical specialization—roughly 60–80% lower than equivalent US or UK rates.",
+        "Hiring developers in Nepal costs between $500 and $5,000 per month depending on experience, seniority, and technical specialization, roughly 60–80% lower than equivalent US or UK rates.",
     },
   ];
 

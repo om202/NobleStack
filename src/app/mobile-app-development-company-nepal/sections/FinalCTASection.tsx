@@ -26,7 +26,7 @@ export default function FinalCTASection() {
               Noble Stack is based in Kathmandu and builds mobile apps for
               businesses across Nepal, Singapore, the US, Australia, and beyond.
               Whether you need a native iOS app, an Android app, or cross-platform
-              delivery—we ship it fast, clean, and production-ready.
+              delivery, we ship it fast, clean, and production-ready.
             </p>
             <p className="text-base text-white/90 mb-8 max-w-2xl mx-auto">
               Schedule a free consultation, speak directly with our engineering

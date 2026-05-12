@@ -30,7 +30,7 @@ We were so wrong.
 
 Two years later, the landscape has completely shifted. We moved from talking to bots to trusting them to act on our behalf.
 
-Here’s what life is really like alongside autonomous AI agents—and the three hardest lessons I’ve learned letting go of the reins.
+Here’s what life is really like alongside autonomous AI agents, and the three hardest lessons I’ve learned letting go of the reins.
 
 ---
 
@@ -42,7 +42,7 @@ Back then, you asked ChatGPT to write an email. You still had to copy it, paste 
 
 Today, my agents have goals.
 
-They have access to tools—my browser, CRM, bank account (with strict limits), and other APIs. They have long-term memory. They don’t just answer questions; they solve problems.
+They have access to tools, my browser, CRM, bank account (with strict limits), and other APIs. They have long-term memory. They don’t just answer questions; they solve problems.
 
 I no longer spend my day "doing work." I spend my day managing digital workers.
 

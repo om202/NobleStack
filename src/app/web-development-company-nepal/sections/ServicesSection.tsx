@@ -9,13 +9,13 @@ export default function ServicesSection() {
       icon: Layers,
       name: "Full-Stack Web Application Development",
       description:
-        "Complete web applications—frontend to backend to infrastructure—built with React, Next.js, Node.js, and PostgreSQL. Customer portals, internal dashboards, multi-tenant platforms designed to scale without costly rewrites.",
+        "Complete web applications, frontend to backend to infrastructure, built with React, Next.js, Node.js, and PostgreSQL. Customer portals, internal dashboards, multi-tenant platforms designed to scale without costly rewrites.",
     },
     {
       icon: Monitor,
       name: "Corporate Website Development",
       description:
-        "High-performance corporate websites with strong Core Web Vitals, fast load times, and SEO-optimized architecture—so your business ranks well and converts visitors into clients.",
+        "High-performance corporate websites with strong Core Web Vitals, fast load times, and SEO-optimized architecture, so your business ranks well and converts visitors into clients.",
     },
     {
       icon: Server,
@@ -33,13 +33,13 @@ export default function ServicesSection() {
       icon: Cpu,
       name: "AI-Powered Web Development",
       description:
-        "We integrate large language models, intelligent search, recommendation engines, and automation directly into web applications—built into the stack, not bolted on.",
+        "We integrate large language models, intelligent search, recommendation engines, and automation directly into web applications, built into the stack, not bolted on.",
     },
     {
       icon: Wrench,
       name: "Maintenance and Support",
       description:
-        "Ongoing maintenance, performance monitoring, security patching, and feature development for existing web applications—whether we built them or you inherited them.",
+        "Ongoing maintenance, performance monitoring, security patching, and feature development for existing web applications, whether we built them or you inherited them.",
     },
   ];
 
@@ -48,7 +48,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Web Development Services We Offer"
-          description="End-to-end web development—from a single landing page to a complex, data-intensive web application. Every project is custom-built for your goals."
+          description="End-to-end web development, from a single landing page to a complex, data-intensive web application. Every project is custom-built for your goals."
           imageSrc="/undraw_software-engineer_xv60.svg"
           imageAlt="Web services illustration"
         />

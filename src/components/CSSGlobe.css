@@ -50,7 +50,7 @@
     animation: globe-pulsate 1.2s infinite alternate both;
 }
 
-/* ── Light mode colors (default) — deep navy/indigo ── */
+/* ── Light mode colors (default), deep navy/indigo ── */
 .globe-dot {
     background-color: #1e40af;
 }
@@ -79,7 +79,7 @@
     background-color: #3730a3;
 }
 
-/* ── Dark mode colors — bright cyan/blue ── */
+/* ── Dark mode colors, bright cyan/blue ── */
 .dark .globe-dot {
     background-color: #007aff;
 }

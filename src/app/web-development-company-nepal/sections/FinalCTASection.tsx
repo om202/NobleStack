@@ -25,7 +25,7 @@ export default function FinalCTASection() {
             <p className="text-lg text-white/90 mb-4 max-w-2xl mx-auto">
               Noble Stack is based in Kathmandu and works with businesses across
               Nepal and the world. Whether you need a corporate website, a custom
-              web application, or a full SaaS platform—we deliver it fast, clean,
+              web application, or a full SaaS platform, we deliver it fast, clean,
               and ready to rank.
             </p>
             <p className="text-base text-white/90 mb-8 max-w-2xl mx-auto">

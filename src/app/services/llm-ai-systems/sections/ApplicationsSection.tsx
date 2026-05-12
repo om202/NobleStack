@@ -25,7 +25,7 @@ export default function ApplicationsSection() {
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="Real-World Applications of LLM AI Systems"
-                    description="From intelligent chatbots and document analysis to content and code generation — our AI systems power real business outcomes."
+                    description="From intelligent chatbots and document analysis to content and code generation, our AI systems power real business outcomes."
                     imageSrc="/undraw_programming_j1zw.svg"
                     imageAlt="Real-World Applications Illustration"
                 />

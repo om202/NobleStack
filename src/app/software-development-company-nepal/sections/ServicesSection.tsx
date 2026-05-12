@@ -21,13 +21,13 @@ export default function ServicesSection() {
       icon: Monitor,
       name: "Web Application Development",
       description:
-        "Fast, responsive, and high-performance web applications built with React, Next.js, and TypeScript—architected for SEO, performance, and scale from day one.",
+        "Fast, responsive, and high-performance web applications built with React, Next.js, and TypeScript, architected for SEO, performance, and scale from day one.",
     },
     {
       icon: Smartphone,
       name: "Mobile App Development",
       description:
-        "Native iOS, Android, and cross-platform mobile applications built with Swift, Kotlin, React Native, and Flutter—shipped to the App Store and Google Play.",
+        "Native iOS, Android, and cross-platform mobile applications built with Swift, Kotlin, React Native, and Flutter, shipped to the App Store and Google Play.",
     },
     {
       icon: Building2,
@@ -42,7 +42,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Our Software Development Services"
-          description="Noble Stack provides comprehensive software development services—from concept to deployment—using modern, reliable technologies that scale with your business."
+          description="Noble Stack provides comprehensive software development services, from concept to deployment, using modern, reliable technologies that scale with your business."
           imageSrc="/undraw_dev-environment_n5by.svg"
           imageAlt="Software services illustration"
         />

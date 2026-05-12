@@ -15,7 +15,7 @@ export default function FAQSection() {
         {
             question: "Do you build both iOS and Android apps?",
             answer:
-                "Yes. We develop both native and cross-platform applications for iOS and Android. Depending on your requirements, budget, and timeline, we recommend the best technical approach—whether that is Swift and Kotlin or React Native and Flutter.",
+                "Yes. We develop both native and cross-platform applications for iOS and Android. Depending on your requirements, budget, and timeline, we recommend the best technical approach, whether that is Swift and Kotlin or React Native and Flutter.",
         },
         {
             question: "Which is better: native or cross-platform development?",

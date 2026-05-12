@@ -18,7 +18,7 @@ At first, tools like ChatGPT, Claude, Gemini, and DeepSeek-R1 appear to reason. 
 
 Reasoning is not just about getting the right answer. It’s about how the answer is reached. People reason by using logic, weighing options, checking facts, and applying what they know and experienced in the past to solve new problems. In machines, reasoning usually has two parts: a knowledge base that holds facts and rules, and an inference engine that draws conclusions from them. Real reasoning means solving problems flexibly, explaining choices, handling new cases, and applying general intuition.
 
-Pattern matching works differently. It looks for statistical trends in data. This is where large language models are extremely good at. They train on huge collections of text and learn to predict the next word with high accuracy. That lets them mimic reasoning. Their answers can seem smart— even insightful — but they often lack true logic or an understanding of cause and effect.
+Pattern matching works differently. It looks for statistical trends in data. This is where large language models are extremely good at. They train on huge collections of text and learn to predict the next word with high accuracy. That lets them mimic reasoning. Their answers can seem smart, even insightful, but they often lack true logic or an understanding of cause and effect.
 
 ## How AI Simulates Reasoning
 
@@ -32,13 +32,13 @@ These tools often beat older (non-reasoning) models at solving complex tasks. Bu
 
 Despite recent progress, LLMs still fall short in key ways. Many examples of so-called reasoning come from memorized patterns or biases in training data. What looks like logic is often guesswork shaped by word frequency. When you look at these responses closely, you will find surface-level matches, not deep thinking.
 
-Newer LLMs bring their own problems. Some get stuck in loops — repeating thoughts without improving answers. This is called rumination. Others can’t justify their effort to match the problem. They may plan too much for easy tasks or fall apart under complex ones.
+Newer LLMs bring their own problems. Some get stuck in loops, repeating thoughts without improving answers. This is called rumination. Others can’t justify their effort to match the problem. They may plan too much for easy tasks or fall apart under complex ones.
 
 Another weak point is precision. Give a model a clear set of steps like solving the Tower of Hanoi and it may still fail. Even worse, some models give wrong answers with full confidence. They might reach the right result but get there through flawed steps. That gap between output and logic is called unfaithfulness.
 
 Generalization is also limited. Models can do well with problems that follow known patterns. But when the form shifts, meaning change the problem slightly, performance drops. Humans can adapt. But these systems cannot.
 
-Flexibility is another missing piece. People bend rules, notice edge cases, and weigh context. Models tend to follow instructions too literally. Ask one to buy flour for $10.01 with only $10, and it may refuse — this calls for rounding or common sense. This shows the lack of practical judgment, emotional cues, and moral reasoning.
+Flexibility is another missing piece. People bend rules, notice edge cases, and weigh context. Models tend to follow instructions too literally. Ask one to buy flour for $10.01 with only $10, and it may refuse, this calls for rounding or common sense. This shows the lack of practical judgment, emotional cues, and moral reasoning.
 
 ## So… Is It Reasoning or Pattern Matching?
 

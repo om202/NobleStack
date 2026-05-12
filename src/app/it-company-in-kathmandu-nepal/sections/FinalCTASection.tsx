@@ -29,7 +29,7 @@ export default function FinalCTASection() {
             </p>
             <p className="text-base text-white/90 mb-8 max-w-2xl mx-auto">
               Whether you need a website, custom software, SaaS platform, AI
-              automation, or mobile app—our team is ready to help your business
+              automation, or mobile app, our team is ready to help your business
               grow.
             </p>
             <CTAButton variant="primary" href="/contact">

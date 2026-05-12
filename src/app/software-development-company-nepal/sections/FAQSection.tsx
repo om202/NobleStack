@@ -15,12 +15,12 @@ export default function FAQSection() {
     {
       question: "What is the best software development company in Nepal?",
       answer:
-        "The best company depends on your project needs—but you should look for proven engineering experience, a modern tech stack, and a track record of successful delivery. Noble Stack stands out for its AI-first approach, real shipped products, and senior engineering review on every project.",
+        "The best company depends on your project needs, but you should look for proven engineering experience, a modern tech stack, and a track record of successful delivery. Noble Stack stands out for its AI-first approach, real shipped products, and senior engineering review on every project.",
     },
     {
       question: "How much does software development cost in Nepal?",
       answer:
-        "Costs typically range from $5,000 for small projects (MVPs) to $80,000+ for large enterprise solutions, depending on complexity, features, and timeline. Hourly rates range from $25–$80 per hour—roughly 60–80% lower than equivalent US rates.",
+        "Costs typically range from $5,000 for small projects (MVPs) to $80,000+ for large enterprise solutions, depending on complexity, features, and timeline. Hourly rates range from $25–$80 per hour, roughly 60–80% lower than equivalent US rates.",
     },
     {
       question: "Why hire developers from Nepal?",

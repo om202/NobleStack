@@ -69,7 +69,7 @@ export default function BenefitsSection() {
         <div className="mt-8 bg-subtle-theme rounded-2xl p-6 md:p-8 border border-theme text-center">
           <p className="text-base text-subtitle-theme">
             <span className="font-semibold text-main-theme">Traditional Software vs AI Software:</span>{" "}
-            AI software enables organizations to operate with greater intelligence and efficiency—learning from data, adapting to change, and automating decisions that traditional software cannot.
+            AI software enables organizations to operate with greater intelligence and efficiency, learning from data, adapting to change, and automating decisions that traditional software cannot.
           </p>
         </div>
       </div>

@@ -30,12 +30,12 @@ export default function FAQSection() {
     {
       question: "Can AI integrate with my existing software and tools?",
       answer:
-        "Yes. We integrate AI systems with existing CRMs, ERPs, internal tools, data warehouses, and SaaS platforms using APIs, event streams, and secure data pipelines—without disrupting daily operations.",
+        "Yes. We integrate AI systems with existing CRMs, ERPs, internal tools, data warehouses, and SaaS platforms using APIs, event streams, and secure data pipelines, without disrupting daily operations.",
     },
     {
       question: "Is AI suitable for small and medium businesses?",
       answer:
-        "Absolutely. AI is not limited to large enterprises. Many small and medium businesses benefit from automation, predictive analytics, intelligent customer support, and smarter reporting—even starting with focused, high-ROI use cases.",
+        "Absolutely. AI is not limited to large enterprises. Many small and medium businesses benefit from automation, predictive analytics, intelligent customer support, and smarter reporting, even starting with focused, high-ROI use cases.",
     },
   ];
 

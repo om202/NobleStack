@@ -8,13 +8,13 @@ export default function DifferentiatorSection() {
       icon: Rocket,
       name: "Real Products. Not Just Client Projects.",
       description:
-        "Vibe AI Photo Editor is live on the US, Singapore, Australia, and Nepal Apple App Stores right now—verifiable proof of production mobile engineering you can download yourself.",
+        "Vibe AI Photo Editor is live on the US, Singapore, Australia, and Nepal Apple App Stores right now, verifiable proof of production mobile engineering you can download yourself.",
     },
     {
       icon: Cpu,
       name: "AI Is the Foundation, Not a Feature",
       description:
-        "We are Nepal's AI-first mobile development company. AI capabilities are designed into every app at the architecture level from the first planning session—no costly rebuild later.",
+        "We are Nepal's AI-first mobile development company. AI capabilities are designed into every app at the architecture level from the first planning session, no costly rebuild later.",
     },
     {
       icon: Code2,
@@ -35,7 +35,7 @@ export default function DifferentiatorSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Why Noble Stack Is Different"
-          description="Most mobile development agencies in Nepal only do client work. Noble Stack builds and ships its own products—starting with Vibe AI Photo Editor, live on the App Store under real-world load."
+          description="Most mobile development agencies in Nepal only do client work. Noble Stack builds and ships its own products, starting with Vibe AI Photo Editor, live on the App Store under real-world load."
           imageSrc="/undraw_team-spirit_18vw.svg"
           imageAlt="Differentiator illustration"
         />

@@ -16,7 +16,7 @@ export default function EndToEndSection() {
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="End-to-End Mobile App Development"
-                    description="Our comprehensive mobile app development services cover the full lifecycle—from idea to launch and beyond."
+                    description="Our comprehensive mobile app development services cover the full lifecycle, from idea to launch and beyond."
                     imageSrc="/undraw_software-engineer_xv60.svg"
                     imageAlt="End-to-End Mobile Development Illustration"
                 />

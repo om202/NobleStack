@@ -19,7 +19,7 @@ export default function Services() {
       icon: "React",
       title: "Full-Stack Product Engineering",
       description:
-        "We engineer robust, full-stack systems — from frontend to backend to infrastructure — with code quality and scalability at the core.",
+        "We engineer robust, full-stack systems, from frontend to backend to infrastructure, with code quality and scalability at the core.",
       features: [
         "React, Next.js & Tailwind CSS",
         "Node.js, NestJS & GraphQL",
@@ -32,7 +32,7 @@ export default function Services() {
       icon: "OpenAI",
       title: "LLM-Powered AI Systems",
       description:
-        "We design systems that leverage cutting-edge language models to reason, retrieve, and respond — integrated seamlessly into your product or process.",
+        "We design systems that leverage cutting-edge language models to reason, retrieve, and respond, integrated seamlessly into your product or process.",
       features: [
         "OpenAI, Anthropic & Mistral APIs",
         "LangChain, RAG & CrewAI",
@@ -58,7 +58,7 @@ export default function Services() {
       icon: "Docker",
       title: "Deployment & DevOps",
       description:
-        "We ensure your product runs smoothly in production with modern DevOps practices — from zero-downtime deploys to intelligent monitoring.",
+        "We ensure your product runs smoothly in production with modern DevOps practices, from zero-downtime deploys to intelligent monitoring.",
       features: [
         "GitHub Actions & GitLab CI",
         "Docker & Container Registry",
@@ -71,7 +71,7 @@ export default function Services() {
       icon: "Auth0",
       title: "Security, Privacy & Reliability",
       description:
-        "From identity to data to systems — we build with trust and resilience in mind, ensuring your application is safe, compliant, and production-ready.",
+        "From identity to data to systems, we build with trust and resilience in mind, ensuring your application is safe, compliant, and production-ready.",
       features: [
         "OAuth2, JWT & Multi-provider Auth",
         "HTTPS, AES & Encryption at Rest",
@@ -84,7 +84,7 @@ export default function Services() {
       icon: "Smartphone",
       title: "iOS & Android Apps",
       description:
-        "We build native and cross-platform mobile applications that deliver seamless experiences on iOS and Android — from concept to App Store deployment.",
+        "We build native and cross-platform mobile applications that deliver seamless experiences on iOS and Android, from concept to App Store deployment.",
       features: [
         "React Native & Flutter",
         "Swift, Kotlin & Native APIs",
@@ -97,7 +97,7 @@ export default function Services() {
       icon: "Brain",
       title: "AI Software Development",
       description:
-        "We build custom AI-powered software products — from machine learning systems and generative AI applications to intelligent automation platforms.",
+        "We build custom AI-powered software products, from machine learning systems and generative AI applications to intelligent automation platforms.",
       features: [
         "Custom ML & Predictive Analytics",
         "Generative AI & LLM Integration",
@@ -299,7 +299,7 @@ export default function Services() {
               </h2>
               <p className="text-base text-subtitle-theme max-w-2xl mx-auto mb-8">
                 We work with the latest and most reliable technologies to build
-                robust, scalable solutions. Watch our expertise in action —
+                robust, scalable solutions. Watch our expertise in action, 
                 technologies refresh dynamically to showcase our full stack.
               </p>
             </header>

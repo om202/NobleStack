@@ -33,11 +33,11 @@ export default function HeroSection() {
         </Link>
 
         <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
-          IT Company in Kathmandu, Nepal — AI, Software & Web Development
+          IT Company in Kathmandu, Nepal, AI, Software & Web Development
         </h1>
 
         <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-          Noble Stack is an AI-first IT company in Kathmandu, Nepal—delivering
+          Noble Stack is an AI-first IT company in Kathmandu, Nepal, delivering
           websites, custom software, mobile apps, SaaS platforms, and AI
           automation for startups, enterprises, and growing businesses worldwide.
         </p>

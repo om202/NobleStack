@@ -8,19 +8,19 @@ export default function GlobalAngleSection() {
       icon: TrendingUp,
       name: "Cost Advantage",
       description:
-        "Web development rates in Nepal range from $25–$99/hr. Equivalent talent in the US or UK costs $100–$250/hr. Over a 3-month project, that adds up to $20,000–$60,000 in savings—without compromising quality.",
+        "Web development rates in Nepal range from $25–$99/hr. Equivalent talent in the US or UK costs $100–$250/hr. Over a 3-month project, that adds up to $20,000–$60,000 in savings, without compromising quality.",
     },
     {
       icon: Code2,
       name: "Talent Quality",
       description:
-        "Nepal produces thousands of engineering graduates annually. Noble Stack recruits from the top tier—developers fluent in modern frameworks and experienced with international clients.",
+        "Nepal produces thousands of engineering graduates annually. Noble Stack recruits from the top tier, developers fluent in modern frameworks and experienced with international clients.",
     },
     {
       icon: Clock,
       name: "Communication & Timezone",
       description:
-        "Noble Stack operates from UTC+5:45 (Kathmandu)—a strong overlap with Singapore, the UAE, Europe, and Australia. All client communication happens in English.",
+        "Noble Stack operates from UTC+5:45 (Kathmandu), a strong overlap with Singapore, the UAE, Europe, and Australia. All client communication happens in English.",
     },
   ];
 
@@ -55,7 +55,7 @@ export default function GlobalAngleSection() {
           </div>
           <p className="text-base text-subtitle-theme leading-relaxed">
             Nepal&apos;s software and BPO exports crossed NPR 12 billion in the
-            first seven months of fiscal year 2024–25—a growth of over 20%
+            first seven months of fiscal year 2024–25, a growth of over 20%
             year-on-year, reflecting rising global trust in Nepali technology
             companies.
             <span className="block mt-3 text-sm text-muted-theme">

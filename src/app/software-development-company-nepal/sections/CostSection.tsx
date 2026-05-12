@@ -98,7 +98,7 @@ export default function CostSection() {
           <p className="text-base text-subtitle-theme leading-relaxed">
             An $80,000 project built by senior engineers in Nepal would typically
             cost $200,000–$300,000 in the US or Western Europe. The lower cost
-            reflects regional living costs—not lower engineering quality.
+            reflects regional living costs, not lower engineering quality.
           </p>
         </div>
       </div>

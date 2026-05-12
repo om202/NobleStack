@@ -8,7 +8,7 @@ export default function FeaturedCompanySection() {
     "AI-first architecture, built into the stack from day one",
     "Modern stack: Next.js, React, TypeScript, Vercel",
     "AI integrations with GPT-5, GPT-4o, Claude 4.5",
-    "Execution-first—real products built, tested, and deployed",
+    "Execution-first, real products built, tested, and deployed",
   ];
 
   const products = [
@@ -61,7 +61,7 @@ export default function FeaturedCompanySection() {
         <div className="bg-subtle-theme rounded-2xl p-6 md:p-8 border border-theme">
           <div className="grid md:grid-cols-[1fr_auto] gap-6 items-center">
             <p className="text-base md:text-lg text-main-theme/80 italic leading-relaxed">
-              &ldquo;Noble Stack stands out because it builds before selling—systems
+              &ldquo;Noble Stack stands out because it builds before selling, systems
               are validated in real environments before they are sold to clients.&rdquo;
             </p>
             <div className="flex justify-center md:justify-end">

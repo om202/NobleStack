@@ -47,7 +47,7 @@ export default function NobleAppointmentsAnnouncement() {
                                     </span>
                                 </h3>
                                 <p className="text-sm text-muted-theme font-medium">
-                                    Fully Nepali Bikram Sambat based calendar — specially built for Nepali businesses!
+                                    Fully Nepali Bikram Sambat based calendar, specially built for Nepali businesses!
                                 </p>
                             </div>
                         </div>

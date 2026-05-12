@@ -6,7 +6,7 @@ export default function IntroSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="What Does a Software Development Company in Nepal Do?"
-          description="A software development company in Nepal designs and builds custom software, web and mobile applications, and enterprise systems that solve real business problems and automate workflows—through design, engineering, and long-term maintenance."
+          description="A software development company in Nepal designs and builds custom software, web and mobile applications, and enterprise systems that solve real business problems and automate workflows, through design, engineering, and long-term maintenance."
           imageSrc="/undraw_software-engineer_xv60.svg"
           imageAlt="Software engineer illustration"
         />
@@ -20,7 +20,7 @@ export default function IntroSection() {
           </p>
           <p className="text-base md:text-lg text-main-theme font-semibold leading-relaxed">
             Noble Stack delivers scalable, production-ready software for global
-            businesses—built with the same engineering standards we apply to our
+            businesses, built with the same engineering standards we apply to our
             own products.
           </p>
         </div>

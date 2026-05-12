@@ -29,7 +29,7 @@ export default function FinalVerdictCTA() {
             </p>
             <p className="text-base text-white/90 mb-8 max-w-2xl mx-auto">
               Whether you need custom AI systems, SaaS platforms, or scalable web
-              applications—this is where innovation meets execution.
+              applications, this is where innovation meets execution.
             </p>
             <CTAButton variant="primary" href="/contact">
               Book a Call

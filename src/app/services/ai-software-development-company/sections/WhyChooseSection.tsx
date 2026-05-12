@@ -15,7 +15,7 @@ export default function WhyChooseSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Why Choose Noble Stack as Your AI Development Partner"
-          description="Organizations trust Noble Stack because we focus on building production-ready AI systems that solve real problems—not experimental prototypes."
+          description="Organizations trust Noble Stack because we focus on building production-ready AI systems that solve real problems, not experimental prototypes."
           imageSrc="/undraw_engineering-team_13ax.svg"
           imageAlt="Why choose Noble Stack illustration"
         />
@@ -33,7 +33,7 @@ export default function WhyChooseSection() {
             ))}
           </ul>
           <p className="text-base text-subtitle-theme mt-6">
-            We build AI systems designed for real business outcomes—not experimental prototypes.
+            We build AI systems designed for real business outcomes, not experimental prototypes.
           </p>
         </div>
       </div>

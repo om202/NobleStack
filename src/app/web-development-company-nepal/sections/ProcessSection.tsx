@@ -15,17 +15,17 @@ export default function ProcessSection() {
     {
       title: "Development and Testing",
       description:
-        "Structured sprints with code reviews at every stage. Lighthouse audits, cross-browser testing, and load testing run before delivery—not as an afterthought.",
+        "Structured sprints with code reviews at every stage. Lighthouse audits, cross-browser testing, and load testing run before delivery, not as an afterthought.",
     },
     {
       title: "Deployment and Launch",
       description:
-        "Production deployment to Vercel, AWS, or GCP—including domain, SSL, CDN, and monitoring. We run a full pre-launch checklist and stay available during your go-live window.",
+        "Production deployment to Vercel, AWS, or GCP, including domain, SSL, CDN, and monitoring. We run a full pre-launch checklist and stay available during your go-live window.",
     },
     {
       title: "Support and Iteration",
       description:
-        "After launch we provide maintenance, performance monitoring, security updates, and feature development. Long-term partner—not a project-and-done agency.",
+        "After launch we provide maintenance, performance monitoring, security updates, and feature development. Long-term partner, not a project-and-done agency.",
     },
   ];
 

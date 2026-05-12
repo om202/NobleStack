@@ -33,7 +33,7 @@ export default function TechStackSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Technologies We Use"
-          description="A modern, production-ready stack used by leading global product companies—chosen for performance, scalability, and long-term maintainability."
+          description="A modern, production-ready stack used by leading global product companies, chosen for performance, scalability, and long-term maintainability."
           imageSrc="/undraw_server-cluster_7ugi.svg"
           imageAlt="Technology stack illustration"
         />

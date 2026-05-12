@@ -48,7 +48,7 @@ export default function HeroSection() {
                     Noble Stack is a trusted DevOps services company delivering secure, scalable, and production-ready deployment solutions for startups, SMBs, and enterprises worldwide. We help organizations deploy faster, scale reliably, and operate securely using modern DevOps practices, cloud-native infrastructure, and automation.
                 </p>
                 <p className="text-lg text-white/80 max-w-3xl mx-auto mt-4 leading-relaxed">
-                    Our Deployment & DevOps services ensure your applications run smoothly in production — from zero-downtime CI/CD pipelines and container orchestration to cloud infrastructure automation, monitoring, and disaster recovery.
+                    Our Deployment & DevOps services ensure your applications run smoothly in production, from zero-downtime CI/CD pipelines and container orchestration to cloud infrastructure automation, monitoring, and disaster recovery.
                 </p>
             </div>
         </section>

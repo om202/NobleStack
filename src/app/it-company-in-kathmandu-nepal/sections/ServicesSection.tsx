@@ -17,7 +17,7 @@ export default function ServicesSection() {
       icon: Monitor,
       name: "Website Development",
       description:
-        "Fast, responsive, SEO-friendly websites and corporate sites built with Next.js and React—designed to load quickly, rank well, and convert visitors into customers.",
+        "Fast, responsive, SEO-friendly websites and corporate sites built with Next.js and React, designed to load quickly, rank well, and convert visitors into customers.",
     },
     {
       icon: Code2,
@@ -35,7 +35,7 @@ export default function ServicesSection() {
       icon: Smartphone,
       name: "Mobile App Development",
       description:
-        "Native iOS and Android apps in Swift and Kotlin, plus cross-platform delivery in React Native and Flutter—shipped to the App Store and Google Play.",
+        "Native iOS and Android apps in Swift and Kotlin, plus cross-platform delivery in React Native and Flutter, shipped to the App Store and Google Play.",
     },
     {
       icon: Server,
@@ -47,7 +47,7 @@ export default function ServicesSection() {
       icon: Layout,
       name: "UI/UX Design",
       description:
-        "Modern, intuitive, conversion-focused interfaces—wireframes, prototypes, and complete design systems that work cleanly across web and mobile.",
+        "Modern, intuitive, conversion-focused interfaces, wireframes, prototypes, and complete design systems that work cleanly across web and mobile.",
     },
   ];
 
@@ -56,7 +56,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Our IT Services in Kathmandu, Nepal"
-          description="End-to-end engineering—from a single landing page to a complete AI-powered SaaS platform. Every project is custom-built for your goals."
+          description="End-to-end engineering, from a single landing page to a complete AI-powered SaaS platform. Every project is custom-built for your goals."
           imageSrc="/undraw_dev-environment_n5by.svg"
           imageAlt="IT services illustration"
         />

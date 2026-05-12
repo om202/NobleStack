@@ -44,7 +44,7 @@ export default function HeroSection() {
 
         {/* Description */}
         <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-          Hire experienced AI developers from Noble Stack to build intelligent systems — from machine learning models and AI chatbots to generative AI applications and automation platforms tailored to your business.
+          Hire experienced AI developers from Noble Stack to build intelligent systems, from machine learning models and AI chatbots to generative AI applications and automation platforms tailored to your business.
         </p>
       </div>
     </section>

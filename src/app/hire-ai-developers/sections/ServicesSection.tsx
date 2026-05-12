@@ -8,7 +8,7 @@ export default function ServicesSection() {
       icon: Brain,
       name: "Custom AI Development",
       description:
-        "Building artificial intelligence solutions designed specifically for your unique requirements — automating processes, analyzing business data, and improving operational performance with scalable systems that integrate seamlessly.",
+        "Building artificial intelligence solutions designed specifically for your unique requirements, automating processes, analyzing business data, and improving operational performance with scalable systems that integrate seamlessly.",
     },
     {
       icon: LineChart,
@@ -26,7 +26,7 @@ export default function ServicesSection() {
       icon: Sparkles,
       name: "Generative AI Development",
       description:
-        "Creating generative AI applications powered by large language models — AI assistants, automated content creation, intelligent document generation, and productivity-boosting AI tools.",
+        "Creating generative AI applications powered by large language models, AI assistants, automated content creation, intelligent document generation, and productivity-boosting AI tools.",
     },
     {
       icon: Bot,

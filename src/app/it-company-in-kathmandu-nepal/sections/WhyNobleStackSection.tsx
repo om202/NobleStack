@@ -2,10 +2,10 @@ import SectionHeader from "../../../components/SectionHeader";
 
 export default function WhyNobleStackSection() {
   const strengths = [
-    "AI-first architecture, built into every product from day one—not bolted on later.",
+    "AI-first architecture, built into every product from day one, not bolted on later.",
     "Modern stack: Next.js, React, TypeScript, Node.js, AWS, and Vercel.",
-    "Senior engineering review on every pull request—no junior team learning on your project.",
-    "Real shipped products under real-world load—not just client decks.",
+    "Senior engineering review on every pull request, no junior team learning on your project.",
+    "Real shipped products under real-world load, not just client decks.",
     "SEO and performance built in, not added by an agency after launch.",
     "Long-term technical support and maintenance after delivery.",
   ];
@@ -13,9 +13,9 @@ export default function WhyNobleStackSection() {
   const principles = [
     "Transparent communication with clear scope, milestones, and weekly updates.",
     "Affordable IT services in Kathmandu without compromising on engineering quality.",
-    "Business-focused technology decisions—not framework-of-the-week chasing.",
+    "Business-focused technology decisions, not framework-of-the-week chasing.",
     "Scalable products designed for long-term growth and future expansion.",
-    "Direct access to the engineers building your product—no middle layers.",
+    "Direct access to the engineers building your product, no middle layers.",
   ];
 
   return (

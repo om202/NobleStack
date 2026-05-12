@@ -39,7 +39,7 @@ export default function HeroSection() {
         <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
           Noble Stack is an AI-first web development company based in Kathmandu.
           We build high-performance websites and web applications using Next.js,
-          React, and TypeScript—shipped for Nepali businesses and global clients alike.
+          React, and TypeScript, shipped for Nepali businesses and global clients alike.
         </p>
       </div>
     </section>

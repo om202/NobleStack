@@ -10,13 +10,13 @@ export default function ServicesSection() {
       icon: Brain,
       name: "Custom AI Software Development",
       description:
-        "We build tailored AI systems for your exact operational needs: AI-powered SaaS platforms, predictive analytics systems, intelligent dashboards, recommendation engines, and fraud detection systems—all integrated seamlessly with existing enterprise infrastructure.",
+        "We build tailored AI systems for your exact operational needs: AI-powered SaaS platforms, predictive analytics systems, intelligent dashboards, recommendation engines, and fraud detection systems, all integrated seamlessly with existing enterprise infrastructure.",
     },
     {
       icon: LineChart,
       name: "Machine Learning Development",
       description:
-        "Our ML engineers build systems capable of predictive forecasting, customer behavior modeling, demand prediction, fraud detection, anomaly detection, and recommendation algorithms—optimized for real-world production environments.",
+        "Our ML engineers build systems capable of predictive forecasting, customer behavior modeling, demand prediction, fraud detection, anomaly detection, and recommendation algorithms, optimized for real-world production environments.",
     },
     {
       icon: Sparkles,
@@ -34,13 +34,13 @@ export default function ServicesSection() {
       icon: Bot,
       name: "AI Automation Systems",
       description:
-        "Our automation solutions include document processing automation, workflow automation, intelligent data extraction, customer onboarding automation, and internal operations automation—reducing costs while increasing productivity.",
+        "Our automation solutions include document processing automation, workflow automation, intelligent data extraction, customer onboarding automation, and internal operations automation, reducing costs while increasing productivity.",
     },
     {
       icon: MessageCircle,
       name: "Natural Language Processing Solutions",
       description:
-        "We build NLP systems including AI chatbots, sentiment analysis systems, intelligent search engines, automated document classification, and voice assistants—enabling businesses to process large volumes of text efficiently.",
+        "We build NLP systems including AI chatbots, sentiment analysis systems, intelligent search engines, automated document classification, and voice assistants, enabling businesses to process large volumes of text efficiently.",
     },
   ];
 

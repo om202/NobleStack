@@ -50,7 +50,7 @@ export default function HeroSection() {
           Noble Stack is a leading AI development company in Nepal helping
           businesses automate operations, unlock powerful data insights, and
           scale faster with intelligent technology. We design and build custom
-          artificial intelligence systems that solve real business problems—not
+          artificial intelligence systems that solve real business problems, not
           just experiments.
         </p>
       </div>

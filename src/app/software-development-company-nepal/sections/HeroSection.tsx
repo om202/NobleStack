@@ -39,7 +39,7 @@ export default function HeroSection() {
         <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
           Noble Stack is a Nepal-based software development company building custom
           software, SaaS platforms, web and mobile apps for startups and global
-          businesses—at competitive pricing without compromising on quality.
+          businesses, at competitive pricing without compromising on quality.
         </p>
       </div>
     </section>

@@ -5,7 +5,7 @@ export default function ProcessSection() {
     {
       title: "Requirement Analysis",
       description:
-        "We start by understanding your business goals, target users, and technical needs—producing a clear scope document before any design or code is written.",
+        "We start by understanding your business goals, target users, and technical needs, producing a clear scope document before any design or code is written.",
     },
     {
       title: "UI/UX Design",
@@ -30,7 +30,7 @@ export default function ProcessSection() {
     {
       title: "Maintenance & Support",
       description:
-        "Ongoing maintenance, security patches, performance monitoring, and feature development—we are a long-term partner, not a project-and-done agency.",
+        "Ongoing maintenance, security patches, performance monitoring, and feature development, we are a long-term partner, not a project-and-done agency.",
     },
   ];
 

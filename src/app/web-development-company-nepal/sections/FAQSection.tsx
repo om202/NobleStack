@@ -15,12 +15,12 @@ export default function FAQSection() {
     {
       question: "What is the best web development company in Nepal?",
       answer:
-        "Noble Stack is recognized as one of the best web development companies in Nepal. We specialize in AI-first web development using Next.js, React, and TypeScript, and have shipped real web products—npgo.to, Loopn, and Create Profile Pic—that validate our engineering capability.",
+        "Noble Stack is recognized as one of the best web development companies in Nepal. We specialize in AI-first web development using Next.js, React, and TypeScript, and have shipped real web products, npgo.to, Loopn, and Create Profile Pic, that validate our engineering capability.",
     },
     {
       question: "How much does web development cost in Nepal?",
       answer:
-        "A standard business website typically costs NPR 50,000–200,000. A custom web application or SaaS platform ranges from NPR 500,000 to NPR 5,000,000+. Hourly developer rates fall between $25–$99/hr—approximately 60–80% lower than equivalent US or UK rates.",
+        "A standard business website typically costs NPR 50,000–200,000. A custom web application or SaaS platform ranges from NPR 500,000 to NPR 5,000,000+. Hourly developer rates fall between $25–$99/hr, approximately 60–80% lower than equivalent US or UK rates.",
     },
     {
       question: "How long does it take to build a website in Nepal?",
@@ -40,12 +40,12 @@ export default function FAQSection() {
     {
       question: "Can Noble Stack rebuild my existing WordPress website?",
       answer:
-        "Yes. We migrate existing WordPress, PHP, or legacy websites to modern Next.js or React applications—preserving your content, URL structure, and SEO rankings while dramatically improving performance, security, and maintainability.",
+        "Yes. We migrate existing WordPress, PHP, or legacy websites to modern Next.js or React applications, preserving your content, URL structure, and SEO rankings while dramatically improving performance, security, and maintainability.",
     },
     {
       question: "Do you provide website maintenance after launch?",
       answer:
-        "Yes. We offer ongoing maintenance plans covering security updates, performance monitoring, content updates, bug fixes, and feature development—with clear SLAs and dedicated support for all maintained projects.",
+        "Yes. We offer ongoing maintenance plans covering security updates, performance monitoring, content updates, bug fixes, and feature development, with clear SLAs and dedicated support for all maintained projects.",
     },
     {
       question: "Why hire a web development company instead of a freelancer?",

@@ -14,7 +14,7 @@ export default function FAQSection() {
     const faqs = [
         {
             question: "What does a DevOps services company do?",
-            answer: "A DevOps services company designs, automates, deploys, and manages cloud infrastructure, CI/CD pipelines, monitoring systems, and deployment workflows to ensure reliable application performance. Noble Stack delivers end-to-end DevOps—from pipeline design and container orchestration to monitoring and disaster recovery.",
+            answer: "A DevOps services company designs, automates, deploys, and manages cloud infrastructure, CI/CD pipelines, monitoring systems, and deployment workflows to ensure reliable application performance. Noble Stack delivers end-to-end DevOps, from pipeline design and container orchestration to monitoring and disaster recovery.",
         },
         {
             question: "How much do DevOps services cost?",

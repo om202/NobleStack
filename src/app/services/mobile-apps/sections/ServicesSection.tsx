@@ -9,7 +9,7 @@ export default function ServicesSection() {
         {
             icon: Smartphone,
             name: "Custom iOS App Development",
-            description: "We build high-performance native iOS applications using Swift, SwiftUI, UIKit, Apple SDKs, APNs (push notifications), and Apple In-App Purchases. Our iOS apps are optimized for performance, security, and seamless integration with the Apple ecosystem—ideal for consumer apps, subscription platforms, FinTech solutions, and enterprise mobility.",
+            description: "We build high-performance native iOS applications using Swift, SwiftUI, UIKit, Apple SDKs, APNs (push notifications), and Apple In-App Purchases. Our iOS apps are optimized for performance, security, and seamless integration with the Apple ecosystem, ideal for consumer apps, subscription platforms, FinTech solutions, and enterprise mobility.",
         },
         {
             icon: Zap,
@@ -19,7 +19,7 @@ export default function ServicesSection() {
         {
             icon: Bell,
             name: "Cross-Platform App Development (React Native & Flutter)",
-            description: "We reduce development time and cost by building high-quality cross-platform apps using React Native, Flutter, and Expo. A single shared TypeScript codebase powers both iOS and Android, enabling faster time to market, reduced maintenance overhead, and a consistent user experience—perfect for startups and SaaS products.",
+            description: "We reduce development time and cost by building high-quality cross-platform apps using React Native, Flutter, and Expo. A single shared TypeScript codebase powers both iOS and Android, enabling faster time to market, reduced maintenance overhead, and a consistent user experience, perfect for startups and SaaS products.",
         },
         {
             icon: Wifi,

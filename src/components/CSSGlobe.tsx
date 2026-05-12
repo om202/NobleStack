@@ -3,7 +3,7 @@
 import './CSSGlobe.css';
 
 /**
- * Pure CSS 3D rotating sphere — based on iamlark's CodePen (jYzYJg).
+ * Pure CSS 3D rotating sphere, based on iamlark's CodePen (jYzYJg).
  * Zero JS animation cost. Light/dark themed via CSSGlobe.css.
  */
 

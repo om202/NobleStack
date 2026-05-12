@@ -37,7 +37,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-          Discover the best IT, software, and AI companies operating in Nepal—from
+          Discover the best IT, software, and AI companies operating in Nepal, from
           industry leaders to rising startups. Find the right partner for your
           project and explore Nepal&apos;s growing tech hub.
         </p>

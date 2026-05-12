@@ -25,7 +25,7 @@ export default function Testimonials() {
             company: "",
             image: "/testimonials/avatar-male-2.svg",
             rating: 5,
-            text: "I needed a simple app for my business and they delivered exactly that—nothing overcomplicated, just something that works. Good communication and fair pricing for the quality of work.",
+            text: "I needed a simple app for my business and they delivered exactly that, nothing overcomplicated, just something that works. Good communication and fair pricing for the quality of work.",
         },
     ];
 

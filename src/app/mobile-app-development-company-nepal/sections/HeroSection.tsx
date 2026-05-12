@@ -38,7 +38,7 @@ export default function HeroSection() {
 
         <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
           Noble Stack designs and builds high-performance iOS, Android, and
-          cross-platform mobile apps from Kathmandu—AI-powered, production-ready,
+          cross-platform mobile apps from Kathmandu, AI-powered, production-ready,
           and built to scale from day one.
         </p>
       </div>

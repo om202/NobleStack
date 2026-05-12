@@ -33,7 +33,7 @@ export default function CapabilitiesSection() {
             <div className="max-w-7xl mx-auto">
                 <SectionHeader
                     title="LLM AI Capabilities We Deliver"
-                    description="From LLM integration and RAG to multi-agent orchestration and GPU deployment — we deliver the full stack of enterprise AI capabilities."
+                    description="From LLM integration and RAG to multi-agent orchestration and GPU deployment, we deliver the full stack of enterprise AI capabilities."
                     imageSrc="/undraw_ai-agent_pdkp.svg"
                     imageAlt="LLM AI Capabilities Illustration"
                 />

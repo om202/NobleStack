@@ -5,7 +5,7 @@ export default function ProcessSection() {
     {
       title: "Business Requirement Analysis",
       description:
-        "We start by understanding your business goals, target users, and technical needs—producing a clear scope document before any design or code begins.",
+        "We start by understanding your business goals, target users, and technical needs, producing a clear scope document before any design or code begins.",
     },
     {
       title: "Strategy & Architecture",
@@ -25,12 +25,12 @@ export default function ProcessSection() {
     {
       title: "Testing & Optimization",
       description:
-        "Every system is tested for functionality, performance, security, and accessibility before delivery—not as a bolt-on after launch.",
+        "Every system is tested for functionality, performance, security, and accessibility before delivery, not as a bolt-on after launch.",
     },
     {
       title: "Deployment & Ongoing Support",
       description:
-        "We handle production deployment, monitoring, and post-launch maintenance—long-term partner, not a project-and-done agency.",
+        "We handle production deployment, monitoring, and post-launch maintenance, long-term partner, not a project-and-done agency.",
     },
   ];
 

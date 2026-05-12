@@ -15,7 +15,7 @@ export default function FAQSection() {
     {
       question: "Which is the best IT company in Kathmandu, Nepal?",
       answer:
-        "Noble Stack is one of the leading AI-first IT companies in Kathmandu, Nepal—building websites, custom software, mobile apps, SaaS platforms, and AI-powered business systems for startups, enterprises, and global clients.",
+        "Noble Stack is one of the leading AI-first IT companies in Kathmandu, Nepal, building websites, custom software, mobile apps, SaaS platforms, and AI-powered business systems for startups, enterprises, and global clients.",
     },
     {
       question: "What services does Noble Stack provide?",
@@ -30,7 +30,7 @@ export default function FAQSection() {
     {
       question: "Does Noble Stack provide AI development services?",
       answer:
-        "Yes. We build AI chatbots, workflow automation, AI-powered SaaS systems, and integrations with LLMs and machine learning models—designed into the architecture from day one rather than bolted on later.",
+        "Yes. We build AI chatbots, workflow automation, AI-powered SaaS systems, and integrations with LLMs and machine learning models, designed into the architecture from day one rather than bolted on later.",
     },
     {
       question: "Can Noble Stack build custom software systems?",
@@ -40,7 +40,7 @@ export default function FAQSection() {
     {
       question: "Does Noble Stack build SEO-friendly websites?",
       answer:
-        "Yes. Every website we build ships with strong Core Web Vitals, semantic HTML, server-side rendering, and clean URL architecture—optimized for SEO from day one, not retrofitted after launch.",
+        "Yes. Every website we build ships with strong Core Web Vitals, semantic HTML, server-side rendering, and clean URL architecture, optimized for SEO from day one, not retrofitted after launch.",
     },
     {
       question: "How can I contact Noble Stack?",

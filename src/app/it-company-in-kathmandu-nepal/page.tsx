@@ -129,7 +129,7 @@ export default function ITCompanyKathmanduNepalPage() {
                     name: "Which is the best IT company in Kathmandu, Nepal?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text: "Noble Stack is one of the leading AI-first IT companies in Kathmandu, Nepal—building websites, custom software, mobile apps, SaaS platforms, and AI-powered business systems for startups and global clients.",
+                      text: "Noble Stack is one of the leading AI-first IT companies in Kathmandu, Nepal, building websites, custom software, mobile apps, SaaS platforms, and AI-powered business systems for startups and global clients.",
                     },
                   },
                   {
@@ -153,7 +153,7 @@ export default function ITCompanyKathmanduNepalPage() {
                     name: "Does Noble Stack provide AI development services?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text: "Yes. We build AI chatbots, workflow automation, AI-powered SaaS systems, and integrations with LLMs and machine learning models—designed into the architecture from day one.",
+                      text: "Yes. We build AI chatbots, workflow automation, AI-powered SaaS systems, and integrations with LLMs and machine learning models, designed into the architecture from day one.",
                     },
                   },
                   {
@@ -169,7 +169,7 @@ export default function ITCompanyKathmanduNepalPage() {
                     name: "Does Noble Stack build SEO-friendly websites?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text: "Yes. Every website we build ships with strong Core Web Vitals, semantic HTML, server-side rendering, and clean URL structure—optimized for SEO from day one.",
+                      text: "Yes. Every website we build ships with strong Core Web Vitals, semantic HTML, server-side rendering, and clean URL structure, optimized for SEO from day one.",
                     },
                   },
                   {

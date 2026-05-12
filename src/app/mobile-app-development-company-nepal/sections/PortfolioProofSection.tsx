@@ -11,7 +11,7 @@ export default function PortfolioProofSection() {
       platforms: "iOS (iPhone & iPad)",
       tech: "Swift, SwiftUI, CoreML, cloud AI processing",
       description:
-        "An AI-powered photo editing app for iPhone. Users remove image backgrounds instantly with AI, enhance photo quality automatically, and create professional-grade profile pictures—all on iOS.",
+        "An AI-powered photo editing app for iPhone. Users remove image backgrounds instantly with AI, enhance photo quality automatically, and create professional-grade profile pictures, all on iOS.",
       highlight:
         "This is not a demo or client project. It is Noble Stack's own product, built by our team, shipped to the App Store, and used by real users globally.",
       linkText: "Download on App Store",
@@ -48,7 +48,7 @@ export default function PortfolioProofSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Mobile Apps Built and Shipped by Noble Stack"
-          description="We do not describe mobile development capability. We demonstrate it through real products—live on the App Store and downloadable today."
+          description="We do not describe mobile development capability. We demonstrate it through real products, live on the App Store and downloadable today."
           imageSrc="/undraw_portfolio_btd8.svg"
           imageAlt="Portfolio illustration"
         />

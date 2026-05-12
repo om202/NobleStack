@@ -14,7 +14,7 @@ export default function WhyNepalSection() {
       icon: TrendingUp,
       name: "Competitive Pricing",
       description:
-        "High-quality engineering at 60–80% lower cost compared to Western markets—without compromising on output quality.",
+        "High-quality engineering at 60–80% lower cost compared to Western markets, without compromising on output quality.",
     },
     {
       icon: Lightbulb,

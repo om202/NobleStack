@@ -27,7 +27,7 @@ export default function CTASection() {
             </h2>
             <p className="text-lg text-white/90 mb-4 max-w-2xl mx-auto">
               Artificial intelligence is changing how companies operate. The
-              question is not whether to adopt AI—it&apos;s how soon. Partner
+              question is not whether to adopt AI, it&apos;s how soon. Partner
               with Noble Stack, a trusted AI development company in Nepal, and
               start building smarter systems today.
             </p>

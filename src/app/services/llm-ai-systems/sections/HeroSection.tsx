@@ -53,7 +53,7 @@ export default function HeroSection() {
                     Noble Stack is an LLM-powered AI systems company designing and deploying production-ready artificial intelligence solutions for startups, SaaS companies, and enterprises. We build intelligent systems that combine large language models, retrieval pipelines, and AI orchestration to deliver accurate, scalable, and secure outcomes.
                 </p>
                 <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed mt-4">
-                    Our LLM AI systems integrate seamlessly into your products, platforms, and internal workflows — enabling advanced reasoning, contextual responses, and knowledge-driven automation at scale. We focus on real-world AI performance, not demos.
+                    Our LLM AI systems integrate seamlessly into your products, platforms, and internal workflows, enabling advanced reasoning, contextual responses, and knowledge-driven automation at scale. We focus on real-world AI performance, not demos.
                 </p>
             </div>
         </section>

@@ -5,17 +5,17 @@ export default function WhyNobleStackSection() {
     {
       title: "We Build Before We Sell",
       description:
-        "Most web agencies only do client work. We have built and shipped our own web products—npgo.to, Loopn, Create Profile Pic—using the same architecture and quality standards we apply to client projects.",
+        "Most web agencies only do client work. We have built and shipped our own web products, npgo.to, Loopn, Create Profile Pic, using the same architecture and quality standards we apply to client projects.",
     },
     {
       title: "AI-First by Default",
       description:
-        "Noble Stack is an AI-first engineering company that specializes in web development. Every site we build is designed to integrate AI capabilities—intelligent search, automation, personalization—from the architecture level.",
+        "Noble Stack is an AI-first engineering company that specializes in web development. Every site we build is designed to integrate AI capabilities, intelligent search, automation, personalization, from the architecture level.",
     },
     {
       title: "Modern Stack, Not Legacy",
       description:
-        "Many Nepal web companies still build with WordPress, PHP, and jQuery. We engineer exclusively in Next.js, React, TypeScript, and Node.js—the stack used by Vercel, Stripe, and leading global SaaS companies.",
+        "Many Nepal web companies still build with WordPress, PHP, and jQuery. We engineer exclusively in Next.js, React, TypeScript, and Node.js, the stack used by Vercel, Stripe, and leading global SaaS companies.",
     },
     {
       title: "SEO and Performance Built In",
@@ -30,7 +30,7 @@ export default function WhyNobleStackSection() {
     {
       title: "International Standards at Nepal Prices",
       description:
-        "Nepali engineering talent delivers work equivalent to US and European standards—at 60–80% lower cost. Our developers have built systems used by global users.",
+        "Nepali engineering talent delivers work equivalent to US and European standards, at 60–80% lower cost. Our developers have built systems used by global users.",
     },
   ];
 

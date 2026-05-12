@@ -2,10 +2,10 @@ import SectionHeader from '../../../../components/SectionHeader';
 
 export default function WhyChooseSection() {
     const reasons = [
-        "Enterprise DevOps Expertise — Our DevOps engineers, cloud architects, and SRE specialists have extensive experience deploying and managing high-availability, mission-critical systems for global enterprises and fast-growing startups.",
-        "Custom DevOps Solutions — We design custom DevOps pipelines and deployment architectures based on your application stack, traffic requirements, compliance needs, and long-term growth goals. Every solution is built specifically for your business.",
-        "End-to-End Deployment & Infrastructure Management — From CI/CD automation and container orchestration to monitoring, scaling, and optimization, we manage the complete DevOps lifecycle with full transparency.",
-        "Secure, Scalable, and Production-Ready Infrastructure — Our DevOps solutions are cloud-native, security-focused, compliance-ready, and engineered for long-term performance and reliability.",
+        "Enterprise DevOps Expertise, Our DevOps engineers, cloud architects, and SRE specialists have extensive experience deploying and managing high-availability, mission-critical systems for global enterprises and fast-growing startups.",
+        "Custom DevOps Solutions, We design custom DevOps pipelines and deployment architectures based on your application stack, traffic requirements, compliance needs, and long-term growth goals. Every solution is built specifically for your business.",
+        "End-to-End Deployment & Infrastructure Management, From CI/CD automation and container orchestration to monitoring, scaling, and optimization, we manage the complete DevOps lifecycle with full transparency.",
+        "Secure, Scalable, and Production-Ready Infrastructure, Our DevOps solutions are cloud-native, security-focused, compliance-ready, and engineered for long-term performance and reliability.",
     ];
 
     return (

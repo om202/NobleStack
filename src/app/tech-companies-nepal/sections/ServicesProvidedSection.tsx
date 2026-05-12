@@ -20,7 +20,7 @@ export default function ServicesProvidedSection() {
       icon: Cloud,
       name: "SaaS Platforms",
       description:
-        "Scalable B2B and B2C software products built from scratch—multi-tenancy, billing, role-based access, and reporting.",
+        "Scalable B2B and B2C software products built from scratch, multi-tenancy, billing, role-based access, and reporting.",
     },
     {
       icon: Layout,
@@ -35,7 +35,7 @@ export default function ServicesProvidedSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Types of IT Services Offered in Nepal"
-          description="Top tech companies in Nepal provide full-cycle engineering across modern stacks and domains—from MVP delivery to enterprise systems."
+          description="Top tech companies in Nepal provide full-cycle engineering across modern stacks and domains, from MVP delivery to enterprise systems."
           imageSrc="/undraw_dev-environment_n5by.svg"
           imageAlt="Services illustration"
         />

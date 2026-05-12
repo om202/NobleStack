@@ -29,7 +29,7 @@ export default function WhoWeServeSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Who Needs Web Development Services in Nepal?"
-          description="From Kathmandu-based businesses building their first website to international startups outsourcing their full product development—we work across the spectrum."
+          description="From Kathmandu-based businesses building their first website to international startups outsourcing their full product development, we work across the spectrum."
           imageSrc="/undraw_team_85hs.svg"
           imageAlt="Who we serve illustration"
         />

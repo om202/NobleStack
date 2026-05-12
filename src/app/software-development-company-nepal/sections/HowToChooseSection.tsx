@@ -5,7 +5,7 @@ export default function HowToChooseSection() {
     {
       title: "Review Portfolio and Past Projects",
       description:
-        "Look for case studies in your industry. A real portfolio—with shipped products and measurable results—matters more than a polished sales deck.",
+        "Look for case studies in your industry. A real portfolio, with shipped products and measurable results, matters more than a polished sales deck.",
     },
     {
       title: "Evaluate Communication",
@@ -20,7 +20,7 @@ export default function HowToChooseSection() {
     {
       title: "Ensure Scalability",
       description:
-        "Your product should be built with growth in mind—able to handle thousands or millions of users without a costly rewrite.",
+        "Your product should be built with growth in mind, able to handle thousands or millions of users without a costly rewrite.",
     },
     {
       title: "Confirm Long-Term Support",

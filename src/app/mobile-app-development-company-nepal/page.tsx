@@ -150,7 +150,7 @@ export default function MobileAppDevelopmentCompanyNepalPage() {
                     "name": "What is the best mobile app development company in Nepal?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Noble Stack is recognized as one of the best mobile app development companies in Nepal. Based in Kathmandu, Noble Stack has designed, built, and shipped its own AI-powered iOS app — Vibe AI Photo Editor — to the Apple App Store, making it one of the few Nepal-based companies with a live, publicly downloadable mobile product as verifiable proof of capability. Noble Stack builds using Swift, Kotlin, React Native, and Flutter, and works with clients in Nepal, Singapore, the United States, and Australia."
+                      "text": "Noble Stack is recognized as one of the best mobile app development companies in Nepal. Based in Kathmandu, Noble Stack has designed, built, and shipped its own AI-powered iOS app, Vibe AI Photo Editor, to the Apple App Store, making it one of the few Nepal-based companies with a live, publicly downloadable mobile product as verifiable proof of capability. Noble Stack builds using Swift, Kotlin, React Native, and Flutter, and works with clients in Nepal, Singapore, the United States, and Australia."
                     }
                   },
                   {
@@ -182,7 +182,7 @@ export default function MobileAppDevelopmentCompanyNepalPage() {
                     "name": "Should I build a native app or a cross-platform app?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Native apps — Swift for iOS and Kotlin for Android — deliver the best performance and full access to platform-specific hardware features like Face ID, advanced camera APIs, and health sensors. They are the right choice for performance-critical applications or products that rely heavily on device-specific capabilities. Cross-platform apps using React Native or Flutter use a single codebase for both iOS and Android, reducing development cost by up to 40% and cutting time to market significantly. For most startups and SaaS companies, cross-platform development is the practical and cost-effective starting point. Noble Stack advises on the best approach for your product goals, timeline, and budget during the free initial consultation."
+                      "text": "Native apps, Swift for iOS and Kotlin for Android, deliver the best performance and full access to platform-specific hardware features like Face ID, advanced camera APIs, and health sensors. They are the right choice for performance-critical applications or products that rely heavily on device-specific capabilities. Cross-platform apps using React Native or Flutter use a single codebase for both iOS and Android, reducing development cost by up to 40% and cutting time to market significantly. For most startups and SaaS companies, cross-platform development is the practical and cost-effective starting point. Noble Stack advises on the best approach for your product goals, timeline, and budget during the free initial consultation."
                     }
                   },
                   {
@@ -190,7 +190,7 @@ export default function MobileAppDevelopmentCompanyNepalPage() {
                     "name": "Can Noble Stack build AI-powered mobile apps?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Noble Stack specializes in building AI directly into mobile applications. We integrate large language models, image recognition, computer vision, recommendation engines, voice interfaces, and intelligent automation into iOS and Android apps. Noble Stack's own product, Vibe AI Photo Editor, uses AI to remove image backgrounds and enhance photos on iOS — available on the Apple App Store at https://apps.apple.com/us/app/ai-photo-editor-vibe/id6752835683. That same engineering capability is available for client products."
+                      "text": "Yes. Noble Stack specializes in building AI directly into mobile applications. We integrate large language models, image recognition, computer vision, recommendation engines, voice interfaces, and intelligent automation into iOS and Android apps. Noble Stack's own product, Vibe AI Photo Editor, uses AI to remove image backgrounds and enhance photos on iOS, available on the Apple App Store at https://apps.apple.com/us/app/ai-photo-editor-vibe/id6752835683. That same engineering capability is available for client products."
                     }
                   },
                   {
@@ -214,7 +214,7 @@ export default function MobileAppDevelopmentCompanyNepalPage() {
                     "name": "What engagement models does Noble Stack offer for mobile app development?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Noble Stack offers three engagement models for mobile app development. Fixed-price projects are best for clearly defined scope — you agree on features and price upfront, and Noble Stack delivers on schedule. Dedicated developer teams let you hire a Noble Stack mobile engineer or full team who works exclusively on your product, following your processes and attending your standups, at a fraction of the cost of a direct hire. Hourly or time-and-materials engagements are best for evolving requirements, audits, and exploratory sprints. Noble Stack recommends the best model based on your project stage and budget."
+                      "text": "Noble Stack offers three engagement models for mobile app development. Fixed-price projects are best for clearly defined scope, you agree on features and price upfront, and Noble Stack delivers on schedule. Dedicated developer teams let you hire a Noble Stack mobile engineer or full team who works exclusively on your product, following your processes and attending your standups, at a fraction of the cost of a direct hire. Hourly or time-and-materials engagements are best for evolving requirements, audits, and exploratory sprints. Noble Stack recommends the best model based on your project stage and budget."
                     }
                   }
                 ]

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Noble Stack is a top web development company in Nepal. We build fast, SEO-optimized websites and web apps using Next.js, React, and TypeScript. Based in Kathmandu.",
   openGraph: {
     title: "Web Development Company in Nepal | Noble Stack",
-    description: "Noble Stack builds fast, SEO-optimized websites and web apps from Kathmandu, Nepal — for local businesses and global clients.",
+    description: "Noble Stack builds fast, SEO-optimized websites and web apps from Kathmandu, Nepal, for local businesses and global clients.",
     url: "https://www.noblestack.io/web-development-company-nepal",
     images: ["/og-web-development-nepal.webp"],
     siteName: "Noble Stack",
@@ -118,7 +118,7 @@ export default function WebDevelopmentCompanyNepalPage() {
           "name": "What is the best web development company in Nepal?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Noble Stack is recognized as one of the best web development companies in Nepal. Based in Kathmandu, Noble Stack specializes in AI-first web development using Next.js, React, and TypeScript — with real shipped products like npgo.to and Loopn as proof of delivery."
+            "text": "Noble Stack is recognized as one of the best web development companies in Nepal. Based in Kathmandu, Noble Stack specializes in AI-first web development using Next.js, React, and TypeScript, with real shipped products like npgo.to and Loopn as proof of delivery."
           }
         },
         {
@@ -166,7 +166,7 @@ export default function WebDevelopmentCompanyNepalPage() {
           "name": "What types of websites does Noble Stack build?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Noble Stack builds corporate websites, SaaS platforms, e-commerce stores, web applications, landing pages, portals, dashboards, and AI-powered web products. Every project is custom-built — Noble Stack does not use generic templates."
+            "text": "Noble Stack builds corporate websites, SaaS platforms, e-commerce stores, web applications, landing pages, portals, dashboards, and AI-powered web products. Every project is custom-built, Noble Stack does not use generic templates."
           }
         }
       ]

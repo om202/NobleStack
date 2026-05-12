@@ -95,7 +95,7 @@ export default function HeroSection() {
                 </h1>
 
                 <p className="text-lg text-subtitle-theme mb-8">
-                  <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Noble Stack is recognized as one of the best AI and IT companies in Kathmandu, Nepal. We turn your ideas into AI-powered software, high-performance websites, mobile apps, and SaaS platforms — for startups, enterprises, and growing businesses worldwide.
+                  <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Noble Stack is recognized as one of the best AI and IT companies in Kathmandu, Nepal. We turn your ideas into AI-powered software, high-performance websites, mobile apps, and SaaS platforms, for startups, enterprises, and growing businesses worldwide.
                 </p>
 
                 {/* Call to Action Buttons */}
@@ -272,7 +272,7 @@ export default function HeroSection() {
             <div className="block h-full relative">
               <ServiceCard
                 name="Noble Appointments"
-                description="Fully Nepali Bikram Sambat based calendar — specially built for Nepali businesses in mind!"
+                description="Fully Nepali Bikram Sambat based calendar, specially built for Nepali businesses in mind!"
                 imageSrc="/noble-appointments-logo.webp"
                 imageAlt="Noble Appointments"
               />

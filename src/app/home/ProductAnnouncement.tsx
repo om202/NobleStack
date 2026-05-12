@@ -36,7 +36,7 @@ export default function ProductAnnouncement() {
                   <span className="text-blue-300">Vyakaranly</span>
                 </h3>
                 <p className="text-base text-muted-theme font-medium">
-                  First Nepali language AI grammar checker — no more manual edits!
+                  First Nepali language AI grammar checker, no more manual edits!
                 </p>
               </div>
             </div>

@@ -27,7 +27,7 @@ export default function CostSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Cost of Hiring Developers in Nepal (2026)"
-          description="Compared to Western markets, Nepal offers high-quality engineering at 60–80% lower cost—without compromising on quality or communication standards."
+          description="Compared to Western markets, Nepal offers high-quality engineering at 60–80% lower cost, without compromising on quality or communication standards."
           imageSrc="/undraw_working_n9u0.svg"
           imageAlt="Pricing illustration"
         />

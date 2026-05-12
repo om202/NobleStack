@@ -11,7 +11,7 @@ import CTASection from './sections/CTASection';
 
 export const metadata: Metadata = {
     title: "Full-Stack Engineering Services",
-    description: "Noble Stack delivers full-stack engineering services for startups, SaaS, and enterprises — frontend, backend, infrastructure, and DevOps in one team. Book a free consultation.",
+    description: "Noble Stack delivers full-stack engineering services for startups, SaaS, and enterprises, frontend, backend, infrastructure, and DevOps in one team. Book a free consultation.",
 };
 
 export const dynamic = 'force-static';

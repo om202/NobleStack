@@ -49,7 +49,7 @@ export default function CredibilitySection() {
                         Why Choose Noble Stack? Expertise in AI, Full-Stack Web & Mobile Development
                     </h2>
                     <p className="text-base sm:text-lg text-subtitle-theme max-w-3xl mx-auto">
-                        We're a new agency with proven capabilities. Our portfolio speaks for itself—real products,
+                        We're a new agency with proven capabilities. Our portfolio speaks for itself, real products,
                         real users, real results. We bring enterprise-level expertise with the agility of a startup.
                     </p>
                 </header>

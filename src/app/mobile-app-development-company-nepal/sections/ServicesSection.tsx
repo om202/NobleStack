@@ -21,13 +21,13 @@ export default function ServicesSection() {
       icon: LayoutGrid,
       name: "Cross-Platform App Development",
       description:
-        "React Native and Flutter for both iOS and Android from a single codebase. Reduces cost by up to 40% with native-like performance—the right starting point for most products.",
+        "React Native and Flutter for both iOS and Android from a single codebase. Reduces cost by up to 40% with native-like performance, the right starting point for most products.",
     },
     {
       icon: BrainCircuit,
       name: "AI-Powered Mobile Apps",
       description:
-        "Integrate LLMs, computer vision, recommendation engines, and voice interfaces directly into mobile apps—proven through our own AI products like Vibe AI Photo Editor.",
+        "Integrate LLMs, computer vision, recommendation engines, and voice interfaces directly into mobile apps, proven through our own AI products like Vibe AI Photo Editor.",
     },
     {
       icon: Server,
@@ -48,7 +48,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Our Mobile App Development Services"
-          description="Complete mobile engineering—from initial product discovery to App Store launch and long-term support."
+          description="Complete mobile engineering, from initial product discovery to App Store launch and long-term support."
           imageSrc="/undraw_mobile-site_qjby.svg"
           imageAlt="Mobile services illustration"
         />

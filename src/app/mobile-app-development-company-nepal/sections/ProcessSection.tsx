@@ -11,7 +11,7 @@ export default function ProcessSection() {
     {
       title: "UI/UX Design",
       description:
-        "Wireframes and high-fidelity mobile UI mockups—intuitive, brand-aligned, and built around platform conventions. iOS follows Apple's HIG. Android follows Material 3.",
+        "Wireframes and high-fidelity mobile UI mockups, intuitive, brand-aligned, and built around platform conventions. iOS follows Apple's HIG. Android follows Material 3.",
       deliverable: "Clickable prototype, approved UI, component library.",
     },
     {
@@ -29,7 +29,7 @@ export default function ProcessSection() {
     {
       title: "Deployment and Launch",
       description:
-        "Complete App Store Connect and Google Play Console submission—app review, screenshot design, ASO keyword optimization, and compliance review.",
+        "Complete App Store Connect and Google Play Console submission, app review, screenshot design, ASO keyword optimization, and compliance review.",
       deliverable: "Live app on App Store and/or Google Play.",
     },
     {
