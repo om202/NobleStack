@@ -1,45 +1,56 @@
-import { DollarSign } from "lucide-react";
+import SectionHeader from "../../../components/SectionHeader";
 
 export default function CostSection() {
-  const pricing = [
-    { level: "Junior Developer", range: "$500–$1,200", term: "per month", desc: "0-2 years experience, suitable for standard tasks and maintenance." },
-    { level: "Mid-Level Developer", range: "$1,200–$2,500", term: "per month", desc: "2-5 years experience, capable of independent feature development.", featured: true },
-    { level: "Senior Developer", range: "$2,500–$5,000", term: "per month", desc: "5+ years experience, system architecture & complex AI integrations." },
+  const tiers = [
+    {
+      level: "Junior Developer",
+      range: "$500 – $1,200",
+      term: "per month",
+      description: "0–2 years experience. Suitable for standard tasks, support work, and maintenance.",
+    },
+    {
+      level: "Mid-Level Developer",
+      range: "$1,200 – $2,500",
+      term: "per month",
+      description: "2–5 years experience. Capable of independent feature development and code reviews.",
+    },
+    {
+      level: "Senior Developer",
+      range: "$2,500 – $5,000",
+      term: "per month",
+      description: "5+ years experience. System architecture, complex AI integrations, and team leadership.",
+    },
   ];
 
   return (
-    <section className="py-16 px-4 sm:py-24 sm:px-6 bg-page-theme">
+    <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 text-green-500 mb-6 font-medium">
-            <DollarSign className="w-4 h-4" />
-            Pricing & Structure
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-main-theme mb-4">
-            Cost of Hiring Developers in Nepal (2026)
-          </h2>
-          <p className="text-lg text-subtitle-theme max-w-2xl mx-auto">
-            Compared to Western markets, Nepal offers high-quality engineering at 60–80% lower cost without compromising on quality or communication.
-          </p>
-        </div>
+        <SectionHeader
+          title="Cost of Hiring Developers in Nepal (2026)"
+          description="Compared to Western markets, Nepal offers high-quality engineering at 60–80% lower cost—without compromising on quality or communication standards."
+          imageSrc="/undraw_working_n9u0.svg"
+          imageAlt="Pricing illustration"
+        />
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {pricing.map((tier, idx) => (
-            <div 
-              key={idx} 
-              className={`relative bg-card-theme p-8 rounded-3xl border flex flex-col items-center text-center transition-all ${tier.featured ? 'border-blue-500 shadow-xl shadow-blue-500/10 md:scale-105 z-10' : 'border-theme hover:border-gray-400/30'}`}
+        <div className="grid md:grid-cols-3 gap-6">
+          {tiers.map((tier, idx) => (
+            <div
+              key={idx}
+              className="bg-subtle-theme rounded-2xl p-6 md:p-8 border border-theme flex flex-col"
             >
-              {tier.featured && (
-                <div className="absolute -top-4 bg-blue-500 text-white px-4 py-1 text-sm font-bold rounded-full">
-                  Most Popular
+              <h3 className="text-lg md:text-xl font-semibold text-main-theme mb-2">
+                {tier.level}
+              </h3>
+              <p className="text-sm text-subtitle-theme mb-6">
+                {tier.description}
+              </p>
+              <div className="mt-auto">
+                <div className="text-2xl md:text-3xl font-bold text-main-theme">
+                  {tier.range}
                 </div>
-              )}
-              <h3 className="text-xl font-bold text-main-theme mb-2">{tier.level}</h3>
-              <p className="text-subtitle-theme text-sm mb-6">{tier.desc}</p>
-              
-              <div className="my-6">
-                <span className="text-4xl font-extrabold text-main-theme">{tier.range}</span>
-                <span className="block text-subtitle-theme mt-1">{tier.term}</span>
+                <div className="text-sm text-subtitle-theme mt-1">
+                  {tier.term}
+                </div>
               </div>
             </div>
           ))}
