@@ -12,7 +12,7 @@ import FAQSection from './sections/FAQSection';
 import CTASection from './sections/CTASection';
 
 export const metadata: Metadata = {
-    title: "DevOps Services Company | Deployment & CI/CD Solutions – Noble Stack",
+    title: "DevOps Services Company | Deployment & CI/CD Solutions",
     description: "Noble Stack provides enterprise DevOps and deployment services, CI/CD automation, cloud infrastructure, and monitoring solutions. Schedule a free consultation.",
 };
 

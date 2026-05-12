@@ -11,7 +11,7 @@ import TechnologiesSection from './sections/TechnologiesSection';
 import CTASection from './sections/CTASection';
 
 export const metadata: Metadata = {
-    title: "Automation Systems & Workflow Automation Services - Noble Stack",
+    title: "Automation Systems & Workflow Automation Services",
     description: "We design and build end-to-end automation systems that eliminate repetitive work, reduce human error, and scale seamlessly with your business.",
 };
 

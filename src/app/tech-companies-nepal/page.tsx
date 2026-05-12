@@ -9,7 +9,7 @@ import FAQSection from "./sections/FAQSection";
 import FinalVerdictCTA from "./sections/FinalVerdictCTA";
 
 export const metadata: Metadata = {
-  title: "Top 50 Tech Companies in Nepal (2026) – Best IT & AI Firms | Noble Stack",
+  title: "Top 50 Tech Companies in Nepal (2026) – Best IT & AI Firms",
   description: "Searching for the best tech companies in Nepal? Explore 50+ top IT, software, and AI companies, pricing insights, services, and why Noble Stack leads with AI-first development.",
   openGraph: {
     title: "Top 50 Tech Companies in Nepal (2026) – Best IT & AI Firms | Noble Stack",

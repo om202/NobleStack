@@ -6,7 +6,7 @@ import ServicesCTA from "../../components/ServicesCTA";
 import SectionHeader from "../../components/SectionHeader";
 
 export const metadata: Metadata = {
-  title: "Services - Noble Stack",
+  title: "Services",
   description: "Explore our comprehensive AI and web development services including Full-Stack Engineering, LLM-Powered AI Systems, Automation, and DevOps.",
 };
 

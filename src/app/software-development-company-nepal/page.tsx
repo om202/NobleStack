@@ -13,7 +13,7 @@ import FAQSection from "./sections/FAQSection";
 import FinalCTASection from "./sections/FinalCTASection";
 
 export const metadata: Metadata = {
-  title: "Software Development Company in Nepal | Custom Solutions | Noble Stack",
+  title: "Software Development Company in Nepal | Custom Solutions",
   description: "Looking for a software development company in Nepal? Noble Stack builds custom software, SaaS platforms, web and mobile apps. Get scalable solutions at competitive pricing.",
   openGraph: {
     title: "Software Development Company in Nepal | Custom Solutions | Noble Stack",

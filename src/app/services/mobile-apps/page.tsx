@@ -11,7 +11,7 @@ import TechnologiesSection from './sections/TechnologiesSection';
 import CTASection from './sections/CTASection';
 
 export const metadata: Metadata = {
-    title: "Mobile App Development Services (iOS & Android) | Noble Stack Nepal",
+    title: "Mobile App Development Services (iOS & Android)",
     description: "Custom mobile app development services for iOS & Android. Noble Stack builds scalable, secure apps for startups, SaaS & enterprises. Based in Nepal. Book a free consultation.",
 };
 

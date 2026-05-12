@@ -9,7 +9,7 @@ import FAQSection from "./sections/FAQSection";
 import CTASection from "./sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "AI Development Company in Nepal | Noble Stack",
+  title: "AI Development Company in Nepal",
   description:
     "Noble Stack is a leading AI development company in Nepal helping businesses automate operations, unlock data insights, and scale faster with intelligent technology.",
 };

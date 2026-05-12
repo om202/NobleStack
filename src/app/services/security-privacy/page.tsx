@@ -9,7 +9,7 @@ import FAQSection from './sections/FAQSection';
 import CTASection from './sections/CTASection';
 
 export const metadata: Metadata = {
-    title: "Application Security Services - Noble Stack",
+    title: "Application Security Services",
     description: "Enterprise Security, Privacy & Compliance for Web and AI Applications. Build secure, compliant, and resilient digital products with application security services that protect modern web, SaaS, and AI-driven systems.",
 };
 

@@ -10,7 +10,7 @@ import FAQSection from './sections/FAQSection';
 import CTASection from './sections/CTASection';
 
 export const metadata: Metadata = {
-    title: "LLM-Powered AI Systems Company | Enterprise AI Solutions – Noble Stack",
+    title: "LLM-Powered AI Systems Company | Enterprise AI Solutions",
     description: "Noble Stack builds enterprise LLM-powered AI systems, RAG architectures, and AI agents. Secure, scalable, production-ready AI solutions.",
 };
 

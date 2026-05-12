@@ -12,7 +12,7 @@ import FAQSection from "./sections/FAQSection";
 import FinalCTASection from "./sections/FinalCTASection";
 
 export const metadata: Metadata = {
-  title: "Mobile App Development Company in Nepal | Noble Stack",
+  title: "Mobile App Development Company in Nepal",
   description: "Noble Stack builds iOS, Android, and cross-platform apps from Kathmandu, Nepal. AI-powered, scalable, production-ready. Free consultation available.",
   openGraph: {
     title: "Mobile App Development Company in Nepal | Noble Stack",

@@ -12,7 +12,7 @@ import FAQSection from "./sections/FAQSection";
 import FinalCTASection from "./sections/FinalCTASection";
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Nepal | Noble Stack",
+  title: "Web Development Company in Nepal",
   description: "Noble Stack is a top web development company in Nepal. We build fast, SEO-optimized websites and web apps using Next.js, React, and TypeScript. Based in Kathmandu.",
   openGraph: {
     title: "Web Development Company in Nepal | Noble Stack",

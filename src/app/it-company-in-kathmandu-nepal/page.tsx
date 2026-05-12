@@ -10,7 +10,7 @@ import FAQSection from "./sections/FAQSection";
 import FinalCTASection from "./sections/FinalCTASection";
 
 export const metadata: Metadata = {
-  title: "IT Company in Kathmandu, Nepal | Noble Stack",
+  title: "IT Company in Kathmandu, Nepal",
   description:
     "Looking for an IT company in Kathmandu, Nepal? Noble Stack is a leading AI-first IT company in Kathmandu offering website development, software development, mobile apps, SaaS platforms, and AI-powered business systems.",
   openGraph: {

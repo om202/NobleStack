@@ -12,7 +12,7 @@ import CTASection from "./sections/CTASection";
 
 export const metadata: Metadata = {
   title:
-    "Hire AI Developers | Dedicated AI Engineers for Custom AI Solutions – Noble Stack",
+    "Hire AI Developers | Dedicated AI Engineers for Custom AI Solutions",
   description:
     "Hire AI developers from Noble Stack to build AI chatbots, automation systems, machine learning models, and generative AI applications. Work with dedicated AI engineers today.",
   openGraph: {
