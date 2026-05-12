@@ -1,43 +1,39 @@
-import Link from "next/link";
-import { ArrowRight, Sparkles } from "lucide-react";
+import Image from "next/image";
+import CTAButton from "../../../components/CTAButton";
 
 export default function FinalCTASection() {
   return (
-    <section className="py-24 bg-page-theme overflow-hidden relative" id="contact">
-      <div className="container mx-auto px-4 max-w-5xl">
-        <div className="relative bg-gradient-to-br from-blue-700 via-blue-800 to-indigo-900 rounded-[2rem] p-8 md:p-16 text-center text-white overflow-hidden shadow-2xl">
-          
-          {/* Decorative background shapes */}
-          <div className="absolute -top-24 -left-24 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob" />
-          <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-4000" />
+    <section className="relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-3 py-8 sm:px-4 sm:py-12">
+        <div className="relative rounded-3xl overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+              src="/hero_gradient.webp"
+              alt="Software development background"
+              fill
+              className="object-cover"
+            />
+          </div>
 
-          <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
-            <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 backdrop-blur-sm border border-white/20">
-              <Sparkles className="w-8 h-8 text-blue-200" />
-            </div>
-            
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-              Let's Build Your Software
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-slate-900/65 to-indigo-900/80" />
+          <div className="absolute inset-0 bg-black/55" />
+
+          <div className="relative z-10 p-10 sm:p-12 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+              Let&apos;s Build Your Software
             </h2>
-            
-            <p className="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed">
-              Looking to build scalable and reliable software? Noble Stack helps startups and businesses turn ideas into powerful digital products with modern technologies and efficient development processes.
+            <p className="text-lg text-white/90 mb-4 max-w-2xl mx-auto">
+              Looking to build scalable, reliable software? Noble Stack helps
+              startups and businesses turn ideas into production-grade digital
+              products with modern technology and a structured delivery process.
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <Link 
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold text-blue-900 bg-white hover:bg-gray-50 rounded-xl transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 focus:ring-4 focus:ring-white/30"
-              >
-                Book Free Consultation
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
-            
-            <p className="mt-6 text-sm text-blue-200/80">
-              Discuss your project directly with our technical team. No commitment required.
+            <p className="text-base text-white/90 mb-8 max-w-2xl mx-auto">
+              Book a free consultation, speak directly with our engineering team,
+              and get a clear plan for your project. No commitment required.
             </p>
+            <CTAButton variant="primary" href="/contact">
+              Book a Free Consultation
+            </CTAButton>
           </div>
         </div>
       </div>

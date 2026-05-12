@@ -1,75 +1,61 @@
-import { ShieldCheck, Target, Zap, Globe2, Quote } from "lucide-react";
+import SectionHeader from "../../../components/SectionHeader";
 
 export default function WhyNobleStackSection() {
-  const trustSignals = [
-    {
-      icon: Target,
-      title: "Scalable Solutions",
-      desc: "Robust architecture built for high-growth startups and massive enterprise scale."
-    },
-    {
-      icon: Zap,
-      title: "Fast Delivery",
-      desc: "Agile methodologies ensuring quick time-to-market without cutting corners."
-    },
-    {
-      icon: ShieldCheck,
-      title: "Modern Tech Stack",
-      desc: "Laser-focused on performance, security, and adopting the latest web & mobile tech."
-    },
-    {
-      icon: Globe2,
-      title: "Global Clients",
-      desc: "Proven track record of success with international clients across various time zones."
-    }
+  const reasons = [
+    "Scalable architecture built for high-growth startups and enterprise scale.",
+    "Agile delivery with quick time-to-market—without cutting engineering corners.",
+    "Modern tech stack focused on performance, security, and maintainability.",
+    "Proven track record with international clients across multiple time zones.",
+    "Senior engineering review on every PR—not a junior team learning on your project.",
+    "Long-term partnership mindset focused on iteration and continuous improvement.",
+  ];
+
+  const principles = [
+    "We build before we sell—our own products validate our engineering standards.",
+    "Transparent communication with structured updates and clear deliverables.",
+    "Realistic timelines with milestone-based delivery you can plan around.",
+    "Clean architecture and documented code you can build on for years.",
+    "Direct access to the engineers building your product—no middle layers.",
   ];
 
   return (
-    <section className="py-20 relative bg-page-theme">
-      {/* Background Decor */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-96 bg-blue-500/5 blur-[120px] rounded-full z-0" />
-      
-      <div className="container mx-auto px-4 max-w-6xl relative z-10">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
-          
-          <div className="lg:w-1/2">
-            <h2 className="text-3xl md:text-5xl font-bold text-main-theme mb-6 leading-tight">
-              Why <span className="text-blue-500">Noble Stack</span> is a Trusted Software Company in Nepal
-            </h2>
-            <p className="text-lg text-theme mb-10 leading-relaxed">
-              Noble Stack is focused on delivering reliable, scalable, and modern software solutions. With an experienced team of engineers, we prioritize clean architecture and seamless global delivery.
-            </p>
+    <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
+      <div className="max-w-7xl mx-auto">
+        <SectionHeader
+          title="Why Noble Stack as Your Software Partner"
+          description="Choosing the right partner is the difference between a product that ships and a project that drags. Here is what makes Noble Stack a reliable choice."
+          imageSrc="/undraw_team-spirit_18vw.svg"
+          imageAlt="Why choose Noble Stack illustration"
+        />
 
-            <div className="relative bg-blue-600 rounded-3xl p-8 md:p-10 shadow-2xl overflow-hidden mt-8 text-white">
-              <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-bl-full -z-0" />
-              <Quote className="w-12 h-12 text-white/20 mb-6 relative z-10" />
-              <p className="relative z-10 text-xl md:text-2xl font-medium italic leading-relaxed">
-                "We're a group of hardworking smart people working diligently to bring the latest technology accessible to people of Nepal."
-              </p>
-              <div className="mt-6 flex items-center gap-4 relative z-10">
-                <div className="w-12 h-12 rounded-full border-2 border-white/20 bg-white/10 flex items-center justify-center font-bold">NS</div>
-                <div>
-                  <h4 className="font-bold">Noble Stack Team</h4>
-                  <p className="text-sm text-white/80">Founders</p>
-                </div>
-              </div>
-            </div>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-subtle-theme rounded-2xl p-6 md:p-8 border border-theme">
+            <h3 className="text-xl font-semibold text-main-theme mb-4">
+              What You Get
+            </h3>
+            <ul className="space-y-3 text-main-theme/80 text-base leading-relaxed">
+              {reasons.map((item, index) => (
+                <li key={index} className="flex gap-3">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <div className="lg:w-1/2">
-             <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-                {trustSignals.map((signal, idx) => (
-                  <div key={idx} className="bg-card-theme border border-theme p-6 rounded-2xl hover:border-blue-500/40 hover:shadow-lg transition-all duration-300">
-                    <div className="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center mb-5">
-                      <signal.icon className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-xl font-bold text-main-theme mb-2">{signal.title}</h3>
-                    <p className="text-theme text-sm leading-relaxed">{signal.desc}</p>
-                  </div>
-                ))}
-             </div>
+          <div className="bg-subtle-theme rounded-2xl p-6 md:p-8 border border-theme">
+            <h3 className="text-xl font-semibold text-main-theme mb-4">
+              How We Work
+            </h3>
+            <ul className="space-y-3 text-main-theme/80 text-base leading-relaxed">
+              {principles.map((item, index) => (
+                <li key={index} className="flex gap-3">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-
         </div>
       </div>
     </section>

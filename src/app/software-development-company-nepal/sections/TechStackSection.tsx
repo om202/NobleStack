@@ -1,56 +1,62 @@
-import { Code2, Server, Smartphone, Cloud } from "lucide-react";
+import SectionHeader from "../../../components/SectionHeader";
 
 export default function TechStackSection() {
-  const technologies = [
+  const stacks = [
     {
       category: "Frontend",
-      icon: Code2,
-      techs: ["React", "Next.js", "Tailwind CSS", "TypeScript"]
+      techs: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
     },
     {
       category: "Backend",
-      icon: Server,
-      techs: ["Node.js", "Python", "NestJS", "PostgreSQL"]
+      techs: ["Node.js", "NestJS", "Python", "GraphQL", "REST APIs"],
+    },
+    {
+      category: "Database",
+      techs: ["PostgreSQL", "MongoDB", "Redis", "Prisma"],
     },
     {
       category: "Mobile",
-      icon: Smartphone,
-      techs: ["Flutter", "React Native", "Swift", "Kotlin"]
+      techs: ["Swift", "Kotlin", "React Native", "Flutter"],
     },
     {
-      category: "Cloud & Deployment",
-      icon: Cloud,
-      techs: ["AWS", "Vercel", "Docker", "CI/CD"]
-    }
+      category: "Cloud & DevOps",
+      techs: ["AWS", "Vercel", "GCP", "Docker", "GitHub Actions", "CI/CD"],
+    },
+    {
+      category: "AI & Automation",
+      techs: ["OpenAI", "Anthropic Claude", "LangChain", "Pinecone"],
+    },
   ];
 
   return (
-    <section className="py-20 bg-subtle-theme/30">
-      <div className="container mx-auto max-w-6xl px-4">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-main-theme mb-4">Technologies We Use</h2>
-          <p className="text-theme text-lg">
-            We use modern, reliable, and highly scalable technologies to build enterprise-grade software products.
-          </p>
-        </div>
+    <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
+      <div className="max-w-7xl mx-auto">
+        <SectionHeader
+          title="Technologies We Use"
+          description="A modern, production-ready stack used by leading global product companies—chosen for performance, maintainability, and long-term hireability."
+          imageSrc="/undraw_server-cluster_7ugi.svg"
+          imageAlt="Tech stack illustration"
+        />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {technologies.map((stack, idx) => (
-            <div key={idx} className="bg-card-theme border border-theme p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300 group">
-              <div className="w-14 h-14 bg-blue-500/10 text-blue-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <stack.icon className="w-7 h-7" />
-              </div>
-              <h3 className="text-xl font-bold text-main-theme border-b border-theme/50 pb-4 mb-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {stacks.map((stack, idx) => (
+            <div
+              key={idx}
+              className="bg-subtle-theme rounded-2xl p-6 md:p-7 border border-theme"
+            >
+              <h3 className="text-lg md:text-xl font-semibold text-main-theme mb-4">
                 {stack.category}
               </h3>
-              <ul className="space-y-3 font-medium">
+              <div className="flex flex-wrap gap-2">
                 {stack.techs.map((tech, i) => (
-                  <li key={i} className="text-theme flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500/50 block"></span>
+                  <span
+                    key={i}
+                    className="px-3 py-1.5 bg-card-theme text-main-theme text-sm font-medium rounded-lg border border-theme"
+                  >
                     {tech}
-                  </li>
+                  </span>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>

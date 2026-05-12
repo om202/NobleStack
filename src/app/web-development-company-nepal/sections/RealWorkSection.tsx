@@ -1,74 +1,78 @@
 import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
+import SectionHeader from "../../../components/SectionHeader";
+import CTAButton from "../../../components/CTAButton";
 
 export default function RealWorkSection() {
   const projects = [
     {
+      tag: "Web Platform",
       title: "npgo.to — Free URL Shortener for Nepal",
-      desc: "A full-stack web platform built for Nepali businesses. Features include real-time click analytics, QR code generation, Google OAuth, and a full dashboard — all at zero cost to users. Built with Next.js, Node.js, and PostgreSQL.",
+      description:
+        "A full-stack web platform built for Nepali businesses. Real-time click analytics, QR code generation, Google OAuth, and a complete dashboard—free for users. Built with Next.js, Node.js, and PostgreSQL.",
       linkText: "Live at npgo.to",
       href: "https://npgo.to",
-      tag: "Web Platform"
     },
     {
-      title: "Loopn — AI Professional Networking Platform",
-      desc: "A web and mobile application that uses AI to match professionals by resume similarity and career compatibility. Built with Next.js, Node.js, LangChain, and vector embeddings.",
+      tag: "AI SaaS",
+      title: "Loopn — AI Professional Networking",
+      description:
+        "A web and mobile platform that uses AI to match professionals by resume similarity and career compatibility. Built with Next.js, Node.js, LangChain, and vector embeddings.",
       linkText: "Live at loopn.io",
       href: "https://loopn.io",
-      tag: "AI SaaS"
     },
     {
+      tag: "Web Tool",
       title: "Create Profile Pic — AI Image Editor",
-      desc: "A web-based AI photo editing tool powered by Google's image generation APIs. Users describe edits in plain English and the AI executes them. Built with Next.js and deployed on Vercel.",
+      description:
+        "A web-based AI photo editing tool powered by Google's image generation APIs. Users describe edits in plain English and the AI executes them. Built with Next.js and deployed on Vercel.",
       linkText: "Live at createprofilepic.com",
       href: "https://createprofilepic.com",
-      tag: "Web Tool"
-    }
+    },
   ];
 
   return (
-    <section className="py-20 relative bg-card-theme border-t border-theme">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-main-theme mb-4">
-              Web Projects We Have Shipped
-            </h2>
-            <p className="text-lg text-theme">
-              Noble Stack's credibility is built on real products, not just client decks.
-            </p>
-          </div>
-          <Link href="/products" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 font-semibold transition-colors">
-            View All Products
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
+    <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
+      <div className="max-w-7xl mx-auto">
+        <SectionHeader
+          title="Web Projects We Have Shipped"
+          description="Our credibility is built on real, production web products—not just client decks. Each of these is a live system you can visit right now."
+          imageSrc="/undraw_portfolio_btd8.svg"
+          imageAlt="Portfolio illustration"
+        />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
           {projects.map((project, idx) => (
-            <div key={idx} className="bg-page-theme border border-theme rounded-2xl p-8 shadow-sm hover:shadow-md transition-all flex flex-col group">
-              <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-indigo-500/10 text-indigo-500 text-xs font-bold rounded-full mb-4">
-                  {project.tag}
-                </span>
-                <h3 className="text-xl font-bold text-main-theme mb-3">{project.title}</h3>
-                <p className="text-theme flex-grow mb-6">
-                  {project.desc}
-                </p>
-              </div>
-              <div className="mt-auto">
-                <Link 
-                  href={project.href} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-main-theme font-medium hover:text-blue-500 transition-colors"
-                >
-                  {project.linkText}
-                  <ExternalLink className="w-4 h-4" />
-                </Link>
-              </div>
+            <div
+              key={idx}
+              className="bg-subtle-theme rounded-2xl p-6 md:p-7 border border-theme flex flex-col"
+            >
+              <span className="inline-block px-3 py-1 bg-card-theme border border-theme text-xs font-semibold text-main-theme rounded-full mb-4 self-start">
+                {project.tag}
+              </span>
+              <h3 className="text-lg md:text-xl font-semibold text-main-theme mb-3">
+                {project.title}
+              </h3>
+              <p className="text-base text-subtitle-theme leading-relaxed mb-6 flex-grow">
+                {project.description}
+              </p>
+              <Link
+                href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-main-theme font-medium hover:text-blue-500 transition-colors"
+              >
+                {project.linkText}
+                <ExternalLink className="w-4 h-4" />
+              </Link>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <CTAButton variant="secondary" href="/products" icon={ArrowRight}>
+            View All Products
+          </CTAButton>
         </div>
       </div>
     </section>

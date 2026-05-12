@@ -1,106 +1,46 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Star, CheckCircle2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28 bg-page-theme">
-      {/* Background Decor */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-        <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-blue-600/10 blur-[100px]" />
-        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-cyan-600/10 blur-[100px]" />
+    <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
+      <div className="absolute inset-0">
+        <Image
+          src="/hero_gradient.webp"
+          alt="Software development background"
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority
+        />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-          {/* Text Content */}
-          <div className="flex flex-col items-start space-y-8 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
-            <div className="inline-flex flex-wrap items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-400 text-sm font-medium border border-blue-500/20 shadow-sm mx-auto lg:mx-0">
-              <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
-              Nepal's Top Custom Software Development Agency
-            </div>
-            
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-main-theme leading-[1.15] tracking-tight">
-              Software Development Company in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Nepal</span>
-            </h1>
-            
-            <p className="text-lg sm:text-xl text-muted-theme leading-relaxed">
-              Noble Stack – a modern AI-first software and web development company based in Nepal, building scalable custom software, SaaS platforms, and mobile apps for startups and global businesses.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mx-auto lg:mx-0">
-              <Link 
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-all shadow-lg hover:shadow-blue-600/20 active:scale-95"
-              >
-                Book Free Consultation
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link 
-                href="/services"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-main-theme bg-card-theme border border-theme hover:bg-subtle-theme rounded-xl transition-all active:scale-95"
-              >
-                View Our Work
-              </Link>
-            </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/60 via-slate-900/55 to-indigo-900/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-page-theme/60" />
 
-            <div className="pt-6 border-t border-theme/50 w-full flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <div className="flex -space-x-4">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-10 h-10 rounded-full border-2 border-page-theme bg-subtle-theme flex items-center justify-center overflow-hidden">
-                    <Image
-                      src={`https://images.unsplash.com/photo-1548142813-c348350df52b?w=100&h=100&fit=crop&q=80&auto=format&ixid=M3wxMjA3fDB8MHxzZWFyY2h8${i}fHxwZW9wbGV8ZW58MHx8MHx8fDA%3D`}
-                      alt="Client"
-                      width={40}
-                      height={40}
-                      className="object-cover w-full h-full"
-                    />
-                  </div>
-                ))}
-                <div className="w-10 h-10 rounded-full border-2 border-page-theme bg-blue-600 text-white flex items-center justify-center text-xs font-bold">
-                  200+
-                </div>
-              </div>
-              <div className="flex flex-col items-center sm:items-start">
-                <div className="flex text-yellow-500">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
-                </div>
-                <p className="text-sm text-theme font-medium mt-1">Trusted by startups & global businesses</p>
-              </div>
-            </div>
-          </div>
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10">
+        <div className="w-96 h-96 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full blur-3xl" />
+      </div>
 
-          {/* Image/Illustration */}
-          <div className="relative w-full max-w-lg mx-auto lg:max-w-none">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-theme/50 bg-card-theme aspect-[4/3] group">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10" />
-              <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200"
-                alt="Robust Software Development Team in Nepal"
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
-                priority
-              />
-              {/* Floating badges */}
-              <div className="absolute bottom-6 left-6 z-20 bg-page-theme/90 backdrop-blur-md px-4 py-3 rounded-xl border border-theme/30 shadow-lg flex items-center gap-3 animate-bounce" style={{ animationDuration: '3s' }}>
-                <div className="bg-green-500/20 p-2 rounded-full">
-                  <CheckCircle2 className="w-5 h-5 text-green-500" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-sm font-bold text-main-theme">99%</span>
-                  <span className="text-xs text-muted-theme">Project Success</span>
-                </div>
-              </div>
-              <div className="absolute top-6 right-6 z-20 bg-page-theme/90 backdrop-blur-md px-4 py-3 rounded-xl border border-theme/30 shadow-lg flex items-center gap-2">
-                 <span className="relative flex h-3 w-3 mr-1">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
-                </span>
-                <span className="text-sm font-medium text-main-theme">Accepting New Projects</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
+        <Link
+          href="/services"
+          className="inline-flex items-center gap-2 mb-12 px-6 py-3 bg-card-theme border border-theme rounded-xl hover:bg-subtle-theme transition-colors duration-200"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          <span>Back to Services</span>
+        </Link>
+
+        <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
+          Software Development Company in Nepal Building Scalable Digital Products
+        </h1>
+
+        <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
+          Noble Stack is a Nepal-based software development company building custom
+          software, SaaS platforms, web and mobile apps for startups and global
+          businesses—at competitive pricing without compromising on quality.
+        </p>
       </div>
     </section>
   );

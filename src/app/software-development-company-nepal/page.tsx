@@ -32,27 +32,26 @@ export default function SoftwareDevelopmentCompanyNepalPage() {
   return (
     <main className="bg-page-theme overflow-hidden">
       <HeroSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <IntroSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <ServicesSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <WhyChooseNepalSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <ProcessSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <IndustriesSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <WhyNobleStackSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <TechStackSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <CostSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <HowToChooseSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <FAQSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
       <FinalCTASection />
       
       {/* Schematic JSON-LD */}

@@ -1,85 +1,64 @@
-import { Compass, PenTool, Code2, ShieldCheck, Rocket, Wrench } from "lucide-react";
-
-const steps = [
-  {
-    id: "01",
-    title: "Requirement Analysis",
-    description: "Understanding your core business goals and defining robust technical needs.",
-    icon: Compass,
-    color: "bg-blue-500",
-  },
-  {
-    id: "02",
-    title: "UI/UX Design",
-    description: "Creating intuitive, user-friendly, and modern interfaces that convert.",
-    icon: PenTool,
-    color: "bg-indigo-500",
-  },
-  {
-    id: "03",
-    title: "Development",
-    description: "Building scalable and secure architecture with modern tech stacks.",
-    icon: Code2,
-    color: "bg-cyan-500",
-  },
-  {
-    id: "04",
-    title: "Testing",
-    description: "Rigorous QA to ensure top performance, bulletproof security, and reliability.",
-    icon: ShieldCheck,
-    color: "bg-emerald-500",
-  },
-  {
-    id: "05",
-    title: "Deployment",
-    description: "Launching the product smoothly with automated CI/CD pipelines.",
-    icon: Rocket,
-    color: "bg-orange-500",
-  },
-  {
-    id: "06",
-    title: "Maintenance",
-    description: "Providing ongoing reliable support, feature updates, and scaling.",
-    icon: Wrench,
-    color: "bg-gray-500",
-  }
-];
+import SectionHeader from "../../../components/SectionHeader";
 
 export default function ProcessSection() {
-  return (
-    <section className="py-20 bg-subtle-theme/50">
-      <div className="container mx-auto px-4 max-w-7xl">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-main-theme mb-6">Our Development Process</h2>
-          <p className="text-lg text-theme">
-            We follow a proven agile development process to ensure quality and successful rapid delivery of your products.
-          </p>
-        </div>
+  const steps = [
+    {
+      title: "Requirement Analysis",
+      description:
+        "We start by understanding your business goals, target users, and technical needs—producing a clear scope document before any design or code is written.",
+    },
+    {
+      title: "UI/UX Design",
+      description:
+        "Our designers create intuitive, brand-aligned interfaces. You review and approve high-fidelity designs before development begins.",
+    },
+    {
+      title: "Development",
+      description:
+        "We build in structured sprints using modern tech stacks. Senior engineers review every PR, and you get incremental builds throughout the cycle.",
+    },
+    {
+      title: "Testing & QA",
+      description:
+        "Rigorous functional, performance, and security testing across devices and environments to ensure reliability before release.",
+    },
+    {
+      title: "Deployment",
+      description:
+        "Production deployment with automated CI/CD pipelines, domain and SSL setup, monitoring, and a full pre-launch checklist.",
+    },
+    {
+      title: "Maintenance & Support",
+      description:
+        "Ongoing maintenance, security patches, performance monitoring, and feature development—we are a long-term partner, not a project-and-done agency.",
+    },
+  ];
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {steps.map((step, idx) => (
-            <div key={idx} className="relative group">
-              {/* Connector Lines */}
-              {idx % 3 !== 2 && idx < 5 && (
-                <div className="hidden lg:block absolute top-[44px] left-[60%] w-[80%] h-[2px] bg-gradient-to-r from-theme to-transparent -z-10 group-hover:from-blue-500 transition-colors duration-500"></div>
-              )}
-              
-              <div className="bg-card-theme border border-theme p-8 rounded-3xl h-full shadow-sm hover:shadow-xl hover:border-blue-500/30 transition-all duration-300 relative overflow-hidden group-hover:-translate-y-2">
-                <div className="absolute top-4 right-4 text-7xl font-black text-theme/10 group-hover:text-blue-500/10 transition-colors select-none">
-                  {step.id}
-                </div>
-                
-                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg ${step.color} group-hover:scale-110 transition-transform duration-300`}>
-                  <step.icon className="w-8 h-8" />
-                </div>
-                
-                <h3 className="text-xl font-bold text-main-theme mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-theme">
-                  {step.description}
-                </p>
-              </div>
+  return (
+    <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
+      <div className="max-w-7xl mx-auto">
+        <SectionHeader
+          title="Our Software Development Process"
+          description="A proven, structured delivery process that keeps your project on time, within scope, and ready to perform from day one."
+          imageSrc="/undraw_programming_j1zw.svg"
+          imageAlt="Development process illustration"
+        />
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="bg-subtle-theme rounded-2xl p-6 md:p-7 border border-theme"
+            >
+              <p className="text-sm font-semibold text-main-theme/70 mb-2">
+                {String(index + 1).padStart(2, "0")}
+              </p>
+              <h3 className="text-lg md:text-xl font-semibold text-main-theme mb-3">
+                {step.title}
+              </h3>
+              <p className="text-base text-subtitle-theme leading-relaxed">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>

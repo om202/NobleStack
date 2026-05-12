@@ -1,54 +1,54 @@
 import { DollarSign, GraduationCap, TrendingUp, Clock } from "lucide-react";
+import ServiceCard from "../../../components/ServiceCard";
+import SectionHeader from "../../../components/SectionHeader";
 
 export default function WhyNepalSection() {
   const points = [
     {
-      icon: <DollarSign className="w-6 h-6 text-green-500" />,
-      title: "Cost Advantage — Real Numbers",
-      description: "Mobile developer hourly rates in Nepal: $25–$80 per hour. Compared to $100–$200 in the US and $80–$180 in the UK. Save $30k–$80k on a 4-month build with matching quality."
+      icon: DollarSign,
+      name: "Cost Advantage — Real Numbers",
+      description:
+        "Mobile developer rates in Nepal: $25–$80/hr vs. $100–$200 in the US and $80–$180 in the UK. Save $30k–$80k on a 4-month build with matching quality.",
     },
     {
-      icon: <GraduationCap className="w-6 h-6 text-indigo-500" />,
-      title: "Skilled Talent Pool",
-      description: "Thousands of engineering graduates yearly. Developers fluent in English, modern mobile frameworks, and experienced with international project delivery standards."
+      icon: GraduationCap,
+      name: "Skilled Talent Pool",
+      description:
+        "Thousands of engineering graduates annually. Developers fluent in English, modern mobile frameworks, and experienced with international project delivery standards.",
     },
     {
-      icon: <TrendingUp className="w-6 h-6 text-blue-500" />,
-      title: "Proven Track Record",
-      description: "Nepal's software and BPO exports crossed NPR 12 billion in early FY2024-25, over 20% YoY growth. Driven by real demand from global businesses returning for quality at scale."
+      icon: TrendingUp,
+      name: "Proven Track Record",
+      description:
+        "Nepal's software and BPO exports crossed NPR 12 billion in early FY 2024–25—over 20% YoY growth driven by real demand from global businesses returning for quality.",
     },
     {
-      icon: <Clock className="w-6 h-6 text-orange-500" />,
-      title: "Timezone Compatibility",
-      description: "Working from UTC+5:45. Excellent alignment for Singapore (UTC+8), UAE (UTC+4), UK (UTC+1), Australia (UTC+10), and async-friendly models for US clients."
-    }
+      icon: Clock,
+      name: "Timezone Compatibility",
+      description:
+        "Working from UTC+5:45—excellent alignment for Singapore, the UAE, the UK, and Australia, with workable async windows for US clients.",
+    },
   ];
 
   return (
-    <section className="bg-subtle-theme py-20 border-y border-theme">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-main-theme mb-6">
-            Why Hire a Mobile App Development Company in Nepal?
-          </h2>
-          <p className="text-lg text-muted-theme">
-            Businesses from Singapore, the United States, Australia, and the United Kingdom increasingly choose Nepal-based companies for mobile app development. The reason is consistent: engineering quality that competes with Western firms at dramatically lower cost.
-          </p>
-        </div>
+    <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
+      <div className="max-w-7xl mx-auto">
+        <SectionHeader
+          title="Why Hire a Mobile App Company in Nepal?"
+          description="Businesses from Singapore, the United States, Australia, and the UK increasingly choose Nepal-based teams for mobile app development—for engineering quality that competes with Western firms at dramatically lower cost."
+          imageSrc="/Flag_of_Nepal.svg"
+          imageAlt="Nepal flag"
+          imageSize="small"
+        />
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6">
           {points.map((point, index) => (
-            <div key={index} className="flex gap-6 items-start bg-card-theme p-6 md:p-8 rounded-2xl border border-theme">
-              <div className="shrink-0 w-12 h-12 bg-page-theme rounded-xl flex items-center justify-center border border-theme shadow-sm">
-                {point.icon}
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-main-theme mb-3">{point.title}</h3>
-                <p className="text-muted-theme leading-relaxed">
-                  {point.description}
-                </p>
-              </div>
-            </div>
+            <ServiceCard
+              key={index}
+              name={point.name}
+              description={point.description}
+              icon={point.icon}
+            />
           ))}
         </div>
       </div>

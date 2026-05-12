@@ -42,25 +42,24 @@ export default function MobileAppDevelopmentCompanyNepalPage() {
   return (
     <main className="bg-page-theme overflow-hidden">
       <HeroSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <IntroSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <DifferentiatorSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <ServicesSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <WhyNepalSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <PortfolioProofSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <ProcessSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <EngagementModelsSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <WhoWeServeSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
+      <div className="h-6 sm:h-8 bg-page-theme" />
       <FAQSection />
-      <div className="h-10 sm:h-16 bg-page-theme" />
       <FinalCTASection />
       
       {/* JSON-LD Schemas */}

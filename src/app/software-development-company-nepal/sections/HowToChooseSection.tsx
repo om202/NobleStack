@@ -1,56 +1,56 @@
-import { Briefcase, MessageSquare, Wrench, Scaling, Headset } from "lucide-react";
+import SectionHeader from "../../../components/SectionHeader";
 
 export default function HowToChooseSection() {
   const factors = [
     {
-      icon: Briefcase,
       title: "Review Portfolio and Past Projects",
-      desc: "Look for strong case studies in your industry to verify their capability."
+      description:
+        "Look for case studies in your industry. A real portfolio—with shipped products and measurable results—matters more than a polished sales deck.",
     },
     {
-      icon: MessageSquare,
       title: "Evaluate Communication",
-      desc: "Ensure their team is highly responsive and speaks excellent English."
+      description:
+        "Test responsiveness early. A partner that takes days to reply during sales will not improve once the contract is signed.",
     },
     {
-      icon: Wrench,
       title: "Check Technical Expertise",
-      desc: "Verify they use modern stacks (React, Node, Python, AWS) avoiding legacy dead-ends."
+      description:
+        "Verify they use a modern stack (React, Node, Python, AWS) and avoid legacy frameworks that lock you into expensive maintenance.",
     },
     {
-      icon: Scaling,
       title: "Ensure Scalability",
-      desc: "Your product should be built with growth in mind, handling thousands or millions of users."
+      description:
+        "Your product should be built with growth in mind—able to handle thousands or millions of users without a costly rewrite.",
     },
     {
-      icon: Headset,
-      title: "Support & Maintenance",
-      desc: "A good partner doesn't vanish after deployment. Look for long-term SLA agreements."
-    }
+      title: "Confirm Long-Term Support",
+      description:
+        "A reliable partner does not vanish after deployment. Look for clear maintenance plans, SLAs, and post-launch engineering capacity.",
+    },
   ];
 
   return (
-    <section className="py-20 bg-page-theme" id="how-to-choose">
-      <div className="container mx-auto max-w-4xl px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-main-theme mb-4">
-            How to Choose the Right Software Development Company in Nepal
-          </h2>
-          <p className="text-lg text-theme">
-            Choosing the right partner is critical for your project's success. Here are the key factors you must consider.
-          </p>
-        </div>
+    <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
+      <div className="max-w-7xl mx-auto">
+        <SectionHeader
+          title="How to Choose the Right Software Partner in Nepal"
+          description="Choosing the right partner is critical to your project's success. These are the factors that consistently separate reliable engineering teams from the rest."
+          imageSrc="/undraw_interview_yz52.svg"
+          imageAlt="How to choose illustration"
+        />
 
-        <div className="space-y-4">
+        <div className="grid md:grid-cols-2 gap-6">
           {factors.map((factor, idx) => (
-            <div key={idx} className="flex gap-4 sm:gap-6 p-6 md:p-8 bg-card-theme border border-theme rounded-3xl hover:border-blue-500/30 hover:shadow-lg transition-all">
-              <div className="w-12 h-12 bg-blue-500/10 text-blue-500 rounded-2xl flex items-center justify-center shrink-0">
-                <factor.icon className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-main-theme mb-2">{factor.title}</h3>
-                <p className="text-theme text-sm sm:text-base">{factor.desc}</p>
-              </div>
+            <div
+              key={idx}
+              className="bg-subtle-theme rounded-2xl p-6 md:p-7 border border-theme"
+            >
+              <h3 className="text-lg md:text-xl font-semibold text-main-theme mb-3">
+                {factor.title}
+              </h3>
+              <p className="text-base text-subtitle-theme leading-relaxed">
+                {factor.description}
+              </p>
             </div>
           ))}
         </div>
