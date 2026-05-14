@@ -9,15 +9,15 @@ export default function RealWorkSection() {
       tag: "Web Platform",
       title: "npgo.to, Free URL Shortener for Nepal",
       description:
-        "A full-stack web platform built for Nepali businesses. Real-time click analytics, QR code generation, Google OAuth, and a complete dashboard, free for users. Built with Next.js, Node.js, and PostgreSQL.",
+        "A full-stack web platform built for Nepali businesses and individuals. Features include real-time click analytics, QR code generation, Google OAuth, and a complete user dashboard, free at every tier. Built with Next.js 14, Node.js, and PostgreSQL.",
       linkText: "Live at npgo.to",
       href: "https://npgo.to",
     },
     {
       tag: "AI SaaS",
-      title: "Loopn, AI Professional Networking",
+      title: "Loopn, AI Professional Networking Platform",
       description:
-        "A web and mobile platform that uses AI to match professionals by resume similarity and career compatibility. Built with Next.js, Node.js, LangChain, and vector embeddings.",
+        "A web and mobile platform that uses AI to match professionals by resume similarity and career compatibility. Built with Next.js, Node.js, LangChain, and vector embeddings stored in Pinecone. Demonstrates Noble Stack's full-stack AI development capability.",
       linkText: "Live at loopn.io",
       href: "https://loopn.io",
     },
@@ -25,7 +25,7 @@ export default function RealWorkSection() {
       tag: "Web Tool",
       title: "Create Profile Pic, AI Image Editor",
       description:
-        "A web-based AI photo editing tool powered by Google's image generation APIs. Users describe edits in plain English and the AI executes them. Built with Next.js and deployed on Vercel.",
+        "A web-based AI photo editing tool powered by Google's image generation APIs. Users describe edits in plain English and the AI executes them, no design software required. Built with Next.js and deployed globally via Vercel.",
       linkText: "Live at createprofilepic.com",
       href: "https://createprofilepic.com",
     },
@@ -36,7 +36,7 @@ export default function RealWorkSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title="Web Projects We Have Shipped"
-          description="Our credibility is built on real, production web products, not just client decks. Each of these is a live system you can visit right now."
+          description="Noble Stack's credibility is built on real, live, production web products, not mockups or portfolio screenshots. Each of the following is a system you can visit right now."
           imageSrc="/undraw_portfolio_btd8.svg"
           imageAlt="Portfolio illustration"
         />

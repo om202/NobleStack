@@ -5,22 +5,22 @@ export default function WhoWeServeSection() {
     {
       title: "Local Businesses in Nepal",
       description:
-        "Retail stores, trekking and tourism companies, educational institutions, healthcare providers, NGOs, and service businesses that need a professional website to grow online.",
+        "Retail stores, trekking and tourism operators, educational institutions, healthcare providers, NGOs, financial services firms, and professional service businesses that need a professional, high-performance website to grow their online presence and generate leads.",
     },
     {
       title: "Nepali Startups",
       description:
-        "Early-stage startups that need to ship an MVP fast and validate with real users. We have shipped our own SaaS products and know how to move lean without compromising on quality.",
+        "Early-stage startups that need to ship an MVP fast and validate with real users before raising capital. Noble Stack has shipped its own startup products and understands how to move lean without building technical debt that slows you down in Series A.",
     },
     {
-      title: "International Companies Outsourcing",
+      title: "International Companies Outsourcing to Nepal",
       description:
-        "Companies in Singapore, Australia, the US, and the UK looking for a reliable, English-speaking web development partner at a fraction of their local agency costs.",
+        "Companies in Singapore, Australia, the US, and the UK looking for a reliable, English-speaking web development partner at a fraction of local agency costs. Noble Stack has experience working across time zones with structured async communication.",
     },
     {
       title: "Businesses Upgrading Legacy Sites",
       description:
-        "Companies running outdated WordPress or PHP sites who need to migrate to a modern, performant Next.js application without losing existing SEO rankings.",
+        "Companies running outdated WordPress, PHP, or jQuery sites who need to migrate to a modern, performant Next.js application, without losing existing Google search rankings. We handle migration with SEO continuity as a first-class concern: redirect mapping, metadata preservation, sitemap continuity.",
     },
   ];
 

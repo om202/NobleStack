@@ -12,14 +12,15 @@ import FAQSection from "./sections/FAQSection";
 import FinalCTASection from "./sections/FinalCTASection";
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Nepal",
-  description: "Noble Stack is a top web development company in Nepal. We build fast, SEO-optimized websites and web apps using Next.js, React, and TypeScript. Based in Kathmandu.",
+  title: "Web Development Company in Nepal | Noble Stack",
+  description: "Nepal's top web development company. We build fast, SEO-optimized websites & web apps in Next.js, React & TypeScript. Lighthouse 90+ scores. Free consultation.",
   openGraph: {
     title: "Web Development Company in Nepal | Noble Stack",
-    description: "Noble Stack builds fast, SEO-optimized websites and web apps from Kathmandu, Nepal, for local businesses and global clients.",
+    description: "Nepal's top web development company. Fast, SEO-optimized websites in Next.js, React & TypeScript.",
     url: "https://www.noblestack.io/web-development-company-nepal",
     images: ["/og-web-development-nepal.webp"],
     siteName: "Noble Stack",
+    type: "website",
   },
   alternates: {
     canonical: "https://www.noblestack.io/web-development-company-nepal",
@@ -107,8 +108,14 @@ export default function WebDevelopmentCompanyNepalPage() {
       "provider": { "@id": "https://www.noblestack.io/#organization" },
       "serviceType": "Web Development",
       "areaServed": ["Nepal", "Singapore", "United States", "Australia", "United Kingdom"],
-      "description": "Full-stack web development services using Next.js, React, TypeScript, and Node.js. Noble Stack builds corporate websites, SaaS platforms, e-commerce stores, and custom web applications from Kathmandu, Nepal.",
-      "url": "https://www.noblestack.io/web-development-company-nepal"
+      "description": "Custom web development services in Nepal including full-stack web applications, corporate websites, SaaS platforms, e-commerce stores, and AI-powered web applications. Built with Next.js, React, TypeScript, and Node.js from Kathmandu.",
+      "url": "https://www.noblestack.io/web-development-company-nepal",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "25",
+        "priceSpecification": "Starting from $25/hr"
+      }
     },
     {
       "@type": "FAQPage",
@@ -118,7 +125,7 @@ export default function WebDevelopmentCompanyNepalPage() {
           "name": "What is the best web development company in Nepal?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Noble Stack is recognized as one of the best web development companies in Nepal. Based in Kathmandu, Noble Stack specializes in AI-first web development using Next.js, React, and TypeScript, with real shipped products like npgo.to and Loopn as proof of delivery."
+            "text": "Noble Stack is widely considered one of the top web development companies in Nepal. Based in Kathmandu, Noble Stack builds high-performance websites and web applications using Next.js, React, and TypeScript, and has shipped production products including npgo.to, Loopn, and Create Profile Pic, all live systems with real users."
           }
         },
         {
@@ -126,15 +133,15 @@ export default function WebDevelopmentCompanyNepalPage() {
           "name": "How much does web development cost in Nepal?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Web development costs in Nepal typically range from NPR 50,000–500,000 for standard business websites and NPR 500,000–5,000,000+ for complex web applications and SaaS platforms. Hourly rates for web developers in Nepal range from $25–$99/hr, which is 60–80% lower than equivalent rates in the US or UK."
+            "text": "Web development in Nepal typically costs $25–$99 per hour, or $2,000–$25,000+ for a complete project depending on scope and complexity. A simple corporate website starts at approximately $2,000–$5,000. A custom SaaS platform or web application typically starts at $10,000–$25,000. Equivalent talent in the US or UK costs $100–$250/hr."
           }
         },
         {
           "@type": "Question",
-          "name": "Does Noble Stack work with international clients?",
+          "name": "How long does it take to build a website in Nepal?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Noble Stack works with clients in Singapore, the United States, the United Kingdom, Australia, and across Asia. Our team communicates in English, operates on flexible schedules to accommodate international time zones, and has delivered products deployed globally."
+            "text": "A simple corporate website typically takes 2–4 weeks from kickoff to launch. A custom web application or SaaS platform typically takes 8–16 weeks depending on feature complexity. Noble Stack provides a clear scope, sitemap, and timeline document before development begins so you know exactly what to expect."
           }
         },
         {
@@ -142,31 +149,39 @@ export default function WebDevelopmentCompanyNepalPage() {
           "name": "What technologies does Noble Stack use for web development?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Noble Stack builds web applications using Next.js, React, TypeScript, Tailwind CSS, Node.js, NestJS, GraphQL, PostgreSQL, MongoDB, Prisma, and deploys on Vercel, AWS, and GCP. All web systems are built mobile-first, SEO-optimized, and production-ready from day one."
+            "text": "Noble Stack engineers exclusively in Next.js, React, TypeScript, and Node.js on the frontend and backend. Databases include PostgreSQL, MongoDB, and Redis. Infrastructure runs on Vercel, AWS, and Google Cloud. For AI integration, Noble Stack uses OpenAI, Anthropic Claude, LangChain, and Pinecone."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does web development take in Nepal?",
+          "name": "Does Noble Stack work with international clients?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A standard business website takes 2–4 weeks. A custom web application or SaaS platform typically takes 6–16 weeks depending on complexity. Noble Stack follows a structured delivery process with clear milestones, and provides regular progress updates throughout."
+            "text": "Yes. Noble Stack works with clients in Singapore, Australia, the United Kingdom, the United States, and the UAE. All communication is in English. The team operates from UTC+5:45 (Kathmandu), which overlaps well with Singapore, the UAE, and European and Australian business hours."
           }
         },
         {
           "@type": "Question",
-          "name": "Why hire a web development company in Nepal?",
+          "name": "Can Noble Stack rebuild my existing WordPress website?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nepal offers world-class web development talent at 60–80% lower cost than the US or UK. Nepali developers are highly skilled in modern stacks, English-fluent, and timezone-compatible with Asia-Pacific and European markets. Nepal's IT exports crossed NPR 12 billion in 2024–25, reflecting the quality and global demand for Nepali tech services."
+            "text": "Yes. Noble Stack specializes in migrating WordPress and legacy PHP sites to Next.js and React. Migrations are handled with full SEO continuity, redirect mapping, metadata preservation, and sitemap management, so you do not lose existing Google rankings during or after the transition."
           }
         },
         {
           "@type": "Question",
-          "name": "What types of websites does Noble Stack build?",
+          "name": "Do you provide website maintenance after launch?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Noble Stack builds corporate websites, SaaS platforms, e-commerce stores, web applications, landing pages, portals, dashboards, and AI-powered web products. Every project is custom-built, Noble Stack does not use generic templates."
+            "text": "Yes. Noble Stack offers structured monthly maintenance retainers covering performance monitoring, security patching, dependency updates, uptime alerting, and feature development. This applies to projects Noble Stack built as well as existing applications you may have inherited from another team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why hire a web development company instead of a freelancer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A web development company provides a full team, designer, frontend engineer, backend engineer, DevOps, and project manager, under one accountability structure. Freelancers offer flexibility but introduce risk when one person handles an entire project. For production systems, Noble Stack recommends a structured company engagement over a solo freelancer."
           }
         }
       ]

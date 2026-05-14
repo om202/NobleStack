@@ -1,14 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import CTAButton from "../../../components/CTAButton";
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-28">
       <div className="absolute inset-0">
         <Image
-          src="/hero_gradient.webp"
-          alt="Web development background"
+          src="/web-dev-hero.webp"
+          alt="Web developer working on dual-monitor setup with code editor open"
           fill
           sizes="100vw"
           className="object-cover"
@@ -16,8 +17,8 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/60 via-blue-900/55 to-slate-900/60" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-page-theme/60" />
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/75 via-blue-900/70 to-slate-900/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-page-theme/70" />
 
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10">
         <div className="w-96 h-96 bg-gradient-to-br from-indigo-400 to-blue-600 rounded-full blur-3xl" />
@@ -33,14 +34,19 @@ export default function HeroSection() {
         </Link>
 
         <h1 className="text-[32px] md:text-[45px] font-bold mb-4 text-white">
-          Web Development Company in Nepal Building Fast, SEO-Optimized Web Products
+          Web Development Company in Nepal | Noble Stack
         </h1>
 
-        <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-          Noble Stack is an AI-first web development company based in Kathmandu.
-          We build high-performance websites and web applications using Next.js,
-          React, and TypeScript, shipped for Nepali businesses and global clients alike.
+        <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed mb-8">
+          Kathmandu-based Noble Stack builds fast, SEO-optimized websites and
+          web apps for Nepali and global clients, engineered exclusively in
+          Next.js, React, and TypeScript, and shipped with a 90+ Google
+          Lighthouse score as a minimum standard.
         </p>
+
+        <CTAButton variant="primary" href="/contact" icon={ArrowRight}>
+          Schedule a Free Consultation
+        </CTAButton>
       </div>
     </section>
   );

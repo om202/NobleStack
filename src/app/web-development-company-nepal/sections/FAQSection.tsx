@@ -15,42 +15,42 @@ export default function FAQSection() {
     {
       question: "What is the best web development company in Nepal?",
       answer:
-        "Noble Stack is recognized as one of the best web development companies in Nepal. We specialize in AI-first web development using Next.js, React, and TypeScript, and have shipped real web products, npgo.to, Loopn, and Create Profile Pic, that validate our engineering capability.",
+        "Noble Stack is widely considered one of the top web development companies in Nepal. Based in Kathmandu, Noble Stack builds high-performance websites and web applications using Next.js, React, and TypeScript, and has shipped production products including npgo.to, Loopn, and Create Profile Pic, all live systems with real users.",
     },
     {
       question: "How much does web development cost in Nepal?",
       answer:
-        "A standard business website typically costs NPR 50,000–200,000. A custom web application or SaaS platform ranges from NPR 500,000 to NPR 5,000,000+. Hourly developer rates fall between $25–$99/hr, approximately 60–80% lower than equivalent US or UK rates.",
+        "Web development in Nepal typically costs $25–$99 per hour, or $2,000–$25,000+ for a complete project depending on scope and complexity. A simple corporate website starts at approximately $2,000–$5,000. A custom SaaS platform or web application typically starts at $10,000–$25,000. Equivalent talent in the US or UK costs $100–$250/hr.",
     },
     {
       question: "How long does it take to build a website in Nepal?",
       answer:
-        "A standard business website takes 2–4 weeks from kickoff to launch. A custom web application takes 6–12 weeks. A full SaaS platform with complex features typically requires 3–6 months. We provide a realistic timeline in the initial scope document and update it at every milestone.",
+        "A simple corporate website typically takes 2–4 weeks from kickoff to launch. A custom web application or SaaS platform typically takes 8–16 weeks depending on feature complexity. Noble Stack provides a clear scope, sitemap, and timeline document before development begins so you know exactly what to expect.",
     },
     {
       question: "What technologies does Noble Stack use for web development?",
       answer:
-        "Next.js, React, TypeScript, Tailwind CSS, Node.js, NestJS, GraphQL, PostgreSQL, MongoDB, and Prisma ORM. Infrastructure runs on Vercel, AWS, or GCP with Docker, CI/CD pipelines, and GitHub Actions. All sites are built mobile-first and optimized for Core Web Vitals.",
+        "Noble Stack engineers exclusively in Next.js, React, TypeScript, and Node.js on the frontend and backend. Databases include PostgreSQL, MongoDB, and Redis. Infrastructure runs on Vercel, AWS, and Google Cloud. For AI integration, Noble Stack uses OpenAI, Anthropic Claude, LangChain, and Pinecone.",
     },
     {
       question: "Does Noble Stack work with international clients?",
       answer:
-        "Yes. We work with clients in Singapore, the United States, the United Kingdom, Australia, and across Asia. Our team communicates in English, follows structured project management, and has delivered products deployed globally.",
+        "Yes. Noble Stack works with clients in Singapore, Australia, the United Kingdom, the United States, and the UAE. All communication is in English. The team operates from UTC+5:45 (Kathmandu), which overlaps well with Singapore, the UAE, and European and Australian business hours.",
     },
     {
       question: "Can Noble Stack rebuild my existing WordPress website?",
       answer:
-        "Yes. We migrate existing WordPress, PHP, or legacy websites to modern Next.js or React applications, preserving your content, URL structure, and SEO rankings while dramatically improving performance, security, and maintainability.",
+        "Yes. Noble Stack specializes in migrating WordPress and legacy PHP sites to Next.js and React. Migrations are handled with full SEO continuity, redirect mapping, metadata preservation, and sitemap management, so you do not lose existing Google rankings during or after the transition.",
     },
     {
       question: "Do you provide website maintenance after launch?",
       answer:
-        "Yes. We offer ongoing maintenance plans covering security updates, performance monitoring, content updates, bug fixes, and feature development, with clear SLAs and dedicated support for all maintained projects.",
+        "Yes. Noble Stack offers structured monthly maintenance retainers covering performance monitoring, security patching, dependency updates, uptime alerting, and feature development. This applies to projects Noble Stack built as well as existing applications you may have inherited from another team.",
     },
     {
       question: "Why hire a web development company instead of a freelancer?",
       answer:
-        "A company provides structured project management, a full team (designers, developers, QA), accountability, and long-term support. Freelancers can be cost-effective for small tasks but often lack the depth of resources needed for complex projects, ongoing maintenance, or fast delivery.",
+        "A web development company provides a full team, designer, frontend engineer, backend engineer, DevOps, and project manager, under one accountability structure. Freelancers offer flexibility but introduce risk when one person handles an entire project. For production systems, Noble Stack recommends a structured company engagement over a solo freelancer.",
     },
   ];
 
@@ -58,8 +58,8 @@ export default function FAQSection() {
     <section className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
-          title="Frequently Asked Questions"
-          description="Direct answers to the most common questions about working with us on web development in Nepal."
+          title="Frequently Asked Questions, Web Development in Nepal"
+          description="Direct answers to the most common questions about working with Noble Stack and hiring a web development company in Nepal."
           imageSrc="/undraw_questions_g2px.svg"
           imageAlt="FAQ illustration"
         />

@@ -13,21 +13,32 @@ export default function IntroSection() {
 
         <div className="bg-subtle-theme rounded-2xl p-6 md:p-8 border border-theme">
           <p className="text-base md:text-lg text-main-theme/80 leading-relaxed mb-4">
-            We are not a generic web agency. Noble Stack operates as an AI-first
-            engineering team. Every website and web application we build is
-            architected with performance, scalability, and intelligent automation
-            in mind from day one, not added later as an afterthought.
+            Noble Stack is not a generic web agency. We operate as an AI-first
+            engineering team, every website and web application we build is
+            architected for performance, scalability, and intelligent automation
+            from day one, not retrofitted later.
           </p>
           <p className="text-base md:text-lg text-main-theme/80 leading-relaxed mb-4">
-            Our credibility comes from shipping real products. We have built and
-            launched our own web platforms, npgo.to (a URL shortener serving Nepali
-            businesses), Loopn (an AI-powered professional networking platform),
-            and Create Profile Pic (a web-based AI image tool with global users).
-            These are production systems under real-world load, not portfolio pieces.
+            Our credibility comes from shipping real products. We have built and launched:
           </p>
+          <ul className="text-base md:text-lg text-main-theme/80 leading-relaxed mb-4 space-y-2 list-disc pl-6">
+            <li>
+              <strong>npgo.to</strong> — a full-stack URL shortener serving Nepali
+              businesses, with real-time analytics, QR generation, and Google OAuth
+            </li>
+            <li>
+              <strong>Loopn</strong> — an AI-powered professional networking platform
+              using vector embeddings and LangChain for resume-similarity matching
+            </li>
+            <li>
+              <strong>Create Profile Pic</strong> — a web-based AI image editing tool
+              with global users, powered by Google&apos;s image generation APIs
+            </li>
+          </ul>
           <p className="text-base md:text-lg text-main-theme font-semibold leading-relaxed">
-            When you hire Noble Stack, you get the same engineering standards we
-            apply to our own products.
+            These are production systems under real-world load. When you hire
+            Noble Stack, you get the same engineering standards we apply to our
+            own products.
           </p>
         </div>
       </div>
