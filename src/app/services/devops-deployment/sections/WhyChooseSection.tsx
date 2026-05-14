@@ -14,7 +14,7 @@ export default function WhyChooseSection() {
                 <SectionHeader
                     title="Why Choose Noble Stack as Your DevOps Services Company?"
                     description="Selecting the right DevOps partner directly impacts application reliability, performance, and security. Noble Stack combines deep DevOps expertise, cloud-native architecture, and enterprise-level engineering to deliver infrastructure that scales with your business."
-                    imageSrc="/nbl.png"
+                    imageSrc="/nbl.webp"
                     imageAlt="Noble Stack Logo"
                     imageSize="small"
                 />
