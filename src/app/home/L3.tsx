@@ -26,28 +26,28 @@ export default function AIServicesSection() {
 
   const aiServices = [
     {
-      name: "AI Language Tools",
-      icon: SiGoogletranslate,
-      status: "🚀 NEW",
-      description: "Nepali Grammarly - First AI Grammar Checker",
-    },
-    {
       name: "AI Chatbots & Virtual Assistants",
       icon: SiOpenai,
       status: "AI Expert",
-      description: "GPT-4, Claude, Custom Models",
+      description: "GPT-4, Claude, custom models",
     },
     {
-      name: "Business Process Automation",
+      name: "LLM-Powered Applications",
+      icon: SiAnthropic,
+      status: "Production Grade",
+      description: "RAG, retrieval & reasoning",
+    },
+    {
+      name: "Internal Knowledge Assistants",
+      icon: SiHuggingface,
+      status: "Enterprise",
+      description: "Search across business data",
+    },
+    {
+      name: "Workflow Automation Systems",
       icon: SiZapier,
       status: "Automation Pro",
-      description: "Smart Workflows & Integration",
-    },
-    {
-      name: "Custom AI Development",
-      icon: SiHuggingface,
-      status: "ML Specialist",
-      description: "Tailored AI Solutions",
+      description: "AI-driven business workflows",
     },
   ];
 
@@ -77,11 +77,11 @@ export default function AIServicesSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader
-          title="AI Solutions That Revolutionize Your Business"
-          description="While others promise AI magic, we deliver proven solutions. Our AI chatbots and automation systems are already transforming businesses, handling millions of interactions, and saving countless hours of manual work."
+          title="AI Software Development for Practical Business Use Cases"
+          description="We develop custom AI systems that help businesses automate repetitive tasks, improve customer experiences, organize internal knowledge, and build intelligent workflows. Our AI solutions are designed for practical business outcomes, not experimental demos."
           className="animate-fade-in"
           imageSrc="/undraw_ai-agent_pdkp.svg"
-          imageAlt="AI Solutions Illustration"
+          imageAlt="AI software development illustration"
         />
 
         {/* AI Tech Stack - Auto Scrolling */}
@@ -103,8 +103,8 @@ export default function AIServicesSection() {
 
         {/* CTA Button */}
         <div className="mt-12 text-center">
-          <CTAButton variant="secondary" href="https://calendar.app.google/mWmd6v421Pk66LQ26" icon={ArrowRight}>
-            Schedule a Free Consultation
+          <CTAButton variant="secondary" href="/ai-development-company-in-nepal" icon={ArrowRight}>
+            Explore AI Development Services
           </CTAButton>
         </div>
       </div>

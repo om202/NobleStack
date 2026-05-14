@@ -35,28 +35,28 @@ export default function FeaturesSection() {
 
   const webServices = [
     {
-      name: "Full-Stack Web Development",
+      name: "Custom Web Applications",
       icon: SiReact,
       status: "Specialized",
-      description: "React, Next.js, TypeScript",
+      description: "Next.js, React, TypeScript",
     },
     {
-      name: "E-commerce Websites",
-      icon: SiShopify,
-      status: "Expert",
-      description: "Shopify, Custom Solutions",
-    },
-    {
-      name: "SaaS Platforms",
+      name: "SaaS Product Development",
       icon: SiVercel,
       status: "Advanced",
-      description: "Full-Stack Applications",
+      description: "Multi-tenant, scalable platforms",
     },
     {
-      name: "Landing Pages",
+      name: "E-Commerce Platforms",
+      icon: SiShopify,
+      status: "Expert",
+      description: "Shopify & custom storefronts",
+    },
+    {
+      name: "Enterprise Dashboards & APIs",
       icon: SiGoogleads,
-      status: "Conversion Pro",
-      description: "High-Converting Pages",
+      status: "Production Grade",
+      description: "Admin systems, GraphQL, REST",
     },
   ];
 
@@ -85,11 +85,11 @@ export default function FeaturesSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader
-          title="Full-Stack Web Development Using Cutting-Edge Technologies"
-          description="Specializing in lightning-fast, SEO-optimized websites and native mobile apps that look stunning on every device. From landing pages to complex web applications and iOS/Android apps, we create digital experiences that drive results."
+          title="Full-Stack Web Development for Modern Businesses"
+          description="We build fast, scalable, and SEO-friendly web applications using modern frontend and backend technologies. Whether you need a company website, SaaS platform, admin dashboard, marketplace, or enterprise system, we focus on performance, usability, and long-term scalability."
           className="animate-fade-in"
           imageSrc="/undraw_server-cluster_7ugi.svg"
-          imageAlt="Full-Stack Web Development Illustration"
+          imageAlt="Full-stack web development services illustration"
         />
 
         {/* Modern Tech Stack */}
@@ -111,8 +111,8 @@ export default function FeaturesSection() {
 
         {/* CTA Button */}
         <div className="mt-12 text-center">
-          <CTAButton variant="secondary" href="https://calendar.app.google/mWmd6v421Pk66LQ26" icon={ArrowRight}>
-            Schedule a Free Consultation
+          <CTAButton variant="secondary" href="/Services/full-stack-engineering" icon={ArrowRight}>
+            View Web Development Services
           </CTAButton>
         </div>
       </div>

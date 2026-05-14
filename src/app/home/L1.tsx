@@ -89,22 +89,22 @@ export default function HeroSection() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="relative z-10">
               {/* Left-aligned on desktop, centered on mobile */}
-              <div className="flex flex-col items-center text-center lg:items-start lg:text-left max-w-2xl mx-auto lg:mx-0">
+              <div className="flex flex-col items-center text-center lg:items-start lg:text-left max-w-3xl mx-auto lg:mx-0">
                 <h1 className="text-[32px] md:text-[45px] mb-6 leading-tight text-main-theme font-serif text-engraved">
-                  We Build Scalable, AI-Driven Products For Your Business
+                  AI Software &amp; Full-Stack Development Company in Nepal
                 </h1>
 
                 <p className="text-lg text-subtitle-theme mb-8">
-                  <span className="font-bold text-main-theme text-xl">We are building for Nepal.</span> <br /> <br /> Noble Stack is recognized as one of the best AI and IT companies in Kathmandu, Nepal. We turn your ideas into AI-powered software, high-performance websites, mobile apps, and SaaS platforms, for startups, enterprises, and growing businesses worldwide.
+                  Noble Stack helps startups, businesses, and enterprises build modern digital products using AI, scalable web technologies, and mobile-first engineering. Based in <span className="font-semibold text-main-theme">Kathmandu, Nepal</span>, we design and develop AI systems, SaaS platforms, web applications, automation tools, and mobile apps for companies worldwide.
                 </p>
 
                 {/* Call to Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start mb-10 mt-8 sm:mt-16">
                   <CTAButton variant="primary" icon={Phone} iconPosition="left" className="w-full sm:w-auto" href="https://calendar.app.google/mWmd6v421Pk66LQ26" shine>
-                    Schedule Consultation
+                    Schedule a Free Consultation
                   </CTAButton>
                   <CTAButton variant="secondary" icon={Box} iconPosition="left" href="/products" className="w-full sm:w-auto">
-                    See Our Products
+                    View Our Work
                   </CTAButton>
                 </div>
               </div>

@@ -9,7 +9,7 @@ export default function Testimonials() {
             company: "",
             image: "/testimonials/avatar-male-1.svg",
             rating: 5,
-            text: "The team was easy to work with and kept me updated throughout the project. They took the time to understand what I actually needed, not just what I asked for. Appreciated their patience with my questions.",
+            text: "The team understood our requirements clearly and built a system that improved our workflow significantly. Communication was smooth throughout the project and the final product solved the operational issues we were facing.",
         },
         {
             name: "Anjali G.",
@@ -17,15 +17,15 @@ export default function Testimonials() {
             company: "",
             image: "/testimonials/avatar-female-1.svg",
             rating: 5,
-            text: "As a first-time founder, I had a lot to learn about the tech side. Noble Stack walked me through every decision and helped me launch something I'm genuinely proud of. Responsive and honest throughout.",
+            text: "Noble Stack helped us transform an early-stage idea into a production-ready product. Their technical guidance and development process made the entire project easier to manage.",
         },
         {
             name: "Bikash T.",
-            role: "Local Business Owner",
+            role: "Business Owner",
             company: "",
             image: "/testimonials/avatar-male-2.svg",
             rating: 5,
-            text: "I needed a simple app for my business and they delivered exactly that, nothing overcomplicated, just something that works. Good communication and fair pricing for the quality of work.",
+            text: "We needed a reliable mobile application with scalable architecture and long-term maintainability. The final product exceeded expectations and continues to perform well.",
         },
     ];
 

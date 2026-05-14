@@ -5,16 +5,29 @@ import SectionHeader from "../../components/SectionHeader";
 
 export default function AboutUs() {
     return (
-        <section id="about" aria-label="About Us" className="max-w-7xl mx-auto px-3 pb-4 sm:px-4 sm:pb-8">
-            <div className="bg-card-theme rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-theme">
+        <section
+            id="about"
+            aria-label="About Noble Stack"
+            className="py-8 px-3 sm:py-12 sm:px-4 bg-card-theme border-y border-theme transition-colors"
+        >
+            <div className="max-w-7xl mx-auto">
                 <SectionHeader
-                    title="About Noble Stack, Best AI & IT Company in Kathmandu, Nepal"
-                    description="We are an AI-first IT company based in Kathmandu, Nepal, recognized as one of the best AI companies in Nepal, building websites, custom software, mobile apps, and AI-powered systems with global engineering standards. Our credibility comes from shipping real products, not just promises."
+                    title="Building Software That Solves Real Business Problems"
+                    description="Noble Stack is an AI-focused software development company based in Kathmandu, Nepal. We work with startups, founders, local businesses, and global companies to build reliable digital products that improve operations, automate workflows, and support long-term business growth."
                     imageSrc="/undraw_team-spirit_18vw.svg"
-                    imageAlt="About Noble Stack"
+                    imageAlt="Noble Stack team building software in Kathmandu, Nepal"
                 />
 
-                <div className="mt-8 text-center">
+                <div className="grid md:grid-cols-2 gap-6 mt-4 text-base text-subtitle-theme leading-relaxed">
+                    <p>
+                        Our team specializes in full-stack product development, AI software engineering, mobile app development, automation systems, and scalable cloud infrastructure. Instead of building generic software, we focus on creating products that are practical, maintainable, and aligned with real business needs.
+                    </p>
+                    <p>
+                        From startup MVPs and SaaS platforms to AI-powered systems and enterprise tools, we help businesses move from idea to production with modern engineering practices and user-focused development.
+                    </p>
+                </div>
+
+                <div className="mt-10 text-center">
                     <CTAButton variant="secondary" href="/about" icon={ArrowRight}>
                         Read More About Us
                     </CTAButton>

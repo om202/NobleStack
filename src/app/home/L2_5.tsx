@@ -68,11 +68,11 @@ export default function MobileDevSection() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <SectionHeader
-                    title="Native & Cross-Platform Mobile App Development"
-                    description="Building high-performance mobile applications for iOS and Android. From native Swift and Kotlin apps to cross-platform React Native solutions, we create mobile experiences that users love and businesses rely on."
+                    title="Mobile App Development for iOS & Android"
+                    description="Noble Stack develops mobile applications for iOS and Android using both native and cross-platform technologies. We build apps focused on reliability, smooth user experiences, scalable backend systems, and AI-powered features when they matter."
                     className="animate-fade-in"
                     imageSrc="/undraw_mobile-site_qjby.svg"
-                    imageAlt="Mobile App Development Illustration"
+                    imageAlt="Mobile app development services illustration"
                 />
 
                 {/* Mobile Tech Stack */}
@@ -94,8 +94,8 @@ export default function MobileDevSection() {
 
                 {/* CTA Button */}
                 <div className="mt-12 text-center">
-                    <CTAButton variant="secondary" href="https://calendar.app.google/mWmd6v421Pk66LQ26" icon={ArrowRight}>
-                        Schedule a Free Consultation
+                    <CTAButton variant="secondary" href="/Services/mobile-apps" icon={ArrowRight}>
+                        Explore Mobile App Development
                     </CTAButton>
                 </div>
             </div>
