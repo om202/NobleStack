@@ -169,7 +169,7 @@ export default async function BlogPostPage({ params }: Params) {
             )}
 
             {/* Content */}
-            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="prose prose-lg dark:prose-invert max-w-none 
                     prose-headings:text-main-theme prose-headings:font-bold
                     prose-p:text-main-theme/90 prose-p:leading-8
@@ -187,6 +187,42 @@ export default async function BlogPostPage({ params }: Params) {
                 ">
                     <ReactMarkdown
                         components={{
+                            img(props) {
+                                const { src, alt } = props as { src?: string; alt?: string };
+                                // Render the Noble Stack logo small and clean (not as a full-width prose image)
+                                if (typeof src === "string" && src.includes("nbl.webp")) {
+                                    return (
+                                        <Image
+                                            src={src}
+                                            alt={alt || "Noble Stack"}
+                                            width={72}
+                                            height={72}
+                                            className="not-prose rounded-xl my-2"
+                                        />
+                                    );
+                                }
+                                // eslint-disable-next-line @next/next/no-img-element
+                                return <img {...(props as React.ImgHTMLAttributes<HTMLImageElement>)} alt={alt || ""} />;
+                            },
+                            p({ node, children, ...props }) {
+                                // Treat any paragraph starting with "Price:" as a highlighted price badge
+                                const firstChild = node?.children?.[0] as { type?: string; value?: string } | undefined;
+                                const text = firstChild?.type === "text" ? firstChild.value ?? "" : "";
+                                if (text.startsWith("Price:")) {
+                                    const value = text.replace(/^Price:\s*/, "");
+                                    return (
+                                        <div className="not-prose my-5">
+                                            <span className="inline-flex items-center gap-2 rounded-lg border border-blue-500/40 bg-blue-500/10 px-4 py-2 text-lg font-bold text-blue-600 dark:text-blue-300">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5 opacity-80" aria-hidden="true">
+                                                    <path fillRule="evenodd" d="M5.5 3A2.5 2.5 0 0 0 3 5.5v2.879a2.5 2.5 0 0 0 .732 1.767l6.5 6.5a2.5 2.5 0 0 0 3.536 0l2.878-2.878a2.5 2.5 0 0 0 0-3.536l-6.5-6.5A2.5 2.5 0 0 0 8.38 3H5.5ZM6 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clipRule="evenodd" />
+                                                </svg>
+                                                {value}
+                                            </span>
+                                        </div>
+                                    );
+                                }
+                                return <p {...props}>{children}</p>;
+                            },
                             code({ className, children, node, ...props }) {
                                 const match = /language-(\w+)/.exec(className || "");
                                 // Check if this is a block-level code (has newlines) vs inline
